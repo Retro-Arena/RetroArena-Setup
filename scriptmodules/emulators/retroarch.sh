@@ -82,7 +82,8 @@ function update_shaders_retroarch() {
     isPlatform "rpi" && branch="rpi"
     # remove if not git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/RetroPie/common-shaders.git "$branch"
+    #gitPullOrClone "$dir" https://github.com/RetroPie/common-shaders.git "$branch"
+    gitPullOrClone "$dir" https://github.com/libretro/common-shaders.git "$branch"
     chown -R $user:$user "$dir"
 }
 

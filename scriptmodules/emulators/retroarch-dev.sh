@@ -56,11 +56,11 @@ function _package_xmb_monochrome_assets_retroarch-dev() {
 function configure_retroarch-dev() {
     configure_retroarch
     # rename retroarch-dev to retroarch
-    if [[ -d /opt/RetroArena/emulators/retroarch ]]; then
-        rm -rf /opt/RetroArena/emulators/retroarch
-        mv /opt/RetroArena/emulators/retroarch-dev /opt/RetroArena/emulators/retroarch
+    if [[ -d /opt/retroarena/emulators/retroarch ]]; then
+        rm -rf /opt/retroarena/emulators/retroarch
+        mv /opt/retroarena/emulators/retroarch-dev /opt/retroarena/emulators/retroarch
     else
-        mv /opt/RetroArena/emulators/retroarch-dev /opt/RetroArena/emulators/retroarch
+        mv /opt/retroarena/emulators/retroarch-dev /opt/retroarena/emulators/retroarch
     fi
 }
 
