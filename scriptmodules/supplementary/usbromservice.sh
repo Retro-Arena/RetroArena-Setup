@@ -27,7 +27,7 @@ function depends_usbromservice() {
     if ! hasPackage usbmount $(_get_ver_usbromservice); then
         depends+=(debhelper devscripts pmount lockfile-progs)
         getDepends "${depends[@]}"
-        gitPullOrClone "$md_build" https://github.com/Retro-Arena/usbmount.git
+        gitPullOrClone "$md_build" https://github.com/RetroPie/usbmount.git
         cd "$md_build"
         dpkg-buildpackage
         dpkg -i ../usbmount_*_all.deb
