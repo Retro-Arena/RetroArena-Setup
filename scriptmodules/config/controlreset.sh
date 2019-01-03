@@ -27,7 +27,7 @@ function gui_controlreset() {
                 fi
                 rm /opt/retroarena/configs/all/retroarch-joypads/*
                 rm $HOME/.emulationstation/es_input.cfg
-                cd $HOME/.emulationstation/; curl -o es_input.cfg https://raw.githubusercontent.com/Shakz76/Eazy-Hax-RetroArena-Toolkit/master/cfg/es_input.cfg.bkup
+                cd $HOME/.emulationstation/; curl -o es_input.cfg https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/scriptmodules/supplementary/emulationstation/es_input_reset.cfg
                 sudo reboot
                 ;;
         esac
