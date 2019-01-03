@@ -428,14 +428,13 @@ function rp_registerModuleDir() {
 }
 
 function rp_registerAllModules() {
-    rp_registerModuleDir 100 "core"
-    rp_registerModuleDir 200 "libretrocores"
-    rp_registerModuleDir 300 "emulators"
-    rp_registerModuleDir 400 "ports"
-    rp_registerModuleDir 500 "supplementary"
-    rp_registerModuleDir 600 "config"
-    rp_registerModuleDir 700 "configv"
-    rp_registerModuleDir 800 "admin"
+    rp_registerModuleDir 100 "libretrocores"
+    rp_registerModuleDir 200 "emulators"
+    rp_registerModuleDir 300 "ports"
+    rp_registerModuleDir 400 "supplementary"
+    rp_registerModuleDir 500 "config"
+    rp_registerModuleDir 600 "configv"
+    rp_registerModuleDir 700 "admin"
 }
 
 function rp_getIdxFromId() {
