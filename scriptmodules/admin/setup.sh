@@ -439,7 +439,8 @@ function packages_gui_setup() {
     local default
     local options=()
 
-    for section in core main opt driver exp; do
+    #for section in core main opt driver exp; do
+    for section in core opt lr sa prt driver; do
         options+=($section "Manage ${__sections[$section]} packages" "$section Choose top install/update/configure packages from the ${__sections[$section]}")
     done
 
