@@ -432,9 +432,10 @@ function rp_registerAllModules() {
     rp_registerModuleDir 200 "emulators"
     rp_registerModuleDir 300 "ports"
     rp_registerModuleDir 400 "supplementary"
-    rp_registerModuleDir 500 "config"
-    rp_registerModuleDir 600 "configv"
-    rp_registerModuleDir 700 "admin"
+    rp_registerModuleDir 500 "driver"
+    rp_registerModuleDir 600 "config"
+    rp_registerModuleDir 700 "configv"
+    rp_registerModuleDir 800 "admin"
 }
 
 function rp_getIdxFromId() {
