@@ -24,7 +24,7 @@ function gui_controlreset() {
             1)
                 rm -rf /opt/retroarena/configs/all/retroarch-joypads/*
                 rm -rf $HOME/.emulationstation/es_input.cfg
-                wget $HOME/.emulationstation/es_input.cfg https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/scriptmodules/supplementary/emulationstation/es_input_reset.cfg
+                cp $scriptdir/scriptmodules/supplementary/emulationstation/es_input_reset.cfg $HOME/.emulationstation/es_input.cfg
                 dos2unix $HOME/.emulationstation/es_input.cfg
                 chmod a+x $HOME/.emulationstation/es_input.cfg
                 chown pigaming:pigaming $HOME/.emulationstation/es_input.cfg
