@@ -13,8 +13,6 @@ rp_module_id="controlreset"
 rp_module_desc="Reset controller configurations to factory default"
 rp_module_section="config"
 
-source $scriptdir/scriptmodules/supplementary/emulationstation.sh
-
 function gui_controlreset() {
     local cmd=(dialog --backtitle "$__backtitle" --menu "Controller Reset" 22 86 16)
     local options=(
@@ -24,8 +22,12 @@ function gui_controlreset() {
     if [[ -n "$choice" ]]; then
         case "$choice" in
             1)
-                clear_input_emulationstation
-                sleep 3
+                rm -rf /opt/retroarena/configs/all/retroarch-joypads/*
+                rm -rf $HOME/.emulationstation/es_input.cfg
+                wget $HOME/.emulationstation/es_input.cfg https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/scriptmodules/supplementary/emulationstation/es_input_reset.cfg
+                dos2unix $HOME/.emulationstation/es_input.cfg
+                chmod a+x $HOME/.emulationstation/es_input.cfg
+                chown pigaming:pigaming $HOME/.emulationstation/es_input.cfg
                 sudo reboot
                 ;;
         esac
