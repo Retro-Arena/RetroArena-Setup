@@ -13,7 +13,7 @@ rp_module_id="controlreset"
 rp_module_desc="Reset controller configurations to factory default"
 rp_module_section="config"
 
-source ./$scriptdir/scriptmodules/supplementary/emulationstation.sh
+source $scriptdir/scriptmodules/supplementary/emulationstation.sh
 
 function gui_controlreset() {
     local cmd=(dialog --backtitle "$__backtitle" --menu "Controller Reset" 22 86 16)
