@@ -183,7 +183,7 @@ function randomize_splashscreen() {
     iniConfig "=" '"' "$md_inst/asplashscreen.sh"
     case "$choice" in
         1)
-            iniSet "RANDOMIZE" "RetroArena"
+            iniSet "RANDOMIZE" "retroarena"
             printMsgs "dialog" "Splashscreen randomizer enabled in directory $path"
             ;;
         2)
@@ -237,7 +237,7 @@ function preview_splashscreen() {
                 3)
                     file=$(choose_splashscreen "$path" "video")
                     [[ -z "$file" ]] && break
-                    mplayer -vo fbdev -fs "$file"
+                    omxplayer -b --layer 10000 "$file"
                     ;;
             esac
         done
