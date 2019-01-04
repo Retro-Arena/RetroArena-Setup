@@ -23,14 +23,9 @@ function gui_bgmtoggle() {
     if [[ -n "$choice" ]]; then
         case "$choice" in
             1)
-                if [[ ! -f "$HOME/.config/bgmtoggle" ]]; then
-                    (mpg123 -f 18000 -Z /home/pigaming/bgm/*.mp3 >/dev/null 2>&1)
-                    pkill -CONT mpg123
-                else
-                    pkill -CONT mpg123
-                fi
+                pkill -CONT mpg123
                 touch "$HOME/.config/bgmtoggle"
-                printMsgs "dialog" "Background music is now enabled."
+                printMsgs "dialog" "Background music is now enabled.\n\nIf you don't hear music, a reboot is required."
                 ;;
             2)
                 pkill -STOP mpg123
