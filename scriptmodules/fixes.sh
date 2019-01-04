@@ -9,5 +9,8 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-
-
+if [[ ! -f $home/.config/update001 ]]; then
+    wget -O $configdir/all/autostart.sh https://pastebin.com/raw/iTw37k4F
+    dos2unix $configdir/all/autostart.sh
+    touch $HOME/.config/update001
+fi
