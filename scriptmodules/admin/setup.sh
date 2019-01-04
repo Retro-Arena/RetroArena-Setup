@@ -91,7 +91,7 @@ function updatescript_setup()
 {
     clear
     chown -R $user:$user "$scriptdir"
-    printHeading "Fetching latest version of the RetroArena Setup Script."
+    printHeading "Updating the setup script..."
     pushd "$scriptdir" >/dev/null
     if [[ ! -d ".git" ]]; then
         printMsgs "dialog" "Cannot find directory '.git'. Please clone the RetroArena Setup script via 'git clone https://github.com/Retro-Arena/RetroArena-Setup.git'"
@@ -106,7 +106,7 @@ function updatescript_setup()
     fi
     popd >/dev/null
 
-    printMsgs "dialog" "Fetched the latest version of the RetroArena Setup script."
+    printMsgs "dialog" "Setup script is now updated..."
     return 0
 }
 
@@ -131,7 +131,7 @@ function post_update_setup() {
     } &> >(tee >(gzip --stdout >"$logfilename"))
     rps_printInfo "$logfilename"
 
-    printMsgs "dialog" "NOTICE: The RetroArena-Setup script and pre-made RetroArena SD card images are available to download for free from https://RetroArena.org.uk.\n\nThe pre-built RetroArena image includes software that has non commercial licences. Selling RetroArena images or including RetroArena with your commercial product is not allowed.\n\nNo copyrighted games are included with RetroArena.\n\nIf you have been sold this software, you can let us know about it by emailing RetroArenaproject@gmail.com."
+    printMsgs "dialog" "NOTICE: The RetroArena-Setup script and pre-made RetroArena SD card images are available to download for free from https://theretroarena.com\n\nThe pre-built RetroArena image includes software that has non commercial licences. Selling RetroArena images or including RetroArena with your commercial product is not allowed.\n\nNo copyrighted games are included with RetroArena.\n\nIf you have been sold this software, you can let us know about it by emailing therealretroarena@outlook.com"
 
     # return to set return function
     "${return_func[@]}"
