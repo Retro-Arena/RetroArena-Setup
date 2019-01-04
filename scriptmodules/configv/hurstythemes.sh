@@ -280,6 +280,8 @@ function gui_hurstythemes() {
         'RetroHursty69 merryxmas'
         'RetroHursty69 minecraft'
         'RetroHursty69 minions'
+        'RetroHursty69 NegativeColor'
+        'RetroHursty69 NegativeSepia'
         'RetroHursty69 neogeo_only'
         'RetroHursty69 pacman'
         'RetroHursty69 pitube'
