@@ -500,23 +500,16 @@ function gui_setup() {
 
         cmd=(dialog --backtitle "$__backtitle" --title "RetroArena-Setup Script" --cancel-label "Exit" --item-help --help-button --default-item "$default" --menu "Version: $__version\nLast Commit: $commit" 22 76 16)
         options=(
-            #I "Basic install" "I This will install all packages from Core and Main which gives a basic RetroArena install. Further packages can then be installed later from the Optional and Experimental sections. If binaries are available they will be used, alternatively packages will be built from source - which will take longer."
+            U "Update Scripts"
+            "U Update the RetroArena-Setup script to the latest version."
 
-            #U "Update" "U Updates RetroArena-Setup and all currently installed packages. Will also allow to update OS packages. If binaries are available they will be used, otherwise packages will be built from source."
+            P "Packages"
+            "P Install/uninstall Libretro and standalone emulators, ports, controller drivers, scrapers, and other packages."
 
-            #X "Uninstall RetroArena"
-            #"X Uninstall RetroArena completely."
+            S "Settings"
+            "S Configure settings. Any packages you have installed that have additional configuration options will also appear here."
 
-            S "Update RetroArena-Setup script"
-            "S Update this RetroArena-Setup script. This will update this main management script only, but will not update any software packages."
-
-            P "Manage packages"
-            "P Install/Remove and Configure the various components of RetroArena, including emulators, ports, and controller drivers."
-
-            C "Configuration / tools"
-            "C Configuration and Tools. Any packages you have installed that have additional configuration options will also appear here."
-
-            R "Perform reboot"
+            R "Reboot"
             "R Reboot your machine."
         )
 
@@ -533,45 +526,18 @@ function gui_setup() {
         default="$choice"
 
         case "$choice" in
-            I)
-                dialog --defaultno --yesno "Are you sure you want to do a basic install?\n\nThis will install all packages from the 'Core' and 'Main' package sections." 22 76 2>&1 >/dev/tty || continue
-                clear
-                local logfilename
-                __ERRMSGS=()
-                __INFMSGS=()
-                rps_logInit
-                {
-                    rps_logStart
-                    basic_install_setup
-                    rps_logEnd
-                } &> >(tee >(gzip --stdout >"$logfilename"))
-                rps_printInfo "$logfilename"
-                ;;
             U)
-                update_packages_gui_setup
-                ;;
-            P)
-                packages_gui_setup
-                ;;
-            C)
-                config_gui_setup
-                ;;
-            S)
                 dialog --defaultno --yesno "Are you sure you want to update the RetroArena-Setup script ?" 22 76 2>&1 >/dev/tty || continue
                 if updatescript_setup; then
                     joy2keyStop
                     exec "$scriptdir/retroarena_packages.sh" setup post_update gui_setup
                 fi
                 ;;
-            X)
-                local logfilename
-                __ERRMSGS=()
-                __INFMSGS=()
-                rps_logInit
-                {
-                    uninstall_setup
-                } &> >(tee >(gzip --stdout >"$logfilename"))
-                rps_printInfo "$logfilename"
+            P)
+                packages_gui_setup
+                ;;
+            S)
+                config_gui_setup
                 ;;
             R)
                 dialog --defaultno --yesno "Are you sure you want to reboot?\n\nNote that if you reboot when Emulation Station is running, you will lose any metadata changes." 22 76 2>&1 >/dev/tty || continue
