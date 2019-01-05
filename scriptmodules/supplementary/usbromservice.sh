@@ -111,7 +111,7 @@ function sync_usbromservice() {
         echo "---------------------------------------------------"
         echo "Sync is now starting..............................."
         rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "$home/RetroArena/roms/" "/media/usb0/retroarena/roms/"
-        printMsgs "dialog" "Sync completed! Once rebooted, it will automatically mount the USB drive. Press OK to reboot!"
+        printMsgs "dialog" "Sync completed!\n\nOnce rebooted, it will automatically mount the USB drive.\n\nPress OK to reboot!"
         reboot
     else
         printMsgs "dialog" "USB drive is not mounted"
