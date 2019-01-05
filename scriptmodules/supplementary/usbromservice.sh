@@ -118,7 +118,6 @@ function sync_usbromservice() {
     fi
 }
 
-
 function gui_usbromservice() {
     local cmd
     local options
