@@ -22,7 +22,7 @@ function _update_hook_usbromservice() {
     [[ ! -f "$md_inst/disabled" ]] && install_scripts_usbromservice
 }
 
-function depends_usbromservice() {
+function install_bin_usbromservice() {
     local depends=(rsync ntfs-3g exfat-fuse)
     if ! hasPackage usbmount $(_get_ver_usbromservice); then
         depends+=(debhelper devscripts pmount lockfile-progs)
@@ -34,9 +34,7 @@ function depends_usbromservice() {
         rm -f ../usbmount_*
         rm -rf "$md_build"
     fi
-}
-
-function install_bin_usbromservice() {
+    
     [[ ! -f "$md_inst/disabled" ]] && install_scripts_usbromservice
     touch "$md_inst/installed"
 }
@@ -88,6 +86,39 @@ function configure_usbromservice() {
     fi
 }
 
+function createdir_usbromservice() {
+    if ls -la /var/run/usbmount | grep "\->" >/dev/null; then
+        if [[ ! -d "/media/usb0/retroarena/roms" ]]; then
+            mkdir -p "/media/usb0/retroarena" "/media/usb0/retroarena/roms"
+            printMsgs "dialog" "Directories created on USB drive: 'retroarena/roms'"
+        else
+            printMsgs "dialog" "Directories 'retroarena/roms' already exists!"
+        fi
+    else
+        printMsgs "dialog" "USB drive is not mounted"
+    fi
+}
+
+function sync_usbromservice() {
+    if ls -la /var/run/usbmount | grep "\->" >/dev/null; then
+        if [[ ! -d "/media/usb0/retroarena/roms" ]]; then
+            mkdir -p "/media/usb0/retroarena" "/media/usb0/retroarena/roms"
+        fi
+        echo "---------------------------------------------------"
+        echo "Unmounting '$home/RetroArena/roms'........"
+        umount -l "$home/RetroArena/roms"
+        cd ~
+        echo "---------------------------------------------------"
+        echo "Sync is now starting..............................."
+        rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "$home/RetroArena/roms/" "/media/usb0/retroarena/roms/"
+        printMsgs "dialog" "Sync completed! Once rebooted, it will automatically mount the USB drive. Press OK to reboot!"
+        reboot
+    else
+        printMsgs "dialog" "USB drive is not mounted"
+    fi
+}
+
+
 function gui_usbromservice() {
     local cmd
     local options
@@ -95,18 +126,25 @@ function gui_usbromservice() {
     while true; do
         cmd=(dialog --backtitle "$__backtitle" --menu "Choose from an option below." 22 86 16)
         options=(
-            1 "Enable USB ROM Service scripts"
-            2 "Disable USB ROM Service scripts"
+            1 "Sync from SD to USB 'roms'"
+            2 "Create 'retroarena/roms' directories only"
+            3 "Enable USB ROM Service"
+            4 "Disable USB ROM Service"
         )
         choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         if [[ -n "$choice" ]]; then
             case "$choice" in
                 1)
-                    rp_callModule "$md_id" depends
-                    rp_callModule "$md_id" enable
-                    printMsgs "dialog" "Enabled $md_desc"
+                    sync_usbromservice
                     ;;
                 2)
+                    createdir_usbromservice
+                    ;;
+                3)
+                    rp_callModule "$md_id" enable
+                    printMsgs "dialog" "Enabled $md_desc\n\nOnly 'retroarena/roms' directory will be mounted on the USB drive.\n\nAll other directories will remain in the SD card, including: 'BIOS', 'settingsmenu', and 'splashscreens'."
+                    ;;
+                4)
                     rp_callModule "$md_id" disable
                     printMsgs "dialog" "Disabled $md_desc"
                     ;;

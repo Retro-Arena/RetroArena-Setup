@@ -10,12 +10,12 @@
 #
 
 ## config / defaults
-user="USERTOBECHOSEN"
+user="pigaming"
 
 home="$(eval echo ~$user)"
-retroarena_path="$home/RetroArena"
+retroarena_path="$home/RetroArena/roms"
 
-usb_path="$UM_MOUNTPOINT/retroarena-mount/roms"
+usb_path="$UM_MOUNTPOINT/retroarena/roms"
 
 ## internals
 hook_name=${0##*/}
@@ -47,11 +47,6 @@ fi
 # check for a retroarena-mount folder
 if [[ ! -d "$usb_path" ]]; then
     exit 0
-fi
-
-if [[ -z "$(ls -A "$usb_path")" ]]; then
-    log info "Copying existing $retroarena_path to $usb_path ..."
-    log_cmd rsync -rtu "$retroarena_path/" "$usb_path/"
 fi
 
 log info "Mounting $usb_path over $retroarena_path ..."
