@@ -25,7 +25,7 @@ function gui_bgmtoggle() {
             1)
                 pkill -CONT mpg123
                 touch "$HOME/.config/bgmtoggle"
-                printMsgs "dialog" "Background music is now enabled.\n\nIf you don't hear music, a reboot is required."
+                printMsgs "dialog" "Background music is now enabled."
                 ;;
             2)
                 pkill -STOP mpg123
