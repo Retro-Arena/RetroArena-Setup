@@ -12,7 +12,7 @@ rp_module_section=""
 rp_module_flags="noinstclean"
 
 function _get_goroot_golang() {
-    echo "$rootdir/tools/golang"
+    echo "$rootdir/supplementary/golang"
 }
 
 function install_bin_golang() {
