@@ -44,12 +44,14 @@ function uninstall_theme_esthemes() {
 
 function gui_esthemes() {
     local themes=(
-        'Retro-Arena showcase'
-        'Retro-Arena unified'
         'Retro-Arena ghc'
         'Retro-Arena greatest-hits'
         'Retro-Arena greatest-hits-vertical'
+        'Retro-Arena megaman'
+        'Retro-Arena retroarena'
         'Retro-Arena rick-and-morty'
+        'Retro-Arena showcase'
+        'Retro-Arena unified'
         'Retro-Arena wiitro-arena'
         'ehettervik pixel'
         'ehettervik pixel-metadata'

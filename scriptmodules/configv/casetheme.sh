@@ -19,6 +19,7 @@ function gui_casetheme() {
         1 "Retro-Arena/ogst-retroarena (manning)"
         2 "Retro-Arena/greatest-hits (waweedman)"
         3 "Retro-Arena/wiitro-arena (waweedman)"
+        4 "Retro-Arena/hursty (hursty69)"
     )
     local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
     if [[ -n "$choice" ]]; then
@@ -41,6 +42,13 @@ function gui_casetheme() {
                 cd "$HOME/.emulationstation/ogst_themes"
                 rm -rf ogst-retroarena
                 sudo git clone https://github.com/Retro-Arena/ogst-wiitro-arena ogst-retroarena &> /dev/null
+                sudo chown -R pigaming:pigaming "$HOME/.emulationstation/ogst_themes/ogst-retroarena"
+                printMsgs "dialog" "Installed"
+                ;;
+            4)
+                cd "$HOME/.emulationstation/ogst_themes"
+                rm -rf ogst-retroarena
+                sudo git clone https://github.com/Retro-Arena/ogst-hursty ogst-retroarena &> /dev/null
                 sudo chown -R pigaming:pigaming "$HOME/.emulationstation/ogst_themes/ogst-retroarena"
                 printMsgs "dialog" "Installed"
                 ;;
