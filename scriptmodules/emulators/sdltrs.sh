@@ -20,7 +20,7 @@ function depends_sdltrs() {
 }
 
 function sources_sdltrs() {
-    gitPullOrClone "$md_build" https://github.com/Retro-Arena/sdltrs.git
+    gitPullOrClone "$md_build" https://github.com/RetroPie/sdltrs.git
 }
 
 function build_sdltrs() {
