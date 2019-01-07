@@ -19,7 +19,7 @@ function depends_tyrquake() {
 }
 
 function sources_tyrquake() {
-    gitPullOrClone "$md_build" https://github.com/Retro-Arena/tyrquake.git
+    gitPullOrClone "$md_build" https://github.com/RetroPie/tyrquake.git
 }
 
 function build_tyrquake() {
