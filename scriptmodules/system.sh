@@ -35,10 +35,10 @@ function setup_env() {
     fi
 
     # set location of binary downloads
-    __binary_host="theretroarena.com"
+    __binary_host="odroidarena.com/pub/binaries/v2"
     [[ "$__has_binaries" -eq 1 ]] && __binary_url="https://$__binary_host/binaries/$__os_codename/$__platform"
 
-    __archive_url="theretroarena.com"
+    __archive_url="https://files.retropie.org.uk/archives"
 
     # -pipe is faster but will use more memory - so let's only add it if we have more thans 256M free ram.
     [[ $__memory_phys -ge 512 ]] && __default_cflags+=" -pipe"
