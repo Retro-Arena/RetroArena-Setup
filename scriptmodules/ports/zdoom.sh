@@ -25,7 +25,7 @@ function depends_zdoom() {
 }
 
 function sources_zdoom() {
-    gitPullOrClone "$md_build" https://github.com/Retro-Arena/zdoom.git RetroArena
+    gitPullOrClone "$md_build" https://github.com/RetroPie/zdoom.git retropie
 }
 
 function build_zdoom() {
