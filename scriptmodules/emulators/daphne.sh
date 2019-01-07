@@ -21,7 +21,7 @@ function depends_daphne() {
 }
 
 function sources_daphne() {
-    gitPullOrClone "$md_build" https://github.com/Retro-Arena/daphne-emu.git RetroArena
+    gitPullOrClone "$md_build" https://github.com/RetroPie/daphne-emu.git retropie
 }
 
 function build_daphne() {
