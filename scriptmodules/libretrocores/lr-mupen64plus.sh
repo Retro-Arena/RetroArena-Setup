@@ -42,6 +42,7 @@ function sources_lr-mupen64plus() {
     # both needed until https://github.com/libretro/mupen64plus-libretro/pull/39 is accepted
     isPlatform "rpi" && applyPatch "$md_data/01_new_lib_names.diff"
     isPlatform "rpi" && applyPatch "$md_data/02_fix_build.diff"
+    isPlatform "mali" && applyPatch "$md_data/odroid.diff"
 }
 
 function build_lr-mupen64plus() {
@@ -50,7 +51,7 @@ function build_lr-mupen64plus() {
     if isPlatform "rpi"; then
         params+=(platform="$__platform")
     elif isPlatform "mali"; then
-        params+=(platform="odroid")
+        params+=(platform="unix odroid")
     else
         isPlatform "arm" && params+=(WITH_DYNAREC=arm)
         isPlatform "neon" && params+=(HAVE_NEON=1)
