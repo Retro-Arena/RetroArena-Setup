@@ -16,7 +16,9 @@ rp_module_section="lr"
 rp_module_flags=""
 
 function sources_lr-px68k() {
-    gitPullOrClone "$md_build" https://github.com/libretro/px68k-libretro.git
+    local commit
+    isPlatform "mali" && commit=("master c36fafd35094df918f037bea333d7707e656128a")
+    gitPullOrClone "$md_build" https://github.com/libretro/px68k-libretro.git ${commit[0]}
 }
 
 function build_lr-px68k() {
