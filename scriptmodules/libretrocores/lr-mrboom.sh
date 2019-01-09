@@ -16,7 +16,9 @@ rp_module_licence="MIT https://raw.githubusercontent.com/libretro/mrboom-libretr
 rp_module_section="lr"
 
 function sources_lr-mrboom() {
-    gitPullOrClone "$md_build" https://github.com/libretro/mrboom-libretro.git
+     local commit
+    isPlatform "mali" && commit=("master ecd8617a3a800915eb4138113e5f2bacc1c7fb2c")
+    gitPullOrClone "$md_build" https://github.com/libretro/mrboom-libretro.git ${commit[0]}
 }
 
 function build_lr-mrboom() {
