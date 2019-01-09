@@ -51,7 +51,7 @@ function configure_openbor() {
     mkUserDir "$configdir/openbor/ScreenShots"
     mkUserDir "$configdir/openbor/Saves"
     addSystem "openbor"
-    addEmulator 1 "$md_id" "openbor" "pushd $md_inst; $md_inst/OpenBOR %ROM%; popd"
+    addEmulator 1 "$md_id" "openbor" "pushd $md_inst; $md_inst/openbor %ROM%; popd"
     ln -snf "/dev/shm" "$md_inst/Logs"
     ln -snf "/home/pigaming/RetroArena/roms/openbor" "$md_inst/Paks"
     ln -snf "$configdir/openbor/ScreenShots" "$md_inst/ScreenShots"
