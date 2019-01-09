@@ -30,14 +30,14 @@ function build_openbor() {
     make clean-all BUILD_PANDORA=1
     patch -p0 -i ./patch/latest_build.diff
     make "${params[@]}"
-    md_ret_require="$md_build/OpenBOR"
+    md_ret_require="$md_build/openbor"
     wget -q --show-progress "http://raw.githubusercontent.com/crcerror/OpenBOR-63xx-RetroPie-openbeta/master/libGL-binary/libGL.so.1.gz"
     gunzip -f libGL.so.1.gz
 }
 
 function install_openbor() {
     md_ret_files=(
-       'OpenBOR'
+       'openbor'
        'libGL.so.1'
     )
 }
