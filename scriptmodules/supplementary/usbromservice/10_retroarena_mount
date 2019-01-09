@@ -9,9 +9,6 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-## ntfs mount fix
-umount /dev/sda1
-
 ## config / defaults
 user="pigaming"
 
