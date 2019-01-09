@@ -30,14 +30,14 @@ function build_openbor() {
     make clean-all BUILD_PANDORA=1
     patch -p0 -i ./patch/latest_build.diff
     make "${params[@]}"
-    md_ret_require="$md_build/openbor"
+    md_ret_require="$md_build/OpenBOR"
     wget -q --show-progress "http://raw.githubusercontent.com/crcerror/OpenBOR-63xx-RetroPie-openbeta/master/libGL-binary/libGL.so.1.gz"
     gunzip -f libGL.so.1.gz
 }
 
 function install_openbor() {
     md_ret_files=(
-       'openbor'
+       'OpenBOR'
        'libGL.so.1'
     )
 }
@@ -52,8 +52,9 @@ function configure_openbor() {
     mkUserDir "$configdir/openbor/Saves"
     addSystem "openbor"
     addEmulator 1 "$md_id" "openbor" "pushd $md_inst; $md_inst/openbor %ROM%; popd"
+    mv "$md_inst/OpenBOR" "$md_inst/openbor"
     ln -snf "/dev/shm" "$md_inst/Logs"
-    ln -snf "/home/pigaming/RetroArena/roms/openbor" "$md_inst/Paks"
+    ln -snf "$home/RetroArena/roms/openbor" "$md_inst/Paks"
     ln -snf "$configdir/openbor/ScreenShots" "$md_inst/ScreenShots"
     ln -snf "$configdir/openbor/Saves" "$md_inst/Saves"
 }
