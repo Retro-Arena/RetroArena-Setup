@@ -1015,7 +1015,7 @@ function bios_check() {
     if [[ "$SYSTEM" =~ ^("naomi"|"atomiswave")$ ]]; then
         for filename in airlbios awbios f355bios f355dlx hod2bios naomi; do
             if [[ ! -f "$BIOS/dc/$filename.zip" ]]; then
-                dialog --no-cancel --pause "REQUIRED BIOS FILES\n\nCopy airlbios.zip, awbios.zip, f355bios.zip, f355dlx.zip, hod2bios.zip, and naomi.zip from the Mame BIOS pack to the internal SD card:\n\n$BIOS/dc\n\nIn addition, an update to lr-reicast from binary or source is required.\n\nCheck http://bit.do/lr-reicast for more information." 22 76 15
+                dialog --no-cancel --pause "REQUIRED BIOS FILES\n\nCopy airlbios.zip, awbios.zip, f355bios.zip, f355dlx.zip, hod2bios.zip, and naomi.zip from the Mame BIOS pack to the internal SD card:\n\n$BIOS/dc\n\nIn addition, an update to lr-reicast from binary or source is required.\n\nCheck https://github.com/Retro-Arena/RetroArena-Setup/wiki for more information." 22 76 15
                 clear
                 user_script "runcommand-onend.sh"
                 exit 1
@@ -1030,7 +1030,7 @@ function bios_check() {
     if [[ "$SYSTEM" == "dreamcast" ]]; then
         for filename in dc_boot dc_flash; do
             if [[ ! -f "$BIOS/dc/$filename.bin" ]]; then
-                dialog --no-cancel --pause "REQUIRED BIOS FILES\n\nCopy dc_boot.bin and dc_flash.bin to the internal SD card:\n\n$BIOS/dc\n\nCheck http://bit.do/lr-reicast for more information." 22 76 15
+                dialog --no-cancel --pause "REQUIRED BIOS FILES\n\nCopy dc_boot.bin and dc_flash.bin to the internal SD card:\n\n$BIOS/dc\n\nCheck https://github.com/Retro-Arena/RetroArena-Setup/wiki for more information." 22 76 15
                 clear
                 user_script "runcommand-onend.sh"
                 exit 1
