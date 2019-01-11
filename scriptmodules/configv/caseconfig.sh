@@ -27,6 +27,7 @@ function gui_caseconfig() {
         9 "Skraper Screenshot     roms/system/media/images/ROM.png"
         10 "Selph's Marquee        roms/system/images/ROM-marquee.png"
         11 "Selph's Screenshot     roms/system/images/ROM-image.jpg"
+        12 "Disabled               disables the screen permanently"
     )
     local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
     if [[ -n "$choice" ]]; then
@@ -34,57 +35,71 @@ function gui_caseconfig() {
             1)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst001
-                printMsgs "dialog" "Option 1 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
                 ;;
             2)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst002
-                printMsgs "dialog" "Option 2 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
                 ;;
             3)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst003
-                printMsgs "dialog" "Option 3 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
                 ;;
             4)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst004
-                printMsgs "dialog" "Option 4 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
                 ;;
             5)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst005
-                printMsgs "dialog" "Option 5 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
                 ;;
             6)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst006
-                printMsgs "dialog" "Option 6 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
                 ;;
             7)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst007
-                printMsgs "dialog" "Option 7 Activated"
+                printMsgs "dialog" "Activated"
                 ;;
             8)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst008
-                printMsgs "dialog" "Option 8 Activated"
+                printMsgs "dialog" "Activated"
                 ;;
             9)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst009
-                printMsgs "dialog" "Option 9 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
                 ;;
             10)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst010
-                printMsgs "dialog" "Option 10 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
                 ;;
             11)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst011
-                printMsgs "dialog" "Option 11 Activated"
+                touch /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Activated"
+                ;;
+            12)
+                rm -rf $HOME/.config/ogst*
+                rm -rf /usr/local/share/ogst/ogst000
+                printMsgs "dialog" "Disabled. Case image will no longer display."
                 ;;
         esac
     fi

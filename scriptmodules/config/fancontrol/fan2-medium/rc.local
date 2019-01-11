@@ -14,10 +14,12 @@
 if [ -f /aafirstboot ]; then /aafirstboot start ; fi
 
 "/opt/retroarena/supplementary/retroarena-manager/rpmanager.sh" --start --user pigaming 2>&1 > /dev/shm/rpmanager.log &
-sudo cp -r /home/pigaming/RetroArena-Setup/scriptmodules/config/fan/fan2-medium/* /sys/devices/odroid_fan.14 &
+sudo cp -r /home/pigaming/RetroArena-Setup/scriptmodules/config/fancontrol/fan2-medium/* /sys/devices/odroid_fan.14 &
 
-modprobe spi_s3c64xx force32b=1
-modprobe fbtft_device name=hktft9340 busnum=1 rotate=270
-mplayer -nolirc -vo fbdev2:/dev/fb1 /usr/local/share/ogst/boot.gif -x 320 -y 240 -zoom
+if ls /usr/local/share/ogst/ogst000 1> /dev/null 2>&1; then
+    modprobe spi_s3c64xx force32b=1
+    modprobe fbtft_device name=hktft9340 busnum=1 rotate=270
+    mplayer -nolirc -vo fbdev2:/dev/fb1 /usr/local/share/ogst/boot.gif -x 320 -y 240 -zoom
+fi
 
 exit 0

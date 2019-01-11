@@ -1055,7 +1055,18 @@ function ogst_off() {
     fi
 }
 
-function ogst_emu() {
+function ogst_loading() {
+    OGST="$HOME/.emulationstation/ogst_themes/ogst-retroarena"
+    if ! lsmod | grep -q 'fbtft_device'; then
+        sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
+        mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
+    else
+        mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
+    fi
+}
+
+function ogst_play() {
+    # wait until process loads
     if [[ $EMULATOR == reicast* ]]; then
         EMU_PROC="reicast"
     elif [[ $EMULATOR == ppsspp ]]; then
@@ -1098,12 +1109,18 @@ function ogst_emu() {
     else
         EMU_PROC="$EMULATOR"
     fi  
-
+    
     until pids=$(pidof $EMU_PROC)
     do
         sleep 1
     done
-
+    
+    # turn on lcd if turned off
+    if ! lsmod | grep -q 'fbtft_device'; then
+        sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
+    fi
+    
+    # load image
     OGST="$HOME/.emulationstation/ogst_themes/ogst-retroarena"
     MNB_BA="$HOME/RetroArena/roms/$SYSTEM/boxart"
     MNB_CA="$HOME/RetroArena/roms/$SYSTEM/cartart"
@@ -1115,113 +1132,111 @@ function ogst_emu() {
     SKP_SS="$HOME/RetroArena/roms/$SYSTEM/media/images"
     SLP_MQ="$HOME/RetroArena/roms/$SYSTEM/images"
     SLP_SS="$HOME/RetroArena/roms/$SYSTEM/images"
-
+    
     for pid in $pids; do
         sleep 3
-        if ! lsmod | grep -q 'fbtft_device'; then
-            sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
-            if [[ -e "$HOME/.config/ogst001" ]]; then
-                if [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        if [[ -e "$HOME/.config/ogst001" ]]; then
+            if [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst002" ]]; then
-                if [[ -e "$MNB_BA/$ROM_BN.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_BA/$ROM_BN.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst002" ]]; then
+            if [[ -e "$MNB_BA/$ROM_BN.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_BA/$ROM_BN.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst003" ]]; then
-                if [[ -e "$MNB_CA/$ROM_BN.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_CA/$ROM_BN.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst003" ]]; then
+            if [[ -e "$MNB_CA/$ROM_BN.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_CA/$ROM_BN.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst004" ]]; then
-                if [[ -e "$MNB_SP/$ROM_BN.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$MNB_SP/$ROM_BN.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst004" ]]; then
+            if [[ -e "$MNB_SP/$ROM_BN.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$MNB_SP/$ROM_BN.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst005" ]]; then
-                if [[ -e "$MNB_WL/$ROM_BN.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_WL/$ROM_BN.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst005" ]]; then
+            if [[ -e "$MNB_WL/$ROM_BN.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_WL/$ROM_BN.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst006" ]]; then
-                if [[ -e "$SKY_MQ/$ROM_BN.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SKY_MQ/$ROM_BN.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst006" ]]; then
+            if [[ -e "$SKY_MQ/$ROM_BN.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SKY_MQ/$ROM_BN.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst007" ]]; then
-                if [[ -e "$SKY_SS/$ROM_BN.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$SKY_SS/$ROM_BN.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst007" ]]; then
+            if [[ -e "$SKY_SS/$ROM_BN.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$SKY_SS/$ROM_BN.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst008" ]]; then
-                if [[ -e "$SKP_MQ/$ROM_BN.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SKP_MQ/$ROM_BN.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst008" ]]; then
+            if [[ -e "$SKP_MQ/$ROM_BN.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SKP_MQ/$ROM_BN.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst009" ]]; then
-                if [[ -e "$SKP_SS/$ROM_BN.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$SKP_SS/$ROM_BN.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst009" ]]; then
+            if [[ -e "$SKP_SS/$ROM_BN.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$SKP_SS/$ROM_BN.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst010" ]]; then
-                if [[ -e "$SLP_MQ/$ROM_BN-marquee.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SLP_MQ/$ROM_BN-marquee.png" &> /dev/null
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst010" ]]; then
+            if [[ -e "$SLP_MQ/$ROM_BN-marquee.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SLP_MQ/$ROM_BN-marquee.png" &> /dev/null
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
-            if [[ -e "$HOME/.config/ogst011" ]]; then
-                if [[ -e "$SLP_SS/$ROM_BN-image.jpg" ]]; then
-                    convert "$SLP_SS/$ROM_BN-image.jpg" "$HOME/.config/$ROM_BN-image.png"
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$HOME/.config/$ROM_BN-image.png" &> /dev/null
-                    rm -rf "$HOME/.config/$ROM_BN-image.png"
-                elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
-                else
-                    mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
-                fi
+        fi
+        if [[ -e "$HOME/.config/ogst011" ]]; then
+            if [[ -e "$SLP_SS/$ROM_BN-image.jpg" ]]; then
+                convert "$SLP_SS/$ROM_BN-image.jpg" "$SLP_SS/$ROM_BN-image.png"
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$SLP_SS/$ROM_BN-image.png" &> /dev/null
+                rm -rf "$SLP_SS/$ROM_BN-image.png"
+            elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
+            else
+                mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
     done
     
+    # exit process
     while kill -0 "$pids" >/dev/null 2>&1; do
         sleep 1
     done
@@ -1231,6 +1246,18 @@ function ogst_emu() {
     else
         sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
         mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/es.png" &> /dev/null
+    fi
+}
+
+function ogst_emu() {
+    if ls /usr/local/share/ogst/ogst000 1> /dev/null 2>&1; then
+        if [[ "$EMULATOR" =~ ^(lr.*|ppsspp)$ ]]; then
+            ogst_loading
+            ogst_play
+        else
+            ogst_off
+            ogst_play
+        fi
     fi
 }
 
@@ -1252,7 +1279,6 @@ function runcommand() {
     user_script "runcommand-onstart.sh"
     
     bios_check
-    ogst_off
     ogst_emu &
 
     set_save_vars
