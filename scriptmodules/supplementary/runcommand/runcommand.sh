@@ -1253,6 +1253,7 @@ function ogst_emu() {
     if ls /usr/local/share/ogst/ogst000 1> /dev/null 2>&1; then
         if [[ "$EMULATOR" =~ ^(lr.*|ppsspp)$ ]]; then
             ogst_loading
+            ogst_off
             ogst_play
         else
             ogst_off
