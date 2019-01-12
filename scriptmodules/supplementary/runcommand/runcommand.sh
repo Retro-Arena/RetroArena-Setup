@@ -1114,11 +1114,10 @@ function ogst_play() {
     do
         sleep 1
     done
-    
-    # turn on lcd if turned off
-    if ! lsmod | grep -q 'fbtft_device'; then
-        sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
-    fi
+
+    # cycle off then on screen
+    sudo rmmod fbtft_device &> /dev/null
+    sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
     
     # load image
     OGST="$HOME/.emulationstation/ogst_themes/ogst-retroarena"
@@ -1253,7 +1252,6 @@ function ogst_emu() {
     if ls /usr/local/share/ogst/ogst000 1> /dev/null 2>&1; then
         if [[ "$EMULATOR" =~ ^(lr.*|ppsspp)$ ]]; then
             ogst_loading
-            ogst_off
             ogst_play
         else
             ogst_off
