@@ -1260,6 +1260,8 @@ function ogst_emu() {
             ogst_off
             ogst_play
         fi
+    else
+        ogst_off
     fi
 }
 
