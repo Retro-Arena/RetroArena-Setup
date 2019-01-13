@@ -1134,8 +1134,10 @@ function ogst_play() {
         # turn on lcd if turned off
         if ! lsmod | grep -q 'fbtft_device'; then
             sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
-            mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/blank.png" &> /dev/null
         fi
+        
+        # clears the screen
+        mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/blank.png" &> /dev/null
         
         if [[ -e "$HOME/.config/ogst001" ]]; then
             if [[ -e "$OGST/system-$SYSTEM.png" ]]; then
