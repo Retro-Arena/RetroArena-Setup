@@ -36,70 +36,73 @@ function gui_caseconfig() {
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst001
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena/ROM.png"
+                printMsgs "dialog" "Enabled Console System\n\nCase image will load from:\n\n/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena/ROM.png"
                 ;;
             2)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst002
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/boxart/ROM.png"
+                printMsgs "dialog" "Enabled Motion Blue Boxart\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/boxart/ROM.png"
                 ;;
             3)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst003
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/cartart/ROM.png"
+                printMsgs "dialog" "Enabled Motion Blue Cartart\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/cartart/ROM.png"
                 ;;
             4)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst004
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/snap/ROM.png"
+                printMsgs "dialog" "Enabled Motion Blue Snap\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/snap/ROM.png"
                 ;;
             5)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst005
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/wheel/ROM.png"
+                printMsgs "dialog" "Enabled Motion Blue Wheel\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/wheel/ROM.png"
                 ;;
             6)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst006
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/media/marquees/ROM.png"
+                printMsgs "dialog" "Enabled Skyscraper Marquee\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/media/marquees/ROM.png"
                 ;;
             7)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst007
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/media/screenshots/ROM.png"
+                printMsgs "dialog" "Enabled Skyscraper Screenshot\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/media/screenshots/ROM.png"
                 ;;
             8)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst008
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/media/marquee/ROM.png"
+                printMsgs "dialog" "Enabled Skraper Marquee\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/media/marquee/ROM.png"
                 ;;
             9)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst009
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/media/images/ROM.png"
+                printMsgs "dialog" "Enabled Skraper Screenshot\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/media/images/ROM.png"
                 ;;
             10)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst010
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/images/ROM-marquee.png"
+                printMsgs "dialog" "Enabled Selph's Marquee\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/images/ROM-marquee.png"
                 ;;
             11)
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst011
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/images/ROM-image.jpg"
+                printMsgs "dialog" "Enabled Selph's Screenshot\n\nCase image will load from:\n\n/home/pigaming/RetroArena/roms/SYSTEM/images/ROM-image.jpg"
                 ;;
             12)
+                if lsmod | grep -q 'fbtft_device'; then
+                    sudo rmmod fbtft_device &> /dev/null
+                fi
                 rm -rf $HOME/.config/ogst*
                 rm -rf /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Disabled\n\nCase image will no longer display"
+                printMsgs "dialog" "Disabled\n\nCase image will no longer display."
                 ;;
         esac
     fi
