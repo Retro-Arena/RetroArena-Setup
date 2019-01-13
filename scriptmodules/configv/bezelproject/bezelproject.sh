@@ -55,6 +55,12 @@ function install_bezel_pack() {
     fi
 
     git clone "https://github.com/$repo/bezelproject-$theme.git" "/tmp/${theme}"
+    
+    # replace retropie with retroarena prior to copying
+    cd "/tmp/${theme}"
+    find . -type f -name "*.cfg" -print0 | xargs -0 sed -i '' -e 's/retropie/retroarena/g' &>/dev/null
+    cd - &>/dev/null
+    
     cp -r "/tmp/${theme}/retroarch/" /opt/retroarena/configs/all/
     sudo rm -rf "/tmp/${theme}"
 
