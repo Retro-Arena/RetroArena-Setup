@@ -1114,12 +1114,7 @@ function ogst_play() {
     do
         sleep 1
     done
-
-    # turn on lcd if turned off
-    if ! lsmod | grep -q 'fbtft_device'; then
-        sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
-    fi
-    
+   
     # load image
     OGST="$HOME/.emulationstation/ogst_themes/ogst-retroarena"
     MNB_BA="$HOME/RetroArena/roms/$SYSTEM/boxart"
@@ -1135,7 +1130,13 @@ function ogst_play() {
     
     for pid in $pids; do
         sleep 3
-        mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/blank.png" &> /dev/null
+        
+        # turn on lcd if turned off
+        if ! lsmod | grep -q 'fbtft_device'; then
+            sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
+            mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/blank.png" &> /dev/null
+        fi
+        
         if [[ -e "$HOME/.config/ogst001" ]]; then
             if [[ -e "$OGST/system-$SYSTEM.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
