@@ -36,7 +36,7 @@ function gui_caseconfig() {
                 rm -rf $HOME/.config/ogst*
                 touch $HOME/.config/ogst001
                 touch /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Enabled Console System\n\nCase image will load from:\n\n/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena/ROM.png"
+                printMsgs "dialog" "Enabled Console System\n\nCase image will load from:\n\n/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena/system-SYSTEM.png"
                 ;;
             2)
                 rm -rf $HOME/.config/ogst*
@@ -102,7 +102,7 @@ function gui_caseconfig() {
                 fi
                 rm -rf $HOME/.config/ogst*
                 rm -rf /usr/local/share/ogst/ogst000
-                printMsgs "dialog" "Disabled\n\nCase image will no longer display."
+                printMsgs "dialog" "The display is now disabled, including subsequent reboots.\n\nTo re-enable the display, select another option."
                 ;;
         esac
     fi
