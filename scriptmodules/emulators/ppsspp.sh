@@ -32,8 +32,8 @@ function sources_ppsspp() {
     sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT://GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT:g' /usr/include/GLES2/gl2ext.h
     
     # CMakeLists.txt changes
-    sed -i -e 's:set(ARM ON):set(ARM ON)\n    add_definitions(-mfloat-abi=hard -marm -mtune=cortex-a15.cortex-a7 -mcpu=cortex-a15 -mfpu=neon-vfpv4 -fomit-frame-pointer -ftree-vectorize -mvectorize-with-neon-quad -ffast-math -DARM_NEON):g' "$md_build/ppsspp/CMakeLists.txt"
-    sed -i -e 's:set(VULKAN ON):set(VULKAN OFF):g' "$md_build/ppsspp/CMakeLists.txt"
+    #sed -i -e 's:set(ARM ON):set(ARM ON)\n    add_definitions(-mfloat-abi=hard -marm -mtune=cortex-a15.cortex-a7 -mcpu=cortex-a15 -mfpu=neon-vfpv4 -fomit-frame-pointer -ftree-vectorize -mvectorize-with-neon-quad -ffast-math -DARM_NEON):g' "$md_build/ppsspp/CMakeLists.txt"
+    #sed -i -e 's:set(VULKAN ON):set(VULKAN OFF):g' "$md_build/ppsspp/CMakeLists.txt"
 	
     # linux_arm.sh changes   
     sed -i -e 's:cc=arm-linux-gnueabi-gcc:cc=gcc:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
@@ -93,13 +93,14 @@ function configure_ppsspp() {
     local system
     for system in psp pspminis; do
         mkRomDir "$system"
-        moveConfigDir "$home/.config/ppsspp" "$md_conf_root/$system"
         mkUserDir "$md_conf_root/$system/PSP"
         ln -snf "$romdir/$system" "$md_conf_root/$system/PSP/GAME"
-        mkRomDir "$system"
         addEmulator 1 "$md_id" "$system" "$md_inst/PPSSPPSDL --fullscreen %ROM%"
         addSystem "$system"
     done
+    
+    moveConfigDir "$home/.config/ppsspp" "$md_conf_root/psp"
+    ln -snf "$md_conf_root/psp/PSP/SYSTEM" "$md_conf_root/pspminis/PSP/SYSTEM"
 	
     # gl2ext.h revert
     if [[ -e /usr/include/GLES2/gl2ext.h.org ]]; then
