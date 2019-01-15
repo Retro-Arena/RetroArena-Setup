@@ -10,51 +10,75 @@
 #
 
 rp_module_id="casetheme"
-rp_module_desc="Case theme selector for OGST - choose different theme packs when Console System is selected in Case Config."
+rp_module_desc="Install themes for OGST display"
 rp_module_section="config"
 
+function depends_casetheme() {
+    if isPlatform "x11"; then
+        getDepends feh
+    else
+        getDepends fbi
+    fi
+}
+
+function install_theme_casetheme() {
+    local theme="$1"
+    local repo="$2"
+    if [[ -z "$repo" ]]; then
+        repo="Retro-Arena"
+    fi
+    if [[ -z "$theme" ]]; then
+        theme="retroarena"
+        repo="Retro-Arena"
+    fi
+    mkdir -p "/home/pigaming/.emulationstation/ogst_themes"
+    gitPullOrClone "/home/pigaming/.emulationstation/ogst_themes/$theme" "https://github.com/$repo/ogst-$theme.git"
+    rm -rf "/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena"
+    mv "/home/pigaming/.emulationstation/ogst_themes/$theme" "/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena"
+}
+
 function gui_casetheme() {
+    local themes=(
+        'Retro-Arena retroarena'
+        'Retro-Arena greatest-hits'
+        'Retro-Arena wiitro-arena'
+        'Retro-Arena hursty'
+    )
     while true; do
-        local cmd=(dialog --backtitle "$__backtitle" --menu "OGST Case Theme Selector" 22 86 16)
-        local options=(
-            1 "Retro-Arena/ogst-retroarena (manning)"
-            2 "Retro-Arena/greatest-hits (waweedman)"
-            3 "Retro-Arena/wiitro-arena (waweedman)"
-            4 "Retro-Arena/hursty (hursty69)"
-        )
+        local theme
+        local installed_themes=()
+        local repo
+        local options=()
+        local status=()
+        local default
+        
+        status+=("n")
+        
+        local i=1
+        for theme in "${themes[@]}"; do
+            theme=($theme)
+            repo="${theme[0]}"
+            theme="${theme[1]}"
+            if [[ ! -d "/etc/emulationstation/themes/$theme" ]]; then
+                status+=("n")
+                options+=("$i" "Install $repo/$theme")
+            fi
+            ((i++))
+        done
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        default="$choice"
         [[ -z "$choice" ]] && break
-        if [[ -n "$choice" ]]; then
-            case "$choice" in
-                1)
-                    cd "$HOME/.emulationstation/ogst_themes"
-                    rm -rf ogst-retroarena
-                    sudo git clone https://github.com/Retro-Arena/ogst-retroarena ogst-retroarena &> /dev/null
-                    sudo chown -R pigaming:pigaming "$HOME/.emulationstation/ogst_themes/ogst-retroarena"
-                    printMsgs "dialog" "Installed"
-                    ;;
-                2)
-                    cd "$HOME/.emulationstation/ogst_themes"
-                    rm -rf ogst-retroarena
-                    sudo git clone https://github.com/Retro-Arena/ogst-greatest-hits ogst-retroarena &> /dev/null
-                    sudo chown -R pigaming:pigaming "$HOME/.emulationstation/ogst_themes/ogst-retroarena"
-                    printMsgs "dialog" "Installed"
-                    ;;
-                3)
-                    cd "$HOME/.emulationstation/ogst_themes"
-                    rm -rf ogst-retroarena
-                    sudo git clone https://github.com/Retro-Arena/ogst-wiitro-arena ogst-retroarena &> /dev/null
-                    sudo chown -R pigaming:pigaming "$HOME/.emulationstation/ogst_themes/ogst-retroarena"
-                    printMsgs "dialog" "Installed"
-                    ;;
-                4)
-                    cd "$HOME/.emulationstation/ogst_themes"
-                    rm -rf ogst-retroarena
-                    sudo git clone https://github.com/Retro-Arena/ogst-hursty ogst-retroarena &> /dev/null
-                    sudo chown -R pigaming:pigaming "$HOME/.emulationstation/ogst_themes/ogst-retroarena"
-                    printMsgs "dialog" "Installed"
-                    ;;
-            esac
-        fi
+        case "$choice" in
+            *)
+                theme=(${themes[choice-1]})
+                repo="${theme[0]}"
+                theme="${theme[1]}"
+                if [[ ! "${status[choice]}" == "i" ]]; then
+                    rp_callModule casetheme install_theme "$theme" "$repo"
+                    printMsgs "dialog" "$repo/$theme case theme installed"
+                fi
+                ;;
+        esac
     done
 }
