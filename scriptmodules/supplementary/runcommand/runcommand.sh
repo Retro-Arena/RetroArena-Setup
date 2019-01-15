@@ -1129,12 +1129,7 @@ function ogst_play() {
     SLP_SS="$HOME/RetroArena/roms/$SYSTEM/images"
     
     for pid in $pids; do
-        sleep 3
-        
-        # amiberry extra time
-        if [[ $EMULATOR == amiberry ]]; then
-            sleep 3
-        fi
+        sleep 10
         
         # turn on lcd if turned off
         if ! lsmod | grep -q 'fbtft_device'; then
