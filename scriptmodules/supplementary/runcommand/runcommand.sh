@@ -1128,9 +1128,7 @@ function ogst_play() {
     SLP_MQ="$HOME/RetroArena/roms/$SYSTEM/images"
     SLP_SS="$HOME/RetroArena/roms/$SYSTEM/images"
     
-    for pid in $pids; do
-        sleep 10
-        
+    for pid in $pids; do       
         # turn on lcd if turned off
         if ! lsmod | grep -q 'fbtft_device'; then
             sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
@@ -1257,9 +1255,11 @@ function ogst_emu() {
     if ls /usr/local/share/ogst/ogst000 1> /dev/null 2>&1; then
         if [[ "$EMULATOR" =~ ^(lr.*|ppsspp)$ ]]; then
             ogst_loading
+            sleep 1
             ogst_play
         else
             ogst_off
+            sleep 10
             ogst_play
         fi
     else
