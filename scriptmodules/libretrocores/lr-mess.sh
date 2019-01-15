@@ -40,6 +40,10 @@ function install_lr-mess() {
     )
 }
 
+function install_bin_lr-mess() {
+    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-mess.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-mess() {
     local module="$1"
     [[ -z "$module" ]] && module="mess_libretro.so"
