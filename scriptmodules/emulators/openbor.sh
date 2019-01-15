@@ -10,7 +10,7 @@
 #
 
 rp_module_id="openbor"
-rp_module_desc="OpenBOR - Beat 'em Up Game Engine"
+rp_module_desc="OpenBOR (v6510) - Beat 'em Up Game Engine"
 rp_module_help="Place your pak files in $romdir/openbor and launch from ES.\n\nUse a keyboard to configure controls."
 rp_module_licence="BSD https://raw.githubusercontent.com/crcerror/OpenBOR-Raspberry/master/LICENSE"
 rp_module_section="sa"
