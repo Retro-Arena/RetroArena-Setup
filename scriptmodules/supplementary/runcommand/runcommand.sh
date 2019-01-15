@@ -1131,6 +1131,11 @@ function ogst_play() {
     for pid in $pids; do
         sleep 3
         
+        # amiberry extra time
+        if [[ $EMULATOR == amiberry ]]; then
+            sleep 3
+        fi
+        
         # turn on lcd if turned off
         if ! lsmod | grep -q 'fbtft_device'; then
             sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
