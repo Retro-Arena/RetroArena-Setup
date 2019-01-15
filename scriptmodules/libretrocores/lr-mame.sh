@@ -47,6 +47,10 @@ function install_lr-mame() {
     )
 }
 
+function install_bin_lr-mame() {
+    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-mame.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-mame() {
     local system
     for system in arcade mame-libretro; do

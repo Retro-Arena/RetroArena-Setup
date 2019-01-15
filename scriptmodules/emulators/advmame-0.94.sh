@@ -36,6 +36,10 @@ function install_advmame-0.94() {
     make install
 }
 
+function install_bin_advmame-0.94() {
+    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/advmame-0.94.tar.gz" "$md_inst" 1
+}
+
 function configure_advmame-0.94() {
     # move any old configuration file
     if [[ -f "$md_conf_root/mame-advmame/advmame-0.94.0.rc" ]]; then
