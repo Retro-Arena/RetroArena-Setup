@@ -51,18 +51,13 @@ function gui_casetheme() {
         local options=()
         local status=()
         local default
-        
-        status+=("n")
-        
         local i=1
         for theme in "${themes[@]}"; do
             theme=($theme)
             repo="${theme[0]}"
             theme="${theme[1]}"
-            if [[ ! -d "/etc/emulationstation/themes/$theme" ]]; then
-                status+=("n")
-                options+=("$i" "Install $repo/$theme")
-            fi
+            status+=("n")
+            options+=("$i" "Install $repo/$theme")
             ((i++))
         done
         local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
