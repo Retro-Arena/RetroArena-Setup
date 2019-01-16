@@ -18,46 +18,25 @@ rp_module_flags="!armv6"
 
 function depends_reicast() {
     local depends=(libsdl2-dev python-dev python-pip alsa-oss python-setuptools libevdev-dev)
-    isPlatform "vero4k" && depends+=(vero3-userland-dev-osmc)
     getDepends "${depends[@]}"
     pip install evdev
 }
 
 function sources_reicast() {
-    if isPlatform "x11"; then
-        gitPullOrClone "$md_build" https://github.com/reicast/reicast-emulator.git
-    elif isPlatform "vero4k"; then
-        gitPullOrClone "$md_build" https://github.com/reicast/reicast-emulator.git
-    else
-        gitPullOrClone "$md_build" https://github.com/reicast/reicast-emulator.git
-    fi
+    gitPullOrClone "$md_build" https://github.com/reicast/reicast-emulator.git
     sed -i "s/CXXFLAGS += -fno-rtti -fpermissive -fno-operator-names/CXXFLAGS += -fno-rtti -fpermissive -fno-operator-names -D_GLIBCXX_USE_CXX11_ABI=0/g" shell/linux/Makefile
 }
 
 function build_reicast() {
     cd shell/linux
-    if isPlatform "rpi"; then
-        make platform=rpi2 clean
-        make platform=rpi2
-    elif isPlatform "tinker"; then
-        make USE_GLES=1 USE_SDL=1 clean
-        make USE_GLES=1 USE_SDL=1
-    else
-        make clean
-        make
-    fi
+    make clean
+    make
     md_ret_require="$md_build/shell/linux/reicast.elf"
 }
 
 function install_reicast() {
     cd shell/linux
-    if isPlatform "rpi"; then
-        make platform=rpi2 PREFIX="$md_inst" install
-    elif isPlatform "tinker"; then
-        make USE_GLES=1 USE_SDL=1 PREFIX="$md_inst" install
-    else
-        make PREFIX="$md_inst" install
-    fi
+    make PREFIX="$md_inst" install
     md_ret_files=(
         'LICENSE'
         'README.md'
@@ -97,17 +76,8 @@ _EOF_
     rm -f "$romdir/dreamcast/systemManager.cdi"
 
     # add system
-    # possible audio backends: alsa, oss, omx
-    if isPlatform "rpi"; then
-        addEmulator 1 "${md_id}-audio-omx" "dreamcast" "CON:$md_inst/bin/reicast.sh omx %ROM%"
-        addEmulator 0 "${md_id}-audio-oss" "dreamcast" "CON:$md_inst/bin/reicast.sh oss %ROM%"
-    elif isPlatform "vero4k"; then
-        addEmulator 1 "$md_id" "dreamcast" "CON:$md_inst/bin/reicast.sh alsa %ROM%"
-    else
-        addEmulator 1 "$md_id" "dreamcast" "CON:$md_inst/bin/reicast.sh oss %ROM%"
-    fi
+    addEmulator 1 "$md_id" "dreamcast" "CON:$md_inst/bin/reicast.sh alsa %ROM%"
     addSystem "dreamcast"
-
     addAutoConf reicast_input 1
 }
 
