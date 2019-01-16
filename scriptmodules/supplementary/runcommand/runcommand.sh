@@ -1259,7 +1259,7 @@ function ogst_emu() {
             ogst_play
         else
             ogst_off
-            sleep 10
+            sleep 5
             ogst_play
         fi
     else
