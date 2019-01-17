@@ -14,10 +14,9 @@ rp_module_desc="Mr.Boom - 8 players Bomberman clone for libretro."
 rp_module_help="8 players Bomberman clone for libretro."
 rp_module_licence="MIT https://raw.githubusercontent.com/libretro/mrboom-libretro/master/LICENSE"
 rp_module_section="lr"
-rp_module_flags="!mali"
 
 function sources_lr-mrboom() {
-     local commit
+    local commit
     isPlatform "mali" && commit=("master ecd8617a3a800915eb4138113e5f2bacc1c7fb2c")
     gitPullOrClone "$md_build" https://github.com/libretro/mrboom-libretro.git ${commit[0]}
 }
@@ -35,6 +34,10 @@ function install_lr-mrboom() {
         'LICENSE'
         'README.md'
     )
+}
+
+function install_bin_mrboom() {
+    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-mrboom.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-mrboom() {
