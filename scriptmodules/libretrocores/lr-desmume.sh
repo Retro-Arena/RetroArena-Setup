@@ -9,35 +9,35 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-rp_module_id="lr-desmume2015"
-rp_module_desc="NDS emu - DESMUME (2015 version)"
+rp_module_id="lr-desmume"
+rp_module_desc="NDS emu - DESMUME"
 rp_module_help="ROM Extensions: .nds .zip\n\nCopy your Nintendo DS roms to $romdir/nds"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/desmume/master/desmume/COPYING"
 rp_module_section="lr"
 
-function sources_lr-desmume2015() {
-    gitPullOrClone "$md_build" https://github.com/libretro/desmume2015.git
+function sources_lr-desmume() {
+    gitPullOrClone "$md_build" https://github.com/libretro/desmume.git
 }
 
-function build_lr-desmume2015() {
-    cd desmume
+function build_lr-desmume() {
+    cd desmume/src/frontend/libretro
     local params=()
     isPlatform "arm" && params+=("platform=armvhardfloat")
-    make -f Makefile.libretro clean
-    make -f Makefile.libretro "${params[@]}"
-    md_ret_require="$md_build/desmume/desmume2015_libretro.so"
+    make clean
+    make "${params[@]}"
+    md_ret_require="$md_build/desmume/src/frontend/libretro/desmume_libretro.so"
 }
 
-function install_lr-desmume2015() {
+function install_lr-desmume() {
     md_ret_files=(
-        'desmume/desmume2015_libretro.so'
+        'desmume/src/frontend/libretro/desmume_libretro.so'
     )
 }
 
-function configure_lr-desmume2015() {
+function configure_lr-desmume() {
     mkRomDir "nds"
     ensureSystemretroconfig "nds"
 
-    addEmulator 0 "$md_id" "nds" "$md_inst/desmume2015_libretro.so"
+    addEmulator 0 "$md_id" "nds" "$md_inst/desmume_libretro.so"
     addSystem "nds"
 }
