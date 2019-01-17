@@ -62,7 +62,6 @@ function install_bin_lr-ppsspp() {
     downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-ppsspp.tar.gz" "$md_inst" 1
 }
 
-
 function configure_lr-ppsspp() {
     mkRomDir "psp"
     ensureSystemretroconfig "psp"
