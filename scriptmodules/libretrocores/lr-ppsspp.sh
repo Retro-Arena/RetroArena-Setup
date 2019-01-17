@@ -14,7 +14,7 @@ rp_module_desc="PlayStation Portable emu - PPSSPP port for libretro"
 rp_module_help="ROM Extensions: .iso .pbp .cso\n\nCopy your PlayStation Portable roms to $romdir/psp"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/RetroArena/ppsspp/master/LICENSE.TXT"
 rp_module_section="lr"
-rp_module_flags="!aarch64 !mali"
+rp_module_flags="!aarch64"
 
 function depends_lr-ppsspp() {
     local depends=()
