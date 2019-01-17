@@ -14,6 +14,7 @@ rp_module_desc="Mr.Boom - 8 players Bomberman clone for libretro."
 rp_module_help="8 players Bomberman clone for libretro."
 rp_module_licence="MIT https://raw.githubusercontent.com/libretro/mrboom-libretro/master/LICENSE"
 rp_module_section="lr"
+rp_module_flags="!mali"
 
 function sources_lr-mrboom() {
      local commit
@@ -35,7 +36,6 @@ function install_lr-mrboom() {
         'README.md'
     )
 }
-
 
 function configure_lr-mrboom() {
     setConfigRoot "ports"
