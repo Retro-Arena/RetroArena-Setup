@@ -39,6 +39,10 @@ function install_vice() {
     make install
 }
 
+function install_bin_vice() {
+    downloadAndExtract "$__gitbins_url/vice.tar.gz" "$md_inst" 1
+}
+
 function configure_vice() {
     # get a list of supported extensions
     local exts="$(getPlatformConfig c64_exts)"

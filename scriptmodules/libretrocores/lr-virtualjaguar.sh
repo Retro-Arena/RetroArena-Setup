@@ -33,6 +33,10 @@ function install_lr-virtualjaguar() {
     )
 }
 
+function install_bin_lr-virtualjaguar() {
+    downloadAndExtract "$__gitbins_url/lr-virtualjaguar.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-virtualjaguar() {
     mkRomDir "atarijaguar"
     ensureSystemretroconfig "atarijaguar"

@@ -32,6 +32,10 @@ function install_lr-handy() {
     )
 }
 
+function install_bin_lr-handy() {
+    downloadAndExtract "$__gitbins_url/lr-handy.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-handy() {
     mkRomDir "atarilynx"
     ensureSystemretroconfig "atarilynx"

@@ -32,6 +32,10 @@ function install_lr-stella() {
     )
 }
 
+function install_bin_lr-stella() {
+    downloadAndExtract "$__gitbins_url/lr-stella.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-stella() {
     mkRomDir "atari2600"
     ensureSystemretroconfig "atari2600"

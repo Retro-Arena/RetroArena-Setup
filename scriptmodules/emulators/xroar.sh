@@ -40,6 +40,10 @@ function install_xroar() {
     make install
 }
 
+function install_bin_xroar() {
+    downloadAndExtract "$__gitbins_url/xroar.tar.gz" "$md_inst" 1
+}
+
 function configure_xroar() {
     mkRomDir "dragon32"
     mkRomDir "coco"

@@ -35,6 +35,10 @@ function install_stella() {
     make install
 }
 
+function install_bin_stella() {
+    downloadAndExtract "$__gitbins_url/stella.tar.gz" "$md_inst" 1
+}
+
 function configure_stella() {
     mkRomDir "atari2600"
 

@@ -33,6 +33,10 @@ function install_lr-fuse() {
     )
 }
 
+function install_bin_lr-fuse() {
+    downloadAndExtract "$__gitbins_url/lr-fuse.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-fuse() {
     mkRomDir "zxspectrum"
     ensureSystemretroconfig "zxspectrum"

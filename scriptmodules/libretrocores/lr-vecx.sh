@@ -34,6 +34,10 @@ function install_lr-vecx() {
     )
 }
 
+function install_bin_lr-vecx() {
+    downloadAndExtract "$__gitbins_url/lr-vecx.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-vecx() {
     mkRomDir "vectrex"
     ensureSystemretroconfig "vectrex"

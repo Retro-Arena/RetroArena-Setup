@@ -47,6 +47,10 @@ function install_xm7() {
     make install
 }
 
+function install_bin_xm7() {
+    downloadAndExtract "$__gitbins_url/xm7.tar.gz" "$md_inst" 1
+}
+
 function configure_xm7() {
     mkRomDir "fm7"
 

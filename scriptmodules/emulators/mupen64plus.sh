@@ -172,6 +172,10 @@ function install_mupen64plus() {
     rm -f "$md_inst/share/mupen64plus/InputAutoCfg.ini"
 }
 
+function install_bin_mupen64plus() {
+    downloadAndExtract "$__gitbins_url/mupen64plus.tar.gz" "$md_inst" 1
+}
+
 function configure_mupen64plus() {
     if isPlatform "mali"; then
          local res

@@ -43,6 +43,10 @@ function install_linapple() {
     )
 }
 
+function install_bin_linapple() {
+    downloadAndExtract "$__gitbins_url/linapple.tar.gz" "$md_inst" 1
+}
+
 function configure_linapple() {
     mkRomDir "apple2"
     mkUserDir "$md_conf_root/apple2"

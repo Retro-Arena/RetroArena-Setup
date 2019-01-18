@@ -47,6 +47,10 @@ function install_lr-fmsx() {
     )
 }
 
+function install_bin_lr-fmsx() {
+    downloadAndExtract "$__gitbins_url/lr-fmsx.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-fmsx() {
     mkRomDir "msx"
     ensureSystemretroconfig "msx"

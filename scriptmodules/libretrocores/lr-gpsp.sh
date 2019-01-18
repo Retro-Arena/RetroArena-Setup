@@ -39,6 +39,10 @@ function install_lr-gpsp() {
     )
 }
 
+function install_bin_lr-gpsp() {
+    downloadAndExtract "$__gitbins_url/lr-gpsp.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-gpsp() {
     mkRomDir "gba"
     ensureSystemretroconfig "gba"

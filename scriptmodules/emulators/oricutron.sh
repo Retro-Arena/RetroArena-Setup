@@ -44,6 +44,10 @@ function install_oricutron() {
     )
 }
 
+function install_bin_oricutron() {
+    downloadAndExtract "$__gitbins_url/oricutron.tar.gz" "$md_inst" 1
+}
+
 function game_data_oricutron() {
     if [[ -d "$md_inst/disks" && ! -f "$romdir/oric/barbitoric.dsk" ]]; then
         # copy demo disks

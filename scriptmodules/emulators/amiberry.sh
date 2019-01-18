@@ -78,6 +78,10 @@ function install_amiberry() {
     cp -R "$md_build/whdboot" "$md_inst/whdboot-dist"
 }
 
+function install_bin_amiberry() {
+    downloadAndExtract "$__gitbins_url/amiberry.tar.gz" "$md_inst" 1
+}
+
 function configure_amiberry() {
     configure_uae4arm
     # symlink the retroarch config / autoconfigs for amiberry to use

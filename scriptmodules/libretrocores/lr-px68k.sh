@@ -34,6 +34,10 @@ function install_lr-px68k() {
     )
 }
 
+function install_bin_lr-px68k() {
+    downloadAndExtract "$__gitbins_url/lr-px68k.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-px68k() {
     mkRomDir "x68000"
     ensureSystemretroconfig "x68000"

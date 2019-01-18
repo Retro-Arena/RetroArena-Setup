@@ -34,6 +34,10 @@ function install_lr-prosystem() {
     )
 }
 
+function install_bin_lr-prosystem() {
+    downloadAndExtract "$__gitbins_url/lr-prosystem.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-prosystem() {
     mkRomDir "atari7800"
 

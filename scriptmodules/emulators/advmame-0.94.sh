@@ -37,7 +37,7 @@ function install_advmame-0.94() {
 }
 
 function install_bin_advmame-0.94() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/advmame-0.94.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/advmame-0.94.tar.gz" "$md_inst" 1
 }
 
 function configure_advmame-0.94() {

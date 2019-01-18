@@ -44,6 +44,10 @@ function install_lr-snes9x2010() {
     )
 }
 
+function install_bin_lr-snes9x2010() {
+    downloadAndExtract "$__gitbins_url/lr-snes9x2010.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-snes9x2010() {
     local system
     for system in snes sfc; do

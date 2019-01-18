@@ -79,6 +79,10 @@ function install_hatari() {
     _install_libcapsimage_hatari
 }
 
+function install_bin_hatari() {
+    downloadAndExtract "$__gitbins_url/hatari.tar.gz" "$md_inst" 1
+}
+
 function configure_hatari() {
     mkRomDir "atarist"
 

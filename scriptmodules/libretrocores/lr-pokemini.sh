@@ -31,6 +31,10 @@ function install_lr-pokemini() {
     )
 }
 
+function install_bin_lr-pokemini() {
+    downloadAndExtract "$__gitbins_url/lr-pokemini.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-pokemini() {
     mkRomDir "pokemini"
     ensureSystemretroconfig "pokemini"

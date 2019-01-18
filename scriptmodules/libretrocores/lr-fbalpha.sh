@@ -38,7 +38,7 @@ function install_lr-fbalpha() {
 }
 
 function install_bin_lr-fbalpha() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-fbalpha.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-fbalpha.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-fbalpha() {

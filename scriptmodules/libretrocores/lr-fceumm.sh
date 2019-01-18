@@ -36,6 +36,10 @@ function install_lr-fceumm() {
     )
 }
 
+function install_bin_lr-fceumm() {
+    downloadAndExtract "$__gitbins_url/lr-fceumm.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-fceumm() {
     mkRomDir "nes"
     mkRomDir "fds"

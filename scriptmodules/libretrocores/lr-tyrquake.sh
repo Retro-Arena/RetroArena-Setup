@@ -33,6 +33,10 @@ function install_lr-tyrquake() {
     )
 }
 
+function install_bin_lr-tyrquake() {
+    downloadAndExtract "$__gitbins_url/lr-tyrquake.tar.gz" "$md_inst" 1
+}
+
 function game_data_lr-tyrquake() {
     getDepends lhasa
     if [[ ! -f "$romdir/ports/quake/id1/pak0.pak" ]]; then

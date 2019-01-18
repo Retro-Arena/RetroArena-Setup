@@ -72,6 +72,10 @@ function install_lr-mupen64plus() {
     )
 }
 
+function install_bin_lr-mupen64plus() {
+    downloadAndExtract "$__gitbins_url/lr-mupen64plus.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-mupen64plus() {
     mkRomDir "n64"
     ensureSystemretroconfig "n64"

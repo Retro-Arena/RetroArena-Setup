@@ -45,6 +45,10 @@ function install_atari800() {
     make install
 }
 
+function install_bin_atari800() {
+    downloadAndExtract "$__gitbins_url/atari800.tar.gz" "$md_inst" 1
+}
+
 function configure_atari800() {
     mkRomDir "atari800"
     mkRomDir "atari5200"

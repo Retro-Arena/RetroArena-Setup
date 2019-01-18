@@ -36,6 +36,10 @@ function install_lr-beetle-ngp() {
     )
 }
 
+function install_bin_lr-beetle-ngp() {
+    downloadAndExtract "$__gitbins_url/lr-beetle-ngp.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-beetle-ngp() {
     local system
     for system in ngp ngpc; do

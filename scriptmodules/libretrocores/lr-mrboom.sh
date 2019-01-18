@@ -37,7 +37,7 @@ function install_lr-mrboom() {
 }
 
 function install_bin_mrboom() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-mrboom.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-mrboom.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-mrboom() {

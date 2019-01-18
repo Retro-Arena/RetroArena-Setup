@@ -32,6 +32,10 @@ function install_lr-o2em() {
     )
 }
 
+function install_bin_lr-o2em() {
+    downloadAndExtract "$__gitbins_url/lr-o2em.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-o2em() {
     mkRomDir "videopac"
     ensureSystemretroconfig "videopac"

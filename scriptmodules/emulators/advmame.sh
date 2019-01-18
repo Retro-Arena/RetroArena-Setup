@@ -49,7 +49,7 @@ function install_advmame() {
 }
 
 function install_bin_advmame() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/advmame.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/advmame.tar.gz" "$md_inst" 1
 }
 
 function configure_advmame() {

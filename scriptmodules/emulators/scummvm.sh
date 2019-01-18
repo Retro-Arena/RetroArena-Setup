@@ -58,6 +58,10 @@ function install_scummvm() {
     cp -v backends/vkeybd/packs/vkeybd_*.zip "$md_inst/extra"
 }
 
+function install_bin_scummvm() {
+    downloadAndExtract "$__gitbins_url/scummvm.tar.gz" "$md_inst" 1
+}
+
 function configure_scummvm() {
     mkRomDir "scummvm"
 

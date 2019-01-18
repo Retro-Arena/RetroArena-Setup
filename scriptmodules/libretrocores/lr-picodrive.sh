@@ -42,7 +42,7 @@ function install_lr-picodrive() {
 }
 
 function install_bin_lr-picodrive() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-picodrive.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-picodrive.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-picodrive() {

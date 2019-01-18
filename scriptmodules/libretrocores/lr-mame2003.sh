@@ -37,10 +37,6 @@ function build_lr-mame2003() {
     md_ret_require="$md_build/$(_get_so_name_${md_id})_libretro.so"
 }
 
-function install_bin_lr-mame2003() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-mame2003.tar.gz" "$md_inst" 1
-}
-
 function install_lr-mame2003() {
     md_ret_files=(
         "$(_get_so_name_${md_id})_libretro.so"
@@ -48,6 +44,10 @@ function install_lr-mame2003() {
         'CHANGELOG.md'
         'metadata'
     )
+}
+
+function install_bin_lr-mame2003() {
+    downloadAndExtract "$__gitbins_url/lr-mame2003.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-mame2003() {

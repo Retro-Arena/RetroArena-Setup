@@ -41,6 +41,10 @@ function install_lr-dosbox() {
     )
 }
 
+function install_bin_lr-dosbox() {
+    downloadAndExtract "$__gitbins_url/lr-dosbox.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-dosbox() {
     mkRomDir "pc"
     ensureSystemretroconfig "pc"

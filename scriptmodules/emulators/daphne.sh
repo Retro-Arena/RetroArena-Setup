@@ -42,6 +42,10 @@ function install_daphne() {
     )
 }
 
+function install_bin_daphne() {
+    downloadAndExtract "$__gitbins_url/daphne.tar.gz" "$md_inst" 1
+}
+
 function configure_daphne() {
     mkRomDir "daphne"
     mkRomDir "daphne/roms"

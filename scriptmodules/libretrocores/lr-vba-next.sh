@@ -36,6 +36,10 @@ function install_lr-vba-next() {
     )
 }
 
+function install_bin_lr-vba-next() {
+    downloadAndExtract "$__gitbins_url/lr-vba-next.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-vba-next() {
     mkRomDir "gba"
     ensureSystemretroconfig "gba"

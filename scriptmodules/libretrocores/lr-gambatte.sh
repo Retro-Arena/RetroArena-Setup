@@ -34,6 +34,10 @@ function install_lr-gambatte() {
     )
 }
 
+function install_bin_lr-gambatte() {
+    downloadAndExtract "$__gitbins_url/lr-gambatte.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-gambatte() {
     # add default green yellow palette for gameboy classic
     mkUserDir "$biosdir/palettes"

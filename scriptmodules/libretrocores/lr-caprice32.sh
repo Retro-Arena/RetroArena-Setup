@@ -32,6 +32,10 @@ function install_lr-caprice32() {
     )
 }
 
+function install_bin_lr-caprice32() {
+    downloadAndExtract "$__gitbins_url/lr-caprice32.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-caprice32() {
     mkRomDir "amstradcpc"
     ensureSystemretroconfig "amstradcpc"

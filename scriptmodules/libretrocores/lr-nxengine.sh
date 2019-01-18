@@ -31,6 +31,10 @@ function install_lr-nxengine() {
     )
 }
 
+function install_bin_lr-nxengine() {
+    downloadAndExtract "$__gitbins_url/lr-nxengine.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-nxengine() {
     local script
     setConfigRoot "ports"

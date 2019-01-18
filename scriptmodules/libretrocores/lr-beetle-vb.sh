@@ -33,6 +33,10 @@ function install_lr-beetle-vb() {
     )
 }
 
+function install_bin_lr-beetle-vb() {
+    downloadAndExtract "$__gitbins_url/lr-beetle-vb.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-beetle-vb() {
     mkRomDir "virtualboy"
     ensureSystemretroconfig "virtualboy"

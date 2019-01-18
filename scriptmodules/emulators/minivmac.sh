@@ -35,6 +35,10 @@ function install_minivmac() {
     )
 }
 
+function install_bin_minivac() {
+    downloadAndExtract "$__gitbins_url/minivac.tar.gz" "$md_inst" 1
+}
+
 function configure_minivmac() {
     mkRomDir "macintosh"
 

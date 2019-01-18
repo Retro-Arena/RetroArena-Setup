@@ -43,7 +43,7 @@ function install_openbor() {
 }
 
 function install_bin_openbor() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/openbor.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/openbor.tar.gz" "$md_inst" 1
 }
 
 function configure_openbor() {

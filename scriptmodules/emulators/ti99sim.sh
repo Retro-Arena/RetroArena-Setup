@@ -34,6 +34,10 @@ function install_ti99sim() {
     )
 }
 
+function install_bin_ti99sim() {
+    downloadAndExtract "$__gitbins_url/ti99sim.tar.gz" "$md_inst" 1
+}
+
 function configure_ti99sim() {
     mkRomDir "ti99"
     moveConfigDir "$home/.ti99sim" "$md_conf_root/ti99/"

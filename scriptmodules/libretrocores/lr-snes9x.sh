@@ -41,7 +41,7 @@ function install_lr-snes9x() {
 }
 
 function install_bin_lr-snes9x() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-snes9x.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-snes9x.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-snes9x() {

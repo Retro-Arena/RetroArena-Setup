@@ -35,7 +35,7 @@ function install_lr-mame2014() {
 }
 
 function install_bin_lr-mame2014() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-mame2014.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-mame2014.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-mame2014() {
