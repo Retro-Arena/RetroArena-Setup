@@ -32,7 +32,7 @@ function install_lr-4do() {
 }
 
 function install_bin_lr-4do() {
-    downloadAndExtract "$__gitbins_url/4do.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-4do.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-4do() {
