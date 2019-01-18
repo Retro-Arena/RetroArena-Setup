@@ -50,6 +50,8 @@ function install_shares_samba() {
     add_share_samba "bios" "$home/RetroArena/BIOS"
     add_share_samba "configs" "$configdir"
     add_share_samba "splashscreens" "$datadir/splashscreens"
+    add_share_samba "bgm" "$home/RetroArena/bgm"
+    add_share_samba "casetheme" "$home/RetroArena/casetheme"
     restart_samba
 }
 
