@@ -20,7 +20,7 @@ function ogst_off() {
 }
 
 function ogst_es() {
-    OGST="$HOME/.emulationstation/ogst_themes/ogst-retroarena"
+    OGST="$HOME/RetroArena/casetheme"
     if lsmod | grep -q 'fbtft_device'; then
         mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/es.png" &> /dev/null
     else
@@ -55,7 +55,7 @@ function gui_caseconfig() {
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst001
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Console System\n\nCase image will load from:\n\n/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena/system-SYSTEM.png"
+                    printMsgs "dialog" "Enabled Console System\n\nCase image will load from:\n\n/home/pigaming/RetroArena/casetheme/system-SYSTEM.png"
                     ;;
                 2)
                     ogst_es
