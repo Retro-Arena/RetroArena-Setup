@@ -36,7 +36,7 @@ function install_lr-mrboom() {
     )
 }
 
-function install_bin_mrboom() {
+function install_bin_lr-mrboom() {
     downloadAndExtract "$__gitbins_url/lr-mrboom.tar.gz" "$md_inst" 1
 }
 
