@@ -33,7 +33,7 @@ function install_lr-reicast() {
 }
 
 function install_bin_lr-reicast() {
-    downloadAndExtract "$__gitbins_url/$rp_module_id.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-reicast.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-reicast() {    
