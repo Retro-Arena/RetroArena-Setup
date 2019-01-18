@@ -35,6 +35,8 @@ function install_theme_casetheme() {
     gitPullOrClone "/home/pigaming/RetroArena/$theme" "https://github.com/$repo/ogst-$theme.git"
     rm -rf "/home/pigaming/RetroArena/casetheme"
     mv "/home/pigaming/RetroArena/$theme" "/home/pigaming/RetroArena/casetheme"
+    rm -rf "/home/pigaming/RetroArena/casetheme/.git"
+    rm -rf "/home/pigaming/RetroArena/casetheme/.gitattributes"
 }
 
 function gui_casetheme() {
