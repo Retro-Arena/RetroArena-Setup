@@ -20,7 +20,7 @@ function ogst_off() {
 }
 
 function ogst_es() {
-    OGST="$HOME/RetroArena/casetheme"
+    OGST="$datadir/casetheme"
     if lsmod | grep -q 'fbtft_device'; then
         mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/es.png" &> /dev/null
     else
@@ -55,75 +55,75 @@ function gui_caseconfig() {
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst001
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Console System\n\nCase image will load from:\n\n$HOME/RetroArena/casetheme/system-SYSTEM.png"
+                    printMsgs "dialog" "Enabled Console System\n\nCase image will load from:\n\n$datadir/casetheme/system-SYSTEM.png"
                     ;;
                 2)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst002
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Motion Blue Boxart\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/boxart/ROM.png"
+                    printMsgs "dialog" "Enabled Motion Blue Boxart\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/boxart/ROM.png"
                     ;;
                 3)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst003
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Motion Blue Cartart\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/cartart/ROM.png"
+                    printMsgs "dialog" "Enabled Motion Blue Cartart\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/cartart/ROM.png"
                     ;;
                 4)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst004
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Motion Blue Snap\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/snap/ROM.png"
+                    printMsgs "dialog" "Enabled Motion Blue Snap\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/snap/ROM.png"
                     ;;
                 5)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst005
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Motion Blue Wheel\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/wheel/ROM.png"
+                    printMsgs "dialog" "Enabled Motion Blue Wheel\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/wheel/ROM.png"
                     ;;
                 6)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst006
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Skyscraper Marquee\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/media/marquees/ROM.png"
+                    printMsgs "dialog" "Enabled Skyscraper Marquee\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/media/marquees/ROM.png"
                     ;;
                 7)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst007
-                    printMsgs "dialog" "Enabled Skyscraper Screenshot\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/media/screenshots/ROM.png"
+                    printMsgs "dialog" "Enabled Skyscraper Screenshot\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/media/screenshots/ROM.png"
                     ;;
                 8)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst008
-                    printMsgs "dialog" "Enabled Skraper Marquee\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/media/marquee/ROM.png"
+                    printMsgs "dialog" "Enabled Skraper Marquee\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/media/marquee/ROM.png"
                     ;;
                 9)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst009
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Skraper Screenshot\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/media/images/ROM.png"
+                    printMsgs "dialog" "Enabled Skraper Screenshot\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/media/images/ROM.png"
                     ;;
                 10)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst010
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Selph's Marquee\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/images/ROM-marquee.png"
+                    printMsgs "dialog" "Enabled Selph's Marquee\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/images/ROM-marquee.png"
                     ;;
                 11)
                     ogst_es
                     rm -rf $HOME/.config/ogst*
                     touch $HOME/.config/ogst011
                     touch /usr/local/share/ogst/ogst000
-                    printMsgs "dialog" "Enabled Selph's Screenshot\n\nCase image will load from:\n\n$HOME/RetroArena/roms/SYSTEM/images/ROM-image.jpg"
+                    printMsgs "dialog" "Enabled Selph's Screenshot\n\nCase image will load from:\n\n$datadir/roms/SYSTEM/images/ROM-image.jpg"
                     ;;
                 12)
                     ogst_off
