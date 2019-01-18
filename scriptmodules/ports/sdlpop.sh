@@ -38,6 +38,10 @@ function install_sdlpop() {
     sed -i "s/use_correct_aspect_ratio = false/use_correct_aspect_ratio = true/" "$md_inst/SDLPoP.ini.def"
 }
 
+function install_bin_sdlpop() {
+    downloadAndExtract "$__gitbins_url/sdlpop.tar.gz" "$md_inst" 1
+}
+
 function configure_sdlpop() {
     addPort "$md_id" "sdlpop" "Prince of Persia" "pushd $md_inst; $md_inst/prince full; popd"
 

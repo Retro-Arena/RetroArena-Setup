@@ -38,6 +38,10 @@ function install_hcl() {
     )
 }
 
+function install_bin_hcl() {
+    downloadAndExtract "$__gitbins_url/hcl.tar.gz" "$md_inst" 1
+}
+
 function configure_hcl() {
     mkRomDir "ports"
     mkRomDir "ports/hcl"

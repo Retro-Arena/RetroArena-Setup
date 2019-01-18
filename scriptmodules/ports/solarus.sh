@@ -59,6 +59,10 @@ function install_solarus() {
     make install
 }
 
+function install_bin_solarus() {
+    downloadAndExtract "$__gitbins_url/solarus.tar.gz" "$md_inst" 1
+}
+
 function configure_solarus() {
     addPort "$md_id" "zsdx" "Solarus Engine - Zelda Mystery of Solarus DX" "LD_LIBRARY_PATH=$md_inst/lib $md_inst/bin/solarus_run $md_inst/share/solarus/zsdx/"
     addPort "$md_id" "zsxd" "Solarus Engine - Zelda Mystery of Solarus XD" "LD_LIBRARY_PATH=$md_inst/lib $md_inst/bin/solarus_run $md_inst/share/solarus/zsxd/"

@@ -37,6 +37,10 @@ function install_openfodder() {
     )
 }
 
+function install_bin_openfodder() {
+    downloadAndExtract "$__gitbins_url/openfodder.tar.gz" "$md_inst" 1
+}
+
 function configure_openfodder() {
     mkRomDir "ports"
     mkRomDir "ports/$md_id"
