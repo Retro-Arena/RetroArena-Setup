@@ -13,7 +13,7 @@
 user="pigaming"
 
 home="$(eval echo ~$user)"
-retroarena_path="$home/RetroArena/roms"
+retroarena_path="$datadir/roms"
 
 usb_path="$UM_MOUNTPOINT/retroarena/roms"
 

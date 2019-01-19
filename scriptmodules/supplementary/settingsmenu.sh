@@ -39,7 +39,7 @@ function configure_settingsmenu()
 {
     [[ "$md_mode" == "remove" ]] && return
 
-    local rpdir="$home/RetroArena/settingsmenu"
+    local rpdir="$datadir/settingsmenu"
     mkdir -p "$rpdir"
     cp -r "$md_data/icons" "$rpdir/"
     chown -R $user:$user "$rpdir"
@@ -147,7 +147,7 @@ NOTE: Requires a keyboard to be connected.'
         file="${files[i]}"
         name="${names[i]}"
         desc="${descs[i]}"
-        image="$home/RetroArena/settingsmenu/icons/${files[i]}.png"
+        image="$datadir/settingsmenu/icons/${files[i]}.png"
 
         touch "$rpdir/$file.rp"
 
@@ -159,7 +159,7 @@ NOTE: Requires a keyboard to be connected.'
 }
 
 function remove_settingsmenu() {
-    rm -rf "$home/RetroArena/settingsmenu"
+    rm -rf "$datadir/settingsmenu"
     rm -rf "$home/.emulationstation/gamelists/retroarena"
     delSystem retroarena
 }
@@ -201,7 +201,7 @@ function launch_settingsmenu() {
             fi
             ;;
         *.sh)
-            cd "$home/RetroArena/settingsmenu"
+            cd "$datadir/settingsmenu"
             sudo -u "$user" bash "$command"
             ;;
     esac
