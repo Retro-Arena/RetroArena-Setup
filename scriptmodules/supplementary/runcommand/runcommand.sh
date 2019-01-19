@@ -907,7 +907,7 @@ function show_launch() {
     if [[ "$IS_SYS" -eq 1 && "$USE_ART" -eq 1 ]]; then
         # if using art look for images in paths for es art.
         images+=(
-            "$datadir/roms/$SYSTEM/images/${ROM_BN}-image"
+            "$HOME/RetroArena/roms/$SYSTEM/images/${ROM_BN}-image"
             "$HOME/.emulationstation/downloaded_images/$SYSTEM/${ROM_BN}-image"
         )
     fi
@@ -915,7 +915,7 @@ function show_launch() {
     # look for custom launching images
     if [[ "$IS_SYS" -eq 1 ]]; then
         images+=(
-            "$datadir/roms/$SYSTEM/images/${ROM_BN}-launching"
+            "$HOME/RetroArena/roms/$SYSTEM/images/${ROM_BN}-launching"
             "$CONF_ROOT/launching"
         )
     fi
@@ -1011,7 +1011,7 @@ function launch_command() {
 }
 
 function bios_check() {
-    BIOS="$datadir/BIOS"
+    BIOS="$HOME/RetroArena/BIOS"
     if [[ "$SYSTEM" =~ ^("naomi"|"atomiswave")$ ]]; then
         for filename in airlbios awbios f355bios f355dlx hod2bios naomi; do
             if [[ ! -f "$BIOS/dc/$filename.zip" ]]; then
@@ -1056,7 +1056,7 @@ function ogst_off() {
 }
 
 function ogst_loading() {
-    OGST="$datadir/casetheme"
+    OGST="$HOME/RetroArena/casetheme"
     if ! lsmod | grep -q 'fbtft_device'; then
         sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
         mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
@@ -1116,17 +1116,17 @@ function ogst_play() {
     done
    
     # load image
-    OGST="$datadir/casetheme"
-    MNB_BA="$datadir/roms/$SYSTEM/boxart"
-    MNB_CA="$datadir/roms/$SYSTEM/cartart"
-    MNB_SP="$datadir/roms/$SYSTEM/snap"
-    MNB_WL="$datadir/roms/$SYSTEM/wheel"
-    SKY_MQ="$datadir/roms/$SYSTEM/media/marquees"
-    SKY_SS="$datadir/roms/$SYSTEM/media/screenshots"
-    SKP_MQ="$datadir/roms/$SYSTEM/media/marquee"
-    SKP_SS="$datadir/roms/$SYSTEM/media/images"
-    SLP_MQ="$datadir/roms/$SYSTEM/images"
-    SLP_SS="$datadir/roms/$SYSTEM/images"
+    OGST="$HOME/RetroArena/casetheme"
+    MNB_BA="$HOME/RetroArena/roms/$SYSTEM/boxart"
+    MNB_CA="$HOME/RetroArena/roms/$SYSTEM/cartart"
+    MNB_SP="$HOME/RetroArena/roms/$SYSTEM/snap"
+    MNB_WL="$HOME/RetroArena/roms/$SYSTEM/wheel"
+    SKY_MQ="$HOME/RetroArena/roms/$SYSTEM/media/marquees"
+    SKY_SS="$HOME/RetroArena/roms/$SYSTEM/media/screenshots"
+    SKP_MQ="$HOME/RetroArena/roms/$SYSTEM/media/marquee"
+    SKP_SS="$HOME/RetroArena/roms/$SYSTEM/media/images"
+    SLP_MQ="$HOME/RetroArena/roms/$SYSTEM/images"
+    SLP_SS="$HOME/RetroArena/roms/$SYSTEM/images"
     
     for pid in $pids; do
         # wait

@@ -105,12 +105,12 @@ function sync_usbromservice() {
             mkdir -p "/media/usb0/retroarena" "/media/usb0/retroarena/roms"
         fi
         echo "---------------------------------------------------"
-        echo "Unmounting '$datadir/roms'........"
-        umount -l "$datadir/roms"
+        echo "Unmounting '$HOME/RetroArena/roms'........"
+        umount -l "$HOME/RetroArena/roms"
         cd ~
         echo "---------------------------------------------------"
         echo "Sync is now starting..............................."
-        rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "$datadir/roms/" "/media/usb0/retroarena/roms/"
+        rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "$HOME/RetroArena/roms/" "/media/usb0/retroarena/roms/"
         printMsgs "dialog" "Sync completed!\n\nOnce rebooted, it will automatically mount the USB drive.\n\nPress OK to reboot!"
         reboot
     else
