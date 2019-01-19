@@ -31,10 +31,12 @@ function install_theme_casetheme() {
         theme="retroarena"
         repo="Retro-Arena"
     fi
-    mkdir -p "/home/pigaming/.emulationstation/ogst_themes"
-    gitPullOrClone "/home/pigaming/.emulationstation/ogst_themes/$theme" "https://github.com/$repo/ogst-$theme.git"
-    rm -rf "/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena"
-    mv "/home/pigaming/.emulationstation/ogst_themes/$theme" "/home/pigaming/.emulationstation/ogst_themes/ogst-retroarena"
+    mkdir -p "$datadir/casetheme"
+    gitPullOrClone "$datadir/$theme" "https://github.com/$repo/ogst-$theme.git"
+    rm -rf "$datadir/casetheme"
+    mv "$datadir/$theme" "/$datadir/casetheme"
+    rm -rf "$datadir/casetheme/.git"
+    rm -rf "$datadir/casetheme/.gitattributes"
 }
 
 function gui_casetheme() {

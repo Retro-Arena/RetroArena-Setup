@@ -112,6 +112,6 @@ _EOF_
                 /home/pi/RetroArena-Setup/retroarena_packages.sh builder "$@"
         done
 
-        rsync -av "$md_build/$dist/home/pi/RetroArena-Setup/tmp/archives/" "$HOME/RetroArena-Setup/tmp/archives/"
+        rsync -av "$md_build/$dist/home/pi/RetroArena-Setup/tmp/archives/" "$scriptdir/tmp/archives/"
     done
 }
