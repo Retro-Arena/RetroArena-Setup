@@ -24,6 +24,7 @@ function gui_smartkiosk() {
     esconfig="$HOME/.emulationstation/es_settings.cfg"
     raconfig="/opt/retroarena/configs/all/retroarch.cfg"
     lmconfig="/opt/retroarena/configs/all/runcommand.cfg"
+    launching="/opt/retroarena/configs/all/launching"
     
     if [[ -n "$choice" ]]; then
         case "$choice" in
@@ -46,6 +47,10 @@ function gui_smartkiosk() {
                     sed -i -e 's:disable_joystick = "0":disable_joystick = "1":g' "$lmconfig"
                 fi
                 
+                if [[ -e "$launching.png" ]]; then
+                    mv "$launching.png" "$launching.bak"
+                fi
+                
                 printMsgs "dialog" "Enabled Kiosk mode for RetroArch, EmulationStation, and also disabled the Launch Menu.\n\nPress OK to REBOOT."
                 reboot
                 ;;
@@ -66,6 +71,10 @@ function gui_smartkiosk() {
                 
                 if grep -Fq 'disable_joystick = "1"' "$lmconfig"; then
                     sed -i -e 's:disable_joystick = "1":disable_joystick = "0":g' "$lmconfig"
+                fi
+                
+                if [[ -e "$launching.bak" ]]; then
+                    mv "$launching.bak" "$launching.png"
                 fi
                 
                 printMsgs "dialog" "Disabled Kiosk mode for RetroArch, EmulationStation, and also enabled the Launch Menu.\n\nPress OK to REBOOT."
