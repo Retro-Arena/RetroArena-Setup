@@ -37,7 +37,7 @@ function install_lr-beetle-wswan() {
 }
 
 function install_bin_lr-beetle-wswan() {
-    downloadAndExtract "$__gitbins_url/lr-wswan.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-beetle-wswan.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-beetle-wswan() {
