@@ -16,7 +16,7 @@ rp_module_section="config"
 function gui_controlreset() {
     local cmd=(dialog --backtitle "$__backtitle" --menu "Controller Reset" 22 86 16)
     local options=(
-        1 "Reset controller to factory default then REBOOT."
+        1 "Reset controller to factory default then REBOOT"
     )
     local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
     if [[ -n "$choice" ]]; then
@@ -28,7 +28,7 @@ function gui_controlreset() {
                 dos2unix $HOME/.emulationstation/es_input.cfg
                 chmod a+x $HOME/.emulationstation/es_input.cfg
                 chown pigaming:pigaming $HOME/.emulationstation/es_input.cfg
-                sudo reboot
+                reboot
                 ;;
         esac
     fi

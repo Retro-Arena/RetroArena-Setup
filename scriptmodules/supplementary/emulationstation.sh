@@ -91,6 +91,7 @@ function _add_rom_emulationstation() {
     local name="$4"
     local desc="$5"
     local image="$6"
+    local hidden="$7"
 
     local config_dir="$configdir/all/emulationstation"
 
@@ -109,6 +110,7 @@ function _add_rom_emulationstation() {
             -s "/gameList/game[last()]" -t elem -n "name" -v "$name" \
             -s "/gameList/game[last()]" -t elem -n "desc" -v "$desc" \
             -s "/gameList/game[last()]" -t elem -n "image" -v "$image" \
+            -s "/gameList/game[last()]" -t elem -n "hidden" -v "$hidden" \
             "$config"
     else
         xmlstarlet ed -L \
@@ -116,6 +118,7 @@ function _add_rom_emulationstation() {
             -u "/gameList/game[name='$name']/name" -v "$name" \
             -u "/gameList/game[name='$name']/desc" -v "$desc" \
             -u "/gameList/game[name='$name']/image" -v "$image" \
+            -u "/gameList/game[name='$name']/hidden" -v "$hidden" \
             "$config"
     fi
     chown $user:$user "$config"

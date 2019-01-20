@@ -94,7 +94,7 @@ function configure_settingsmenu()
         'System: System Info Utility'
         'System: Wi-Fi'
     )
-
+    
     local descs=(
         'Downloader for RetroArach system bezel packs to be used for various systems'
         'Enable or disable the background music feature.'
@@ -120,7 +120,9 @@ NOTE: Changes will not be saved unless you have enabled the "Save Configuration 
         'Update Setup Script, install/uninstall Libretro and standalone emulators, ports, drivers, scrapers, and configurations.'
         'Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration.'
         'Displays your current IP address, as well as other information provided by the command, "ip addr show."'
-        'Enables Kiosk mode for RetroArch, EmulationStation, and disables the Launch Menu in one setting.'
+        'Enables Kiosk mode for RetroArch and EmulationStation. It also disables the Launch Menu. Choose to enable or disable in one setting.
+        
+NOTE: This will cause your system to REBOOT.'
         'Perform a soft reboot to recover local keyboard function if not functional.
         
 NOTE: Typically only needed after exit from PSP games and there is a need to access the terminal by exit from EmulationStation.'
@@ -130,6 +132,30 @@ NOTE: Typically only needed after exit from PSP games and there is a need to acc
         
 NOTE: Requires a keyboard to be connected.'
     )
+    
+    local hiddens=(
+        'true'
+        'false'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'true'
+        'false'
+        'true'
+        'true'
+        'true'
+        'true'
+    )
 
     setESSystem "RetroArena" "retroarena" "$rpdir" ".rp .sh" "sudo $scriptdir/retroarena_packages.sh settingsmenu launch %ROM% </dev/tty >/dev/tty" "" "retroarena"
 
@@ -137,6 +163,7 @@ NOTE: Requires a keyboard to be connected.'
     local name
     local desc
     local image
+    local hidden
     local i
     for i in "${!files[@]}"; do
         case "${files[i]}" in
@@ -151,12 +178,13 @@ NOTE: Requires a keyboard to be connected.'
         name="${names[i]}"
         desc="${descs[i]}"
         image="$datadir/settingsmenu/icons/${files[i]}.png"
+        hidden="${hiddens[i]}"
 
         touch "$rpdir/$file.rp"
 
         local function
         for function in $(compgen -A function _add_rom_); do
-            "$function" "retroarena" "RetroArena" "$file.rp" "$name" "$desc" "$image"
+            "$function" "retroarena" "RetroArena" "$file.rp" "$name" "$desc" "$image" "$hidden"
         done
     done
 }

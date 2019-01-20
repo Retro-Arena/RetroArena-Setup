@@ -16,8 +16,8 @@ rp_module_section="config"
 function gui_smartkiosk() {
     local cmd=(dialog --backtitle "$__backtitle" --menu "Smart Kiosk" 22 86 16)
     local options=(
-        1 "Enable Smart Kiosk"
-        2 "Disable Smart Kiosk"
+        1 "Enable Smart Kiosk then REBOOT"
+        2 "Disable Smart Kiosk then REBOOT"
     )
     local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
     
@@ -46,7 +46,8 @@ function gui_smartkiosk() {
                     sed -i -e 's:disable_joystick = "0":disable_joystick = "1":g' "$lmconfig"
                 fi
                 
-                printMsgs "dialog" "Enabled Kiosk for RetroArch, ES, and disabled the Launch Menu.\n\nRestart EmulationStation to apply the settings."
+                printMsgs "dialog" "Enabled Kiosk mode for RetroArch, EmulationStation, and also disabled the Launch Menu.\n\nPress OK to REBOOT."
+                reboot
                 ;;
             2)
                 if grep -Fq 'name="UIMode" value="Kiosk"' "$esconfig"; then
@@ -67,7 +68,8 @@ function gui_smartkiosk() {
                     sed -i -e 's:disable_joystick = "1":disable_joystick = "0":g' "$lmconfig"
                 fi
                 
-                printMsgs "dialog" "Disabled Kiosk for RetroArch, ES, and enabled the Launch Menu.\n\nRestart EmulationStation to apply the settings."
+                printMsgs "dialog" "Disabled Kiosk mode for RetroArch, EmulationStation, and also enabled the Launch Menu.\n\nPress OK to REBOOT."
+                reboot
                 ;;
         esac
     fi
