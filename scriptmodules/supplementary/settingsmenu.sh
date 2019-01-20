@@ -64,6 +64,7 @@ function configure_settingsmenu()
         'rpsetup'
         'runcommand'
         'showip'
+        'smartkiosk'
         'softreboot'
         'splashscreen'
         'systeminfo'
@@ -87,6 +88,7 @@ function configure_settingsmenu()
         'General: RetroArena-Setup'
         'System: Run Command Configuration'
         'System: Show IP'
+        'System: Smart Kiosk'
         'System: Soft Reboot'
         'Display: Splash Screens'
         'System: System Info Utility'
@@ -118,6 +120,7 @@ NOTE: Changes will not be saved unless you have enabled the "Save Configuration 
         'Update Setup Script, install/uninstall Libretro and standalone emulators, ports, drivers, scrapers, and configurations.'
         'Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration.'
         'Displays your current IP address, as well as other information provided by the command, "ip addr show."'
+        'Enables Kiosk mode for RetroArch, EmulationStation, and disables the Launch Menu in one setting.'
         'Perform a soft reboot to recover local keyboard function if not functional.
         
 NOTE: Typically only needed after exit from PSP games and there is a need to access the terminal by exit from EmulationStation.'
