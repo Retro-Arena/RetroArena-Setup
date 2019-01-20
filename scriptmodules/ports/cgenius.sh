@@ -40,6 +40,11 @@ function install_cgenius() {
     )
 }
 
+
+function install_bin_cgenius() {
+    downloadAndExtract "$__gitbins_url/cgenius.tar.gz" "$md_inst" 1
+}
+
 function configure_cgenius() {
     addPort "$md_id" "cgenius" "Commander Genius" "pushd $md_inst; ./CGeniusExe; popd"
 
