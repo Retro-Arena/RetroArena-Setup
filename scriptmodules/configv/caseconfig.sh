@@ -49,6 +49,7 @@ function gui_caseconfig() {
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         if [[ -n "$choice" ]]; then
+            [[ -d /usr/local/share/ogst ]] || mkdir /usr/local/share/ogst
             case "$choice" in
                 1)
                     ogst_es
