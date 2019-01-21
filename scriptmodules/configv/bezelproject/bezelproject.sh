@@ -91,9 +91,11 @@ function download_bezel() {
         'thebezelproject Atari2600'
         'thebezelproject Atari5200'
         'thebezelproject Atari7800'
+        'thebezelproject ColecoVision'
         'thebezelproject GCEVectrex'
         'thebezelproject MasterSystem'
         'thebezelproject MegaDrive'
+        'thebezelproject N64'
         'thebezelproject NES'
         'thebezelproject Sega32X'
         'thebezelproject SegaCD'
@@ -183,6 +185,8 @@ clear
             16 "TG16" \
             17 "TG-CD" \
             18 "Atari 2600" \
+            19 "ColecoVision" \
+            20 "Nintendo 64" \
             2>&1 > /dev/tty)
 
         case "$choice" in
@@ -204,6 +208,8 @@ clear
             16) hide_bezel tg16 ;;
             17) hide_bezel tg-cd ;;
             18) hide_bezel atari2600 ;;
+            19) hide_bezel coleco ;;
+            20) hide_bezel n64 ;;
             *)  break ;;
         esac
     done
@@ -235,6 +241,8 @@ clear
             16 "TG16" \
             17 "TG-CD" \
             18 "Atari 2600" \
+            19 "ColecoVision" \
+            20 "Nintendo 64" \
             2>&1 > /dev/tty)
 
         case "$choice" in
@@ -256,6 +264,8 @@ clear
             16) show_bezel tg16 ;;
             17) show_bezel tg-cd ;;
             18) show_bezel atari2600 ;;
+            19) show_bezel coleco ;;
+            20) show_bezel n64 ;;
             *)  break ;;
         esac
     done
