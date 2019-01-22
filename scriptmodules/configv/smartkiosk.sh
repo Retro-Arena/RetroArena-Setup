@@ -21,10 +21,10 @@ function gui_smartkiosk() {
     )
     local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
     
-    esconfig="$HOME/.emulationstation/es_settings.cfg"
-    raconfig="/opt/retroarena/configs/all/retroarch.cfg"
-    lmconfig="/opt/retroarena/configs/all/runcommand.cfg"
-    launching="/opt/retroarena/configs/all/launching"
+    esconfig="$configdir/all/emulationstation/es_settings.cfg"
+    raconfig="$configdir/all/retroarch.cfg"
+    lmconfig="$configdir/all/runcommand.cfg"
+    launching="$configdir/all/launching"
     
     if [[ -n "$choice" ]]; then
         case "$choice" in
