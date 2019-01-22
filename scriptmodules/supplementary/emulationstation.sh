@@ -296,7 +296,7 @@ function configure_emulationstation() {
     addAutoConf "disable" 0
     
     # change kiosk code
-    esconfig="$HOME/.emulationstation/es_settings.cfg"
+    esconfig="$configdir/all/emulationstation/es_settings.cfg"
     if grep -Fq 'name="UIMode_passkey" value="uuddlrlrba"' "$esconfig"; then
         sed -i -e 's:name="UIMode_passkey" value="uuddlrlrba":name="UIMode_passkey" value="uuddlrlr":g' "$esconfig"
     fi
