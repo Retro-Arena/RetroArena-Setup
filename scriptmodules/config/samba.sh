@@ -52,6 +52,7 @@ function install_shares_samba() {
     add_share_samba "splashscreens" "$datadir/splashscreens"
     add_share_samba "bgm" "$datadir/bgm"
     add_share_samba "casetheme" "$datadir/casetheme"
+    add_share_samba "esthemes" "$home/.emulationstation/themes"
     restart_samba
 }
 
