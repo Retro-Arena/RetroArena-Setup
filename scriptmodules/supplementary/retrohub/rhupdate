@@ -27,5 +27,7 @@ if [[ $rc -eq 0 ]] ; then
     if [[ -e "$rhdir" ]]; then
         rm -rf "$rhdir"
         git clone https://github.com/Retro-Arena/RetroArena-hub.git "$rhdir"
+        rm -rf "$rhdir/.git"
+        rm -rf "$rhdir/.gitattributes"
     fi
 fi
