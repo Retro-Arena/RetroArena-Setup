@@ -22,8 +22,8 @@ function sources_fruitbox() {
     gitPullOrClone "$md_build/allegro5" "https://github.com/dos1/allegro5.git"
     gitPullOrClone "$md_build/fruitbox" "https://github.com/Retro-Arena/rpi-fruitbox.git"
     downloadAndExtract "https://ftp.osuosl.org/pub/blfs/conglomeration/mpg123/mpg123-1.24.0.tar.bz2" "$md_build"
-    wget http://odroidarena.com/pub/additional-files/CMakeLists.txt
-    wget http://odroidarena.com/pub/additional-files/Toolchain-odroid.cmake
+    #wget http://odroidarena.com/pub/additional-files/CMakeLists.txt
+    #wget http://odroidarena.com/pub/additional-files/Toolchain-odroid.cmake
 }
 
 function build_fruitbox() {
@@ -35,13 +35,15 @@ function build_fruitbox() {
     cd ..
     
     # Overwrite build files.
-    cp -vf "$md_build/CMakeLists.txt" "$md_build/allegro5/"
-    cp -vf "$md_build/Toolchain-odroid.cmake" "$md_build/allegro5/cmake/"
+    cp -vf "$md_data/CMakeLists.txt" "$md_build/allegro5/"
+    #cp -vf "$md_build/CMakeLists.txt" "$md_build/allegro5/"
+    #cp -vf "$md_build/Toolchain-odroid.cmake" "$md_build/allegro5/cmake/"
     
     # Build Allegro5
     cd "$md_build/allegro5"
     mkdir build && cd build
-    cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/Toolchain-odroid.cmake -DSHARED=off
+    cmake .. -DSHARED=off
+    #cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/Toolchain-odroid.cmake -DSHARED=off
     make -j4 && make install
     export PKG_CONFIG_PATH=/opt/retroarena/ports/fruitbox/build/allegro5/build/lib/pkgconfig
     ldconfig
