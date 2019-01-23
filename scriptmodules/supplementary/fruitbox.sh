@@ -10,7 +10,8 @@
 #
 
 rp_module_id="fruitbox"
-rp_module_desc="Fruitbox - Jukebox Music Player"
+rp_module_desc="Fruitbox - A customisable MP3 Retro Jukebox"
+rp_module_help="Copy your .mp3 files to $romdir/jukebox"
 rp_module_section="opt"
 
 function depends_fruitbox() {
