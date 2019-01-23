@@ -37,6 +37,7 @@ function install_theme_casetheme() {
     mv "$datadir/$theme" "/$datadir/casetheme"
     rm -rf "$datadir/casetheme/.git"
     rm -rf "$datadir/casetheme/.gitattributes"
+    chown -R $user:$user "$datadir/casetheme"
 }
 
 function gui_casetheme() {
