@@ -56,7 +56,7 @@ function configure_fruitbox() {
 
     cat > "$romdir/jukebox/+Start fruitbox.sh" << _EOF_
 #!/bin/bash
-/opt/retroarena/supplementary/fruitbox/fruitbox --cfg /opt/retropie/supplementary/fruitbox/skins/Modern/fruitbox.cfg
+/opt/retroarena/supplementary/fruitbox/fruitbox --cfg /opt/retroarena/supplementary/fruitbox/skins/Modern/fruitbox.cfg
 _EOF_
     chmod a+x "$romdir/jukebox/+Start fruitbox.sh"
     chown $user:$user "$romdir/jukebox/+Start fruitbox.sh"
