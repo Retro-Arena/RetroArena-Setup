@@ -1,10 +1,17 @@
 #!/usr/bin/env bash
 
+# This file is part of The RetroArena (TheRA)
+#
+# The RetroArena (TheRA) is the legal property of its developers, whose names are
+# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
+#
+# See the LICENSE.md file at the top-level directory of this distribution and
+# at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
+#
 
 rp_module_id="fruitbox"
-rp_module_desc="Fruitbox Jukebox music player."
+rp_module_desc="Fruitbox - Jukebox Music Player"
 rp_module_section="opt"
-rp_module_flags=""
 
 function depends_fruitbox() {
     getDepends libsm-dev libxcursor-dev libxi-dev libxinerama-dev libxrandr-dev libxpm-dev libvorbis-dev libtheora-dev
@@ -25,9 +32,11 @@ function build_fruitbox() {
     ./configure --with-cpu=arm_fpu --disable-shared
     make -j4 && make install
     cd ..
+    
     # Overwrite build files.
     cp -vf "$md_build/CMakeLists.txt" "$md_build/allegro5/"
     cp -vf "$md_build/Toolchain-odroid.cmake" "$md_build/allegro5/cmake/"
+    
     # Build Allegro5
     cd "$md_build/allegro5"
     mkdir build && cd build
@@ -45,7 +54,6 @@ function build_fruitbox() {
 }
 
 function install_fruitbox() {
-    #mkdir "$md_inst/bin"
     cp -v "$md_build/fruitbox/build/fruitbox" "$md_inst/"
 	cp -v "$md_build/fruitbox/skins.txt" "$md_inst/"
 	cp -vR "$md_build/fruitbox/skins" "$md_inst/"
