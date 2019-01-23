@@ -13,7 +13,7 @@ rp_module_id="retrohub"
 rp_module_desc="Scan QR code retro gaming links using your mobile device"
 rp_module_section="opt"
 
-function install_retrohub() {
+function sources_retrohub() {
     local rhdir="$datadir/retrohub"
     if [[ -e "$rhdir" ]]; then
         rm -rf "$rhdir"
