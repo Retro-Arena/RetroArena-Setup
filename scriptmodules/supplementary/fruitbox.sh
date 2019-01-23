@@ -33,7 +33,7 @@ function build_fruitbox() {
     mkdir build && cd build
     cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/Toolchain-odroid.cmake -DSHARED=off
     make -j4 && make install
-    export PKG_CONFIG_PATH=/opt/retropie/ports/fruitbox/build/allegro5/build/lib/pkgconfig
+    export PKG_CONFIG_PATH=/opt/retroarena/ports/fruitbox/build/allegro5/build/lib/pkgconfig
     ldconfig
     cd ../..
 
@@ -56,7 +56,7 @@ function configure_fruitbox() {
 
     cat > "$romdir/jukebox/+Start fruitbox.sh" << _EOF_
 #!/bin/bash
-/opt/retropie/supplementary/fruitbox/fruitbox --cfg /opt/retropie/supplementary/fruitbox/skins/Modern/fruitbox.cfg
+/opt/retroarena/supplementary/fruitbox/fruitbox --cfg /opt/retropie/supplementary/fruitbox/skins/Modern/fruitbox.cfg
 _EOF_
     chmod a+x "$romdir/jukebox/+Start fruitbox.sh"
     chown $user:$user "$romdir/jukebox/+Start fruitbox.sh"
