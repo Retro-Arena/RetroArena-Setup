@@ -28,7 +28,7 @@ function install_retrohub() {
 function configure_retrohub() {
     local rhdir="$datadir/retrohub"
     addSystem retrohub
-    setESSystem "RetroHub" "retrohub" "$rhdir" ".png" "fbi --noverbose -t 5 -1 %ROM% >/dev/null 2>&1" "" "retrohub"
+    setESSystem "RetroHub" "retrohub" "$rhdir" ".png" "fbi --noverbose -t 15 -1 %ROM% >/dev/null 2>&1" "" "retrohub"
 }
 
 function enable_retrohub() {
