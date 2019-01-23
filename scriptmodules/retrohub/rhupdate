@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# This file is part of The RetroArena (TheRA)
+#
+# The RetroArena (TheRA) is the legal property of its developers, whose names are
+# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
+#
+# See the LICENSE.md file at the top-level directory of this distribution and
+# at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
+#
+
+# check for internet connection
+((count = 100))
+while [[ $count -ne 0 ]] ; do
+    ping -c 1 8.8.8.8
+    rc=$?
+    if [[ $rc -eq 0 ]] ; then
+        ((count = 1))
+    fi
+    ((count = count - 1))
+done
+
+# if sucess then proceed to update
+if [[ $rc -eq 0 ]] ; then
+    local rhdir="/home/pigaming/RetroArena/retrohub"
+    
+    if [[ -e "$rhdir" ]]; then
+        rm -rf "$rhdir"
+        git clone https://github.com/Retro-Arena/RetroArena-hub.git "$rhdir"
+    fi
+fi
