@@ -18,10 +18,14 @@ function sources_retrohub() {
     if [[ -e "$rhdir" ]]; then
         rm -rf "$rhdir"
     fi
-    gitPullOrClone "$datadir/retrohub" https://github.com/Retro-Arena/RetroArena-hub.git
+    gitPullOrClone "$rhdir" https://github.com/Retro-Arena/RetroArena-hub.git
+}
+
+function install_retrohub() {
+    local rhdir="$datadir/retrohub"
     rm -rf "$rhdir/.git"
     rm -rf "$rhdir/.gitattributes"
-    chown -R $user:$user "$datadir/retrohub"
+    chown -R $user:$user "$rhdir"
     enable_retrohub
 }
 
