@@ -895,7 +895,7 @@ function get_sys_command() {
     fi
 
     # workaround for launching xserver on correct/user owned tty
-    # see https://github.com/Retro-Arena/RetroArena-Setup/issues/1805
+    # see https://github.com/RetroPie/RetroPie-Setup/issues/1805
     if [[ -n "$TTY" && "$COMMAND" =~ ^(startx|xinit) ]]; then
         COMMAND+=" -- vt$TTY -keeptty"
     fi
@@ -907,15 +907,15 @@ function show_launch() {
     if [[ "$IS_SYS" -eq 1 && "$USE_ART" -eq 1 ]]; then
         # if using art look for images in paths for es art.
         images+=(
-            "$HOME/RetroArena/roms/$SYSTEM/images/${ROM_BN}-image"
-            "$HOME/.emulationstation/downloaded_images/$SYSTEM/${ROM_BN}-image"
+            "$home/RetroArena/roms/$SYSTEM/images/${ROM_BN}-image"
+            "$home/.emulationstation/downloaded_images/$SYSTEM/${ROM_BN}-image"
         )
     fi
 
     # look for custom launching images
     if [[ "$IS_SYS" -eq 1 ]]; then
         images+=(
-            "$HOME/RetroArena/roms/$SYSTEM/images/${ROM_BN}-launching"
+            "$home/RetroArena/roms/$SYSTEM/images/${ROM_BN}-launching"
             "$CONF_ROOT/launching"
         )
     fi
@@ -1011,7 +1011,7 @@ function launch_command() {
 }
 
 function bios_check() {
-    BIOS="$HOME/RetroArena/BIOS"
+    BIOS="$home/RetroArena/BIOS"
     if [[ "$SYSTEM" =~ ^("naomi"|"atomiswave")$ ]]; then
         for filename in airlbios awbios f355bios f355dlx hod2bios naomi; do
             if [[ ! -f "$BIOS/dc/$filename.zip" ]]; then
@@ -1056,7 +1056,7 @@ function ogst_off() {
 }
 
 function ogst_loading() {
-    OGST="$HOME/RetroArena/casetheme"
+    OGST="$home/RetroArena/casetheme"
     if ! lsmod | grep -q 'fbtft_device'; then
         sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
         mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
@@ -1116,17 +1116,17 @@ function ogst_play() {
     done
    
     # load image
-    OGST="$HOME/RetroArena/casetheme"
-    MNB_BA="$HOME/RetroArena/roms/$SYSTEM/boxart"
-    MNB_CA="$HOME/RetroArena/roms/$SYSTEM/cartart"
-    MNB_SP="$HOME/RetroArena/roms/$SYSTEM/snap"
-    MNB_WL="$HOME/RetroArena/roms/$SYSTEM/wheel"
-    SKY_MQ="$HOME/RetroArena/roms/$SYSTEM/media/marquees"
-    SKY_SS="$HOME/RetroArena/roms/$SYSTEM/media/screenshots"
-    SKP_MQ="$HOME/RetroArena/roms/$SYSTEM/media/marquee"
-    SKP_SS="$HOME/RetroArena/roms/$SYSTEM/media/images"
-    SLP_MQ="$HOME/RetroArena/roms/$SYSTEM/images"
-    SLP_SS="$HOME/RetroArena/roms/$SYSTEM/images"
+    OGST="$home/RetroArena/casetheme"
+    MNB_BA="$home/RetroArena/roms/$SYSTEM/boxart"
+    MNB_CA="$home/RetroArena/roms/$SYSTEM/cartart"
+    MNB_SP="$home/RetroArena/roms/$SYSTEM/snap"
+    MNB_WL="$home/RetroArena/roms/$SYSTEM/wheel"
+    SKY_MQ="$home/RetroArena/roms/$SYSTEM/media/marquees"
+    SKY_SS="$home/RetroArena/roms/$SYSTEM/media/screenshots"
+    SKP_MQ="$home/RetroArena/roms/$SYSTEM/media/marquee"
+    SKP_SS="$home/RetroArena/roms/$SYSTEM/media/images"
+    SLP_MQ="$home/RetroArena/roms/$SYSTEM/images"
+    SLP_SS="$home/RetroArena/roms/$SYSTEM/images"
     
     for pid in $pids; do
         # wait
@@ -1144,14 +1144,14 @@ function ogst_play() {
         # clears the screen
         mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/blank.png" &> /dev/null
         
-        if [[ -e "$HOME/.config/ogst001" ]]; then
+        if [[ -e "$home/.config/ogst001" ]]; then
             if [[ -e "$OGST/system-$SYSTEM.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/system-$SYSTEM.png" &> /dev/null
             else
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst002" ]]; then
+        if [[ -e "$home/.config/ogst002" ]]; then
             if [[ -e "$MNB_BA/$ROM_BN.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_BA/$ROM_BN.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1160,7 +1160,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst003" ]]; then
+        if [[ -e "$home/.config/ogst003" ]]; then
             if [[ -e "$MNB_CA/$ROM_BN.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_CA/$ROM_BN.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1169,7 +1169,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst004" ]]; then
+        if [[ -e "$home/.config/ogst004" ]]; then
             if [[ -e "$MNB_SP/$ROM_BN.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$MNB_SP/$ROM_BN.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1178,7 +1178,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst005" ]]; then
+        if [[ -e "$home/.config/ogst005" ]]; then
             if [[ -e "$MNB_WL/$ROM_BN.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$MNB_WL/$ROM_BN.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1187,7 +1187,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst006" ]]; then
+        if [[ -e "$home/.config/ogst006" ]]; then
             if [[ -e "$SKY_MQ/$ROM_BN.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SKY_MQ/$ROM_BN.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1196,7 +1196,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst007" ]]; then
+        if [[ -e "$home/.config/ogst007" ]]; then
             if [[ -e "$SKY_SS/$ROM_BN.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$SKY_SS/$ROM_BN.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1205,7 +1205,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst008" ]]; then
+        if [[ -e "$home/.config/ogst008" ]]; then
             if [[ -e "$SKP_MQ/$ROM_BN.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SKP_MQ/$ROM_BN.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1214,7 +1214,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst009" ]]; then
+        if [[ -e "$home/.config/ogst009" ]]; then
             if [[ -e "$SKP_SS/$ROM_BN.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$SKP_SS/$ROM_BN.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1223,7 +1223,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst010" ]]; then
+        if [[ -e "$home/.config/ogst010" ]]; then
             if [[ -e "$SLP_MQ/$ROM_BN-marquee.png" ]]; then
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale -zoom -xy 300 "$SLP_MQ/$ROM_BN-marquee.png" &> /dev/null
             elif  [[ -e "$OGST/system-$SYSTEM.png" ]]; then
@@ -1232,7 +1232,7 @@ function ogst_play() {
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
             fi
         fi
-        if [[ -e "$HOME/.config/ogst011" ]]; then
+        if [[ -e "$home/.config/ogst011" ]]; then
             if [[ -e "$SLP_SS/$ROM_BN-image.jpg" ]]; then
                 convert "$SLP_SS/$ROM_BN-image.jpg" "$SLP_SS/$ROM_BN-image.png"
                 mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$SLP_SS/$ROM_BN-image.png" &> /dev/null

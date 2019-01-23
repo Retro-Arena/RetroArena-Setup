@@ -23,11 +23,11 @@ function gui_controlreset() {
         case "$choice" in
             1)
                 rm -rf /opt/retroarena/configs/all/retroarch-joypads/*
-                rm -rf $HOME/.emulationstation/es_input.cfg
-                cp $scriptdir/scriptmodules/supplementary/emulationstation/es_input_reset.cfg $HOME/.emulationstation/es_input.cfg
-                dos2unix $HOME/.emulationstation/es_input.cfg
-                chmod a+x $HOME/.emulationstation/es_input.cfg
-                chown pigaming:pigaming $HOME/.emulationstation/es_input.cfg
+                rm -rf $home/.emulationstation/es_input.cfg
+                cp $scriptdir/scriptmodules/supplementary/emulationstation/es_input_reset.cfg $home/.emulationstation/es_input.cfg
+                dos2unix $home/.emulationstation/es_input.cfg
+                chmod a+x $home/.emulationstation/es_input.cfg
+                chown pigaming:pigaming $home/.emulationstation/es_input.cfg
                 reboot
                 ;;
         esac

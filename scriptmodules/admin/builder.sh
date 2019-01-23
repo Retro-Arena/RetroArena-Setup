@@ -87,8 +87,8 @@ function chroot_build_builder() {
 
         if [[ ! -d "$md_build/$dist" ]]; then
             rp_callModule image create_chroot "$dist" "$md_build/$dist"
-            git clone "$HOME/RetroArena-Setup" "$md_build/$dist/home/pi/RetroArena-Setup"
-            cat > "$md_build/$dist/home/pi/install.sh" <<_EOF_
+            git clone "$home/RetroArena-Setup" "$md_build/$dist/home/pigaming/RetroArena-Setup"
+            cat > "$md_build/$dist/home/pigaming/install.sh" <<_EOF_
 #!/bin/bash
 cd
 sudo apt-get update

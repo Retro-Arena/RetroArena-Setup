@@ -133,7 +133,7 @@ function configure_skyscraper() {
     # Handle the cases where the user has an existing Skyscraper installation.
     if [[ -d "$home/.skyscraper" && "$local_config" != "$configdir/all/skyscraper" ]]; then
         # We have an existing Skyscraper installation, but not handled by this scriptmodule.
-        # Since the $HOME/.skyscraper folder will be moved, make sure the Local DB and Import folders are moved separately
+        # Since the $home/.skyscraper folder will be moved, make sure the Local DB and Import folders are moved separately
         local f_size
         f_size=$(du --total -sm "$home/.skyscraper/dbs" "$home/.skyscraper/import" 2>/dev/null | grep total | cut -f 1 )
         printMsgs "console" "INFO: Moving the Local DB and Import folders to new configuration folder (total: $f_size Mb)"
@@ -487,7 +487,7 @@ function gui_skyscraper() {
         [5]="Game name option to remove/keep the text found between '()' and '[]' in the ROMs filename.\n\nSkyscraper option: \Zb--nobrackets\Zn"
         [6]="Force the refresh of resources in the local cache when scraping.\n\nSkyscraper option: \Zb--refresh\Zn"
         [7]="Toggle the download and caching of videos.\nThis also toggles whether the videos will be included in the resulting gamelist.\n\nSkyscraper option: \Zb--videos\Zn"
-        [8]="Choose to save the generated 'gamelist.xml' and media in the ROMs folder. Supported options:\n\n\ZbEnabled\Zn saves the 'gamelist.xml' in the ROMs folder and the media in the 'media' sub-folder.\n\n\ZbDisabled\Zn saves the 'gamelist.xml' in \Zu\$HOME/.emulationstation/gamelists/<system>\Zn and the media in \Zu\$HOME/.emulationstation/downloaded_media\Zn.\n\n\Zb\ZrNOTE\Zn: changing this option will not automatically copy the 'gamelist.xml' file and the media to the new location or remove the ones in the old location. You must do this manually.\n\nSkyscraper parameters: \Zb-g <gamelist>\Zn / \Zb-o <path>\Zn"
+        [8]="Choose to save the generated 'gamelist.xml' and media in the ROMs folder. Supported options:\n\n\ZbEnabled\Zn saves the 'gamelist.xml' in the ROMs folder and the media in the 'media' sub-folder.\n\n\ZbDisabled\Zn saves the 'gamelist.xml' in \Zu\$home/.emulationstation/gamelists/<system>\Zn and the media in \Zu\$home/.emulationstation/downloaded_media\Zn.\n\n\Zb\ZrNOTE\Zn: changing this option will not automatically copy the 'gamelist.xml' file and the media to the new location or remove the ones in the old location. You must do this manually.\n\nSkyscraper parameters: \Zb-g <gamelist>\Zn / \Zb-o <path>\Zn"
         [A]="Advanced options sub-menu."
     )
 

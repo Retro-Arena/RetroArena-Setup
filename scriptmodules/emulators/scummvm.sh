@@ -68,7 +68,6 @@ function configure_scummvm() {
     local dir
     for dir in .config .local/share; do
         moveConfigDir "$home/$dir/scummvm" "$md_conf_root/scummvm"
-        
     done
 
     # Create startup script
@@ -90,5 +89,5 @@ _EOF_
     
     addEmulator 1 "$md_id" "scummvm" "bash $romdir/scummvm/+Start\ $name.sh %BASENAME%"
     addSystem "scummvm"
-    cp "/home/pigaming/RetroArena-Setup/configs/scummvm/scummvm.ini" "$md_conf_root/scummvm/"
+    cp "$scriptdir/configs/scummvm/scummvm.ini" "$md_conf_root/scummvm/"
 }

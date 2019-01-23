@@ -24,12 +24,12 @@ function gui_bgmtoggle() {
         case "$choice" in
             1)
                 pkill -CONT mpg123
-                touch "$HOME/.config/bgmtoggle"
+                touch "$home/.config/bgmtoggle"
                 printMsgs "dialog" "Background music is now enabled."
                 ;;
             2)
                 pkill -STOP mpg123
-                rm -rf "$HOME/.config/bgmtoggle"
+                rm -rf "$home/.config/bgmtoggle"
                 printMsgs "dialog" "Background music is now disabled."
                 ;;
         esac
