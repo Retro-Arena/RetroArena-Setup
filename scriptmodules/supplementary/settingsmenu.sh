@@ -15,7 +15,7 @@ rp_module_section="core"
 
 function _update_hook_settingsmenu() {
     # to show as installed when upgrading to retroarena-setup 4.x
-    if ! rp_isInstalled "$md_idx" && [[ -f "$home/.emulationstation/gamelists/retroarena/gamelist.xml" ]]; then
+    if ! rp_isInstalled "$md_idx" && [[ -f "$configdir/all/emulationstation/gamelists/retroarena/gamelist.xml" ]]; then
         mkdir -p "$md_inst"
         # to stop older scripts removing when launching from retroarena menu in ES due to not using exec or exiting after running retroarena-setup from this module
         touch "$md_inst/.retroarena"
@@ -191,7 +191,7 @@ NOTE: Requires a keyboard to be connected.'
 
 function remove_settingsmenu() {
     rm -rf "$datadir/settingsmenu"
-    rm -rf "$home/.emulationstation/gamelists/retroarena"
+    rm -rf "$configdir/all/emulationstation/gamelists/retroarena"
     delSystem retroarena
 }
 
