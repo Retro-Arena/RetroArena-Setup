@@ -407,7 +407,7 @@ function _gui_advanced_skyscraper() {
 
 function gui_skyscraper() {
     if pgrep "emulationstatio" >/dev/null; then
-        printMsgs "dialog" "This scraper must not be run while EmulationStation is running or the scraped data will be overwritten.\n\nPlease quit EmulationStation and run RetroArena-Setup from the terminal:\n\n sudo \$home/RetroArena-Setup/retroarena_setup.sh"
+        printMsgs "dialog" "This scraper must not be run while EmulationStation is running or the scraped data will be overwritten.\n\nPlease quit EmulationStation and run RetroArena-Setup from the terminal:\n\n sudo $home/RetroArena-Setup/retroarena_setup.sh"
         return
     fi
 
