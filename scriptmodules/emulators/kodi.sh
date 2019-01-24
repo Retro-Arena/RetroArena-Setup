@@ -35,9 +35,7 @@ function depends_kodi() {
     elif isPlatform "x86" && [[ "$md_mode" == "install" ]]; then
         apt-add-repository -y ppa:team-xbmc/ppa
     fi
-
     getDepends policykit-1
-
     addUdevInputRules
 }
 
@@ -48,17 +46,18 @@ function install_bin_kodi() {
 }
 
 function remove_kodi() {
-    aptRemove kodi-fbdev 
-    rp_callModule kodi remove
+    aptRemove kodi-fbdev
+    aptRemove kodi-fbdev-bin
+    aptRemove kodi-fbdev-data
+    rp_callModule kodi depends remove
 }
 
 function configure_kodi() {
-   mkRomDir "kodi"
- cp -r "$home/$dir/RetroArena-Setup/scriptmodules/emulators/kodi/kodi/" "$romdir/"
- cp "$home/$dir/RetroArena-Setup/scriptmodules/emulators/kodi/Kodi.bash" /usr/bin/kodi
-cp "$home/$dir/RetroArena-Setup/scriptmodules/emulators/kodi/DialogButtonMenu.xml" /usr/share/kodi/addons/skin.estuary/xml/
+    mkRomDir "kodi"
+    cp -r "$scriptdir/scriptmodules/emulators/kodi/kodi/" "$romdir/"
+    cp "$scriptdir/scriptmodules/emulators/kodi/Kodi.bash" /usr/bin/kodi
+    cp "$scriptdir/scriptmodules/emulators/kodi/DialogButtonMenu.xml" /usr/share/kodi/addons/skin.estuary/xml/
     chown -R $user:$user "$romdir/kodi/"
 	moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
-
     setESSystem "kodi" "kodi" "$romdir/kodi" ".sh" "bash %ROM%" "kodi"
 }
