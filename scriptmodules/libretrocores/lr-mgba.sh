@@ -44,7 +44,7 @@ function install_bin_lr-mgba() {
 
 function configure_lr-mgba() {
     local system
-    for system in gb gbc gba; do
+    for system in gb gbc gba sgb; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
         addEmulator 1 "$md_id" "$system" "$md_inst/mgba_libretro.so"

@@ -47,10 +47,14 @@ function configure_lr-gambatte() {
 
     mkRomDir "gbc"
     mkRomDir "gb"
+	mkRomDir "sgb"
     ensureSystemretroconfig "gb"
     ensureSystemretroconfig "gbc"
+	ensureSystemretroconfig "sgb"
     addEmulator 1 "$md_id" "gb" "$md_inst/gambatte_libretro.so"
     addEmulator 1 "$md_id" "gbc" "$md_inst/gambatte_libretro.so"
+	addEmulator 1 "$md_id" "sgb" "$md_inst/gambatte_libretro.so"
     addSystem "gb"
     addSystem "gbc"
+	addSystem "sgb"
 }
