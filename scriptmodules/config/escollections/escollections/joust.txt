@@ -1,0 +1,31 @@
+Arcade Classic No. 4 - Defender & Joust (USA, Europe);gb
+Arcade Hits - Joust & Defender (USA);gbc
+joust2;arcade
+joust2;mame-advmame
+joust2;mame-libretro
+joust2;mame-mame4all
+joust2r1;arcade
+joust2r1;mame-advmame
+joust2r1;mame-libretro
+joust2r1;mame-mame4all
+joust;arcade
+Jouste (Europe);c64
+Joust (Europe);amstradcpc
+Joust (Europe);zxspectrum
+joust;mame-advmame
+joust;mame-libretro
+joust;mame-mame4all
+JoustPong (USA) (Unl);atari2600
+joustr;arcade
+joustr;mame-advmame
+joustr;mame-libretro
+joustr;mame-mame4all
+Joust (USA);atari2600
+Joust (USA);atari5200
+Joust (USA);atari7800
+Joust (USA, Europe);atarilynx
+Joust (USA);nes
+joustwr;arcade
+joustwr;mame-advmame
+joustwr;mame-libretro
+joustwr;mame-mame4all

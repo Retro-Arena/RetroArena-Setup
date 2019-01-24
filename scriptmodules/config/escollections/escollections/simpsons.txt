@@ -1,0 +1,66 @@
+Bartman Meets Radioactive Man (USA, Europe);gamegear
+bartnigh;fba
+Bart Simpson's Escape from Camp Deadly (USA, Europe);gb
+bartvssm1;fba
+bartvssm;fba
+simpbowl;arcade
+simpbowl;mame-advmame
+simpbowl;mame-libretro
+simpbowl;mame-mame4all
+simpsons2p2;arcade
+simpsons2p2;fba
+simpsons2p2;mame-advmame
+simpsons2p2;mame-libretro
+simpsons2p2;mame-mame4all
+simpsons2p3;arcade
+simpsons2p3;mame-advmame
+simpsons2p3;mame-libretro
+simpsons2p3;mame-mame4all
+simpsons2pa;arcade
+simpsons2pa;fba
+simpsons2pa;mame-advmame
+simpsons2pa;mame-libretro
+simpsons2pa;mame-mame4all
+simpsons2p;arcade
+simpsons2p;fba
+simpsons2pj;arcade
+simpsons2pj;fba
+simpsons2pj;mame-advmame
+simpsons2pj;mame-libretro
+simpsons2pj;mame-mame4all
+simpsons2p;mame-advmame
+simpsons2p;mame-libretro
+simpsons2p;mame-mame4all
+simpsons4pa;arcade
+simpsons4pa;fba
+simpsons4pa;mame-advmame
+simpsons4pa;mame-libretro
+simpsons4pa;mame-mame4all
+simpsons;arcade
+Simpsons Arcade Game, The (USA) (Disk 1 Side A);c64
+Simpsons Arcade Game, The (USA) (Disk 1 Side B);c64
+Simpsons Arcade Game, The (USA) (Disk 2);c64
+Simpsons - Bart vs the Space Mutants (Europe) (Disk 1);amstradcpc
+Simpsons - Bart vs the Space Mutants (Europe) (Disk 2);amstradcpc
+Simpsons - Bart vs the Space Mutants (Europe);zxspectrum
+simpsons;fba
+Simpsons Itchy & Scratchy, The - Miniature Golf Madness (USA, Europe);gb
+simpsons;mame-advmame
+simpsons;mame-libretro
+simpsons;mame-mame4all
+Simpsons, The - Bartman Meets Radioactive Man (USA);nes
+Simpsons, The - Bart's Nightmare (USA);snes
+Simpsons, The - Bart & the Beanstalk (USA, Europe);gb
+Simpsons, The - Bart vs. the Juggernauts (USA, Europe);gb
+Simpsons, The - Bart vs. the Space Mutants (Europe);c64
+Simpsons, The - Bart vs. The Space Mutants (Europe);mastersystem
+Simpsons, The - Bart vs. The Space Mutants (USA, Europe);gamegear
+Simpsons, The - Bart vs. the Space Mutants (USA);nes
+Simpsons, The - Bart vs. The World (Europe);mastersystem
+Simpsons, The - Bart vs. The World (USA, Europe);gamegear
+Simpsons, The - Bart vs. the World (USA);nes
+Simpsons, The - Night of the Living Treehouse of Horror (USA, Europe);gbc
+Simpsons, The - Road Rage (USA, Europe);gba
+Simpsons, The - Wrestling (USA);psx
+Simpsons, The - Wrestling (USA);psp
+Virtual Bart (USA);snes

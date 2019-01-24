@@ -1,0 +1,161 @@
+aceattaca;arcade
+aceattaca;mame-advmame
+aceattaca;mame-libretro
+aceattaca;mame-mame4all
+aceattac;arcade
+aceattac;mame-advmame
+aceattac;mame-libretro
+aceattac;mame-mame4all
+Beach Blanket Volleyball (USA);c64
+Beach Volley (Europe);amstradcpc
+Beach Volley (Europe);c64
+Beach Volley (Europe);zxspectrum
+Bump Set Spike! - Doubles Volleyball (Europe);c64
+Bump, Set, Spike! (Europe);amstradcpc
+Bump, Set, Spike! (Europe);zxspectrum
+Dig & Spike Volleyball (USA);snes
+Great Volleyball (USA, Europe);mastersystem
+Inazuma Serve da! Super Beach Volley (Japan);sfc
+josvolly;arcade
+josvolly;mame-advmame
+josvolly;mame-libretro
+josvolly;mame-mame4all
+Kings of the Beach - Professional Beach Volleyball (USA);nes
+Kings of the Beach (USA);c64
+Klonoa - Beach Volleyball (Europe);psx
+Klonoa - Beach Volleyball (Europe);psp
+Malibu Beach Volleyball (USA);gb
+Malibu Bikini Volleyball (USA, Europe);atarilynx
+Multi Play Volleyball (Japan);sfc
+Nekketsu! Beach Volley Da yo Kunio-kun (Japan);gb
+Over the Net (Europe);c64
+pc_vball;arcade
+pc_vball;mame-advmame
+pc_vball;mame-libretro
+pc_vball;mame-mame4all
+Popeye no Beach Volleyball (Japan);gamegear
+Power Spike - Pro Beach Volleyball (USA);gbc
+Power Spike - Pro Beach Volleyball (USA);psx
+Power Spike - Pro Beach Volleyball (USA);psp
+pspikes2;arcade
+pspikes2;mame-advmame
+pspikes2;mame-libretro
+pspikes2;mame-mame4all
+pspikes2;neogeo
+pspikes;arcade
+pspikesb;arcade
+pspikesb;mame-advmame
+pspikesb;mame-libretro
+pspikesb;mame-mame4all
+pspikesc;arcade
+pspikesc;mame-advmame
+pspikesc;mame-libretro
+pspikesc;mame-mame4all
+pspikesk;arcade
+pspikesk;mame-advmame
+pspikesk;mame-libretro
+pspikesk;mame-mame4all
+pspikes;mame-advmame
+pspikes;mame-libretro
+pspikes;mame-mame4all
+pspikesu;arcade
+pspikesu;mame-advmame
+pspikesu;mame-libretro
+pspikesu;mame-mame4all
+RealSports Volleyball (USA);atari2600
+Sanrio Cup - Pon Pon Volley (Japan) (Translated En);famicom
+Serve & Volley (USA);c64
+Sonic Spike - World Championship Beach Volleyball (USA);tg16
+spiker2;arcade
+spiker2;mame-advmame
+spiker2;mame-libretro
+spiker2;mame-mame4all
+spiker3;arcade
+spiker3;mame-advmame
+spiker3;mame-libretro
+spiker3;mame-mame4all
+spiker;arcade
+spiker;mame-advmame
+spiker;mame-libretro
+spiker;mame-mame4all
+spikes91;arcade
+spikes91b;arcade
+spikes91b;mame-advmame
+spikes91b;mame-libretro
+spikes91b;mame-mame4all
+spikes91;mame-advmame
+spikes91;mame-libretro
+spikes91;mame-mame4all
+Super Spike V'Ball (USA);nes
+Super Volleyball (USA);tg16
+svolley;arcade
+svolleyk;arcade
+svolleyk;mame-advmame
+svolleyk;mame-libretro
+svolleyk;mame-mame4all
+svolley;mame-advmame
+svolley;mame-libretro
+svolley;mame-mame4all
+svolleyu;arcade
+svolleyu;mame-advmame
+svolleyu;mame-libretro
+svolleyu;mame-mame4all
+svolly91;arcade
+svolly91;mame-advmame
+svolly91;mame-libretro
+svolly91;mame-mame4all
+vball2pj;arcade
+vball2pjb;arcade
+vball2pjb;mame-advmame
+vball2pjb;mame-libretro
+vball2pjb;mame-mame4all
+vball2pj;mame-advmame
+vball2pj;mame-libretro
+vball2pj;mame-mame4all
+vball;arcade
+vballb;arcade
+V-Ball - Beach Volley Heroes (Europe);psx
+V-Ball - Beach Volley Heroes (Europe);psp
+vballb;mame-advmame
+vballb;mame-libretro
+vballb;mame-mame4all
+vball;mame-advmame
+vball;mame-libretro
+vball;mame-mame4all
+Venice Beach Volleyball (USA) (Unl);nes
+Volley Ball (France);amstradcpc
+Volleyball (Japan);fds
+Volleyball;videopac
+Volleyball Simulator (Europe);c64
+Volleyball Simulator, The (Europe);amstradcpc
+Volleyball (USA, Europe);videopac2
+Volleyball (USA, Europe);nes
+wbbc97;arcade
+wbbc97;mame-advmame
+wbbc97;mame-libretro
+wbbc97;mame-mame4all
+wbeachvl2;arcade
+wbeachvl2;mame-advmame
+wbeachvl2;mame-libretro
+wbeachvl2;mame-mame4all
+wbeachvl3;arcade
+wbeachvl3;mame-advmame
+wbeachvl3;mame-libretro
+wbeachvl3;mame-mame4all
+wbeachvl;arcade
+wbeachvl;mame-advmame
+wbeachvl;mame-libretro
+wbeachvl;mame-mame4all
+wcvol95;arcade
+wcvol95;mame-advmame
+wcvol95;mame-libretro
+wcvol95;mame-mame4all
+winspike;arcade
+winspikej;arcade
+winspikej;mame-advmame
+winspikej;mame-libretro
+winspikej;mame-mame4all
+winspike;mame-advmame
+winspike;mame-libretro
+winspike;mame-mame4all
+World Beach Volley - 1992 GB Cup (Europe);gb

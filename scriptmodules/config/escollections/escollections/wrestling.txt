@@ -1,0 +1,405 @@
+3countb;arcade
+3countb;mame-advmame
+3countb;mame-libretro
+3countb;mame-mame4all
+3countb;neogeo
+American Tag Team Wrestling (Europe);amstradcpc
+American Tag-Team Wrestling (Europe);c64
+American Tag Team Wrestling (Europe);zxspectrum
+appoooh;arcade
+appoooh;mame-advmame
+appoooh;mame-libretro
+appoooh;mame-mame4all
+armchmp2;arcade
+armchmp2;mame-advmame
+armchmp2;mame-libretro
+armchmp2;mame-mame4all
+armchmp2o;arcade
+armchmp2o;mame-advmame
+armchmp2o;mame-libretro
+armchmp2o;mame-mame4all
+armwrest;arcade
+armwrest;mame-advmame
+armwrest;mame-libretro
+armwrest;mame-mame4all
+Battle Field '94 in Tokyo Dome (Japan);pce-cd
+Battle Royale (USA);tg16
+bigprowr;arcade
+bigprowr;mame-advmame
+bigprowr;mame-libretro
+bigprowr;mame-mame4all
+blzntrnd;arcade
+blzntrnd;mame-advmame
+blzntrnd;mame-libretro
+blzntrnd;mame-mame4all
+bodyslam;arcade
+Body Slam (Europe);c64
+bodyslam;mame-advmame
+bodyslam;mame-libretro
+bodyslam;mame-mame4all
+Bop'n Wrestle (Europe);c64
+Champion Pro Wrestling (Japan);sg-1000
+Championship Wrestling (USA);c64
+champwr;arcade
+champwrj;arcade
+champwrj;mame-advmame
+champwrj;mame-libretro
+champwrj;mame-mame4all
+champwr;mame-advmame
+champwr;mame-libretro
+champwr;mame-mame4all
+champwru;arcade
+champwru;mame-advmame
+champwru;mame-libretro
+champwru;mame-mame4all
+chwrestl;arcade
+chwrestl;mame-advmame
+chwrestl;mame-libretro
+chwrestl;mame-mame4all
+dumpmtmt;arcade
+dumpmtmt;mame-advmame
+dumpmtmt;mame-libretro
+dumpmtmt;mame-mame4all
+ECW Anarchy Rulz (USA);dreamcast
+ECW Anarchy Rulz (USA);psx
+ECW Anarchy Rulz (USA);psp
+ECW Hardcore Revolution (USA, Europe);gbc
+ECW Hardcore Revolution (USA);n64
+ECW Hardcore Revolution (USA);dreamcast
+ECW Hardcore Revolution (USA);psx
+ECW Hardcore Revolution (USA);psp
+excthour;arcade
+excthour;mame-advmame
+excthour;mame-libretro
+excthour;mame-mame4all
+Fire Pro Joshi - All Star Dream Slam (Japan);sfc
+Fire Pro Jyoshi - Shoumu Choujyo Taisen - Zenjo vs JWP (Japan);pce-cd
+Fire Pro Wrestling 2 (USA);gba
+Fire Pro Wrestling for WonderSwan (Japan);wonderswan
+Fire Pro Wrestling (USA, Europe);gba
+Funaki Masakatsu Hybrid Wrestler - Tougi Denshou (Japan) (Translated En);sfc
+Gekitou Burning Pro Wrestling (Japan) (Translated En);sfc
+Giant Gram 2000 - All-Japan Pro Wrestling 3 (Japan);dreamcast
+Giant Gram - All-Japan Pro Wrestling 2 (Japan);dreamcast
+grmatch;arcade
+grmatch;mame-advmame
+grmatch;mame-libretro
+grmatch;mame-mame4all
+HAL Wrestling (USA);gb
+Hammerlock Wrestling (USA);snes
+Intergalactic Cage Match (Europe);c64
+Jikkyou Power Pro Wrestling '96 - Max Voltage (Japan) (Translated En);sfc
+JWP Joshi Pro Wres - Pure Wrestle Queens (Japan);sfc
+Kinnikuman - Dirty Challenger (Japan);sfc
+Kinnikuman - Muscle Tag Match (Japan) (Translated En);famicom
+Legends of Wrestling II (USA, Europe);gba
+mainevt2p;arcade
+mainevt2p;mame-advmame
+mainevt2p;mame-libretro
+mainevt2p;mame-mame4all
+mainevt;arcade
+mainevt;mame-advmame
+mainevt;mame-libretro
+mainevt;mame-mame4all
+mainevto;arcade
+mainevto;mame-advmame
+mainevto;mame-libretro
+mainevto;mame-mame4all
+maniach2;arcade
+maniach2;mame-advmame
+maniach2;mame-libretro
+maniach2;mame-mame4all
+maniach;arcade
+maniach;mame-advmame
+maniach;mame-libretro
+maniach;mame-mame4all
+Maniac Pro-Wrestling - Ashita e no Tatakai (Japan);pce-cd
+matmania;arcade
+Mat Mania Challenge (USA);atari7800
+matmania;mame-advmame
+matmania;mame-libretro
+matmania;mame-mame4all
+mbomberj;arcade
+mbomberj;mame-advmame
+mbomberj;mame-libretro
+mbomberj;mame-mame4all
+mbombrd;arcade
+mbombrdj;arcade
+mbombrdj;mame-advmame
+mbombrdj;mame-libretro
+mbombrdj;mame-mame4all
+mbombrd;mame-advmame
+mbombrd;mame-libretro
+mbombrd;mame-mame4all
+MicroLeague WWF Wrestling (USA) (Disk 1 Side A);c64
+MicroLeague WWF Wrestling (USA) (Disk 1 Side B);c64
+MicroLeague WWF Wrestling (USA) (Disk 2 Side A);c64
+MicroLeague WWF Wrestling (USA) (Disk 2 Side B);c64
+Monster Pro Wrestling (Japan);pce-cd
+mt_wwar;arcade
+mt_wwar;mame-advmame
+mt_wwar;mame-libretro
+mt_wwar;mame-mame4all
+Mucha Lucha! - Mascaritas of the Lost Code (USA) (En,Fr,Es);gba
+M.U.S.C.L.E. - Tag Team Match (USA);nes
+Natsume Championship Wrestling (USA);snes
+New Japan Pro Wrestling - Toukon Retsuden 4 (Japan);dreamcast
+Oonita Atsushi FMW (Japan);sfc
+Oozumou Spirits (Japan);sfc
+pbobble2;neogeo
+pbobble;neogeo
+pc_pwrst;arcade
+pc_pwrst;mame-advmame
+pc_pwrst;mame-libretro
+pc_pwrst;mame-mame4all
+pochi;neogeo
+Popeye 3 - Wrestle Crazy (Europe);amstradcpc
+Popeye III - Wrestle Crazy (Europe);c64
+Power Move Pro Wrestling (USA);psx
+Power Move Pro Wrestling (USA);psp
+Pro Wrestling - Famicom Wrestling Association (Japan);fds
+Pro Wrestling (USA, Europe);mastersystem
+Pro Wrestling (USA);nes
+ringdesta;arcade
+ringdesta;mame-advmame
+ringdesta;mame-libretro
+ringdesta;mame-mame4all
+ringdest;arcade
+ringdest;mame-advmame
+ringdest;mame-libretro
+ringdest;mame-mame4all
+ringdstd;arcade
+ringdstd;mame-advmame
+ringdstd;mame-libretro
+ringdstd;mame-mame4all
+ringohja;arcade
+ringohja;mame-advmame
+ringohja;mame-libretro
+ringohja;mame-mame4all
+ringrage;arcade
+ringragej;arcade
+ringragej;mame-advmame
+ringragej;mame-libretro
+ringragej;mame-mame4all
+ringrage;mame-advmame
+ringrage;mame-libretro
+ringrage;mame-mame4all
+ringrageu;arcade
+ringrageu;mame-advmame
+ringrageu;mame-libretro
+ringrageu;mame-mame4all
+Ring Rage (USA);gb
+robowres;arcade
+robowresb;arcade
+robowresb;mame-advmame
+robowresb;mame-libretro
+robowresb;mame-mame4all
+robowres;mame-advmame
+robowres;mame-libretro
+robowres;mame-mame4all
+Rock 'n Wrestle (Europe);amstradcpc
+Saikyou - Takada Nobuhiko (Japan);sfc
+Saturday Night Slam Masters (USA);snes
+Sgt Slaughters Mat Wars (USA);c64
+Shin Nihon Pro Wrestling - Chou Senshi in Tokyo Dome - Fantastic Story (Japan);sfc
+Shin Nihon Pro Wrestling Kounin - '94 Battlefield in Tokyo Dome (Japan);sfc
+Shin Nihon Pro Wrestling Kounin - '95 Tokyo Dome Battle 7 (Japan);sfc
+Shin Nihon Pro Wrestling - Toukon Retsuden (Japan);wonderswan
+Shin Nihon Pro Wrestling - Toukon Sanjuushi (Japan);gb
+Simpsons, The - Wrestling (USA);psx
+Simpsons, The - Wrestling (USA);psp
+slammast;arcade
+slammast;mame-advmame
+slammast;mame-libretro
+slammast;mame-mame4all
+slammastu;arcade
+slammastu;mame-advmame
+slammastu;mame-libretro
+slammastu;mame-mame4all
+slampic;arcade
+slampic;mame-advmame
+slampic;mame-libretro
+slampic;mame-mame4all
+smbomb;arcade
+smbomb;mame-advmame
+smbomb;mame-libretro
+smbomb;mame-mame4all
+smbombr1;arcade
+smbombr1;mame-advmame
+smbombr1;mame-libretro
+smbombr1;mame-mame4all
+Sougou Kakutougi - Astral Bout 2 - The Total Fighters (Japan);sfc
+Sougou Kakutougi - Astral Bout (Japan);sfc
+Sougou Kakutougi Rings - Astral Bout 3 (Japan);sfc
+Stardust Suplex (Japan);sfc
+Super Fire Pro Wrestling 2 (Japan);sfc
+Super Fire Pro Wrestling III - Easy Type (Japan);sfc
+Super Fire Pro Wrestling III - Final Bout (Japan);sfc
+Super Fire Pro Wrestling (Japan);sfc
+Super Fire Pro Wrestling - Queen's Special (Japan) (Translated En);sfc
+Super Fire Pro Wrestling Special (Japan);sfc
+Super Fire Pro Wrestling X (Japan);sfc
+Super Fire Pro Wrestling X Premium (Japan) (Translated En);sfc
+Super Oozumou - Nessen Ooichiban (Japan);sfc
+Superstar Pro Wrestling (Japan) (Translated En);famicom
+tagteam;arcade
+tagteam;mame-advmame
+tagteam;mame-libretro
+tagteam;mame-mame4all
+Tag Team Wrestling (USA);c64
+Tag Team Wrestling (USA);nes
+Take Down (USA) (Side A);c64
+Take Down (USA) (Side B);c64
+Tecmo World Wrestling (USA);nes
+Title Match Pro Wrestling (USA);atari2600
+Title Match Pro Wrestling (USA);atari7800
+toukon3;arcade
+toukon3;mame-advmame
+toukon3;mame-libretro
+toukon3;mame-mame4all
+Toukon Club (Japan) (Translated En);famicom
+Tsuppari Oozumou - Risshinshusse Hen (Japan);sfc
+Ultimate Muscle - The Kinnikuman Legacy - The Path of the Superhero (USA);gba
+Wakataka Oozumou - Yume no Kyoudai Taiketsu (Japan);sfc
+WCW Backstage Assault (USA);n64
+WCW Backstage Assault (USA);psx
+WCW Backstage Assault (USA);psp
+WCW Main Event (USA, Europe);gb
+WCW Mayhem (USA, Europe);gbc
+WCW Mayhem (USA);n64
+WCW Mayhem (USA);psx
+WCW Mayhem (USA);psp
+WCW Nitro (USA);n64
+WCW Nitro (USA);psx
+WCW Nitro (USA);psp
+WCW-nWo Revenge (USA);n64
+WCW-nWo Thunder (USA);psx
+WCW-nWo Thunder (USA);psp
+WCW Super Brawl Wrestling (USA);snes
+WCW vs. nWo - World Tour (USA) (Rev A);n64
+WCW vs. The World (USA);psx
+WCW vs. The World (USA);psp
+WCW World Championship Wrestling (USA);nes
+Wrestling Superstars (Europe);amstradcpc
+Wrestling Superstars (Europe);c64
+Wrestling Superstars (Europe);zxspectrum
+Wrestling (USA);c64
+wrestwar1;arcade
+wrestwar1;mame-advmame
+wrestwar1;mame-libretro
+wrestwar1;mame-mame4all
+wrestwar2;arcade
+wrestwar2;mame-advmame
+wrestwar2;mame-libretro
+wrestwar2;mame-mame4all
+wrestwar;arcade
+wrestwar;mame-advmame
+wrestwar;mame-libretro
+wrestwar;mame-mame4all
+WWE - Road to WrestleMania X8 (USA, Europe);gba
+WWE - Survivor Series (USA, Europe);gba
+WWF Attitude (USA);n64
+WWF Attitude (USA);gbc
+WWF Attitude (USA);dreamcast
+WWF Attitude (USA);psx
+WWF Attitude (USA);psp
+WWF Betrayal (USA, Europe);gbc
+WWF European Rampage Tour (Europe);c64
+WWF In Your House (USA);psx
+WWF In Your House (USA);psp
+WWF King of the Ring (USA, Europe);gb
+WWF King of the Ring (USA);nes
+wwfmania;arcade
+wwfmaniab;arcade
+wwfmaniab;mame-advmame
+wwfmaniab;mame-libretro
+wwfmaniab;mame-mame4all
+wwfmaniac;arcade
+wwfmaniac;mame-advmame
+wwfmaniac;mame-libretro
+wwfmaniac;mame-mame4all
+wwfmania;mame-advmame
+wwfmania;mame-libretro
+wwfmania;mame-mame4all
+WWF No Mercy (USA) (Rev A);n64
+WWF Rage in the Cage (USA);segacd
+WWF Raw (USA, Europe);gb
+WWF Raw (USA, Europe);gamegear
+WWF Raw (USA);snes
+WWF Raw (World);sega32x
+WWF - Road to WrestleMania (USA, Europe);gba
+WWF Royal Rumble (USA);dreamcast
+WWF Royal Rumble (USA);snes
+WWF SmackDown! 2 - Know Your Role (USA);psx
+WWF SmackDown! 2 - Know Your Role (USA);psp
+WWF SmackDown! (USA);psx
+WWF SmackDown! (USA);psp
+wwfsstar;arcade
+wwfsstarb;arcade
+wwfsstarb;mame-advmame
+wwfsstarb;mame-libretro
+wwfsstarb;mame-mame4all
+wwfsstarj;arcade
+wwfsstarj;mame-advmame
+wwfsstarj;mame-libretro
+wwfsstarj;mame-mame4all
+wwfsstar;mame-advmame
+wwfsstar;mame-libretro
+wwfsstar;mame-mame4all
+wwfsstarua;arcade
+wwfsstarua;mame-advmame
+wwfsstarua;mame-libretro
+wwfsstarua;mame-mame4all
+wwfsstaru;arcade
+wwfsstaru;mame-advmame
+wwfsstaru;mame-libretro
+wwfsstaru;mame-mame4all
+WWF Superstars 2 (USA, Europe);gb
+WWF Superstars (USA, Europe);gb
+WWF Super WrestleMania (USA);snes
+WWF War Zone (USA, Europe);gb
+WWF War Zone (USA);n64
+WWF War Zone (USA);psx
+WWF War Zone (USA);psp
+wwfwfesta;arcade
+wwfwfesta;mame-advmame
+wwfwfesta;mame-libretro
+wwfwfesta;mame-mame4all
+wwfwfest;arcade
+wwfwfestb;arcade
+wwfwfestb;mame-advmame
+wwfwfestb;mame-libretro
+wwfwfestb;mame-mame4all
+wwfwfestj;arcade
+wwfwfestj;mame-advmame
+wwfwfestj;mame-libretro
+wwfwfestj;mame-mame4all
+wwfwfestk;arcade
+wwfwfestk;mame-advmame
+wwfwfestk;mame-libretro
+wwfwfestk;mame-mame4all
+wwfwfest;mame-advmame
+wwfwfest;mame-libretro
+wwfwfest;mame-mame4all
+WWF WrestleMania 2000 (USA, Europe);gbc
+WWF WrestleMania 2000 (USA);n64
+WWF Wrestlemania Challenge (USA);nes
+WWF Wrestlemania (Europe);amstradcpc
+WWF WrestleMania (Europe);c64
+WWF Wrestle Mania (Europe);zxspectrum
+WWF Wrestlemania - Steel Cage Challenge (Europe);mastersystem
+WWF Wrestlemania Steel Cage Challenge (USA);nes
+WWF Wrestlemania Steel Cage Challenge (USA);gamegear
+WWF WrestleMania - The Arcade Game (USA);sega32x
+WWF WrestleMania - The Arcade Game (USA);psx
+WWF WrestleMania - The Arcade Game (USA);psp
+WWF WrestleMania - The Arcade Game (USA);snes
+WWF Wrestlemania (USA);nes
+Zen-Nihon Pro Wres 2 - 3-4 Budoukan (Japan);sfc
+Zen-Nihon Pro Wres (Japan);sfc
+Zen-Nihon Pro Wres' - Sekai Saikyou Tag (Japan);sfc
+Zen-Nihon Pro Wrestling Jet (Japan);gb
+znpwfv;arcade
+znpwfv;mame-advmame
+znpwfv;mame-libretro
+znpwfv;mame-mame4all

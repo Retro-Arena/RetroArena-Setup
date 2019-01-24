@@ -1,0 +1,34 @@
+007 - A View to a Kill (Europe);zxspectrum
+007 - Blood Stone (USA);nds
+007 Car Chase (USA);c64
+007 - Everything or Nothing (USA, Europe) (En,Fr,De);gba
+007 - GoldenEye (USA);n64
+007 - Licence to Kill (Europe);zxspectrum
+007 - Live and Let Die (Europe);zxspectrum
+007 - NightFire (USA, Europe) (En,Fr,De);gba
+007 - Quantum of Solace (USA) (En,Fr);nds
+007 Racing (USA);psx
+007 Racing (USA);psp
+007 - The Living Daylights (Europe);amstradcpc
+007 - The Living Daylights (Europe);zxspectrum
+007 - The Spy Who Loved Me (Europe);zxspectrum
+007 - The World Is Not Enough (USA, Europe);gbc
+007 - The World Is Not Enough (USA);n64
+007 - The World Is Not Enough (USA);psx
+007 - The World Is Not Enough (USA);psp
+007 - Tomorrow Never Dies (USA);psx
+007 - Tomorrow Never Dies (USA);psp
+GoldenEye 007 (USA);nds
+James Bond 007 (Japan);sg-1000
+James Bond 007 - The Duel (Europe);gamegear
+James Bond 007 - The Duel (Europe);mastersystem
+James Bond 007 (USA);atari2600
+James Bond 007 (USA);atari5200
+James Bond 007 (USA, Europe);gb
+James Bond Jr (USA);nes
+James Bond Jr (USA);snes
+James Bond (USA);coleco
+James Bond (USA);c64
+jb007;fba
+jb007j;fba
+jb007u;fba

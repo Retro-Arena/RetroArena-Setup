@@ -1,0 +1,87 @@
+boblbobl;arcade
+boblbobl;mame-advmame
+boblbobl;mame-libretro
+boblbobl;mame-mame4all
+bub68705;arcade
+bub68705;fba
+bub68705;mame-advmame
+bub68705;mame-libretro
+bub68705;mame-mame4all
+Bubble Bobble 2 (Europe) (Unl);amstradcpc
+Bubble Bobble 4 CPC (Europe) (Unl);amstradcpc
+Bubble Bobble also featuring Rainbow Islands (USA);psx
+Bubble Bobble also featuring Rainbow Islands (USA);psp
+Bubble Bobble - Double Shot (USA) (En,Fr,Es);nds
+Bubble Bobble (Europe);amstradcpc
+Bubble Bobble (Europe);c64
+Bubble Bobble (Europe);mastersystem
+Bubble Bobble (Europe);zxspectrum
+Bubble Bobble II (USA) (Unl);c64
+Bubble Bobble (Japan);msx2
+Bubble Bobble (Japan);fds
+Bubble Bobble (Korea) (Alt 1) (Unl);msx
+Bubble Bobble (Korea) (Unl);msx
+Bubble Bobble - Old & New (USA);gba
+Bubble Bobble Part 2 (Europe) (Proto);psx
+Bubble Bobble Part 2 (Europe) (Proto);psp
+Bubble Bobble Part 2 (USA, Europe);gb
+Bubble Bobble Part 2 (USA);nes
+Bubble Bobble Revolution (USA);nds
+Bubble Bobble Revolution (USA) (Rev 1);nds
+Bubble Bobble (USA, Europe);gb
+Bubble Bobble (USA, Europe);gamegear
+Bubble Bobble (USA);nes
+bubblem;arcade
+bubblemj;arcade
+bubblemj;mame-advmame
+bubblemj;mame-libretro
+bubblemj;mame-mame4all
+bubblem;mame-advmame
+bubblem;mame-libretro
+bubblem;mame-mame4all
+bublbob2;arcade
+bublbob2;mame-advmame
+bublbob2;mame-libretro
+bublbob2;mame-mame4all
+bublbob2p;arcade
+bublbob2p;mame-advmame
+bublbob2p;mame-libretro
+bublbob2p;mame-mame4all
+bublbobl1;arcade
+bublbobl1;fba
+bublbobl1;mame-advmame
+bublbobl1;mame-libretro
+bublbobl1;mame-mame4all
+bublbobl;arcade
+bublbobl;fba
+bublbobl;mame-advmame
+bublbobl;mame-libretro
+bublbobl;mame-mame4all
+bublboblr1;arcade
+bublboblr1;fba
+bublboblr1;mame-advmame
+bublboblr1;mame-libretro
+bublboblr1;mame-mame4all
+bublboblr;arcade
+bublboblr;fba
+bublboblr;mame-advmame
+bublboblr;mame-libretro
+bublboblr;mame-mame4all
+bublcave10;fba
+bublcave11;fba
+bublcave;fba
+Classic Bubble Bobble (USA);gbc
+dland;arcade
+dland;fba
+dland;mame-advmame
+dland;mame-libretro
+dland;mame-mame4all
+parasol;fba
+Parasol Stars - The Story of Bubble Bobble III (Japan);pce-cd
+Parasol Stars - The Story of Bubble Bobble III (USA);tg16
+Rainbow Islands - Bubble Bobble 2 (Europe);nes
+Rainbow Islands - The Story of Bubble Bobble 2 (Europe);amstradcpc
+Rainbow Islands - The Story of Bubble Bobble 2 (Europe);mastersystem
+Rainbow Islands - The Story of Bubble Bobble 2 (Europe);zxspectrum
+Super Bubble Bobble (Korea) (Unl);msx
+suprbubl;fba

@@ -1,0 +1,24 @@
+Alex Kidd BMX Trial (Japan);mastersystem
+BMX Air Master (USA);atari2600
+BMX Freestyle Simulator (Europe);c64
+BMX Jungle Bike (Europe);c64
+BMX Kidz (Europe);c64
+BMX Ninja (Europe);c64
+BMX Number Jump (Europe);c64
+BMX Racers (Europe);c64
+BMX Simulator (Europe);c64
+BMX Simulator II (Europe);c64
+BMX Trials (Europe);c64
+BMX Trick Racer (USA);gba
+Dave Mirra BMX Challenge (USA);psp
+Dave Mirra Freestyle BMX 2 (USA);gba
+Dave Mirra Freestyle BMX 3 (USA, Europe);gba
+Dave Mirra Freestyle BMX - Maximum Remix (USA);psx
+Dave Mirra Freestyle BMX (USA, Europe);gbc
+Dave Mirra Freestyle BMX (USA);psx
+Mat Hoffman's Pro BMX 2 (USA, Europe);gba
+Mat Hoffman's Pro BMX (USA, Europe);gba
+Mat Hoffman's Pro BMX (USA, Europe);gbc
+Mat Hoffman's Pro BMX (USA);psx
+MTV Sports - T.J. Lavin's Ultimate BMX (USA, Europe);gbc
+MTV Sports - T.J. Lavin's Ultimate BMX (USA);psx

@@ -1,0 +1,117 @@
+Battletoads-Double Dragon (USA);nes
+Battletoads-Double Dragon (USA);gb
+Battletoads & Double Dragon (USA);snes
+btoadsdd;fba
+ddragon2;arcade
+ddragon2b;fba
+ddragon2;fba
+ddragon2;mame-advmame
+ddragon2;mame-libretro
+ddragon2;mame-mame4all
+ddragon2u;arcade
+ddragon2u;fba
+ddragon2u;mame-advmame
+ddragon2u;mame-libretro
+ddragon2u;mame-mame4all
+ddragon3;arcade
+ddragon3b;arcade
+ddragon3b;fba
+ddragon3b;mame-advmame
+ddragon3b;mame-libretro
+ddragon3b;mame-mame4all
+ddragon3;fba
+ddragon3j;arcade
+ddragon3j;fba
+ddragon3j;mame-advmame
+ddragon3j;mame-libretro
+ddragon3j;mame-mame4all
+ddragon3;mame-advmame
+ddragon3;mame-libretro
+ddragon3;mame-mame4all
+ddragon3p;arcade
+ddragon3p;fba
+ddragon3p;mame-advmame
+ddragon3p;mame-libretro
+ddragon3p;mame-mame4all
+ddragon5;fba
+ddragon;arcade
+ddragonb2;arcade
+ddragonb2;fba
+ddragonb2;mame-advmame
+ddragonb2;mame-libretro
+ddragonb2;mame-mame4all
+ddragonba;arcade
+ddragonba;fba
+ddragonba;mame-advmame
+ddragonba;mame-libretro
+ddragonba;mame-mame4all
+ddragonb;arcade
+ddragonb;fba
+ddragonb;mame-advmame
+ddragonb;mame-libretro
+ddragonb;mame-mame4all
+ddragon;fba
+ddragon;mame-advmame
+ddragon;mame-libretro
+ddragon;mame-mame4all
+ddragonua;arcade
+ddragonua;fba
+ddragonua;mame-advmame
+ddragonua;mame-libretro
+ddragonua;mame-mame4all
+ddragonu;arcade
+ddragonub;arcade
+ddragonub;fba
+ddragonub;mame-advmame
+ddragonub;mame-libretro
+ddragonub;mame-mame4all
+ddragonu;fba
+ddragonu;mame-advmame
+ddragonu;mame-libretro
+ddragonu;mame-mame4all
+ddragonw1;arcade
+ddragonw1;fba
+ddragonw1;mame-advmame
+ddragonw1;mame-libretro
+ddragonw1;mame-mame4all
+ddragonw;arcade
+ddragonw;fba
+ddragonw;mame-advmame
+ddragonw;mame-libretro
+ddragonw;mame-mame4all
+Double Dragon 2 - The Revenge (Japan);pce-cd
+Double Dragon 3 (USA, Europe);gb
+Double Dragon Advance (USA);gba
+Double Dragon (Europe);amstradcpc
+Double Dragon (Europe);c64
+Double Dragon (Europe);zxspectrum
+Double Dragon III - The Rosetta Stone (Europe);amstradcpc
+Double Dragon III - The Rosetta Stone (Europe);zxspectrum
+Double Dragon III - The Rosetta Stone (USA);c64
+Double Dragon III - The Sacred Stones (USA);nes
+Double Dragon II - The Revenge (Europe);amstradcpc
+Double Dragon II - The Revenge (Europe);c64
+Double Dragon II - The Revenge (Europe);zxspectrum
+Double Dragon II - The Revenge (USA);nes
+Double Dragon II (USA, Europe);gb
+Double Dragon (Korea) (Unl);msx
+Double Dragon (USA);atari2600
+Double Dragon (USA);atari7800
+Double Dragon (USA, Europe);atarilynx
+Double Dragon (USA, Europe);gb
+Double Dragon (USA, Europe);gamegear
+Double Dragon (USA);nes
+Double Dragon V - The Shadow Falls (USA);snes
+Double Dragon (World);mastersystem
+doubledr;arcade
+doubledr;fba
+doubledr;mame-advmame
+doubledr;mame-libretro
+doubledr;mame-mame4all
+doubledr;neogeo
+pc_ddrgn;arcade
+pc_ddrgn;mame-advmame
+pc_ddrgn;mame-libretro
+pc_ddrgn;mame-mame4all
+Return of Double Dragon (Japan);sfc
+Super Double Dragon (USA);snes

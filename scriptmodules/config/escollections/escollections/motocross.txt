@@ -1,0 +1,74 @@
+Championship Motocross 2001 featuring Ricky Carmichael (USA);gbc
+Championship Motocross 2001 Featuring Ricky Carmichael (USA);psx
+Championship Motocross Featuring Ricky Carmichael (USA);psx
+Disney Sports - Motocross (USA);gba
+endurobl;arcade
+endurobl;fba
+endurobl;mame-advmame
+endurobl;mame-libretro
+endurobl;mame-mame4all
+Enduro (Europe);zxspectrum
+enduror1;arcade
+enduror1;fba
+enduror1;mame-advmame
+enduror1;mame-libretro
+enduror1;mame-mame4all
+Enduro Racer (Europe);amstradcpc
+Enduro Racer (Europe);zxspectrum
+Enduro Racer (USA);c64
+Enduro Racer (USA, Europe);mastersystem
+enduror;arcade
+enduror;fba
+enduror;mame-advmame
+enduror;mame-libretro
+enduror;mame-mame4all
+Enduro (USA);atari2600
+Freekstyle (USA);gba
+Freestyle Motocross - McGrath vs. Pastrana (USA);psx
+Jeremy McGrath Supercross 2000 (USA, Europe);gbc
+Jeremy McGrath Supercross 2000 (USA);n64
+Jeremy McGrath Supercross 2000 (USA);dreamcast
+Jeremy McGrath Supercross 2000 (USA);psx
+Jeremy McGrath Supercross 98 (USA);psx
+Motocross Champion (Japan) (Translated En);famicom
+Motocross Championship (USA);sega32x
+Motocross (Codemasters) (Europe);c64
+Motocross (Europe);atari2600
+Motocross Mania 2 (USA);psx
+Motocross Maniacs 2 (USA);gbc
+Motocross Maniacs Advance (USA) (En,Es);gba
+Motocross Maniacs (USA);gb
+Motocross Mania (USA);psx
+Motocross Racer (USA);atari2600
+Motocross Racer (USA);coleco
+Motocross Racer (USA);c64
+Motocross (Tronix) (USA);c64
+motoxgo;arcade
+motoxgo;fba
+motoxgo;mame-advmame
+motoxgo;mame-libretro
+motoxgo;mame-mame4all
+motoxgov1a2;arcade
+motoxgov1a2;fba
+motoxgov1a2;mame-advmame
+motoxgov1a2;mame-libretro
+motoxgov1a2;mame-mame4all
+motoxgov1a;arcade
+motoxgov1a;fba
+motoxgov1a;mame-advmame
+motoxgov1a;mame-libretro
+motoxgov1a;mame-mame4all
+motoxgov2a;arcade
+motoxgov2a;fba
+motoxgov2a;mame-advmame
+motoxgov2a;mame-libretro
+motoxgov2a;mame-mame4all
+Supercross 2000 (USA);n64
+Supercross 2000 (USA);psx
+Supercross 2000 (USA);psp
+SuperCross Circuit (USA);psx
+SuperCross Circuit (USA);psp
+Supercross Freestyle (Europe);gbc
+Supercross (USA);psx
+Supercross (USA);psp
+Yamaha Supercross (USA) [b];nds

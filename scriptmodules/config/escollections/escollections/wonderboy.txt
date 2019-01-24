@@ -1,0 +1,126 @@
+Super Wonder Boy (Europe);zxspectrum
+wb31;arcade
+wb31;fba
+wb31;mame-advmame
+wb31;mame-libretro
+wb31;mame-mame4all
+wb32;arcade
+wb32;fba
+wb32;mame-advmame
+wb32;mame-libretro
+wb32;mame-mame4all
+wb33;arcade
+wb33;fba
+wb33;mame-advmame
+wb33;mame-libretro
+wb33;mame-mame4all
+wb34;arcade
+wb34;fba
+wb34;mame-advmame
+wb34;mame-libretro
+wb34;mame-mame4all
+wb35;arcade
+wb35;fba
+wb35;mame-advmame
+wb35;mame-libretro
+wb35;mame-mame4all
+wb3;arcade
+wb3;fba
+wb3;mame-advmame
+wb3;mame-libretro
+wb3;mame-mame4all
+wbdeluxe;arcade
+wbdeluxe;fba
+wbdeluxe;mame-advmame
+wbdeluxe;mame-libretro
+wbdeluxe;mame-mame4all
+wbml;arcade
+wbmlb;arcade
+wbmlb;fba
+wbmlbg;arcade
+wbmlbge;arcade
+wbmlbge;fba
+wbmlbge;mame-advmame
+wbmlbge;mame-libretro
+wbmlbge;mame-mame4all
+wbmlbg;fba
+wbmlbg;mame-advmame
+wbmlbg;mame-libretro
+wbmlbg;mame-mame4all
+wbmlb;mame-advmame
+wbmlb;mame-libretro
+wbmlb;mame-mame4all
+wbml;fba
+wbmljb;arcade
+wbmljb;fba
+wbmljb;mame-advmame
+wbmljb;mame-libretro
+wbmljb;mame-mame4all
+wbmljo;arcade
+wbmljo;fba
+wbmljo;mame-advmame
+wbmljo;mame-libretro
+wbmljo;mame-mame4all
+wbml;mame-advmame
+wbml;mame-libretro
+wbml;mame-mame4all
+wbmlvc;arcade
+wbmlvc;fba
+wbmlvc;mame-advmame
+wbmlvc;mame-libretro
+wbmlvc;mame-mame4all
+wboy2;arcade
+wboy2;fba
+wboy2;mame-advmame
+wboy2;mame-libretro
+wboy2;mame-mame4all
+wboy2u;arcade
+wboy2u;fba
+wboy2u;mame-advmame
+wboy2u;mame-libretro
+wboy2u;mame-mame4all
+wboy3;arcade
+wboy3;fba
+wboy3;mame-advmame
+wboy3;mame-libretro
+wboy3;mame-mame4all
+wboy4;arcade
+wboy4;fba
+wboy4;mame-advmame
+wboy4;mame-libretro
+wboy4;mame-mame4all
+wboy5;arcade
+wboy5;fba
+wboy5;mame-advmame
+wboy5;mame-libretro
+wboy5;mame-mame4all
+wboy;arcade
+wboy;fba
+wboy;mame-advmame
+wboy;mame-libretro
+wboy;mame-mame4all
+wboymw;fba
+wboyo;arcade
+wboyo;fba
+wboyo;mame-advmame
+wboyo;mame-libretro
+wboyo;mame-mame4all
+wboysys2;arcade
+wboysys2;mame-advmame
+wboysys2;mame-libretro
+wboysys2;mame-mame4all
+wboyu;arcade
+wboyu;fba
+wboyu;mame-advmame
+wboyu;mame-libretro
+wboyu;mame-mame4all
+Wonder Boy (Europe);zxspectrum
+Wonder Boy III - Monster Lair (USA);tg-cd
+Wonder Boy III - The Dragon's Trap (USA, Europe);mastersystem
+Wonder Boy in Monster Land (USA, Europe);mastersystem
+Wonder Boy in Monster World (Europe);mastersystem
+Wonder Boy (Japan) (Alt 1);msx
+Wonder Boy (Japan);msx
+Wonder Boy (Japan);sg-1000
+Wonder Boy - The Dragon's Trap (Europe);gamegear
+Wonder Boy (USA, Europe);mastersystem

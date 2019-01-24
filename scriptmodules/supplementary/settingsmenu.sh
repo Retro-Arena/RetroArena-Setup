@@ -47,18 +47,21 @@ function configure_settingsmenu()
 
     # add the gameslist / icons
     local files=(
-        'bezelprojectlaunch'
+        'bezelproject'
         'bgmtoggle'
         'bluetooth'
         'caseconfig'
         'casetheme'
         'configedit'
         'controlreset'
+        'escollections'
+        'esgamelist'
         'esthemes'
         'fancontrol'
         'hurstythemes'
         'filemanager'
         'odroidconfig'
+        'removemedia'
         'retroarch'
         'rpsetup'
         'runcommand'
@@ -71,25 +74,29 @@ function configure_settingsmenu()
     )
 
     local names=(
-        'Display: Bezel Project'
-        'System: BGM Toggle'
+        'Media: Bezel Project'
+        'Sound: BGM Toggle'
         'System: Bluetooth'
-        'Display: Case Config for OGST'
-        'Display: Case Themes for OGST'
-        'General: Configuration Editor'
+        'Media: Case Config for OGST'
+        'Media: Case Themes for OGST'
+        'System: Configuration Editor'
         'System: Controller Reset'
-        'Display: ES Themes'
+        'Media: ES Collection List Generator'
+        'Media: ES Gamelist Cleanup'
+        'Media: ES Themes'
         'System: Fan Control'
-        'Display: HurstyS ES Themes'
         'System: File Manager'
+        'Media: HurstyS ES Themes'
+        'Sound: Jukebox Config'
         'System: Odroid-Config'
-        'General: Retroarch'
-        'General: RetroArena-Setup'
-        'System: Run Command Configuration'
+        'Media: Remove Media'
+        'System: Retroarch'
+        'System: RetroArena-Setup'
+        'System: Runcommand Config'
         'System: Show IP'
         'System: Smart Kiosk'
         'System: Soft Reboot'
-        'Display: Splash Screens'
+        'Media: Splash Screens'
         'System: System Info Utility'
         'System: Wi-Fi'
     )
@@ -105,14 +112,29 @@ function configure_settingsmenu()
         
 NOTE: This will cause your system to REBOOT.'
         'Install, uninstall, or update EmulationStation themes.'
+        'Add or update the custom collection gamelist that will be used to show games in the custom collections menu items.
+
+NOTE: This utility only works with rom files using the No-Intro naming convention (like Emumovies/Hyperspin).'
+        'Perform a cleanup in your EmulationStation gamelist.xml file. The cleanup utility will only work on gamelist.xml files located within the roms folder also.
+
+NOTE: Always make a backup copy of your gamelist.xml and media files before making changes to your system.'
         'Change the fan settings to control cooling and fan noise.'
-        'Install, uninstall, or update HurstyS ES themes.'
         'Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.
         
 NOTE: Requires a keyboard to be connected.'
+        'Install, uninstall, or update HurstyS ES themes.'
+        'Configure common options for Fruitbox jukebox.'
         'Expand filesystem, configure network, boot, localisation, SSH, etc.
         
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!'
+        'Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system where there is not a matching game for it. If you keep your media for MAME or Final Burn Alpha in the /roms/arcade folder, there is a special choice just for that. This script expects you to be using the following media folders.
+
+boxart
+cartart
+snap
+wheel
+
+NOTE: Always make a backup copy of your SD card and your roms and media files before making changes to your system.'
         'Launches the RetroArch GUI so you can change RetroArch options.
         
 NOTE: Changes will not be saved unless you have enabled the "Save Configuration On Exit" option.'
@@ -135,6 +157,10 @@ NOTE: Requires a keyboard to be connected.'
     local hiddens=(
         'true'
         'false'
+        'true'
+        'true'
+        'true'
+        'true'
         'true'
         'true'
         'true'

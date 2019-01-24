@@ -1,0 +1,305 @@
+2D Tennis Game (Europe);c64
+40love;arcade
+40love;mame-advmame
+40love;mame-libretro
+40love;mame-mame4all
+Ace o Nerae! (Japan) (Translated En);sfc
+Actua Tennis (Europe);psx
+Actua Tennis (Europe);psp
+Adidas Championship Tie-Break (Europe);amstradcpc
+Adidas Championship Tie Break (Europe);c64
+Adidas Championship Tie-Break (Europe);zxspectrum
+Agassi Tennis Generation (USA);gba
+All Star Tennis 2000 (Europe);gbc
+All-Star Tennis 2000 (Europe);psx
+All-Star Tennis 2000 (Europe);psp
+All-Star Tennis '99 (Europe);psx
+All-Star Tennis '99 (Europe);psp
+All Star Tennis '99 (USA);n64
+Andre Agassi Tennis (Europe);mastersystem
+Andre Agassi Tennis (USA);gamegear
+Andre Agassi Tennis (USA);snes
+Anna Kournikova's Smash Court Tennis (Europe);psx
+Anna Kournikova's Smash Court Tennis (Europe);psp
+Baby Felix Tennis (Europe);psx
+Baby Felix Tennis (Europe);psp
+Battle Ping Pong (Japan);gb
+Boku no Tennis Jinsei (Japan);dreamcast
+Break Point (Europe);psx
+Break Point (Europe);psp
+Brunswick World Tournament of Champions (USA);snes
+cencourt;arcade
+cencourt;mame-advmame
+cencourt;mame-libretro
+cencourt;mame-mame4all
+Centre Court Tennis (Europe);amstradcpc
+Centre Court Tennis (Europe);n64
+Champion Tennis (Japan);sg-1000
+cptennis;arcade
+cptennis;mame-advmame
+cptennis;mame-libretro
+cptennis;mame-mame4all
+csdtenis;arcade
+csdtenis;mame-advmame
+csdtenis;mame-libretro
+csdtenis;mame-mame4all
+Date Kimiko no Virtual Tennis (Japan);sfc
+David Crane's Amazing Tennis (USA);snes
+Davis Cup Complete Tennis (Europe);psx
+Davis Cup Complete Tennis (Europe);psp
+Davis Cup Tennis, The (Japan);pce-cd
+Davis Cup Tennis (USA);tg16
+Davis Cup (USA) (En,Fr,De,Es,It);gba
+Droopy's Tennis Open (Europe) (En,Fr,De,Es,It,Nl);gba
+Emilio Sanchez Vicario Grand Slam (Spain);amstradcpc
+Emilio Sanchez Vicario Grand Slam (Spain);zxspectrum
+Family Tennis (Japan) (Translated En);famicom
+Finalset (Japan);sfc
+Final Tennis (Europe);c64
+GP Tennis Manager (Italy);c64
+Grand Prix Tennis (Europe);amstradcpc
+Grand Prix Tennis (Europe);zxspectrum
+hstennis10;arcade
+hstennis10;mame-advmame
+hstennis10;mame-libretro
+hstennis10;mame-mame4all
+hstennis;arcade
+hstennis;mame-advmame
+hstennis;mame-libretro
+hstennis;mame-mame4all
+Hyper Tennis - Final Match (Europe);psx
+Hyper Tennis - Final Match (Europe);psp
+International 3D Tennis (Europe);amstradcpc
+International 3D Tennis (Europe);c64
+International 3D Tennis (Europe);zxspectrum
+International Tennis (Commodore) (USA);c64
+International Tennis (Europe);amstradcpc
+International Tennis (Europe);zxspectrum
+International Tennis Tour (USA);snes
+International Tennis (Zeppelin Games) (Europe);c64
+I Play - 3D Tennis (Italy);c64
+Jahangir Khan's World Championship Squash (Europe);amstradcpc
+Jahangir Khan's World Championship Squash (Europe);zxspectrum
+Jimmy Connors Pro Tennis Tour (USA);snes
+Jimmy Connors' Tennis (USA, Europe);atarilynx
+Jimmy Connors Tennis (USA, Europe);gb
+Jimmy Connors Tennis (USA);nes
+Jonah Barrington's Squash (Europe);amstradcpc
+Jonah Barrington's Squash (Europe);zxspectrum
+Kobayashi Hitomi Shocking Tennis (Japan) (Unl);fds
+Konamic Tennis (Japan);fds
+Konami's Ping Pong (Europe);amstradcpc
+Konami's Ping Pong (Europe);zxspectrum
+Konami's Tennis (Europe);zxspectrum
+Lawn Tennis (Europe);c64
+Mario's Tennis (Japan, USA);virtualboy
+Mario Tennis - Power Tour (USA, Australia) (En,Fr,De,Es,It);gba
+Mario Tennis (USA);n64
+Mario Tennis (USA);gbc
+Match Point (Europe);amstradcpc
+Match Point (Europe);c64
+Match Point (Europe);zxspectrum
+mp_gslam;arcade
+mp_gslam;mame-advmame
+mp_gslam;mame-libretro
+mp_gslam;mame-mame4all
+Namco Tennis Smash Court (Europe);psx
+Namco Tennis Smash Court (Europe);psp
+Netto de Tennis (Japan);dreamcast
+Next Generation Tennis (Europe) (En,Fr,De,Es,It,Pt);gba
+nss_aten;arcade
+nss_aten;mame-advmame
+nss_aten;mame-libretro
+nss_aten;mame-mame4all
+nss_sten;arcade
+nss_sten;mame-advmame
+nss_sten;mame-libretro
+nss_sten;mame-mame4all
+On Court Tennis (USA);c64
+otwalls;arcade
+otwalls;mame-advmame
+otwalls;mame-libretro
+otwalls;mame-mame4all
+paddlema;arcade
+paddlema;mame-advmame
+paddlema;mame-libretro
+paddlema;mame-mame4all
+Passing Shot (Europe);amstradcpc
+Passing Shot (Europe);c64
+Passing Shot (Europe);zxspectrum
+passsht16a;arcade
+passsht16a;mame-advmame
+passsht16a;mame-libretro
+passsht16a;mame-mame4all
+passshta;arcade
+passshta;mame-advmame
+passshta;mame-libretro
+passshta;mame-mame4all
+passsht;arcade
+passshtj;arcade
+passshtj;mame-advmame
+passshtj;mame-libretro
+passshtj;mame-mame4all
+passsht;mame-advmame
+passsht;mame-libretro
+passsht;mame-mame4all
+pc_tenis;arcade
+pc_tenis;mame-advmame
+pc_tenis;mame-libretro
+pc_tenis;mame-mame4all
+Pete Sampras Tennis (Europe);gamegear
+Play a Match (Europe);c64
+Pocket Tennis Color - Pocket Sports Series (World) (En,Ja);ngpc
+Pocket Tennis - Pocket Sports Series (Japan, Europe);ngp
+Power Serve 3D Tennis (USA);psx
+Power Serve 3D Tennis (USA);psp
+Professional Tennis Simulator (Europe);zxspectrum
+Professionnal Tennis Simulator (Europe);amstradcpc
+prosporta;arcade
+prosporta;mame-advmame
+prosporta;mame-libretro
+prosporta;mame-mame4all
+prosport;arcade
+prosport;mame-advmame
+prosport;mame-libretro
+prosport;mame-mame4all
+protennb;arcade
+protennb;mame-advmame
+protennb;mame-libretro
+protennb;mame-mame4all
+Pro Tennis (Europe);amstradcpc
+Pro Tennis Simulator (Europe);amstradcpc
+Pro Tennis Simulator (Europe);c64
+Pro Tennis Simulator (Europe);zxspectrum
+Pro Tennis Tour (CPC+) (Europe);amstradcpc
+Pro Tennis Tour (Europe);amstradcpc
+Pro Tennis Tour (Europe);zxspectrum
+Pro Tennis Tour (France);c64
+Racket Attack (USA);nes
+Rackets & Rivals (Europe);nes
+Racquetball (USA);atari2600
+Rad Racket - Deluxe Tennis II (USA) (Unl);nes
+RealSports Tennis (USA);atari2600
+RealSports Tennis (USA);atari5200
+rltennis;arcade
+rltennis;mame-advmame
+rltennis;mame-libretro
+rltennis;mame-mame4all
+Roland Garros French Open 2001 (Europe);psx
+Roland Garros French Open 2001 (Europe);psp
+Sampras Extreme Tennis (Europe);psx
+Sampras Extreme Tennis (Europe);psp
+sdtennis;arcade
+sdtennis;mame-advmame
+sdtennis;mame-libretro
+sdtennis;mame-mame4all
+Serve & Volley (USA);c64
+Simulador Profesional de Tennis (Spain);amstradcpc
+Smash (Europe);c64
+Smash Tennis (Europe);snes
+Snoopy Tennis (USA);gbc
+squaitsa;arcade
+squaitsa;mame-advmame
+squaitsa;mame-libretro
+squaitsa;mame-mame4all
+squash;arcade
+squash;mame-advmame
+squash;mame-libretro
+squash;mame-mame4all
+sslama;arcade
+sslama;mame-advmame
+sslama;mame-libretro
+sslama;mame-mame4all
+sslam;arcade
+sslam;mame-advmame
+sslam;mame-libretro
+sslam;mame-mame4all
+Street Racquetball (USA);psx
+Street Racquetball (USA);psp
+Super Brat (Europe);zxspectrum
+Super Final Match Tennis (Japan);sfc
+Super Tennis (USA, Europe);mastersystem
+Super Tennis (USA);snes
+swcourt;arcade
+swcourtj;arcade
+swcourtj;mame-advmame
+swcourtj;mame-libretro
+swcourtj;mame-mame4all
+swcourt;mame-advmame
+swcourt;mame-libretro
+swcourt;mame-mame4all
+Table Tennis;videopac
+Tennis 2K2 (USA);dreamcast
+Tennis 3D (France);amstradcpc
+Tennis Ace (Europe);mastersystem
+Tennis Arena (USA);psx
+Tennis Arena (USA);psp
+Tennis Champ (Europe);zxspectrum
+Tennis Cup (France);amstradcpc
+Tennis Cup II (CPC+) (Europe);amstradcpc
+Tennis (Europe);zxspectrum
+Tennis (Japan);fds
+Tennis (Japan, USA);nes
+Tennis;videopac
+Tennis Master (Europe);zxspectrum
+Tennis Masters Series 2003 (Europe) (En,Fr,De,Es,It,Pt);gba
+Tennis Menace (VTech, Sporty Time & Fun);gameandwatch
+Tennis (USA);atari2600
+Tennis (USA);psx
+Tennis (USA);psp
+Tennis (World);gb
+Tiebreaker (Europe);c64
+Tie Break (France);amstradcpc
+Top Players' Tennis Featuring Chris Evert & Ivan Lendl (USA);nes
+Top Rank Tennis (USA);gb
+Top Spin 2 (USA) (En,Fr,De,Es,It);gba
+Tournament Tennis - Mens & Ladies (Side A) (Europe);zxspectrum
+Tournament Tennis - Mens & Ladies (Side B) (Europe);zxspectrum
+Tournament Tennis (Side A) (Europe);zxspectrum
+Tournament Tennis (Side B) (Europe);zxspectrum
+Tournament Tennis (USA);coleco
+ultennis;arcade
+ultennisj;arcade
+ultennisj;mame-advmame
+ultennisj;mame-libretro
+ultennisj;mame-mame4all
+ultennis;mame-advmame
+ultennis;mame-libretro
+ultennis;mame-mame4all
+Virtua Tennis (USA);gba
+Virtua Tennis (USA);dreamcast
+vstennisa;arcade
+vstennisa;mame-advmame
+vstennisa;mame-libretro
+vstennisa;mame-mame4all
+vstennis;arcade
+vstennisb;arcade
+vstennisb;mame-advmame
+vstennisb;mame-libretro
+vstennisb;mame-mame4all
+vstennis;mame-advmame
+vstennis;mame-libretro
+vstennis;mame-mame4all
+V-Tennis (USA);psx
+V-Tennis (USA);psp
+VT Tennis (USA);pspminis
+Wimbledon '64 (Europe);c64
+Wimbledon (Europe);mastersystem
+Wimbledon (Europe);zxspectrum
+Wimbledon II (Europe);mastersystem
+Wimbledon (World);gamegear
+wldcourt;arcade
+wldcourt;mame-advmame
+wldcourt;mame-libretro
+wldcourt;mame-mame4all
+World Court Tennis (USA);tg16
+World Tennis Stars (Europe);psx
+World Tennis Stars (Europe);psp
+World Tennis Stars (USA);gba
+WTA Tour Tennis (USA);gba
+wtennis;arcade
+wtennis;mame-advmame
+wtennis;mame-libretro
+wtennis;mame-mame4all
+Yeh Yeh Tennis (Europe);psx
+Yeh Yeh Tennis (Europe);psp

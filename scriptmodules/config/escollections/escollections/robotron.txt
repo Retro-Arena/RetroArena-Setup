@@ -1,0 +1,17 @@
+Robotron 2084 (Europe);zxspectrum
+Robotron 2084 (USA);atari5200
+Robotron - 2084 (USA);atari7800
+Robotron 2084 (USA);c64
+Robotron 2084 (USA, Europe);atarilynx
+Robotron 64 (USA);n64
+robotron;arcade
+Robotron (Europe);zxspectrum
+robotron;mame-advmame
+robotron;mame-libretro
+robotron;mame-mame4all
+Robotron X (USA);psx
+Robotron X (USA);psp
+robotronyo;arcade
+robotronyo;mame-advmame
+robotronyo;mame-libretro
+robotronyo;mame-mame4all

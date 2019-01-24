@@ -1,0 +1,51 @@
+Game Boy Advance Video - Pokemon - Volume 1 (USA);gba
+Game Boy Advance Video - Pokemon - Volume 2 (USA);gba
+Game Boy Advance Video - Pokemon - Volume 3 (USA);gba
+Game Boy Advance Video - Pokemon - Volume 4 (USA);gba
+Learn with Pokemon - Typing Adventure (Europe);nds
+pokecda;fba
+pokecd;fba
+pokemon2;fba
+pokemona;fba
+Pokemon - Black Version 2 (USA, Europe) (NDSi Enhanced) [b];nds
+Pokemon - Black Version (USA, Europe) (NDSi Enhanced) [b];nds
+Pokemon - Blue Version (USA, Europe);gb
+Pokemon Conquest (USA, Australia) (NDSi Enhanced) [b];nds
+Pokemon - Crystal Version (USA, Europe) (Rev A);gbc
+Pokemon Dash (USA);nds
+Pokemon - Diamond Version (USA) (Rev 5);nds
+Pokemon - Emerald Version (USA, Europe);gba
+pokemon;fba
+Pokemon - Fire Red Version (USA, Europe) (Rev 1);gba
+Pokemon - Gold Version (USA, Europe);gbc
+Pokemon - HeartGold Version (USA);nds
+Pokemon - Leaf Green Version (USA);gba
+Pokemon Mystery Dungeon - Blue Rescue Team (USA);nds
+Pokemon Mystery Dungeon - Explorers of Darkness (USA);nds
+Pokemon Mystery Dungeon - Explorers of Sky (USA) [b];nds
+Pokemon Mystery Dungeon - Explorers of Time (USA);nds
+Pokemon Mystery Dungeon - Red Rescue Team (USA, Australia);gba
+Pokemon - Pearl Version (USA) (Rev 5);nds
+Pokemon Pinball - Ruby & Sapphire (USA);gba
+Pokemon Pinball (USA);gbc
+Pokemon - Platinum Version (USA);nds
+Pokemon - Platinum Version (USA) (Rev 1);nds
+Pokemon Puzzle Challenge (USA);gbc
+Pokemon Puzzle League (USA);n64
+Pokemon Ranger - Guardian Signs (USA);nds
+Pokemon Ranger - Shadows of Almia (USA);nds
+Pokemon Ranger (USA);nds
+Pokemon - Red Version (USA, Europe);gb
+Pokemon - Ruby Version (USA, Europe) (Rev 2);gba
+Pokemon - Sapphire Version (USA, Europe) (Rev 2);gba
+Pokemon - Silver Version (USA, Europe);gbc
+Pokemon Snap (USA);n64
+Pokemon - SoulSilver Version (USA);nds
+Pokemon Stadium 2 (USA);n64
+Pokemon Stadium (USA) (Rev A);n64
+Pokemon Trading Card Game (USA);gbc
+Pokemon Trozei! (USA);nds
+Pokemon - White Version 2 (USA, Europe) (NDSi Enhanced) [b];nds
+Pokemon - White Version (USA, Europe) (NDSi Enhanced) [b];nds
+Pokemon - Yellow Version - Special Pikachu Edition (USA, Europe);gb
+pokestad;fba

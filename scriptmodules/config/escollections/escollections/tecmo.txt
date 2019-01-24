@@ -1,0 +1,357 @@
+1on1gov;arcade
+1on1gov;mame-advmame
+1on1gov;mame-libretro
+1on1gov;mame-mame4all
+3in1fwt;Final Burn Alpha
+backfirt;arcade
+backfirt;mame-advmame
+backfirt;mame-libretro
+backfirt;mame-mame4all
+backfirt;Final Burn Alpha
+bsteam3;Final Burn Alpha
+danchih;arcade
+danchih;mame-advmame
+danchih;mame-libretro
+danchih;mame-mame4all
+deroon;arcade
+deroon;mame-advmame
+deroon;mame-libretro
+deroon;mame-mame4all
+deroon;Final Burn Alpha
+doapp;arcade
+doapp;mame-advmame
+doapp;mame-libretro
+doapp;mame-mame4all
+eightfrc;arcade
+eightfrc;Final Burn Alpha
+eightfrc;mame-advmame
+eightfrc;mame-libretro
+eightfrc;mame-mame4all
+fstarfrc;arcade
+fstarfrc;Final Burn Alpha
+fstarfrc;mame-advmame
+fstarfrc;mame-libretro
+fstarfrc;mame-mame4all
+fstarfrcj;arcade
+fstarfrcj;Final Burn Alpha
+fstarfrcj;mame-advmame
+fstarfrcj;mame-libretro
+fstarfrcj;mame-mame4all
+gaiden;arcade
+gaiden;Final Burn Alpha
+gaiden;mame-advmame
+gaiden;mame-libretro
+gaiden;mame-mame4all
+gemini;Final Burn Alpha
+gemini;arcade
+gemini;mame-advmame
+gemini;mame-libretro
+gemini;mame-mame4all
+ginkun;arcade
+ginkun;Final Burn Alpha
+ginkun;mame-advmame
+ginkun;mame-libretro
+ginkun;mame-mame4all
+glpracr3;arcade
+glpracr3;mame-advmame
+glpracr3;mame-libretro
+glpracr3;mame-mame4all
+glpracr;arcade
+glpracr;mame-advmame
+glpracr;mame-libretro
+glpracr;mame-mame4all
+glpracrj;arcade
+glpracrj;mame-advmame
+glpracrj;mame-libretro
+glpracrj;mame-mame4all
+goodejana;arcade
+goodejana;mame-advmame
+goodejana;mame-libretro
+goodejana;mame-mame4all
+goodejan;arcade
+goodejan;mame-advmame
+goodejan;mame-libretro
+goodejan;mame-mame4all
+gundealrt;arcade
+gundealrt;mame-advmame
+gundealrt;mame-libretro
+gundealrt;mame-mame4all
+gunnail;arcade
+gunnail;Final Burn Alpha
+gunnail;mame-advmame
+gunnail;mame-libretro
+gunnail;mame-mame4all
+mfjump;arcade
+mfjump;mame-advmame
+mfjump;mame-libretro
+mfjump;mame-mame4all
+mightybj;arcade
+mightybj;mame-advmame
+mightybj;mame-libretro
+mightybj;mame-mame4all
+mp_twc;arcade
+mp_twc;mame-advmame
+mp_twc;mame-libretro
+mp_twc;mame-mame4all
+nouryoku;Final Burn Alpha
+nouryoku;mame-advmame
+nouryoku;mame-libretro
+nouryoku;mame-mame4all
+nouryokup;arcade
+nouryokup;mame-advmame
+nouryokup;mame-libretro
+nouryokup;mame-mame4all
+pc_ngai2;arcade
+pc_ngai2;mame-advmame
+pc_ngai2;mame-libretro
+pc_ngai2;mame-mame4all
+pc_ngai3;arcade
+pc_ngai3;mame-advmame
+pc_ngai3;mame-libretro
+pc_ngai3;mame-mame4all
+pc_ngaid;arcade
+pc_ngaid;mame-advmame
+pc_ngaid;mame-libretro
+pc_ngaid;mame-mame4all
+pc_rygar;arcade
+pc_rygar;mame-advmame
+pc_rygar;mame-libretro
+pc_rygar;mame-mame4all
+pc_tbowl;arcade
+pc_tbowl;mame-advmame
+pc_tbowl;mame-libretro
+pc_tbowl;mame-mame4all
+qzkklgy2;arcade
+qzkklgy2;Final Burn Alpha
+qzkklgy2;mame-advmame
+qzkklgy2;mame-libretro
+qzkklgy2;mame-mame4all
+qzkklogy;arcade
+qzkklogy;Final Burn Alpha
+qzkklogy;mame-advmame
+qzkklogy;mame-libretro
+qzkklogy;mame-mame4all
+raiga;arcade
+raiga;Final Burn Alpha
+raiga;mame-advmame
+raiga;mame-libretro
+raiga;mame-mame4all
+rygar2;arcade
+rygar2;Final Burn Alpha
+rygar2;mame-advmame
+rygar2;mame-libretro
+rygar2;mame-mame4all
+rygar3;arcade
+rygar3;Final Burn Alpha
+rygar3;mame-advmame
+rygar3;mame-libretro
+rygar3;mame-mame4all
+rygarb;Final Burn Alpha
+rygarj;arcade
+rygarj;Final Burn Alpha
+rygarj;mame-advmame
+rygarj;mame-libretro
+rygarj;mame-mame4all
+rygar;arcade
+rygar;Final Burn Alpha
+rygar;mame-advmame
+rygar;mame-libretro
+rygar;mame-mame4all
+ryukendna;arcade
+ryukendna;Final Burn Alpha
+ryukendna;mame-advmame
+ryukendna;mame-libretro
+ryukendna;mame-mame4all
+ryukendn;arcade
+ryukendn;Final Burn Alpha
+ryukendn;mame-advmame
+ryukendn;mame-libretro
+ryukendn;mame-mame4all
+sabotenba;arcade
+sabotenba;Final Burn Alpha
+sabotenba;mame-advmame
+sabotenba;mame-libretro
+sabotenba;mame-mame4all
+sabotenb;arcade
+sabotenb;Final Burn Alpha
+sabotenb;mame-advmame
+sabotenb;mame-libretro
+sabotenb;mame-mame4all
+shadowwa;arcade
+shadowwa;Final Burn Alpha
+shadowwa;mame-advmame
+shadowwa;mame-libretro
+shadowwa;mame-mame4all
+shadoww;arcade
+shadoww;Final Burn Alpha
+shadoww;mame-advmame
+shadoww;mame-libretro
+shadoww;mame-mame4all
+silkwormb;Final Burn Alpha
+silkwormj;arcade
+silkwormj;Final Burn Alpha
+silkwormj;mame-advmame
+silkwormj;mame-libretro
+silkwormj;mame-mame4all
+silkworm;Final Burn Alpha
+silkworm;arcade
+silkworm;mame-advmame
+silkworm;mame-libretro
+silkworm;mame-mame4all
+solomonj;arcade
+solomonj;mame-advmame
+solomonj;mame-libretro
+solomonj;mame-mame4all
+solomonj;Final Burn Alpha
+solomon;arcade
+solomon;Final Burn Alpha
+solomon;mame-advmame
+solomon;mame-libretro
+solomon;mame-mame4all
+spbactnj;arcade
+spbactnj;mame-advmame
+spbactnj;mame-libretro
+spbactnj;mame-mame4all
+spbactn;arcade
+spbactn;mame-advmame
+spbactn;mame-libretro
+spbactn;mame-mame4all
+stg;arcade
+stg;Final Burn Alpha
+stg;mame-advmame
+stg;mame-libretro
+stg;mame-mame4all
+stratof;arcade
+stratof;Final Burn Alpha
+stratof;mame-advmame
+stratof;mame-libretro
+stratof;mame-mame4all
+tbowlj;arcade
+tbowlj;mame-advmame
+tbowlj;mame-libretro
+tbowlj;mame-mame4all
+tbowlp;arcade
+tbowlp;mame-advmame
+tbowlp;mame-libretro
+tbowlp;mame-mame4all
+tbowl;arcade
+tbowl;mame-advmame
+tbowl;mame-libretro
+tbowl;mame-mame4all
+tdragon1;Final Burn Alpha
+tdragon1;arcade
+tdragon1;mame-advmame
+tdragon1;mame-libretro
+tdragon1;mame-mame4all
+tdragon;arcade
+tdragon;mame-advmame
+tdragon;mame-libretro
+tdragon;mame-mame4all
+tdragon;Final Burn Alpha
+tecmobb;Final Burn Alpha
+tecmocup;Final Burn Alpha
+tecmohck;Final Burn Alpha
+tecmonbaj;Final Burn Alpha
+tecmonba;Final Burn Alpha
+tecmosb2j;Final Burn Alpha
+tecmosb2;Final Burn Alpha
+tecmosb3;Final Burn Alpha
+tecmosbwa;Final Burn Alpha
+tecmosbwj;Final Burn Alpha
+tecmosbw;Final Burn Alpha
+tecmow92;Final Burn Alpha
+tecmowcm;arcade
+tecmowcm;mame-advmame
+tecmowcm;mame-libretro
+tecmowcm;mame-mame4all
+tecmowc;Final Burn Alpha
+teedoff;arcade
+teedoff;mame-advmame
+teedoff;mame-libretro
+teedoff;mame-mame4all
+tkdenshoa;arcade
+tkdenshoa;mame-advmame
+tkdenshoa;mame-libretro
+tkdenshoa;mame-mame4all
+tkdenshoa;Final Burn Alpha
+tkdensho;arcade
+tkdensho;mame-advmame
+tkdensho;mame-libretro
+tkdensho;mame-mame4all
+tkdensho;Final Burn Alpha
+tknight;arcade
+tknight;Final Burn Alpha
+tknight;mame-advmame
+tknight;mame-libretro
+tknight;mame-mame4all
+tondemo;arcade
+tondemo;mame-advmame
+tondemo;mame-libretro
+tondemo;mame-mame4all
+totmejan;arcade
+totmejan;mame-advmame
+totmejan;mame-libretro
+totmejan;mame-mame4all
+twcup98;arcade
+twcup98;mame-advmame
+twcup98;mame-libretro
+twcup98;mame-mame4all
+tws96;arcade
+tws96;Final Burn Alpha
+tws96;mame-advmame
+tws96;mame-libretro
+tws96;mame-mame4all
+wc90a;arcade
+wc90a;mame-advmame
+wc90a;mame-libretro
+wc90a;mame-mame4all
+wc90a;Final Burn Alpha
+wc90b1;arcade
+wc90b1;Final Burn Alpha
+wc90b1;mame-advmame
+wc90b1;mame-libretro
+wc90b1;mame-mame4all
+wc90ba;Final Burn Alpha
+wc90b;arcade
+wc90b;mame-advmame
+wc90b;mame-libretro
+wc90b;mame-mame4all
+wc90b;Final Burn Alpha
+wc90;arcade
+wc90;mame-advmame
+wc90;mame-libretro
+wc90;mame-mame4all
+wc90t;arcade
+wc90t;mame-advmame
+wc90t;mame-libretro
+wc90t;mame-mame4all
+wc90t;Final Burn Alpha
+wc90;Final Burn Alpha
+wildfangs;arcade
+wildfangs;mame-advmame
+wildfangs;mame-libretro
+wildfangs;mame-mame4all
+wildfang;arcade
+wildfang;Final Burn Alpha
+wildfang;mame-advmame
+wildfang;mame-libretro
+wildfang;mame-mame4all
+wwfwfesta;arcade
+wwfwfesta;Final Burn Alpha
+wwfwfesta;mame-advmame
+wwfwfesta;mame-libretro
+wwfwfesta;mame-mame4all
+wwfwfestj;arcade
+wwfwfestj;mame-advmame
+wwfwfestj;mame-libretro
+wwfwfestj;mame-mame4all
+wwfwfestk;arcade
+wwfwfestk;Final Burn Alpha
+wwfwfestk;mame-advmame
+wwfwfestk;mame-libretro
+wwfwfestk;mame-mame4all
+zingzip;arcade
+zingzip;Final Burn Alpha
+zingzip;mame-advmame
+zingzip;mame-libretro
+zingzip;mame-mame4all

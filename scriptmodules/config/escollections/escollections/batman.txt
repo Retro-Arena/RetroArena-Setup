@@ -1,0 +1,76 @@
+advbatr;fba
+advbatrp01;fba
+advbatrp02;fba
+advbatrp03;fba
+advbatrp04;fba
+advbatrp05;fba
+advbatrp06;fba
+advbatrp07;fba
+advbatrp08;fba
+advbatrp09;fba
+advbatrp10;fba
+advbatrp11;fba
+advbatrp12;fba
+advbatru;fba
+Adventures of Batman & Robin, The (USA, Europe);gamegear
+Adventures of Batman & Robin, The (USA);segacd
+Adventures of Batman & Robin, The (USA);snes
+batman2;arcade
+batman2;fba
+batman2;mame-advmame
+batman2;mame-libretro
+batman2;mame-mame4all
+batman;arcade
+Batman Begins (USA, Europe) (En,Fr,De,Es,It,Nl);gba
+Batman Beyond - Return of the Joker (USA);n64
+Batman Beyond - Return of the Joker (USA);gbc
+Batman Beyond - Return of the Joker (USA);psx
+Batman Beyond - Return of the Joker (USA);psp
+Batman (CPC+) (Europe);amstradcpc
+Batman (Europe);amstradcpc
+Batman (Europe);zxspectrum
+batmanf;fba
+batman;fba
+Batman Forever - The Arcade Game (USA);psx
+Batman Forever - The Arcade Game (USA);psp
+Batman Forever (USA, Europe);gb
+Batman Forever (USA);snes
+Batman Forever (World);gamegear
+batmanfr;arcade
+batmanfr;mame-advmame
+batmanfr;mame-libretro
+batmanfr;mame-mame4all
+Batman - Gotham City Racer (USA);psx
+Batman - Gotham City Racer (USA);psp
+Batman (Japan);msx
+Batman (Japan);pce-cd
+batmanj;fba
+batman;mame-advmame
+batman;mame-libretro
+batman;mame-mame4all
+Batman - Return of the Joker (USA, Europe);gb
+Batman - Return of the Joker (USA);nes
+Batman Returns (Europe);mastersystem
+Batman Returns (USA, Europe);atarilynx
+Batman Returns (USA);nes
+Batman Returns (USA);segacd
+Batman Returns (USA);snes
+Batman Returns (World);gamegear
+Batman - Revenge of the Joker (USA) (Proto);snes
+Batman - Rise of Sin Tzu (USA) (En,Fr,Es);gba
+batmanrj;fba
+batmanrn;fba
+Batman & Robin (USA);psx
+Batman & Robin (USA);psp
+Batman - The Animated Series (USA, Europe);gb
+Batman - The Caped Crusader (Europe);amstradcpc
+Batman - The Caped Crusader (Europe);c64
+Batman - The Caped Crusader - Part 1 - A Bird in the Hand (Europe);zxspectrum
+Batman - The Caped Crusader - Part 2 - A Fete Worse than Death (Europe);zxspectrum
+Batman - The Movie (Europe);amstradcpc
+Batman - The Movie (Europe);c64
+Batman - The Movie (Europe);zxspectrum
+Batman - The Video Game (USA);nes
+Batman - The Video Game (World);gb
+Batman - Vengeance (USA) (En,Fr,Es);gba
+New Batman Adventures, The - Chaos in Gotham (USA);gbc

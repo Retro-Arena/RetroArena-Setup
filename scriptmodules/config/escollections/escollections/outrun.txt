@@ -1,0 +1,91 @@
+Battle OutRun (Europe);mastersystem
+mt_orun;arcade
+mt_orun;mame-advmame
+mt_orun;mame-libretro
+mt_orun;mame-mame4all
+mt_tout;arcade
+mt_tout;mame-advmame
+mt_tout;mame-libretro
+mt_tout;mame-mame4all
+outr2019;fba
+outr2019j;fba
+outr2019u;fba
+outr2019up;fba
+OutRun 3-D (Europe);mastersystem
+outrun;arcade
+outrunb;arcade
+outrunb;fba
+outrunb;mame-advmame
+outrunb;mame-libretro
+outrunb;mame-mame4all
+outrundxa;arcade
+outrundxa;fba
+outrundxa;mame-advmame
+outrundxa;mame-libretro
+outrundxa;mame-mame4all
+outrundx;arcade
+outrundx;fba
+outrundxj;arcade
+outrundxj;fba
+outrundxj;mame-advmame
+outrundxj;mame-libretro
+outrundxj;mame-mame4all
+outrundx;mame-advmame
+outrundx;mame-libretro
+outrundx;mame-mame4all
+Out Run Europa (Europe) (Disk 1);amstradcpc
+Out Run Europa (Europe) (Disk 2);amstradcpc
+OutRun Europa (Europe);mastersystem
+Out Run Europa (Europe) (Side A);c64
+Out Run Europa (Europe) (Side B);c64
+Out Run Europa (Europe);zxspectrum
+OutRun Europa (USA, Europe);gamegear
+Out Run (Europe);amstradcpc
+Out Run (Europe);zxspectrum
+outrun;fba
+Out Run (Japan);msx2
+Out Run (Japan);pce-cd
+outrunj;fba
+outrun;mame-advmame
+outrun;mame-libretro
+outrun;mame-mame4all
+outrunra;arcade
+outrunra;fba
+outrunra;mame-advmame
+outrunra;mame-libretro
+outrunra;mame-mame4all
+Out Run (USA);c64
+OutRun (USA, Europe);gamegear
+OutRun (World);mastersystem
+toutrun1;arcade
+toutrun1;fba
+toutrun1;mame-advmame
+toutrun1;mame-libretro
+toutrun1;mame-mame4all
+toutrun2;arcade
+toutrun2;mame-advmame
+toutrun2;mame-libretro
+toutrun2;mame-mame4all
+toutrun3;arcade
+toutrun3;fba
+toutrun3;mame-advmame
+toutrun3;mame-libretro
+toutrun3;mame-mame4all
+toutrun;arcade
+toutrun;fba
+toutrunj1;arcade
+toutrunj1;mame-advmame
+toutrunj1;mame-libretro
+toutrunj1;mame-mame4all
+toutrunj;arcade
+toutrunj;fba
+toutrunj;mame-advmame
+toutrunj;mame-libretro
+toutrun;mame-advmame
+toutrun;mame-libretro
+toutrun;mame-mame4all
+Turbo Out Run (Europe) (Disk 1);amstradcpc
+Turbo Out Run (Europe) (Disk 2);amstradcpc
+Turbo Out Run (Europe) (Side A);c64
+Turbo Out Run (Europe) (Side B);c64
+Turbo Out Run (Europe);zxspectrum

@@ -1,0 +1,13 @@
+Classic NES Series - Metroid (USA, Europe);gba
+Metroid Fusion (USA, Australia);gba
+Metroid II - Return of Samus (World);gb
+Metroid (Japan) (Translated En);fds
+Metroid Prime - Hunters (USA);nds
+Metroid Prime Pinball (USA);nds
+Metroid (USA);nes
+Metroid - Zero Mission (USA);gba
+pc_mtoid;arcade
+pc_mtoid;mame-advmame
+pc_mtoid;mame-libretro
+pc_mtoid;mame-mame4all
+Super Metroid (Japan, USA);snes

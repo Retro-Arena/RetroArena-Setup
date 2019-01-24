@@ -1,0 +1,108 @@
+Game Boy Advance Video - Teenage Mutant Ninja Turtles - Things Change (USA, Europe);gba
+pc_tmnt2;arcade
+pc_tmnt2;mame-advmame
+pc_tmnt2;mame-libretro
+pc_tmnt2;mame-mame4all
+pc_tmnt;arcade
+pc_tmnt;mame-advmame
+pc_tmnt;mame-libretro
+pc_tmnt;mame-mame4all
+Teenage Mutant Ninja Turtles 2 - Battle Nexus (USA);gba
+Teenage Mutant Ninja Turtles Double Pack (USA) (En,Fr,De,Es,It);gba
+Teenage Mutant Ninja Turtles - Fall of the Foot Clan (USA);gb
+Teenage Mutant Ninja Turtles II - Back from the Sewers (USA);gb
+Teenage Mutant Ninja Turtles III - Radical Rescue (USA);gb
+Teenage Mutant Ninja Turtles III - The Manhattan Project (USA);nes
+Teenage Mutant Ninja Turtles II - The Arcade Game (USA);nes
+Teenage Mutant Ninja Turtles IV - Turtles in Time (USA);snes
+Teenage Mutant Ninja Turtles - The Arcade Game (USA) (Disk 1 Side A);c64
+Teenage Mutant Ninja Turtles - The Arcade Game (USA) (Disk 1 Side B);c64
+Teenage Mutant Ninja Turtles - Tournament Fighters (USA);nes
+Teenage Mutant Ninja Turtles - Tournament Fighters (USA);snes
+Teenage Mutant Ninja Turtles (USA) (Disk 1 Side A);c64
+Teenage Mutant Ninja Turtles (USA) (Disk 1 Side B);c64
+Teenage Mutant Ninja Turtles (USA) (Disk 2 Side A);c64
+Teenage Mutant Ninja Turtles (USA) (Disk 2 Side B);c64
+Teenage Mutant Ninja Turtles (USA);nes
+Teenage Mutant Ninja Turtles (USA);gba
+tmht22pe;arcade
+tmht22pe;fba
+tmht22pe;mame-advmame
+tmht22pe;mame-libretro
+tmht22pe;mame-mame4all
+tmht2pa;arcade
+tmht2pa;fba
+tmht2pa;mame-advmame
+tmht2pa;mame-libretro
+tmht2pa;mame-mame4all
+tmht2p;arcade
+tmht2p;fba
+tmht2p;mame-advmame
+tmht2p;mame-libretro
+tmht2p;mame-mame4all
+tmhta;arcade
+tmhta;fba
+tmhta;mame-advmame
+tmhta;mame-libretro
+tmhta;mame-mame4all
+tmht;arcade
+tmhtb;arcade
+tmhtb;mame-advmame
+tmhtb;mame-libretro
+tmhtb;mame-mame4all
+tmht;fba
+tmht;mame-advmame
+tmht;mame-libretro
+tmht;mame-mame4all
+tmnt22pu;arcade
+tmnt22pu;fba
+tmnt22pu;mame-advmame
+tmnt22pu;mame-libretro
+tmnt22pu;mame-mame4all
+tmnt2a;arcade
+tmnt2a;fba
+tmnt2a;mame-advmame
+tmnt2a;mame-libretro
+tmnt2a;mame-mame4all
+tmnt2;arcade
+tmnt2;fba
+tmnt2;mame-advmame
+tmnt2;mame-libretro
+tmnt2;mame-mame4all
+tmnt2pj;arcade
+tmnt2pj;fba
+tmnt2pj;mame-advmame
+tmnt2pj;mame-libretro
+tmnt2pj;mame-mame4all
+tmnt2po;arcade
+tmnt2po;fba
+tmnt2po;mame-advmame
+tmnt2po;mame-libretro
+tmnt2po;mame-mame4all
+tmnt;arcade
+tmnt;fba
+tmnthh;fba
+tmntia;fba
+tmnti;fba
+tmntj;arcade
+tmntj;fba
+tmntj;mame-advmame
+tmntj;mame-libretro
+tmntj;mame-mame4all
+tmnt;mame-advmame
+tmnt;mame-libretro
+tmnt;mame-mame4all
+tmntru;fba
+tmntshj;fba
+tmnttfj;fba
+tmnttfu;fba
+tmntua;arcade
+tmntua;fba
+tmntua;mame-advmame
+tmntua;mame-libretro
+tmntu;arcade
+tmntu;fba
+tmntu;mame-advmame
+tmntu;mame-libretro
+tmntu;mame-mame4all
+TMNT (USA) (En,Fr,Es);gba

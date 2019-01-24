@@ -1,0 +1,230 @@
+darthvdr;arcade
+darthvdr;mame-advmame
+darthvdr;mame-libretro
+darthvdr;mame-mame4all
+enigma2a;arcade
+enigma2a;mame-advmame
+enigma2a;mame-libretro
+enigma2a;mame-mame4all
+enigma2b;arcade
+enigma2b;mame-advmame
+enigma2b;mame-libretro
+enigma2b;mame-mame4all
+galap1;arcade
+galap1;fba
+galap1;mame-advmame
+galap1;mame-libretro
+galap1;mame-mame4all
+galmonst;arcade
+galmonst;mame-advmame
+galmonst;mame-libretro
+galmonst;mame-mame4all
+invad2ct;arcade
+invad2ct;mame-advmame
+invad2ct;mame-libretro
+invad2ct;mame-mame4all
+invaddlx;arcade
+invaddlx;mame-advmame
+invaddlx;mame-libretro
+invaddlx;mame-mame4all
+invader4;arcade
+invader4;mame-advmame
+invader4;mame-libretro
+invader4;mame-mame4all
+invaderl;arcade
+invaderl;mame-advmame
+invaderl;mame-libretro
+invaderl;mame-mame4all
+invaders;arcade
+invadersem;arcade
+invadersem;mame-advmame
+invadersem;mame-libretro
+invadersem;mame-mame4all
+Invaders from Hyperspace (USA);videopac2
+invaders;mame-advmame
+invaders;mame-libretro
+invaders;mame-mame4all
+invadpt2;arcade
+invadpt2br;arcade
+invadpt2br;mame-advmame
+invadpt2br;mame-libretro
+invadpt2br;mame-mame4all
+invadpt2;mame-advmame
+invadpt2;mame-libretro
+invadpt2;mame-mame4all
+invadrmr;arcade
+invadrmr;mame-advmame
+invadrmr;mame-libretro
+invadrmr;mame-mame4all
+invmulti;arcade
+invmultim1a;arcade
+invmultim1a;mame-advmame
+invmultim1a;mame-libretro
+invmultim1a;mame-mame4all
+invmultim2a;arcade
+invmultim2a;mame-advmame
+invmultim2a;mame-libretro
+invmultim2a;mame-mame4all
+invmultim2c;arcade
+invmultim2c;mame-advmame
+invmultim2c;mame-libretro
+invmultim2c;mame-mame4all
+invmultim3a;arcade
+invmultim3a;mame-advmame
+invmultim3a;mame-libretro
+invmultim3a;mame-mame4all
+invmulti;mame-advmame
+invmulti;mame-libretro
+invmulti;mame-mame4all
+invmultip;arcade
+invmultip;mame-advmame
+invmultip;mame-libretro
+invmultip;mame-mame4all
+invmultis1a;arcade
+invmultis1a;mame-advmame
+invmultis1a;mame-libretro
+invmultis1a;mame-mame4all
+invmultis2a;arcade
+invmultis2a;mame-advmame
+invmultis2a;mame-libretro
+invmultis2a;mame-mame4all
+invmultis3a;arcade
+invmultis3a;mame-advmame
+invmultis3a;mame-libretro
+invmultis3a;mame-mame4all
+invmultit3d;arcade
+invmultit3d;mame-advmame
+invmultit3d;mame-libretro
+invmultit3d;mame-mame4all
+invqix;arcade
+invqix;mame-advmame
+invqix;mame-libretro
+invqix;mame-mame4all
+majest12;arcade
+majest12;fba
+majest12;mame-advmame
+majest12;mame-libretro
+majest12;mame-mame4all
+Pepsi Invaders - Coke Wins (USA);atari2600
+sicv;arcade
+sicv;mame-advmame
+sicv;mame-libretro
+sicv;mame-mame4all
+sinv90;fba
+sinv91;fba
+sisv2;arcade
+sisv2;mame-advmame
+sisv2;mame-libretro
+sisv2;mame-mame4all
+sisv3;arcade
+sisv3;mame-advmame
+sisv3;mame-libretro
+sisv3;mame-mame4all
+sisv;arcade
+sisv;mame-advmame
+sisv;mame-libretro
+sisv;mame-mame4all
+sitv1;arcade
+sitv1;mame-advmame
+sitv1;mame-libretro
+sitv1;mame-mame4all
+sitv;arcade
+sitv;mame-advmame
+sitv;mame-libretro
+sitv;mame-mame4all
+spaceat2;arcade
+spaceat2;mame-advmame
+spaceat2;mame-libretro
+spaceat2;mame-mame4all
+spaceatt;arcade
+spaceatt;mame-advmame
+spaceatt;mame-libretro
+spaceatt;mame-mame4all
+spacecom;arcade
+spacecom;mame-advmame
+spacecom;mame-libretro
+spacecom;mame-mame4all
+spacedx;arcade
+spacedx;fba
+spacedxj;arcade
+spacedxj;fba
+spacedxj;mame-advmame
+spacedxj;mame-libretro
+spacedxj;mame-mame4all
+spacedx;mame-advmame
+spacedx;mame-libretro
+spacedx;mame-mame4all
+spacedxo;arcade
+spacedxo;fba
+spacedxo;mame-advmame
+spacedxo;mame-libretro
+spacedxo;mame-mame4all
+Space Invaders (Europe);amstradcpc
+Space Invaders Extreme 2 (USA) (En,Ja,Fr,De,Es,It);nds
+Space Invaders Extreme (USA) (En,Ja,Fr,De,Es,It);nds
+Space Invaders - Fukkatsu no Hi (Japan);pce-cd
+Space Invaders (Japan);wonderswan
+Space Invaders (Japan);msx
+Space Invaders (Japan);famicom
+Space Invaders (Japan);gb
+Space Invaders (Japan);sg-1000
+Space Invaders Revolution (USA) (En,Fr,De,Es,It);nds
+Space Invaders - The Original Game (Japan);pce-cd
+Space Invaders - The Original Game (USA);snes
+Space Invaders (USA);atari2600
+Space Invaders (USA);atari5200
+Space Invaders (USA);c64
+Space Invaders (USA, Europe);gba
+Space Invaders (USA);n64
+Space Invaders (USA);gb
+Space Invaders (USA);gbc
+Space Invaders (USA);psx
+Space Invaders (USA);psp
+Space Invaders - Virtual Collection (Japan);virtualboy
+spaceinv;fba
+spacerng;arcade
+spacerng;mame-advmame
+spacerng;mame-libretro
+spacerng;mame-mame4all
+spacewr3;arcade
+spacewr3;mame-advmame
+spacewr3;mame-libretro
+spacewr3;mame-mame4all
+spceking;arcade
+spceking;mame-advmame
+spceking;mame-libretro
+spceking;mame-mame4all
+spcewars;arcade
+spcewars;mame-advmame
+spcewars;mame-libretro
+spcewars;mame-mame4all
+spcinv95;arcade
+spcinv95;mame-advmame
+spcinv95;mame-libretro
+spcinv95;mame-mame4all
+spcinv95u;arcade
+spcinv95u;mame-advmame
+spcinv95u;mame-libretro
+spcinv95u;mame-mame4all
+spcinvdj;arcade
+spcinvdj;mame-advmame
+spcinvdj;mame-libretro
+spcinvdj;mame-mame4all
+ssia;arcade
+ssia;mame-advmame
+ssia;mame-libretro
+ssia;mame-mame4all
+ssi;arcade
+ssi;fba
+ssi;mame-advmame
+ssi;mame-libretro
+ssi;mame-mame4all
+Super Space Invaders (Europe);amstradcpc
+Super Space Invaders (Europe);c64
+Super Space Invaders (Europe);mastersystem
+Super Space Invaders (Europe);zxspectrum
+Super Space Invaders (USA, Europe);gamegear
+tst_invd;arcade
+tst_invd;mame-advmame
+tst_invd;mame-libretro
+tst_invd;mame-mame4all

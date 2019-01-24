@@ -1,0 +1,48 @@
+Alex Kidd BMX Trial (Japan);mastersystem
+BMX Air Master (USA);atari2600
+BMX Freestyle (Europe);amstradcpc
+BMX Freestyle Simulator (Europe);c64
+BMX Kidz (Europe);amstradcpc
+BMX Kidz (Europe);c64
+BMX Ninja (Europe);amstradcpc
+BMX Ninja (Europe);c64
+BMX Simulator 2 (Europe);amstradcpc
+BMX Simulator (Europe);amstradcpc
+BMX Simulator (Europe);c64
+BMX Simulator II (Europe);c64
+BMX Trials (Europe);c64
+Cycle Race - Road Man (Japan);famicom
+Dave Mirra Freestyle BMX - Maximum Remix (USA);psx
+Dave Mirra Freestyle BMX - Maximum Remix (USA);psp
+Dave Mirra Freestyle BMX (USA);psx
+Dave Mirra Freestyle BMX (USA);psp
+Eddie Kidd Jump Challenge (Europe);zxspectrum
+Grande Boucle, La (France);zxspectrum
+Hyper Biker (Europe);c64
+Kellogg's Tour 1988 (Europe);c64
+Mat Hoffman's Pro BMX (USA);psx
+Mat Hoffman's Pro BMX (USA);psp
+Milk Race (Europe);amstradcpc
+Milk Race (Europe);zxspectrum
+Mountain Bike Racer (Europe);amstradcpc
+Mountain Bike Racer (Europe);c64
+Mountain Bike Simulator (Europe);amstradcpc
+MTV Sports - T.J. Lavin's Ultimate BMX (USA);psx
+MTV Sports - T.J. Lavin's Ultimate BMX (USA);psp
+No Fear Downhill Mountain Bike Racing (USA);psx
+No Fear Downhill Mountain Bike Racing (USA);psp
+Perico Delgado Maillot Amarillo (Spain);amstradcpc
+Perico Delgado Maillot Amarillo (Spain);zxspectrum
+Professional BMX Simulator (Europe) (Side A);amstradcpc
+Professional BMX Simulator (Europe) (Side B);amstradcpc
+Pro Mountain Bike Simulator (Europe);amstradcpc
+Pro Mountain Bike Simulator (Europe);c64
+Racermate Challenge II (USA) (Unl);nes
+Road Champs - BXS Stunt Biking (USA, Europe);gbc
+Ten Speed (Europe);c64
+Tour 91 (Spain);amstradcpc
+Tour 91 (Spain);zxspectrum
+Tour de Force (Europe) (Disk 1);amstradcpc
+Tour de Force (Europe) (Disk 2);amstradcpc
+Tour de France (Europe) (Unl);c64
+Tour de France (USA);c64

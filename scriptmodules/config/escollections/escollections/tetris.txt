@@ -1,0 +1,222 @@
+3D-Tetris (Czech Republic);zxspectrum
+3-D Tetris (USA);virtualboy
+4in1boot;arcade
+4in1boot;fba
+4in1boot;mame-advmame
+4in1boot;mame-libretro
+4in1boot;mame-mame4all
+atetrisa;arcade
+atetrisa;fba
+atetrisa;mame-advmame
+atetrisa;mame-libretro
+atetrisa;mame-mame4all
+atetris;arcade
+atetrisb2;arcade
+atetrisb2;fba
+atetrisb2;mame-advmame
+atetrisb2;mame-libretro
+atetrisb2;mame-mame4all
+atetrisb3;arcade
+atetrisb3;fba
+atetrisb3;mame-advmame
+atetrisb3;mame-libretro
+atetrisb3;mame-mame4all
+atetrisb;arcade
+atetrisb;fba
+atetrisb;mame-advmame
+atetrisb;mame-libretro
+atetrisb;mame-mame4all
+atetrisc2;arcade
+atetrisc2;fba
+atetrisc2;mame-advmame
+atetrisc2;mame-libretro
+atetrisc2;mame-mame4all
+atetrisc;arcade
+atetrisc;fba
+atetrisc;mame-advmame
+atetrisc;mame-libretro
+atetrisc;mame-mame4all
+atetris;fba
+atetris;mame-advmame
+atetris;mame-libretro
+atetris;mame-mame4all
+cmtetris;arcade
+cmtetris;fba
+cmtetris;mame-advmame
+cmtetris;mame-libretro
+cmtetris;mame-mame4all
+Fa Tetris (Korea) (Unl);msx
+finalttr;arcade
+finalttr;fba
+finalttr;mame-advmame
+finalttr;mame-libretro
+finalttr;mame-mame4all
+Gameboy Tetris (Europe) (Unl);c64
+Magical Tetris Challenge (Europe);psx
+Magical Tetris Challenge (Europe);psp
+Magical Tetris Challenge (USA);n64
+Magical Tetris Challenge (USA);gbc
+Motley Tetris (Germany);c64
+mt_tetri;arcade
+mt_tetri;fba
+mt_tetri;mame-advmame
+mt_tetri;mame-libretro
+mt_tetri;mame-mame4all
+neotet;fba
+New Tetris, The (USA);n64
+Next Tetris - On-line Edition, The (USA);dreamcast
+Next Tetris, The (USA);psx
+Next Tetris, The (USA);psp
+phtetris;arcade
+phtetris;fba
+phtetris;mame-advmame
+phtetris;mame-libretro
+phtetris;mame-mame4all
+pktet346;arcade
+pktet346;fba
+pktet346;mame-advmame
+pktet346;mame-libretro
+pktet346;mame-mame4all
+Sega Tetris (Japan);dreamcast
+Super Tetris 2 + Bombliss (Japan);sfc
+Super Tetris 3 (Japan);sfc
+Super Tetris (Europe);amstradcpc
+Team Tetris (Europe);c64
+tetrbx;arcade
+tetrbx;fba
+tetrbx;mame-advmame
+tetrbx;mame-libretro
+tetrbx;mame-mame4all
+tetris1;arcade
+tetris1;fba
+tetris1;mame-advmame
+tetris1;mame-libretro
+tetris1;mame-mame4all
+Tetris 26 (USA) (Unl);atari2600
+tetris2;arcade
+Tetris 2 + Bombliss (Japan);famicom
+tetris2;fba
+tetris2;mame-advmame
+tetris2;mame-libretro
+tetris2;mame-mame4all
+Tetris 2 (USA, Europe);gb
+Tetris 2 (USA);nes
+Tetris 2 (USA);snes
+tetris3;arcade
+tetris3;fba
+tetris3;mame-advmame
+tetris3;mame-libretro
+tetris3;mame-mame4all
+Tetris 4D (Japan);dreamcast
+Tetris (576 Kbyte) (Hungary) (Unl);c64
+Tetris 95 (Europe) (Unl);amstradcpc
+Tetrisack (Poland) (Unl);c64
+tetris;arcade
+Tetris Attack (USA, Europe);gb
+Tetris Attack (USA, Europe) (Rev A);gb
+Tetris Attack (USA);snes
+Tetris Battle Gaiden (Japan);sfc
+tetrisbl;arcade
+Tetris Blast (USA, Europe);gb
+tetrisbl;fba
+tetrisbl;mame-advmame
+tetrisbl;mame-libretro
+tetrisbl;mame-mame4all
+Tetris (Bulletproof) (Japan);famicom
+Tetris (DaCapo) (Europe) (Unl);c64
+Tetris & Dr. Mario (USA);snes
+Tetris DS (USA);nds
+Tetris DX (World);gbc
+Tetris (Europe);amstradcpc
+Tetris (Europe);zxspectrum
+tetris;fba
+Tetris II (Europe);amstradcpc
+Tetris (Japan);wonderswancolor
+Tetris (Japan);msx2
+Tetris (Korea) (Unl);msx
+tetris;mame-advmame
+tetris;mame-libretro
+tetris;mame-mame4all
+Tetris (Mirrorsoft Ltd.) (Europe);c64
+Tetris Original (Hungary) (Unl);c64
+tetrisp2;arcade
+tetrisp2;fba
+tetrisp2ja;arcade
+tetrisp2ja;fba
+tetrisp2ja;mame-advmame
+tetrisp2ja;mame-libretro
+tetrisp2ja;mame-mame4all
+tetrisp2j;arcade
+tetrisp2j;fba
+tetrisp2j;mame-advmame
+tetrisp2j;mame-libretro
+tetrisp2j;mame-mame4all
+tetrisp2;mame-advmame
+tetrisp2;mame-libretro
+tetrisp2;mame-mame4all
+tetrisp;arcade
+Tetris Party Deluxe (USA) (En,Fr,Es);nds
+tetrisp;fba
+Tetrisphere (USA);n64
+Tetris Plus (USA, Europe);gb
+Tetris Plus (USA);psx
+Tetris Plus (USA);psp
+tetrisp;mame-advmame
+tetrisp;mame-libretro
+tetrisp;mame-mame4all
+tetrisse;arcade
+tetrisse;fba
+tetrisse;mame-advmame
+tetrisse;mame-libretro
+tetrisse;mame-mame4all
+tetrista;arcade
+tetrista;fba
+tetrista;mame-advmame
+tetrista;mame-libretro
+tetrista;mame-mame4all
+tetrist;arcade
+tetrist;fba
+tetristh;arcade
+Tetris - The Soviet Mind Game (USA) (Unl);nes
+tetristh;fba
+tetristh;mame-advmame
+tetristh;mame-libretro
+tetristh;mame-mame4all
+tetrist;mame-advmame
+tetrist;mame-libretro
+tetrist;mame-mame4all
+Tetris (USA);nes
+Tetris (USA);pspminis
+Tetris (World);gb
+Tetris (World) (Rev A);gb
+Tetris Worlds (USA);gba
+tetrsark;arcade
+tetrsark;fba
+tetrsark;mame-advmame
+tetrsark;mame-libretro
+tetrsark;mame-mame4all
+tgm2;arcade
+tgm2;fba
+tgm2;mame-advmame
+tgm2;mame-libretro
+tgm2;mame-mame4all
+tgm2p;arcade
+tgm2p;fba
+tgm2p;mame-advmame
+tgm2p;mame-libretro
+tgm2p;mame-mame4all
+tgmj;arcade
+tgmj;mame-advmame
+tgmj;mame-libretro
+tgmj;mame-mame4all
+tp2m32;arcade
+tp2m32;fba
+tp2m32;mame-advmame
+tp2m32;mame-libretro
+tp2m32;mame-mame4all
+vstetris;arcade
+vstetris;fba
+vstetris;mame-advmame
+vstetris;mame-libretro
+vstetris;mame-mame4all
+V-Tetris (Japan);virtualboy

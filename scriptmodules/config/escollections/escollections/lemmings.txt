@@ -1,0 +1,32 @@
+3D Lemmings (USA);psx
+3D Lemmings (USA);psp
+lemming2;fba
+lemming2u;fba
+Lemmings 2 - The Tribes (Europe);gb
+Lemmings 2 - The Tribes (Europe) (Proto);gamegear
+Lemmings 2 - The Tribes (USA);snes
+Lemmings 2 - The Tribes (World) (Proto);mastersystem
+lemmings;arcade
+Lemmings (Europe) (Disk 1);amstradcpc
+Lemmings (Europe) (Disk 2);amstradcpc
+Lemmings (Europe);mastersystem
+lemmings;fba
+Lemmings (Japan);pce-cd
+lemmingsju1;fba
+lemmingsju;fba
+lemmings;mame-advmame
+lemmings;mame-libretro
+lemmings;mame-mame4all
+Lemmings & Oh No! More Lemmings (USA);psx
+Lemmings & Oh No! More Lemmings (USA);psp
+Lemmings (Side A) (Europe);zxspectrum
+Lemmings (Side B) (Europe);zxspectrum
+Lemmings (USA) (Disk 1 Side A);c64
+Lemmings (USA) (Disk 1 Side B);c64
+Lemmings (USA) (Disk 2);c64
+Lemmings (USA, Europe);atarilynx
+Lemmings (USA);nes
+Lemmings (USA);gb
+Lemmings (USA);gbc
+Lemmings (USA);snes
+Lemmings (World);gamegear

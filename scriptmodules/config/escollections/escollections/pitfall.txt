@@ -1,0 +1,44 @@
+David Crane's Pitfall II - Lost Caverns (USA);atari5200
+David Crane's Pitfall (USA);c64
+pitfall2a;arcade
+pitfall2a;fba
+pitfall2a;mame-advmame
+pitfall2a;mame-libretro
+pitfall2a;mame-mame4all
+pitfall2;arcade
+pitfall2;fba
+pitfall2;mame-advmame
+pitfall2;mame-libretro
+pitfall2;mame-mame4all
+pitfall2u;arcade
+pitfall2u;fba
+pitfall2u;mame-advmame
+pitfall2u;mame-libretro
+pitfall2u;mame-mame4all
+Pitfall 3D - Beyond the Jungle (USA);psx
+Pitfall 3D - Beyond the Jungle (USA);psp
+Pitfall - Beyond the Jungle (USA, Europe);gbc
+pitfall;fba
+Pitfall II - Lost Caverns (Europe);zxspectrum
+Pitfall II - Lost Caverns (Japan) (Alt 1);msx
+Pitfall II - Lost Caverns (Japan);msx
+Pitfall II - Lost Caverns (USA);atari2600
+Pitfall II - Lost Caverns (USA);coleco
+Pitfall II - Lost Caverns (USA);c64
+Pitfall II - The Lost Caverns (Japan);sg-1000
+Pitfall! (Japan) (Alt 1);msx
+Pitfall! (Japan) (Alt 2);msx
+Pitfall! (Japan);msx
+Pitfall! - Pitfall Harry's Jungle Adventure (USA);atari2600
+Pitfall - Pitfall Harry's Jungle Adventure (USA);c64
+Pitfall - The Lost Expedition (USA);gba
+Pitfall - The Mayan Adventure (USA, Europe);gba
+Pitfall - The Mayan Adventure (USA);sega32x
+Pitfall - The Mayan Adventure (USA);segacd
+Pitfall - The Mayan Adventure (USA);snes
+Pitfall - The Unofficial Adventure (World) (Unl);nes
+pitfallu;fba
+Pitfall! (USA);atari5200
+Pitfall! (USA);coleco
+Super Pitfall II (USA) (Proto);nes
+Super Pitfall (USA);nes

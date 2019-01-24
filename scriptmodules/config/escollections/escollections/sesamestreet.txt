@@ -1,0 +1,29 @@
+123 Sesame Street - Cookie's Counting Carnival - The Videogame (USA);nds
+123 Sesame Street - Elmo's A-to-Zoo Adventure - The Videogame (USA);nds
+123 Sesame Street - Ready, Set, Grover! - With Elmo - The Videogame (USA) (En,Es);nds
+Adventures of Elmo in Grouchland, The (USA);gbc
+Alpha Beam with Ernie (USA);atari2600
+Big Bird's Egg Catch (USA);atari2600
+Big Bird's Funhouse (USA);c64
+Big Bird's Special Delivery (USA);c64
+Elmo's 123s (USA);gbc
+Elmo's ABCs (USA);gbc
+Elmo's Letter Adventure (USA);n64
+Elmo's Number Journey (USA);n64
+Ernie's Big Splash (USA);c64
+Ernie's Magic Shapes (USA);c64
+Flying in on the Big Bird (USA);c64
+Oscar's Trash Race (USA);atari2600
+sesame;fba
+Sesame Street 123 (USA);nes
+Sesame Street ABC & 123 (USA);nes
+Sesame Street ABC (USA);nes
+Sesame Street - Big Bird's Hide & Speak (USA);nes
+Sesame Street Countdown (USA);nes
+Sesame Street - Elmo's Letter Adventure (USA);psx
+Sesame Street - Elmo's Number Journey (USA);psx
+Sesame Street - Letter-Go-Round (USA);c64
+Sesame Street - Pals Around Town (USA);c64
+Sesame Street Sports (USA);gbc
+Sesame Street Sports (USA);psx
+Sesame Street Sports (USA);psp

@@ -1,0 +1,35 @@
+Akumajou Densetsu (Japan) (Translated En);famicom
+Akumajou Dracula II - Noroi no Fuuin (Japan);fds
+Akumajou Dracula (Japan);fds
+Akumajou Special - Boku Dracula-kun (Japan) (Translated En);famicom
+Castlevania Adventure, The (USA);gb
+Castlevania - Aria of Sorrow (USA);gba
+Castlevania Chronicles (USA);psx
+Castlevania Chronicles (USA);psp
+Castlevania - Circle of the Moon (USA);gba
+Castlevania Double Pack (USA);gba
+Castlevania - Dracula X (USA);snes
+Castlevania - Harmony of Dissonance (USA);gba
+Castlevania II - Belmont's Revenge (USA, Europe);gb
+Castlevania III - Dracula's Curse (USA);nes
+Castlevania II - Simon's Quest (USA);nes
+Castlevania - Legacy of Darkness (USA);n64
+Castlevania Legends (USA, Europe);gb
+Castlevania - Symphony of the Night (USA);psx
+Castlevania - Symphony of the Night (USA);psp
+Castlevania - The Adventure (USA);gb
+Castlevania (USA);nes
+Castlevania (USA) (Rev B);n64
+cstlevna;arcade
+cstlevna;fba
+cstlevna;mame-advmame
+cstlevna;mame-libretro
+cstlevna;mame-mame4all
+cvania;fba
+cvaniap;fba
+cvaniau;fba
+pc_cvnia;arcade
+pc_cvnia;mame-advmame
+pc_cvnia;mame-libretro
+pc_cvnia;mame-mame4all
+Super Castlevania IV (USA);snes

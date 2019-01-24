@@ -1,0 +1,76 @@
+darius2;arcade
+darius2d;arcade
+darius2d;fba
+darius2d;mame-advmame
+darius2d;mame-libretro
+darius2d;mame-mame4all
+darius2do;arcade
+darius2do;fba
+darius2do;mame-advmame
+darius2do;mame-libretro
+darius2do;mame-mame4all
+darius2;fba
+darius2;mame-advmame
+darius2;mame-libretro
+darius2;mame-mame4all
+dariusa;fba
+Darius Alpha (Japan);pce-cd
+darius;arcade
+dariuse;arcade
+dariuse;fba
+dariuse;mame-advmame
+dariuse;mame-libretro
+dariuse;mame-mame4all
+Darius (Europe);zxspectrum
+darius;fba
+dariusg;arcade
+dariusgj;arcade
+dariusgj;mame-advmame
+dariusgj;mame-libretro
+dariusgj;mame-mame4all
+dariusg;mame-advmame
+dariusg;mame-libretro
+dariusg;mame-mame4all
+dariusgu;arcade
+dariusgu;mame-advmame
+dariusgu;mame-libretro
+dariusgu;mame-mame4all
+dariusgx;arcade
+dariusgx;mame-advmame
+dariusgx;mame-libretro
+dariusgx;mame-mame4all
+dariusj;arcade
+dariusj;fba
+dariusj;mame-advmame
+dariusj;mame-libretro
+dariusj;mame-mame4all
+darius;mame-advmame
+darius;mame-libretro
+darius;mame-mame4all
+dariuso;arcade
+dariuso;fba
+dariuso;mame-advmame
+dariuso;mame-libretro
+dariuso;mame-mame4all
+dariusp;fba
+Darius Plus (Japan);pce-cd
+Darius Twin (USA);snes
+dariusu;arcade
+dariusu;mame-advmame
+dariusu;mame-libretro
+dariusu;mame-mame4all
+gdarius2;arcade
+gdarius2;mame-advmame
+gdarius2;mame-libretro
+gdarius2;mame-mame4all
+gdarius;arcade
+gdariusb;arcade
+gdariusb;mame-advmame
+gdariusb;mame-libretro
+gdarius;mame-advmame
+gdarius;mame-libretro
+gdarius;mame-mame4all
+G. Darius (USA);psx
+G. Darius (USA);psp
+Super Darius 2 (Japan);pce-cd
+Super Darius (Japan);pce-cd

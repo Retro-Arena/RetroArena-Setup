@@ -1,0 +1,88 @@
+ij_l3;arcade
+ij_l3;mame-advmame
+ij_l3;mame-libretro
+ij_l3;mame-mame4all
+ij_l4;arcade
+ij_l4;mame-advmame
+ij_l4;mame-libretro
+ij_l4;mame-mame4all
+ij_l5;arcade
+ij_l5;mame-advmame
+ij_l5;mame-libretro
+ij_l5;mame-mame4all
+ij_l6;arcade
+ij_l6;mame-advmame
+ij_l6;mame-libretro
+ij_l6;mame-mame4all
+ij_l7;arcade
+ij_l7;mame-advmame
+ij_l7;mame-libretro
+ij_l7;mame-mame4all
+ij_lg7;arcade
+ij_lg7;mame-advmame
+ij_lg7;mame-libretro
+ij_lg7;mame-mame4all
+Indiana Jones and the Fate of Atlantis (Europe);c64
+Indiana Jones and the Fate of Atlantis (Europe) (Disk 1);amstradcpc
+Indiana Jones and the Fate of Atlantis (Europe) (Disk 2);amstradcpc
+Indiana Jones and the Fate of Atlantis (Side A) (Europe);zxspectrum
+Indiana Jones and the Fate of Atlantis (Side B) (Europe);zxspectrum
+Indiana Jones and the Golden Head (USA) (Unl);c64
+Indiana Jones and the Infernal Machine (USA, Europe);gbc
+Indiana Jones and the Infernal Machine (USA);n64
+Indiana Jones and the Last Crusade (Europe);amstradcpc
+Indiana Jones and the Last Crusade (Europe);c64
+Indiana Jones and the Last Crusade (Europe);mastersystem
+Indiana Jones and the Last Crusade (Europe);zxspectrum
+Indiana Jones and the Last Crusade (Taito) (USA);nes
+Indiana Jones and the Last Crusade (UBI Soft) (USA);nes
+Indiana Jones and the Last Crusade (USA, Europe);gb
+Indiana Jones and the Last Crusade (USA, Europe);gamegear
+Indiana Jones and the Staff of Kings (USA) (En,Fr);nds
+Indiana Jones and the Temple of Doom (Europe);amstradcpc
+Indiana Jones and the Temple of Doom (Europe);c64
+Indiana Jones and the Temple of Doom (Europe);zxspectrum
+Indiana Jones and the Temple of Doom (USA);nes
+Indiana Jones' Greatest Adventures (USA);snes
+Indiana Jones in the Lost Kingdom (USA);c64
+indycrus;fba
+indycrusu;fba
+indyrus;fba
+indytemp2;arcade
+indytemp2;mame-advmame
+indytemp2;mame-libretro
+indytemp2;mame-mame4all
+indytemp3;arcade
+indytemp3;mame-advmame
+indytemp3;mame-libretro
+indytemp3;mame-mame4all
+indytemp4;arcade
+indytemp4;mame-advmame
+indytemp4;mame-libretro
+indytemp4;mame-mame4all
+indytemp;arcade
+indytempc;arcade
+indytempc;mame-advmame
+indytempc;mame-libretro
+indytempc;mame-mame4all
+indytempd;arcade
+indytempd;mame-advmame
+indytempd;mame-libretro
+indytempd;mame-mame4all
+indytemp;mame-advmame
+indytemp;mame-libretro
+indytemp;mame-mame4all
+instch;fba
+instchp1;fba
+instchp2;fba
+instchp3;fba
+instchp4;fba
+instchp5;fba
+instchp6;fba
+instchp7;fba
+instchp8;fba
+instchp9;fba
+LEGO Indiana Jones 2 - The Adventure Continues (USA) (En,Fr,Es);nds
+LEGO Indiana Jones - The Original Adventures (USA) (En,Fr,De,Es,It,Da);nds
+youngind;fba
+Young Indiana Jones Chronicles, The (USA);nes

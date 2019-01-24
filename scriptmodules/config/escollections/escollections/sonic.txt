@@ -1,0 +1,164 @@
+2 Games in 1 - Sonic Advance + ChuChu Rocket! (Europe) (En,Ja,Fr,De,Es);gba
+2 Games in 1 - Sonic Advance + Sonic Battle (Europe) (En,Ja,Fr,De,Es+En,Ja,Fr,De,Es,It);gba
+2 Games in 1 - Sonic Battle + ChuChu Rocket! (Europe) (En,Ja,Fr,De,Es,It+En,Ja,Fr,De,Es);gba
+2 Games in 1 - Sonic Battle + Sonic Pinball Party (Europe) (En,Ja,Fr,De,Es,It);gba
+2 Games in 1 - Sonic Pinball Party + Columns Crown (Europe) (En,Ja,Fr,De,Es,It+En);gba
+Combo Pack - Sonic Advance + Sonic Pinball Party (USA) (En,Ja,Fr,De,Es+En,Ja,Fr,De,Es,It);gba
+Game Boy Advance Video - Sonic X - Volume 1 (USA);gba
+Gateway to the Skies (Europe);zxspectrum
+ghunter;arcade
+ghunter;mame-advmame
+ghunter;mame-libretro
+ghunter;mame-mame4all
+knucklp;fba
+mp_soni2;arcade
+mp_soni2;mame-advmame
+mp_soni2;mame-libretro
+mp_soni2;mame-mame4all
+mp_sonic;arcade
+mp_sonic;mame-advmame
+mp_sonic;mame-libretro
+mp_sonic;mame-mame4all
+mt_soni2;arcade
+mt_soni2;mame-advmame
+mt_soni2;mame-libretro
+mt_soni2;mame-mame4all
+mt_sonia;arcade
+mt_sonia;mame-advmame
+mt_sonia;mame-libretro
+mt_sonia;mame-mame4all
+mt_sonic;arcade
+mt_sonic;mame-advmame
+mt_sonic;mame-libretro
+mt_sonic;mame-mame4all
+newufo_sonic;arcade
+newufo_sonic;mame-advmame
+newufo_sonic;mame-libretro
+newufo_sonic;mame-mame4all
+odin_dlx;arcade
+odin_dlx;mame-advmame
+odin_dlx;mame-libretro
+odin_dlx;mame-mame4all
+phoenixs;arcade
+phoenixs;mame-advmame
+phoenixs;mame-libretro
+phoenixs;mame-mame4all
+poleposn;arcade
+poleposn;mame-advmame
+poleposn;mame-libretro
+poleposn;mame-mame4all
+scrack;fba
+sk;fba
+skp01;fba
+skp02;fba
+skp03;fba
+skp04;fba
+skp05;fba
+skp06;fba
+skp07;fba
+skp08;fba
+skp09;fba
+skp10;fba
+skp11;fba
+skp12;fba
+sks1;fba
+sks2;fba
+sks3;fba
+solarwap;arcade
+solarwap;mame-advmame
+solarwap;mame-libretro
+solarwap;mame-mame4all
+sonic2a;fba
+sonic2b;fba
+sonic2c;fba
+sonic2;fba
+sonic2p1;fba
+sonic2p2;fba
+sonic2p3;fba
+sonic2p4;fba
+sonic2p5;fba
+sonic2p6;fba
+sonic2p7;fba
+sonic2p8;fba
+sonic3ca;fba
+sonic3c;fba
+sonic3d;fba
+sonic3dp1;fba
+sonic3dp2;fba
+sonic3dp3;fba
+sonic3dp4;fba
+sonic3dp5;fba
+sonic3dp6;fba
+sonic3dp7;fba
+sonic3dp8;fba
+sonic3;fba
+sonic3j;fba
+sonic3pir;fba
+sonic3u;fba
+Sonic Advance 2 (USA) (En,Ja,Fr,De,Es,It);gba
+Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It);gba
+Sonic Advance (USA) (En,Ja);gba
+Sonic Adventure 2 (USA);dreamcast
+Sonic Adventure International (Japan);dreamcast
+Sonic Adventure (USA);dreamcast
+sonic;arcade
+Sonic Battle (USA) (En,Ja,Fr,De,Es,It);gba
+Sonic Blast (Brazil);mastersystem
+Sonic Blast (World);gamegear
+sonicbom;arcade
+sonicbom;fba
+sonicbom;mame-advmame
+sonicbom;mame-libretro
+sonicbom;mame-mame4all
+Sonic Boom (Europe);amstradcpc
+Sonic Boom (Side A) (Europe);zxspectrum
+Sonic Boom (Side B) (Europe);zxspectrum
+Sonic Boom (USA);c64
+Sonic Boom! (USA);c64
+Sonic CD (USA);segacd
+Sonic Chaos (Europe);mastersystem
+Sonic Chaos (USA, Europe);gamegear
+soniccmp1;fba
+soniccmp;fba
+Sonic Drift 2 (Japan, USA);gamegear
+Sonic Drift (Japan);gamegear
+Sonic Edusoft (USA) (Proto);mastersystem
+sonicer;fba
+sonic;fba
+sonicjam1;fba
+sonicjam2;fba
+sonicjam;fba
+sonicj;fba
+Sonic Labyrinth (World);gamegear
+sonic;mame-advmame
+sonic;mame-libretro
+sonic;mame-mame4all
+sonicp;arcade
+Sonic Pinball Party (USA) (En,Ja,Fr,De,Es,It);gba
+sonicpir;fba
+sonicp;mame-advmame
+sonicp;mame-libretro
+sonicp;mame-mame4all
+Sonic Shuffle (USA);dreamcast
+Sonic Spinball (Europe);mastersystem
+Sonic Spinball (USA, Europe);gamegear
+Sonic The Hedgehog 2 (Europe);mastersystem
+Sonic The Hedgehog 2 (World);gamegear
+Sonic the Hedgehog - Genesis (USA);gba
+Sonic the Hedgehog - Pocket Adventure (World);ngpc
+Sonic The Hedgehog - Triple Trouble (USA, Europe);gamegear
+Sonic The Hedgehog (USA, Europe);mastersystem
+Sonic The Hedgehog (World);gamegear
+sonstwar;arcade
+sonstwar;mame-advmame
+sonstwar;mame-libretro
+sonstwar;mame-mame4all
+sonstwr2;arcade
+sonstwr2;mame-advmame
+sonstwr2;mame-libretro
+sonstwr2;mame-mame4all
+sspin;fba
+sspinj;fba
+sspinp;fba
+sspinu;fba
+Tails no Sky Patrol (Japan);gamegear

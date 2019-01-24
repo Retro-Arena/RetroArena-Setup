@@ -1,0 +1,32 @@
+LEGO Alpha Team (USA);gbc
+LEGO Batman 2 - DC Super Heroes (USA) (En,Fr,Es,Pt);nds
+LEGO Batman - The Videogame (USA) (En,Fr,Es);nds
+LEGO Battles - Ninjago (USA) (En,Fr,Es);nds
+LEGO Battles (USA) (En,Fr,Es) [b];nds
+LEGO Bionicle (USA) (En,Fr);gba
+LEGO Harry Potter - Years 1-4 (USA) (En,Fr,Es);nds
+LEGO Harry Potter - Years 5-7 (USA) (En,Fr,Es);nds
+LEGO Indiana Jones 2 - The Adventure Continues (USA) (En,Fr,Es);nds
+LEGO Indiana Jones - The Original Adventures (USA) (En,Fr,De,Es,It,Da);nds
+LEGO Island 2 - The Brickster's Revenge (USA) (En,Fr);gba
+LEGO Island 2 - The Brickster's Revenge (USA);gbc
+LEGO Island 2 - The Brickster's Revenge (USA);psx
+LEGO Island 2 - The Brickster's Revenge (USA);psp
+LEGO Island - Xtreme Stunts (USA, Europe) (En,Fr,De,Es,It,Nl,Sv,Da);gba
+LEGO Pirates of the Caribbean - The Video Game (USA) (En,Fr,Es);nds
+LEGO Racers 2 (USA) (En,Fr);gba
+LEGO Racers (USA) (En,Fr,De,Es,It,Nl,Sv,No,Da,Fi);n64
+LEGO Racers (USA);gbc
+LEGO Racers (USA);psx
+LEGO Racers (USA);psp
+LEGO Rock Band (USA) (En,Fr,De,Es,It,Da);nds
+LEGO Rock Raiders (USA);psx
+LEGO Rock Raiders (USA);psp
+LEGO Soccer Mania (USA, Europe) (En,Fr,De,Es,It,Nl,Sv,Da);gba
+LEGO Star Wars III - The Clone Wars (USA) (En,Fr,Es);nds
+LEGO Star Wars II - The Original Trilogy (USA);nds
+LEGO Star Wars II - The Original Trilogy (USA);gba
+LEGO Star Wars - The Complete Saga (USA);nds
+LEGO Star Wars - The Video Game (USA, Europe) (En,Fr,De,Es,It,Nl,Da);gba
+LEGO Stunt Rally (USA);gbc
+LEGO The Lord of the Rings (USA) (En,Fr,Es,Pt);nds

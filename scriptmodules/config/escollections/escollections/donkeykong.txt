@@ -1,0 +1,149 @@
+ckongdks;arcade
+ckongdks;mame-advmame
+ckongdks;mame-libretro
+ckongdks;mame-mame4all
+Classic NES Series - Donkey Kong (USA, Europe);gba
+dkingjr;arcade
+dkingjr;fba
+dkingjr;mame-advmame
+dkingjr;mame-libretro
+dkingjr;mame-mame4all
+dkong3;arcade
+dkong3b;arcade
+dkong3b;fba
+dkong3b;mame-advmame
+dkong3b;mame-libretro
+dkong3b;mame-mame4all
+dkong3;fba
+dkong3j;arcade
+dkong3j;fba
+dkong3j;mame-advmame
+dkong3j;mame-libretro
+dkong3j;mame-mame4all
+dkong3;mame-advmame
+dkong3;mame-libretro
+dkong3;mame-mame4all
+dkong;arcade
+dkongf;arcade
+dkongf;fba
+dkong;fba
+dkongf;mame-advmame
+dkongf;mame-libretro
+dkongf;mame-mame4all
+dkonghrd;arcade
+dkonghrd;fba
+dkonghrd;mame-advmame
+dkonghrd;mame-libretro
+dkonghrd;mame-mame4all
+dkongj;arcade
+dkongj;fba
+dkongj;mame-advmame
+dkongj;mame-libretro
+dkongj;mame-mame4all
+dkongjnrj;arcade
+dkongjnrj;fba
+dkongjnrj;mame-advmame
+dkongjnrj;mame-libretro
+dkongjnrj;mame-mame4all
+dkongjo1;arcade
+dkongjo1;fba
+dkongjo1;mame-advmame
+dkongjo1;mame-libretro
+dkongjo1;mame-mame4all
+dkongjo;arcade
+dkongjo;fba
+dkongjo;mame-advmame
+dkongjo;mame-libretro
+dkongjo;mame-mame4all
+dkongjr;arcade
+dkongjrb;arcade
+dkongjrb;fba
+dkongjrb;mame-advmame
+dkongjrb;mame-libretro
+dkongjrb;mame-mame4all
+dkongjre;arcade
+dkongjre;mame-advmame
+dkongjre;mame-libretro
+dkongjre;mame-mame4all
+dkongjr;fba
+dkongjrj;arcade
+dkongjrj;fba
+dkongjrj;mame-advmame
+dkongjrj;mame-libretro
+dkongjrj;mame-mame4all
+dkongjr;mame-advmame
+dkongjr;mame-libretro
+dkongjr;mame-mame4all
+dkongjrm;arcade
+dkongjrm;fba
+dkongjrm;mame-advmame
+dkongjrm;mame-libretro
+dkongjrm;mame-mame4all
+dkongjrpb;arcade
+dkongjrpb;mame-advmame
+dkongjrpb;mame-libretro
+dkongjrpb;mame-mame4all
+dkong;mame-advmame
+dkong;mame-libretro
+dkong;mame-mame4all
+dkongo;arcade
+dkongo;fba
+dkongo;mame-advmame
+dkongo;mame-libretro
+dkongo;mame-mame4all
+dkongx11;arcade
+dkongx11;fba
+dkongx11;mame-advmame
+dkongx11;mame-libretro
+dkongx11;mame-mame4all
+dkongx;arcade
+dkongx;fba
+dkongx;mame-advmame
+dkongx;mame-libretro
+dkongx;mame-mame4all
+Donkey Kong 3 (World);nes
+Donkey Kong 64 (USA);n64
+Donkey Kong (Atarisoft) (USA);c64
+Donkey Kong Classics (USA, Europe);nes
+Donkey Kong Country 2 - Diddy's Kong Quest (USA);snes
+Donkey Kong Country 2 (USA, Australia);gba
+Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA);snes
+Donkey Kong Country 3 (USA, Australia);gba
+Donkey Kong Country (USA) (Competition Edition);snes
+Donkey Kong Country (USA, Europe);gbc
+Donkey Kong Country (USA);gba
+Donkey Kong Country (USA);snes
+Donkey Kong (Europe);amstradcpc
+Donkey Kong (Europe);zxspectrum
+Donkey Kong (Japan);fds
+Donkey Kong Jr. (Japan);fds
+Donkey Kong Jr. Math (USA, Europe);nes
+Donkey Kong Jr (USA, Europe);coleco
+Donkey Kong Jr. (World);nes
+Donkey Kong Junior (Europe) (Unl);c64
+Donkey Kong Junior (USA);atari2600
+Donkey Kong Junior (USA);atari7800
+Donkey Kong Land 2 (USA, Europe);gb
+Donkey Kong Land III (USA, Europe);gb
+Donkey Kong Land III (USA, Europe) (Rev A);gb
+Donkey Kong Land (USA, Europe);gb
+Donkey Kong (Ocean) (Europe);c64
+Donkey Kong (USA);atari2600
+Donkey Kong (USA);atari7800
+Donkey Kong (USA, Europe);coleco
+Donkey Kong (World);nes
+Donkey Kong (World);gb
+Donkey Kong (World) (Rev A);gb
+jrking;arcade
+jrking;fba
+jrking;mame-advmame
+jrking;mame-libretro
+jrking;mame-mame4all
+kong;arcade
+kong;fba
+kong;mame-advmame
+kong;mame-libretro
+kong;mame-mame4all
+Mario vs. Donkey Kong (USA, Australia);gba
+sdkong99;fba
+Super Donkey Kong - Xiang Jiao Chuan (China) (Unl) (Translated En);famicom

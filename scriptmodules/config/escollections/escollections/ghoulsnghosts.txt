@@ -1,0 +1,19 @@
+ghouls1;fba
+ghouls;arcade
+ghouls;fba
+ghouls;mame-advmame
+ghouls;mame-libretro
+ghouls;mame-mame4all
+Ghouls'n'Ghosts (Europe);c64
+Ghouls'n Ghosts (USA, Europe);mastersystem
+Ghouls'n Gremlins (Europe);c64
+ghoulsu;arcade
+ghoulsu;fba
+ghoulsu;mame-advmame
+ghoulsu;mame-libretro
+ghoulsu;mame-mame4all
+mt_gng;arcade
+mt_gng;mame-advmame
+mt_gng;mame-libretro
+Super Ghouls'n Ghosts (USA, Europe);gba
+Super Ghouls'n Ghosts (USA);snes

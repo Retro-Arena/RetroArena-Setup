@@ -1,0 +1,926 @@
+2 Games in 1! - Dragon Ball Z - Buu's Fury + Dragon Ball GT - Transformation (USA);gba
+2 Games in 1 - Dragon Ball Z - The Legacy of Goku I & II (USA);gba
+2 Games in 1 - Power Rangers - Ninja Storm + Power Rangers - Time Force (USA) (En,Fr,De+En);gba
+2 in 1 Game Pack - Spider-Man - Mysterio's Menace + X2 - Wolverine's Revenge (USA, Europe);gba
+2 in 1 Game Pack - Spider-Man + Spider-Man 2 (USA) (En,Fr,De+En,Fr,De,Es);gba
+advbatr;fba
+advbatrp01;fba
+advbatrp02;fba
+advbatrp03;fba
+advbatrp04;fba
+advbatrp05;fba
+advbatrp06;fba
+advbatrp07;fba
+advbatrp08;fba
+advbatrp09;fba
+advbatrp10;fba
+advbatrp11;fba
+advbatrp12;fba
+advbatru;fba
+Adventures of Batman & Robin, The (USA, Europe);gamegear
+Adventures of Batman & Robin, The (USA);segacd
+Adventures of Batman & Robin, The (USA);snes
+Amazing Spider-Man, The - Lethal Foes (Japan) (Translated En);sfc
+Amazing Spider-Man, The (USA);c64
+Amazing Spider-Man, The (USA, Europe);gb
+Amazing Spider-Man, The - Web of Fire (USA);sega32x
+Amazing Spider-Man vs. The Kingpin, The (USA);segacd
+avengers2;arcade
+avengers2;fba
+avengers2;mame-advmame
+avengers2;mame-libretro
+avengers2;mame-mame4all
+avengers;arcade
+avengers;fba
+avengers;mame-advmame
+avengers;mame-libretro
+avengers;mame-mame4all
+Avengers (USA);c64
+avengrgs;arcade
+avengrgsj;arcade
+avengrgsj;mame-advmame
+avengrgsj;mame-libretro
+avengrgsj;mame-mame4all
+avengrgs;mame-advmame
+avengrgs;mame-libretro
+avengrgs;mame-mame4all
+batman2;arcade
+batman2;fba
+batman2;mame-advmame
+batman2;mame-libretro
+batman2;mame-mame4all
+batman;arcade
+Batman Begins (USA, Europe) (En,Fr,De,Es,It,Nl);gba
+Batman Beyond - Return of the Joker (USA);n64
+Batman Beyond - Return of the Joker (USA);gbc
+Batman Beyond - Return of the Joker (USA);psx
+Batman Beyond - Return of the Joker (USA);psp
+Batman (CPC+) (Europe);amstradcpc
+Batman (Europe);amstradcpc
+Batman (Europe);zxspectrum
+batmanf;fba
+batman;fba
+Batman Forever - The Arcade Game (USA);psx
+Batman Forever - The Arcade Game (USA);psp
+Batman Forever (USA, Europe);gb
+Batman Forever (USA);snes
+Batman Forever (World);gamegear
+batmanfr;arcade
+batmanfr;mame-advmame
+batmanfr;mame-libretro
+batmanfr;mame-mame4all
+Batman - Gotham City Racer (USA);psx
+Batman - Gotham City Racer (USA);psp
+Batman (Japan);msx
+Batman (Japan);pce-cd
+batmanj;fba
+batman;mame-advmame
+batman;mame-libretro
+batman;mame-mame4all
+Batman - Return of the Joker (USA, Europe);gb
+Batman - Return of the Joker (USA);nes
+Batman Returns (Europe);mastersystem
+Batman Returns (USA, Europe);atarilynx
+Batman Returns (USA);nes
+Batman Returns (USA);segacd
+Batman Returns (USA);snes
+Batman Returns (World);gamegear
+Batman - Revenge of the Joker (USA) (Proto);snes
+Batman - Rise of Sin Tzu (USA) (En,Fr,Es);gba
+batmanrj;fba
+batmanrn;fba
+Batman & Robin (USA);psx
+Batman & Robin (USA);psp
+Batman - The Animated Series (USA, Europe);gb
+Batman - The Caped Crusader (Europe);amstradcpc
+Batman - The Caped Crusader (Europe);c64
+Batman - The Caped Crusader - Part 1 - A Bird in the Hand (Europe);zxspectrum
+Batman - The Caped Crusader - Part 2 - A Fete Worse than Death (Europe);zxspectrum
+Batman - The Movie (Europe);amstradcpc
+Batman - The Movie (Europe);c64
+Batman - The Movie (Europe);zxspectrum
+Batman - The Video Game (USA);nes
+Batman - The Video Game (World);gb
+batmanu;fba
+Batman - Vengeance (USA) (En,Fr,Es);gba
+buraiken;arcade
+buraiken;fba
+buraiken;mame-advmame
+buraiken;mame-libretro
+buraiken;mame-mame4all
+Captain America and the Avengers (USA, Europe);gamegear
+Captain America and the Avengers (USA);nes
+Captain America and the Avengers (USA);gb
+Captain America and the Avengers (USA);snes
+Captain America - Defies the Doom Tube (Europe);amstradcpc
+Captain America - Defies the Doom Tube (Europe);zxspectrum
+Captain America (France);amstradcpc
+Captain America in the Doom Tube of Dr. Megalomann (Europe);c64
+captavena;arcade
+captavena;mame-advmame
+captavena;mame-libretro
+captavena;mame-mame4all
+captaven;arcade
+captavene;arcade
+captavene;mame-advmame
+captavene;mame-libretro
+captavene;mame-mame4all
+captaven;fba
+captavenj;arcade
+captavenj;mame-advmame
+captavenj;mame-libretro
+captavenj;mame-mame4all
+captaven;mame-advmame
+captaven;mame-libretro
+captaven;mame-mame4all
+captavenua;arcade
+captavenua;mame-advmame
+captavenua;mame-libretro
+captavenua;mame-mame4all
+captavenu;arcade
+captavenu;fba
+captavenu;mame-advmame
+captavenu;mame-libretro
+captavenu;mame-mame4all
+captavenup;fba
+captavenuu;arcade
+captavenuu;mame-advmame
+captavenuu;mame-libretro
+captavenuu;mame-mame4all
+Catwoman (USA, Europe) (En,Fr,De,Es,It,Nl);gba
+Catwoman (USA);gbc
+Daredevil Dave (Europe);c64
+Daredevil (USA, Europe);gba
+dbzf;fba
+dbz;fba
+dbzvrvs;arcade
+dbzvrvs;mame-advmame
+dbzvrvs;mame-libretro
+dbzvrvs;mame-mame4all
+Death and Return of Superman, The (USA);snes
+deathret;fba
+Dragon Ball - Advanced Adventure (USA);gba
+Dragon Ball - Daimaou Fukkatsu (Japan) (Translated En);famicom
+Dragon Ball GT - Final Bout (USA);psx
+Dragon Ball GT - Final Bout (USA);psp
+Dragon Ball GT - Transformation (USA);gba
+Dragon Ball (Japan);wonderswancolor
+Dragon Ball - Shenron no Nazo (Japan) (Translated En);famicom
+Dragon Ball Z - Buu's Fury (USA);gba
+Dragon Ball Z - Collectible Card Game (USA);gba
+Dragon Ball Z Gaiden - Saiya Jin Zetsumetsu Keikaku (Japan) (Translated En);famicom
+Dragon Ball Z - Hyper Dimension (France);snes
+Dragon Ball Z - Hyper Dimension (Japan) (Translated En);sfc
+Dragon Ball Z - Idainaru Son Gokuu Densetsu (Japan);pce-cd
+Dragon Ball Z III - Ressen Jinzou Ningen (Japan) (Translated En);famicom
+Dragon Ball Z - Kyoushuu! Saiya Jin (Japan) (Translated En);famicom
+Dragon Ball Z - La Legende Saien (France);snes
+Dragon Ball Z - Legendary Super Warriors (USA);gbc
+Dragon Ball Z - Super Butouden (France);snes
+Dragon Ball Z - Super Saiya Densetsu (Japan) (Translated En);sfc
+Dragon Ball Z - Supersonic Warriors (USA);gba
+Dragon Ball Z - Taiketsu (USA);gba
+Dragon Ball Z - The Legacy of Goku II (USA);gba
+Dragon Ball Z - The Legacy of Goku (USA);gba
+Dragon Ball Z - Ultimate Battle 22 (USA);psx
+Dragon Ball Z - Ultimate Battle 22 (USA);psp
+Dragon Ball Z - Ultime Menace (France);snes
+Flash, The (Europe);c64
+Flash, The (Europe);mastersystem
+Flash, The (USA, Europe);gb
+Game Boy Advance Video - Dragon Ball GT - Volume 1 (USA);gba
+Game Boy Advance Video - Teenage Mutant Ninja Turtles - Things Change (USA, Europe);gba
+hulk;fba
+Incredible Hulk, The (Europe);mastersystem
+Incredible Hulk, The - The Pantheon Saga (USA);psx
+Incredible Hulk, The - The Pantheon Saga (USA);psp
+Incredible Hulk, The (USA, Europe);gamegear
+Incredible Hulk, The (USA);gba
+Incredible Hulk, The (USA);snes
+jleague;fba
+Justice League Chronicles (USA);gba
+Justice League Heroes - The Flash (USA);gba
+Justice League - Injustice for All (USA);gba
+Justice League Task Force (USA);snes
+leaguemn;arcade
+leaguemn;mame-advmame
+leaguemn;mame-libretro
+leaguemn;mame-mame4all
+Marvelous - Mouhitotsu no Takarajima (Japan) (Translated En);sfc
+Marvel Super Heroes (USA);psx
+Marvel Super Heroes (USA);psp
+Marvel Super Heroes vs. Street Fighter (USA);psx
+Marvel Super Heroes vs. Street Fighter (USA);psp
+Marvel Super Heroes - War of the Gems (USA);snes
+Marvel - Ultimate Alliance (USA);gba
+Marvel vs. Capcom 2 (USA);dreamcast
+Marvel vs. Capcom - Clash of Super Heroes (USA);psx
+Marvel vs. Capcom - Clash of Super Heroes (USA);psp
+Marvel vs. Capcom (USA);dreamcast
+marvland;arcade
+marvland;fba
+marvlandj;arcade
+marvlandj;fba
+marvlandj;mame-advmame
+marvlandj;mame-libretro
+marvlandj;mame-mame4all
+marvland;mame-advmame
+marvland;mame-libretro
+marvland;mame-mame4all
+Mighty Morphin Power Rangers - The Fighting Edition (USA);snes
+Mighty Morphin Power Rangers - The Movie (USA, Europe);gb
+Mighty Morphin Power Rangers - The Movie (USA, Europe);gamegear
+Mighty Morphin Power Rangers - The Movie (USA);snes
+Mighty Morphin Power Rangers (USA, Europe);gb
+Mighty Morphin Power Rangers (USA, Europe);gamegear
+Mighty Morphin Power Rangers (USA);segacd
+Mighty Morphin Power Rangers (USA);snes
+mmprfe;fba
+mmpr;fba
+mmprp1;fba
+mmprp2;fba
+mmprp3;fba
+mmprp4;fba
+mmprp5;fba
+mmprp6;fba
+mmprtm;fba
+mmprtmp1;fba
+mmprtmp2;fba
+mmprtmp3;fba
+mmprtmp4;fba
+mmprtmu;fba
+mmpru;fba
+msha;arcade
+msha;fba
+msha;mame-advmame
+msha;mame-libretro
+msha;mame-mame4all
+msh;arcade
+mshb;arcade
+mshb;fba
+mshb;mame-advmame
+mshb;mame-libretro
+mshb;mame-mame4all
+msh;fba
+mshh;arcade
+mshh;fba
+mshh;mame-advmame
+mshh;mame-libretro
+mshh;mame-mame4all
+mshj;arcade
+mshj;fba
+mshj;mame-advmame
+mshj;mame-libretro
+mshj;mame-mame4all
+mshjr1;arcade
+mshjr1;fba
+mshjr1;mame-advmame
+mshjr1;mame-libretro
+mshjr1;mame-mame4all
+msh;mame-advmame
+msh;mame-libretro
+msh;mame-mame4all
+mshu;arcade
+mshud;arcade
+mshud;fba
+mshud;mame-advmame
+mshud;mame-libretro
+mshud;mame-mame4all
+mshu;fba
+mshu;mame-advmame
+mshu;mame-libretro
+mshu;mame-mame4all
+mshvsfa1;arcade
+mshvsfa1;fba
+mshvsfa1;mame-advmame
+mshvsfa1;mame-libretro
+mshvsfa1;mame-mame4all
+mshvsfa;arcade
+mshvsfa;fba
+mshvsfa;mame-advmame
+mshvsfa;mame-libretro
+mshvsfa;mame-mame4all
+mshvsf;arcade
+mshvsfb1;arcade
+mshvsfb1;fba
+mshvsfb1;mame-advmame
+mshvsfb1;mame-libretro
+mshvsfb1;mame-mame4all
+mshvsfb;arcade
+mshvsfb;fba
+mshvsfb;mame-advmame
+mshvsfb;mame-libretro
+mshvsfb;mame-mame4all
+mshvsf;fba
+mshvsfh;arcade
+mshvsfh;fba
+mshvsfh;mame-advmame
+mshvsfh;mame-libretro
+mshvsfh;mame-mame4all
+mshvsfj1;arcade
+mshvsfj1;fba
+mshvsfj1;mame-advmame
+mshvsfj1;mame-libretro
+mshvsfj1;mame-mame4all
+mshvsfj2;arcade
+mshvsfj2;fba
+mshvsfj2;mame-advmame
+mshvsfj2;mame-libretro
+mshvsfj2;mame-mame4all
+mshvsfj;arcade
+mshvsfj;fba
+mshvsfj;mame-advmame
+mshvsfj;mame-libretro
+mshvsfj;mame-mame4all
+mshvsf;mame-advmame
+mshvsf;mame-libretro
+mshvsf;mame-mame4all
+mshvsfu1;arcade
+mshvsfu1d;arcade
+mshvsfu1d;fba
+mshvsfu1d;mame-advmame
+mshvsfu1d;mame-libretro
+mshvsfu1d;mame-mame4all
+mshvsfu1;fba
+mshvsfu1;mame-advmame
+mshvsfu1;mame-libretro
+mshvsfu1;mame-mame4all
+mshvsfu;arcade
+mshvsfu;fba
+mshvsfu;mame-advmame
+mshvsfu;mame-libretro
+mshvsfu;mame-mame4all
+mt_spman;arcade
+mt_spman;mame-advmame
+mt_spman;mame-libretro
+mt_spman;mame-mame4all
+mvsca;arcade
+mvsca;fba
+mvsca;mame-advmame
+mvsca;mame-libretro
+mvsca;mame-mame4all
+mvscar1;arcade
+mvscar1;fba
+mvscar1;mame-advmame
+mvscar1;mame-libretro
+mvscar1;mame-mame4all
+mvsc;arcade
+mvscb;arcade
+mvscb;fba
+mvscb;mame-advmame
+mvscb;mame-libretro
+mvscb;mame-mame4all
+mvsc;fba
+mvsch;arcade
+mvsch;fba
+mvsch;mame-advmame
+mvsch;mame-libretro
+mvsch;mame-mame4all
+mvscj;arcade
+mvscj;fba
+mvscj;mame-advmame
+mvscj;mame-libretro
+mvscj;mame-mame4all
+mvscjr1;arcade
+mvscjr1;fba
+mvscjr1;mame-advmame
+mvscjr1;mame-libretro
+mvscjr1;mame-mame4all
+mvscjsing;arcade
+mvscjsing;fba
+mvscjsing;mame-advmame
+mvscjsing;mame-libretro
+mvscjsing;mame-mame4all
+mvsc;mame-advmame
+mvsc;mame-libretro
+mvsc;mame-mame4all
+mvscr1;arcade
+mvscr1;fba
+mvscr1;mame-advmame
+mvscr1;mame-libretro
+mvscr1;mame-mame4all
+mvscu;arcade
+mvscud;arcade
+mvscud;fba
+mvscud;mame-advmame
+mvscud;mame-libretro
+mvscud;mame-mame4all
+mvscu;fba
+mvscu;mame-advmame
+mvscu;mame-libretro
+mvscu;mame-mame4all
+mvscur1;arcade
+mvscur1;fba
+mvscur1;mame-advmame
+mvscur1;mame-libretro
+mvscur1;mame-mame4all
+nbbatman;arcade
+nbbatman;mame-advmame
+nbbatman;mame-libretro
+nbbatman;mame-mame4all
+nbbatmanu;arcade
+nbbatmanu;mame-advmame
+nbbatmanu;mame-libretro
+nbbatmanu;mame-mame4all
+New Batman Adventures, The - Chaos in Gotham (USA);gbc
+pc_tmnt2;arcade
+pc_tmnt2;mame-advmame
+pc_tmnt2;mame-libretro
+pc_tmnt2;mame-mame4all
+pc_tmnt;arcade
+pc_tmnt;mame-advmame
+pc_tmnt;mame-libretro
+pc_tmnt;mame-mame4all
+Power Rangers - Dino Thunder (USA, Europe);gba
+Power Rangers - Lightspeed Rescue (USA, Europe);gbc
+Power Rangers - Lightspeed Rescue (USA);n64
+Power Rangers - Lightspeed Rescue (USA);psx
+Power Rangers - Lightspeed Rescue (USA);psp
+Power Rangers - Ninja Storm (USA);gba
+Power Rangers S.P.D. (USA, Europe);gba
+Power Rangers - Time Force (USA, Europe);gba
+Power Rangers - Time Force (USA);gbc
+Power Rangers - Time Force (USA);psx
+Power Rangers - Time Force (USA);psp
+Power Rangers - Wild Force (USA, Europe);gba
+Power Rangers Zeo - Battle Racers (USA);snes
+Power Rangers Zeo - Full Tilt Battle Pinball (USA);psx
+Power Rangers Zeo - Full Tilt Battle Pinball (USA);psp
+punipic2;arcade
+punipic2;fba
+punipic2;mame-advmame
+punipic2;mame-libretro
+punipic2;mame-mame4all
+punipic3;arcade
+punipic3;fba
+punipic3;mame-advmame
+punipic3;mame-libretro
+punipic3;mame-mame4all
+punipic;arcade
+punipic;fba
+punipic;mame-advmame
+punipic;mame-libretro
+punipic;mame-mame4all
+punisher;arcade
+punisherbz;arcade
+punisherbz;fba
+punisherbz;mame-advmame
+punisherbz;mame-libretro
+punisherbz;mame-mame4all
+punisher;fba
+punisherh;arcade
+punisherh;fba
+punisherh;mame-advmame
+punisherh;mame-libretro
+punisherh;mame-mame4all
+punisherj;arcade
+punisherj;fba
+punisherj;mame-advmame
+punisherj;mame-libretro
+punisherj;mame-mame4all
+punisher;mame-advmame
+punisher;mame-libretro
+punisher;mame-mame4all
+Punisher, The - The Ultimate Payback (USA);gb
+Punisher, The (USA);nes
+punisheru;arcade
+punisheru;fba
+punisheru;mame-advmame
+punisheru;mame-libretro
+punisheru;mame-mame4all
+Questprobe 1 - The Hulk (Europe);zxspectrum
+Questprobe 1 - The Incredible Hulk (USA);c64
+Questprobe 2 - Spider-Man (Europe);zxspectrum
+Questprobe 2 - Spider-Man (USA);c64
+sblast2b;arcade
+sblast2b;mame-advmame
+sblast2b;mame-libretro
+sblast2b;mame-mame4all
+sbm;arcade
+sbm;fba
+sbm;mame-advmame
+sbm;mame-libretro
+sbm;mame-mame4all
+Sonic Blast Man II (USA);snes
+Sonic Blast Man (USA);snes
+Space Hulk - Vengeance of the Blood Angels (USA);psx
+Space Hulk - Vengeance of the Blood Angels (USA);psp
+Spawn - In the Demon's Hand (USA);dreamcast
+Spawn of Evil (Side A) (Europe);zxspectrum
+Spawn of Evil (Side B) (Europe);zxspectrum
+Spawn - The Eternal (USA);psx
+Spawn - The Eternal (USA);psp
+Spawn (USA);gbc
+Spawn (USA);snes
+Spider-Man 2 - Enter - Electro (USA);psx
+Spider-Man 2 - Enter - Electro (USA);psp
+Spider-Man 2 - The Sinister Six (USA);gbc
+Spider-Man 2 (USA, Europe);gb
+Spider-Man 2 (USA, Europe);gba
+Spider-Man 3 - Invasion of the Spider-Slayers (USA, Europe);gb
+Spider-Man 3 (USA);gba
+Spider-Man and the X-Men - Arcade's Revenge (USA);snes
+Spider-Man and the X-Men in Arcade's Revenge (USA);gamegear
+Spider-Man - Battle for New York (USA);gba
+Spider-Man (Europe) (Proto);videopac2
+Spider-Man - Mysterio's Menace (USA, Europe);gba
+Spider-Man - Return of the Sinister Six (Europe);mastersystem
+Spider-Man - Return of the Sinister Six (USA, Europe);gamegear
+Spider-Man - Return of the Sinister Six (USA);nes
+Spider-Man (USA);atari2600
+Spider-Man (USA, Europe);gba
+Spider-Man (USA, Europe);gbc
+Spider-Man (USA);n64
+Spider-Man (USA);dreamcast
+Spider-Man (USA);psx
+Spider-Man (USA);psp
+Spider-Man (USA);snes
+Spider-Man & Venom - Maximum Carnage (USA);snes
+Spider-Man & Venom - Separation Anxiety (USA);snes
+Spider-Man vs. The Kingpin (USA, Europe);gamegear
+Spider-Man vs. The Kingpin (USA, Europe);mastersystem
+Spider-Man-X-Men (USA, Europe);gb
+spidermn;fba
+spidermnp1;fba
+spidermnp2;fba
+spidking;fba
+spidman;arcade
+spidmanj;arcade
+spidmanj;mame-advmame
+spidmanj;mame-libretro
+spidmanj;mame-mame4all
+spidman;mame-advmame
+spidman;mame-libretro
+spidman;mame-mame4all
+spidmanu;arcade
+spidmanu;mame-advmame
+spidmanu;mame-libretro
+spidmanu;mame-mame4all
+spidmaxc;fba
+spidxmen;fba
+superman;arcade
+Superman - Countdown to Apokolips (USA);gba
+superman;fba
+supermanj;arcade
+supermanj;fba
+supermanj;mame-advmame
+supermanj;mame-libretro
+supermanj;mame-mame4all
+superman;mame-advmame
+superman;mame-libretro
+superman;mame-mame4all
+Superman - Man of Steel (Europe) (Disk 1 Side A);c64
+Superman - Man of Steel (Europe) (Disk 1 Side B);c64
+Superman - Man of Steel (Europe) (Disk 2);c64
+supermanp;fba
+Superman Returns - Fortress of Solitude (USA, Europe) (En,Fr,De,Es,It);gba
+Superman - The Game (Europe);amstradcpc
+Superman - The Game (Europe);zxspectrum
+Superman - The Game (USA);c64
+Superman - The Man of Steel (Europe);amstradcpc
+Superman - The Man of Steel (Europe);gamegear
+Superman - The Man of Steel (Europe);mastersystem
+Superman - The Man of Steel (Europe);zxspectrum
+supermanu;arcade
+supermanu;fba
+supermanu;mame-advmame
+supermanu;mame-libretro
+supermanu;mame-mame4all
+Superman (USA);atari2600
+Superman (USA) (En,Fr,Es);n64
+Superman (USA, Europe);gb
+Superman (USA);nes
+supermap;arcade
+supermap;mame-advmame
+supermap;mame-libretro
+supermap;mame-mame4all
+Teenage Mutant Ninja Turtles 2 - Battle Nexus (USA);gba
+Teenage Mutant Ninja Turtles Double Pack (USA) (En,Fr,De,Es,It);gba
+Teenage Mutant Ninja Turtles - Fall of the Foot Clan (USA);gb
+Teenage Mutant Ninja Turtles II - Back from the Sewers (USA);gb
+Teenage Mutant Ninja Turtles III - Radical Rescue (USA);gb
+Teenage Mutant Ninja Turtles III - The Manhattan Project (USA);nes
+Teenage Mutant Ninja Turtles II - The Arcade Game (USA);nes
+Teenage Mutant Ninja Turtles IV - Turtles in Time (USA);snes
+Teenage Mutant Ninja Turtles - The Arcade Game (USA) (Disk 1 Side A);c64
+Teenage Mutant Ninja Turtles - The Arcade Game (USA) (Disk 1 Side B);c64
+Teenage Mutant Ninja Turtles - Tournament Fighters (USA);nes
+Teenage Mutant Ninja Turtles - Tournament Fighters (USA);snes
+Teenage Mutant Ninja Turtles (USA) (Disk 1 Side A);c64
+Teenage Mutant Ninja Turtles (USA) (Disk 1 Side B);c64
+Teenage Mutant Ninja Turtles (USA) (Disk 2 Side A);c64
+Teenage Mutant Ninja Turtles (USA) (Disk 2 Side B);c64
+Teenage Mutant Ninja Turtles (USA);nes
+Teenage Mutant Ninja Turtles (USA);gba
+tmht22pe;arcade
+tmht22pe;fba
+tmht22pe;mame-advmame
+tmht22pe;mame-libretro
+tmht22pe;mame-mame4all
+tmht2pa;arcade
+tmht2pa;fba
+tmht2pa;mame-advmame
+tmht2pa;mame-libretro
+tmht2pa;mame-mame4all
+tmht2p;arcade
+tmht2p;fba
+tmht2p;mame-advmame
+tmht2p;mame-libretro
+tmht2p;mame-mame4all
+tmhta;arcade
+tmhta;fba
+tmhta;mame-advmame
+tmhta;mame-libretro
+tmhta;mame-mame4all
+tmht;arcade
+tmhtb;arcade
+tmhtb;mame-advmame
+tmhtb;mame-libretro
+tmhtb;mame-mame4all
+tmht;fba
+tmht;mame-advmame
+tmht;mame-libretro
+tmht;mame-mame4all
+tmnt22pu;arcade
+tmnt22pu;fba
+tmnt22pu;mame-advmame
+tmnt22pu;mame-libretro
+tmnt22pu;mame-mame4all
+tmnt2a;arcade
+tmnt2a;fba
+tmnt2a;mame-advmame
+tmnt2a;mame-libretro
+tmnt2a;mame-mame4all
+tmnt2;arcade
+tmnt2;fba
+tmnt2;mame-advmame
+tmnt2;mame-libretro
+tmnt2;mame-mame4all
+tmnt2pj;arcade
+tmnt2pj;fba
+tmnt2pj;mame-advmame
+tmnt2pj;mame-libretro
+tmnt2pj;mame-mame4all
+tmnt2po;arcade
+tmnt2po;fba
+tmnt2po;mame-advmame
+tmnt2po;mame-libretro
+tmnt2po;mame-mame4all
+tmnt;arcade
+tmnt;fba
+tmnthh;fba
+tmntia;fba
+tmnti;fba
+tmntj;arcade
+tmntj;fba
+tmntj;mame-advmame
+tmntj;mame-libretro
+tmntj;mame-mame4all
+tmnt;mame-advmame
+tmnt;mame-libretro
+tmnt;mame-mame4all
+tmntru;fba
+tmntshj;fba
+tmnttfj;fba
+tmnttfu;fba
+tmntua;arcade
+tmntua;fba
+tmntua;mame-advmame
+tmntua;mame-libretro
+tmntua;mame-mame4all
+tmntu;arcade
+tmntu;fba
+tmntu;mame-advmame
+tmntu;mame-libretro
+tmntu;mame-mame4all
+TMNT (USA) (En,Fr,Es);gba
+Ultimate Spider-Man (USA);gba
+Uncanny X-Men, The (USA);nes
+venom;fba
+Wolverine - Adamantium Rage (USA);snes
+Wolverine (USA);nes
+wolverin;fba
+X2 - Wolverine's Revenge (USA, Europe);gba
+xmcotaa;arcade
+xmcotaa;fba
+xmcotaa;mame-advmame
+xmcotaa;mame-libretro
+xmcotaa;mame-mame4all
+xmcotaar1;arcade
+xmcotaar1;fba
+xmcotaar1;mame-advmame
+xmcotaar1;mame-libretro
+xmcotaar1;mame-mame4all
+xmcota;arcade
+xmcota;fba
+xmcotah;arcade
+xmcotah;fba
+xmcotah;mame-advmame
+xmcotah;mame-libretro
+xmcotah;mame-mame4all
+xmcotahr1;arcade
+xmcotahr1;fba
+xmcotahr1;mame-advmame
+xmcotahr1;mame-libretro
+xmcotahr1;mame-mame4all
+xmcotaj1;arcade
+xmcotaj1;fba
+xmcotaj1;mame-advmame
+xmcotaj1;mame-libretro
+xmcotaj1;mame-mame4all
+xmcotaj2;arcade
+xmcotaj2;fba
+xmcotaj2;mame-advmame
+xmcotaj2;mame-libretro
+xmcotaj2;mame-mame4all
+xmcotaj3;arcade
+xmcotaj3;fba
+xmcotaj3;mame-advmame
+xmcotaj3;mame-libretro
+xmcotaj3;mame-mame4all
+xmcotaj;arcade
+xmcotaj;fba
+xmcotaj;mame-advmame
+xmcotaj;mame-libretro
+xmcotaj;mame-mame4all
+xmcotajr;arcade
+xmcotajr;fba
+xmcotajr;mame-advmame
+xmcotajr;mame-libretro
+xmcotajr;mame-mame4all
+xmcota;mame-advmame
+xmcota;mame-libretro
+xmcota;mame-mame4all
+xmcotar1;arcade
+xmcotar1d;arcade
+xmcotar1d;fba
+xmcotar1d;mame-advmame
+xmcotar1d;mame-libretro
+xmcotar1d;mame-mame4all
+xmcotar1;fba
+xmcotar1;mame-advmame
+xmcotar1;mame-libretro
+xmcotar1;mame-mame4all
+xmcotau;arcade
+xmcotau;fba
+xmcotau;mame-advmame
+xmcotau;mame-libretro
+xmcotau;mame-mame4all
+xmen2;fba
+xmen2p01;fba
+xmen2p02;fba
+xmen2p03;fba
+xmen2p04;fba
+xmen2p05;fba
+xmen2p06;fba
+xmen2p07;fba
+xmen2p08;fba
+xmen2p09;fba
+xmen2p10;fba
+xmen2p11;fba
+xmen2p12;fba
+xmen2p13;fba
+xmen2p14;fba
+xmen2p15;fba
+xmen2p16;fba
+xmen2p17;fba
+xmen2p18;fba
+xmen2p19;fba
+xmen2pa;arcade
+xmen2pa;fba
+xmen2pa;mame-advmame
+xmen2pa;mame-libretro
+xmen2pa;mame-mame4all
+xmen2pe;arcade
+xmen2pe;fba
+xmen2pe;mame-advmame
+xmen2pe;mame-libretro
+xmen2pe;mame-mame4all
+xmen2pj;arcade
+xmen2pj;fba
+xmen2pj;mame-advmame
+xmen2pj;mame-libretro
+xmen2pj;mame-mame4all
+xmen6p;arcade
+xmen6p;mame-advmame
+xmen6p;mame-libretro
+xmen6p;mame-mame4all
+xmen6pu;arcade
+xmen6pu;mame-advmame
+xmen6pu;mame-libretro
+xmen6pu;mame-mame4all
+xmenaa;arcade
+xmenaa;fba
+xmenaa;mame-advmame
+xmenaa;mame-libretro
+xmenaa;mame-mame4all
+xmena;arcade
+xmena;fba
+xmena;mame-advmame
+xmena;mame-libretro
+xmena;mame-mame4all
+xmen;arcade
+X-Men - Children of the Atom (USA);psx
+X-Men - Children of the Atom (USA);psp
+xmene;arcade
+xmene;fba
+xmene;mame-advmame
+xmene;mame-libretro
+xmene;mame-mame4all
+xmen;fba
+X-Men - Gamemaster's Legacy (USA, Europe);gamegear
+xmenj;arcade
+xmenj;fba
+xmenj;mame-advmame
+xmenj;mame-libretro
+xmenj;mame-mame4all
+X-Men - Madness in Murderworld (USA) (Side A);c64
+X-Men - Madness in Murderworld (USA) (Side B);c64
+xmen;mame-advmame
+xmen;mame-libretro
+xmen;mame-mame4all
+X-Men - Mojo World (Brazil);mastersystem
+X-Men - Mojo World (USA, Europe);gamegear
+X-Men - Mutant Academy 2 (USA);psx
+X-Men - Mutant Academy 2 (USA);psp
+X-Men - Mutant Academy (USA, Europe);gbc
+X-Men - Mutant Academy (USA);psx
+X-Men - Mutant Academy (USA);psp
+X-Men - Mutant Apocalypse (USA);snes
+X-Men - Mutant Wars (USA, Europe);gbc
+X-Men - Reign of Apocalypse (USA, Europe);gba
+X-Men - The Official Game (USA);gba
+xmenu;fba
+X-Men (USA);gamegear
+X-Men vs. Street Fighter (USA);psx
+X-Men vs. Street Fighter (USA);psp
+X-Men - Wolverine's Rage (USA);gbc
+xmvsfa;arcade
+xmvsfa;fba
+xmvsfa;mame-advmame
+xmvsfa;mame-libretro
+xmvsfa;mame-mame4all
+xmvsfar1;arcade
+xmvsfar1;fba
+xmvsfar1;mame-advmame
+xmvsfar1;mame-libretro
+xmvsfar1;mame-mame4all
+xmvsfar2;arcade
+xmvsfar2;fba
+xmvsfar2;mame-advmame
+xmvsfar2;mame-libretro
+xmvsfar2;mame-mame4all
+xmvsfar3;arcade
+xmvsfar3;fba
+xmvsfar3;mame-advmame
+xmvsfar3;mame-libretro
+xmvsfar3;mame-mame4all
+xmvsf;arcade
+xmvsfb;arcade
+xmvsfb;fba
+xmvsfb;mame-advmame
+xmvsfb;mame-libretro
+xmvsfb;mame-mame4all
+xmvsf;fba
+xmvsfh;arcade
+xmvsfh;fba
+xmvsfh;mame-advmame
+xmvsfh;mame-libretro
+xmvsfh;mame-mame4all
+xmvsfj;arcade
+xmvsfj;fba
+xmvsfj;mame-advmame
+xmvsfj;mame-libretro
+xmvsfj;mame-mame4all
+xmvsfjr1;arcade
+xmvsfjr1;fba
+xmvsfjr1;mame-advmame
+xmvsfjr1;mame-libretro
+xmvsfjr1;mame-mame4all
+xmvsfjr2;arcade
+xmvsfjr2;fba
+xmvsfjr2;mame-advmame
+xmvsfjr2;mame-libretro
+xmvsfjr2;mame-mame4all
+xmvsf;mame-advmame
+xmvsf;mame-libretro
+xmvsf;mame-mame4all
+xmvsfr1;arcade
+xmvsfr1;fba
+xmvsfr1;mame-advmame
+xmvsfr1;mame-libretro
+xmvsfr1;mame-mame4all
+xmvsfu1d;arcade
+xmvsfu1d;fba
+xmvsfu1d;mame-advmame
+xmvsfu1d;mame-libretro
+xmvsfu1d;mame-mame4all
+xmvsfu;arcade
+xmvsfu;fba
+xmvsfu;mame-advmame
+xmvsfu;mame-libretro
+xmvsfu;mame-mame4all
+xmvsfur1;arcade
+xmvsfur1;mame-advmame
+xmvsfur1;mame-libretro
+xmvsfur1;mame-mame4all

@@ -1,0 +1,1168 @@
+11 A Side Soccer (Europe);amstradcpc
+1st Division Manager (Europe);amstradcpc
+1st Division Manager (Europe);c64
+1st Division Manager (Europe);zxspectrum
+2002 FIFA World Cup (USA);psx
+2002 FIFA World Cup (USA);psp
+2006 FIFA World Cup - Germany 2006 (USA, Europe) (En,Fr,De,Es,It);gba
+2 Player Soccer Squad (Europe);amstradcpc
+2 Player Soccer Squad (Europe);zxspectrum
+2 Player Super League (Europe);amstradcpc
+4-4-2 Soccer (Europe);psx
+4-4-2 Soccer (Europe);psp
+4 Soccer Simulators (Europe);amstradcpc
+4 Soccer Simulators (Europe);c64
+90 Minutes - European Prime Goal (Europe);snes
+90 Minutes - Sega Championship Football (Europe);dreamcast
+Actua Soccer 2 (Europe);psx
+Actua Soccer 2 (Europe);psp
+Actua Soccer 3 (Europe);psx
+Actua Soccer 3 (Europe);psp
+Actua Soccer - Club Edition (Europe);psx
+Actua Soccer - Club Edition (Europe);psp
+Adidas Championship Football (Europe);amstradcpc
+Adidas Championship Football (Europe);c64
+Adidas Championship Football (Europe);zxspectrum
+Adidas Power Soccer 2 (Europe);psx
+Adidas Power Soccer 2 (Europe);psp
+Adidas Power Soccer 98 (USA);psx
+Adidas Power Soccer 98 (USA);psp
+Adidas Power Soccer International '97 (Europe);psx
+Adidas Power Soccer International '97 (Europe);psp
+Adidas Power Soccer (USA);psx
+Adidas Power Soccer (USA);psp
+Advanced Soccer Simulator (Europe);zxspectrum
+Alex Ferguson's Player Manager 2001 (Europe);psx
+Alex Ferguson's Player Manager 2001 (Europe);psp
+Alex Ferguson's Player Manager 2002 (Europe) (En,Fr,De,Es,It,Nl);gba
+Alex Ferguson's Player Manager 2002 (Europe);psx
+Alex Ferguson's Player Manager 2002 (Europe);psp
+Alexi Lalas International Soccer (USA);psx
+Alexi Lalas International Soccer (USA);psp
+All Star Soccer (Europe);psx
+All Star Soccer (Europe);psp
+American Soccer (Japan);msx2
+Amsoccer (Europe);amstradcpc
+Anstoss (Germany);c64
+Aoki Densetsu Shoot! (Japan);sfc
+ar_socc;arcade
+ar_socc;mame-advmame
+ar_socc;mame-libretro
+ar_socc;mame-mame4all
+asoccer;arcade
+asoccer;mame-advmame
+asoccer;mame-libretro
+asoccer;mame-mame4all
+Backyard Soccer (USA);psx
+Backyard Soccer (USA);psp
+Battle Soccer 2 (Japan);sfc
+Battle Soccer - Field no Hasha (Japan) (Translated En);sfc
+bestleag;arcade
+bestleag;mame-advmame
+bestleag;mame-libretro
+bestleag;mame-mame4all
+bestleaw;arcade
+bestleaw;mame-advmame
+bestleaw;mame-libretro
+bestleaw;mame-mame4all
+Big League Soccer 2 (Europe);amstradcpc
+Big League Soccer (Europe);amstradcpc
+Big Match Soccer (Europe);zxspectrum
+bigstrik;arcade
+bigstrik;mame-advmame
+bigstrik;mame-libretro
+bigstrik;mame-mame4all
+bigstrkba;arcade
+bigstrkba;mame-advmame
+bigstrkba;mame-libretro
+bigstrkba;mame-mame4all
+bigstrkb;arcade
+bigstrkb;mame-advmame
+bigstrkb;mame-libretro
+bigstrkb;mame-mame4all
+Block Soccer (USA) (Unl);c64
+Bodo Illgner's Super Soccer (Germany);amstradcpc
+Boss, The (Europe);zxspectrum
+Brian Clough's Footbal Fortunes (Europe);amstradcpc
+British Super League (Europe);amstradcpc
+British Super League (Europe);c64
+British Super League (Europe);zxspectrum
+bssoccera;arcade
+bssoccera;mame-advmame
+bssoccera;mame-libretro
+bssoccera;mame-mame4all
+bssoccer;arcade
+bssoccer;mame-advmame
+bssoccer;mame-libretro
+bssoccer;mame-mame4all
+Bundesliga Manager v2.0 (Germany);c64
+Calcio (Italy);c64
+Capcom's Soccer Shootout (USA);snes
+Captain Tsubasa III - Koutei no Chousen (Japan) (Translated En);sfc
+Captain Tsubasa IV - Pro no Rival-tachi (Japan);sfc
+Captain Tsubasa J - The Way to World Youth (Japan);sfc
+Captain Tsubasa J - Zenkoku Seiha e no Chousen (Japan);gb
+Captain Tsubasa V - Hasha no Shougou Campione (Japan) (Translated Pt);sfc
+Captain Tsubasa Vol. II - Super Striker (Japan) (Translated En);famicom
+Challenge Foot (France);amstradcpc
+Champions! (Europe);zxspectrum
+Championship Soccer '94 (USA);segacd
+Championship Soccer '94 (USA);snes
+Championship Soccer (Europe);zxspectrum
+Championship Soccer (USA);atari2600
+Champion Soccer (Japan);sg-1000
+Champions of Europe (Europe);mastersystem
+Champions - World Class Soccer (USA);snes
+Chris Kamara's Street Soccer (Europe);psx
+Chris Kamara's Street Soccer (Europe);psp
+cpsoccer;arcade
+cpsoccerj;arcade
+cpsoccerj;mame-advmame
+cpsoccerj;mame-libretro
+cpsoccerj;mame-mame4all
+cpsoccer;mame-advmame
+cpsoccer;mame-libretro
+cpsoccer;mame-mame4all
+cupfinal;arcade
+cupfinal;mame-advmame
+cupfinal;mame-libretro
+cupfinal;mame-mame4all
+Cup Football (Europe);amstradcpc
+Cup Football (Europe);c64
+Cup Football (Europe);zxspectrum
+Cup Manager (Europe);zxspectrum
+David Beckham Soccer (Europe);gbc
+David Beckham Soccer (USA) (En,Es);gba
+David Beckham Soccer (USA);psx
+David Beckham Soccer (USA);psp
+Day of the Match (Europe);zxspectrum
+Dino Dini's Soccer! (Europe);snes
+Disney Sports - Soccer (USA);gba
+Dolucky no A.League Soccer (Japan);sfc
+Double, The (Europe);c64
+Double, The (Europe);zxspectrum
+dribling;arcade
+driblingbr;arcade
+driblingbr;mame-advmame
+driblingbr;mame-libretro
+driblingbr;mame-mame4all
+dribling;mame-advmame
+dribling;mame-libretro
+dribling;mame-mame4all
+driblingo;arcade
+driblingo;mame-advmame
+driblingo;mame-libretro
+driblingo;mame-mame4all
+dsoccr94;arcade
+dsoccr94j;arcade
+dsoccr94j;mame-advmame
+dsoccr94j;mame-libretro
+dsoccr94j;mame-mame4all
+dsoccr94;mame-advmame
+dsoccr94;mame-libretro
+dsoccr94;mame-mame4all
+Dundee's European Challenge (Europe);zxspectrum
+dynashot;arcade
+dynashot;mame-advmame
+dynashot;mame-libretro
+dynashot;mame-mame4all
+Electronic Table Soccer (USA, Europe);videopac2
+Elite Soccer (USA);gb
+Elite Soccer (USA);snes
+Emilio Butrageno Futbol (Spain);amstradcpc
+Emilio Butragueno Futbol (Europe);c64
+Emilio Butragueno Futbol (Spain);zxspectrum
+Emlyn Hughes International Soccer (Europe);amstradcpc
+Emlyn Hughes International Soccer (Europe);c64
+Emlyn Hughes International Soccer (Europe);zxspectrum
+England Championship Special (Europe);c64
+ESPN MLS Gamenight (USA);psx
+ESPN MLS Gamenight (USA);psp
+Euro Boss (Europe);amstradcpc
+Euro Boss (Europe);c64
+Euro Boss (Europe);zxspectrum
+euroch92;arcade
+euroch92;mame-advmame
+euroch92;mame-libretro
+euroch92;mame-mame4all
+European 5-a-Side (Europe);c64
+European Champions (Challenge Software) (Europe);c64
+European Champions (Europe);amstradcpc
+European Champions (Europe);zxspectrum
+European Champions (Idea Software) (Europe);c64
+European Five-a-Side (Europe);zxspectrum
+European Football Champ (Europe);c64
+European II (Europe);amstradcpc
+European II (Europe);c64
+European Soccer Challenge (Europe);amstradcpc
+European Soccer Challenge (Europe);c64
+European Soccer Challenge (Europe);zxspectrum
+European Soccer Challenge (USA, Europe);atarilynx
+European Superleague (Europe);amstradcpc
+European Super League (Europe) (En,Fr,De,Es,It);gba
+European Super League (Europe);dreamcast
+European Superleague (Europe);zxspectrum
+European Super League (Europe);psx
+European Super League (Europe);psp
+European Trophy (Europe);zxspectrum
+European Trophy II (Europe);zxspectrum
+evosocc;arcade
+evosocc;mame-advmame
+evosocc;mame-libretro
+evosocc;mame-mame4all
+Exciting Soccer - Konami Cup (Japan);fds
+exctscc2;arcade
+exctscc2;mame-advmame
+exctscc2;mame-libretro
+exctscc2;mame-mame4all
+exctsccra;arcade
+exctsccra;mame-advmame
+exctsccra;mame-libretro
+exctsccra;mame-mame4all
+exctsccr;arcade
+exctsccrb;arcade
+exctsccrb;mame-advmame
+exctsccrb;mame-libretro
+exctsccrb;mame-mame4all
+exctsccrj;arcade
+exctsccrj;mame-advmame
+exctsccrj;mame-libretro
+exctsccrj;mame-mame4all
+exctsccrjo;arcade
+exctsccrjo;mame-advmame
+exctsccrjo;mame-libretro
+exctsccrjo;mame-mame4all
+exctsccr;mame-advmame
+exctsccr;mame-libretro
+exctsccr;mame-mame4all
+exctsccru;arcade
+exctsccru;mame-advmame
+exctsccru;mame-libretro
+exctsccru;mame-mame4all
+F.A. Cup '87 (Europe);amstradcpc
+FA Cup Football (Europe);c64
+FA Cup Football (Europe);zxspectrum
+F.A. Manager (Europe);psx
+F.A. Manager (Europe);psp
+Fantastic Soccer (Europe);c64
+F.A. Premier League Football Manager 2000, The (Europe);psx
+F.A. Premier League Football Manager 2000, The (Europe);psp
+F.A. Premier League Football Manager 2001, The (Europe);psx
+F.A. Premier League Football Manager 2001, The (Europe);psp
+F.A. Premier League Stars 2001, The (Europe);psx
+F.A. Premier League Stars 2001, The (Europe);psp
+F.A. Premier League Stars, The (Europe);psx
+F.A. Premier League Stars, The (Europe);psp
+FIFA 2000 - Major League Soccer (USA);psx
+FIFA 2000 - Major League Soccer (USA);psp
+FIFA 2000 (USA, Europe);gbc
+FIFA 2001 (USA);psx
+FIFA 2001 (USA);psp
+FIFA 98 - Road to World Cup (Europe);snes
+FIFA 99 (USA) (En,Fr,De,Es,It,Nl,Pt,Sv);n64
+FIFA 99 (USA);psx
+FIFA 99 (USA);psp
+FIFA International Soccer (Brazil);mastersystem
+FIFA International Soccer (USA, Europe);gb
+FIFA International Soccer (USA, Europe);gamegear
+FIFA International Soccer (USA);segacd
+FIFA International Soccer (USA);snes
+FIFA Road to the World Cup '98 (Europe);gb
+FIFA - Road to World Cup 98 (USA) (En,Fr,De,Es,It,Nl,Sv);n64
+FIFA - Road to World Cup 98 (USA);psx
+FIFA - Road to World Cup 98 (USA);psp
+FIFA Soccer 06 (USA, Europe) (En,Fr,De,Es,It,Nl);gba
+FIFA Soccer 07 (USA, Europe) (En,Fr,De,Es);gba
+FIFA Soccer 2002 (USA);psx
+FIFA Soccer 2002 (USA);psp
+FIFA Soccer 2003 (USA, Europe) (En,Fr,De,Es,It);gba
+FIFA Soccer 2003 (USA);psx
+FIFA Soccer 2003 (USA);psp
+FIFA Soccer 2004 (USA, Europe) (En,Fr,De,Es,It);gba
+FIFA Soccer 2004 (USA);psx
+FIFA Soccer 2004 (USA);psp
+FIFA Soccer 2005 (USA, Europe) (En,Fr,De,Es,It,Nl);gba
+FIFA Soccer 2005 (USA);psx
+FIFA Soccer 2005 (USA);psp
+FIFA Soccer 64 (USA) (En,Fr,De);n64
+FIFA Soccer '96 (Europe);sega32x
+FIFA Soccer '96 (USA, Europe);gb
+FIFA Soccer 96 (USA, Europe);gamegear
+FIFA Soccer 96 (USA);psx
+FIFA Soccer 96 (USA);psp
+FIFA Soccer 96 (USA);snes
+FIFA Soccer 97 - Gold Edition (USA);snes
+FIFA Soccer '97 (USA, Europe);gb
+FIFA Soccer 97 (USA);psx
+FIFA Soccer 97 (USA);psp
+Fifa World Cup (CPC+) (Europe) (Unl);amstradcpc
+Fighting Soccer (Europe);amstradcpc
+Fighting Soccer (Europe);zxspectrum
+Fighting Soccer (USA);c64
+Final Whistle (Europe);c64
+Five a Side (Europe);c64
+Five-A-Side Footy (Europe);amstradcpc
+Five A Side Soccer (Europe);amstradcpc
+fiveside;arcade
+fiveside;mame-advmame
+fiveside;mame-libretro
+fiveside;mame-mame4all
+Football Champions (Europe);amstradcpc
+Football Champions (Europe);c64
+Football Champions (Europe);zxspectrum
+Football Director - 2 Player Super League (Europe);zxspectrum
+Football Director (Europe);amstradcpc
+Football Director (Europe);c64
+Football Director (Europe);zxspectrum
+Football Director II (Europe);c64
+Football Director II (Europe);zxspectrum
+Footballer (Europe);zxspectrum
+Footballer of the Year 2 (Europe);amstradcpc
+Footballer of the Year 2 (Europe);zxspectrum
+Footballer of the Year (Europe);amstradcpc
+Footballer of the Year (Europe);c64
+Footballer of the Year (Europe);zxspectrum
+Footballer of the Year II (Europe);c64
+Footballer, The (Europe);amstradcpc
+Football Fever (Europe);zxspectrum
+Football Glory (Europe);zxspectrum
+Football International (Europe);gb
+Football Madness (Europe);psx
+Football Madness (Europe);psp
+Football Manager 2 (Europe);amstradcpc
+Football Manager 2 - Expansion Kit (Europe);amstradcpc
+Football Manager 2 - Expansion Kit (Europe);zxspectrum
+Football Manager 3 (Europe);amstradcpc
+Football Manager 3 (Europe);zxspectrum
+Football Manager 95 (Europe) (Unl);c64
+Football Manager (Europe);amstradcpc
+Football Manager (Europe);c64
+Football Manager II (Europe);c64
+Football Manager III (Europe);c64
+Football Manager - Players (Europe);zxspectrum
+Football Manager - World Cup Edition (Europe);amstradcpc
+Football Manager - World Cup Edition (Europe);c64
+Football Manager - World Cup Edition (Europe);zxspectrum
+footchmp;arcade
+footchmp;mame-advmame
+footchmp;mame-libretro
+footchmp;mame-mame4all
+Foot (Europe);amstradcpc
+Formation Soccer - On J-League (Japan);pce-cd
+FOX Sports Soccer '99 (USA);psx
+FOX Sports Soccer '99 (USA);psp
+fsoccer;arcade
+fsoccerba;arcade
+fsoccerba;mame-advmame
+fsoccerba;mame-libretro
+fsoccerba;mame-mame4all
+fsoccerb;arcade
+fsoccerb;mame-advmame
+fsoccerb;mame-libretro
+fsoccerb;mame-mame4all
+fsoccerj;arcade
+fsoccerj;mame-advmame
+fsoccerj;mame-libretro
+fsoccerj;mame-mame4all
+fsoccer;mame-advmame
+fsoccer;mame-libretro
+fsoccer;mame-mame4all
+Futbol-Party (Spain);zxspectrum
+Gary Lineker's Hot-Shot! (Europe);amstradcpc
+Gary Lineker's Hot Shot (Europe);c64
+Gary Lineker's Hot-Shot! (Europe);zxspectrum
+Gary Lineker's Super Skills (Europe);amstradcpc
+Gary Lineker's Super Skills (Europe);c64
+Gary Lineker's Super Skills (Europe);zxspectrum
+Gary Lineker's Super Star Soccer (Europe);amstradcpc
+Gary Lineker's Super Star Soccer (Europe);zxspectrum
+Gazza II (Europe);amstradcpc
+Gazza II (Europe);c64
+Gazza II (Europe);zxspectrum
+Gazza's Super Soccer (Europe);c64
+Gazza's Super Soccer (Europe);zxspectrum
+gghost;arcade
+gghost;mame-advmame
+gghost;mame-libretro
+gghost;mame-mame4all
+Giant Killers (Europe);dreamcast
+Glen Hoddle Soccer (Europe);amstradcpc
+goal92;arcade
+goal92;mame-advmame
+goal92;mame-libretro
+goal92;mame-mame4all
+Goal Storm '97 (USA);psx
+Goal Storm '97 (USA);psp
+Goal Storm (USA);psx
+Goal Storm (USA);psp
+Goal! Two (USA);nes
+Goal! (USA);nes
+Goal! (USA);gb
+Goal! (USA);snes
+goalx3;arcade
+goalx3;mame-advmame
+goalx3;mame-libretro
+goalx3;mame-mame4all
+goalx3;neogeo
+Golden Goal (Europe);gbc
+Graeme Souness International Soccer (Europe);c64
+Graeme Souness Soccer Manager (Europe);c64
+Graeme Souness Soccer Manager (Europe);zxspectrum
+Great Soccer (Europe);mastersystem
+Great Soccer (USA);mastersystem
+gstrik2;arcade
+gstrik2j;arcade
+gstrik2j;mame-advmame
+gstrik2j;mame-libretro
+gstrik2j;mame-mame4all
+gstrik2;mame-advmame
+gstrik2;mame-libretro
+gstrik2;mame-mame4all
+Hat Trick Hero 2 (Japan);sfc
+Head-On Soccer (USA);snes
+Heads-Up - Action Soccer (USA);vectrex
+Hockey + Soccer (USA, Europe);videopac2
+hthero93;arcade
+hthero93;mame-advmame
+hthero93;mame-libretro
+hthero93;mame-mame4all
+hthero94;arcade
+hthero94;mame-advmame
+hthero94;mame-libretro
+hthero94;mame-mame4all
+hthero95;arcade
+hthero95;mame-advmame
+hthero95;mame-libretro
+hthero95;mame-mame4all
+hthero95u;arcade
+hthero95u;mame-advmame
+hthero95u;mame-libretro
+hthero95u;mame-mame4all
+hthero;arcade
+hthero;mame-advmame
+hthero;mame-libretro
+hthero;mame-mame4all
+idsoccera;arcade
+idsoccera;mame-advmame
+idsoccera;mame-libretro
+idsoccera;mame-mame4all
+idsoccer;arcade
+idsoccer;mame-advmame
+idsoccer;mame-libretro
+idsoccer;mame-mame4all
+Indoor Soccer (Codemasters) (Europe);amstradcpc
+Indoor Soccer (Europe);zxspectrum
+Indoor Soccer (Magnificent 7 Software) (Europe);amstradcpc
+intcup94;arcade
+intcup94;mame-advmame
+intcup94;mame-libretro
+intcup94;mame-mame4all
+International 5 A-Side (Europe);c64
+International 5-a-Side Football (Europe);zxspectrum
+International Football (Europe);amstradcpc
+International Football (Europe);c64
+International Football (Europe);zxspectrum
+International Manager (Europe);amstradcpc
+International Manager (Europe);c64
+International Manager (Europe);zxspectrum
+International Match Day (Europe);zxspectrum
+International Sensible Soccer - World Champions Limited Edition (Europe);snes
+International Soccer (USA);atari2600
+International Soccer (USA);c64
+International Superstar Soccer 2000 (Europe);psx
+International Superstar Soccer 2000 (Europe);psp
+International Superstar Soccer 2000 (USA) (En,Es);n64
+International Superstar Soccer 2000 (USA);gbc
+International Superstar Soccer 64 (USA);n64
+International Superstar Soccer '98 (USA);n64
+International Superstar Soccer '99 (Europe);gbc
+International Superstar Soccer Advance (Europe);gba
+International Superstar Soccer Deluxe (Europe);psx
+International Superstar Soccer Deluxe (Europe);psp
+International Superstar Soccer Deluxe (USA);snes
+International Superstar Soccer (Europe);gba
+International Superstar Soccer Pro '98 (USA);psx
+International Superstar Soccer Pro '98 (USA);psp
+International Superstar Soccer (USA, Europe);gb
+International Superstar Soccer (USA);snes
+I Play - 3D Soccer (Italy);c64
+I Play - Football Champ (Italy);c64
+ISS Pro Evolution 2 (Europe);psx
+ISS Pro Evolution 2 (Europe);psp
+ISS Pro Evolution (USA);psx
+ISS Pro Evolution (USA);psp
+Italia '90 - World Cup Soccer (Europe);zxspectrum
+Italy 1990 (Europe);amstradcpc
+Italy 1990 (Europe);zxspectrum
+Italy 1990 - Winners Edition (Europe);amstradcpc
+Italy 1990 - Winners Edition (Europe);c64
+Italy 1990 - Winners Edition (Europe);zxspectrum
+Italy '90 Soccer (Italy);c64
+Jimmy's Soccer Manager (Europe);c64
+Jimmy's Soccer Manager (Europe);zxspectrum
+Jimmys Socer Manager (Europe);amstradcpc
+Jimmy's Super League (Europe);c64
+Jimmy's Super League (Europe);zxspectrum
+J.League '96 Dream Stadium (Japan);sfc
+jleague;arcade
+J-League Big Wave Soccer (Japan);gb
+J.League Excite Stage '94 (Japan);sfc
+J.League Excite Stage '95 (Japan);sfc
+J.League Excite Stage '96 (Japan);sfc
+J.League Fighting Soccer - The King of Ace Strikers (Japan);famicom
+J-League Fighting Soccer - The King of Ace Strikers (Japan);gb
+J-League GG Pro Striker '94 (Japan);gamegear
+J-League Greatest Eleven (Japan);pce-cd
+J-League Live '95 (Japan);gb
+jleague;mame-advmame
+jleague;mame-libretro
+jleague;mame-mame4all
+J-League Soccer - Dream Eleven (Japan);gamegear
+J.League Soccer Prime Goal 2 (Japan);sfc
+J.League Soccer Prime Goal 3 (Japan);sfc
+J.League Soccer Prime Goal (Japan);sfc
+J-League Spectacle Soccer (Japan);dreamcast
+J.League Super Soccer '95 - Jikkyou Stadium (Japan);sfc
+J.League Super Soccer (Japan);sfc
+J League Tremendous Soccer '94 (Japan);pce-cd
+J-League Winning Goal (Japan);gb
+J.League Winning Goal (Japan) (Translated En);famicom
+Kenny Dalglish Soccer (Europe);c64
+Kenny Dalglish Soccer Manager (Europe);amstradcpc
+Kenny Dalglish Soccer Manager (Europe);c64
+Kenny Dalglish Soccer Manager (Europe);zxspectrum
+Kenny Dalglish Soccer Match (Europe);amstradcpc
+Kenny Dalglish Soccer Match (Europe);zxspectrum
+Kick and Run (Japan);fds
+kickgoal;arcade
+kickgoal;mame-advmame
+kickgoal;mame-libretro
+kickgoal;mame-mame4all
+kicknrun;arcade
+kicknrun;mame-advmame
+kicknrun;mame-libretro
+kicknrun;mame-mame4all
+kicknrunu;arcade
+kicknrunu;mame-advmame
+kicknrunu;mame-libretro
+kicknrunu;mame-mame4all
+Kick Off 2 (Europe) (Side A);amstradcpc
+Kick Off 2 (Europe) (Side B);amstradcpc
+Kick Off 2 (Europe);zxspectrum
+Kick Off 3 - European Challenge (Europe);snes
+Kick Off (Anco) (Europe);c64
+kickoff;arcade
+Kick Off (Bubble Bus) (Europe);c64
+Kick Off (Europe);amstradcpc
+Kick Off (Europe);nes
+Kick Off (Europe);zxspectrum
+Kick Off (Europe);snes
+Kick Off II (Europe);c64
+kickoff;mame-advmame
+kickoff;mame-libretro
+kickoff;mame-mame4all
+Kick Off World Cup Edition (Europe);amstradcpc
+Kick Off World (Europe);psx
+Kick Off World (Europe);psp
+Konami Hyper Soccer (Europe);nes
+Kunio-kun no Nekketsu Soccer League (Japan) (Translated En);famicom
+kyustrkr;arcade
+kyustrkr;mame-advmame
+kyustrkr;mame-libretro
+kyustrkr;mame-mame4all
+lbgrande;arcade
+lbgrande;mame-advmame
+lbgrande;mame-libretro
+lbgrande;mame-mame4all
+League Challenge (Europe);amstradcpc
+League Challenge (Europe);c64
+League Challenge (Europe);zxspectrum
+League Football (Europe);amstradcpc
+League Football (Europe);c64
+League Football (Europe);zxspectrum
+League Soccer (USA);c64
+LEGO Soccer Mania (USA, Europe) (En,Fr,De,Es,It,Nl,Sv,Da);gba
+LiberoGrande (Europe);psx
+LiberoGrande (Europe);psp
+Liberogrande International (Europe);psx
+Liberogrande International (Europe);psp
+Liverpool (Europe);amstradcpc
+Liverpool (Europe);zxspectrum
+Liverpool - The Computer Game (Europe);c64
+LMA Manager 2001 (Europe);psx
+LMA Manager 2001 (Europe);psp
+LMA Manager 2002 (Europe);psx
+LMA Manager 2002 (Europe);psp
+LMA Manager (Europe);psx
+LMA Manager (Europe);psp
+Magnetic Soccer (Europe);gb
+Manager, The (Europe);amstradcpc
+Manager, The (Europe);zxspectrum
+Manchester United Championship Soccer (Europe);snes
+Manchester United (Europe);amstradcpc
+Manchester United Europe (Europe);amstradcpc
+Manchester United Europe (Europe);c64
+Manchester United Europe (Europe);zxspectrum
+Manchester United (Europe) (Side A);c64
+Manchester United (Europe) (Side B);c64
+Manchester United (Europe);zxspectrum
+Match Day (Europe);amstradcpc
+Match Day (Europe);c64
+Match Day (Europe);zxspectrum
+Match Day II (Europe);amstradcpc
+Match Day II (Europe);c64
+Match Day II (Europe);zxspectrum
+Match of the Day (Europe);c64
+Match of the Day (Europe);zxspectrum
+Match, The (Europe);amstradcpc
+Match, The (Europe);c64
+Match, The (Europe);zxspectrum
+Matthias Sammer Soccer (Germany);gb
+Mega Man Soccer (USA);snes
+mexico86;arcade
+Mexico '86 A World Cup Management Simulation (Europe);amstradcpc
+Mexico '86 - Finals (Europe);zxspectrum
+mexico86;mame-advmame
+mexico86;mame-libretro
+mexico86;mame-mame4all
+Mexico '86 - Qualifiers (Europe);zxspectrum
+Mia Hamm Soccer 64 (USA) (En,Es);n64
+Mia Hamm Soccer Shootout (USA);gbc
+Michael Owen's World League Soccer 99 (Europe);psx
+Michael Owen's World League Soccer 99 (Europe);psp
+Michel Futbol Master (Side A) (Spain);zxspectrum
+Michel Futbol Master (Side B) (Spain);zxspectrum
+Michel Futbol Master - Super Skills (Spain);amstradcpc
+Microprose Soccer (Europe);amstradcpc
+Microprose Soccer (Europe);zxspectrum
+Microprose Soccer (USA);c64
+MISL - Major Indoor Soccer League (USA);c64
+mp_twc;arcade
+mp_twc;mame-advmame
+mp_twc;mame-libretro
+mp_twc;mame-mame4all
+mt_gsocr;arcade
+mt_gsocr;mame-advmame
+mt_gsocr;mame-libretro
+mt_gsocr;mame-mame4all
+mt_wcsoc;arcade
+mt_wcsoc;mame-advmame
+mt_wcsoc;mame-libretro
+mt_wcsoc;mame-mame4all
+Multi Player Soccer Manager (Europe);amstradcpc
+Multi-Player Soccer Manager (Europe);c64
+Multi-Player Soccer Manager (Europe);zxspectrum
+Mundial de Futbol (Spain);amstradcpc
+Mundial de Futbol (Spain);zxspectrum
+Namco Soccer Prime Goal (Europe);psx
+Namco Soccer Prime Goal (Europe);psp
+Nekketsu Koukou Dodgeball Bu - Soccer Hen (Japan);pce-cd
+neocup98;arcade
+neocup98;mame-advmame
+neocup98;mame-libretro
+neocup98;mame-mame4all
+neocup98;neogeo
+Neo Geo Cup '98 (Japan, Europe);ngp
+Neo Geo Cup '98 Plus (World) (En,Ja);ngpc
+Nihon Daihyou Team - Eikou no Eleven (Japan);gb
+Nintendo World Cup (USA, Europe);gb
+Nintendo World Cup (USA);nes
+Nippon Daihyou Team - Eikou no Eleven (Japan);gb
+nss_ssoc;arcade
+nss_ssoc;mame-advmame
+nss_ssoc;mame-libretro
+nss_ssoc;mame-mame4all
+Official F.A. Cup Football, The (Europe);amstradcpc
+Olympic Soccer (USA);psx
+Olympic Soccer (USA);psp
+Onside Complete Soccer (Europe);psx
+Onside Complete Soccer (Europe);psp
+On The Bench (Europe);amstradcpc
+On the Bench (Europe);c64
+On the Bench (Europe);zxspectrum
+pc_wcup;arcade
+pc_wcup;mame-advmame
+pc_wcup;mame-libretro
+pc_wcup;mame-mame4all
+Penalty Soccer (Europe);amstradcpc
+Penalty Soccer (Europe);c64
+Penalty Soccer (Europe);zxspectrum
+Peter Beardsley's International Football (Europe);c64
+Peter Beardsley's International Football (Europe);zxspectrum
+Peter Beardsley's Soccer (Europe);amstradcpc
+Peter Shilton's Handball Maradona (Europe);amstradcpc
+Peter Shilton's Handball Maradona (Europe);c64
+Peter Shilton's Handball Maradona (Europe);zxspectrum
+pgoal;arcade
+pgoal;mame-advmame
+pgoal;mame-libretro
+pgoal;mame-mame4all
+pgoal;neogeo
+pkscram;arcade
+pkscram;mame-advmame
+pkscram;mame-libretro
+pkscram;mame-mame4all
+Player Manager 2000 (Europe);psx
+Player Manager 2000 (Europe);psp
+Player Manager (Europe);psx
+Player Manager (Europe);psp
+Player Manager Ninety Nine (Europe);psx
+Player Manager Ninety Nine (Europe);psp
+Pocket Soccer (Europe);gbc
+Power Soccer (Japan);famicom
+powrplay;arcade
+powrplay;mame-advmame
+powrplay;mame-libretro
+powrplay;mame-mame4all
+Premier Action Soccer (Europe) (En,Fr,De,Es,It);gba
+Premier II (Europe);c64
+Premier II Superleague (Europe);amstradcpc
+Premier II - Superleague (Europe);zxspectrum
+Premier League (Europe);c64
+Premier League (Europe);zxspectrum
+Premier Manager 2000 (Europe);psx
+Premier Manager 2000 (Europe);psp
+Premier Manager 2003-04 (Europe) (En,Fr,De,It);gba
+Premier Manager 2004-2005 (Europe) (En,Fr,De,It);gba
+Premier Manager 2005-2006 (Europe) (En,Fr,De,It);gba
+Premier Manager 64 (Europe);n64
+Premier Manager 98 (Europe);psx
+Premier Manager 98 (Europe);psp
+Premier Manager Ninety Nine (Europe);psx
+Premier Manager Ninety Nine (Europe);psp
+primglex;arcade
+primglex;mame-advmame
+primglex;mame-libretro
+primglex;mame-mame4all
+prmrsocr;arcade
+prmrsocrj;arcade
+prmrsocrj;mame-advmame
+prmrsocrj;mame-libretro
+prmrsocrj;mame-mame4all
+prmrsocr;mame-advmame
+prmrsocr;mame-libretro
+prmrsocr;mame-mame4all
+Pro Evolution Soccer 2 (Europe);psx
+Pro Evolution Soccer 2 (Europe);psp
+Pro Evolution Soccer (Europe);psx
+Pro Evolution Soccer (Europe);psp
+Profesional Footballer (Europe);amstradcpc
+Professional Footballer (Europe);c64
+Professional Footballer (Europe);zxspectrum
+Professional Soccer (Europe);zxspectrum
+prosoccr;arcade
+prosoccr;mame-advmame
+prosoccr;mame-libretro
+prosoccr;mame-mame4all
+Puma Street Soccer (Europe);psx
+Puma Street Soccer (Europe);psp
+pwrgoal;arcade
+pwrgoal;mame-advmame
+pwrgoal;mame-libretro
+pwrgoal;mame-mame4all
+pwrkick;arcade
+pwrkick;mame-advmame
+pwrkick;mame-libretro
+pwrkick;mame-mame4all
+RealSports Soccer (USA);atari2600
+RealSports Soccer (USA);atari5200
+Rome 90 (Tape 1) (Europe);zxspectrum
+Rome 90 (Tape 2) (Europe);zxspectrum
+Ronaldo V-Football (Europe);psx
+Ronaldo V-Football (Europe);psp
+Ronaldo V-Soccer (USA);gbc
+Roy of the Rovers (Europe);amstradcpc
+Roy of the Rovers (Europe);c64
+scfinals;arcade
+scfinals;mame-advmame
+scfinals;mame-libretro
+scfinals;mame-mame4all
+scfinalso;arcade
+scfinalso;mame-advmame
+scfinalso;mame-libretro
+scfinalso;mame-mame4all
+Scottish League Football (Europe);c64
+Sega Worldwide Soccer 2000 Euro Edition (Europe);dreamcast
+Sega Worldwide Soccer 2000 (Europe);dreamcast
+Sensible Soccer - European Champions (Europe);gb
+Sensible Soccer - European Champions (Europe);gamegear
+Sensible Soccer (Europe);mastersystem
+Sensible Soccer (Europe);psx
+Sensible Soccer (Europe);psp
+sfchamp;arcade
+sfchampj;arcade
+sfchampj;mame-advmame
+sfchampj;mame-libretro
+sfchampj;mame-mame4all
+sfchamp;mame-advmame
+sfchamp;mame-libretro
+sfchamp;mame-mame4all
+sfchampo;arcade
+sfchampo;mame-advmame
+sfchampo;mame-libretro
+sfchampo;mame-mame4all
+sfchampu;arcade
+sfchampu;mame-advmame
+sfchampu;mame-libretro
+sfchampu;mame-mame4all
+Shijou Saikyou League Serie A - Ace Striker (Japan);sfc
+Shoot (Europe) (Unl);amstradcpc
+socbrawl;arcade
+socbrawlh;arcade
+socbrawlh;mame-advmame
+socbrawlh;mame-libretro
+socbrawlh;mame-mame4all
+socbrawl;mame-advmame
+socbrawl;mame-libretro
+socbrawl;mame-mame4all
+socbrawl;neogeo
+Soccer (1);videopac
+Soccer (2);videopac
+Soccer 7 (Europe);amstradcpc
+Soccer 7 (Europe);c64
+Soccer 7 (Europe);zxspectrum
+Soccer 86 (Europe);amstradcpc
+Soccer '97 (Europe);psx
+Soccer '97 (Europe);psp
+soccer;arcade
+Soccer Boss (Europe);amstradcpc
+Soccer Boss (Europe);c64
+Soccer Challenge (Europe);amstradcpc
+Soccer Challenge (Europe);c64
+Soccer Cup II (Europe);c64
+Soccer Director (Europe);amstradcpc
+Soccer Director (Europe);zxspectrum
+Soccer Director (USA);c64
+Soccer (Japan);fds
+Soccer Kid (USA, Europe);gba
+soccer;mame-advmame
+soccer;mame-libretro
+soccer;mame-mame4all
+Soccer Manager (Europe);gbc
+Soccer Mania (Japan, USA);gb
+Soccer Rivals (Europe);amstradcpc
+Soccer Rivals (Europe);zxspectrum
+Soccer Skills (Europe);amstradcpc
+soccerssa;arcade
+soccerssa;mame-advmame
+soccerssa;mame-libretro
+soccerssa;mame-mame4all
+soccerss;arcade
+soccerssja;arcade
+soccerssja;mame-advmame
+soccerssja;mame-libretro
+soccerssja;mame-mame4all
+soccerssj;arcade
+soccerssj;mame-advmame
+soccerssj;mame-libretro
+soccerssj;mame-mame4all
+soccerss;mame-advmame
+soccerss;mame-libretro
+soccerss;mame-mame4all
+Soccer Star (Europe);amstradcpc
+Soccer Star (Europe);c64
+Soccer Star (Europe);zxspectrum
+Soccer Supremo (Europe);c64
+Soccer Supremo (Europe);zxspectrum
+Soccer (World);nes
+Soccer Yarou! - Challenge the World (Japan);wonderswan
+ssideki2;arcade
+ssideki2;mame-advmame
+ssideki2;mame-libretro
+ssideki2;mame-mame4all
+ssideki2;neogeo
+ssideki3;arcade
+ssideki3;mame-advmame
+ssideki3;mame-libretro
+ssideki3;mame-mame4all
+ssideki3;neogeo
+ssideki4;arcade
+ssideki4;mame-advmame
+ssideki4;mame-libretro
+ssideki4;mame-mame4all
+ssideki4;neogeo
+ssideki;arcade
+ssideki;mame-advmame
+ssideki;mame-libretro
+ssideki;mame-mame4all
+ssideki;neogeo
+Starbyte Supersoccer (Germany);c64
+Star Soccer (Side A) (Europe);zxspectrum
+Star Soccer (Side B) (Europe);zxspectrum
+Steven Gerrard's Total Soccer 2002 (Europe) (En,Fr,De,Es,It,Nl);gba
+stonebal2;arcade
+stonebal2;mame-advmame
+stonebal2;mame-libretro
+stonebal2;mame-mame4all
+stonebal;arcade
+stonebal;mame-advmame
+stonebal;mame-libretro
+stonebal;mame-mame4all
+Street Cred Football (Europe);amstradcpc
+Street Cred Football (Europe);c64
+Street Cred Football (Europe);zxspectrum
+Street Gang Football (Europe);amstradcpc
+Street Gang Football (Europe);zxspectrum
+Street Soccer (Europe);amstradcpc
+Street Sports Soccer (USA);c64
+Striker 96 (USA);psx
+Striker 96 (USA);psp
+Striker (Europe);amstradcpc
+Striker (Europe);c64
+Striker (Europe);gamegear
+Striker (Europe);zxspectrum
+Striker Manager (Europe);amstradcpc
+Striker Manager (Europe);c64
+Striker Manager (Europe);zxspectrum
+Striker Pro 2000 (USA);dreamcast
+Striker Pro 2000 (USA);psx
+Striker Pro 2000 (USA);psp
+Subbuteo (Europe);c64
+Subbuteo - The Computer Game (Europe);amstradcpc
+Super Action Soccer (USA, Europe);coleco
+Super Copa (Brazil);snes
+Supercup (Europe);amstradcpc
+Super Cup Football (Europe);c64
+Super Euro Soccer 2000 (Japan);dreamcast
+Super Football Champ (Europe);psx
+Super Football Champ (Europe);psp
+Super Formation Soccer 94 - World Cup Edition (Japan);sfc
+Super Formation Soccer 94 - World Cup Final Data (Japan);sfc
+Super Formation Soccer 95 della Serie A (Japan);sfc
+Super Formation Soccer 96 - World Club Edition (Japan);sfc
+Super Formation Soccer II (Japan);sfc
+Super Goal! 2 (USA);snes
+Super Kick Off (Europe, Japan);gamegear
+Super Kick Off (Europe);gb
+Super Kick Off (Europe);mastersystem
+Super League (Cross Software) (Europe);zxspectrum
+Super League (Europe);amstradcpc
+Super League (Europe);c64
+Super League (Players Premier Software) (Europe);zxspectrum
+Superleague Soccer (Europe);c64
+Superleague Soccer (Europe);zxspectrum
+Super Match Soccer (Europe);psx
+Super Match Soccer (Europe);psp
+Super Shot Soccer (USA);psx
+Super Shot Soccer (USA);psp
+Super Soccer Champ (USA);snes
+Super Soccer (Europe);amstradcpc
+Super Soccer (Europe);zxspectrum
+Super Soccer (Imagine) (Europe);c64
+Super Soccer (Memory Soft) (Europe);c64
+Super Soccer (USA);snes
+Superstar Soccer (USA);c64
+Sven-Goran Eriksson's World Challenge (Europe);psx
+Sven-Goran Eriksson's World Challenge (Europe);psp
+Sven-Goran Eriksson's World Manager (Europe);psx
+Sven-Goran Eriksson's World Manager (Europe);psp
+svf;arcade
+svf;mame-advmame
+svf;mame-libretro
+svf;mame-mame4all
+svs;arcade
+svs;mame-advmame
+svs;mame-libretro
+svs;mame-mame4all
+System 8 - The Pools Predictor (Europe);c64
+Table Football (Europe);amstradcpc
+Table Football (Europe);zxspectrum
+Table Soccer (Europe);c64
+Tactical Soccer (Japan);sfc
+Takeda Nobuhiro no Super League Soccer (Japan);sfc
+Tecmo Cup - Soccer Game (USA);nes
+tecmowcm;arcade
+tecmowcm;mame-advmame
+tecmowcm;mame-libretro
+tecmowcm;mame-mame4all
+Tecmo World Cup '93 (Europe);mastersystem
+Tecmo World Cup Soccer (Europe);nes
+Tecmo World Cup Super Soccer (Japan);pce-cd
+tehkanwc;arcade
+tehkanwcb;arcade
+tehkanwcb;mame-advmame
+tehkanwcb;mame-libretro
+tehkanwcb;mame-mame4all
+tehkanwc;mame-advmame
+tehkanwc;mame-libretro
+tehkanwc;mame-mame4all
+Tengen World Cup Soccer (USA, Europe);gamegear
+This Is Football 2 (Europe);psx
+This Is Football 2 (Europe);psp
+This Is Football (Europe);psx
+This Is Football (Europe);psp
+Tony Meola's Sidekicks Soccer (USA);snes
+Top Of The League (Europe);amstradcpc
+Total Soccer 2000 (Europe);gbc
+Track Suit Manager (Europe);amstradcpc
+Tracksuit Manager (Europe);c64
+Track Suit Manager (Europe);zxspectrum
+Treble Champions (Europe);amstradcpc
+Treble Champions (Europe);c64
+Treble Champions (Europe);zxspectrum
+Trener (Poland);c64
+Trevor Brooking's World Cup Glory (Europe);amstradcpc
+Trevor Brooking's World Cup Glory (Europe);c64
+Trevor Brooking's World Cup Glory (Europe);zxspectrum
+twcup98;arcade
+twcup98;mame-advmame
+twcup98;mame-libretro
+twcup98;mame-mame4all
+Two Player Soccer Squad (Europe);c64
+Two Player Super League (Europe);c64
+tws96;arcade
+tws96;mame-advmame
+tws96;mame-libretro
+tws96;mame-mame4all
+tws96;neogeo
+UEFA Challenge (Europe);psx
+UEFA Challenge (Europe);psp
+UEFA Champions League - Season 1998-99 (Europe);psx
+UEFA Champions League - Season 1998-99 (Europe);psp
+UEFA Champions League - Season 1999-2000 (Europe);psx
+UEFA Champions League - Season 1999-2000 (Europe);psp
+UEFA Champions League - Season 2000-2001 (Europe);psx
+UEFA Champions League - Season 2000-2001 (Europe);psp
+UEFA Dream Soccer (Europe);dreamcast
+UEFA Euro 2000 (Europe);psx
+UEFA Euro 2000 (Europe);psp
+UEFA Striker (Europe);dreamcast
+Ultimate Beach Soccer (USA);gba
+Ultimate League Soccer (USA) (Unl);nes
+Ultimate Soccer (Europe);mastersystem
+Ultimate Soccer (Japan, Europe);gamegear
+Ultra League - Moero! Soccer Daikessen!! (Japan);sfc
+United (Europe);zxspectrum
+Virtual Soccer (Europe);snes
+Virtua Striker 2 (USA);dreamcast
+Viva Soccer (USA);psx
+Viva Soccer (USA);psp
+VR Soccer '96 (USA);psx
+VR Soccer '96 (USA);psp
+vshoot;arcade
+vshoot;mame-advmame
+vshoot;mame-libretro
+vshoot;mame-mame4all
+vsnetscra;arcade
+vsnetscra;mame-advmame
+vsnetscra;mame-libretro
+vsnetscra;mame-mame4all
+vsnetscr;arcade
+vsnetscreb;arcade
+vsnetscreb;mame-advmame
+vsnetscreb;mame-libretro
+vsnetscreb;mame-mame4all
+vsnetscrj;arcade
+vsnetscrj;mame-advmame
+vsnetscrj;mame-libretro
+vsnetscrj;mame-mame4all
+vsnetscr;mame-advmame
+vsnetscr;mame-libretro
+vsnetscr;mame-mame4all
+vsnetscru;arcade
+vsnetscru;mame-advmame
+vsnetscru;mame-libretro
+vsnetscru;mame-mame4all
+vssoccera;arcade
+vssoccera;mame-advmame
+vssoccera;mame-libretro
+vssoccera;mame-mame4all
+vssoccer;arcade
+vssoccer;mame-advmame
+vssoccer;mame-libretro
+vssoccer;mame-mame4all
+wc90a;arcade
+wc90a;mame-advmame
+wc90a;mame-libretro
+wc90a;mame-mame4all
+wc90;arcade
+wc90b1;arcade
+wc90b1;mame-advmame
+wc90b1;mame-libretro
+wc90b1;mame-mame4all
+wc90b2;arcade
+wc90b2;mame-advmame
+wc90b2;mame-libretro
+wc90b2;mame-mame4all
+wc90ba;arcade
+wc90ba;mame-advmame
+wc90ba;mame-libretro
+wc90ba;mame-mame4all
+wc90b;arcade
+wc90b;mame-advmame
+wc90b;mame-libretro
+wc90b;mame-mame4all
+wc90;mame-advmame
+wc90;mame-libretro
+wc90;mame-mame4all
+wc90t;arcade
+wc90t;mame-advmame
+wc90t;mame-libretro
+wc90t;mame-mame4all
+World Champions (Europe);amstradcpc
+World Champions (Europe);c64
+World Champions (Europe);zxspectrum
+World Championship Soccer (Europe);amstradcpc
+World Championship Soccer (Europe);c64
+World Championship Soccer (Europe);zxspectrum
+World Class Soccer (USA, Europe);atarilynx
+World Cup '86 (Europe);zxspectrum
+Worldcup 90 - Arcade Soccer (Europe);c64
+World Cup 98 (USA) (En,Fr,De,Es,It,Nl,Sv,Da);n64
+World Cup 98 (USA, Europe);gb
+World Cup 98 (USA);psx
+World Cup 98 (USA);psp
+World Cup (Artic Computing) (Europe);amstradcpc
+World Cup (Artic Computing Ltd.) (Europe);c64
+World Cup Carnival (Europe);zxspectrum
+World Cup Carnival Mexico 86 (Europe);amstradcpc
+World Cup Carnival - Mexico '86 (Europe);c64
+World Cup Challenge (Europe);amstradcpc
+World Cup Challenge (Europe);zxspectrum
+World Cup (Cult) (Europe);amstradcpc
+World Cup (Cult Games) (Europe);c64
+World Cup (Europe);zxspectrum
+World Cup Football (Europe);zxspectrum
+World Cup Glory (Europe);zxspectrum
+World Cup Italia '90 (Europe);mastersystem
+World Cup Manager (Europe);amstradcpc
+World Cup Soccer Italia '90 (Europe);amstradcpc
+World Cup Soccer Italia '90 (Europe);c64
+World Cup Soccer (Macmillan Software) (Europe);c64
+World Cup Soccer (Sharedata, Inc.) (USA);c64
+World Cup USA '94 (Europe);gb
+World Cup USA 94 (Europe);mastersystem
+World Cup USA 94 (USA, Europe);gamegear
+World Cup USA '94 (USA);segacd
+World Cup USA 94 (USA);snes
+World League Soccer '98 (Europe);psx
+World League Soccer '98 (Europe);psp
+World League Soccer (USA);snes
+World of Soccer (Europe);c64
+World of Soccer (Europe);zxspectrum
+World Soccer 94 - Road to Glory (USA);snes
+World Soccer (Europe);amstradcpc
+World Soccer (Europe);c64
+World Soccer (Europe);zxspectrum
+World Soccer League (Europe);amstradcpc
+World Soccer League (Europe);c64
+World Soccer League (Europe);zxspectrum
+wpksocv2;arcade
+wpksocv2;mame-advmame
+wpksocv2;mame-libretro
+wpksocv2;mame-mame4all
+wsf;arcade
+wsf;mame-advmame
+wsf;mame-libretro
+wsf;mame-mame4all
+XS Junior League Soccer (USA);psx
+XS Junior League Soccer (USA);psp
+xtheball;arcade
+xtheball;mame-advmame
+xtheball;mame-libretro
+xtheball;mame-mame4all
+Zenkoku Koukou Soccer 2 (Japan);sfc
+Zenkoku Koukou Soccer (Japan);sfc
+Zico Soccer (Japan);sfc
+Zidane Football Generation (Europe) (En,Fr,De,Es,It);gba
+ZX Football Manager 2005 (Europe);zxspectrum

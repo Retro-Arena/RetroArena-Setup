@@ -1,0 +1,25 @@
+Hobbit, The (Europe);amstradcpc
+Hobbit, The (Europe) (Side A);c64
+Hobbit, The (Europe) (Side B);c64
+Hobbit, The (Europe);zxspectrum
+Hobbit, The (USA);gba
+J.R.R. Tolkien's The Lord of the Rings - Volume 1 (USA);snes
+LEGO The Lord of the Rings (USA) (En,Fr,Es,Pt);nds
+Lord of the Rings (Europe) (Disk 1 Side A);c64
+Lord of the Rings (Europe) (Disk 1 Side B);c64
+Lord of the Rings (Europe) (Disk 2);c64
+Lord Of The Rings - Game One (Europe);amstradcpc
+Lord of the Rings - Game One (Side A) (Europe);zxspectrum
+Lord of the Rings - Game One (Side B) (Europe);zxspectrum
+Lord of the Rings - Game Two - Shadows of Mordor (Europe);amstradcpc
+Lord of the Rings - Game Two - Shadows of Mordor (Europe);zxspectrum
+Lord of the Rings, The - Aragorn's Quest (USA) (En,Fr,Es,Pt);nds
+Lord of the Rings, The - Conquest (USA) (En,Fr,De,Es,It) [b];nds
+Lord of the Rings, The - Fellowship of the Ring (USA) (Unl);atari2600
+Lord of the Rings, The - Journey to Rivendell (USA) (Proto);atari2600
+Lord of the Rings, The - The Fellowship of the Ring (USA);gba
+Lord of the Rings, The - The Return of the King (USA, Europe) (En,Fr,De,Es,It);gba
+Lord of the Rings, The - The Third Age (USA, Europe) (En,Fr,De,Es,It);gba
+Lord of the Rings, The - The Two Towers (USA, Europe) (En,Fr,De,Es,It,Nl);gba
+lotr;fba
+lotrgs;fba

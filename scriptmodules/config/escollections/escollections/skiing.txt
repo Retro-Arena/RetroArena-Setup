@@ -1,0 +1,166 @@
+alpinea;arcade
+alpinea;mame-advmame
+alpinea;mame-libretro
+alpinea;mame-mame4all
+alpine;arcade
+alpine;mame-advmame
+alpine;mame-libretro
+alpine;mame-mame4all
+alpinerc;arcade
+alpinerc;mame-advmame
+alpinerc;mame-libretro
+alpinerc;mame-mame4all
+alpinerd;arcade
+alpinerd;mame-advmame
+alpinerd;mame-libretro
+alpinerd;mame-mame4all
+Alpine Skiing (USA, Europe);videopac2
+alpinr2a;arcade
+alpinr2a;mame-advmame
+alpinr2a;mame-libretro
+alpinr2a;mame-mame4all
+alpinr2b;arcade
+alpinr2b;mame-advmame
+alpinr2b;mame-libretro
+alpinr2b;mame-mame4all
+Biathlon (USA);c64
+cbaj;arcade
+cbaj;mame-advmame
+cbaj;mame-libretro
+cbaj;mame-mame4all
+Downhill Challenge (USA);c64
+Downhill Champion (Europe);zxspectrum
+Downhill Racer-64 (USA);c64
+Downhill - Ski Jump (Europe);c64
+Dynamite Skier (USA);c64
+dynamski;arcade
+dynamski;mame-advmame
+dynamski;mame-libretro
+dynamski;mame-mame4all
+Eddie Edwards' Super Ski (Europe);zxspectrum
+Eskimo Games (Europe);c64
+extdwnhl;arcade
+extdwnhl;mame-advmame
+extdwnhl;mame-libretro
+extdwnhl;mame-mame4all
+Gary Lineker's Super Skills (Europe);amstradcpc
+Gary Lineker's Super Skills (Europe);c64
+Gary Lineker's Super Skills (Europe);zxspectrum
+guiness;arcade
+guiness;mame-advmame
+guiness;mame-libretro
+guiness;mame-mame4all
+Irem Skins Game, The (USA);snes
+Michel Futbol Master - Super Skills (Spain);amstradcpc
+Mogul Maniac (USA);atari2600
+newtangl;arcade
+newtangl;mame-advmame
+newtangl;mame-libretro
+newtangl;mame-mame4all
+nss_skin;arcade
+nss_skin;mame-advmame
+nss_skin;mame-libretro
+nss_skin;mame-mame4all
+Olympic Skier (Europe);c64
+pigskina;arcade
+pigskina;mame-advmame
+pigskina;mame-libretro
+pigskina;mame-mame4all
+pigskin;arcade
+pigskinb;arcade
+pigskinb;mame-advmame
+pigskinb;mame-libretro
+pigskinb;mame-mame4all
+pigskin;mame-advmame
+pigskin;mame-libretro
+pigskin;mame-mame4all
+Professional Ski Simulator (Europe);amstradcpc
+Professional Ski Simulator (Europe);c64
+Professional Ski Simulator (Europe);zxspectrum
+pturn;arcade
+pturn;mame-advmame
+pturn;mame-libretro
+pturn;mame-mame4all
+Rollerblade Racer (USA);nes
+RTL Skispringen 2002 (Germany);psx
+RTL Skispringen 2002 (Germany);psp
+silvland;arcade
+silvland;mame-advmame
+silvland;mame-libretro
+silvland;mame-mame4all
+Ski Air Mix (Europe);psx
+Ski Air Mix (Europe);psp
+Ski-Devil (Europe);c64
+Skier-64 (USA);c64
+Ski Hunt (Europe);atari2600
+Skiing (USA);atari2600
+Skiing (USA);coleco
+Ski Jumping (USA) (Unl);c64
+Ski;videopac
+skimaxx;arcade
+skimaxx;mame-advmame
+skimaxx;mame-libretro
+skimaxx;mame-mame4all
+skingame2;arcade
+skingame2;mame-advmame
+skingame2;mame-libretro
+skingame2;mame-mame4all
+skingame;arcade
+skingame;mame-advmame
+skingame;mame-libretro
+skingame;mame-mame4all
+Ski or Die (USA);nes
+Ski or Die (USA) (Side A);c64
+Ski or Die (USA) (Side B);c64
+Ski Run (Europe);atari2600
+Ski Star 2000 (Europe);zxspectrum
+Ski-Three-Dee (USA);c64
+Ski (USA);c64
+Slalom (Tronix) (USA);c64
+Slalom (USA);nes
+Sled Ride (USA);c64
+Snowboard Race (Europe);c64
+Snow Run (USA) (Unl);c64
+Soccer Skills (Europe);amstradcpc
+sss;arcade
+sss;mame-advmame
+sss;mame-libretro
+sss;mame-mame4all
+strnskil;arcade
+strnskil;mame-advmame
+strnskil;mame-libretro
+strnskil;mame-mame4all
+Super Family Gelaende (Japan);sfc
+Super Ski (France);amstradcpc
+Super-Ski - The Downhill Simulator (USA) (Unl);c64
+surfplnt40;arcade
+surfplnt40;mame-advmame
+surfplnt40;mame-libretro
+surfplnt40;mame-mame4all
+surfplnt;arcade
+surfplnt;mame-advmame
+surfplnt;mame-libretro
+surfplnt;mame-mame4all
+Tommy Moe's Winter Extreme - Skiing and Snowboarding (USA);snes
+troangel;arcade
+troangel;mame-advmame
+troangel;mame-libretro
+troangel;mame-mame4all
+tryout;arcade
+tryout;mame-advmame
+tryout;mame-libretro
+tryout;mame-mame4all
+vsslalom;arcade
+vsslalom;mame-advmame
+vsslalom;mame-libretro
+vsslalom;mame-mame4all
+Wakuwaku Ski Wonder Spur (Japan);sfc
+waterski;arcade
+waterski;mame-advmame
+waterski;mame-libretro
+waterski;mame-mame4all
+Water Ski (USA);atari7800
+winterht;arcade
+winterht;mame-advmame
+winterht;mame-libretro
+winterht;mame-mame4all

@@ -1,0 +1,102 @@
+3D Star Wars (Europe);zxspectrum
+LEGO Star Wars II - The Original Trilogy (USA);gba
+LEGO Star Wars - The Video Game (USA, Europe) (En,Fr,De,Es,It,Nl,Da);gba
+sonstwar;arcade
+sonstwar;mame-advmame
+sonstwar;mame-libretro
+sonstwar;mame-mame4all
+sonstwr2;arcade
+sonstwr2;mame-advmame
+sonstwr2;mame-libretro
+sonstwr2;mame-mame4all
+starjedi;fba
+starw1;arcade
+starw1;mame-advmame
+starw1;mame-libretro
+starw1;mame-mame4all
+starw;arcade
+starwars1;arcade
+starwars1;mame-advmame
+starwars1;mame-libretro
+starwars1;mame-mame4all
+starwars;arcade
+Star Wars Arcade (USA);sega32x
+Star Wars Chess (USA);segacd
+Star Wars - Dark Forces (USA);psx
+Star Wars - Dark Forces (USA);psp
+Star Wars - Demolition (USA);dreamcast
+Star Wars - Demolition (USA);psx
+Star Wars - Demolition (USA);psp
+Star Wars Droids (Europe);amstradcpc
+Star Wars Droids (Europe);zxspectrum
+Star Wars Episode I - Battle for Naboo (USA);n64
+Star Wars - Episode II - Attack of the Clones (USA);gba
+Star Wars - Episode III - Revenge of the Sith (USA) (En,Fr,Es);gba
+Star Wars Episode I - Jedi Power Battles (USA);dreamcast
+Star Wars - Episode I - Jedi Power Battles (USA);psx
+Star Wars - Episode I - Jedi Power Battles (USA);psp
+Star Wars Episode I - Obi-Wan's Adventures (USA);gbc
+Star Wars Episode I - Racer (USA, Europe);gbc
+Star Wars Episode I - Racer (USA);n64
+Star Wars - Episode I Racer (USA);dreamcast
+Star Wars - Episode I - The Phantom Menace (USA);psx
+Star Wars - Episode I - The Phantom Menace (USA);psp
+Star Wars (Europe);amstradcpc
+Star Wars (Europe);mastersystem
+Star Wars (Europe);zxspectrum
+starwars;fba
+Star Wars - Flight of the Falcon (USA);gba
+Star Wars II - Empire Strikes Back (Europe);amstradcpc
+Star Wars III - Return of the Jedi (Europe);amstradcpc
+Star Wars III - Return of the Jedi (Europe);zxspectrum
+Star Wars II - The Empire Strikes Back (Europe);zxspectrum
+Star Wars (Japan) (Namco) (Translated En);famicom
+Star Wars - Jedi Arena (USA);atari2600
+Star Wars - Jedi Power Battles (USA);gba
+starwars;mame-advmame
+starwars;mame-libretro
+starwars;mame-mame4all
+Star Wars - Masters of Teras Kasi (USA);psx
+Star Wars - Masters of Teras Kasi (USA);psp
+starwarso;arcade
+starwarso;mame-advmame
+starwarso;mame-libretro
+starwarso;mame-mame4all
+Star Wars - Rebel Assault II - The Hidden Empire (USA) (Disc 1);psx
+Star Wars - Rebel Assault II - The Hidden Empire (USA) (Disc 1);psp
+Star Wars - Rebel Assault II - The Hidden Empire (USA) (Disc 2);psx
+Star Wars - Rebel Assault II - The Hidden Empire (USA) (Disc 2);psp
+Star Wars Rebel Assault (USA);segacd
+Star Wars - Return of the Jedi - Death Star Battle (USA);atari2600
+Star Wars - Return of the Jedi - Death Star Battle (USA);atari5200
+Star Wars - Return of the Jedi - Ewok Adventure (USA) (Proto);atari2600
+Star Wars - Rogue Squadron (USA) (Rev A);n64
+Star Wars - Shadows of the Empire (USA) (Rev B);n64
+Star Wars - The Arcade Game (USA);atari2600
+Star Wars - The Arcade Game (USA);atari5200
+Star Wars - The Arcade Game (USA);c64
+Star Wars - The Empire Strikes Back (USA);atari2600
+Star Wars - The Empire Strikes Back (USA);nes
+Star Wars - The Empire Strikes Back (USA);gb
+Star Wars - The New Droid Army (USA);gba
+Star Wars Trilogy - Apprentice of the Force (USA) (En,Fr,Es);gba
+Star Wars (USA);coleco
+Star Wars (USA);c64
+Star Wars (USA, Europe);gb
+Star Wars (USA, Europe) (Rev A);gb
+Star Wars (USA);nes
+Star Wars (USA);gamegear
+starw;mame-advmame
+starw;mame-libretro
+starw;mame-mame4all
+Super Star Wars - Return of the Jedi (USA, Europe);gb
+Super Star Wars - Return of the Jedi (USA);snes
+Super Star Wars - The Empire Strikes Back (USA);snes
+Super Star Wars (USA);snes
+swa;arcade
+swa;mame-advmame
+swa;mame-libretro
+swa;mame-mame4all
+tomcatsw;arcade
+tomcatsw;mame-advmame
+tomcatsw;mame-libretro
