@@ -1,9 +1,9 @@
 #!/bin/bash
 
+IFS=';'
+
 infobox= ""
-infobox="${infobox}_______________________________________________________\n\n"
 infobox="${infobox}\n"
-infobox="${infobox}RetroArena Fruitbox Jukebox Utility\n\n"
 infobox="${infobox}The Fruitbox jukebox software turns RetroArena into a jukebox music machine.\n"
 infobox="${infobox}\n"
 infobox="${infobox}This utility is used to quickly configure some of the common options for it.\n"
@@ -29,13 +29,14 @@ infobox="${infobox}ButtonLeftJump   - define your button for page left\n"
 infobox="${infobox}ButtonRightJump  - define your button for page right\n"
 infobox="${infobox}\n"
 infobox="${infobox}***NOTE***\n"
-infobox="${infobox}Whenever you add or remove MP3 files, you must remove the current jukebox database file too.  Then launch the jukebox and it will rescan your files and build a new music database.\n"
+infobox="${infobox}Whenever you add or remove MP3 files, you must remove the current jukebox database file too.  Then launch the jukebox and it will rescan your files and build a new music database.\n\n"
+infobox="${infobox}Do you want to proceed?\n"
 
-dialog --backtitle "RetroArena Fruitbox Jukebox" \
---title "RetroArena Fruitbox Jukebox" \
---msgbox "${infobox}" 40 120
-
-
+# Welcome
+ dialog --backtitle "RetroArena" --title "RetroArena Fruitbox Jukebox Config" \
+    --yesno "${infobox}" \
+    25 80 2>&1 > /dev/tty \
+    || exit
 
 function main_menu() {
     local choice
