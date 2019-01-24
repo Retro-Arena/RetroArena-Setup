@@ -17,30 +17,15 @@ rp_module_section="opt"
 rp_module_flags=" !osmc !xbian !kms"
 
 function _update_hook_kodi() {
-    # to show as installed in retroarena-setup 4.x
     hasPackage kodi && mkdir -p "$md_inst"
 }
 
 function depends_kodi() {
-    if isPlatform "rpi"; then
-        if [[ "$md_mode" == "install" ]]; then
-            # remove old repository
-            rm -f /etc/apt/sources.list.d/mene.list
-            echo "deb http://pipplware.pplware.pt/pipplware/dists/$__os_codename/main/binary/ ./" >/etc/apt/sources.list.d/pipplware.list
-            wget -q -O- http://pipplware.pplware.pt/pipplware/key.asc | apt-key add - &>/dev/null
-        else
-            rm -f /etc/apt/sources.list.d/pipplware.list
-            apt-key del 4096R/BAA567BB >/dev/null
-        fi
-    elif isPlatform "x86" && [[ "$md_mode" == "install" ]]; then
-        apt-add-repository -y ppa:team-xbmc/ppa
-    fi
     getDepends policykit-1
     addUdevInputRules
 }
 
 function install_bin_kodi() {
-    # force aptInstall to get a fresh list before installing
     __apt_update=0
     aptInstall kodi-fbdev
 }
@@ -54,9 +39,9 @@ function remove_kodi() {
 
 function configure_kodi() {
     mkRomDir "kodi"
-    cp -r "$scriptdir/scriptmodules/emulators/kodi/kodi/" "$romdir/"
-    cp "$scriptdir/scriptmodules/emulators/kodi/Kodi.bash" /usr/bin/kodi
-    cp "$scriptdir/scriptmodules/emulators/kodi/DialogButtonMenu.xml" /usr/share/kodi/addons/skin.estuary/xml/
+    cp -r "$scriptdir/scriptmodules/ports/kodi/kodi/" "$romdir/"
+    cp "$scriptdir/scriptmodules/ports/kodi/Kodi.bash" /usr/bin/kodi
+    cp "$scriptdir/scriptmodules/ports/kodi/DialogButtonMenu.xml" /usr/share/kodi/addons/skin.estuary/xml/
     chown -R $user:$user "$romdir/kodi/"
 	moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
     setESSystem "kodi" "kodi" "$romdir/kodi" ".sh" "bash %ROM%" "kodi"
