@@ -13,6 +13,6 @@ rp_module_id="escollections"
 rp_module_desc="Add or update the custom collection gamelist"
 rp_module_section="config"
 
-function escollections() {
+function gui_escollections() {
     source $scriptdir/scriptmodules/config/escollections/escollections.sh
 }

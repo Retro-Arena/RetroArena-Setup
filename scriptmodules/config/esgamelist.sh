@@ -13,6 +13,6 @@ rp_module_id="esgamelist"
 rp_module_desc="Perform a cleanup in your EmulationStation gamelist.xml file"
 rp_module_section="config"
 
-function esgamelist() {
+function gui_esgamelist() {
     source $scriptdir/scriptmodules/config/esgamelist/esgamelist.sh
 }
