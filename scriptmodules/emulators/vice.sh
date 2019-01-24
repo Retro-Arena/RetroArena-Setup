@@ -74,31 +74,26 @@ _EOF_
 
     chmod +x "$md_inst/bin/vice.sh"
 
-    mkRomDir "c64"
-	mkRomDir "c128"
-	mkRomDir "vic20"
-	mkRomDir "plus4"
-	
-	
-
+    local system
+    for system in c64 c128 pet plus4 vic20 ; do
+        mkRomDir "$system"
+        addSystem "$system"
+    done
+    
     addEmulator 1 "$md_id-x64" "c64" "$md_inst/bin/vice.sh x64 %ROM%"
     addEmulator 0 "$md_id-x64sc" "c64" "$md_inst/bin/vice.sh x64sc %ROM%"
-    addEmulator 0 "$md_id-x128" "c64" "$md_inst/bin/vice.sh x128 %ROM%"
-    addEmulator 0 "$md_id-xpet" "c64" "$md_inst/bin/vice.sh xpet %ROM%"
-    addEmulator 0 "$md_id-xplus4" "c64" "$md_inst/bin/vice.sh xplus4 %ROM%"
-    addEmulator 0 "$md_id-xvic" "c64" "$md_inst/bin/vice.sh xvic %ROM%"
-    addEmulator 0 "$md_id-xvic-cart" "c64" "$md_inst/bin/vice.sh xvic %ROM% -cartgeneric"
-    addSystem "c64"
-	addSystem "c128"
-	addSystem "vic20"
-	addSystem "plus4"
-
+    addEmulator 1 "$md_id-x128" "c128" "$md_inst/bin/vice.sh x128 %ROM%"
+    addEmulator 1 "$md_id-xpet" "pet" "$md_inst/bin/vice.sh xpet %ROM%"
+    addEmulator 1 "$md_id-xplus4" "plus4" "$md_inst/bin/vice.sh xplus4 %ROM%"    
+    addEmulator 1 "$md_id-xvic" "vic20" "$md_inst/bin/vice.sh xvic %ROM%"
+    addEmulator 0 "$md_id-xvic-cart" "vic20" "$md_inst/bin/vice.sh xvic %ROM% -cartgeneric"
+    
     [[ "$md_mode" == "remove" ]] && return
-
+    
     # copy configs and symlink the old and new config folders to $md_conf_root/c64/
     moveConfigDir "$home/.vice" "$md_conf_root/c64"
     moveConfigDir "$home/.config/vice" "$md_conf_root/c64"
-
+    
     local config="$(mktemp)"
     echo "[C64]" > "$config"
     iniConfig "=" "" "$config"
@@ -115,11 +110,11 @@ _EOF_
     else
         iniSet "VICIIFullscreen" "1"
     fi
+    
+    for system in c64 c128 pet plus4 vic20; do
+        copyDefaultConfig "$config" "$md_conf_root/$system/sdl-vicerc"
+    done   
 
-    copyDefaultConfig "$config" "$md_conf_root/c64/sdl-vicerc"
-	copyDefaultConfig "$config" "$md_conf_root/c128/sdl-vicerc"
-	copyDefaultConfig "$config" "$md_conf_root/plus4/sdl-vicerc"
-	copyDefaultConfig "$config" "$md_conf_root/vic20/sdl-vicerc"
     rm "$config"
 
     if ! isPlatform "x11"; then
@@ -131,5 +126,4 @@ _EOF_
         iniSet "SDLWindowWidth" "384"
         iniSet "SDLWindowHeight" "272"
     fi
-
 }
