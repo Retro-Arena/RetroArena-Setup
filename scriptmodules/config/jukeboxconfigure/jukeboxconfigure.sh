@@ -8,7 +8,7 @@ infobox="${infobox}The Fruitbox jukebox software turns RetroArena into a jukebox
 infobox="${infobox}\n"
 infobox="${infobox}This utility is used to quickly configure some of the common options for it.\n"
 infobox="${infobox}\n"
-infobox="${infobox}  A special new folder has been created in the /roms directory called \"jukebox/mp3files\" for placing your MP3 files into.\n"
+infobox="${infobox}A special new folder has been created in the /roms directory called \"jukebox/mp3files\" for placing your MP3 files into.\n"
 infobox="${infobox}\n"
 infobox="${infobox}Once you place your music files into this folder, launching the jukebox will scan the folder and create a jukebox database for them.\n"
 infobox="${infobox}\n"
@@ -51,7 +51,7 @@ function main_menu() {
         case "$choice" in
             1) remove_database  ;;
             2) configure_gamepad  ;;
-            *)  break ;;
+            *) break ;;
         esac
     done
 }
@@ -72,4 +72,3 @@ sudo /opt/retroarena/ports/fruitbox/fruitbox --config-buttons
 }
 
 main_menu
-
