@@ -13,7 +13,7 @@ rp_module_id="jukeboxconfig"
 rp_module_desc="Configure common options for Fruitbox jukebox"
 rp_module_section="config"
 
-function gui_jukeboxconfigure() {
+function gui_jukeboxconfig() {
     source $scriptdir/scriptmodules/config/jukeboxconfig/jukeboxconfig.sh
 }
 
