@@ -10,11 +10,11 @@
 #
 
 rp_module_id="kodi"
-rp_module_desc="Kodi - Open source home theatre software. Please read the HELP"
+rp_module_desc="Kodi - Open source home theatre software. Read the Package Help for more information."
 rp_module_licence="GPL2 https://raw.githubusercontent.com/xbmc/xbmc/master/LICENSE.GPL"
-rp_module_help="This package is provided AS-IS and we will NOT provide support or be held responsible for whatever addons you install"
+rp_module_help="This package is provided AS-IS and we will NOT provide support or be held responsible for whatever addons you install."
 rp_module_section="opt"
-rp_module_flags=" !osmc !xbian !kms"
+rp_module_flags="!osmc !xbian !kms"
 
 function _update_hook_kodi() {
     hasPackage kodi && mkdir -p "$md_inst"
