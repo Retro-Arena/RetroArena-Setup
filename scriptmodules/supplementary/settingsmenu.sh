@@ -24,7 +24,6 @@ function _update_hook_settingsmenu() {
 
 function depends_settingsmenu() {
     getDepends mc
-	
 }
 
 function install_bin_settingsmenu() {
