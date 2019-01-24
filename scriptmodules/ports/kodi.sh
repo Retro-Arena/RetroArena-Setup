@@ -43,6 +43,6 @@ function configure_kodi() {
     cp "$scriptdir/scriptmodules/ports/kodi/Kodi.bash" /usr/bin/kodi
     cp "$scriptdir/scriptmodules/ports/kodi/DialogButtonMenu.xml" /usr/share/kodi/addons/skin.estuary/xml/
     chown -R $user:$user "$romdir/kodi/"
-	moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
+    moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
     setESSystem "kodi" "kodi" "$romdir/kodi" ".sh" "bash %ROM%" "kodi"
 }
