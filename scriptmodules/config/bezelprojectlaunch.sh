@@ -14,5 +14,5 @@ rp_module_desc="Downloader for RetroArach system bezel packs to be used for vari
 rp_module_section="config"
 
 function gui_bezelprojectlaunch() {
-    source $scriptdir/scriptmodules/configv/bezelproject/bezelproject.sh
+    source $scriptdir/scriptmodules/config/bezelproject/bezelproject.sh
 }
