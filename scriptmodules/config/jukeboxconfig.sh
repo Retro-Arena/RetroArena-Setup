@@ -9,11 +9,11 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-rp_module_id="jukeboxconfigure"
+rp_module_id="jukeboxconfig"
 rp_module_desc="Configure common options for Fruitbox jukebox"
 rp_module_section="config"
 
 function gui_jukeboxconfigure() {
-    source $scriptdir/scriptmodules/config/jukeboxconfigure/jukeboxconfigure.sh
+    source $scriptdir/scriptmodules/config/jukeboxconfig/jukeboxconfig.sh
 }
 
