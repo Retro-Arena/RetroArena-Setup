@@ -75,6 +75,11 @@ _EOF_
     chmod +x "$md_inst/bin/vice.sh"
 
     mkRomDir "c64"
+	mkRomDir "c128"
+	mkRomDir "vic20"
+	mkRomDir "plus4"
+	
+	
 
     addEmulator 1 "$md_id-x64" "c64" "$md_inst/bin/vice.sh x64 %ROM%"
     addEmulator 0 "$md_id-x64sc" "c64" "$md_inst/bin/vice.sh x64sc %ROM%"
@@ -84,6 +89,9 @@ _EOF_
     addEmulator 0 "$md_id-xvic" "c64" "$md_inst/bin/vice.sh xvic %ROM%"
     addEmulator 0 "$md_id-xvic-cart" "c64" "$md_inst/bin/vice.sh xvic %ROM% -cartgeneric"
     addSystem "c64"
+	addSystem "c128"
+	addSystem "vic20"
+	addSystem "plus4"
 
     [[ "$md_mode" == "remove" ]] && return
 
@@ -109,6 +117,9 @@ _EOF_
     fi
 
     copyDefaultConfig "$config" "$md_conf_root/c64/sdl-vicerc"
+	copyDefaultConfig "$config" "$md_conf_root/c128/sdl-vicerc"
+	copyDefaultConfig "$config" "$md_conf_root/plus4/sdl-vicerc"
+	copyDefaultConfig "$config" "$md_conf_root/vic20/sdl-vicerc"
     rm "$config"
 
     if ! isPlatform "x11"; then
