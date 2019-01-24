@@ -9,8 +9,10 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-rp_module_id="removemedia"
-rp_module_desc="Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system"
+rp_module_id="escollections"
+rp_module_desc="Add or update the custom collection gamelist"
 rp_module_section="config"
 
-source $scriptdir/scriptmodules/config/removemedia/removemedia.sh
+function escollections() {
+    source $scriptdir/scriptmodules/config/escollections/escollections.sh
+}

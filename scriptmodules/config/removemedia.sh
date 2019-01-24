@@ -9,8 +9,10 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-rp_module_id="esgamelist"
-rp_module_desc="Perform a cleanup in your EmulationStation gamelist.xml file"
+rp_module_id="removemedia"
+rp_module_desc="Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system"
 rp_module_section="config"
 
-source $scriptdir/scriptmodules/config/esgamelist/esgamelist.sh
+function removemedia() {
+    source $scriptdir/scriptmodules/config/removemedia/removemedia.sh
+}

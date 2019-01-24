@@ -9,8 +9,10 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-rp_module_id="escollections"
-rp_module_desc="Add or update the custom collection gamelist"
+rp_module_id="esgamelist"
+rp_module_desc="Perform a cleanup in your EmulationStation gamelist.xml file"
 rp_module_section="config"
 
-source $scriptdir/scriptmodules/config/escollections/escollections.sh
+function esgamelist() {
+    source $scriptdir/scriptmodules/config/esgamelist/esgamelist.sh
+}
