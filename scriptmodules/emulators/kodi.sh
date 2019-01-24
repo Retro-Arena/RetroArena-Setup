@@ -55,7 +55,7 @@ function remove_kodi() {
 function configure_kodi() {
    mkRomDir "kodi"
  cp -r "$home/$dir/RetroArena-Setup/scriptmodules/emulators/kodi/kodi/" "$romdir/"
- cp "$home/$dir/RetroArena-Setup/scriptmodules/emulators/kodi/Kodi" /usr/bin/kodi
+ cp "$home/$dir/RetroArena-Setup/scriptmodules/emulators/kodi/Kodi.bash" /usr/bin/kodi
 cp "$home/$dir/RetroArena-Setup/scriptmodules/emulators/kodi/DialogButtonMenu.xml" /usr/share/kodi/addons/skin.estuary/xml/
     chown -R $user:$user "$romdir/kodi/"
 	moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
