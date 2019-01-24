@@ -434,8 +434,7 @@ function rp_registerAllModules() {
     rp_registerModuleDir 400 "driver"
     rp_registerModuleDir 500 "supplementary"
     rp_registerModuleDir 600 "config"
-    rp_registerModuleDir 700 "configv"
-    rp_registerModuleDir 800 "admin"
+    rp_registerModuleDir 700 "admin"
 }
 
 function rp_getIdxFromId() {
