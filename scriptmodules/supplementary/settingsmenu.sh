@@ -87,7 +87,7 @@ function configure_settingsmenu()
         'Media: ES Themes'
         'System: Fan Control'
         'System: File Manager'
-        'Media: HurstyS ES Themes'
+        "Media: Hursty's ES Themes"
         'Sound: Jukebox Config'
         'System: Odroid-Config'
         'Media: Remove Media'
@@ -123,17 +123,12 @@ NOTE: Always make a backup copy of your gamelist.xml and media files before maki
         'Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.
         
 NOTE: Requires a keyboard to be connected.'
-        'Install, uninstall, or update HurstyS ES themes.'
+        "Install, uninstall, or update Hursty's ES themes."
         'Configure common options for Fruitbox jukebox.'
         'Expand filesystem, configure network, boot, localisation, SSH, etc.
         
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!'
-        'Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system where there is not a matching game for it. If you keep your media for MAME or Final Burn Alpha in the /roms/arcade folder, there is a special choice just for that. This script expects you to be using the following media folders.
-
-boxart
-cartart
-snap
-wheel
+        'Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system where there is not a matching game for it. If you keep your media for MAME or Final Burn Alpha in the /roms/arcade folder, there is a special choice just for that. This script expects you to be using the following media folders: boxart, cartart, snap, and wheel.
 
 NOTE: Always make a backup copy of your SD card and your roms and media files before making changes to your system.'
         'Launches the RetroArch GUI so you can change RetroArch options.
