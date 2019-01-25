@@ -111,13 +111,13 @@ function configure_settingsmenu()
         'Reset controller configurations to factory default.
         
 NOTE: This will cause your system to REBOOT.'
-        'Install, uninstall, or update EmulationStation themes.'
         'Add or update the custom collection gamelist that will be used to show games in the custom collections menu items.
 
 NOTE: This utility only works with rom files using the No-Intro naming convention (like Emumovies/Hyperspin).'
         'Perform a cleanup in your EmulationStation gamelist.xml file. The cleanup utility will only work on gamelist.xml files located within the roms folder also.
 
 NOTE: Always make a backup copy of your gamelist.xml and media files before making changes to your system.'
+        'Install, uninstall, or update EmulationStation themes.'
         'Change the fan settings to control cooling and fan noise.'
         'Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.
         
