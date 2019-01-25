@@ -12,37 +12,25 @@
 rp_module_id="kodi"
 rp_module_desc="Kodi - Open source home theatre software. Read the Package Help for more information."
 rp_module_licence="GPL2 https://raw.githubusercontent.com/xbmc/xbmc/master/LICENSE.GPL"
-rp_module_help="This package is provided AS-IS and we will NOT provide support or be held responsible for whatever addons you install."
+rp_module_help="This package is provided AS-IS and we will NOT provide support or be held responsible for any addons you install."
 rp_module_section="opt"
 rp_module_flags="!osmc !xbian !kms"
 
-function _update_hook_kodi() {
-    hasPackage kodi && mkdir -p "$md_inst"
-}
-
-function depends_kodi() {
-    getDepends policykit-1
-    addUdevInputRules
-}
-
 function install_bin_kodi() {
-    __apt_update=0
     aptInstall kodi-fbdev
+    mkRomDir "kodi"
+    cp -r "$scriptdir/scriptmodules/ports/kodi/kodi" "$romdir/"
+    cp "$scriptdir/scriptmodules/ports/kodi/Kodi.bash" "/usr/bin/kodi"
+    cp "$scriptdir/scriptmodules/ports/kodi/DialogButtonMenu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
+    chown -R $user:$user "$romdir/kodi"
+    moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
+    setESSystem "kodi" "kodi" "$romdir/kodi" ".sh" "bash %ROM%" "kodi"
 }
 
 function remove_kodi() {
     aptRemove kodi-fbdev
     aptRemove kodi-fbdev-bin
     aptRemove kodi-fbdev-data
-    rp_callModule kodi depends remove
-}
-
-function configure_kodi() {
-    mkRomDir "kodi"
-    cp -r "$scriptdir/scriptmodules/ports/kodi/kodi/" "$romdir/"
-    cp "$scriptdir/scriptmodules/ports/kodi/Kodi.bash" /usr/bin/kodi
-    cp "$scriptdir/scriptmodules/ports/kodi/DialogButtonMenu.xml" /usr/share/kodi/addons/skin.estuary/xml/
-    chown -R $user:$user "$romdir/kodi/"
-    moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
-    setESSystem "kodi" "kodi" "$romdir/kodi" ".sh" "bash %ROM%" "kodi"
+    rm -rf "$romdir/kodi"
+    delSystem kodi
 }
