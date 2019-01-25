@@ -1083,13 +1083,13 @@ function ogst_play() {
         SYSTEM="c64"
     elif [[ $EMULATOR == vice-x128 ]]; then
         EMU_PROC="x128"
-        SYSTEM="c64"
+        SYSTEM="c128"
     elif [[ $EMULATOR == vice-xpet ]]; then
         EMU_PROC="xpet"
-        SYSTEM="c64"
+        SYSTEM="pet"
     elif [[ $EMULATOR == vice-xplus4 ]]; then
         EMU_PROC="xplus4"
-        SYSTEM="c64"
+        SYSTEM="plus4"
     elif [[ $EMULATOR == vice-xvic ]]; then
         EMU_PROC="xvic"
         SYSTEM="vic20"
