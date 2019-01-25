@@ -29,8 +29,8 @@ infobox="${infobox}ButtonLeftJump   - define your button for page left\n"
 infobox="${infobox}ButtonRightJump  - define your button for page right\n"
 infobox="${infobox}\n"
 infobox="${infobox}***NOTE***\n"
-infobox="${infobox}Whenever you add or remove MP3 files, you must remove the current jukebox database file too.  Then launch the jukebox and it will rescan your files and build a new music database.\n\n"
-infobox="${infobox}Do you want to proceed?\n"
+infobox="${infobox}Whenever you add or remove MP3 files, you must remove the current jukebox database file too.  Then launch the jukebox and it will rescan your files and build a new music database.\n\n\n"
+infobox="${infobox}Do you want to proceed?"
 
 # Welcome
  dialog --backtitle "RetroArena" --title "RetroArena Fruitbox Jukebox Config" \
