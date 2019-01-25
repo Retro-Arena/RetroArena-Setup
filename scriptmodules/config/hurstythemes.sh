@@ -10,7 +10,7 @@
 #
 
 rp_module_id="hurstythemes"
-rp_module_desc="Hursty's EmulationStation Themes Installer"
+rp_module_desc="Hursty's ES Theme Installer and Randomizer"
 rp_module_section="config"
 
 function depends_hurstythemes() {

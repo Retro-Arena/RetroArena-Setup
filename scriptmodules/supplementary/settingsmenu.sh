@@ -123,7 +123,7 @@ NOTE: Always make a backup copy of your gamelist.xml and media files before maki
         'Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.
         
 NOTE: Requires a keyboard to be connected.'
-        "Install, uninstall, or update Hursty's ES themes."
+        "Install, uninstall, or update Hursty's ES themes. Also, enable or disable the Theme Randomizer on boot option."
         'Configure common options for Fruitbox jukebox.'
         'Expand filesystem, configure network, boot, localisation, SSH, etc.
         
