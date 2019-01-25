@@ -33,7 +33,7 @@ infobox="${infobox}Whenever you add or remove MP3 files, you must remove the cur
 infobox="${infobox}Do you want to proceed?"
 
 # Welcome
- dialog --backtitle "RetroArena" --title "RetroArena Fruitbox Jukebox Config" \
+ dialog --backtitle "RetroArena" --title "Fruitbox Jukebox Config" \
     --yesno "${infobox}" \
     25 80 2>&1 > /dev/tty \
     || exit

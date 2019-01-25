@@ -3,7 +3,7 @@
 IFS=';'
 
 # Welcome
- dialog --backtitle "RetroArena" --title "RetroArena Media Removal Utility" \
+ dialog --backtitle "RetroArena" --title "Media Removal Utility" \
     --yesno "\nThis utility will remove extra media files (boxart, cartart, snap, and wheel) for a chosen system where there is not a matching game for it.\n\nIf you keep your media for MAME or Final Burn Alpha in the /roms/arcade folder, there is a special choice just for that.\n\nThis script expects you to be using the following media folders.\n\nboxart\ncartart\nsnap\nwheel\n\nWARNING: Always make a backup copy of your SD card and your roms and media files before making changes to your system.\n\n\nDo you want to proceed?" \
     25 80 2>&1 > /dev/tty \
     || exit
