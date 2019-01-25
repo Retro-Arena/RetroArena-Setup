@@ -77,7 +77,7 @@ function configure_settingsmenu()
     local names=(
         "Media: Bezel Project"
         "Sound: BGM Toggle"
-        "System: Bluetooth"
+        "Network: Bluetooth"
         "Media: Case Config for OGST"
         "Media: Case Themes for OGST"
         "System: Configuration Editor"
@@ -94,12 +94,12 @@ function configure_settingsmenu()
         "System: Retroarch"
         "System: RetroArena-Setup"
         "System: Runcommand Config"
-        "System: Show IP"
+        "Network: Show IP"
         "System: Smart Kiosk"
         "System: Soft Reboot"
         "Media: Splash Screens"
         "System: System Info Utility"
-        "System: Wi-Fi"
+        "Network: Wi-Fi"
     )
     
     local descs=(
