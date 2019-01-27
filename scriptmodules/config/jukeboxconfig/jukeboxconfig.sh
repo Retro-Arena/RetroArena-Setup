@@ -75,9 +75,10 @@ sudo /opt/retroarena/ports/fruitbox/fruitbox --config-buttons
 }
 
 function select_skin() {
-    startfb="/home/pigaming/RetroArena/roms/jukebox/+Start fruitbox.sh"
+    local startfb
     local choice
     while true; do
+        startfb="/home/pigaming/RetroArena/roms/jukebox/+Start fruitbox.sh"
         choice=$(dialog --backtitle "$BACKTITLE" --title " SELECT SKIN " \
             --ok-label OK --cancel-label Cancel \
             --menu "Which skin would you like to use?" 25 100 20 \
@@ -94,48 +95,48 @@ function select_skin() {
 
         case "$choice" in
             1) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=Granite' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=Granite' $startfb
                 printMsgs "dialog" "Enabled Granite skin"
                 ;;
             2) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=MikeTV' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=MikeTV' $startfb
                 printMsgs "dialog" "Enabled MikeTV skin"
                 ;;
             3) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=Modern' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=Modern' $startfb
                 printMsgs "dialog" "Enabled Modern skin"
                 ;;
             4) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=NumberOne' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=NumberOne' $startfb
                 printMsgs "dialog" "Enabled NumberOne skin"
                 ;;
             5) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=Splat' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=Splat' $startfb
                 printMsgs "dialog" "Enabled Splat skin"
                 ;;
             6) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=TouchOne' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=TouchOne' $startfb
                 printMsgs "dialog" "Enabled TouchOne skin"
                 ;;
             7) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=WallJuke' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=WallJuke' $startfb
                 printMsgs "dialog" "Enabled WallJuke skin"
                 ;;
             8) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=WallSmall' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=WallSmall' $startfb
                 printMsgs "dialog" "Enabled WallSmall skin"
                 ;;
             9) 
-                sed -i '/skin=/d' '$startfb'
-                sed -i '2i skin=Wurly' '$startfb'
+                sed -i '/skin=/d' $startfb
+                sed -i '2i skin=Wurly' $startfb
                 printMsgs "dialog" "Enabled Wurly skin"
                 ;;
             *) break ;;
