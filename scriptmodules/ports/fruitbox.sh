@@ -63,7 +63,7 @@ function install_fruitbox() {
     mkRomDir "jukebox"
     cat > "$romdir/jukebox/+Start fruitbox.sh" << _EOF_
 #!/bin/bash
-if [[ -e "$home/RetroArena/roms/jukebox/fruibox.db" ]]; then
+if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
     rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
 fi
 skin=Modern
