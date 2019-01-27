@@ -55,7 +55,7 @@ function install_fruitbox() {
 	cp -v "$md_build/fruitbox/skins.txt" "$md_inst/"
 	cp -vR "$md_build/fruitbox/skins" "$md_inst/"
     mkRomDir "jukebox"
-    cat > "$romdir/jukebox/+Start fruitbox.sh" << _EOF_
+    cat > "$romdir/jukebox/+Start Fruitbox.sh" << _EOF_
 #!/bin/bash
 skin=Modern
 if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
