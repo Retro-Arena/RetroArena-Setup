@@ -64,7 +64,7 @@ fi
 if [[ -e "$home/.config/fruitbox001" ]]; then
     device=\$(cat /proc/bus/input/devices | grep -m1 -o '".*"' | sed 's/"//g')
     rm -rf "$home/.config/fruitbox001"
-    /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg --input-device "\$device" --config-buttons
+    /opt/retroarena/ports/fruitbox/fruitbox --input-device "\$device" --config-buttons
 else
     /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg
 fi
