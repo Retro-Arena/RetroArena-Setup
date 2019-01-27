@@ -67,7 +67,7 @@ if [[ -e "$home/RetroArena/roms/jukebox/fruibox.db" ]]; then
     rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
 fi
 skin=Modern
-/opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/$skin/fruitbox.cfg
+/opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg
 _EOF_
     chmod a+x "$romdir/jukebox/+Start fruitbox.sh"
     chown $user:$user "$romdir/jukebox/+Start fruitbox.sh"
