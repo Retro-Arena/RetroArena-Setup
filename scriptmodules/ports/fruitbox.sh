@@ -11,7 +11,7 @@
 
 rp_module_id="fruitbox"
 rp_module_desc="Fruitbox - A customizable MP3 Retro Jukebox. Read the Package Help for more information."
-rp_module_help="Copy your .mp3 files to '$romdir/jukebox' then launch Fruitbox from EmulationStation\n\nUsing a keyboard, press 'A' then '0' on your keyboard to play the song on the 'AO' slot.\n\nTo exit, press the 'ESC' button on your keyboard."
+rp_module_help="Copy your .mp3 files to '$romdir/jukebox' then launch Fruitbox from EmulationStation\n\nUsing a keyboard, press 'A' then '0' on your keyboard to play the song on the 'AO' slot.\n\nTo exit, press the 'ESC' button on your keyboard.\n\nTo configure your gamepad, launch 'Jukebox Config' in EmulationStation > Settings, then select 'Verify Gamepad Name'."
 rp_module_section="opt"
 
 function depends_fruitbox() {
@@ -163,7 +163,7 @@ function gui_fruitbox() {
     while true; do
         local options=(
             1 "Select Fruitbox Skin"
-            2 "Verify First Input Device Name"
+            2 "Verify Gamepad Name"
             3 "Enable Fruitbox Gamepad Config"
             4 "Disable Fruitbox Gamepad Config"
         )
@@ -176,7 +176,7 @@ function gui_fruitbox() {
                 ;;
             2)
                 verify_gamepad_fruitbox
-                printMsgs "dialog" "Is this the input device you'd like to configure?\n\n$device\n\nIf so, start Fruitbox to configure your controller. Otherwise, reboot your system with only the gamepad attached and rerun this test."
+                printMsgs "dialog" "Is this the gamepad you'd like to configure?\n\n$device\n\nIf so, start Fruitbox to configure your gamepad. Otherwise, reboot your system with only the gamepad attached and rerun this test."
                 ;;
             3)
                 enable_gamepad_fruitbox
