@@ -169,7 +169,7 @@ function gui_fruitbox() {
                 ;;
             2)
                 verify_gamepad_fruitbox
-                printMsgs "dialog" "Is this the gamepad you'd like to configure?\n\n$device\n\nIf YES, launch Fruitbox from EmulationStation to configure your gamepad.\n\nIf NO, perform a reboot your system with only the gamepad attached and rerun this test."
+                printMsgs "dialog" "Is this the gamepad you'd like to configure?\n\n$device\n\nIf YES, launch Fruitbox from EmulationStation to configure your gamepad.\n\nIf NO, perform a reboot your system with only the gamepad attached and rerun this test.\n\nOnce completed, the config file will be located in $home/fruitbox.btn"
                 ;;
         esac
     done
