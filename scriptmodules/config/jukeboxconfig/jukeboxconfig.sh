@@ -4,15 +4,13 @@ IFS=';'
 
 infobox= ""
 infobox="${infobox}\n"
-infobox="${infobox}The Fruitbox jukebox software turns RetroArena into a jukebox music machine.\n"
+infobox="${infobox}The Fruitbox jukebox software turns RetroArena into a jukebox music machine. This utility is used to quickly configure common options for it.\n"
 infobox="${infobox}\n"
-infobox="${infobox}This utility is used to quickly configure some of the common options for it.\n"
+infobox="${infobox}To use the jukebox, place your .mp3 files in the 'roms/jukebox' folder. Once you've place your music files into this folder, simply launch Fruibox from EmulationStation.\n"
 infobox="${infobox}\n"
-infobox="${infobox}A special new folder has been created in the /roms directory called \"jukebox/mp3files\" for placing your MP3 files into.\n"
+infobox="${infobox}You can select from various pre-installed skins. The default skin used is 'Modern'.\n"
 infobox="${infobox}\n"
-infobox="${infobox}Once you place your music files into this folder, launching the jukebox will scan the folder and create a jukebox database for them.\n"
-infobox="${infobox}\n"
-infobox="${infobox}You can also configure your gamepad to use the jukebox. (Note a keyboard is required during gamepad configuration only).\n"
+infobox="${infobox}You can also configure your gamepad to use the jukebox. NOTE: a keyboard is required during gamepad configuration only.\n"
 infobox="${infobox}\n"
 infobox="${infobox}Here are some of the command jukebox-to-gamepad assignments to setup.\n"
 infobox="${infobox}\n"
@@ -27,9 +25,7 @@ infobox="${infobox}ButtonUp         - define your d-pad direction for up\n"
 infobox="${infobox}ButtonDown       - define your d-pad direction for down\n"
 infobox="${infobox}ButtonLeftJump   - define your button for page left\n"
 infobox="${infobox}ButtonRightJump  - define your button for page right\n"
-infobox="${infobox}\n"
-infobox="${infobox}***NOTE***\n"
-infobox="${infobox}Whenever you add or remove MP3 files, you must remove the current jukebox database file too.  Then launch the jukebox and it will rescan your files and build a new music database.\n\n\n"
+infobox="${infobox}\n\n\n"
 infobox="${infobox}Do you want to proceed?"
 
 # Welcome
@@ -40,38 +36,20 @@ infobox="${infobox}Do you want to proceed?"
 
 function main_menu() {
     local choice
-
     while true; do
         choice=$(dialog --backtitle "$BACKTITLE" --title " MAIN MENU " \
             --ok-label OK --cancel-label Exit \
             --menu "What action would you like to perform?" 25 100 20 \
-            1 "Delete current jukebox music database (jukebox will refresh upon next launch)" \
-            2 "Configure gamepad button assignments" \
-            3 "Select skin" \
+            1 "Select default skin" \
+            2 "Configure gamepad button assignments (CURRENTLY NOT WORKING)" \
             2>&1 > /dev/tty)
 
         case "$choice" in
-            1) remove_database  ;;
+            1) select_skin  ;;
             2) configure_gamepad  ;;
-            3) select_skin  ;;
             *) break ;;
         esac
     done
-}
-
-
-function remove_database() {
-dialog --infobox "...processing..." 3 20 ; sleep 2
-
-rm /home/pigaming/RetroArena/roms/jukebox/*.db 2> /dev/null
-
-}
-
-function configure_gamepad() {
-dialog --infobox "...processing..." 3 20 ; sleep 2
-
-sudo /opt/retroarena/ports/fruitbox/fruitbox --config-buttons
-
 }
 
 function select_skin() {
@@ -142,6 +120,11 @@ function select_skin() {
             *) break ;;
         esac
     done
+}
+
+function configure_gamepad() {
+    dialog --infobox "...processing..." 3 20 ; sleep 2
+    sudo /opt/retroarena/ports/fruitbox/fruitbox --config-buttons
 }
 
 main_menu

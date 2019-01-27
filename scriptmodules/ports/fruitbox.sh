@@ -66,6 +66,10 @@ function configure_fruitbox() {
     mkRomDir "jukebox"
     cat > "$romdir/jukebox/+Start fruitbox.sh" << _EOF_
 #!/bin/bash
+fbdb="/home/pigaming/RetroArena/roms/jukebox/fruitbox.db"
+if [[ -e "$fbdb" ]]; then
+    rm -rf "$fbdb"
+fi
 skin=Modern
 /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/$skin/fruitbox.cfg
 _EOF_
