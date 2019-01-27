@@ -67,6 +67,7 @@ _EOF_
     chown $user:$user "$romdir/jukebox/+Start fruitbox.sh"
     addEmulator 0 "$md_id" "jukebox" "fruitbox %ROM%"
     addSystem "jukebox" "Fruitbox Jukebox" ".sh"
+    touch "$home/.config/fruitbox001"
 }
 
 function remove_fruitbox() {
@@ -141,14 +142,14 @@ function skin_fruitbox() {
 }
 
 function gamepad_fruitbox() {
-    sudo /opt/retroarena/ports/fruitbox/fruitbox --config-buttons
+    touch "$home/.config/fruitbox001"
 }
 
 function gui_fruitbox() {  
     while true; do
         local options=(
             1 "Select Fruitbox Skin"
-            2 "Configure Gamepad (CURRENTLY NOT WORKING)"
+            2 "Enable Fruitbox Gamepad Config"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -159,6 +160,7 @@ function gui_fruitbox() {
                 ;;
             2)
                 gamepad_fruitbox
+                printMsgs "dialog" "Enabled Fruitbox Gamepad Config\n\nThe configure gamepad option will appear next time you start Fruitbox. This is a one-time setting. If you need to reconfigure a gamepad again, re-enable this option.\n\nNOTE: A connected keyboard is required."
                 ;;
         esac
     done
