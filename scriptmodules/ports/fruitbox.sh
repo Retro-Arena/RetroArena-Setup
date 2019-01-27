@@ -57,11 +57,16 @@ function install_fruitbox() {
     mkRomDir "jukebox"
     cat > "$romdir/jukebox/+Start fruitbox.sh" << _EOF_
 #!/bin/bash
+skin=Modern
 if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
     rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
 fi
-skin=Modern
-/opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg
+if [[ -e "$home/.config/fruitbox001" ]]; then
+    rm -rf "$home/.config/fruitbox001"
+    /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg --config-buttons
+else
+    /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg
+fi
 _EOF_
     chmod a+x "$romdir/jukebox/+Start fruitbox.sh"
     chown $user:$user "$romdir/jukebox/+Start fruitbox.sh"
@@ -141,8 +146,12 @@ function skin_fruitbox() {
     done
 }
 
-function gamepad_fruitbox() {
+function enable_gamepad_fruitbox() {
     touch "$home/.config/fruitbox001"
+}
+
+function disable_gamepad_fruitbox() {
+    rm -rf "$home/.config/fruitbox001"
 }
 
 function gui_fruitbox() {  
@@ -150,6 +159,7 @@ function gui_fruitbox() {
         local options=(
             1 "Select Fruitbox Skin"
             2 "Enable Fruitbox Gamepad Config"
+            3 "Disable Fruitbox Gamepad Config"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -159,8 +169,12 @@ function gui_fruitbox() {
                 skin_fruitbox
                 ;;
             2)
-                gamepad_fruitbox
+                enable_gamepad_fruitbox
                 printMsgs "dialog" "Enabled Fruitbox Gamepad Config\n\nThe configure gamepad option will appear next time you start Fruitbox. This is a one-time setting. If you need to reconfigure a gamepad again, re-enable this option.\n\nNOTE: A connected keyboard is required."
+                ;;
+            3)
+                disable_gamepad_fruitbox
+                printMsgs "dialog" "Disabled Fruitbox Gamepad Config"
                 ;;
         esac
     done
