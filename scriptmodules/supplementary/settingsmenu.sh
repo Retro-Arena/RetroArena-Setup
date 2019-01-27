@@ -124,7 +124,7 @@ NOTE: Always make a backup copy of your 'gamelist.xml' and media files before ma
         
 NOTE: Requires a keyboard to be connected."
         "Install, uninstall, or update Hursty's ES themes. Also, enable or disable the Theme Randomizer on boot option."
-        "Configure common options for Fruitbox jukebox."
+        "Configure the default skin and gamepad for Fruitbox jukebox."
         "Expand filesystem, configure network, boot, localisation, SSH, etc.
         
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
