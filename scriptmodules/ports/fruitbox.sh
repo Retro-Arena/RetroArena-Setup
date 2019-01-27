@@ -60,15 +60,11 @@ function install_fruitbox() {
     cp -v "$md_build/fruitbox/build/fruitbox" "$md_inst/"
 	cp -v "$md_build/fruitbox/skins.txt" "$md_inst/"
 	cp -vR "$md_build/fruitbox/skins" "$md_inst/"
-}
-
-function configure_fruitbox() {
     mkRomDir "jukebox"
     cat > "$romdir/jukebox/+Start fruitbox.sh" << _EOF_
 #!/bin/bash
-fbdb="/home/pigaming/RetroArena/roms/jukebox/fruitbox.db"
-if [[ -e "$fbdb" ]]; then
-    rm -rf "$fbdb"
+if [[ -e "$home/RetroArena/roms/jukebox/fruibox.db" ]]; then
+    rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
 fi
 skin=Modern
 /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/$skin/fruitbox.cfg
@@ -77,4 +73,9 @@ _EOF_
     chown $user:$user "$romdir/jukebox/+Start fruitbox.sh"
     addEmulator 0 "$md_id" "jukebox" "fruitbox %ROM%"
     addSystem "jukebox" "Fruitbox Jukebox" ".sh"
+}
+
+function remove_fruitbox() {
+    rm -rf "$romdir/jukebox"
+    delSystem jukebox
 }
