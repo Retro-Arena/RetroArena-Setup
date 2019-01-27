@@ -147,15 +147,8 @@ function skin_fruitbox() {
     done
 }
 
-function enable_gamepad_fruitbox() {
-    touch "$home/.config/fruitbox001"
-}
-
-function disable_gamepad_fruitbox() {
-    rm -rf "$home/.config/fruitbox001"
-}
-
 function verify_gamepad_fruitbox() {
+    touch "$home/.config/fruitbox001"
     device=$(cat /proc/bus/input/devices | grep -m1 -o '".*"' | sed 's/"//g')
 }
 
@@ -177,14 +170,6 @@ function gui_fruitbox() {
             2)
                 verify_gamepad_fruitbox
                 printMsgs "dialog" "Is this the gamepad you'd like to configure?\n\n$device\n\nIf YES, launch Fruitbox from EmulationStation to configure your gamepad.\n\nIf NO, perform a reboot your system with only the gamepad attached and rerun this test."
-                ;;
-            3)
-                enable_gamepad_fruitbox
-                printMsgs "dialog" "Enabled Fruitbox Gamepad Config\n\nThe configure gamepad option will appear next time you start Fruitbox. This is a one-time setting. If you need to reconfigure a gamepad again, re-enable this option.\n\nOnce completed, the config file will be located in $home/fruitbox.btn"
-                ;;
-            4)
-                disable_gamepad_fruitbox
-                printMsgs "dialog" "Disabled Fruitbox Gamepad Config"
                 ;;
         esac
     done
