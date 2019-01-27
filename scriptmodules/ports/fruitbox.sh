@@ -69,8 +69,8 @@ else
     /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg
 fi
 _EOF_
-    chmod a+x "$romdir/jukebox/+Start fruitbox.sh"
-    chown $user:$user "$romdir/jukebox/+Start fruitbox.sh"
+    chmod a+x "$romdir/jukebox/+Start Fruitbox.sh"
+    chown $user:$user "$romdir/jukebox/+Start Fruitbox.sh"
     addEmulator 0 "$md_id" "jukebox" "fruitbox %ROM%"
     addSystem "jukebox" "Fruitbox Jukebox" ".sh"
     touch "$home/.config/fruitbox001"
