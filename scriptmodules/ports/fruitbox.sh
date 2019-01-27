@@ -79,3 +79,94 @@ function remove_fruitbox() {
     rm -rf "$romdir/jukebox"
     delSystem jukebox
 }
+
+function skin_fruitbox() {
+    while true; do
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local options=(
+            1 "Granite"
+            2 "MikeTV"
+            3 "Modern (default)"
+            4 "NumberOne"
+            5 "Splat"
+            6 "TouchOne"
+            7 "WallJuke"
+            8 "WallSmall"
+            9 "Wurly"
+        )
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            1) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=Granite" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled Granite skin"
+                ;;
+            2) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=MikeTV" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled MikeTV skin"
+                ;;
+            3) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=Modern" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled Modern skin"
+                ;;
+            4) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=NumberOne" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled NumberOne skin"
+                ;;
+            5) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=Splat" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled Splat skin"
+                ;;
+            6) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=TouchOne" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled TouchOne skin"
+                ;;
+            7) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=WallJuke" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled WallJuke skin"
+                ;;
+            8) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=WallSmall" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled WallSmall skin"
+                ;;
+            9) 
+                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "2i skin=Wurly" "$romdir/jukebox/+Start fruitbox.sh"
+                printMsgs "dialog" "Enabled Wurly skin"
+                ;;
+        esac
+    done
+}
+
+function gamepad_fruitbox() {
+    dialog --infobox "...processing..." 3 20 ; sleep 2
+    sudo /opt/retroarena/ports/fruitbox/fruitbox --config-buttons
+}
+
+function gui_fruitbox() {  
+    while true; do
+        local options=(
+            1 "Select default skin"
+            2 "Configure gamepad button assignments (CURRENTLY NOT WORKING)"
+        )
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            1)
+                skin_fruitbox
+                ;;
+            2)
+                gamepad_fruitbox
+                ;;
+        esac
+    done
+}

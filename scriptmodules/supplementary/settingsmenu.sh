@@ -59,8 +59,8 @@ function configure_settingsmenu()
         "esthemes"
         "fancontrol"
         "filemanager"
+        "fruitbox"
         "hurstythemes"
-        "jukeboxconfig"
         "odroidconfig"
         "removemedia"
         "retroarch"
@@ -87,8 +87,8 @@ function configure_settingsmenu()
         "Media: ES Themes"
         "System: Fan Control"
         "System: File Manager"
+        "Media: Jukebox Config"
         "Media: Hursty's ES Themes"
-        "Sound: Jukebox Config"
         "System: Odroid-Config"
         "Media: Remove Media"
         "System: Retroarch"
@@ -123,8 +123,8 @@ NOTE: Always make a backup copy of your 'gamelist.xml' and media files before ma
         "Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.
         
 NOTE: Requires a keyboard to be connected."
-        "Install, uninstall, or update Hursty's ES themes. Also, enable or disable the Theme Randomizer on boot option."
         "Configure the default skin and gamepad for Fruitbox jukebox."
+        "Install, uninstall, or update Hursty's ES themes. Also, enable or disable the Theme Randomizer on boot option."
         "Expand filesystem, configure network, boot, localisation, SSH, etc.
         
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
@@ -164,7 +164,7 @@ NOTE: Requires a keyboard to be connected."
         "true"
         "true"
         "true"
-        "false"
+        "true"
         "true"
         "true"
         "true"
