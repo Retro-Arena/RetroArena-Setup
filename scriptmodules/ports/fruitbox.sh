@@ -11,7 +11,7 @@
 
 rp_module_id="fruitbox"
 rp_module_desc="Fruitbox - A customizable MP3 Retro Jukebox. Read the Package Help for more information."
-rp_module_help="Copy your .mp3 files to $romdir/jukebox\n\nTo configure a gamepad, use the 'Jukebox Config' tool in Settings.\n\nIf using a keyboard, press 'A' then '0' on your keyboard to play the song on the AO slot.\n\nTo exit, press the 'ESC' button on your keyboard."
+rp_module_help="Copy your .mp3 files to '$romdir/jukebox' then launch Fruitbox from EmulationStation\n\nUsing a keyboard, press 'A' then '0' on your keyboard to play the song on the 'AO' slot.\n\nTo exit, press the 'ESC' button on your keyboard."
 rp_module_section="opt"
 
 function depends_fruitbox() {
@@ -22,8 +22,6 @@ function sources_fruitbox() {
     gitPullOrClone "$md_build/allegro5" "https://github.com/dos1/allegro5.git"
     gitPullOrClone "$md_build/fruitbox" "https://github.com/Retro-Arena/rpi-fruitbox.git"
     downloadAndExtract "https://ftp.osuosl.org/pub/blfs/conglomeration/mpg123/mpg123-1.24.0.tar.bz2" "$md_build"
-    #wget http://odroidarena.com/pub/additional-files/CMakeLists.txt
-    #wget http://odroidarena.com/pub/additional-files/Toolchain-odroid.cmake
 }
 
 function build_fruitbox() {
@@ -36,14 +34,11 @@ function build_fruitbox() {
     
     # Overwrite build files.
     cp -vf "$md_data/CMakeLists.txt" "$md_build/allegro5/"
-    #cp -vf "$md_build/CMakeLists.txt" "$md_build/allegro5/"
-    #cp -vf "$md_build/Toolchain-odroid.cmake" "$md_build/allegro5/cmake/"
     
     # Build Allegro5
     cd "$md_build/allegro5"
     mkdir build && cd build
     cmake .. -DSHARED=off
-    #cmake .. -DCMAKE_TOOLCHAIN_FILE=../cmake/Toolchain-odroid.cmake -DSHARED=off
     make -j4 && make install
     export PKG_CONFIG_PATH=/opt/retroarena/ports/fruitbox/build/allegro5/build/lib/pkgconfig
     ldconfig
@@ -52,7 +47,6 @@ function build_fruitbox() {
     # Build fruitbox
     cd "$md_build/fruitbox/build"
     make -j4
-    
     md_ret_require="$md_build/fruitbox/build/fruitbox"
 }
 
@@ -147,15 +141,14 @@ function skin_fruitbox() {
 }
 
 function gamepad_fruitbox() {
-    dialog --infobox "...processing..." 3 20 ; sleep 2
     sudo /opt/retroarena/ports/fruitbox/fruitbox --config-buttons
 }
 
 function gui_fruitbox() {  
     while true; do
         local options=(
-            1 "Select default skin"
-            2 "Configure gamepad button assignments (CURRENTLY NOT WORKING)"
+            1 "Select Fruitbox Skin"
+            2 "Configure Gamepad (CURRENTLY NOT WORKING)"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
