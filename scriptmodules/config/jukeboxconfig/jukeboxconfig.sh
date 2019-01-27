@@ -47,11 +47,13 @@ function main_menu() {
             --menu "What action would you like to perform?" 25 100 20 \
             1 "Delete current jukebox music database (jukebox will refresh upon next launch)" \
             2 "Configure gamepad button assignments" \
+            3 "Select skin" \
             2>&1 > /dev/tty)
 
         case "$choice" in
             1) remove_database  ;;
             2) configure_gamepad  ;;
+            3) select_skin  ;;
             *) break ;;
         esac
     done
@@ -70,6 +72,75 @@ dialog --infobox "...processing..." 3 20 ; sleep 2
 
 sudo /opt/retroarena/ports/fruitbox/fruitbox --config-buttons
 
+}
+
+function select_skin() {
+    startfb="/home/pigaming/RetroArena/roms/jukebox/+Start fruitbox.sh"
+    local choice
+    while true; do
+        choice=$(dialog --backtitle "$BACKTITLE" --title " SELECT SKIN " \
+            --ok-label OK --cancel-label Cancel \
+            --menu "Which skin would you like to use?" 25 100 20 \
+            1 "Granite" \
+            2 "MikeTV" \
+            3 "Modern (default)" \
+            4 "NumberOne" \
+            5 "Splat" \
+            6 "TouchOne" \
+            7 "WallJuke" \
+            8 "WallSmall" \
+            9 "Wurly" \
+            2>&1 > /dev/tty)
+
+        case "$choice" in
+            1) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=Granite' '$startfb'
+                printMsgs "dialog" "Enabled Granite skin"
+                ;;
+            2) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=MikeTV' '$startfb'
+                printMsgs "dialog" "Enabled MikeTV skin"
+                ;;
+            3) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=Modern' '$startfb'
+                printMsgs "dialog" "Enabled Modern skin"
+                ;;
+            4) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=NumberOne' '$startfb'
+                printMsgs "dialog" "Enabled NumberOne skin"
+                ;;
+            5) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=Splat' '$startfb'
+                printMsgs "dialog" "Enabled Splat skin"
+                ;;
+            6) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=TouchOne' '$startfb'
+                printMsgs "dialog" "Enabled TouchOne skin"
+                ;;
+            7) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=WallJuke' '$startfb'
+                printMsgs "dialog" "Enabled WallJuke skin"
+                ;;
+            8) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=WallSmall' '$startfb'
+                printMsgs "dialog" "Enabled WallSmall skin"
+                ;;
+            9) 
+                sed -i '/skin=/d' '$startfb'
+                sed -i '2i skin=Wurly' '$startfb'
+                printMsgs "dialog" "Enabled Wurly skin"
+                ;;
+            *) break ;;
+        esac
+    done
 }
 
 main_menu
