@@ -62,8 +62,9 @@ if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
     rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
 fi
 if [[ -e "$home/.config/fruitbox001" ]]; then
+    device=$(cat /proc/bus/input/devices | grep -m1 -o '".*"' | sed 's/"//g')
     rm -rf "$home/.config/fruitbox001"
-    /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg --config-buttons
+    /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg --input-device "$device" --config-buttons
 else
     /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg
 fi
@@ -154,12 +155,17 @@ function disable_gamepad_fruitbox() {
     rm -rf "$home/.config/fruitbox001"
 }
 
+function verify_gamepad_fruitbox() {
+    device=$(cat /proc/bus/input/devices | grep -m1 -o '".*"' | sed 's/"//g')
+}
+
 function gui_fruitbox() {  
     while true; do
         local options=(
             1 "Select Fruitbox Skin"
-            2 "Enable Fruitbox Gamepad Config"
-            3 "Disable Fruitbox Gamepad Config"
+            2 "Verify First Input Device Name"
+            3 "Enable Fruitbox Gamepad Config"
+            4 "Disable Fruitbox Gamepad Config"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -169,10 +175,14 @@ function gui_fruitbox() {
                 skin_fruitbox
                 ;;
             2)
-                enable_gamepad_fruitbox
-                printMsgs "dialog" "Enabled Fruitbox Gamepad Config\n\nThe configure gamepad option will appear next time you start Fruitbox. This is a one-time setting. If you need to reconfigure a gamepad again, re-enable this option.\n\nNOTE: A connected keyboard is required."
+                verify_gamepad_fruitbox
+                printMsgs "dialog" "Is this the input device you'd like to configure?\n\n$device\n\nIf so, start Fruitbox to configure your controller. Otherwise, reboot your system with only the gamepad attached and rerun this test."
                 ;;
             3)
+                enable_gamepad_fruitbox
+                printMsgs "dialog" "Enabled Fruitbox Gamepad Config\n\nThe configure gamepad option will appear next time you start Fruitbox. This is a one-time setting. If you need to reconfigure a gamepad again, re-enable this option.\n\nOnce completed, the config file will be located in $home/fruitbox.btn"
+                ;;
+            4)
                 disable_gamepad_fruitbox
                 printMsgs "dialog" "Disabled Fruitbox Gamepad Config"
                 ;;
