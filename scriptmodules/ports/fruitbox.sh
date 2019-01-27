@@ -157,8 +157,6 @@ function gui_fruitbox() {
         local options=(
             1 "Select Fruitbox Skin"
             2 "Verify Gamepad Name"
-            3 "Enable Gamepad Config"
-            4 "Disable Gamepad Config"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
