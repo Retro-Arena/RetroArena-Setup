@@ -11,7 +11,7 @@
 
 rp_module_id="fruitbox"
 rp_module_desc="Fruitbox - A customizable MP3 Retro Jukebox. Read the Package Help for more information."
-rp_module_help="Copy your .mp3 files to '$romdir/jukebox' then launch Fruitbox from EmulationStation\n\nUsing a keyboard, press 'A' then '0' on your keyboard to play the song on the 'AO' slot.\n\nTo exit, press the 'ESC' button on your keyboard.\n\nTo configure your gamepad, launch 'Jukebox Config' in EmulationStation > Settings, then select 'Verify Gamepad Name'."
+rp_module_help="Copy your .mp3 files to '$romdir/jukebox' then launch Fruitbox from EmulationStation\n\nUsing a keyboard, press 'A' then '0' on your keyboard to play the song on the 'AO' slot.\n\nTo exit, press the 'ESC' button on your keyboard.\n\nTo configure your gamepad, launch 'Jukebox Config' in EmulationStation > Settings, then select 'Verify Gamepad Name'.\n\nKnown Issues: laggy input; after gamepad configuration, fruitbox.btn may need to be modified to avoid crashing."
 rp_module_section="opt"
 
 function depends_fruitbox() {
