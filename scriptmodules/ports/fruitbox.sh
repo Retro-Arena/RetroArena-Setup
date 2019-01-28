@@ -99,48 +99,48 @@ function skin_fruitbox() {
         [[ -z "$choice" ]] && break
         case "$choice" in
             1) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=Granite" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=Granite" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled Granite skin"
                 ;;
             2) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=MikeTV" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=MikeTV" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled MikeTV skin"
                 ;;
             3) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=Modern" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=Modern" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled Modern skin"
                 ;;
             4) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=NumberOne" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=NumberOne" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled NumberOne skin"
                 ;;
             5) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=Splat" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=Splat" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled Splat skin"
                 ;;
             6) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=TouchOne" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=TouchOne" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled TouchOne skin"
                 ;;
             7) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=WallJuke" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=WallJuke" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled WallJuke skin"
                 ;;
             8) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=WallSmall" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=WallSmall" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled WallSmall skin"
                 ;;
             9) 
-                sed -i "/skin=/d" "$romdir/jukebox/+Start fruitbox.sh"
-                sed -i "2i skin=Wurly" "$romdir/jukebox/+Start fruitbox.sh"
+                sed -i "/skin=/d" "$romdir/jukebox/+Start Fruitbox.sh"
+                sed -i "2i skin=Wurly" "$romdir/jukebox/+Start Fruitbox.sh"
                 printMsgs "dialog" "Enabled Wurly skin"
                 ;;
         esac
