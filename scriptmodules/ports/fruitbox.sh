@@ -62,7 +62,7 @@ if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
     rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
 fi
 if [[ -e "$home/.config/fruitbox001" ]]; then
-    device=\$(cat /proc/bus/input/devices | grep -m1 -o '".*"' | sed 's/"//g')
+    device=\$(cat /proc/bus/input/devices | grep -m1 -o '".*"' | sed 's/"//g' | sed -n 1p)
     rm -rf "$home/.config/fruitbox001"
     /opt/retroarena/ports/fruitbox/fruitbox --input-device "\$device" --config-buttons
 else
@@ -76,6 +76,7 @@ _EOF_
 }
 
 function remove_fruitbox() {
+    rm -rf "$home/.config/fruitbox001"
     rm -rf "$romdir/jukebox"
     delSystem jukebox
 }
