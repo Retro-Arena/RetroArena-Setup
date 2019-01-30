@@ -10,7 +10,7 @@
 #
 
 rp_module_id="caseconfig"
-rp_module_desc="Case image selector for OGST - choose the type of image displayed upon game launch such as console system, boxart, cartart, snap, wheel, screenshot, or marquee."
+rp_module_desc="Install themes for OGST display and case image selector."
 rp_module_section="config"
 
 function ogst_off() {
@@ -29,7 +29,7 @@ function ogst_es() {
     fi
 }
 
-function gui_caseconfig() {
+function ogst_caseimage() {
     while true; do
         local cmd=(dialog --backtitle "$__backtitle" --menu "OGST Case Image Selector" 22 86 16)
         local options=(
@@ -134,5 +134,79 @@ function gui_caseconfig() {
                     ;;
             esac
         fi
+    done
+}
+
+function depends_caseconfig() {
+    if isPlatform "x11"; then
+        getDepends feh
+    else
+        getDepends fbi
+    fi
+}
+
+function install_theme_caseconfig() {
+    local theme="$1"
+    local repo="$2"
+    if [[ -z "$repo" ]]; then
+        repo="Retro-Arena"
+    fi
+    if [[ -z "$theme" ]]; then
+        theme="retroarena"
+        repo="Retro-Arena"
+    fi
+    mkdir -p "$datadir/casetheme"
+    gitPullOrClone "$datadir/$theme" "https://github.com/$repo/ogst-$theme.git"
+    rm -rf "$datadir/casetheme"
+    mv "$datadir/$theme" "/$datadir/casetheme"
+    rm -rf "$datadir/casetheme/.git"
+    rm -rf "$datadir/casetheme/.gitattributes"
+    chown -R $user:$user "$datadir/casetheme"
+}
+
+function gui_caseconfig() {
+    local themes=(
+        'Retro-Arena retroarena'
+        'Retro-Arena greatest-hits'
+        'Retro-Arena wiitro-arena'
+        'Retro-Arena hursty'
+    )
+    while true; do
+        local theme
+        local installed_themes=()
+        local repo
+        
+        local options=()
+        options+=(1 "Case Image Selector")
+        
+        local status=()
+        local default
+        local i=1
+        for theme in "${themes[@]}"; do
+            theme=($theme)
+            repo="${theme[0]}"
+            theme="${theme[1]}"
+            status+=("n")
+            options+=("$i" "Install $repo/$theme")
+            ((i++))
+        done
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        default="$choice"
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            1)
+                ogst_caseimage
+                ;;
+            *)
+                theme=(${themes[choice-1]})
+                repo="${theme[0]}"
+                theme="${theme[1]}"
+                if [[ ! "${status[choice]}" == "i" ]]; then
+                    rp_callModule casetheme install_theme "$theme" "$repo"
+                    printMsgs "dialog" "$repo/$theme case theme installed"
+                fi
+                ;;
+        esac
     done
 }

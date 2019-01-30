@@ -51,7 +51,6 @@ function configure_settingsmenu()
         "bgmtoggle"
         "bluetooth"
         "caseconfig"
-        "casetheme"
         "configedit"
         "controlreset"
         "escollections"
@@ -80,7 +79,6 @@ function configure_settingsmenu()
         "Sound: BGM Toggle"
         "Network: Bluetooth"
         "Media: Case Config for OGST"
-        "Media: Case Themes for OGST"
         "System: Configuration Editor"
         "System: Controller Reset"
         "Media: ES Collection List Generator"
@@ -108,8 +106,7 @@ function configure_settingsmenu()
         "Downloader for RetroArach system bezel packs to be used for various systems"
         "Enable or disable the background music feature."
         "Register and connect to bluetooth devices. Unregister and remove devices, and display registered and connected devices."
-        "Case image selector for OGST - choose the type of image displayed upon game launch such as console system, boxart, cartart, snap, wheel, screenshot, or marquee."
-        "Case theme selector for OGST - choose different theme packs when Console System is selected in Case Config."
+        "Install themes for the OGST Case when 'Console System' is selected. In addition, upon game launch, choose different types of scraped images displayed such as boxart, cartart, snap, wheel, screenshot, marquee, or console system (default). There is also an option to completely disable the display."
         "Change common RetroArch options, and manually edit RetroArch configs, global configs, and non-RetroArch configs."
         "Reset controller configurations to factory default.
         
@@ -156,7 +153,6 @@ NOTE: Requires a keyboard to be connected."
     local hiddens=(
         "true"
         "false"
-        "true"
         "true"
         "true"
         "true"
