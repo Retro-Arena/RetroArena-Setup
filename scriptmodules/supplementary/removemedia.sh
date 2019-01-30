@@ -14,5 +14,5 @@ rp_module_desc="Remove extra media files (boxart, cartart, snap, and wheel) for 
 rp_module_section="config"
 
 function gui_removemedia() {
-    source $scriptdir/scriptmodules/config/removemedia/removemedia.sh
+    source $scriptdir/scriptmodules/supplementary/removemedia/removemedia.sh
 }

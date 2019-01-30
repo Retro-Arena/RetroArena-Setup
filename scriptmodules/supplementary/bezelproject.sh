@@ -9,10 +9,10 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-rp_module_id="escollections"
-rp_module_desc="Add or update the custom collection gamelist"
+rp_module_id="bezelproject"
+rp_module_desc="Downloader for RetroArach system bezel packs to be used for various systems."
 rp_module_section="config"
 
-function gui_escollections() {
-    source $scriptdir/scriptmodules/config/escollections/escollections.sh
+function gui_bezelproject() {
+    source $scriptdir/scriptmodules/supplementary/bezelproject/bezelproject.sh
 }

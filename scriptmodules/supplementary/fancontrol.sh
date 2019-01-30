@@ -26,18 +26,18 @@ function gui_fancontrol() {
         if [[ -n "$choice" ]]; then
             case "$choice" in
                 1)
-                    sudo cp -r -f $scriptdir/scriptmodules/config/fancontrol/fan1-default/* /sys/devices/odroid_fan.14
-                    sudo cp -r -f $scriptdir/scriptmodules/config/fancontrol/fan1-default/rc.local /etc
+                    sudo cp -r -f $scriptdir/scriptmodules/supplementary/fancontrol/fan1-default/* /sys/devices/odroid_fan.14
+                    sudo cp -r -f $scriptdir/scriptmodules/supplementary/fancontrol/fan1-default/rc.local /etc
                     printMsgs "dialog" "Fan is now restored to the factory Odroid settings."
                     ;;
                 2)
-                    sudo cp -r -f $scriptdir/scriptmodules/config/fancontrol/fan2-medium/* /sys/devices/odroid_fan.14
-                    sudo cp -r -f $scriptdir/scriptmodules/config/fancontrol/fan2-medium/rc.local /etc
+                    sudo cp -r -f $scriptdir/scriptmodules/supplementary/fancontrol/fan2-medium/* /sys/devices/odroid_fan.14
+                    sudo cp -r -f $scriptdir/scriptmodules/supplementary/fancontrol/fan2-medium/rc.local /etc
                     printMsgs "dialog" "Fan is now set to the HIGHER COOLING RATE than the factory Odroid settings.\n\nNOTE: PERFORM AT YOUR OWN RISK. NO IMPLIED WARRANTIES."
                     ;;
                 3)
-                    sudo cp -r -f $scriptdir/scriptmodules/config/fancontrol/fan3-aggressive/* /sys/devices/odroid_fan.14
-                    sudo cp -r -f $scriptdir/scriptmodules/config/fancontrol/fan3-aggressive/rc.local /etc
+                    sudo cp -r -f $scriptdir/scriptmodules/supplementary/fancontrol/fan3-aggressive/* /sys/devices/odroid_fan.14
+                    sudo cp -r -f $scriptdir/scriptmodules/supplementary/fancontrol/fan3-aggressive/rc.local /etc
                     printMsgs "dialog" "Fan is now set to the most AGGRESSIVE COOLING RATE than the factory Odroid settings. The fan will become noticeably loud.\n\nNOTE: PERFORM AT YOUR OWN RISK. NO IMPLIED WARRANTIES."
                     ;;
             esac
