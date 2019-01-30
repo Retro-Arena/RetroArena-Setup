@@ -43,7 +43,7 @@ function gui_launchingvideos() {
                     ;;
                 3)
                     update_launchingvideos
-                    printMsgs "dialog" "Launching Videos Updated from Retro-Arean/RetroArena-launchingvideos repository."
+                    printMsgs "dialog" "Launching Videos updated from RetroArena-launchingvideos repository."
                     ;;
             esac
         fi
