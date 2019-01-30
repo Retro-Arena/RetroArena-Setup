@@ -61,6 +61,7 @@ function configure_settingsmenu()
         "filemanager"
         "fruitbox"
         "hurstythemes"
+        "launchingvideos"
         "odroidconfig"
         "removemedia"
         "retroarch"
@@ -89,6 +90,7 @@ function configure_settingsmenu()
         "System: File Manager"
         "Media: Jukebox Config"
         "Media: Hursty's ES Themes"
+        "Media: Launching Videos"
         "System: Odroid-Config"
         "Media: Remove Media"
         "System: Retroarch"
@@ -125,6 +127,7 @@ NOTE: Always make a backup copy of your 'gamelist.xml' and media files before ma
 NOTE: Requires a keyboard to be connected."
         "Configure the default skin and gamepad for Fruitbox jukebox."
         "Install, uninstall, or update Hursty's ES themes. Also, enable or disable the Theme Randomizer on boot option."
+        "Enable, disable, or update Launching Videos, which plays a video instead of an image during game launch."
         "Expand filesystem, configure network, boot, localisation, SSH, etc.
         
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
@@ -153,6 +156,7 @@ NOTE: Requires a keyboard to be connected."
     local hiddens=(
         "true"
         "false"
+        "true"
         "true"
         "true"
         "true"

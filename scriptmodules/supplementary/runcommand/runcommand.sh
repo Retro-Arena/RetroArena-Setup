@@ -941,7 +941,16 @@ function show_launch() {
             IMG_PID=$!
             sleep "$IMAGE_DELAY"
         else
-            fbi -1 -t "$IMAGE_DELAY" -noverbose -a "$image" </dev/tty &>/dev/null
+            RALV="$HOME/RetroArena/launchingvideos"
+            if [[ -e "$HOME/.config/launchingvideos001" ]]; then
+                if [[ -e "$RALV/$SYSTEM.mp4" ]]; then
+                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$RALV/$SYSTEM.mp4" </dev/tty &>/dev/null
+                else
+                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$RALV/default.mp4" </dev/tty &>/dev/null
+                fi
+            else
+                fbi -1 -t "$IMAGE_DELAY" -noverbose -a "$image" </dev/tty &>/dev/null
+            fi
         fi
     elif [[ "$DISABLE_MENU" -ne 1 && "$USE_ART" -ne 1 ]]; then
         local launch_name
