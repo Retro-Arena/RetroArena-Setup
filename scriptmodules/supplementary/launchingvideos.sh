@@ -11,15 +11,22 @@
 
 rp_module_id="launchingvideos"
 rp_module_desc="Enable Launching Videos prior to game start"
-rp_module_section="config"
+rp_module_section="opt"
 
-function update_launchingvideos() {
+function install_bin_launchingvideos() {
     rm -rf "$datadir/launchingvideos"
     gitPullOrClone "$datadir/launchingvideos" "https://github.com/Retro-Arena/RetroArena-launchingvideos.git"
     rm -rf "$datadir/launchingvideos/.git"
     rm -rf "$datadir/launchingvideos/.gitattributes"
     chown -R $user:$user "$datadir/launchingvideos"
+    touch "$home/.config/launchingvideos"
 }
+
+function remove_launchingvideos() {
+    rm -rf "$datadir/launchingvideos"
+    rm -rf "$home/.config/launchingvideos"
+}
+
 
 function gui_launchingvideos() {
     while true; do
@@ -27,23 +34,18 @@ function gui_launchingvideos() {
         local options=(
             1 "Enable Launching Videos (default)"
             2 "Disable Launching Videos"
-            3 "Update Launching Videos"
         )
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         if [[ -n "$choice" ]]; then
             case "$choice" in
                 1)
-                    touch $home/.config/launchingvideos
+                    touch "$home/.config/launchingvideos"
                     printMsgs "dialog" "Enabled Launching Videos\n\nThis also disabled Launching Images."
                     ;;
                 2)
-                    rm -rf $home/.config/launchingvideos
+                    rm -rf "$home/.config/launchingvideos"
                     printMsgs "dialog" "Disabled Launching Videos\n\nThis also enabled Launching Images."
-                    ;;
-                3)
-                    update_launchingvideos
-                    printMsgs "dialog" "Launching Videos updated from RetroArena-launchingvideos repository."
                     ;;
             esac
         fi
