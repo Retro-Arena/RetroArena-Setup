@@ -61,9 +61,9 @@ skin=WallJuke
 if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
     rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
 fi
-if [[ -e "$home/.config/fruitbox001" ]]; then
+if [[ -e "$home/.config/fruitbox" ]]; then
     device=\$(cat /proc/bus/input/devices | grep -m1 -o '".*"' | sed 's/"//g' | sed -n 1p)
-    rm -rf "$home/.config/fruitbox001"
+    rm -rf "$home/.config/fruitbox"
     /opt/retroarena/ports/fruitbox/fruitbox --input-device "\$device" --config-buttons
 else
     /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg
@@ -76,7 +76,7 @@ _EOF_
 }
 
 function remove_fruitbox() {
-    rm -rf "$home/.config/fruitbox001"
+    rm -rf "$home/.config/fruitbox"
     rm -rf "$romdir/jukebox"
     delSystem jukebox
 }
@@ -142,28 +142,28 @@ function gamepad_fruitbox() {
             1)
                 sed -i "/device=/d" "$romdir/jukebox/+Start Fruitbox.sh"
                 sed -i "7i \ \ \ \ \device=\"$dvice1\"" "$romdir/jukebox/+Start Fruitbox.sh"
-                touch "$home/.config/fruitbox001"
+                touch "$home/.config/fruitbox"
                 printMsgs "dialog" "You are all set!\n\nLaunch Fruitbox from EmulationStation to configure your gamepad.\n\nPress OK to Exit."
                 exit 0
                 ;;
             2)
                 sed -i "/device=/d" "$romdir/jukebox/+Start Fruitbox.sh"
                 sed -i "7i \ \ \ \ \device=\"$dvice2\"" "$romdir/jukebox/+Start Fruitbox.sh"
-                touch "$home/.config/fruitbox001"
+                touch "$home/.config/fruitbox"
                 printMsgs "dialog" "You are all set!\n\nLaunch Fruitbox from EmulationStation to configure your gamepad.\n\nPress OK to Exit."
                 exit 0
                 ;;
             3)
                 sed -i "/device=/d" "$romdir/jukebox/+Start Fruitbox.sh"
                 sed -i "7i \ \ \ \ \device=\"$dvice3\"" "$romdir/jukebox/+Start Fruitbox.sh"
-                touch "$home/.config/fruitbox001"
+                touch "$home/.config/fruitbox"
                 printMsgs "dialog" "You are all set!\n\nLaunch Fruitbox from EmulationStation to configure your gamepad.\n\nPress OK to Exit."
                 exit 0
                 ;;
             4)
                 sed -i "/device=/d" "$romdir/jukebox/+Start Fruitbox.sh"
                 sed -i "7i \ \ \ \ \device=\"$dvice4\"" "$romdir/jukebox/+Start Fruitbox.sh"
-                touch "$home/.config/fruitbox001"
+                touch "$home/.config/fruitbox"
                 printMsgs "dialog" "You are all set!\n\nLaunch Fruitbox from EmulationStation to configure your gamepad.\n\nPress OK to Exit."
                 exit 0
                 ;;
