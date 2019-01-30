@@ -14,11 +14,15 @@ rp_module_desc="Enable Launching Videos prior to game start"
 rp_module_section="opt"
 
 function install_bin_launchingvideos() {
-    rm -rf "$datadir/launchingvideos"
-    gitPullOrClone "$datadir/launchingvideos" "https://github.com/Retro-Arena/RetroArena-launchingvideos.git"
-    rm -rf "$datadir/launchingvideos/.git"
-    rm -rf "$datadir/launchingvideos/.gitattributes"
-    chown -R $user:$user "$datadir/launchingvideos"
+    local lvdir="$datadir/launchingvideos"
+    if [[ -e "$lvdir" ]]; then
+        rm -rf "$lvdir"
+    fi
+    rm -rf "$lvdir"
+    gitPullOrClone "$lvdir" "https://github.com/Retro-Arena/RetroArena-launchingvideos.git"
+    rm -rf "$lvdir/.git"
+    rm -rf "$lvdir/.gitattributes"
+    chown -R $user:$user "$lvdir"
     touch "$home/.config/launchingvideos"
 }
 
@@ -26,7 +30,6 @@ function remove_launchingvideos() {
     rm -rf "$datadir/launchingvideos"
     rm -rf "$home/.config/launchingvideos"
 }
-
 
 function gui_launchingvideos() {
     while true; do
