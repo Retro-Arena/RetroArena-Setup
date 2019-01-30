@@ -34,11 +34,11 @@ function gui_launchingvideos() {
         if [[ -n "$choice" ]]; then
             case "$choice" in
                 1)
-                    touch $home/.config/launchingvideos001
+                    touch $home/.config/launchingvideos
                     printMsgs "dialog" "Enabled Launching Videos\n\nThis also disabled Launching Images."
                     ;;
                 2)
-                    rm -rf $home/.config/launchingvideos001
+                    rm -rf $home/.config/launchingvideos
                     printMsgs "dialog" "Disabled Launching Videos\n\nThis also enabled Launching Images."
                     ;;
                 3)
