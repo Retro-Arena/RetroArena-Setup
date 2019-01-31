@@ -35,9 +35,9 @@ function gui_launchingvideos() {
     while true; do
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 86 16)
         local options=(
-            1 "Enable Launching Videos (default)"
+            1 "Enable  Launching Videos (default)"
             2 "Disable Launching Videos"
-            3 "Update Launching Videos Pack"
+            3 "Update  Launching Videos Pack"
         )
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
