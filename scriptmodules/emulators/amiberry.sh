@@ -49,6 +49,9 @@ function build_amiberry() {
     elif isPlatform "vero4k"; then
         amiberry_bin="vero4k"
         amiberry_platform="vero4k"
+    elif isPlatform "rockpro64"; then
+        amiberry_bin="rockpro64"
+        amiberry_platform="rockpro64"    
     fi
 
     make clean
@@ -67,6 +70,8 @@ function install_amiberry() {
         amiberry_bin="tinker"
     elif isPlatform "vero4k"; then
         amiberry_bin="vero4k"
+     elif isPlatform "rockpro64"; then
+        amiberry_bin="rockpro64"    
     fi
 
     md_ret_files=(
