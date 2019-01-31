@@ -37,6 +37,7 @@ function gui_launchingvideos() {
         local options=(
             1 "Enable Launching Videos (default)"
             2 "Disable Launching Videos"
+            3 "Update Launching Videos Pack"
         )
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
@@ -49,6 +50,10 @@ function gui_launchingvideos() {
                 2)
                     rm -rf "$home/.config/launchingvideos"
                     printMsgs "dialog" "Disabled Launching Videos\n\nThis also enabled Launching Images."
+                    ;;
+                3)
+                    install_bin_launchingvideos
+                    printMsgs "dialog" "Updated Launching Videos Pack."
                     ;;
             esac
         fi
