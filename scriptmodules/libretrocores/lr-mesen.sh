@@ -10,9 +10,9 @@
 #
 
 rp_module_id="lr-mesen"
-rp_module_desc="NES emulator - Mesen Port for libretro"
-rp_module_help="ROM Extensions: .nes .zip\n\nCopy your NES roms to $romdir/nes"
-rp_module_licence="GPL2"
+rp_module_desc="NES and Famicom emulator - Mesen Port for libretro"
+rp_module_help="ROM Extensions: .nes .zip\n\nCopy your NES roms to $romdir/nes and your Famicon roms to $romdir/fds"
+rp_module_licence="GPL3"
 rp_module_section="lr"
 
 function sources_lr-mesen() {
