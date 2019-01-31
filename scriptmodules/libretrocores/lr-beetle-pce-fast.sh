@@ -38,7 +38,7 @@ function install_lr-beetle-pce-fast() {
 }
 
 function install_bin_lr-beetle-pce-fast() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-beetle-pce-fast.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-beetle-pce-fast.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-beetle-pce-fast() {

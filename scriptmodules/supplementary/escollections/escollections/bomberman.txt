@@ -1,0 +1,61 @@
+Bomberman 2 (Europe) (En,Fr,De,Es,It);nds
+Bomberman 64 - The Second Attack! (USA);n64
+Bomberman 64 (USA);n64
+Bomberman '93 (Japan);pce-cd
+Bomberman '93 (USA);tg16
+Bomberman '94 (Japan);pce-cd
+Bomberman C64 (Poland) (Unl);c64
+Bomberman (Europe) (Unl);c64
+Bomberman Fantasy Race (USA);psx
+Bomberman Fantasy Race (USA);psp
+Bomberman GB (USA, Europe);gb
+Bomberman Hero (USA);n64
+Bomberman II Penuts (Europe) (Unl);c64
+Bomberman II (USA);nes
+Bomberman (Japan);pce-cd
+Bomberman (Japan);fds
+Bomberman Land Touch! 2 (USA);nds
+Bomberman Land Touch! (USA);nds
+Bomberman Max 2 - Blue Advance (USA);gba
+Bomberman Max 2 - Red Advance (USA);gba
+Bomberman Max - Blue Champion (USA);gbc
+Bomberman Max - Red Challenger (USA);gbc
+Bomberman Online (USA);dreamcast
+Bomberman - Panic Bomber (Japan);pce-cd
+Bomberman - Party Edition (USA);psx
+Bomberman - Party Edition (USA);psp
+Bomberman Quest (USA);gbc
+Bomberman Story DS (Europe) (En,Fr,De,Es,It);nds
+Bomberman Tournament (USA, Europe);gba
+Bomberman (USA);tg16
+Bomberman (USA);nds
+Bomberman (USA);nes
+Bomberman - Users Battle (Japan);pce-cd
+Bomberman Wars (Japan) (Translated En);psx
+Bomberman Wars (Japan) (Translated En);psp
+Bomberman World (USA);psx
+Bomberman World (USA);psp
+bombman;fba
+bombmn93;fba
+bombmn93s;fba
+bombmn94;fba
+bombmnub;fba
+Classic NES Series - Bomberman (USA, Europe);gba
+megabm8;fba
+megabomb;fba
+megabombu;fba
+neobombe;arcade
+neobombe;fba
+neobombe;mame-advmame
+neobombe;mame-libretro
+neobombe;mame-mame4all
+neobombe;neogeo
+Pocket Bomberman (Europe);gb
+Pocket Bomberman (USA, Europe);gbc
+Super Bomberman 2 (USA);snes
+Super Bomberman 3 (Europe);snes
+Super Bomberman 4 (Japan) (Translated En);sfc
+Super Bomberman 5 (Japan);sfc
+Super Bomberman - Panic Bomber W (Japan);sfc
+Super Bomberman (USA);snes
+Wario Blast Featuring Bomberman! (USA, Europe);gb

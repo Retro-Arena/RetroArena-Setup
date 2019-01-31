@@ -36,9 +36,13 @@ function install_lr-snes9x2005() {
     )
 }
 
+function install_bin_lr-snes9x2005() {
+    downloadAndExtract "$__gitbins_url/lr-snes9x2005.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-snes9x2005() {
     local system
-    for system in snes sfc; do
+    for system in snes sfc sufami snesmsu1 satellaview; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
         addEmulator 1 "$md_id" "$system" "$md_inst/snes9x2005_libretro.so"

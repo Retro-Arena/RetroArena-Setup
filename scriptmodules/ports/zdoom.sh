@@ -45,6 +45,10 @@ function install_zdoom() {
     )
 }
 
+function install_bin_zdoom() {
+    downloadAndExtract "$__gitbins_url/zdoom.tar.gz" "$md_inst" 1
+}
+
 function add_games_zdoom() {
     _add_games_lr-prboom "DOOMWADDIR=$romdir/ports/doom $md_inst/zdoom +set fullscreen 1 -iwad %ROM%"
 }

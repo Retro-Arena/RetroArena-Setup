@@ -1,0 +1,132 @@
+720;arcade
+720 Degrees Part 2 (USA) (Unl);c64
+720 Degrees (USA);c64
+720;fba
+720g;arcade
+720g;fba
+720g;mame-advmame
+720g;mame-libretro
+720g;mame-mame4all
+720gr1;arcade
+720gr1;fba
+720gr1;mame-advmame
+720gr1;mame-libretro
+720gr1;mame-mame4all
+720;mame-advmame
+720;mame-libretro
+720;mame-mame4all
+720r1;arcade
+720r1;fba
+720r1;mame-advmame
+720r1;mame-libretro
+720r1;mame-mame4all
+720r2;arcade
+720r2;fba
+720r2;mame-advmame
+720r2;mame-libretro
+720r2;mame-mame4all
+720r3;arcade
+720r3;fba
+720r3;mame-advmame
+720r3;mame-libretro
+720r3;mame-mame4all
+Backyard Skateboarding (USA);gba
+Cheap Skate (Europe);c64
+cskater;arcade
+cskater;fba
+cskater;mame-advmame
+cskater;mame-libretro
+cskater;mame-mame4all
+Disney Sports - Skateboarding (USA);gba
+ESPN X-Games Skateboarding (USA);gba
+Extreme Skate Adventure (USA, Europe);gba
+Grind Session (USA);psx
+Grind Session (USA);psp
+MTV Sports - Skateboarding featuring Andy MacDonald (USA);gbc
+MTV Sports - Skateboarding Featuring Andy Macdonald (USA);psx
+MTV Sports - Skateboarding Featuring Andy Macdonald (USA);psp
+MTV Sports - Skateboarding Featuring Andy McDonald (USA);dreamcast
+Neighbours (Europe);c64
+Pixel City Skater (Europe) (Unl);c64
+Professional Skateboard Simulator (Europe);c64
+Pro Skateboard Simulator (Europe);amstradcpc
+Pro Skateboard Simulator (Europe);zxspectrum
+Rad Ramp Racer (Europe);c64
+Rocket Power - Team Rocket Rescue (USA);psx
+Rocket Power - Team Rocket Rescue (USA);psp
+Rocket Power - Zero Gravity Zone (USA);gba
+Rollerboard (Europe);c64
+Skateball (Europe);zxspectrum
+Skateball (France);c64
+Skateboard Construction System (Europe);zxspectrum
+Skateboarder (Europe);c64
+Skateboarding (USA);c64
+Skate Boardin' (USA);atari2600
+Skateboard Joust (Europe);amstradcpc
+Skateboard Joust (Europe);c64
+Skateboard Joust (Europe);zxspectrum
+Skateboard Kidz (Europe);amstradcpc
+Skateboard Kidz (Europe);zxspectrum
+Skatebob (USA) (Unl);c64
+Skate Crazy (Europe);amstradcpc
+Skate Crazy (Europe) (Side A);c64
+Skate Crazy (Europe) (Side B);c64
+Skate Crazy (Europe);zxspectrum
+Skate It (USA) (En,Fr,De,Es,It,Nl) [b];nds
+skatekds;arcade
+skatekds;fba
+skatekds;mame-advmame
+skatekds;mame-libretro
+skatekds;mame-mame4all
+Skate or Die 2 - The Search for Double Trouble (USA);nes
+Skate or Die - Bad 'N Rad (USA);gb
+Skate or Die (Europe) (Disk 1);amstradcpc
+Skate or Die (Europe) (Disk 2);amstradcpc
+Skate or Die (Europe);zxspectrum
+Skate or Die - Tour de Thrash (USA);gb
+Skate or Die (USA);nes
+Skate or Die! (USA) (Side A);c64
+Skate or Die! (USA) (Side B);c64
+Skate Park City (Europe);psp
+Skate Rock (Europe);amstradcpc
+SkateRock (Europe);c64
+Skate Wars (Europe);amstradcpc
+Skate Wars (Europe);zxspectrum
+Skatin' USA (Europe);c64
+SpongeBob's Surf & Skate - Roadtrip (Europe) (En,Fr,Es);nds
+Street Sk8er 2 (USA);psx
+Street Sk8er 2 (USA);psp
+Street Sk8er (USA);psx
+Street Sk8er (USA);psp
+Street Surfer (Europe);c64
+Super Skateboardin' (USA);atari7800
+Tech Deck Skateboarding (USA, Europe);gbc
+Thrasher - Skate and Destroy (USA);psx
+Thrasher - Skate and Destroy (USA);psp
+Tony Hawk's American Sk8land (USA);gba
+Tony Hawk's Downhill Jam (USA);gba
+Tony Hawk's Project 8 (USA);psp
+Tony Hawk's Pro Skater 2 (USA, Europe);gba
+Tony Hawk's Pro Skater 2 (USA);n64
+Tony Hawk's Pro Skater 2 (USA);gbc
+Tony Hawk's Pro Skater 2 (USA);dreamcast
+Tony Hawk's Pro Skater 2 (USA);psx
+Tony Hawk's Pro Skater 2 (USA);psp
+Tony Hawk's Pro Skater 3 (USA, Europe);gba
+Tony Hawk's Pro Skater 3 (USA);n64
+Tony Hawk's Pro Skater 3 (USA);gbc
+Tony Hawk's Pro Skater 3 (USA);psx
+Tony Hawk's Pro Skater 3 (USA);psp
+Tony Hawk's Pro Skater 4 (USA, Europe);gba
+Tony Hawk's Pro Skater 4 (USA);psx
+Tony Hawk's Pro Skater 4 (USA);psp
+Tony Hawk's Pro Skater (USA, Europe);gbc
+Tony Hawk's Pro Skater (USA) (Rev A);n64
+Tony Hawk's Pro Skater (USA);dreamcast
+Tony Hawk's Pro Skater (USA);psx
+Tony Hawk's Pro Skater (USA);psp
+Tony Hawk's Underground 2 Remix (USA);psp
+Tony Hawk's Underground 2 (USA, Europe);gba
+Tony Hawk's Underground (USA, Europe);gba
+TrickStyle (USA);dreamcast
+Turbo Skate Fighter (Europe);zxspectrum

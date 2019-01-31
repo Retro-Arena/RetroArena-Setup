@@ -33,6 +33,10 @@ function install_lr-gw() {
     )
 }
 
+function install_bin_lr-gw() {
+    downloadAndExtract "$__gitbins_url/lr-gw.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-gw() {
     mkRomDir "gameandwatch"
     ensureSystemretroconfig "gameandwatch"

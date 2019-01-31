@@ -31,6 +31,10 @@ function install_lr-beetle-lynx() {
     )
 }
 
+function install_bin_lr-beetle-lynx() {
+    downloadAndExtract "$__gitbins_url/lr-beetle-lynx.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-beetle-lynx() {
     mkRomDir "atarilynx"
     ensureSystemretroconfig "atarilynx"

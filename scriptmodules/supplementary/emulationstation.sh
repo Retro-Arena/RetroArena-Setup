@@ -91,6 +91,7 @@ function _add_rom_emulationstation() {
     local name="$4"
     local desc="$5"
     local image="$6"
+    local hidden="$7"
 
     local config_dir="$configdir/all/emulationstation"
 
@@ -109,6 +110,7 @@ function _add_rom_emulationstation() {
             -s "/gameList/game[last()]" -t elem -n "name" -v "$name" \
             -s "/gameList/game[last()]" -t elem -n "desc" -v "$desc" \
             -s "/gameList/game[last()]" -t elem -n "image" -v "$image" \
+            -s "/gameList/game[last()]" -t elem -n "hidden" -v "$hidden" \
             "$config"
     else
         xmlstarlet ed -L \
@@ -116,6 +118,7 @@ function _add_rom_emulationstation() {
             -u "/gameList/game[name='$name']/name" -v "$name" \
             -u "/gameList/game[name='$name']/desc" -v "$desc" \
             -u "/gameList/game[name='$name']/image" -v "$image" \
+            -u "/gameList/game[name='$name']/hidden" -v "$hidden" \
             "$config"
     fi
     chown $user:$user "$config"
@@ -163,7 +166,7 @@ function install_emulationstation() {
 }
 
 function install_bin_emulationstation() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/emulationstation.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/emulationstation.tar.gz" "$md_inst" 1
 }
 
 function init_input_emulationstation() {
@@ -291,6 +294,12 @@ function configure_emulationstation() {
 
     addAutoConf "es_swap_a_b" 0
     addAutoConf "disable" 0
+    
+    # change kiosk code
+    esconfig="$configdir/all/emulationstation/es_settings.cfg"
+    if grep -Fq 'name="UIMode_passkey" value="uuddlrlrba"' "$esconfig"; then
+        sed -i -e 's:name="UIMode_passkey" value="uuddlrlrba":name="UIMode_passkey" value="uuddlrlr":g' "$esconfig"
+    fi
 }
 
 function gui_emulationstation() {

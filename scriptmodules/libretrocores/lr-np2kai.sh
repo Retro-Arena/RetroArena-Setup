@@ -30,6 +30,10 @@ function install_lr-np2kai() {
     )
 }
 
+function install_bin_lr-np2kai() {
+    downloadAndExtract "$__gitbins_url/lr-np2kai.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-np2kai() {
     mkRomDir "pc98"
     ensureSystemretroconfig "pc98"

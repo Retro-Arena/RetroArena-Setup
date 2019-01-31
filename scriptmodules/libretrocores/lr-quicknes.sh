@@ -31,6 +31,10 @@ function install_lr-quicknes() {
     )
 }
 
+function install_bin_lr-quicknes() {
+    downloadAndExtract "$__gitbins_url/lr-quicknes.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-quicknes() {
     mkRomDir "nes"
     ensureSystemretroconfig "nes"

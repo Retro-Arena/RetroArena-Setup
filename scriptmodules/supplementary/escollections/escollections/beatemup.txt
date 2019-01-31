@@ -1,0 +1,546 @@
+1,000 Kung-Fu Maniacs! (Europe) (Unl);c64
+2 Games in 1! - Dragon Ball Z - Buu's Fury + Dragon Ball GT - Transformation (USA);gba
+2 in 1 - Asterix & Obelix - Bash Them All! + Asterix & Obelix XXL (Europe) (En,Fr,De,Es,It,Nl);gba
+3 Ninjas Kick Back (USA);segacd
+Advance Guardian Heroes (USA);gba
+Adventures of Bayou Billy, The (USA);nes
+After the War (Europe);amstradcpc
+Alien Storm (Europe);mastersystem
+Alien Storm (World);megadrive
+Aliens vs. Predator (Japan);sfc
+Altered Beast (Europe) (Disk 1);amstradcpc
+Altered Beast (Europe) (Disk 2);amstradcpc
+Altered Beast (Europe);zxspectrum
+Altered Beast - Guardian of the Realms (USA);gba
+Altered Beast (USA);c64
+Altered Beast (USA, Europe);megadrive
+Altered Beast (USA, Europe);mastersystem
+Amazing Spider-Man, The (USA, Europe);gb
+Asterix & Obelix - Bash Them All! (Europe) (En,Fr,De,Es,It,Nl);gba
+Atrog (Spain);amstradcpc
+Avenger (Europe);amstradcpc
+Axe of Rage (USA);c64
+Bad Dudes (USA);nes
+Bad Dudes vs. Dragon Ninja (USA);c64
+Bad Enemies (USA);c64
+Bad Street Brawler (USA);c64
+Bad Street Brawler (USA);nes
+Barbarian II (Europe);amstradcpc
+Barbarian II - The Dungeon Of Drax (CPC+) (Europe);amstradcpc
+Barbarian (Palace Software) (Europe);amstradcpc
+Bare Knuckle III (Japan) (Translated En);megadrive
+Batman Begins (USA, Europe) (En,Fr,De,Es,It,Nl);gba
+Batman Beyond - Return of the Joker (USA);n64
+Batman Forever - The Arcade Game (USA);psx
+Batman Forever - The Arcade Game (USA);psp
+Batman Forever (USA, Europe);gb
+Batman Forever (World);gamegear
+Batman Returns (USA);nes
+Batman Returns (USA);segacd
+Batman - Rise of Sin Tzu (USA) (En,Fr,Es);gba
+Batman - Vengeance (USA) (En,Fr,Es);gba
+BattleBots - Beyond the BattleBox (USA);gba
+BattleBots - Design & Destroy (USA);gba
+Battlemaniacs (Brazil);mastersystem
+Battle of Red Cliffs, The (China) (Unl);megadrive
+Battletoads-Double Dragon (USA);nes
+Battletoads-Double Dragon (USA);gb
+Battletoads & Double Dragon (USA);megadrive
+Battletoads in Ragnarok's World (USA);gb
+Battletoads (USA, Europe);gb
+Battletoads (USA);nes
+Battletoads (USA);gamegear
+Battletoads (World);megadrive
+Battle Zeque Den (Japan);sfc
+Beast Fighter (Asia) (Unl);gb
+Big Trouble in Little China (Europe);amstradcpc
+Big Trouble in Little China (Europe);c64
+Bionic Ninja (Europe);zxspectrum
+Bishin Densetsu Zoku (Japan);sfc
+Bishoujo Senshi Sailor Moon (Japan);megadrive
+Bishoujo Senshi Sailor Moon R (Japan) (Translated En);sfc
+Black Belt (USA, Europe);mastersystem
+Blade (USA, Europe);gbc
+Bloody Paws (Side A) (Spain);zxspectrum
+Bloody Paws (Side B) (Spain);zxspectrum
+Bob Winner (Europe) (Disk 1);amstradcpc
+Bob Winner (Europe) (Disk 2);amstradcpc
+Bob Winner (France);c64
+Body Blow (USA);c64
+BOFH - Servers Under Siege (Finland) (Unl);c64
+Bravoman (USA);tg16
+Bronx (Spain);amstradcpc
+Bruce Lee II (USA) (Unl);c64
+Bruce Lee - Return of the Legend (USA);gba
+Bruce Lee (USA);c64
+Buffy the Vampire Slayer (USA, Europe);gbc
+Buffy the Vampire Slayer - Wrath of the Darkhul King (USA, Europe);gba
+burningf;neogeo
+Butt-Ugly Martians - B.K.M. Battles (USA);gba
+Captain America and the Avengers (USA);megadrive
+Challenge of the Dragon (USA) (Unl);nes
+Chambers of Shaolin (Germany);c64
+China Warrior (USA);tg16
+Choy-Lee-Fut Kung-Fu Warrior (Spain);amstradcpc
+Choy-Lee-Fut Kung-Fu Warrior (Spain);zxspectrum
+Chuck Norris Superkicks (USA);atari2600
+Chuck Norris - Super Kicks (USA);coleco
+Chuck Norris (USA);c64
+Cliffhanger (USA);segacd
+Cliffhanger (USA);megadrive
+Comix Zone (Europe) (En,Fr,De,Es,It);gba
+Comix Zone (USA);megadrive
+Corsarios (Europe);amstradcpc
+Corsarios (Part 1) (Spain);zxspectrum
+Corsarios (Part 2) (Spain);zxspectrum
+Cosmo Police Galivan II - Arrow of Justice (Japan);sfc
+Crisis Beat (Europe);psx
+Crisis Beat (Europe);psp
+Crouching Tiger, Hidden Dragon (USA) (En,Fr,Es);gba
+Cubix - Robots for Everyone - Clash 'N Bash (USA);gba
+Cyborg Hunter (USA, Europe);mastersystem
+Cyborg Justice (USA, Europe);megadrive
+Dahna Megami Tanjou (Japan);megadrive
+Darkman (Europe);c64
+Deadly Evil (Europe);amstradcpc
+Death and Return of Superman, The (USA);megadrive
+Deathkick (Europe);amstradcpc
+Death Sword (CPC+) (Europe) (Unl);amstradcpc
+Death Wish 3 (Europe);amstradcpc
+Defenders of the Earth (Europe);c64
+Demon's Kiss (Europe);c64
+Dick Tracy (CPC+) (Europe);amstradcpc
+Dick Tracy (Europe);amstradcpc
+Dirty Larry - Renegade Cop (USA, Europe);atarilynx
+DJ Boy (Japan);megadrive
+DJ Boy (USA);megadrive
+Double Dragon 2 - The Revenge (Japan);pcenginecd
+Double Dragon 3 - The Arcade Game (USA, Europe);megadrive
+Double Dragon 3 (USA, Europe);gb
+Double Dragon Advance (USA);gba
+Double Dragon (Europe);amstradcpc
+Double Dragon (Europe);c64
+Double Dragon (Europe);zxspectrum
+Double Dragon III - The Rosetta Stone (Europe);amstradcpc
+Double Dragon III - The Rosetta Stone (Europe);zxspectrum
+Double Dragon III - The Rosetta Stone (USA);c64
+Double Dragon III - The Sacred Stones (USA);nes
+Double Dragon II - The Revenge (Europe);amstradcpc
+Double Dragon II - The Revenge (Europe);c64
+Double Dragon II - The Revenge (Europe);zxspectrum
+Double Dragon II - The Revenge (Japan);megadrive
+Double Dragon II - The Revenge (USA);nes
+Double Dragon II (USA, Europe);gb
+Double Dragon (USA);atari2600
+Double Dragon (USA);atari7800
+Double Dragon (USA, Europe);atarilynx
+Double Dragon (USA, Europe);gb
+Double Dragon (USA, Europe);gamegear
+Double Dragon (USA, Europe);megadrive
+Double Dragon (USA);nes
+Double Dragon (World);mastersystem
+Downtown Nekketsu Koushinkyoku - Soreyuke Daiundoukai (Japan);pcenginecd
+Downtown Special - Kunio-kun no Jidaigeki Da yo Zenin Shuugou! (Japan) (Translated En);famicom
+Dragon Ball - Advanced Adventure (USA);gba
+Dragon Ball GT - Transformation (USA);gba
+Dragon Knife (China) (Unl) (Translated En);famicom
+Dragon Ninja (Europe);amstradcpc
+Dragon Ninja (Europe);zxspectrum
+Dragon Ninja (Japan) (Translated En);famicom
+Dr. Doom's Revenge (Europe) (Disk 1);amstradcpc
+Dr. Doom's Revenge (Europe) (Disk 2);amstradcpc
+Duck Out! (Europe);zxspectrum
+Duel 2000 (France);amstradcpc
+Duel, The (Paradize Software) (Netherlands) (Unl);c64
+Dynamic Duo (Europe);c64
+Dynamite Cop! (USA);dreamcast
+Dynamite Dux (Europe) (Disk 1);amstradcpc
+Dynamite Dux (Europe) (Disk 2);amstradcpc
+Dynamite Dux (Europe);mastersystem
+Dynamite Dux (Europe);zxspectrum
+Dynasty Warriors Advance (USA, Australia);gba
+Dynasty Wars (Europe);amstradcpc
+eightman;neogeo
+E-SWAT (Europe) (Disk 1);amstradcpc
+E-SWAT (Europe) (Disk 2);amstradcpc
+Express Raider (Europe);amstradcpc
+Fallen Angel (Europe);c64
+Fallen Angel (Europe);zxspectrum
+Fantastic 4 - Flame On (USA);gba
+Fantastic 4 (USA);gba
+Fighting Force 2 (USA);dreamcast
+Fighting Force 64 (USA);n64
+Fighting Force (USA);psx
+Fighting Force (USA);psp
+Final Fight CD (USA);segacd
+Final Fight (Europe);c64
+Final Fight (Europe) (Disk 1);amstradcpc
+Final Fight (Europe) (Disk 2);amstradcpc
+Final Fight (Europe);zxspectrum
+Final Fight One (USA);gba
+Freddy Hardest in South Manhattan (Europe);zxspectrum
+Freddy Hardest in South Manhattan (Spain);amstradcpc
+Freddy Hardest in South Manhattan (Spain);c64
+Galaxy Keiji Gayvan (Japan);pcenginecd
+Gauntlet - Dark Legacy (USA);gba
+Gekido Advance - Kintaro's Revenge (USA);gba
+Gekido - Urban Fighters (USA);psx
+Gekido - Urban Fighters (USA);psp
+Ghost Chaser Densei (Japan);sfc
+Gladiator (Europe);amstradcpc
+Godzilla - Domination! (USA);gba
+Golden Axe (Europe);c64
+Golden Axe (Europe) (Disk 1);amstradcpc
+Golden Axe (Europe) (Disk 2);amstradcpc
+Golden Axe III (Japan);megadrive
+Golden Axe II (World);megadrive
+Golden Axe (Japan);wonderswancolor
+Golden Axe (Japan);pcenginecd
+Golden Axe (Side A) (Europe);zxspectrum
+Golden Axe (Side B) (Europe);zxspectrum
+Golden Axe (USA, Europe);mastersystem
+Golden Axe (World);megadrive
+Gourmet Sentai Barayarou (Japan) (Translated En);sfc
+Great Battle III, The (Japan);sfc
+Great Battle II, The - Last Fighter Twin (Japan);sfc
+Grim Adventures of Billy & Mandy, The (USA);gba
+Growl (USA);megadrive
+Guardian Angel, The (Europe);amstradcpc
+Hammerfist (USA) (Side A);c64
+Hammerfist (USA) (Side B);c64
+Hammerhead (Europe);amstradcpc
+Hercules - Slayer of the Damned (Europe);amstradcpc
+Hercules - Slayer of the Damned (Europe);c64
+Highlander (Europe);amstradcpc
+Hokuto no Ken (Japan);mastersystem
+Hokuto no Ken (Japan) (Translated En);famicom
+Hokuto no Ken - Shin Seikimatsu Kyuuseishu Densetsu (Japan);megadrive
+Hong Kong Phooey (Europe);amstradcpc
+Hong Kong Phooey (Europe);zxspectrum
+Hook (USA);segacd
+Human Killing Machine (Europe);zxspectrum
+Incredible Hulk, The - The Pantheon Saga (USA);psx
+Incredible Hulk, The - The Pantheon Saga (USA);psp
+Inhumanos, Los (Spain);amstradcpc
+International Karate + (Europe);psx
+International Karate + (Europe);psp
+International Ninja Rabbits (Europe);amstradcpc
+International Ninja Rabbits (Europe);c64
+International Ninja Rabbits (Side A) (Europe);zxspectrum
+International Ninja Rabbits (Side B) (Europe);zxspectrum
+Iron Commando - Koutetsu no Senshi (Japan);sfc
+Jackie Chan Adventures - Legend of the Darkhand (USA, Europe);gba
+Jackie Chan Stuntmaster (USA);psx
+Jackie Chan Stuntmaster (USA);psp
+Joe Blade (Europe);amstradcpc
+Joe Blade II (Europe);amstradcpc
+Justice League Heroes - The Flash (USA);gba
+Juuouki (Japan) (Translated En);famicom
+Kamen Rider (Japan);sfc
+Karateka (USA);c64
+Kendo Warrior (Europe);c64
+Kick-Box Vigilante (Europe);zxspectrum
+Kid Niki to the Rescue (USA);c64
+Kikou Keisatsu Metal Jack (Japan);sfc
+Knight Force (Europe) (Disk 1);amstradcpc
+Knight Force (Europe) (Disk 2);amstradcpc
+Knight Games (Europe) (Disk 1);amstradcpc
+Knight Games (Europe) (Disk 2);amstradcpc
+Knuckle Buster (Europe);c64
+Koryu no Mimi (Japan) (Translated En);sfc
+Kung Food (USA, Europe);atarilynx
+Kung-Fu Heroes (USA);nes
+Kung-Fu II - Sticks of Death (Europe);c64
+Kung Fu (Japan, USA);nes
+Kung-Fu Master (Europe);amstradcpc
+Kung-Fu Master (Europe);zxspectrum
+Kung-Fu Master (USA);atari2600
+Kung-Fu Master (USA);c64
+Kung-Fu Master (USA, Europe);gb
+Last Action Hero (USA, Europe);gb
+Last Action Hero (USA, Europe);megadrive
+Last Action Hero (USA);nes
+Last Battle (Europe);c64
+Last Battle (USA, Europe);megadrive
+Last Ninja 2 (Europe);zxspectrum
+Last Ninja Remix (Europe);zxspectrum
+Lee Enfield - An Amazon Adventure (Europe);amstradcpc
+Legend (Europe);psx
+Legend (Europe);psp
+Legend of Kage (Europe);c64
+Legend of the Amazon Women (USA);c64
+Lethal Weapon (USA);nes
+Lethal Weapon (USA);gb
+Lord of the Rings, The - The Two Towers (USA, Europe) (En,Fr,De,Es,It,Nl);gba
+Mad City (Japan) (Translated En);famicom
+Mazin Saga - Mutant Fighter (USA);megadrive
+Metal Warrior III (Europe) (Unl);c64
+Metal Warrior IV - Agents of Metal (Finland) (Unl) (Side A);c64
+Metal Warrior IV - Agents of Metal (Finland) (Unl) (Side B);c64
+Metropolis (Spain);amstradcpc
+Metropolis (Spain);zxspectrum
+Metropolis (Topo Soft) (Spain);c64
+Midnight Resistance (Europe) (Disk 1);amstradcpc
+Midnight Resistance (Europe) (Disk 2);amstradcpc
+Mighty Final Fight (USA);nes
+Mighty Morphin Power Rangers - The Movie (USA);megadrive
+Mighty Morphin Power Rangers (USA, Europe);gamegear
+Mighty Morphin Power Rangers (USA);megadrive
+Minority Report - Everybody Runs (USA, Europe);gba
+Mortal Kombat I & II (USA, Europe);gb
+Mortal Kombat II (USA, Europe);gb
+Mortal Kombat Mythologies - Sub-Zero (USA);psx
+Mortal Kombat Mythologies - Sub-Zero (USA);psp
+Mortal Kombat - Special Forces (USA);psx
+Mortal Kombat - Special Forces (USA);psp
+Mot (Spain);amstradcpc
+mt_beast;arcade
+mt_beast;mame-advmame
+mt_beast;mame-libretro
+mt_beast;mame-mame4all
+mt_gaxe2;arcade
+mt_gaxe2;mame-advmame
+mt_gaxe2;mame-libretro
+mt_gaxe2;mame-mame4all
+mt_gaxe;arcade
+mt_gaxe;mame-advmame
+mt_gaxe;mame-libretro
+mt_gaxe;mame-mame4all
+mt_lastb;arcade
+mt_lastb;mame-advmame
+mt_lastb;mame-libretro
+mt_lastb;mame-mame4all
+mt_spman;arcade
+mt_spman;mame-advmame
+mt_spman;mame-libretro
+mt_spman;mame-mame4all
+mt_srage;arcade
+mt_srage;mame-advmame
+mt_srage;mame-libretro
+mt_srage;mame-mame4all
+mutnat;neogeo
+My Hero (USA, Europe);mastersystem
+Mystical Fighter (USA);megadrive
+NARC (Europe);c64
+Naruto - Ninja Council 2 (USA);gba
+Naruto - Ninja Council (USA);gba
+ncombat;neogeo
+Nekketsu Kakutou Densetsu (Japan) (Translated En);famicom
+Nekketsu Kouha Kunio-kun - Bangai Rantou Hen (Japan) (Translated En);gb
+Nekketsu Kouha Kunio-Kun (Japan) (Translated En);famicom
+Nekketsu Oyako (Japan) (Translated En);psx
+Nekketsu Oyako (Japan) (Translated En);psp
+Nightmare Circus (Brazil);megadrive
+Ninja (Europe);amstradcpc
+Ninja Gaiden III - The Ancient Ship of Doom (USA, Europe);atarilynx
+Ninja Gaiden (Japan) (Proto);megadrive
+Ninja Gaiden (USA, Europe);atarilynx
+Ninja Hamster (Europe);amstradcpc
+Ninja Massacre (Europe);amstradcpc
+Ninja Master (Europe);amstradcpc
+Ninja (Mastertronic) (Europe);c64
+Ninja Rabbits (Europe);c64
+Ninja Spirit (Europe);amstradcpc
+Ninja Warriors (Europe);amstradcpc
+Ninja Warriors, The (Europe);c64
+Ninja Warriors, The (Europe);zxspectrum
+Operation Ironhawk (USA) (Unl);c64
+Pit Fighter (Europe);mastersystem
+Power and Magic (Spain);amstradcpc
+Powerpuff Girls, The - Paint the Townsville Green (USA) (Rev B);gbc
+P.O.W. - Prisoners of War (USA);nes
+P.O.W. - Prisoners of War (USA);pspminis
+Punisher, The (USA);megadrive
+Rampage (Europe);amstradcpc
+Ramparts (Europe);amstradcpc
+Real Bout Fatal Fury (Europe);psx
+Real Bout Fatal Fury (Europe);psp
+Red Heat (Europe);amstradcpc
+Red Heat (Europe);c64
+Red Heat (Europe);zxspectrum
+Renegade (Europe);c64
+Renegade (Europe);mastersystem
+Renegade (Europe);zxspectrum
+Renegade III - The Final Chapter (Europe);amstradcpc
+Renegade III - The Final Chapter (Europe);c64
+Renegade III - The Final Chapter (Europe);zxspectrum
+Renegade II - Target Renegade (Europe);zxspectrum
+Renegade (Imagine Software) (Europe);amstradcpc
+Renegade (USA);nes
+Rescate en el Golfo (Europe);amstradcpc
+Rescate En El Golfo (Side A) (Spain);zxspectrum
+Rescate En El Golfo (Side B) (Spain);zxspectrum
+Return of Double Dragon (Japan);sfc
+Riot Zone (USA);tg16cd
+Ripping Friends, The (USA, Europe);gba
+River City Ransom EX (USA);gba
+River City Ransom (USA);nes
+roboarmy;neogeo
+Rollerball (USA);nes
+Rollergames (USA);nes
+Running Battle (Europe);mastersystem
+Running Man, The (Europe);c64
+Running Man, The (Europe) (Disk 1);amstradcpc
+Running Man, The (Europe) (Disk 2);amstradcpc
+Rushing Beat Shura (Japan);sfc
+Rygar (Europe);amstradcpc
+Sabrina (Spain);zxspectrum
+Sailor Moon (France);snes
+Samurai Deeper Kyo (USA);gba
+Sapo Xule - O Mestre do Kung Fu (Brazil);mastersystem
+Sardina Forever (Spain) (Unl);amstradcpc
+Second Samurai (Europe);megadrive
+Secret Agent - Sly Spy (Europe);amstradcpc
+sengoku2;neogeo
+sengoku3;neogeo
+Sengoku Denshou (Japan) (Translated En);sfc
+Shadow Dancer (Europe);amstradcpc
+Shadow Dancer (Europe);zxspectrum
+Shadow of the Beast II (USA);segacd
+Shadow, The (USA) (Proto);snes
+Shadow Warriors (Europe);amstradcpc
+Shadow Warriors (Europe);c64
+Shadow Warriors (Europe);zxspectrum
+Shanghai Karate (Europe);amstradcpc
+Shanghai Warriors (Europe);amstradcpc
+Shanghai Warriors (Europe);c64
+Shanghai Warriors (Europe);zxspectrum
+Shaolin (Europe) (Unl);c64
+Shaolin+ (Europe) (Unl);c64
+Shao-Lin's Road (Europe);amstradcpc
+Shao-Lin's Road (Europe);c64
+Shao-Lin's Road (Europe);zxspectrum
+Shin Nekketsu Kouha - Kunio-tachi no Banka (Japan) (Translated En);sfc
+Shinobi (Europe);c64
+Shinobi (Europe) (Disk 1);amstradcpc
+Shinobi (Europe) (Disk 2);amstradcpc
+Shinobi (Europe);zxspectrum
+Shinobi III - Return of the Ninja Master (USA);megadrive
+Shockway Rider (Europe) (Unl);c64
+Shounen Ninja Sasuke (Japan);sfc
+Shrek - Super Slam (USA);gba
+Shui Hu - Feng Yun Zhuan (China) (Unl);megadrive
+Simpsons Arcade Game, The (USA) (Disk 1 Side A);c64
+Simpsons Arcade Game, The (USA) (Disk 1 Side B);c64
+Simpsons Arcade Game, The (USA) (Disk 2);c64
+Sirwood (Europe);amstradcpc
+Skull & Crossbones (Europe);amstradcpc
+Skull & Crossbones (Europe);zxspectrum
+Soul Fighter (USA);dreamcast
+Space Invaders (USA);gb
+Spartan X 2 (Japan) (Translated En);famicom
+Spawn - The Eternal (USA);psx
+Spawn - The Eternal (USA);psp
+Spider-Man and Venom - Maximum Carnage (World);megadrive
+Spider-Man and Venom - Separation Anxiety (USA, Europe);megadrive
+Spitting Image - The Computer Game (Europe);c64
+Splatterhouse 2 (USA);megadrive
+Splatterhouse 3 (USA);megadrive
+Splatterhouse (USA);tg16
+Star Wars Episode I - Jedi Power Battles (USA);dreamcast
+Star Wars - Episode I - Jedi Power Battles (USA);psx
+Star Wars - Episode I - Jedi Power Battles (USA);psp
+Star Wars - Jedi Power Battles (USA);gba
+Stone Protectors (USA) (Proto);megadrive
+Storm Warrior (Europe);amstradcpc
+Street Cop (USA);nes
+Street Fighter 2010 - The Final Fight (USA);nes
+Street Fighter II (USA, Europe);gb
+Street Fighter II (USA, Europe) (Rev A);gb
+Street Gang (Europe);amstradcpc
+Street Gang (Europe);c64
+Street Hassle (Europe);zxspectrum
+Street Hero (USA) (Proto);gamegear
+Streets of Rage 2 (USA);megadrive
+Streets of Rage 3 (USA);megadrive
+Streets of Rage (Europe);mastersystem
+Streets of Rage II (Europe);mastersystem
+Streets of Rage II (World);gamegear
+Streets of Rage (World);gamegear
+Streets of Rage (World);megadrive
+Street Warriors (Europe);c64
+Subway Vigilante (Europe);amstradcpc
+Subway Vigilante (Europe);c64
+Subway Vigilante (Europe);zxspectrum
+Super Duper Sumos (USA);gba
+Superman Returns - Fortress of Solitude (USA, Europe) (En,Fr,De,Es,It);gba
+Superman (USA);megadrive
+Super Ted - The Search for Spot (Europe);amstradcpc
+Surf Ninjas (USA);gamegear
+Sword of Honour (Europe) (Disk 1 Side A);c64
+Sword of Honour (Europe) (Disk 1 Side B);c64
+Sword of Honour (Europe) (Disk 2);c64
+Sword of Sodan (USA, Europe);megadrive
+Sword of the Berserk - Guts' Rage (USA);dreamcast
+Sword of the Samurai (Europe);amstradcpc
+Sword Slayer (Europe);amstradcpc
+T'ai Fu - Wrath of the Tiger (USA);psx
+T'ai Fu - Wrath of the Tiger (USA);psp
+Target Renegade (Europe);amstradcpc
+Target Renegade (Europe);c64
+Target Renegade (USA);nes
+Teenage Mutant Hero Turtles 2 - The Coin-Op (Europe) (Disk 1);amstradcpc
+Teenage Mutant Hero Turtles 2 - The Coin-Op (Europe) (Disk 2);amstradcpc
+Teenage Mutant Hero Turtles - The Coin-Op (Europe);zxspectrum
+Teenage Mutant Hero Turtles World Tour (Europe);amstradcpc
+Teenage Mutant Ninja Turtles 2 - Battle Nexus (USA);gba
+Teenage Mutant Ninja Turtles Double Pack (USA) (En,Fr,De,Es,It);gba
+Teenage Mutant Ninja Turtles III - The Manhattan Project (USA);nes
+Teenage Mutant Ninja Turtles II - The Arcade Game (USA);nes
+Teenage Mutant Ninja Turtles - The Arcade Game (USA) (Disk 1 Side A);c64
+Teenage Mutant Ninja Turtles - The Arcade Game (USA) (Disk 1 Side B);c64
+Teenage Mutant Ninja Turtles - The Hyperstone Heist (USA);megadrive
+Teenage Mutant Ninja Turtles (USA);gba
+Thai Boxing (Europe);amstradcpc
+Thundercats (Europe);zxspectrum
+Thunder Force (Europe);c64
+Thunder Fox (USA);megadrive
+Tick, The (USA);megadrive
+Tiger Claw (Europe) (Unl);c64
+Tiger Road (Europe);amstradcpc
+Tiger Road (Europe);zxspectrum
+Tiger Road (USA);c64
+Time Fighter (Europe);c64
+TMNT (USA) (En,Fr,Es);gba
+Tokyo Gang (Spain);amstradcpc
+Tokyo Gang (Spain);zxspectrum
+Toxic Crusaders (USA);nes
+Toxic Crusaders (USA);gb
+Toxic Crusaders (USA);megadrive
+Trojan (USA);nes
+Twin Hawk (Japan, Europe);megadrive
+Uchi Mata (Europe);amstradcpc
+U.F.O. Kamen Yakisoban - Kettler no Kuroi Inbou (Japan);sfc
+Ultimate Spider-Man (USA);gba
+Undercover Cops (Japan);sfc
+Urban Champion (World);nes
+Usagi Yojimbo (Europe);amstradcpc
+Vigilante (Europe);amstradcpc
+Vigilante (Europe);c64
+Vigilante (Europe);zxspectrum
+Vigilante (USA, Europe);mastersystem
+Vigilante (USA);tg16
+Vixen (Europe);amstradcpc
+Way of Exploding Fist, The (Europe);amstradcpc
+Way Of The Exploding Fist+, The (Europe);amstradcpc
+Way of the Tiger, The (Europe);amstradcpc
+Way of the Tiger, The (Europe) (Side A);c64
+Way of the Tiger, The (Europe) (Side B);c64
+Way of the Tiger, The (Europe);zxspectrum
+Wild Streets (CPC+) (Europe);amstradcpc
+Wild Streets (Europe);amstradcpc
+Wild Streets (Europe);zxspectrum
+X-Men - Mojo World (USA, Europe);gamegear
+X-Men - Mutant Wars (USA, Europe);gbc
+X-Men - Reign of Apocalypse (USA, Europe);gba
+X-Men - The Official Game (USA);gba
+Xyphoes Fantasy (Europe) (Disk 1);amstradcpc
+Xyphoes Fantasy (Europe) (Disk 2);amstradcpc
+Xyphoes Fantasy (Europe) (Disk 3);amstradcpc
+Yang Jia Jiang - Yang Warrior Family (China) (Unl);megadrive
+Yie Ar Kung-Fu II (Europe);c64
+Yusha - Heaven's Gate (Europe);psx
+Yusha - Heaven's Gate (Europe);psp
+Zero Divide 2 - The Secret Wish (Europe);psx
+Zero Divide 2 - The Secret Wish (Europe);psp
+Zombie Revenge (USA);dreamcast

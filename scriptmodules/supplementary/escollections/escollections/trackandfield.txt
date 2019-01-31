@@ -1,0 +1,184 @@
+88games;arcade
+88games;mame-advmame
+88games;mame-libretro
+88games;mame-mame4all
+Activision Decathlon, The (USA);atari2600
+Athlete (Europe);zxspectrum
+atlantol;arcade
+atlantol;mame-advmame
+atlantol;mame-libretro
+atlantol;mame-mame4all
+bootcampa;arcade
+bootcampa;mame-advmame
+bootcampa;mame-libretro
+bootcampa;mame-mame4all
+bootcamp;arcade
+bootcamp;mame-advmame
+bootcamp;mame-libretro
+bootcamp;mame-mame4all
+combatsc;arcade
+combatscb;arcade
+combatscb;mame-advmame
+combatscb;mame-libretro
+combatscb;mame-mame4all
+combatscj;arcade
+combatscj;mame-advmame
+combatscj;mame-libretro
+combatscj;mame-mame4all
+combatsc;mame-advmame
+combatsc;mame-libretro
+combatsc;mame-mame4all
+combatsct;arcade
+combatsct;mame-advmame
+combatsct;mame-libretro
+combatsct;mame-mame4all
+Cross (Spain);zxspectrum
+esckids;arcade
+esckidsj;arcade
+esckidsj;mame-advmame
+esckidsj;mame-libretro
+esckidsj;mame-mame4all
+esckids;mame-advmame
+esckids;mame-libretro
+esckids;mame-mame4all
+ESPN International Track & Field (USA);gbc
+ESPN International Track & Field (USA);dreamcast
+fieldday;arcade
+fieldday;mame-advmame
+fieldday;mame-libretro
+fieldday;mame-mame4all
+Four Minutes from Glory (Side A) (Europe);zxspectrum
+Four Minutes from Glory (Side B) (Europe);zxspectrum
+gogold;arcade
+gogold;mame-advmame
+gogold;mame-libretro
+gogold;mame-mame4all
+goldmedla;arcade
+goldmedla;mame-advmame
+goldmedla;mame-libretro
+goldmedla;mame-mame4all
+goldmedl;arcade
+goldmedl;mame-advmame
+goldmedl;mame-libretro
+goldmedl;mame-mame4all
+herbiedk;arcade
+herbiedk;mame-advmame
+herbiedk;mame-libretro
+herbiedk;mame-mame4all
+hncholms;arcade
+hncholms;mame-advmame
+hncholms;mame-libretro
+hncholms;mame-mame4all
+hpolym84;arcade
+hpolym84;mame-advmame
+hpolym84;mame-libretro
+hpolym84;mame-mame4all
+huncholy;arcade
+huncholy;mame-advmame
+huncholy;mame-libretro
+huncholy;mame-mame4all
+hyperath;arcade
+hyperath;mame-advmame
+hyperath;mame-libretro
+hyperath;mame-mame4all
+Hyper Sports (Europe);zxspectrum
+Hyper Sports (Japan);sg-1000
+hyperspt;arcade
+hypersptb;arcade
+hypersptb;mame-advmame
+hypersptb;mame-libretro
+hypersptb;mame-mame4all
+hyperspt;mame-advmame
+hyperspt;mame-libretro
+hyperspt;mame-mame4all
+hyprolym;arcade
+hyprolymb;arcade
+hyprolymb;mame-advmame
+hyprolymb;mame-libretro
+hyprolymb;mame-mame4all
+hyprolym;mame-advmame
+hyprolym;mame-libretro
+hyprolym;mame-mame4all
+hypsptsp;arcade
+hypsptsp;mame-advmame
+hypsptsp;mame-libretro
+hypsptsp;mame-mame4all
+International Track & Field 2000 (USA);n64
+International Track & Field 2000 (USA);psx
+International Track & Field 2000 (USA);psp
+International Track & Field (USA);gbc
+International Track & Field (USA);psx
+International Track & Field (USA);psp
+konami88;arcade
+konami88;mame-advmame
+konami88;mame-libretro
+konami88;mame-mame4all
+machbrkr;arcade
+machbrkr;mame-advmame
+machbrkr;mame-libretro
+machbrkr;mame-mame4all
+mysticm;arcade
+mysticm;mame-advmame
+mysticm;mame-libretro
+mysticm;mame-mame4all
+mysticmp;arcade
+mysticmp;mame-advmame
+mysticmp;mame-libretro
+mysticmp;mame-mame4all
+nagano98;arcade
+nagano98;mame-advmame
+nagano98;mame-libretro
+nagano98;mame-mame4all
+naganoj;arcade
+naganoj;mame-advmame
+naganoj;mame-libretro
+naganoj;mame-mame4all
+New International Track & Field (USA) (En,Fr,De,Es,It);nds
+numanath;arcade
+numanathj;arcade
+numanathj;mame-advmame
+numanathj;mame-libretro
+numanathj;mame-mame4all
+numanath;mame-advmame
+numanath;mame-libretro
+numanath;mame-mame4all
+Para Academy (Europe);zxspectrum
+pc_tkfld;arcade
+pc_tkfld;mame-advmame
+pc_tkfld;mame-libretro
+pc_tkfld;mame-mame4all
+reaktor;arcade
+reaktor;mame-advmame
+reaktor;mame-libretro
+reaktor;mame-mame4all
+recordbr;arcade
+recordbr;mame-advmame
+recordbr;mame-libretro
+recordbr;mame-mame4all
+Run for Gold (Europe);zxspectrum
+Sports Hero (Europe);zxspectrum
+Track and Field (Europe);amstradcpc
+Track & Field 1 (Europe);msx
+Track & Field 2 (Europe);msx
+Track & Field II (USA);nes
+Track & Field (USA);atari2600
+Track & Field (USA);c64
+Track & Field (USA, Europe);gb
+Track & Field (USA);nes
+trackfld;arcade
+trackfldc;arcade
+trackfldc;mame-advmame
+trackfldc;mame-libretro
+trackfldc;mame-mame4all
+trackfld;mame-advmame
+trackfld;mame-libretro
+trackfld;mame-mame4all
+undoukai;arcade
+undoukai;mame-advmame
+undoukai;mame-libretro
+undoukai;mame-mame4all
+wmatch;arcade
+wmatch;mame-advmame
+wmatch;mame-libretro
+wmatch;mame-mame4all
+World Championship Games - A Track & Field Event (USA) (En,Fr,Es) [b];nds

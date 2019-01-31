@@ -1,0 +1,358 @@
+10... Knockout! (USA);c64
+3D Boxing (Europe);amstradcpc
+Animal Boxing (USA);nds
+Ashita no Joe (Japan) (Translated En);sfc
+ashnojoe;arcade
+ashnojoe;mame-advmame
+ashnojoe;mame-libretro
+ashnojoe;mame-mame4all
+AVGN K.O. Boxing (USA) (Unl);atari2600
+Bangkok Knights (Europe);c64
+Barry Mc Guigan's Boxing (Europe);amstradcpc
+Barry McGuigan World Championship Boxing (Europe);zxspectrum
+bbbxing;arcade
+bbbxing;mame-advmame
+bbbxing;mame-libretro
+bbbxing;mame-mame4all
+Best of the Best - Championship Panza Gold Edition Karate (Europe);amstradcpc
+Big KO, The (Europe);c64
+boxer;arcade
+boxer;mame-advmame
+boxer;mame-libretro
+boxer;mame-mame4all
+Boxer, The (Europe);amstradcpc
+Boxer, The (Europe);c64
+Boxer, The (Europe);zxspectrum
+boxingb;arcade
+boxingb;mame-advmame
+boxingb;mame-libretro
+boxingb;mame-mame4all
+Boxing Champion (Italy);c64
+Boxing Coach (Europe);zxspectrum
+Boxing (Europe);zxspectrum
+Boxing Fever (USA, Europe);gba
+Boxing Legends of the Ring (USA);snes
+boxinglg;fba
+Boxing Manager (Europe);amstradcpc
+Boxing Manager (Europe);c64
+Boxing Manager II (Europe);zxspectrum
+Boxing (USA);atari2600
+Boxing (USA);psx
+Boxing (USA);psp
+By Fair Means or Foul (Europe);amstradcpc
+Champion Boxing (Japan);msx
+Champion Boxing (Japan);sg-1000
+Champions Forever Boxing (USA);tg16
+Championship Boxing (Side A) (Europe);zxspectrum
+Championship Boxing (Side B) (Europe);zxspectrum
+Championship Boxing (USA);c64
+Champ, The (Europe);zxspectrum
+Champ, The (Switzerland);c64
+chavez2;fba
+chboxing;arcade
+chboxing;mame-advmame
+chboxing;mame-libretro
+chboxing;mame-mame4all
+Contender 2 (USA);psx
+Contender 2 (USA);psp
+Contender (USA);psx
+Contender (USA);psp
+Current Contenders Cassette - As At 28-02-90 (Europe);zxspectrum
+Devastating Blow - 1 Player (Europe);zxspectrum
+Devastating Blow - 2 Players (Europe);zxspectrum
+Devastating Blow (Europe);c64
+Don King Boxing (USA) (En,Fr,De,Es,It);nds
+evander;fba
+Evander Holyfield Boxing (USA, Europe);gamegear
+Exciting Boxing (Japan);famicom
+Family Boxing - MSX Title Match (Japan);msx2
+Feature Bout Boxing (USA) (Unl);c64
+fhboxers;arcade
+fhboxers;mame-advmame
+fhboxers;mame-libretro
+fhboxers;mame-mame4all
+Fight Night (Europe);c64
+Fight Night (USA);atari7800
+finalb;arcade
+finalbj;arcade
+finalbj;mame-advmame
+finalbj;mame-libretro
+finalbj;mame-mame4all
+Final Blow (USA);c64
+finalb;mame-advmame
+finalb;mame-libretro
+finalb;mame-mame4all
+finalbu;arcade
+finalbu;mame-advmame
+finalbu;mame-libretro
+finalbu;mame-mame4all
+Foreman for Real (USA, Europe);gb
+Foreman For Real (USA);snes
+Foreman for Real (World);gamegear
+forevbox;fba
+Frank Bruno's Boxing (Europe);amstradcpc
+Frank Bruno's Boxing (Europe);c64
+Frank Bruno's Boxing (Europe);zxspectrum
+fround;arcade
+froundl;arcade
+froundl;mame-advmame
+froundl;mame-libretro
+froundl;mame-mame4all
+fround;mame-advmame
+fround;mame-libretro
+fround;mame-mame4all
+George Foreman's KO Boxing (Europe);mastersystem
+George Foreman's KO Boxing (USA, Europe);gb
+George Foreman's KO Boxing (USA, Europe);gamegear
+George Foreman's KO Boxing (USA);nes
+George Foreman's KO Boxing (USA);snes
+georgeko;fba
+georgekou;fba
+HBO Boxing (USA);psx
+HBO Boxing (USA);psp
+Heavy Boxing (Japan) (Alt 1);msx
+Heavy Boxing (Japan);msx
+Heavyweight Championship Boxing (USA);gb
+hpuncher;arcade
+hpuncher;mame-advmame
+hpuncher;mame-libretro
+hpuncher;mame-mame4all
+hwchamp;arcade
+hwchampj;arcade
+hwchampj;mame-advmame
+hwchampj;mame-libretro
+hwchampj;mame-mame4all
+hwchamp;mame-advmame
+hwchamp;mame-libretro
+hwchamp;mame-mame4all
+James 'Buster' Douglas Knockout Boxing (USA);mastersystem
+jbdougko;fba
+K-1 Grand Prix (USA);psx
+K-1 Grand Prix (USA);psp
+kickbox;fba
+Kickboxing (Europe);zxspectrum
+Kick Boxing, The (Japan);pce-cd
+Kickboxing (USA);psx
+Kickboxing (USA);psp
+kingofb;arcade
+kingofb;mame-advmame
+kingofb;mame-libretro
+kingofb;mame-mame4all
+Knockout (Europe);c64
+Knockout Kings 2000 (USA);n64
+Knockout Kings 2000 (USA);psx
+Knockout Kings 2000 (USA);psp
+Knockout Kings 2001 (USA);psx
+Knockout Kings 2001 (USA);psp
+Knockout Kings (USA);psx
+Knockout Kings (USA);psp
+K.O. Cruiser (USA) (Unl);atari2600
+Konami's Boxing (Japan) (Alt 1);msx
+Konami's Boxing (Japan) (Alt 2);msx
+Konami's Boxing (Japan);msx
+legendos;neogeo
+mainsnk;arcade
+mainsnk;mame-advmame
+mainsnk;mame-libretro
+mainsnk;mame-mame4all
+Mike Tyson Boxing (USA) (En,Fr,De,Es,It);gba
+Mike Tyson Boxing (USA);psx
+Mike Tyson Boxing (USA);psp
+Mike Tyson's Intergalactic Power Punch (USA) (Proto);nes
+Mike Tyson's Punch-Out!! (Japan, USA);nes
+Muhammad Ali's Boxing (USA, Europe);gb
+muhammad;fba
+muhammadu;fba
+muhammadup;fba
+Neutral Corner (USA);c64
+Onizuka Katsuya Super Virtual Boxing - Shin Kentou Ou Densetsu (Japan);sfc
+On the Ropes II (Side A) (Europe);zxspectrum
+On the Ropes II (Side B) (Europe);zxspectrum
+Out for the Count (Europe);zxspectrum
+panzakb;fba
+Panza Kick Boxing (CPC+) (Europe);amstradcpc
+Panza Kick Boxing (Europe);amstradcpc
+Panza Kick Boxing (USA);tg16
+pc_miket;arcade
+pc_miket;mame-advmame
+pc_miket;mame-libretro
+pc_miket;mame-mame4all
+Poli Diaz Boxeo (Spain);amstradcpc
+Poli Diaz (Spain);zxspectrum
+poundfor;arcade
+poundforj;arcade
+poundforj;mame-advmame
+poundforj;mame-libretro
+poundforj;mame-mame4all
+poundfor;mame-advmame
+poundfor;mame-libretro
+poundfor;mame-mame4all
+poundforu;arcade
+poundforu;mame-advmame
+poundforu;mame-libretro
+poundforu;mame-mame4all
+Power Punch II (USA);nes
+Prince Naseem Boxing (Europe);gbc
+Prince Naseem Boxing (Europe);psx
+Prince Naseem Boxing (Europe);psp
+Prize Fighter (USA) (Disc 1);segacd
+Prize Fighter (USA) (Disc 2);segacd
+prmtmfgt;arcade
+prmtmfgt;mame-advmame
+prmtmfgt;mame-libretro
+prmtmfgt;mame-mame4all
+prmtmfgto;arcade
+prmtmfgto;mame-advmame
+prmtmfgto;mame-libretro
+prmtmfgto;mame-mame4all
+Pro Boxing Simulator (Europe);amstradcpc
+Pro Boxing Simulator (Europe);c64
+Pro Boxing (USA);c64
+punchita;arcade
+punchita;mame-advmame
+punchita;mame-libretro
+punchita;mame-mame4all
+Punch King - Arcade Boxing (USA);gba
+punchouta;arcade
+punchouta;mame-advmame
+punchouta;mame-libretro
+punchouta;mame-mame4all
+punchout;arcade
+punchoutj;arcade
+punchoutj;mame-advmame
+punchoutj;mame-libretro
+punchoutj;mame-mame4all
+punchout;mame-advmame
+punchout;mame-libretro
+punchout;mame-mame4all
+Punch-Out!! (USA);nes
+Ready 2 Rumble Boxing - Round 2 (USA);n64
+Ready 2 Rumble Boxing - Round 2 (USA);gba
+Ready 2 Rumble Boxing - Round 2 (USA);dreamcast
+Ready 2 Rumble Boxing - Round 2 (USA);psx
+Ready 2 Rumble Boxing - Round 2 (USA);psp
+Ready 2 Rumble Boxing (USA);n64
+Ready 2 Rumble Boxing (USA);gbc
+Ready 2 Rumble Boxing (USA);dreamcast
+Ready 2 Rumble Boxing (USA);psx
+Ready 2 Rumble Boxing (USA);psp
+RealSports Boxing (USA);atari2600
+Riddick Bowe Boxing (USA);gb
+Riddick Bowe Boxing (USA);gamegear
+Riddick Bowe Boxing (USA);snes
+ringfgt2;arcade
+ringfgt2;mame-advmame
+ringfgt2;mame-libretro
+ringfgt2;mame-mame4all
+ringfgt;arcade
+ringfgt;mame-advmame
+ringfgt;mame-libretro
+ringfgt;mame-mame4all
+ringking2;arcade
+ringking2;mame-advmame
+ringking2;mame-libretro
+ringking2;mame-mame4all
+ringking3;arcade
+ringking3;mame-advmame
+ringking3;mame-libretro
+ringking3;mame-mame4all
+ringking;arcade
+ringking;mame-advmame
+ringking;mame-libretro
+ringking;mame-mame4all
+Ring King (USA);nes
+ringkingw;arcade
+ringkingw;mame-advmame
+ringkingw;mame-libretro
+ringkingw;mame-mame4all
+Ring ni Kakero (Japan);sfc
+Ringside Boxing (USA) (Unl) (Side A);c64
+Ringside Boxing (USA) (Unl) (Side B);c64
+Ringside Seat (USA);c64
+Ringside (USA);c64
+Rocco (Europe);amstradcpc
+Rocky (Europe);c64
+Rocky (Europe);zxspectrum
+Rocky Super-Action Boxing (USA, Europe);coleco
+Rocky (USA) (En,Fr,De,Es,It);gba
+Rocky (World);mastersystem
+scessjoe;arcade
+scessjoe;mame-advmame
+scessjoe;mame-libretro
+scessjoe;mame-mame4all
+Showtime Championship Boxing (USA);nds
+Slugger (Europe);c64
+spnchouta;arcade
+spnchouta;mame-advmame
+spnchouta;mame-libretro
+spnchouta;mame-mame4all
+spnchout;arcade
+spnchoutj;arcade
+spnchoutj;mame-advmame
+spnchoutj;mame-libretro
+spnchoutj;mame-mame4all
+spnchout;mame-advmame
+spnchout;mame-libretro
+spnchout;mame-mame4all
+Star Rank Boxing II (USA);c64
+Star Rank Boxing (USA);c64
+Street Cred Boxing (Europe);amstradcpc
+Street Cred Boxing (Europe);c64
+Street Cred Boxing (Europe);zxspectrum
+Super Punch-Out!! (USA);snes
+Teleroboxer (Japan, USA);virtualboy
+Thai Boxing (Europe);amstradcpc
+Thai Boxing (Europe) (Side A);c64
+Thai Boxing (Europe) (Side B);c64
+Titlebout (USA);c64
+titlef;arcade
+titlefj;arcade
+titlefj;mame-advmame
+titlefj;mame-libretro
+titlefj;mame-mame4all
+titlef;mame-advmame
+titlef;mame-libretro
+titlef;mame-mame4all
+titlefu;arcade
+titlefu;mame-advmame
+titlefu;mame-libretro
+titlefu;mame-mame4all
+tkoboxng;arcade
+tkoboxng;mame-advmame
+tkoboxng;mame-libretro
+tkoboxng;mame-mame4all
+TKO Professional Boxing (USA) (Disk 1 Side A);c64
+TKO Professional Boxing (USA) (Disk 1 Side B);c64
+TKO Professional Boxing (USA) (Disk 2);c64
+TKO Super Championship Boxing (USA);snes
+TKO (USA);c64
+Toughman Contest (USA, Europe);sega32x
+trstar;arcade
+trstarj;arcade
+trstarj;mame-advmame
+trstarj;mame-libretro
+trstarj;mame-mame4all
+trstar;mame-advmame
+trstar;mame-libretro
+trstar;mame-mame4all
+trstaro;arcade
+trstaroj;arcade
+trstaroj;mame-advmame
+trstaroj;mame-libretro
+trstaroj;mame-mame4all
+trstaro;mame-advmame
+trstaro;mame-libretro
+trstaro;mame-mame4all
+Victory Boxing Champion Edition (Europe);psx
+Victory Boxing Champion Edition (Europe);psp
+vsgongf;arcade
+vsgongf;mame-advmame
+vsgongf;mame-libretro
+vsgongf;mame-mame4all
+Wade Hixton's Counter Punch (USA, Europe);gba
+World Boxing Champ (Europe) (Unl);c64
+World Championship Boxing Manager (Europe);amstradcpc
+World Championship Boxing Manager (Europe);c64
+World Championship Boxing Manager (Europe);zxspectrum
+World Champ - Super Boxing Great Fight (USA);nes
+World Heavyweight Boxing (Europe);zxspectrum

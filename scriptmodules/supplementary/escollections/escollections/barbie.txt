@@ -1,0 +1,38 @@
+Barbie and the Magic of Pegasus (USA);gba
+Barbie and the Three Musketeers (USA) (En,Fr);nds
+Barbie as the Island Princess (USA);nds
+Barbie as the Island Princess (USA);gba
+Barbie Diaries, The - High School Mystery (USA);gba
+Barbie - Explorer (USA);psx
+Barbie - Explorer (USA);psp
+Barbie - Fashion Pack Games (USA, Europe);gbc
+Barbie Fashion Show - An Eye for Style (USA) (En,Fr);nds
+Barbie - Game Girl (USA, Europe);gb
+Barbie - Gotta Have Games (USA);psx
+Barbie - Gotta Have Games (USA);psp
+Barbie - Groom and Glam Pups (USA) (En,Fr);nds
+Barbie Groovy Games (USA);gba
+Barbie Horse Adventures - Blue Ribbon Race (USA);gba
+Barbie Horse Adventures - Riding Camp (USA) (En,Fr);nds
+Barbie in the 12 Dancing Princesses (USA);nds
+Barbie in the 12 Dancing Princesses (USA);gba
+Barbie - Jet, Set & Style! (USA) (En,Fr) (NDSi Enhanced) [b];nds
+Barbie - Magic Genie Adventure (USA);gbc
+Barbie - Ocean Discovery (USA);gbc
+Barbie - Pet Rescue (USA);gbc
+Barbie - Race & Ride (USA);psx
+Barbie - Race & Ride (USA);psp
+barbiesm;fba
+Barbie Super Model (USA) (Proto);gamegear
+Barbie Super Model (USA);snes
+Barbie Superpack (USA);gba
+Barbie - Super Sports (USA);psx
+Barbie - Super Sports (USA);psp
+Barbie - The Princess and the Pauper (USA);gba
+Barbie (USA);c64
+Barbie (USA);nes
+Barbie Vacation Adventure (USA) (Proto);snes
+barbvac;fba
+Detective Barbie - The Mystery Cruise (USA);psx
+Detective Barbie - The Mystery Cruise (USA);psp
+Secret Agent Barbie - Royal Jewels Mission (USA);gba

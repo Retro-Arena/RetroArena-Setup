@@ -72,7 +72,7 @@ function mapInput() {
     echo "$params"
 }
 
-params=(-config config:homedir=$HOME -config x11:fullscreen=1)
+params=(-config config:homedir=$home -config x11:fullscreen=1)
 getAutoConf reicast_input && params+=($(mapInput))
 [[ -n "$AUDIO" ]] && params+=(-config audio:backend=$AUDIO -config audio:disable=0)
 [[ -n "$ROM" ]] && params+=(-config config:image="$ROM")

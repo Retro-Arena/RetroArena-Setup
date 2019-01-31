@@ -1,0 +1,196 @@
+mk2;arcade
+mk2chal;arcade
+mk2chal;mame-advmame
+mk2chal;mame-libretro
+mk2chal;mame-mame4all
+mk2;fba
+mk2;mame-advmame
+mk2;mame-libretro
+mk2;mame-mame4all
+mk2r11;arcade
+mk2r11;mame-advmame
+mk2r11;mame-libretro
+mk2r11;mame-mame4all
+mk2r14;arcade
+mk2r14;mame-advmame
+mk2r14;mame-libretro
+mk2r14;mame-mame4all
+mk2r20;arcade
+mk2r20;mame-advmame
+mk2r20;mame-libretro
+mk2r20;mame-mame4all
+mk2r21;arcade
+mk2r21;mame-advmame
+mk2r21;mame-libretro
+mk2r21;mame-mame4all
+mk2r30;arcade
+mk2r30;mame-advmame
+mk2r30;mame-libretro
+mk2r30;mame-mame4all
+mk2r31e;arcade
+mk2r31e;mame-advmame
+mk2r31e;mame-libretro
+mk2r31e;mame-mame4all
+mk2r32e;arcade
+mk2r32e;mame-advmame
+mk2r32e;mame-libretro
+mk2r32e;mame-mame4all
+mk2r42;arcade
+mk2r42;mame-advmame
+mk2r42;mame-libretro
+mk2r42;mame-mame4all
+mk2r91;arcade
+mk2r91;mame-advmame
+mk2r91;mame-libretro
+mk2r91;mame-mame4all
+mk3;arcade
+mk3;fba
+mk3;mame-advmame
+mk3;mame-libretro
+mk3;mame-mame4all
+mk3mdb;arcade
+mk3mdb;mame-advmame
+mk3mdb;mame-libretro
+mk3mdb;mame-mame4all
+mk3p40;arcade
+mk3p40;mame-advmame
+mk3p40;mame-libretro
+mk3p40;mame-mame4all
+mk3r10;arcade
+mk3r10;mame-advmame
+mk3r10;mame-libretro
+mk3r10;mame-mame4all
+mk3r20;arcade
+mk3r20;mame-advmame
+mk3r20;mame-libretro
+mk3r20;mame-mame4all
+mk3u;fba
+mk4a;arcade
+mk4a;mame-advmame
+mk4a;mame-libretro
+mk4a;mame-mame4all
+mk4;arcade
+mk4b;arcade
+mk4b;mame-advmame
+mk4b;mame-libretro
+mk4b;mame-mame4all
+mk4;mame-advmame
+mk4;mame-libretro
+mk4;mame-mame4all
+mka;fba
+mk;arcade
+mk;fba
+mkla1;arcade
+mkla1;mame-advmame
+mkla1;mame-libretro
+mkla1;mame-mame4all
+mkla2;arcade
+mkla2;mame-advmame
+mkla2;mame-libretro
+mkla2;mame-mame4all
+mkla3;arcade
+mkla3;mame-advmame
+mkla3;mame-libretro
+mkla3;mame-mame4all
+mkla4;arcade
+mkla4;mame-advmame
+mkla4;mame-libretro
+mkla4;mame-mame4all
+mk;mame-advmame
+mk;mame-libretro
+mk;mame-mame4all
+mknifty666;arcade
+mknifty666;mame-advmame
+mknifty666;mame-libretro
+mknifty666;mame-mame4all
+mknifty;arcade
+mknifty;mame-advmame
+mknifty;mame-libretro
+mknifty;mame-mame4all
+mkprot4;arcade
+mkprot4;mame-advmame
+mkprot4;mame-libretro
+mkprot4;mame-mame4all
+mkprot8;arcade
+mkprot8;mame-advmame
+mkprot8;mame-libretro
+mkprot8;mame-mame4all
+mkprot9;arcade
+mkprot9;mame-advmame
+mkprot9;mame-libretro
+mkprot9;mame-mame4all
+mkr4;arcade
+mkr4;mame-advmame
+mkr4;mame-libretro
+mkr4;mame-mame4all
+mktturbo;arcade
+mktturbo;mame-advmame
+mktturbo;mame-libretro
+mktturbo;mame-mame4all
+mkyawdim2;arcade
+mkyawdim2;mame-advmame
+mkyawdim2;mame-libretro
+mkyawdim2;mame-mame4all
+mkyawdim3;arcade
+mkyawdim3;mame-advmame
+mkyawdim3;mame-libretro
+mkyawdim3;mame-mame4all
+mkyawdim;arcade
+mkyawdim;mame-advmame
+mkyawdim;mame-libretro
+mkyawdim;mame-mame4all
+mkyturbo;arcade
+mkyturboe;arcade
+mkyturboe;mame-advmame
+mkyturboe;mame-libretro
+mkyturboe;mame-mame4all
+mkyturbo;mame-advmame
+mkyturbo;mame-libretro
+mkyturbo;mame-mame4all
+Mortal Kombat 3 (Brazil);mastersystem
+Mortal Kombat 3 (Europe);gamegear
+Mortal Kombat 3 (USA);gb
+Mortal Kombat 3 (USA);psx
+Mortal Kombat 3 (USA);psp
+Mortal Kombat 3 (USA);snes
+Mortal Kombat 4 (USA, Europe);gbc
+Mortal Kombat 4 (USA);n64
+Mortal Kombat 4 (USA);psx
+Mortal Kombat 4 (USA);psp
+Mortal Kombat Advance (USA);gba
+Mortal Kombat - Deadly Alliance (USA) (En,Fr,De,Es,It);gba
+Mortal Kombat (Europe);mastersystem
+Mortal Kombat Gold (USA);dreamcast
+Mortal Kombat II (Europe);mastersystem
+Mortal Kombat I & II (USA, Europe);gb
+Mortal Kombat II (Japan, USA);sega32x
+Mortal Kombat II (USA, Europe);gb
+Mortal Kombat II (USA);snes
+Mortal Kombat II (World);gamegear
+Mortal Kombat Mythologies - Sub-Zero (USA);n64
+Mortal Kombat Mythologies - Sub-Zero (USA);psx
+Mortal Kombat Mythologies - Sub-Zero (USA);psp
+Mortal Kombat - Special Forces (USA);psx
+Mortal Kombat - Special Forces (USA);psp
+Mortal Kombat - Tournament Edition (USA) (En,Fr,De,Es,It);gba
+Mortal Kombat Trilogy (USA) (Rev B);n64
+Mortal Kombat Trilogy (USA);psx
+Mortal Kombat Trilogy (USA);psp
+Mortal Kombat (USA, Europe);gb
+Mortal Kombat (USA, Europe);gamegear
+Mortal Kombat (USA);segacd
+Mortal Kombat (USA);snes
+Ultimate Mortal Kombat 3 (USA);snes
+umk3;arcade
+umk3;fba
+umk3;mame-advmame
+umk3;mame-libretro
+umk3;mame-mame4all
+umk3r10;arcade
+umk3r10;mame-advmame
+umk3r10;mame-libretro
+umk3r10;mame-mame4all
+umk3r11;arcade
+umk3r11;mame-advmame
+umk3r11;mame-libretro
+umk3r11;mame-mame4all

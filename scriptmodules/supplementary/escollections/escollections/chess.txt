@@ -1,0 +1,103 @@
+16k Superchess (Europe);zxspectrum
+3D Voice Chess (Europe);amstradcpc
+Battle Chess (USA) (Disk 1 Side A);c64
+Battle Chess (USA) (Disk 1 Side B);c64
+Battle Chess (USA);nes
+Best of Chess - Volume I - American Triumph (USA);c64
+C64hess - Chess Puzzles (USA) (Unl);c64
+Championship Chess (USA);c64
+Chess 7.0 (USA);c64
+Chess Academy (China) (Translated En);famicom
+chessa;fba
+chessb;fba
+Chess Chiller (France);c64
+Chess (Europe) (En,Fr,De,Es,It);nds
+Chess (Europe);videopac2
+Chess (Europe);zxspectrum
+chess;fba
+Chess for Two (USA);c64
+Chess Game, The (Europe);msx
+Chess (Japan);msx
+Chessmaster 2000, The (Europe);amstradcpc
+Chessmaster 2000, The (USA) (Side A);c64
+Chessmaster 2000, The (USA) (Side B);c64
+Chessmaster 2100 - The Fidelity (USA);c64
+Chessmaster 3-D, The (USA);psx
+Chessmaster 3-D, The (USA);psp
+Chessmaster II (USA);psx
+Chessmaster II (USA);psp
+Chess Master (Side A) (Europe);zxspectrum
+Chess Master (Side B) (Europe);zxspectrum
+Chessmaster - The Art of Learning (USA) (En,Fr,Es);nds
+Chessmaster, The (USA, Europe);gamegear
+Chessmaster, The (USA);nes
+Chessmaster, The (USA);gb
+Chessmaster, The (USA) (Rev A);gb
+Chessmaster, The (USA);snes
+Chessmaster (USA, Europe);gbc
+Chessmaster (USA);gba
+Chess Player, The (Europe);zxspectrum
+Chess - The Turk (Europe);zxspectrum
+Chess Tutor 1 (Sinclair) (Side A) (Europe);zxspectrum
+Chess Tutor 1 (Sinclair) (Side B) (Europe);zxspectrum
+Chess Tutor (Artic Computing) (Europe);zxspectrum
+Chess (USA);psx
+Chess (USA);psp
+chinesec;fba
+Clock Chess '89 (Europe);zxspectrum
+Cohort Chess (USA);pspminis
+Colossus 4 Chess (Europe);amstradcpc
+Colossus 4 Chess (Europe);zxspectrum
+Colossus Chess 2.0 (Europe);c64
+Colossus Chess 4 (Europe);c64
+Computer Chess (USA) (Proto);atari2600
+Cyberchess (Europe);c64
+Cyrus IS Chess (Europe);zxspectrum
+Death Chess 5000 (Europe);zxspectrum
+Dexter's Laboratory - Chess Challenge (USA);gba
+Fidelity Ultimate Chess Challenge, The (USA, Europe);atarilynx
+Fritz Chess (USA) (En,Fr,Es) [b];nds
+GM Chess (Europe);amstradcpc
+How About a Nice Game of Chess! (USA);c64
+Jeremy Silman's Complete Guide to Chess Openings (USA) (Disk 1);c64
+Jeremy Silman's Complete Guide to Chess Openings (USA) (Disk 2);c64
+Jeremy Silman's Complete Guide to Chess Openings (USA) (Disk 3);c64
+Jeremy Silman's Complete Guide to Chess Openings (USA) (Disk 4);c64
+Jeremy Silman's Complete Guide to Chess Openings (USA) (Disk 5);c64
+Kenpelen Chess (Japan);msx2
+Learn Chess (USA) [b];nds
+Learn to Play Chess with Fritz & Chesster (Europe) (En,Fr,De,Es,It) [b];nds
+Masterchess (Amsoft) (Europe);amstradcpc
+Master Chess (Europe);amstradcpc
+Master Chess (Europe);c64
+Master Chess (Europe);msx
+Masterchess (Europe);zxspectrum
+Master Chess (Europe);zxspectrum
+Masterchess (Mastertronic) (Europe);amstradcpc
+Microchess #3 (USA);c64
+Mychess II (USA);c64
+New Chessmaster, The (USA, Europe);gb
+Paul Whitehead Teaches Chess (USA) (Disk 1);c64
+Paul Whitehead Teaches Chess (USA) (Disk 2);c64
+Paul Whitehead Teaches Chess (USA) (Disk 3);c64
+Pawnchess (Europe);zxspectrum
+Psi Chess (Europe);zxspectrum
+Sega Chess (Europe);mastersystem
+Spectrechess (Side A) (Europe);zxspectrum
+Spectrechess (Side B) (Europe);zxspectrum
+Spectrum Chess (Europe);zxspectrum
+Spectrum Chess II (Europe);zxspectrum
+Spectrum Micro Chess (Europe);zxspectrum
+Spectrum Voice Chess (Europe);zxspectrum
+Star Wars Chess (USA);segacd
+Super Chess 3.0 (Europe);zxspectrum
+Super Chess 3.5 (Europe);zxspectrum
+Superchess (Europe);amstradcpc
+Super Chess (Europe);zxspectrum
+Super Chess II (Europe);zxspectrum
+Super Fun Chess (Europe) (En,De,Es,It) [b];nds
+Tele-Chess v1.4 (Europe) (Unl);c64
+ThinkSmart - Chess for Kids (USA) (En,Fr,Es);nds
+Turbo Chess (Europe);zxspectrum
+Video Chess (USA);atari2600
+Virtual Chess 64 (USA) (En,Fr,Es);n64

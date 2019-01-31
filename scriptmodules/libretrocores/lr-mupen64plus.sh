@@ -39,9 +39,6 @@ function depends_lr-mupen64plus() {
 
 function sources_lr-mupen64plus() {
     gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro.git
-    # both needed until https://github.com/libretro/mupen64plus-libretro/pull/39 is accepted
-    isPlatform "rpi" && applyPatch "$md_data/01_new_lib_names.diff"
-    isPlatform "rpi" && applyPatch "$md_data/02_fix_build.diff"
     isPlatform "mali" && applyPatch "$md_data/odroid.diff"
 }
 
@@ -70,6 +67,10 @@ function install_lr-mupen64plus() {
         'README.md'
         'BUILDING.md'
     )
+}
+
+function install_bin_lr-mupen64plus() {
+    downloadAndExtract "$__gitbins_url/lr-mupen64plus.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-mupen64plus() {

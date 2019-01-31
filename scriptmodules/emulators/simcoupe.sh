@@ -42,6 +42,10 @@ function install_simcoupe() {
     )
 }
 
+function install_bin_simcoupe() {
+    downloadAndExtract "$__gitbins_url/simcoupe.tar.gz" "$md_inst" 1
+}
+
 function configure_simcoupe() {
     mkRomDir "samcoupe"
     moveConfigDir "$home/.simcoupe" "$md_conf_root/$md_id"

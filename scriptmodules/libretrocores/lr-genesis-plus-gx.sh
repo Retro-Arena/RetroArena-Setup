@@ -35,12 +35,12 @@ function install_lr-genesis-plus-gx() {
 }
 
 function install_bin_lr-genesis-plus-gx() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-genesis-plus-gx.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-genesis-plus-gx.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-genesis-plus-gx() {
     local system
-    for system in gamegear mastersystem genesis megadrive megadrive-japan sg-1000 segacd; do
+    for system in gamegear mastersystem genesis megadrive megadrive-japan sg-1000 segacd sc-3000 markiii; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
         addEmulator 1 "$md_id" "$system" "$md_inst/genesis_plus_gx_libretro.so"

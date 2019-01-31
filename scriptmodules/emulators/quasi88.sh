@@ -34,6 +34,10 @@ function install_quasi88() {
     make X11_VERSION= SDL_VERSION=1 BINDIR="$md_inst" install
 }
 
+function install_bin_quasi88() {
+    downloadAndExtract "$__gitbins_url/quasi88.tar.gz" "$md_inst" 1
+}
+
 function configure_quasi88() {
     mkRomDir "pc88"
     moveConfigDir "$home/.quasi88" "$md_conf_root/pc88"

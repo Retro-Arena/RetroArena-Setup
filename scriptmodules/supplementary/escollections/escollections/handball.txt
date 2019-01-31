@@ -1,0 +1,22 @@
+Atomic Handball (USA);c64
+Handball;videopac
+hvysmsha;arcade
+hvysmsha;mame-advmame
+hvysmsha;mame-libretro
+hvysmsha;mame-mame4all
+hvysmsh;arcade
+hvysmshj;arcade
+hvysmshj;mame-advmame
+hvysmshj;mame-libretro
+hvysmshj;mame-mame4all
+hvysmsh;mame-advmame
+hvysmsh;mame-libretro
+hvysmsh;mame-mame4all
+Jahangir Khan Squash (Europe);c64
+Jai Alai (Europe);c64
+Peter Shilton's Handball Maradona (Europe);amstradcpc
+Peter Shilton's Handball Maradona (Europe);c64
+Peter Shilton's Handball Maradona (Europe);zxspectrum
+Squash (USA);c64
+Super Squash 88 (USA);c64
+World Championship Squash (Europe);c64

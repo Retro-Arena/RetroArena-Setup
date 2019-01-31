@@ -58,6 +58,10 @@ function install_dosbox() {
     md_ret_require="$md_inst/bin/dosbox"
 }
 
+function install_bin_dosbox() {
+    downloadAndExtract "$__gitbins_url/dosbox.tar.gz" "$md_inst" 1
+}
+
 function configure_dosbox() {
     if [[ "$md_id" == "dosbox-sdl2" ]]; then
         local def="0"
@@ -134,7 +138,7 @@ _EOF_
     fi
 
     moveConfigDir "$home/.$md_id" "$md_conf_root/pc"
-    cp "$home/$dir/RetroArena-Setup/configs/pc/dosbox-SVN.conf" "$md_conf_root/pc/"
+    cp "$scriptdir/configs/pc/dosbox-SVN.conf" "$md_conf_root/pc/"
     addEmulator "$def" "$md_id" "pc" "bash $romdir/pc/${launcher_name// /\\ } %ROM%"
     addSystem "pc"
 }

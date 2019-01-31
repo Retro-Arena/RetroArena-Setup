@@ -1,0 +1,16 @@
+Earthworm Jim 2 (Europe);psx
+Earthworm Jim 2 (Europe);psp
+Earthworm Jim 2 (USA);gba
+Earthworm Jim 2 (USA);snes
+Earthworm Jim 3D (USA);n64
+Earthworm Jim (Brazil);mastersystem
+Earthworm Jim - Menace 2 the Galaxy (USA, Europe);gbc
+Earthworm Jim - Special Edition (USA);segacd
+Earthworm Jim (USA, Europe);gba
+Earthworm Jim (USA);gb
+Earthworm Jim (USA);gamegear
+Earthworm Jim (USA);snes
+ejim2;fba
+ejim2u;fba
+ejim;fba
+ejimu;fba

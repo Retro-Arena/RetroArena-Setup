@@ -53,6 +53,10 @@ function install_lr-parallel-n64() {
     )
 }
 
+function install_bin_lr-parallel-n64() {
+    downloadAndExtract "$__gitbins_url/lr-parallel-n64.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-parallel-n64() {
     mkRomDir "n64"
     ensureSystemretroconfig "n64"
@@ -63,7 +67,7 @@ function configure_lr-parallel-n64() {
     setRetroArchCoreOption "parallel-n64-screensize" "640x480"
 
     # Copy config files
-    cat > $home/RetroArena/BIOS/gles2n64rom.conf << _EOF_
+    cat > $datadir/BIOS/gles2n64rom.conf << _EOF_
 #rom specific settings
 
 rom name=SUPER MARIO 64

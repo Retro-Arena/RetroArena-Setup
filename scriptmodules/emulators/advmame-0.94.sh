@@ -37,7 +37,7 @@ function install_advmame-0.94() {
 }
 
 function install_bin_advmame-0.94() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/advmame-0.94.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/advmame-0.94.tar.gz" "$md_inst" 1
 }
 
 function configure_advmame-0.94() {
@@ -51,5 +51,5 @@ function configure_advmame-0.94() {
     delEmulator advmame-0.94.0 arcade
 
     configure_advmame
-    cp "$home/$dir/RetroArena-Setup/configs/mame-advmame/advmame-0.94.rc" "$md_conf_root/mame-advmame/"
+    cp "$scriptdir/configs/mame-advmame/advmame-0.94.rc" "$md_conf_root/mame-advmame/"
 }

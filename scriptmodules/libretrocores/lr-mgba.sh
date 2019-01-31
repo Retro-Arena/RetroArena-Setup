@@ -39,12 +39,12 @@ function install_lr-mgba() {
 }
 
 function install_bin_lr-mgba() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-mgba.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-mgba.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-mgba() {
     local system
-    for system in gb gbc gba; do
+    for system in gb gbc gba sgb; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
         addEmulator 1 "$md_id" "$system" "$md_inst/mgba_libretro.so"

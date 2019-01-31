@@ -31,6 +31,10 @@ function install_lr-beetle-pcfx() {
     )
 }
 
+function install_bin_lr-beetle-pcfx() {
+    downloadAndExtract "$__gitbins_url/lr-beetle-pcfx.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-beetle-pcfx() {
     mkRomDir "pcfx"
     ensureSystemretroconfig "pcfx"

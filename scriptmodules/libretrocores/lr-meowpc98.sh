@@ -30,6 +30,10 @@ function install_lr-meowpc98() {
     )
 }
 
+function install_bin_lr-meowpc98() {
+    downloadAndExtract "$__gitbins_url/lr-meowpc98.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-meowpc98() {
     mkRomDir "pc98"
     ensureSystemretroconfig "pc98"

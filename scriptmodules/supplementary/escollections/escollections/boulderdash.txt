@@ -1,0 +1,48 @@
+AFL Boulder Dash (USA) (Unl);c64
+bouldash;arcade
+bouldash;fba
+bouldashj;arcade
+bouldashj;fba
+bouldashj;mame-advmame
+bouldashj;mame-libretro
+bouldashj;mame-mame4all
+bouldash;mame-advmame
+bouldash;mame-libretro
+bouldash;mame-mame4all
+Boulder Dash 2 (France) (Unl);amstradcpc
+Boulder Dash 4 (France) (Unl);amstradcpc
+Boulder Dash 50 (USA) (Unl);c64
+Boulder Dash Construction Kit (Europe);amstradcpc
+Boulder Dash - Construction Kit (Europe);zxspectrum
+Boulder Dash Construction Kit (USA) (Disk 1);c64
+Boulder Dash Construction Kit (USA) (Disk 2);c64
+Boulder Dash Construction Kit (USA) (Disk 3);c64
+Boulder Dash Construction Kit (USA) (Disk 4);c64
+Boulder Dash Construction Kit (USA) (Disk 5);c64
+Boulder Dash DTV (USA) (Unl);c64
+Boulder Dash (Europe);amstradcpc
+Boulder Dash (Europe);gb
+Boulder Dash (Europe);zxspectrum
+Boulder Dash EX (USA);gba
+Boulder Dash III (Europe);amstradcpc
+Boulder Dash III (Europe);zxspectrum
+Boulder Dash III (USA);c64
+Boulder Dash II - Rockford's Revenge (USA);c64
+Boulder Dash II - Rockford's Riot (Europe);zxspectrum
+Boulder Dash (Japan);msx
+Boulder Dash - Rocks! (Europe) (En,Fr,De,Es,It);nds
+Boulder Dash (USA);coleco
+Boulder Dash (USA);c64
+Boulder Dash (USA);nes
+Boulder Dash (USA) (Unl);atari2600
+Boulder Dash V (Europe) (Unl);c64
+Boulder Dash VI (Europe);amstradcpc
+cbdash;arcade
+cbdash;mame-advmame
+cbdash;mame-libretro
+cbdash;mame-mame4all
+mf_bdash;arcade
+mf_bdash;mame-advmame
+mf_bdash;mame-libretro
+mf_bdash;mame-mame4all
+New-Boulderdash 01 (USA) (Unl);c64

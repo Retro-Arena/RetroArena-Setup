@@ -1,0 +1,72 @@
+2 in 1 Game Pack - Spider-Man - Mysterio's Menace + X2 - Wolverine's Revenge (USA, Europe);gba
+2 in 1 Game Pack - Spider-Man + Spider-Man 2 (USA) (En,Fr,De+En,Fr,De,Es);gba
+Amazing Spider-Man, The - Lethal Foes (Japan) (Translated En);sfc
+Amazing Spider-Man, The (USA);c64
+Amazing Spider-Man, The (USA, Europe);gb
+Amazing Spider-Man, The (USA);nds
+Amazing Spider-Man, The - Web of Fire (USA);sega32x
+Amazing Spider-Man vs. The Kingpin, The (USA);segacd
+mt_spman;arcade
+mt_spman;mame-advmame
+mt_spman;mame-libretro
+mt_spman;mame-mame4all
+Questprobe 2 - Spider-Man (Europe);zxspectrum
+Questprobe 2 - Spider-Man (USA);c64
+Spider Hunt (Germany);c64
+Spider-Man 2 - Enter - Electro (USA);psx
+Spider-Man 2 - Enter - Electro (USA);psp
+Spider-Man 2 - The Sinister Six (USA);gbc
+Spider-Man 2 (USA, Europe);gb
+Spider-Man 2 (USA, Europe);gba
+Spider-Man 2 (USA);nds
+Spider-Man 3 - Invasion of the Spider-Slayers (USA, Europe);gb
+Spider-Man 3 (USA);nds
+Spider-Man 3 (USA);gba
+Spider-Man and the X-Men - Arcade's Revenge (USA);snes
+Spider-Man and the X-Men in Arcade's Revenge (USA);gamegear
+Spider-Man - Battle for New York (USA);nds
+Spider-Man - Battle for New York (USA);gba
+Spider-Man - Edge of Time (USA) (En,Fr);nds
+Spider-Man (Europe) (Proto);videopac2
+Spider-Man - Friend or Foe (USA);nds
+Spider-Man - Mysterio's Menace (USA, Europe);gba
+Spider-Man - Return of the Sinister Six (Europe);mastersystem
+Spider-Man - Return of the Sinister Six (USA, Europe);gamegear
+Spider-Man - Return of the Sinister Six (USA);nes
+Spider-Man - Shattered Dimensions (USA) (En,Fr);nds
+Spider-Man (USA);atari2600
+Spider-Man (USA, Europe);gba
+Spider-Man (USA, Europe);gbc
+Spider-Man (USA);n64
+Spider-Man (USA);dreamcast
+Spider-Man (USA);psx
+Spider-Man (USA);psp
+Spider-Man (USA);snes
+Spider-Man & Venom - Maximum Carnage (USA);snes
+Spider-Man & Venom - Separation Anxiety (USA);snes
+Spider-Man vs. The Kingpin (USA, Europe);gamegear
+Spider-Man vs. The Kingpin (USA, Europe);mastersystem
+Spider-Man - Web of Shadows (USA) (En,Fr) [b];nds
+Spider-Man-X-Men (USA, Europe);gb
+spidermi;fba
+spidermn;fba
+spidermnp1;fba
+spidermnp2;fba
+spidking;fba
+spidman;arcade
+spidmanj;arcade
+spidmanj;mame-advmame
+spidmanj;mame-libretro
+spidmanj;mame-mame4all
+spidman;mame-advmame
+spidman;mame-libretro
+spidman;mame-mame4all
+spidmanu;arcade
+spidmanu;mame-advmame
+spidmanu;mame-libretro
+spidmanu;mame-mame4all
+spidmaxc;fba
+spidxmen;fba
+Ultimate Spider-Man (USA);nds
+Ultimate Spider-Man (USA);gba
+venom;fba

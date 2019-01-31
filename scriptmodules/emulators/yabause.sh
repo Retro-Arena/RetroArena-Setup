@@ -41,7 +41,7 @@ function install_yabause() {
 }
 
 function install_bin_yabause() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/yabause.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/yabause.tar.gz" "$md_inst" 1
 }
 
 function configure_yabause() {

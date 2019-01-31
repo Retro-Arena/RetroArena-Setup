@@ -32,6 +32,10 @@ function install_lr-atari800() {
     )
 }
 
+function install_bin_lr-atari800() {
+    downloadAndExtract "$__gitbins_url/lr-atari800.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-atari800() {
     mkRomDir "atari800"
     mkRomDir "atari5200"

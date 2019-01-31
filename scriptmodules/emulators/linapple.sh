@@ -43,6 +43,10 @@ function install_linapple() {
     )
 }
 
+function install_bin_linapple() {
+    downloadAndExtract "$__gitbins_url/linapple.tar.gz" "$md_inst" 1
+}
+
 function configure_linapple() {
     mkRomDir "apple2"
     mkUserDir "$md_conf_root/apple2"
@@ -56,7 +60,7 @@ function configure_linapple() {
             copyDefaultConfig "$file" "$md_conf_root/apple2/$file"
         done
     fi
-    cp "$home/$dir/RetroArena-Setup/configs/apple2/linapple.conf" "$md_conf_root/apple2/"
+    cp "$scriptdir/configs/apple2/linapple.conf" "$md_conf_root/apple2/"
     addEmulator 1 "$md_id" "apple2" "pushd $romdir/apple2; $md_inst/linapple -1 %ROM%; popd"
     addSystem "apple2"
 }

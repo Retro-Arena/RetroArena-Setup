@@ -31,6 +31,10 @@ function install_lr-x1() {
     )
 }
 
+function install_bin_lr-x1() {
+    downloadAndExtract "$__gitbins_url/lr-x1.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-x1() {
     mkRomDir "x1"
     ensureSystemretroconfig "x1"

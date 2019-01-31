@@ -172,6 +172,10 @@ function install_mupen64plus() {
     rm -f "$md_inst/share/mupen64plus/InputAutoCfg.ini"
 }
 
+function install_bin_mupen64plus() {
+    downloadAndExtract "$__gitbins_url/mupen64plus.tar.gz" "$md_inst" 1
+}
+
 function configure_mupen64plus() {
     if isPlatform "mali"; then
          local res
@@ -268,5 +272,5 @@ function configure_mupen64plus() {
     addAutoConf mupen64plus_texture_packs 1
 
     chown -R $user:$user "$md_conf_root/n64"
-	cp "$home/$dir/RetroArena-Setup/configs/n64/*.*" "$md_conf_root/n64/"
+	cp -R "$scriptdir/configs/n64/." "$md_conf_root/n64"
 }

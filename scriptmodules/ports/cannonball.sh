@@ -54,6 +54,10 @@ function install_cannonball() {
     cp -v res/config_sdl2.xml "$md_inst/config.xml.def"
 }
 
+function install_bin_cannonball() {
+    downloadAndExtract "$__gitbins_url/cannonball.tar.gz" "$md_inst" 1
+}
+
 function configure_cannonball() {
     addPort "$md_id" "cannonball" "Cannonball - OutRun Engine" "pushd $md_inst; $md_inst/cannonball; popd"
 

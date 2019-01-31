@@ -58,17 +58,23 @@ function install_lr-ppsspp() {
     )
 }
 
-function configure_lr-ppsspp() {
-    mkRomDir "psp"
-    ensureSystemretroconfig "psp"
+function install_bin_lr-ppsspp() {
+    downloadAndExtract "$__gitbins_url/lr-ppsspp.tar.gz" "$md_inst" 1
+}
 
+function configure_lr-ppsspp() {
     if [[ "$md_mode" == "install" ]]; then
         mkUserDir "$biosdir/PPSSPP"
         cp -Rv "$md_inst/assets/"* "$biosdir/PPSSPP/"
         cp -Rv "$md_inst/flash0" "$biosdir/PPSSPP/"
         chown -R $user:$user "$biosdir/PPSSPP"
     fi
-
-    addEmulator 1 "$md_id" "psp" "$md_inst/ppsspp_libretro.so"
-    addSystem "psp"
+    
+    local system
+    for system in psp pspminis; do
+        mkRomDir "$system"
+        ensureSystemretroconfig "$system"        
+        addEmulator 1 "$md_id" "$system" "$md_inst/ppsspp_libretro.so"
+        addSystem "$system"
+    done
 }

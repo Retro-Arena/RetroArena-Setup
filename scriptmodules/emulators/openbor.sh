@@ -43,7 +43,7 @@ function install_openbor() {
 }
 
 function install_bin_openbor() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/openbor.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/openbor.tar.gz" "$md_inst" 1
 }
 
 function configure_openbor() {
@@ -54,7 +54,7 @@ function configure_openbor() {
     addEmulator 1 "$md_id" "openbor" "pushd $md_inst; $md_inst/openbor %ROM%; popd"
     mv "$md_inst/OpenBOR" "$md_inst/openbor"
     ln -snf "/dev/shm" "$md_inst/Logs"
-    ln -snf "$home/RetroArena/roms/openbor" "$md_inst/Paks"
+    ln -snf "$datadir/roms/openbor" "$md_inst/Paks"
     ln -snf "$configdir/openbor/ScreenShots" "$md_inst/ScreenShots"
     ln -snf "$configdir/openbor/Saves" "$md_inst/Saves"
 }

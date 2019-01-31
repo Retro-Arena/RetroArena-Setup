@@ -895,7 +895,7 @@ function get_sys_command() {
     fi
 
     # workaround for launching xserver on correct/user owned tty
-    # see https://github.com/Retro-Arena/RetroArena-Setup/issues/1805
+    # see https://github.com/RetroPie/RetroPie-Setup/issues/1805
     if [[ -n "$TTY" && "$COMMAND" =~ ^(startx|xinit) ]]; then
         COMMAND+=" -- vt$TTY -keeptty"
     fi
@@ -941,7 +941,16 @@ function show_launch() {
             IMG_PID=$!
             sleep "$IMAGE_DELAY"
         else
-            fbi -1 -t "$IMAGE_DELAY" -noverbose -a "$image" </dev/tty &>/dev/null
+            RALV="$HOME/RetroArena/launchingvideos"
+            if [[ -e "$HOME/.config/launchingvideos" ]]; then
+                if [[ -e "$RALV/system-$SYSTEM.mp4" ]]; then
+                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$RALV/system-$SYSTEM.mp4" </dev/tty &>/dev/null
+                else
+                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$RALV/system-default.mp4" </dev/tty &>/dev/null
+                fi
+            else
+                fbi -1 -t "$IMAGE_DELAY" -noverbose -a "$image" </dev/tty &>/dev/null
+            fi
         fi
     elif [[ "$DISABLE_MENU" -ne 1 && "$USE_ART" -ne 1 ]]; then
         local launch_name
@@ -1056,7 +1065,7 @@ function ogst_off() {
 }
 
 function ogst_loading() {
-    OGST="$HOME/.emulationstation/ogst_themes/ogst-retroarena"
+    OGST="$HOME/RetroArena/casetheme"
     if ! lsmod | grep -q 'fbtft_device'; then
         sudo modprobe fbtft_device name=hktft9340 busnum=1 rotate=270 &> /dev/null
         mplayer -quiet -nolirc -nosound -vo fbdev2:/dev/fb1 -vf scale=320:240 "$OGST/default.png" &> /dev/null
@@ -1083,13 +1092,13 @@ function ogst_play() {
         SYSTEM="c64"
     elif [[ $EMULATOR == vice-x128 ]]; then
         EMU_PROC="x128"
-        SYSTEM="c64"
+        SYSTEM="c128"
     elif [[ $EMULATOR == vice-xpet ]]; then
         EMU_PROC="xpet"
-        SYSTEM="c64"
+        SYSTEM="pet"
     elif [[ $EMULATOR == vice-xplus4 ]]; then
         EMU_PROC="xplus4"
-        SYSTEM="c64"
+        SYSTEM="plus4"
     elif [[ $EMULATOR == vice-xvic ]]; then
         EMU_PROC="xvic"
         SYSTEM="vic20"
@@ -1116,7 +1125,7 @@ function ogst_play() {
     done
    
     # load image
-    OGST="$HOME/.emulationstation/ogst_themes/ogst-retroarena"
+    OGST="$HOME/RetroArena/casetheme"
     MNB_BA="$HOME/RetroArena/roms/$SYSTEM/boxart"
     MNB_CA="$HOME/RetroArena/roms/$SYSTEM/cartart"
     MNB_SP="$HOME/RetroArena/roms/$SYSTEM/snap"

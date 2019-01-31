@@ -21,7 +21,7 @@ rootdir="/opt/retroarena"
 configdir="$rootdir/configs"
 config="$configdir/n64/mupen64plus.cfg"
 inputconfig="$configdir/n64/InputAutoCfg.ini"
-datadir="$HOME/RetroArena"
+datadir="$home/RetroArena"
 romdir="$datadir/roms"
 
 source "$rootdir/lib/inifuncs.sh"

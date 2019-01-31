@@ -43,6 +43,10 @@ function install_basilisk() {
     make install
 }
 
+function install_bin_basilisk() {
+    downloadAndExtract "$__gitbins_url/basilisk.tar.gz" "$md_inst" 1
+}
+
 function configure_basilisk() {
     mkRomDir "macintosh"
     touch "$romdir/macintosh/Start.txt"

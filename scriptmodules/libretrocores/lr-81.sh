@@ -32,6 +32,10 @@ function install_lr-81() {
     )
 }
 
+function install_bin_lr-81() {
+    downloadAndExtract "$__gitbins_url/lr-81.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-81() {
     mkRomDir "zx81"
     ensureSystemretroconfig "zx81"

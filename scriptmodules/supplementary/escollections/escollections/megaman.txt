@@ -1,0 +1,96 @@
+gigaman2;arcade
+gigaman2;mame-advmame
+gigaman2;mame-libretro
+gigaman2;mame-mame4all
+megaman2a;arcade
+megaman2a;fba
+megaman2a;mame-advmame
+megaman2a;mame-libretro
+megaman2a;mame-mame4all
+megaman2;arcade
+megaman2;fba
+megaman2h;arcade
+megaman2h;fba
+megaman2h;mame-advmame
+megaman2h;mame-libretro
+megaman2h;mame-mame4all
+megaman2;mame-advmame
+megaman2;mame-libretro
+megaman2;mame-mame4all
+Mega Man 2 (USA);nes
+Mega Man 3 (USA);nes
+Mega Man 4 (USA);nes
+Mega Man 5 (USA);nes
+Mega Man 64 (USA);n64
+Mega Man 6 (USA);nes
+Mega Man 7 (USA);snes
+Mega Man 8 (USA);psx
+Mega Man 8 (USA);psp
+megamana;arcade
+megamana;fba
+megamana;mame-advmame
+megamana;mame-libretro
+megamana;mame-mame4all
+megaman;arcade
+Mega Man & Bass (USA);gba
+Mega Man Battle Chip Challenge (USA);gba
+Mega Man Battle Network 2 (USA);gba
+Mega Man Battle Network 3 - Blue Version (USA);gba
+Mega Man Battle Network 3 - White Version (USA);gba
+Mega Man Battle Network 4 - Blue Moon (USA);gba
+Mega Man Battle Network 4 - Red Sun (USA);gba
+Mega Man Battle Network 5 - Team Colonel (USA);gba
+Mega Man Battle Network 5 - Team Proto Man (USA);gba
+Mega Man Battle Network 6 - Cybeast Falzar (USA);gba
+Mega Man Battle Network 6 - Cybeast Gregar (USA);gba
+Mega Man Battle Network (USA);gba
+Mega Man - Dr. Wily's Revenge (USA);gb
+megaman;fba
+Mega Man III (USA);gb
+Mega Man II (USA);gb
+Mega Man IV (USA);gb
+Mega Man Legends 2 (USA);psx
+Mega Man Legends 2 (USA);psp
+Mega Man Legends (USA);psx
+Mega Man Legends (USA);psp
+megaman;mame-advmame
+megaman;mame-libretro
+megaman;mame-mame4all
+Mega Man Soccer (USA);snes
+Mega Man (USA, Europe);gamegear
+Mega Man (USA);nes
+Mega Man V (USA);gb
+Mega Man X2 (USA);snes
+Mega Man X3 (Europe);psx
+Mega Man X3 (Europe);psp
+Mega Man X3 (USA);snes
+Mega Man X4 (USA);psx
+Mega Man X4 (USA);psp
+Mega Man X5 (USA);psx
+Mega Man X5 (USA);psp
+Mega Man X6 (USA);psx
+Mega Man X6 (USA);psp
+Mega Man Xtreme 2 (USA, Europe);gbc
+Mega Man Xtreme (USA);gbc
+Mega Man X (USA);snes
+Mega Man Zero 2 (USA);gba
+Mega Man Zero 3 (USA);gba
+Mega Man Zero 4 (USA);gba
+Mega Man Zero (USA, Europe);gba
+megamn2d;arcade
+megamn2d;fba
+megamn2d;mame-advmame
+megamn2d;mame-libretro
+megamn2d;mame-mame4all
+mmancp2u;arcade
+mmancp2u;fba
+mmancp2u;mame-advmame
+mmancp2u;mame-libretro
+mmancp2u;mame-mame4all
+mmancp2ur1;arcade
+mmancp2ur1;mame-advmame
+mmancp2ur1;mame-libretro
+mmancp2ur1;mame-mame4all
+pc_mman3;arcade
+pc_mman3;mame-advmame
+pc_mman3;mame-libretro

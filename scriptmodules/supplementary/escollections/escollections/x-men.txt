@@ -1,0 +1,35 @@
+Captain America and the Avengers (USA);megadrive
+captaven;arcade
+captaven;fba
+captaven;mame-advmame
+captaven;mame-libretro
+mshu;arcade
+mshu;fba
+mshu;mame-advmame
+mshu;mame-libretro
+mshvsfu;arcade
+mshvsfu;fba
+mshvsfu;mame-advmame
+mshvsfu;mame-libretro
+mvscu;arcade
+mvscu;fba
+mvscu;mame-advmame
+mvscu;mame-libretro
+spidman;arcade
+spidman;fba
+spidman;mame-advmame
+spidman;mame-libretro
+xmcota;arcade
+xmcota;fba
+xmcota;mame-advmame
+xmcota;mame-libretro
+X-Men 2 - Clone Wars (USA, Europe);megadrive
+xmen;arcade
+xmen;fba
+xmen;mame-advmame
+xmen;mame-libretro
+X-Men (USA);megadrive
+xmvsf;arcade
+xmvsf;fba
+xmvsf;mame-advmame
+xmvsf;mame-libretro

@@ -44,7 +44,7 @@ function install_reicast() {
 }
 
 function install_bin_reicast() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/reicast.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/reicast.tar.gz" "$md_inst" 1
 }
 
 function configure_reicast() {

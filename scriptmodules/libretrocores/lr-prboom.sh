@@ -39,6 +39,10 @@ function game_data_lr-prboom() {
     fi
 }
 
+function install_bin_lr-prboom() {
+    downloadAndExtract "$__gitbins_url/lr-prboom.tar.gz" "$md_inst" 1
+}
+
 function _add_games_lr-prboom() {
     local cmd="$1"
     declare -A games=(

@@ -1,0 +1,35 @@
+Big Air (USA);psx
+Big Air (USA);psp
+Boarder Zone (USA);gbc
+Chill (Europe);psx
+Chill (Europe);psp
+Cool Boarders 2001 (USA);psx
+Cool Boarders 2001 (USA);psp
+Cool Boarders 2 (USA);psx
+Cool Boarders 2 (USA);psp
+Cool Boarders 3 (USA);psx
+Cool Boarders 3 (USA);psp
+Cool Boarders 4 (USA);psx
+Cool Boarders 4 (USA);psp
+Cool Boarders (USA);psx
+Cool Boarders (USA);psp
+Extreme Snow Break (Europe);psx
+Extreme Snow Break (Europe);psp
+Freestyle Boardin' '99 (USA);psx
+Freestyle Boardin' '99 (USA);psp
+Heavy Shreddin' (USA);nes
+MTV Sports - Pure Ride (USA);psx
+MTV Sports - Pure Ride (USA);psp
+MTV Sports - Snowboarding (USA);psx
+MTV Sports - Snowboarding (USA);psp
+Phat Air - Extreme Snowboarding (Europe);psx
+Phat Air - Extreme Snowboarding (Europe);psp
+Psybadek (USA);psx
+Psybadek (USA);psp
+Snowboarding (USA);psx
+Snowboarding (USA);psp
+Tommy Moe's Winter Extreme - Skiing and Snowboarding (USA);snes
+Trick'n Snowboarder (USA);psx
+Trick'n Snowboarder (USA);psp
+X Games Pro Boarder (USA);psx
+X Games Pro Boarder (USA);psp

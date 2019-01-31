@@ -48,6 +48,10 @@ function install_alephone() {
     make install
 }
 
+function install_bin_alephone() {
+    downloadAndExtract "$__gitbins_url/alephone.tar.gz" "$md_inst" 1
+}
+
 function game_data_alephone() {
     local release_url="https://github.com/Aleph-One-Marathon/alephone/releases/download/release-20150620"
 

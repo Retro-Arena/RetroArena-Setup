@@ -1,0 +1,698 @@
+2020bba;arcade
+2020bba;fba
+2020bba;mame-advmame
+2020bba;mame-libretro
+2020bba;mame-mame4all
+2020bb;arcade
+2020bb;fba
+2020bbh;arcade
+2020bbh;fba
+2020bbh;mame-advmame
+2020bbh;mame-libretro
+2020bbh;mame-mame4all
+2020bbj;fba
+2020bb;mame-advmame
+2020bb;mame-libretro
+2020bb;mame-mame4all
+2020bb;neogeo
+2020 Super Baseball (USA);snes
+2K Sports - Major League Baseball 2K7 (USA);gba
+3D Baseball (USA);psx
+3D Baseball (USA);psp
+abaseb2;arcade
+abaseb2;mame-advmame
+abaseb2;mame-libretro
+abaseb2;mame-mame4all
+abaseb;arcade
+abaseb;mame-advmame
+abaseb;mame-libretro
+abaseb;mame-mame4all
+All-Star Baseball 2000 (USA, Europe);gbc
+All-Star Baseball 2000 (USA);n64
+All-Star Baseball 2001 (USA);n64
+All-Star Baseball 2001 (USA);gbc
+All-Star Baseball 2003 (USA);gba
+All-Star Baseball 2004 (USA);gba
+All-Star Baseball 97 Featuring Frank Thomas (USA);psx
+All-Star Baseball 97 Featuring Frank Thomas (USA);psp
+All-Star Baseball '99 (USA);n64
+All-Star Baseball 99 (USA);gb
+Backyard Baseball '09 (USA);nds
+Backyard Baseball '10 (USA);nds
+Backyard Baseball 2006 (USA);gba
+Backyard Baseball (USA);gba
+Backyard Sports - Baseball 2007 (USA);gba
+Bad News Baseball (USA);nes
+basebal2;arcade
+basebal2;mame-advmame
+basebal2;mame-libretro
+basebal2;mame-mame4all
+Baseball Advance (USA);gba
+Baseball (Japan);fds
+Baseball;videopac
+Baseball Simulator 1.000 (USA);nes
+Baseball Stars Color (World) (En,Ja);ngpc
+Baseball Stars II (USA);nes
+Baseball Stars (Japan, Europe);ngp
+Baseball Stars (USA);nes
+Baseball (USA);c64
+Baseball (USA, Europe);videopac2
+Baseball (USA, Europe);nes
+Baseball (VTech, Explorer Time & Fun);gameandwatch
+Baseball (World);gb
+Bases Loaded 3 (USA);nes
+Bases Loaded 4 (USA);nes
+Bases Loaded '96 - Double Header (USA);psx
+Bases Loaded '96 - Double Header (USA);psp
+Bases Loaded II - Second Season (USA);nes
+Bases Loaded (USA);nes
+Bases Loaded (USA);gb
+Batter Up (USA, Europe);gamegear
+bighurt;fba
+Big League Slugger Baseball (USA);psx
+Big League Slugger Baseball (USA);psp
+Bo Jackson Baseball (USA);nes
+bottom9;arcade
+bottom9;mame-advmame
+bottom9;mame-libretro
+bottom9;mame-mame4all
+bottom9n;arcade
+bottom9n;mame-advmame
+bottom9n;mame-libretro
+bottom9n;mame-mame4all
+Bottom of the 9th '97 (USA);psx
+Bottom of the 9th '97 (USA);psp
+Bottom of the 9th '99 (USA);psx
+Bottom of the 9th '99 (USA);psp
+Bottom of the 9th (USA);n64
+Bottom of the 9th (USA);psx
+Bottom of the 9th (USA);psp
+bstars2;arcade
+bstars2;fba
+bstars2;mame-advmame
+bstars2;mame-libretro
+bstars2;mame-mame4all
+bstars2;neogeo
+bstars;arcade
+bstars;fba
+bstarsh;arcade
+bstarsh;fba
+bstarsh;mame-advmame
+bstarsh;mame-libretro
+bstarsh;mame-mame4all
+bstars;mame-advmame
+bstars;mame-libretro
+bstars;mame-mame4all
+bstars;neogeo
+Cal Ripken Jr. Baseball (USA);snes
+calripkn;fba
+cbasebal;arcade
+cbasebal;mame-advmame
+cbasebal;mame-libretro
+cbasebal;mame-mame4all
+champbas;arcade
+champbasja;arcade
+champbasja;mame-advmame
+champbasja;mame-libretro
+champbasja;mame-mame4all
+champbasj;arcade
+champbasj;mame-advmame
+champbasj;mame-libretro
+champbasj;mame-mame4all
+champbas;mame-advmame
+champbas;mame-libretro
+champbas;mame-mame4all
+champbb2;arcade
+champbb2;mame-advmame
+champbb2;mame-libretro
+champbb2;mame-mame4all
+Champion Baseball (Japan);sg-1000
+Championship Baseball (Europe);amstradcpc
+Championship Baseball (Europe);zxspectrum
+Championship Baseball (USA);c64
+chkun;arcade
+chkun;mame-advmame
+chkun;mame-libretro
+chkun;mame-mame4all
+cltchitr;arcade
+cltchitrj;arcade
+cltchitrj;mame-advmame
+cltchitrj;mame-libretro
+cltchitrj;mame-mame4all
+cltchitr;mame-advmame
+cltchitr;mame-libretro
+cltchitr;mame-mame4all
+Clutch Hitter (USA);gamegear
+Computer Baseball (USA) (Side A);c64
+Computer Baseball (USA) (Side B);c64
+Computer Statis-Pro Baseball (USA) (Disk 1 Side A);c64
+Computer Statis-Pro Baseball (USA) (Disk 1 Side B);c64
+Computer Statis-Pro Baseball (USA) (Disk 2);c64
+Crushed Baseball (USA);gba
+curvebal;arcade
+curvebal;mame-advmame
+curvebal;mame-libretro
+curvebal;mame-mame4all
+Cyber Stadium Series - Base Wars (USA);nes
+Dave Winfield's Batter Up! (USA) (Side A);c64
+Dave Winfield's Batter Up! (USA) (Side B);c64
+dblplay;arcade
+dblplay;mame-advmame
+dblplay;mame-libretro
+dblplay;mame-mame4all
+dleague;arcade
+dleaguej;arcade
+dleaguej;mame-advmame
+dleaguej;mame-libretro
+dleaguej;mame-mame4all
+dleague;mame-advmame
+dleague;mame-libretro
+dleague;mame-mame4all
+dokaben;arcade
+dokaben;mame-advmame
+dokaben;mame-libretro
+dokaben;mame-mame4all
+Dolucky no Kusayakiu (Japan);sfc
+Downtown - Nekketsu Baseball Monogatari - Yakyuu de Shoubu da! Kunio-kun (Japan);sfc
+dplay;arcade
+dplay;mame-advmame
+dplay;mame-libretro
+dplay;mame-mame4all
+Dusty Diamond's All-Star Softball (USA);nes
+Dynamic Stadium (Japan);sfc
+Dynamite Slugger (Japan, Europe) (En,Ja);ngpc
+ebases;arcade
+ebases;mame-advmame
+ebases;mame-libretro
+ebases;mame-mame4all
+einning;arcade
+einning;mame-advmame
+einning;mame-libretro
+einning;mame-mame4all
+ESPN Baseball Tonight (USA);segacd
+ESPN Baseball Tonight (USA);snes
+espnbb;fba
+Exciting Baseball (Japan);fds
+exctleag;arcade
+exctleag;mame-advmame
+exctleag;mame-libretro
+exctleag;mame-mame4all
+Extra Bases! (USA);gb
+Extra Innings (USA);snes
+flyball1;arcade
+flyball1;mame-advmame
+flyball1;mame-libretro
+flyball1;mame-mame4all
+flyball;arcade
+flyball;mame-advmame
+flyball;mame-libretro
+flyball;mame-mame4all
+Frank Thomas Big Hurt Baseball (USA, Europe);gb
+Frank Thomas Big Hurt Baseball (USA);gamegear
+Frank Thomas Big Hurt Baseball (USA);psx
+Frank Thomas Big Hurt Baseball (USA);psp
+Frank Thomas Big Hurt Baseball (USA);snes
+Grand Slam Baseball - Steve Garvey vs. Jose Canseco (USA);c64
+Grand Slam (USA);psx
+Grand Slam (USA);psp
+Great Baseball (Japan);mastersystem
+Great Baseball (USA, Europe);mastersystem
+gslgr94j;arcade
+gslgr94j;mame-advmame
+gslgr94j;mame-libretro
+gslgr94j;mame-mame4all
+gslgr94u;arcade
+gslgr94u;mame-advmame
+gslgr94u;mame-libretro
+gslgr94u;mame-mame4all
+gslugrsj;arcade
+gslugrsj;mame-advmame
+gslugrsj;mame-libretro
+gslugrsj;mame-mame4all
+Hakunetsu Pro Yakyuu '94 - Ganba League 3 (Japan);sfc
+HardBall 5 (USA);psx
+HardBall 5 (USA);psp
+HardBall '99 (USA);psx
+HardBall '99 (USA);psp
+Hardball (Europe);amstradcpc
+Hardball (Europe);zxspectrum
+HardBall! (USA);c64
+Hatayama Hatch no Pro Yakyuu News! - Jitsumei Ban (Japan);sfc
+High Heat Baseball 2000 (USA);psx
+High Heat Baseball 2000 (USA);psp
+High Heat Major League Baseball 2002 (USA, Europe);gba
+High Heat Major League Baseball 2002 (USA);psx
+High Heat Major League Baseball 2002 (USA);psp
+High Heat Major League Baseball 2003 (USA);gba
+homerun;arcade
+homerun;mame-advmame
+homerun;mame-libretro
+homerun;mame-mame4all
+Home Run (USA);atari2600
+Human Baseball (Japan);sfc
+Interplay Sports Baseball 2000 (USA);psx
+Interplay Sports Baseball 2000 (USA);psp
+IQ Baseball (USA);c64
+Jewish IQ Baseball (USA);c64
+Jikkyou Powerful Pro Yakyuu 2 (Japan);sfc
+Jikkyou Powerful Pro Yakyuu 3 - '97 Haru (Japan);sfc
+Jikkyou Powerful Pro Yakyuu 3 (Japan);sfc
+Jikkyou Powerful Pro Yakyuu '94 (Japan);sfc
+Jikkyou Powerful Pro Yakyuu '96 - Kaimaku Ban (Japan);sfc
+Jikkyou Powerful Pro Yakyuu - Basic Ban '98 (Japan);sfc
+jitsupro;arcade
+jitsupro;mame-advmame
+jitsupro;mame-libretro
+jitsupro;mame-mame4all
+Ken Griffey Jr. presents Major League Baseball (USA, Europe);gb
+Ken Griffey Jr. Presents Major League Baseball (USA);snes
+Ken Griffey Jr.'s Slugfest (USA);n64
+Konami's Baseball (Japan) (Alt 1);msx
+Konami's Baseball (Japan);msx
+koshien;arcade
+koshien;mame-advmame
+koshien;mame-libretro
+koshien;mame-mame4all
+Koushien 2 (Japan);sfc
+Koushien 3 (Japan);sfc
+Koushien 4 (Japan);sfc
+kouyakyu;arcade
+kouyakyu;mame-advmame
+kouyakyu;mame-libretro
+kouyakyu;mame-mame4all
+ksayakyu;arcade
+ksayakyu;mame-advmame
+ksayakyu;mame-libretro
+ksayakyu;mame-mame4all
+kyukaidk;arcade
+kyukaidk;mame-advmame
+kyukaidk;mame-libretro
+kyukaidk;mame-mame4all
+kyukaidko;arcade
+kyukaidko;mame-advmame
+kyukaidko;mame-libretro
+kyukaidko;mame-mame4all
+laruss95;fba
+larussa;fba
+lasorda;fba
+Legends of the Diamond - The Baseball Championship Game (USA);nes
+Little League Baseball 2002 (USA) (En,Es);gba
+Little League Baseball - Championship Series (USA);nes
+Little League World Series Baseball 2008 (USA) [b];nds
+Little League World Series Baseball 2009 (USA) [b];nds
+Little League World Series Baseball - Double Play (USA);nds
+magicbal;arcade
+magicbal;mame-advmame
+magicbal;mame-libretro
+magicbal;mame-mame4all
+Major League Baseball 2K10 (USA);nds
+Major League Baseball 2K11 (USA);nds
+Major League Baseball 2K12 (USA);nds
+Major League Baseball 2K7 (USA);nds
+Major League Baseball 2K8 - Fantasy All-Stars (USA) (En,Fr,Es);nds
+Major League Baseball 2K9 - Fantasy All-Stars (USA) (En,Fr,Es) [b];nds
+Major League Baseball featuring Ken Griffey Jr. (USA);n64
+Major League Baseball (USA);nes
+Majors Pro Baseball, The (USA);gamegear
+MicroLeague Baseball - Box Score - Stats Compiler Disk (USA);c64
+MicroLeague Baseball - General Manager - Owner Disk (USA);c64
+MicroLeague Baseball II (USA);c64
+MicroLeague Baseball (USA) (Disk 1 Side A);c64
+MicroLeague Baseball (USA) (Disk 1 Side B);c64
+MicroLeague Baseball (USA) (Disk 2 Side A);c64
+MicroLeague Baseball (USA) (Disk 2 Side B);c64
+MicroLeague Baseball (USA) (Disk 3 Side A);c64
+MicroLeague Baseball (USA) (Disk 3 Side B);c64
+MicroLeague Baseball (USA) (Disk 4 Side A);c64
+MicroLeague Baseball (USA) (Disk 4 Side B);c64
+MicroLeague Baseball (USA) (Disk 5 Side A);c64
+MicroLeague Baseball (USA) (Disk 5 Side B);c64
+mjleague;arcade
+mjleague;mame-advmame
+mjleague;mame-libretro
+mjleague;mame-mame4all
+MLB 2000 (USA);psx
+MLB 2000 (USA);psp
+MLB 2001 (USA);psx
+MLB 2001 (USA);psp
+MLB 2002 (USA);psx
+MLB 2002 (USA);psp
+MLB 2003 (USA);psx
+MLB 2003 (USA);psp
+MLB 2004 (USA);psx
+MLB 2004 (USA);psp
+MLB 2005 (USA);psx
+MLB 2005 (USA);psp
+MLB 98 (USA);psx
+MLB 98 (USA);psp
+MLB 99 (USA);psx
+MLB 99 (USA);psp
+MLBPA Baseball (USA);gamegear
+MLBPA Baseball (USA);snes
+mlbpa;fba
+MLB Pennant Race (USA);psx
+MLB Pennant Race (USA);psp
+MLB SlugFest 20-04 (USA);gba
+Moero!! Pro Yakyuu Rookies (Japan);wonderswan
+mstadium;arcade
+mstadium;mame-advmame
+mstadium;mame-libretro
+mstadium;mame-mame4all
+MSX Baseball II National (Japan);msx
+MSX Baseball (Japan) (Alt 1);msx
+MSX Baseball (Japan);msx
+mt_tlbba;arcade
+mt_tlbba;mame-advmame
+mt_tlbba;mame-libretro
+mt_tlbba;mame-mame4all
+mvp;arcade
+mvpbb;fba
+mvpj;arcade
+mvpj;mame-advmame
+mvpj;mame-libretro
+mvpj;mame-mame4all
+mvp;mame-advmame
+mvp;mame-libretro
+mvp;mame-mame4all
+nbbatman;arcade
+nbbatman;mame-advmame
+nbbatman;mame-libretro
+nbbatman;mame-mame4all
+nbbatmanu;arcade
+nbbatmanu;mame-advmame
+nbbatmanu;mame-libretro
+nbbatmanu;mame-mame4all
+Nekkyuu Koushien (Japan);mastersystem
+Nolan Ryan's Baseball (USA);snes
+pc_bball;arcade
+pc_bball;mame-advmame
+pc_bball;mame-libretro
+pc_bball;mame-mame4all
+pc_bload;arcade
+pc_bload;mame-advmame
+pc_bload;mame-libretro
+pc_bload;mame-mame4all
+pc_bstar;arcade
+pc_bstar;mame-advmame
+pc_bstar;mame-libretro
+pc_bstar;mame-mame4all
+Pete Rose Baseball (USA);atari2600
+Pete Rose Baseball (USA);atari7800
+Pocket Stadium (Japan);gb
+Power Pro GB (Japan);gb
+powyak96;arcade
+powyak96;mame-advmame
+powyak96;mame-libretro
+powyak96;mame-mame4all
+powyakex;arcade
+powyakex;mame-advmame
+powyakex;mame-libretro
+powyakex;mame-mame4all
+Professional Baseball (Japan);msx
+Pro Yakyuu Pennant Race, The (Japan);mastersystem
+Pro Yakyuu Stadium '91 (Japan);gb
+Pro Yakyuu Stadium '92 (Japan);gb
+Pro Yakyuu Star (Japan);sfc
+Pure-Stat Baseball - Manager Edition (USA);c64
+Pure-Stat Baseball (USA) (Side A);c64
+Pure-Stat Baseball (USA) (Side B);c64
+R.B.I. 2 Baseball (Europe);amstradcpc
+RBI 2 Baseball (Europe);c64
+R.B.I. 2 Baseball (Europe);zxspectrum
+R.B.I. Baseball 2 (USA) (Unl);nes
+R.B.I. Baseball 3 (USA) (Unl);nes
+R.B.I. Baseball '94 (USA);gamegear
+RBI Baseball '95 (USA);sega32x
+R.B.I. Baseball (USA);nes
+rbibb3;fba
+rbibb4;fba
+rbibb4j;fba
+rbibb4p;fba
+rbibb93;fba
+rbibb94;fba
+rbibba;arcade
+rbibba;mame-advmame
+rbibba;mame-libretro
+rbibba;mame-mame4all
+rbibb;arcade
+rbibb;mame-advmame
+rbibb;mame-libretro
+rbibb;mame-mame4all
+RealSports Baseball (USA);atari2600
+RealSports Baseball (USA);atari5200
+RealSports Baseball (USA);atari7800
+Reggie Jackson Baseball (USA);mastersystem
+relief2;arcade
+relief2;mame-advmame
+relief2;mame-libretro
+relief2;mame-mame4all
+relief3;arcade
+relief3;mame-advmame
+relief3;mame-libretro
+relief3;mame-mame4all
+relief;arcade
+relief;mame-advmame
+relief;mame-libretro
+relief;mame-mame4all
+Relief Pitcher (USA);snes
+Roger Clemens' MVP Baseball (USA);nes
+Roger Clemens' MVP Baseball (USA);gb
+Roger Clemens' MVP Baseball (USA);snes
+Sammy Sosa High Heat Baseball 2001 (USA);psx
+Sammy Sosa High Heat Baseball 2001 (USA);psp
+Sammy Sosa Softball Slam (USA);psx
+Sammy Sosa Softball Slam (USA);psp
+sbasebal;arcade
+sbasebal;mame-advmame
+sbasebal;mame-libretro
+sbasebal;mame-mame4all
+semibase;arcade
+semibase;fba
+semibase;mame-advmame
+semibase;mame-libretro
+semibase;mame-mame4all
+shijie;fba
+Slugger, The (Europe);c64
+Softball Tengoku (Japan) (Translated En);famicom
+Sporting News Baseball, The (USA);c64
+Sporting News Power Baseball, The (USA);snes
+Sports Illustrated Championship Football & Baseball (USA, Europe);gamegear
+Sports Illustrated Championship Football & Baseball (USA);snes
+Sports Illustrated - Football & Baseball (USA);gb
+Sports Illustrated for Kids - Baseball (USA);gba
+sporttbb;fba
+stadhero;arcade
+stadhero;mame-advmame
+stadhero;mame-libretro
+stadhero;mame-mame4all
+stadhr96;arcade
+stadhr96j;arcade
+stadhr96j;mame-advmame
+stadhr96j;mame-libretro
+stadhr96j;mame-mame4all
+stadhr96;mame-advmame
+stadhr96;mame-libretro
+stadhr96;mame-mame4all
+Star League Baseball (USA);c64
+Star Wars - Episode II - Attack of the Clones (USA);gba
+Street Sports Baseball (USA);c64
+strkzone;arcade
+strkzone;mame-advmame
+strkzone;mame-libretro
+strkzone;mame-mame4all
+Super Action Baseball (USA, Europe);coleco
+Super Baseball Simulator 1.000 (USA);snes
+Super Bases Loaded 3 - License to Steal (USA);snes
+Super Bases Loaded II (USA);snes
+Super Bases Loaded (USA);snes
+Super Batter Up (USA);snes
+Super Challenge Baseball (USA);atari2600
+Super Famista 2 (Japan);sfc
+Super Famista 3 (Japan);sfc
+Super Famista 4 (Japan);sfc
+Super Famista 5 (Japan);sfc
+Super Famista (Japan);sfc
+Super Koukou Yakyuu - Ikkyuu Nyuukon (Japan);sfc
+Super Kyuukyoku Harikiri Stadium 2 (Japan);sfc
+Super Kyuukyoku Harikiri Stadium (Japan);sfc
+Super Power League 2 (Japan);sfc
+Super Power League 3 (Japan);sfc
+Super Power League 4 (Japan);sfc
+Super Power League (Japan);sfc
+Super Professional Baseball II (Japan);sfc
+Super Professional Baseball (Japan);sfc
+Super R.B.I. Baseball (USA);snes
+Super Ultra Baseball 2 (Japan) (Translated En);sfc
+Super Ultra Baseball (Japan);sfc
+suprleag;arcade
+suprleag;mame-advmame
+suprleag;mame-libretro
+suprleag;mame-mame4all
+sws92;arcade
+sws92g;arcade
+sws92g;mame-advmame
+sws92g;mame-libretro
+sws92g;mame-mame4all
+sws92;mame-advmame
+sws92;mame-libretro
+sws92;mame-mame4all
+sws93;arcade
+sws93;mame-advmame
+sws93;mame-libretro
+sws93;mame-mame4all
+sws95;arcade
+sws95;mame-advmame
+sws95;mame-libretro
+sws95;mame-mame4all
+sws96;arcade
+sws96;mame-advmame
+sws96;mame-libretro
+sws96;mame-mame4all
+sws97;arcade
+sws97;mame-advmame
+sws97;mame-libretro
+sws97;mame-mame4all
+sws98;arcade
+sws98;mame-advmame
+sws98;mame-libretro
+sws98;mame-mame4all
+sws99;arcade
+sws99;mame-advmame
+sws99;mame-libretro
+sws99;mame-mame4all
+sws;arcade
+sws;mame-advmame
+sws;mame-libretro
+sws;mame-mame4all
+Tecmo Baseball (USA);nes
+tecmobb;fba
+Tecmo Super Baseball (USA);snes
+Tony LaRussa's Ultimate Baseball (USA) (Side A);c64
+Tony LaRussa's Ultimate Baseball (USA) (Side B);c64
+tornbase;arcade
+tornbase;mame-advmame
+tornbase;mame-libretro
+tornbase;mame-mame4all
+Triple Play 2000 (USA);n64
+Triple Play 2000 (USA);psx
+Triple Play 2000 (USA);psp
+Triple Play 2001 (USA);psx
+Triple Play 2001 (USA);psp
+Triple Play 97 (USA);psx
+Triple Play 97 (USA);psp
+Triple Play 98 (USA);psx
+Triple Play 98 (USA);psp
+Triple Play 99 (USA);psx
+Triple Play 99 (USA);psp
+Triple Play Baseball (USA);psx
+Triple Play Baseball (USA);psp
+tryout;arcade
+tryout;mame-advmame
+tryout;mame-libretro
+tryout;mame-mame4all
+Ultra Baseball Jitsumei Ban 2 (Japan);sfc
+Ultra Baseball Jitsumei Ban 3 (Japan);sfc
+Ultra Baseball Jitsumei Ban (Japan) (Translated En);sfc
+victnine;arcade
+victnine;mame-advmame
+victnine;mame-libretro
+victnine;mame-mame4all
+Virtual League Baseball (USA);virtualboy
+VR Baseball '97 (USA);psx
+VR Baseball '97 (USA);psp
+VR Baseball '99 (USA);psx
+VR Baseball '99 (USA);psp
+vsbball;arcade
+vsbballja;arcade
+vsbballja;mame-advmame
+vsbballja;mame-libretro
+vsbballja;mame-mame4all
+vsbballj;arcade
+vsbballjb;arcade
+vsbballjb;mame-advmame
+vsbballjb;mame-libretro
+vsbballjb;mame-mame4all
+vsbballj;mame-advmame
+vsbballj;mame-libretro
+vsbballj;mame-mame4all
+vsbball;mame-advmame
+vsbball;mame-libretro
+vsbball;mame-mame4all
+wcbasebl;fba
+wlstar;arcade
+wlstar;mame-advmame
+wlstar;mame-libretro
+wlstar;mame-mame4all
+Wonder Stadium '99 (Japan);wonderswan
+Wonder Stadium (Japan);wonderswan
+wondl96;arcade
+wondl96;mame-advmame
+wondl96;mame-libretro
+wondl96;mame-mame4all
+World Class Baseball (USA);tg16
+World Series Baseball 2K1 (USA);dreamcast
+World Series Baseball 2K2 (USA);dreamcast
+World Series Baseball '95 (USA);gamegear
+World Series Baseball (Europe);amstradcpc
+World Series Baseball (Europe);zxspectrum
+World Series Baseball Starring Deion Sanders (USA);sega32x
+World Series Baseball (USA);gamegear
+World's Greatest Baseball Game, The - Enhanced Version (USA) (Disk 1);c64
+World's Greatest Baseball Game, The - Enhanced Version (USA) (Disk 2) (Stat Game);c64
+World's Greatest Baseball Game, The - Enhanced Version (USA) (Disk 3) (1984 Teams);c64
+World's Greatest Baseball Game, The - Enhanced Version (USA) (Disk 4) (1985 Teams);c64
+World's Greatest Baseball Game, The (USA) (Side A);c64
+World's Greatest Baseball Game, The (USA) (Side B);c64
+ws89;arcade
+ws89;mame-advmame
+ws89;mame-libretro
+ws89;mame-mame4all
+ws90;arcade
+ws90;mame-advmame
+ws90;mame-libretro
+ws90;mame-mame4all
+ws;arcade
+wsb95;fba
+wsb95p01;fba
+wsb95p02;fba
+wsb95p03;fba
+wsb95p04;fba
+wsb95p05;fba
+wsb95p06;fba
+wsb95p07;fba
+wsb95p08;fba
+wsb95p09;fba
+wsb95p10;fba
+wsb95p11;fba
+wsb95p12;fba
+wsb95p13;fba
+wsb95p14;fba
+wsb95p15;fba
+wsb95p16;fba
+wsb95p17;fba
+wsb95p18;fba
+wsb95p19;fba
+wsb95p20;fba
+wsb95p21;fba
+wsb95p22;fba
+wsb95p23;fba
+wsb96;fba
+wsb98;fba
+wsb;fba
+wsbp01;fba
+wsbp02;fba
+wsbp03;fba
+wsbp04;fba
+wsbp05;fba
+wsbp06;fba
+wsbp07;fba
+wsbp08;fba
+wsbp09;fba
+wsbp10;fba
+wseries;arcade
+wseries;mame-advmame
+wseries;mame-libretro
+wseries;mame-mame4all
+ws;mame-advmame
+ws;mame-libretro
+ws;mame-mame4all

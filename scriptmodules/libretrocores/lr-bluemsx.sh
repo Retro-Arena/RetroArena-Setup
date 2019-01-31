@@ -35,7 +35,7 @@ function install_lr-bluemsx() {
 }
 
 function install_bin_lr-bluemsx() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-bluemsx.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-bluemsx.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-bluemsx() {

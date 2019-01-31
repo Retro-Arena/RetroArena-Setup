@@ -1,0 +1,84 @@
+frogf;arcade
+frogf;fba
+frogf;mame-advmame
+frogf;mame-libretro
+frogf;mame-mame4all
+frogg;arcade
+Frogger 2 - Swampy's Revenge (USA);dreamcast
+Frogger 2 - Swampy's Revenge (USA);psx
+Frogger 2 - Swampy's Revenge (USA);psp
+Frogger 2 (USA);gbc
+Frogger 64 (Europe);c64
+Frogger '93 (Europe);c64
+Frogger Advance - The Great Quest (USA);gba
+Frogger (A & F Software) (Europe);zxspectrum
+frogger;arcade
+Frogger (Coplin Software) (USA);c64
+Frogger (CPC+) (Europe) (Unl);amstradcpc
+Frogger (C-Tech) (Europe);zxspectrum
+Frogger (Europe);videopac2
+frogger;fba
+Frogger - Helmet Chaos (USA);nds
+Frogger II - ThreeDeep! (USA);coleco
+Frogger II - Three Deep (USA);c64
+Frogger II - Threeedeep! (USA);atari2600
+Frogger II - Threeedeep! (USA);atari5200
+Frogger (Japan) (Alt 1);msx
+Frogger (Japan);msx
+frogger;mame-advmame
+frogger;mame-libretro
+frogger;mame-mame4all
+froggermc;arcade
+froggermc;fba
+froggermc;mame-advmame
+froggermc;mame-libretro
+froggermc;mame-mame4all
+Frogger (Parker Brothers) (USA);c64
+Frogger (Rabbit Software) (Europe);zxspectrum
+froggers1;arcade
+froggers1;fba
+froggers1;mame-advmame
+froggers1;mame-libretro
+froggers1;mame-mame4all
+froggers2;arcade
+froggers2;fba
+froggers2;mame-advmame
+froggers2;mame-libretro
+froggers2;mame-mame4all
+Frogger's Adventures 2 - The Lost Wand (USA) (En,Es);gba
+Frogger's Adventures - Temple of the Frog (USA) (En,Fr,De,Es,It);gba
+froggers;arcade
+froggers;fba
+Frogger (Sierra Online, Inc.) (USA);c64
+Frogger's Journey - The Forgotten Relic (USA);gba
+froggers;mame-advmame
+froggers;mame-libretro
+froggers;mame-mame4all
+Frogger (USA);atari2600
+Frogger (USA);atari5200
+Frogger (USA);coleco
+Frogger (USA);gb
+Frogger (USA) (Proto);gamegear
+Frogger (USA) (Rev B);gbc
+Frogger (USA);psx
+Frogger (USA);psp
+Frogger (USA);snes
+froggerv;arcade
+froggerv;mame-advmame
+froggerv;mame-libretro
+froggerv;mame-mame4all
+frogg;fba
+frogg;mame-advmame
+frogg;mame-libretro
+frogg;mame-mame4all
+froggrs;arcade
+froggrs;fba
+froggrs;mame-advmame
+froggrs;mame-libretro
+froggrs;mame-mame4all
+My Frogger - Toy Trials (USA);nds
+Official Frogger, The (USA);atari2600
+quaak;arcade
+quaak;mame-advmame
+quaak;mame-libretro
+quaak;mame-mame4all

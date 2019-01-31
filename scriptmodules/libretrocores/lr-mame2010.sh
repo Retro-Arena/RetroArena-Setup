@@ -38,7 +38,7 @@ function install_lr-mame2010() {
 }
 
 function install_bin_lr-mame2010() {
-    downloadAndExtract "http://github.com/Retro-Arena/xu4-bins/raw/master/lr-mame2010.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/lr-mame2010.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-mame2010() {

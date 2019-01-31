@@ -1,0 +1,228 @@
+Actua Ice Hockey 2 (Europe);psx
+Actua Ice Hockey 2 (Europe);psp
+Actua Ice Hockey (Europe);psx
+Actua Ice Hockey (Europe);psp
+Air Hockey (USA);psx
+Air Hockey (USA);psp
+ar_airh2;arcade
+ar_airh2;mame-advmame
+ar_airh2;mame-libretro
+ar_airh2;mame-mame4all
+ar_airh;arcade
+ar_airh;mame-advmame
+ar_airh;mame-libretro
+ar_airh;mame-mame4all
+Arcade Air Hockey & Bowling (USA);pspminis
+Backyard Hockey (USA);nds
+Backyard Hockey (USA);gba
+Blades of Steel (USA);c64
+Blades of Steel (USA);nes
+Blades of Steel (USA);gb
+bladestl;arcade
+bladestle;arcade
+bladestle;mame-advmame
+bladestle;mame-libretro
+bladestle;mame-mame4all
+bladestll;arcade
+bladestll;mame-advmame
+bladestll;mame-libretro
+bladestll;mame-mame4all
+bladestl;mame-advmame
+bladestl;mame-libretro
+bladestl;mame-mame4all
+bretth;fba
+Brett Hull Hockey '95 (USA);snes
+Brett Hull Hockey (USA);snes
+bullfgtr;arcade
+bullfgtr;mame-advmame
+bullfgtr;mame-libretro
+bullfgtr;mame-mame4all
+bullfgtrs;arcade
+bullfgtrs;mame-advmame
+bullfgtrs;mame-libretro
+bullfgtrs;mame-mame4all
+cfghtice;arcade
+cfghtice;mame-advmame
+cfghtice;mame-libretro
+cfghtice;mame-mame4all
+Champion Ice Hockey (Japan);msx
+Champion Ice Hockey (Japan);sg-1000
+Championship Hockey (Europe);gamegear
+Championship Hockey (Europe);mastersystem
+eahockey;fba
+eahockeyj;fba
+espnhn;fba
+espnhnp;fba
+ESPN National Hockey Night (USA);gbc
+ESPN National Hockey Night (USA);segacd
+ESPN National Hockey Night (USA);snes
+faceoff;arcade
+faceoff;mame-advmame
+faceoff;mame-libretro
+faceoff;mame-mame4all
+Face Off! (USA);c64
+Great Ice Hockey (Japan, USA);mastersystem
+hattrick;arcade
+hattrick;mame-advmame
+hattrick;mame-libretro
+hattrick;mame-mame4all
+Hat Trick (USA);atari7800
+Hat Trick (USA);c64
+hitice;arcade
+hiticej;arcade
+hiticej;mame-advmame
+hiticej;mame-libretro
+hiticej;mame-mame4all
+hitice;mame-advmame
+hitice;mame-libretro
+hitice;mame-mame4all
+Hit the Ice (USA, Europe);gb
+Hit the Ice (USA);snes
+Hit the Ice - VHL the Official Video Hockey League (Japan);pce-cd
+Hit the Ice - VHL the Official Video Hockey League (USA);tg16
+Hit the Ice - VHL the Video Hockey League (USA) (Proto);nes
+hoccer2;arcade
+hoccer2;mame-advmame
+hoccer2;mame-libretro
+hoccer2;mame-mame4all
+hoccer;arcade
+hoccer;mame-advmame
+hoccer;mame-libretro
+hoccer;mame-mame4all
+Hockey;videopac
+Hockey Mania (Europe) (Unl);c64
+Hockey + Soccer (USA, Europe);videopac2
+Hockey (USA);c64
+Hockey (USA, Europe);atarilynx
+Ice Hockey (Japan);fds
+Icehockey-Manager (Germany);c64
+Ice Hockey (USA);atari2600
+Ice Hockey (USA);nes
+Ice Tea (Germany) (Unl);c64
+Ike Ike! Nekketsu Hockey-bu - Subette Koronde Dairantou (Japan) (Translated En);famicom
+International Ice Hockey (Europe);c64
+Karamalz Cup (Germany);c64
+Konamic Ice Hockey (Japan);fds
+mariolh;fba
+mlhockey;fba
+mt_mlh;arcade
+mt_mlh;mame-advmame
+mt_mlh;mame-libretro
+mt_mlh;mame-mame4all
+NHL 2000 (USA);psx
+NHL 2000 (USA);psp
+NHL 2001 (USA);psx
+NHL 2001 (USA);psp
+NHL 2002 (USA);gba
+NHL 2K2 (USA);dreamcast
+NHL 2K (USA);dreamcast
+NHL '94 (USA);segacd
+NHL '94 (USA);snes
+NHL '95 (USA);snes
+NHL '96 (USA, Europe);gb
+NHL '96 (USA);snes
+NHL 97 (USA);psx
+NHL 97 (USA);psp
+NHL '97 (USA);snes
+NHL 98 (USA);psx
+NHL 98 (USA);psp
+NHL '98 (USA);snes
+NHL 99 (USA);n64
+NHL 99 (USA);psx
+NHL 99 (USA);psp
+NHL All-Star Hockey (USA);gamegear
+nhlas;fba
+nhlasp01;fba
+nhlasp02;fba
+nhlasp03;fba
+nhlasp04;fba
+nhlasp05;fba
+nhlasp06;fba
+nhlasp07;fba
+nhlasp08;fba
+nhlasp09;fba
+nhlasp10;fba
+nhlasp11;fba
+nhlasp12;fba
+nhlasp13;fba
+nhlasp14;fba
+nhlasp15;fba
+nhlasp16;fba
+NHL Blades of Steel 2000 (USA);psx
+NHL Blades of Steel 2000 (USA);psp
+NHL Blades of Steel '99 (USA);n64
+NHL Breakaway 98 (USA);n64
+NHL Breakaway 98 (USA);psx
+NHL Breakaway 98 (USA);psp
+NHL Breakaway 99 (USA);n64
+NHL Championship 2000 (USA);psx
+NHL Championship 2000 (USA);psp
+NHL FaceOff 2000 (USA);psx
+NHL FaceOff 2000 (USA);psp
+NHL FaceOff 2001 (USA);psx
+NHL FaceOff 2001 (USA);psp
+NHL Face Off '97 (USA);psx
+NHL Face Off '97 (USA);psp
+NHL FaceOff 98 (USA);psx
+NHL FaceOff 98 (USA);psp
+NHL FaceOff 99 (USA);psx
+NHL FaceOff 99 (USA);psp
+NHL Face Off (USA);psx
+NHL Face Off (USA);psp
+nhl;fba
+NHL Hitz 20-03 (USA);gba
+NHL Hockey '95 (USA, Europe);gb
+NHL Hockey (USA, Europe);gamegear
+NHL Open Ice - 2 on 2 Challenge (USA);psx
+NHL Open Ice - 2 on 2 Challenge (USA);psp
+nhlpa93a;fba
+nhlpa93;fba
+NHLPA Hockey '93 (USA);snes
+NHL Powerplay '96 (USA);psx
+NHL Powerplay '96 (USA);psp
+NHL Powerplay '98 (USA);psx
+NHL Powerplay '98 (USA);psp
+NHL Rock the Rink (USA);psx
+NHL Rock the Rink (USA);psp
+NHL Stanley Cup (USA);snes
+Nickelodeon GUTS (USA);snes
+Olympic Hockey 98 (USA);n64
+openice;arcade
+openice;mame-advmame
+openice;mame-libretro
+openice;mame-mame4all
+Power-Play Hockey (USA) (Unl);c64
+Powerplay Hockey - USA vs USSR (USA);c64
+Pro Hockey (USA) (Unl);c64
+Pro Sport Hockey (USA);nes
+Pro Sport Hockey (USA);snes
+RHI Roller Hockey '95 (USA) (Proto);snes
+slapshot;arcade
+Slapshot (Europe);amstradcpc
+Slapshot II - International Hockey (USA);c64
+slapshot;mame-advmame
+slapshot;mame-libretro
+slapshot;mame-mame4all
+Slapshot (USA);c64
+Slap Shot (USA);mastersystem
+Stick Hunter - Exciting Ice Hockey (Japan);famicom
+Street Hockey '95 (USA);snes
+Super Ice Hockey (Europe);snes
+Super Slap Shot (USA);snes
+Superstar Ice Hockey (USA);c64
+tecmohck;fba
+tvhockey;fba
+TV Sports Hockey (Japan);pce-cd
+TV Sports Hockey (USA);tg16
+Wayne Gretzky and the NHLPA All-Stars (USA);snes
+Wayne Gretzky Hockey (USA);nes
+Wayne Gretzky's 3D Hockey '98 (USA);n64
+Wayne Gretzky's 3D Hockey '98 (USA);psx
+Wayne Gretzky's 3D Hockey '98 (USA);psp
+Wayne Gretzky's 3D Hockey (USA) (Rev A);n64
+wg3dh;arcade
+wg3dh;mame-advmame
+wg3dh;mame-libretro
+wg3dh;mame-mame4all
+World Champion Icehockey (Europe);c64
+World Ice Hockey (Japan);gb

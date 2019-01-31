@@ -33,6 +33,10 @@ function install_lr-freeintv() {
     )
 }
 
+function install_bin_lr-freeintv() {
+    downloadAndExtract "$__gitbins_url/lr-freeintv.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-freeintv() {
     mkRomDir "intellivision"
     ensureSystemretroconfig "intellivision"

@@ -1,0 +1,275 @@
+2 Games in 1 - Sonic Battle + Sonic Pinball Party (Europe) (En,Ja,Fr,De,Es,It);gba
+2 Games in 1 - Sonic Pinball Party + Columns Crown (Europe) (En,Ja,Fr,De,Es,It+En);gba
+2psymmac;fba
+3-D Pinball - Pinball Power (Europe);c64
+3-D Ultra Pinball - Thrillride (USA);gbc
+Advanced Pinball Simulator (Europe);amstradcpc
+Advanced Pinball Simulator (Europe);c64
+Advanced Pinball Simulator (Europe);zxspectrum
+aliencr;arcade
+aliencr;mame-advmame
+aliencr;mame-libretro
+aliencr;mame-mame4all
+Alien Crush (USA);tg16
+Austin Powers Pinball (USA);psx
+Austin Powers Pinball (USA);psp
+Battle Pinball (Japan);sfc
+Bumper Bash (USA);atari2600
+Cobra Pinball (Europe);amstradcpc
+Combo Pack - Sonic Advance + Sonic Pinball Party (USA) (En,Ja,Fr,De,Es+En,Ja,Fr,De,Es,It);gba
+Crash Bandicoot Purple - Ripto's Rampage (USA);gba
+Devil Crash - Naxat Pinball (Japan);pce-cd
+Devil's Crush - Naxat Pinball (USA);tg16
+DuckTales 2 (USA);nes
+Elemental Pinball (Europe);psx
+Elemental Pinball (Europe);psp
+Enchanted (Spain);amstradcpc
+Enchanted (Spain);zxspectrum
+Extreme Pinball (USA);psx
+Extreme Pinball (USA);psp
+Fairy Pinball - Yousei Tachi no Pinball (Japan) (Unl);fds
+Fire Ball (Japan);msx2
+Flip Flap (Europe);zxspectrum
+flipjack;arcade
+flipjack;mame-advmame
+flipjack;mame-libretro
+flipjack;mame-mame4all
+Galactic Pinball (Japan, USA);virtualboy
+galspnbl;arcade
+galspnbl;fba
+galspnbl;mame-advmame
+galspnbl;mame-libretro
+galspnbl;mame-mame4all
+gcpinbal;arcade
+gcpinbal;mame-advmame
+gcpinbal;mame-libretro
+gcpinbal;mame-mame4all
+Getaway, The (USA);gb
+Hardcore Pinball (USA, Europe);gba
+Hero Shuugou!! Pinball Party (Japan);gb
+High Speed (USA);nes
+Hollywood Pinball (Europe);gbc
+hotpinbl;arcade
+hotpinbl;fba
+hotpinbl;mame-advmame
+hotpinbl;mame-libretro
+hotpinbl;mame-mame4all
+Kirby's Pinball Land (USA, Europe);gb
+KISS Pinball (USA);psx
+KISS Pinball (USA);psp
+Little Mermaid II, The - Pinball Frenzy (USA);gbc
+Macadam Bumper (Europe);amstradcpc
+Macadam Bumper (Side A) (Europe);zxspectrum
+Macadam Bumper (Side B) (Europe);zxspectrum
+Mario Party 3 (USA);n64
+Mario Pinball Land (USA, Australia);gba
+Microball (Europe);amstradcpc
+Microball (Europe);zxspectrum
+Microsoft Pinball Arcade (USA);gbc
+Midnight Magic (USA);atari2600
+Moonball Magic (Japan);fds
+Muppet Pinball Mayhem (USA);gba
+musicbal;arcade
+musicbal;mame-advmame
+musicbal;mame-libretro
+musicbal;mame-mame4all
+Naxat Super Pinball - Jaki Hakai (Japan);sfc
+Neo Golden Logres (Japan);dreamcast
+Night Mission Pinball (USA);c64
+pachifev;arcade
+pachifev;mame-advmame
+pachifev;mame-libretro
+pachifev;mame-mame4all
+Pac-Man Pinball Advance (USA);gba
+panicr;arcade
+panicrg;arcade
+panicrg;mame-advmame
+panicrg;mame-libretro
+panicrg;mame-mame4all
+panicr;mame-advmame
+panicr;mame-libretro
+panicr;mame-mame4all
+Patriotic Pinball (USA);psx
+Patriotic Pinball (USA);psp
+pbaction2;arcade
+pbaction2;mame-advmame
+pbaction2;mame-libretro
+pbaction2;mame-mame4all
+pbaction3;arcade
+pbaction3;mame-advmame
+pbaction3;mame-libretro
+pbaction3;mame-mame4all
+pbaction4;arcade
+pbaction4;mame-advmame
+pbaction4;mame-libretro
+pbaction4;mame-mame4all
+pbaction5;arcade
+pbaction5;mame-advmame
+pbaction5;mame-libretro
+pbaction5;mame-mame4all
+pbaction;arcade
+pbaction;mame-advmame
+pbaction;mame-libretro
+pbaction;mame-mame4all
+pbchmp95;arcade
+pbchmp95;mame-advmame
+pbchmp95;mame-libretro
+pbchmp95;mame-mame4all
+pc_pinbt;arcade
+pc_pinbt;mame-advmame
+pc_pinbt;mame-libretro
+pc_pinbt;mame-mame4all
+Pinball 9 (Europe);c64
+Pinball Advance (Europe) (En,Fr,De,Es,It);gba
+Pinball Blaster (Europe);msx
+Pinball Challenge Deluxe (Europe);gba
+Pinball Construction Set (USA);c64
+Pinball Deluxe (Europe);gb
+Pinball Dreams (USA, Europe);gb
+Pinball Dreams (USA);gamegear
+Pinball Dreams (USA);pspminis
+Pinball Dreams (USA);snes
+Pinball Duel (USA);pspminis
+Pinball Fantasies (USA, Europe);gb
+Pinball Fantasies (USA);pspminis
+Pinball Fantasies (USA);snes
+Pinball Jam (USA, Europe);atarilynx
+Pinball (Japan);fds
+Pinball Magic (CPC+) (Europe);amstradcpc
+Pinball Magic (Europe);amstradcpc
+Pinball Mania (Europe);gb
+Pinball of the Dead, The (USA);gba
+Pinball Power (Europe);amstradcpc
+Pinball Power (Europe);zxspectrum
+Pinball Power (Europe);psx
+Pinball Power (Europe);psp
+Pinball Quest (USA);nes
+Pinball - Revenge of the 'Gator (USA, Europe);gb
+Pinball Spectacular (USA);c64
+Pinball Tycoon (USA);gba
+Pinball (USA) (Proto);videopac2
+Pinball Wizard (Europe);amstradcpc
+Pinball Wizard (Europe);c64
+Pinball Wizard (Europe);zxspectrum
+Pinball (World);nes
+pinboa;arcade
+pinboa;mame-advmame
+pinboa;mame-libretro
+pinboa;mame-mame4all
+pinbo;arcade
+pinbo;mame-advmame
+pinbo;mame-libretro
+pinbo;mame-mame4all
+pinbos;arcade
+pinbos;mame-advmame
+pinbos;mame-libretro
+pinbos;mame-mame4all
+Pin Bot (USA);nes
+pkgnsh;arcade
+pkgnshdx;arcade
+pkgnshdx;mame-advmame
+pkgnshdx;mame-libretro
+pkgnshdx;mame-mame4all
+pkgnsh;mame-advmame
+pkgnsh;mame-libretro
+pkgnsh;mame-mame4all
+Pokemon Pinball - Ruby & Sapphire (USA);gba
+Pokemon Pinball (USA);gbc
+Power Rangers Zeo - Full Tilt Battle Pinball (USA);psx
+Power Rangers Zeo - Full Tilt Battle Pinball (USA);psp
+Pro Pinball - Big Race USA (USA);psx
+Pro Pinball - Big Race USA (USA);psp
+Pro Pinball (Europe);zxspectrum
+Pro Pinball - Fantastic Journey (USA);psx
+Pro Pinball - Fantastic Journey (USA);psp
+Pro Pinball - Timeshock! (USA);psx
+Pro Pinball - Timeshock! (USA);psp
+Pro Pinball Trilogy (Europe);dreamcast
+Pro-Pinball (USA);psx
+Pro-Pinball (USA);psp
+psycho1;fba
+psycho;fba
+Rock 'n' Ball (USA);nes
+Score 3020 (Spain);zxspectrum
+Soccer Pinball (Europe);amstradcpc
+Soccer Pinball (Europe);c64
+Soccer Pinball (Europe);zxspectrum
+solarwar;arcade
+solarwar;mame-advmame
+solarwar;mame-libretro
+solarwar;mame-mame4all
+Sonic Pinball Party (USA) (En,Ja,Fr,De,Es,It);gba
+Sonic Spinball (Europe);mastersystem
+Sonic Spinball (USA, Europe);gamegear
+spbactn;arcade
+spbactnj;arcade
+spbactnj;mame-advmame
+spbactnj;mame-libretro
+spbactnj;mame-mame4all
+spbactn;mame-advmame
+spbactn;mame-libretro
+spbactn;mame-mame4all
+speedbal;arcade
+speedbal;mame-advmame
+speedbal;mame-libretro
+speedbal;mame-mame4all
+Spin ball (USA);vectrex
+Spyro 2 - Season of Flame (USA);gba
+Super Pinball - Behind the Mask (USA);snes
+Super Pinball II - The Amazing Odyssey (Japan);sfc
+Super Pinball (Japan);famicom
+superwng;arcade
+superwng;mame-advmame
+superwng;mame-libretro
+superwng;mame-mame4all
+sxyreac2;arcade
+sxyreac2;mame-advmame
+sxyreac2;mame-libretro
+sxyreac2;mame-mame4all
+sxyreact;arcade
+sxyreact;mame-advmame
+sxyreact;mame-libretro
+sxyreact;mame-mame4all
+Tilt! (Europe);psx
+Tilt! (Europe);psp
+timescan1;arcade
+timescan1;mame-advmame
+timescan1;mame-libretro
+timescan1;mame-mame4all
+timescan;arcade
+timescan;mame-advmame
+timescan;mame-libretro
+timescan;mame-mame4all
+Time Scanner (Europe);amstradcpc
+Time Scanner (Europe);zxspectrum
+True Pinball (USA);psx
+True Pinball (USA);psp
+videopin;arcade
+Video Pinball (USA);atari2600
+videopin;mame-advmame
+videopin;mame-libretro
+videopin;mame-mame4all
+vpinball;fba
+vspinbal;arcade
+vspinbalj;arcade
+vspinbalj;mame-advmame
+vspinbalj;mame-libretro
+vspinbalj;mame-mame4all
+vspinbal;mame-advmame
+vspinbal;mame-libretro
+vspinbal;mame-mame4all
+witch;arcade
+witchb;arcade
+witchb;mame-advmame
+witchb;mame-libretro
+witchb;mame-mame4all
+witch;mame-advmame
+witch;mame-libretro
+witch;mame-mame4all
+witchs;arcade
+witchs;mame-advmame
+witchs;mame-libretro
+witchs;mame-mame4all
+Wizard Pinball (Europe);gamegear
+Worms Pinball (Europe);psx
+Worms Pinball (Europe);psp

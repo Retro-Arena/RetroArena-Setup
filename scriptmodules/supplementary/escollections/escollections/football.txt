@@ -1,0 +1,717 @@
+10yard85;arcade
+10yard85;mame-advmame
+10yard85;mame-libretro
+10yard85;mame-mame4all
+10yard;arcade
+10-Yard Fight (USA, Europe);nes
+10yardj;arcade
+10yardj;mame-advmame
+10yardj;mame-libretro
+10yardj;mame-mame4all
+10yard;mame-advmame
+10yard;mame-libretro
+10yard;mame-mame4all
+2 Disney Games - Disney Sports - Football + Disney Sports - Skateboarding (Europe) (En,Fr,De,Es,It);gba
+3 in 1 College & Pro Football (USA) (Disk 1);c64
+3 in 1 College & Pro Football (USA) (Disk 2) (Utilities);c64
+3 in 1 College & Pro Football (USA) (Disk 3) (Standings);c64
+3 in 1 College & Pro Football (USA) (Disk 4) (Current Teams);c64
+3 in 1 College & Pro Football (USA) (Disk 5) (College Past);c64
+3 in 1 College & Pro Football (USA) (Disk 6) (Pro Past);c64
+4th & Inches (USA);c64
+90 Minutes - Sega Championship Football (Europe);dreamcast
+aafb;arcade
+aafbc;arcade
+aafbc;mame-advmame
+aafbc;mame-libretro
+aafbc;mame-mame4all
+aafbd2p;arcade
+aafbd2p;mame-advmame
+aafbd2p;mame-libretro
+aafbd2p;mame-mame4all
+aafb;mame-advmame
+aafb;mame-libretro
+aafb;mame-mame4all
+ABC Monday Night Football (USA);snes
+Adidas Championship Football (Europe);amstradcpc
+Adidas Championship Football (Europe);c64
+Adidas Championship Football (Europe);zxspectrum
+American Football (Europe);amstradcpc
+American Football (Europe);c64
+American Football (Mind Games) (Europe);zxspectrum
+American Football (Softstone) (Europe);zxspectrum
+Animal Football (Europe);psx
+Animal Football (Europe);psp
+Answer Back Junior Quiz (Europe) (Disk 7) (Association Football 12-Adult);amstradcpc
+Arcade Football (USA) (Disk 1);c64
+Arcade Football (USA) (Disk 2);c64
+atarifb1;arcade
+atarifb1;mame-advmame
+atarifb1;mame-libretro
+atarifb1;mame-mame4all
+atarifb2;arcade
+atarifb2;mame-advmame
+atarifb2;mame-libretro
+atarifb2;mame-mame4all
+atarifb4;arcade
+atarifb4;mame-advmame
+atarifb4;mame-libretro
+atarifb4;mame-mame4all
+atarifb;arcade
+atarifb;mame-advmame
+atarifb;mame-libretro
+atarifb;mame-mame4all
+Australian Rules Football (Europe);amstradcpc
+Australian Rules Football (Europe);c64
+Australian Rules Football - The Outback Amateur League (Europe);zxspectrum
+Australian Rules Football - The Victorian Football League (Europe);zxspectrum
+Backyard Football '09 (USA) [b];nds
+Backyard Football 2006 (USA);gba
+Backyard Football (USA);nds
+Backyard Football (USA);gba
+Backyard Sports - Football 2007 (USA);gba
+Bill Walsh College Football (USA);segacd
+Bill Walsh College Football (USA);snes
+billwl95;fba
+billwlsh;fba
+BLiP Football (USA) (Unl);atari2600
+blitz11;arcade
+blitz11;mame-advmame
+blitz11;mame-libretro
+blitz11;mame-mame4all
+blitz2k;arcade
+blitz2k;mame-advmame
+blitz2k;mame-libretro
+blitz2k;mame-mame4all
+blitz99;arcade
+blitz99;mame-advmame
+blitz99;mame-libretro
+blitz99;mame-mame4all
+Blitz! - Action Football (USA, Europe);vectrex
+blitz;arcade
+blitz;mame-advmame
+blitz;mame-libretro
+blitz;mame-mame4all
+Brian Clough's Football Fortunes (Europe);c64
+Brian Clough's Football Fortunes (Europe);zxspectrum
+Capcom's MVP Football (USA);snes
+colleg96;fba
+colleg97;fba
+College Football USA '97 - The Road to New Orleans (USA);snes
+collnc2;fba
+collnc;fba
+collncp01;fba
+collncp02;fba
+collncp03;fba
+collncp04;fba
+collncp05;fba
+collncp06;fba
+collncp07;fba
+collncp08;fba
+collncp09;fba
+collncp10;fba
+collncp11;fba
+collncp12;fba
+collncp13;fba
+collncp14;fba
+collncp15;fba
+collncp16;fba
+collncp17;fba
+collncp18;fba
+collncp19;fba
+Computer Quarterback (USA) (Side A);c64
+Computer Quarterback (USA) (Side B);c64
+cscrtry2;arcade
+cscrtry2;mame-advmame
+cscrtry2;mame-libretro
+cscrtry2;mame-mame4all
+cscrtry;arcade
+cscrtry;mame-advmame
+cscrtry;mame-libretro
+cscrtry;mame-mame4all
+Cup Football (Europe);amstradcpc
+Cup Football (Europe);c64
+Cup Football (Europe);zxspectrum
+cyberbal2;arcade
+cyberbal2;mame-advmame
+cyberbal2;mame-libretro
+cyberbal2;mame-mame4all
+cyberbal2p1;arcade
+cyberbal2p1;mame-advmame
+cyberbal2p1;mame-libretro
+cyberbal2p1;mame-mame4all
+cyberbal2p2;arcade
+cyberbal2p2;mame-advmame
+cyberbal2p2;mame-libretro
+cyberbal2p2;mame-mame4all
+cyberbal2p3;arcade
+cyberbal2p3;mame-advmame
+cyberbal2p3;mame-libretro
+cyberbal2p3;mame-mame4all
+cyberbal2p;arcade
+cyberbal2p;mame-advmame
+cyberbal2p;mame-libretro
+cyberbal2p;mame-mame4all
+cyberbal;arcade
+Cyberball - Footballer in the 21st Century (Europe);amstradcpc
+Cyberball - Football in the 21st Century (Europe);c64
+cyberbal;mame-advmame
+cyberbal;mame-libretro
+cyberbal;mame-mame4all
+cyberbalp;arcade
+cyberbalp;mame-advmame
+cyberbalp;mame-libretro
+cyberbalp;mame-mame4all
+cyberbalt1;arcade
+cyberbalt1;mame-advmame
+cyberbalt1;mame-libretro
+cyberbalt1;mame-mame4all
+cyberbalt;arcade
+cyberbalt;mame-advmame
+cyberbalt;mame-libretro
+cyberbalt;mame-mame4all
+Disney Sports - Football (USA);gba
+ditkapf1;fba
+ditkapf;fba
+DreamTeam Fantasy Football (USA);c64
+Emmitt Smith Football (USA);snes
+Endzone - 87f Rosters (Side A) (Europe);zxspectrum
+Endzone - 87f Rosters (Side B) (Europe);zxspectrum
+Endzone - 88e Program (Side A) (Europe);zxspectrum
+Endzone - 88e Program (Side B) (Europe);zxspectrum
+Endzone - 88e Rosters (Side A) (Europe);zxspectrum
+Endzone - 88e Rosters (Side B) (Europe);zxspectrum
+Endzone - 89e Rosters (Side A) (Europe);zxspectrum
+Endzone - 89e Rosters (Side B) (Europe);zxspectrum
+Endzone - 90f Program (Side A) (Europe);zxspectrum
+Endzone - 90f Program (Side B) (Europe);zxspectrum
+Endzone - 90f Rosters (Side A) (Europe);zxspectrum
+Endzone - 90f Rosters (Side B) (Europe);zxspectrum
+Endzone (Europe);c64
+Endzone (Europe);zxspectrum
+End Zone (Europe);zxspectrum
+ESPN Sunday Night NFL (USA);segacd
+ESPN Sunday Night NFL (USA);snes
+European Football Champ (Europe);c64
+FA Cup Football (Europe);c64
+FA Cup Football (Europe);zxspectrum
+Fantastic American Football (Europe);zxspectrum
+F.A. Premier League Football Manager 2000, The (Europe);psx
+F.A. Premier League Football Manager 2000, The (Europe);psp
+F.A. Premier League Football Manager 2001, The (Europe);psx
+F.A. Premier League Football Manager 2001, The (Europe);psp
+fbfrenzy;arcade
+fbfrenzy;fba
+fbfrenzy;mame-advmame
+fbfrenzy;mame-libretro
+fbfrenzy;mame-mame4all
+fbfrenzy;neogeo
+Football Academy - Build and Prove Your Football Knowledge (Europe) (En,Fr,De,Es,It);nds
+Football Champions (Europe);amstradcpc
+Football Champions (Europe);c64
+Football Champions (Europe);zxspectrum
+Football Crazy (Europe);c64
+Football Director - 2 Player Super League (Europe);zxspectrum
+Football Director DS (Europe);nds
+Football Director (Europe);amstradcpc
+Football Director (Europe);c64
+Football Director (Europe);zxspectrum
+Football Director II (Europe);c64
+Football Director II (Europe);zxspectrum
+Footballer (Europe);zxspectrum
+Footballer of the Year 2 (Europe);amstradcpc
+Footballer of the Year 2 (Europe);zxspectrum
+Footballer of the Year (Europe);amstradcpc
+Footballer of the Year (Europe);c64
+Footballer of the Year (Europe);zxspectrum
+Footballer of the Year II (Europe);c64
+Footballer, The (Europe);amstradcpc
+Football Fever (Europe);zxspectrum
+Football Fortunes II - European Super League (Europe);c64
+Football Frenzy (Europe);amstradcpc
+Football Frenzy (Europe);c64
+Football Frenzy (Europe);zxspectrum
+Football Fury (USA);snes
+Football Glory (Europe);zxspectrum
+Football International (Europe);gb
+Football (Keypunch Software) (USA);c64
+Football (Kicking and Passing);videopac
+Football Madness (Europe);psx
+Football Madness (Europe);psp
+Football Manager 2 (Europe);amstradcpc
+Football Manager 2 - Expansion Kit (Europe);amstradcpc
+Football Manager 2 - Expansion Kit (Europe);zxspectrum
+Football Manager 3 (Europe);amstradcpc
+Football Manager 3 (Europe);zxspectrum
+Football Manager 95 (Europe) (Unl);c64
+Football Manager (Europe);amstradcpc
+Football Manager (Europe);c64
+Football Manager II (Europe);c64
+Football Manager III (Europe);c64
+Football Manager - Players (Europe);zxspectrum
+Football Manager - World Cup Edition (Europe);amstradcpc
+Football Manager - World Cup Edition (Europe);c64
+Football Manager - World Cup Edition (Europe);zxspectrum
+Football (Programma International, Inc.) (USA);c64
+Football (Running);videopac
+Football Strategy (USA);c64
+Football (SubLogic) (USA);c64
+Football (Tri Micro) (Europe);c64
+Football (USA);atari2600
+Football (USA, Europe);videopac2
+footchmp;arcade
+footchmp;fba
+footchmp;mame-advmame
+footchmp;mame-libretro
+footchmp;mame-mame4all
+Galactik Football (Europe) (En,Fr,De,Es,It) [b];nds
+GFL Championship Football (Europe);amstradcpc
+GFL Championship Football (Europe);zxspectrum
+GFL Championship Football (USA);c64
+Grave Yardage (USA) (Side A);c64
+Grave Yardage (USA) (Side B);c64
+Great Football (World);mastersystem
+Grid Iron 2 (Europe);zxspectrum
+gridiron;arcade
+Grid Iron (Europe);c64
+Grid Iron II (Europe);amstradcpc
+Grid Iron II (Europe);c64
+gridiron;mame-advmame
+gridiron;mame-libretro
+gridiron;mame-mame4all
+Grid Iron - Touchdown USA (Europe);amstradcpc
+hardyard10;arcade
+hardyard10;mame-advmame
+hardyard10;mame-libretro
+hardyard10;mame-mame4all
+hardyard;arcade
+hardyard;mame-advmame
+hardyard;mame-libretro
+hardyard;mame-mame4all
+Head Coach (Europe);c64
+Head Coach (Europe);zxspectrum
+hiimpact1;arcade
+hiimpact1;mame-advmame
+hiimpact1;mame-libretro
+hiimpact1;mame-mame4all
+hiimpact2;arcade
+hiimpact2;mame-advmame
+hiimpact2;mame-libretro
+hiimpact2;mame-mame4all
+hiimpact3;arcade
+hiimpact3;mame-advmame
+hiimpact3;mame-libretro
+hiimpact3;mame-mame4all
+hiimpact4;arcade
+hiimpact4;mame-advmame
+hiimpact4;mame-libretro
+hiimpact4;mame-mame4all
+hiimpact;arcade
+hiimpact;mame-advmame
+hiimpact;mame-libretro
+hiimpact;mame-mame4all
+hiimpactp;arcade
+hiimpactp;mame-advmame
+hiimpactp;mame-libretro
+hiimpactp;mame-mame4all
+International 5-a-Side Football (Europe);zxspectrum
+International Football (Europe);amstradcpc
+International Football (Europe);c64
+International Football (Europe);zxspectrum
+I Play - Football Champ (Italy);c64
+Jimmy Johnson's VR Football '98 (USA);psx
+Jimmy Johnson's VR Football '98 (USA);psp
+joemont2a;fba
+joemont2;fba
+Joe Montana Football (USA, Europe);mastersystem
+Joe Montana's Football (USA, Europe);gamegear
+Joe Montana's NFL Football (USA);segacd
+joemont;fba
+John Elway's Quarterback (Europe);amstradcpc
+John Elway's Quarterback (Europe);c64
+John Elway's Quarterback (USA);nes
+John Madden Duo CD Football (USA);tg-cd
+John Madden Football '93 (USA);snes
+John Madden Football (USA) (Disk 1 Side A);c64
+John Madden Football (USA) (Disk 1 Side B);c64
+John Madden Football (USA) (Disk 2 Side A);c64
+John Madden Football (USA) (Disk 2 Side B);c64
+John Madden Football (USA);snes
+Konami's Football (Europe) (Alt 1);msx
+Konami's Football (Europe) (Alt 2);msx
+Konami's Football (Europe);msx
+Kurt Warner's Arena Football Unleashed (USA);psx
+Kurt Warner's Arena Football Unleashed (USA);psp
+League Football (Europe);amstradcpc
+League Football (Europe);c64
+League Football (Europe);zxspectrum
+madd93ce;fba
+madden92;fba
+madden93;fba
+Madden '95 (USA, Europe);gb
+Madden '96 (USA, Europe);gb
+Madden '97 (USA);gb
+madden;fba
+Madden Football 64 (USA);n64
+maddenj;fba
+Madden NFL 06 (USA);gba
+Madden NFL 07 (USA);gba
+Madden NFL 2000 (USA);n64
+Madden NFL 2000 (USA);psx
+Madden NFL 2000 (USA);psp
+Madden NFL 2001 (USA);n64
+Madden NFL 2001 (USA);psx
+Madden NFL 2001 (USA);psp
+Madden NFL 2002 (USA);n64
+Madden NFL 2002 (USA);gba
+Madden NFL 2002 (USA);psx
+Madden NFL 2002 (USA);psp
+Madden NFL 2003 (USA);gba
+Madden NFL 2003 (USA);psx
+Madden NFL 2003 (USA);psp
+Madden NFL 2004 (USA);gba
+Madden NFL 2004 (USA);psx
+Madden NFL 2004 (USA);psp
+Madden NFL 2005 (USA);gba
+Madden NFL 2005 (USA);psx
+Madden NFL 2005 (USA);psp
+Madden NFL '94 (USA);snes
+Madden NFL '95 (USA);gamegear
+Madden NFL 95 (USA);snes
+Madden NFL '96 (USA, Europe);gamegear
+Madden NFL 96 (USA);snes
+Madden NFL 97 (USA);psx
+Madden NFL 97 (USA);psp
+Madden NFL 97 (USA);snes
+Madden NFL 98 (USA);psx
+Madden NFL 98 (USA);psp
+Madden NFL 98 (USA);snes
+Madden NFL 99 (USA);n64
+Madden NFL 99 (USA);psx
+Madden NFL 99 (USA);psp
+marko;fba
+markop;fba
+Marko's Magic Football (Europe);gamegear
+Marko's Magic Football (Europe);snes
+MicroLeague Football (USA);c64
+mlfootb;fba
+mlfootbj;fba
+Monday Night Football (USA) (Side A);c64
+Monday Night Football (USA) (Side B);c64
+mt_gfoot;arcade
+mt_gfoot;mame-advmame
+mt_gfoot;mame-libretro
+mt_gfoot;mame-mame4all
+mt_stf;arcade
+mt_stf;mame-advmame
+mt_stf;mame-libretro
+mt_stf;mame-mame4all
+NCAA College Football 2K2 (USA);dreamcast
+NCAA Football 2000 (USA);psx
+NCAA Football 2000 (USA);psp
+NCAA Football 2001 (USA);psx
+NCAA Football 2001 (USA);psp
+NCAA Football 98 (USA);psx
+NCAA Football 98 (USA);psp
+NCAA Football 99 (USA);psx
+NCAA Football 99 (USA);psp
+NCAA Football GameBreaker (USA);psx
+NCAA Football GameBreaker (USA);psp
+NCAA Football (USA);snes
+ncaafoot;fba
+NCAA GameBreaker 2000 (USA);psx
+NCAA GameBreaker 2000 (USA);psp
+NCAA GameBreaker 2001 (USA);psx
+NCAA GameBreaker 2001 (USA);psp
+NCAA GameBreaker 98 (USA);psx
+NCAA GameBreaker 98 (USA);psp
+NCAA GameBreaker 99 (USA);psx
+NCAA GameBreaker 99 (USA);psp
+NES Play Action Football (USA);nes
+NFL 2K1 (USA);dreamcast
+NFL 2K2 (USA);dreamcast
+NFL 2K (USA);dreamcast
+nfl94;fba
+nfl94j;fba
+NFL '95 (USA);gamegear
+NFL Blitz 2000 (USA);n64
+NFL Blitz 2000 (USA);dreamcast
+NFL Blitz 2000 (USA);psx
+NFL Blitz 2000 (USA);psp
+NFL Blitz 2001 (USA);n64
+NFL Blitz 2001 (USA);dreamcast
+NFL Blitz 2001 (USA);psx
+NFL Blitz 2001 (USA);psp
+NFL Blitz 20-02 (USA);gba
+NFL Blitz 20-03 (USA);gba
+NFL Blitz - Special Edition (USA);n64
+NFL Blitz (USA);n64
+NFL Blitz (USA);psx
+NFL Blitz (USA);psp
+NFL Football Trivia Challenge (USA);segacd
+NFL Football (USA, Europe);atarilynx
+NFL Football (USA);gb
+NFL Football (USA);snes
+NFL Full Contact (USA);psx
+NFL Full Contact (USA);psp
+NFL GameDay 2000 (USA);psx
+NFL GameDay 2000 (USA);psp
+NFL GameDay 2001 (USA);psx
+NFL GameDay 2001 (USA);psp
+NFL GameDay 2002 (USA);psx
+NFL GameDay 2002 (USA);psp
+NFL GameDay 2003 (USA);psx
+NFL GameDay 2003 (USA);psp
+NFL GameDay 2004 (USA);psx
+NFL GameDay 2004 (USA);psp
+NFL GameDay 2005 (USA);psx
+NFL GameDay 2005 (USA);psp
+NFL GameDay 97 (USA);psx
+NFL GameDay 97 (USA);psp
+NFL GameDay 98 (USA);psx
+NFL GameDay 98 (USA);psp
+NFL GameDay 99 (USA);psx
+NFL GameDay 99 (USA);psp
+NFL GameDay (USA);psx
+NFL GameDay (USA);psp
+NFL QB Club 2001 (USA);dreamcast
+NFL Quarterback Club 2000 (USA);n64
+NFL Quarterback Club 2000 (USA);dreamcast
+NFL Quarterback Club 2001 (USA);n64
+NFL Quarterback Club 2 (USA, Europe);gb
+NFL Quarterback Club '96 (USA, Europe);gb
+NFL Quarterback Club '96 (USA, Europe);gamegear
+NFL Quarterback Club 96 (USA);snes
+NFL Quarterback Club 97 (USA);psx
+NFL Quarterback Club 97 (USA);psp
+NFL Quarterback Club 98 (USA);n64
+NFL Quarterback Club 99 (USA);n64
+NFL Quarterback Club II (USA, Europe);gb
+NFL Quarterback Club (USA, Europe);gb
+NFL Quarterback Club (USA);snes
+NFL Quarterback Club (World);sega32x
+NFL Quarterback Club (World);gamegear
+NFL's Greatest - San Francisco vs. Dallas 1978-1993 (USA);segacd
+nflsport;fba
+NFL (USA);nes
+NFL Xtreme 2 (USA);psx
+NFL Xtreme 2 (USA);psp
+NFL Xtreme (USA);psx
+NFL Xtreme (USA);psp
+Official F.A. Cup Football, The (Europe);amstradcpc
+On Field Football (USA);c64
+pc_tbowl;arcade
+pc_tbowl;mame-advmame
+pc_tbowl;mame-libretro
+pc_tbowl;mame-mame4all
+Peter Beardsley's International Football (Europe);c64
+Peter Beardsley's International Football (Europe);zxspectrum
+pigskina;arcade
+pigskina;mame-advmame
+pigskina;mame-libretro
+pigskina;mame-mame4all
+pigskin;arcade
+pigskinb;arcade
+pigskinb;mame-advmame
+pigskinb;mame-libretro
+pigskinb;mame-mame4all
+pigskin;mame-advmame
+pigskin;mame-libretro
+pigskin;mame-mame4all
+Play Action Football (USA);gb
+Plazma Ball (Europe) (Side A);c64
+Plazma Ball (Europe) (Side B);c64
+Profesional Footballer (Europe);amstradcpc
+Professional Footballer (Europe);c64
+Professional Footballer (Europe);zxspectrum
+Pro Quarterback (USA);snes
+Pure-Stat Football (USA) (Side A);c64
+Pure-Stat Football (USA) (Side B);c64
+quarterba;arcade
+Quarterback (Europe);zxspectrum
+quarterba;mame-advmame
+quarterba;mame-libretro
+quarterba;mame-mame4all
+quarterb;arcade
+quarterb;mame-advmame
+quarterb;mame-libretro
+quarterb;mame-mame4all
+RealSports Football (USA);atari2600
+RealSports Football (USA);atari5200
+Ronaldo V-Football (Europe);psx
+Ronaldo V-Football (Europe);psp
+Rothman's Football Quick Quiz Volume 1 (Europe);zxspectrum
+rushhero;arcade
+rushhero;mame-advmame
+rushhero;mame-libretro
+rushhero;mame-mame4all
+Sam Power - Footballer (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da) [b];nds
+Scottish League Football (Europe);c64
+sfchamp;arcade
+sfchampj;arcade
+sfchampj;mame-advmame
+sfchampj;mame-libretro
+sfchampj;mame-mame4all
+sfchamp;mame-advmame
+sfchamp;mame-libretro
+sfchamp;mame-mame4all
+sfchampo;arcade
+sfchampo;mame-advmame
+sfchampo;mame-libretro
+sfchampo;mame-mame4all
+sfchampu;arcade
+sfchampu;mame-advmame
+sfchampu;mame-libretro
+sfchampu;mame-mame4all
+sfootbal;arcade
+sfootbal;mame-advmame
+sfootbal;mame-libretro
+sfootbal;mame-mame4all
+shimpact;arcade
+shimpact;mame-advmame
+shimpact;mame-libretro
+shimpact;mame-mame4all
+shimpactp4;arcade
+shimpactp4;mame-advmame
+shimpactp4;mame-libretro
+shimpactp4;mame-mame4all
+shimpactp5;arcade
+shimpactp5;mame-advmame
+shimpactp5;mame-libretro
+shimpactp5;mame-mame4all
+shimpactp6;arcade
+shimpactp6;mame-advmame
+shimpactp6;mame-libretro
+shimpactp6;mame-mame4all
+Sky Sports Football Quiz (Europe);psx
+Sky Sports Football Quiz (Europe);psp
+Sky Sports Football Quiz - Season 02 (Europe);psx
+Sky Sports Football Quiz - Season 02 (Europe);psp
+Space Football - One on One (USA);snes
+Sports Illustrated Championship Football & Baseball (USA, Europe);gamegear
+Sports Illustrated Championship Football & Baseball (USA);snes
+Sports Illustrated - Football & Baseball (USA);gb
+Sports Illustrated for Kids - Football (USA);gba
+Sports Pad Football (USA);mastersystem
+ssideki2;arcade
+ssideki2;fba
+ssideki2;mame-advmame
+ssideki2;mame-libretro
+ssideki2;mame-mame4all
+ssideki4;arcade
+ssideki4;fba
+ssideki4;mame-advmame
+ssideki4;mame-libretro
+ssideki4;mame-mame4all
+Street Cred Football (Europe);amstradcpc
+Street Cred Football (Europe);c64
+Street Cred Football (Europe);zxspectrum
+Street Football (Europe) (En,Fr,De,Es,It);nds
+Street Gang Football (Europe);amstradcpc
+Street Gang Football (Europe);zxspectrum
+Street Sports Football (USA) (Side A);c64
+Street Sports Football (USA) (Side B);c64
+Super Action Football (USA, Europe);coleco
+Superbowl (Europe);zxspectrum
+Super Bowl Sunday (USA) (Disk 1 Side A);c64
+Super Bowl Sunday (USA) (Disk 1 Side B);c64
+Super Bowl Sunday (USA) (Disk 2 Side A);c64
+Super Bowl Sunday (USA) (Disk 2 Side B);c64
+Super Bowl Sunday (USA) (Disk 3 Side A);c64
+Super Bowl Sunday (USA) (Disk 3 Side B);c64
+Super Bowl Sunday (USA) (Disk 4);c64
+Super Bowl XX (Europe);c64
+Super Challenge Football (USA);atari2600
+Super Cup Football (Europe);c64
+Super Football Champ (Europe);psx
+Super Football Champ (Europe);psp
+Super Football (USA);atari2600
+Super High Impact (USA);snes
+Super Play Action Football (USA);snes
+Super Sunday - The Office of the General Manager (USA);c64
+svf;arcade
+svf;mame-advmame
+svf;mame-libretro
+svf;mame-mame4all
+Table Football (Europe);amstradcpc
+Table Football (Europe);zxspectrum
+tbowl;arcade
+tbowlj;arcade
+tbowlj;mame-advmame
+tbowlj;mame-libretro
+tbowlj;mame-mame4all
+tbowl;mame-advmame
+tbowl;mame-libretro
+tbowl;mame-mame4all
+tbowlp;arcade
+tbowlp;mame-advmame
+tbowlp;mame-libretro
+tbowlp;mame-mame4all
+tdfever2;arcade
+tdfever2;mame-advmame
+tdfever2;mame-libretro
+tdfever2;mame-mame4all
+tdfever;arcade
+tdfeverj;arcade
+tdfeverj;mame-advmame
+tdfeverj;mame-libretro
+tdfeverj;mame-mame4all
+tdfever;mame-advmame
+tdfever;mame-libretro
+tdfever;mame-mame4all
+teamqb2;arcade
+teamqb2;mame-advmame
+teamqb2;mame-libretro
+teamqb2;mame-mame4all
+teamqb;arcade
+teamqb;mame-advmame
+teamqb;mame-libretro
+teamqb;mame-mame4all
+Tecmo Bowl (USA);nes
+Tecmo Bowl (USA);gb
+Tecmo Super Bowl III - Final Edition (USA);snes
+Tecmo Super Bowl II - Special Edition (USA);snes
+Tecmo Super Bowl (USA);nes
+Tecmo Super Bowl (USA);psx
+Tecmo Super Bowl (USA);psp
+Tecmo Super Bowl (USA);snes
+This Is Football 2 (Europe);psx
+This Is Football 2 (Europe);psp
+This Is Football (Europe);psx
+This Is Football (Europe);psp
+This Is Football Management (Europe);pspminis
+totlfoot;fba
+Touch Down Fever (USA);nes
+Touchdown Football (USA);atari7800
+Touchdown Football (USA);c64
+troyaik;fba
+Troy Aikman NFL Football (USA);snes
+tvfootbl;fba
+TV Sports Football (Japan);pce-cd
+TV Sports Football (USA) (Disk 1 Side A);c64
+TV Sports Football (USA) (Disk 1 Side B);c64
+TV Sports Football (USA) (Disk 2) (Docs);c64
+TV Sports Football (USA);tg16
+vs10yard;arcade
+vs10yardj;arcade
+vs10yardj;mame-advmame
+vs10yardj;mame-libretro
+vs10yardj;mame-mame4all
+vs10yard;mame-advmame
+vs10yard;mame-libretro
+vs10yard;mame-mame4all
+vs10yardu;arcade
+vs10yardu;mame-advmame
+vs10yardu;mame-libretro
+vs10yardu;mame-mame4all
+Walter Payton Football (USA);mastersystem
+World Class Rugby (Europe);snes
+World Cup Football (Europe);zxspectrum
+World's Greatest Football Game (USA) (Side A);c64
+World's Greatest Football Game (USA) (Side B);c64
+XS Junior League Football (USA);psx
+XS Junior League Football (USA);psp
+ZFL Football (USA);c64
+Zidane Football Generation (Europe) (En,Fr,De,Es,It);gba
+Zidane Football Generation (Europe);gbc
+ZX Football Manager 2005 (Europe);zxspectrum

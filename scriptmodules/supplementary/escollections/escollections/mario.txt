@@ -1,0 +1,80 @@
+2 Games in One! - Dr. Mario + Puzzle League (USA, Australia);gba
+All Night Nippon Super Mario Bros. (Japan);fds
+Classic NES Series - Dr. Mario (USA, Europe);gba
+Classic NES Series - Super Mario Bros. (USA, Europe);gba
+Dr. Mario 64 (USA);n64
+Dr. Mario (Japan);sfc
+Dr. Mario (Japan, USA);nes
+Dr. Mario (World);gb
+Dr. Mario (World) (Rev A);gb
+Kaettekita Mario Bros. (Japan);fds
+Mario Bros (Europe);amstradcpc
+Mario Bros. (Europe);c64
+Mario Bros (Europe);zxspectrum
+Mario Bros II (Netherlands);c64
+Mario Bros. (USA);atari2600
+Mario Bros. (USA);atari5200
+Mario Bros. (USA);atari7800
+Mario Bros (USA);c64
+Mario Bros. (World);nes
+Mario Clash (Japan, USA);virtualboy
+Mario Goes to Diamonds (USA) (Unl);c64
+Mario Golf - Advance Tour (USA);gba
+Mario Golf (USA);n64
+Mario Golf (USA);gbc
+Mario Is Missing! (USA);nes
+Mario Is Missing! (USA);snes
+Mario Kart 64 (USA);n64
+Mario Kart - Super Circuit (USA);gba
+Mario & Luigi - Superstar Saga (USA, Australia);gba
+Mario no Super Picross (Japan);sfc
+Mario Paint (Japan, USA);snes
+Mario Party 2 (USA);n64
+Mario Party 3 (USA);n64
+Mario Party Advance (USA);gba
+Mario Party (USA);n64
+Mario Pinball Land (USA, Australia);gba
+Mario's Brewery (USA);c64
+Mario's Early Years! - Fun with Letters (USA);snes
+Mario's Early Years! - Fun with Numbers (USA);snes
+Mario's Early Years! - Preschool Fun (USA);snes
+Mario's Picross (USA, Europe);gb
+Mario's Tennis (Japan, USA);virtualboy
+Mario's Time Machine (USA);nes
+Mario's Time Machine (USA);snes
+Mario Tennis - Power Tour (USA, Australia) (En,Fr,De,Es,It);gba
+Mario Tennis (USA);n64
+Mario Tennis (USA);gbc
+Mario to Wario (Japan);sfc
+Mario vs. Donkey Kong (USA, Australia);gba
+Oonita Atsushi FMW (Japan);sfc
+Pachio-kun - Puzzle Castle (Japan);gb
+Paper Mario (USA);n64
+Super Mario 64 (USA);n64
+Super Mario Advance 2 - Super Mario World (USA, Australia);gba
+Super Mario Advance 3 - Yoshi's Island (USA);gba
+Super Mario Advance 4 - Super Mario Bros. 3 (USA, Australia) (Rev 1);gba
+Super Mario Advance (USA, Europe);gba
+Super Mario All-Stars + Super Mario World (USA);snes
+Super Mario All-Stars (USA);snes
+Super Mario Bros (25 Anniversary Edition) (Japan);famicom
+Super Mario Bros. 2 (Japan);fds
+Super Mario Bros. 2 (USA);nes
+Super Mario Bros. 3 (USA);nes
+Super Mario Bros. Deluxe (USA, Europe) (Rev B);gbc
+Super Mario Bros III (USA) (Unl);c64
+Super Mario Bros. (Japan);fds
+Super Mario Bros (USA) (Unl);c64
+Super Mario Bros. (World);nes
+Super Mario Escape (Netherlands) (Unl);c64
+Super Mario Kart (USA);snes
+Super Mario Land 2 - 6 Golden Coins (USA, Europe);gb
+Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev B);gb
+Super Mario Land (World);gb
+Super Mario Land (World) (Rev A);gb
+Super Mario RPG - Legend of the Seven Stars (USA);snes
+Super Marios Revenge (Netherlands) (Unl);c64
+Super Mario World 2 - Yoshi's Island (USA);snes
+Super Mario World (USA);snes
+Tetris & Dr. Mario (USA);snes
+Undake 30 Same Game Daisakusen - Mario Version (Japan);sfc

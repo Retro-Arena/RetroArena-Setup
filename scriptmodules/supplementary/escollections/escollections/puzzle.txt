@@ -1,0 +1,4371 @@
+2 Games in 1 - Columns Crown + ChuChu Rocket! (Europe) (En+En,Ja,Fr,De,Es);gba
+2 Games in 1 - Sonic Advance + ChuChu Rocket! (Europe) (En,Ja,Fr,De,Es);gba
+2 Games in 1 - Sonic Battle + ChuChu Rocket! (Europe) (En,Ja,Fr,De,Es,It+En,Ja,Fr,De,Es);gba
+2 Games in 1 - Sonic Pinball Party + Columns Crown (Europe) (En,Ja,Fr,De,Es,It+En);gba
+2 Games in One! - Dr. Mario + Puzzle League (USA, Australia);gba
+2 Games in One! - Marble Madness + Klax (USA);gba
+2nd Space (Asia) (Unl);gb
+3, 2, 1 …supercrash! (USA);pspminis
+3D Lemmings (USA);psx
+3D Lemmings (USA);psp
+3D Master Game (Europe);zxspectrum
+3D Oxo (Europe);zxspectrum
+3D-Tetris (Czech Republic);zxspectrum
+3-D Tetris (USA);virtualboy
+3-D Tic-Tac-Toe (USA);atari2600
+3D Twist & Match (USA);pspminis
+3 Game Pack! - Ker Plunk! + Toss Across + Tip It (USA);gba
+3kokushi;arcade
+3kokushi;fba
+3kokushi;mame-advmame
+3kokushi;mame-libretro
+3kokushi;mame-mame4all
+3x3puzzla;arcade
+3x3puzzla;fba
+3x3puzzla;mame-advmame
+3x3puzzla;mame-libretro
+3x3puzzla;mame-mame4all
+3x3puzzl;arcade
+3x3puzzl;fba
+3x3puzzl;mame-advmame
+3x3puzzl;mame-libretro
+3x3puzzl;mame-mame4all
+4enrayaa;arcade
+4enrayaa;fba
+4enrayaa;mame-advmame
+4enrayaa;mame-libretro
+4enrayaa;mame-mame4all
+4enraya;arcade
+4enraya;fba
+4enraya;mame-advmame
+4enraya;mame-libretro
+4enraya;mame-mame4all
+4in1boot;arcade
+4in1boot;fba
+4in1boot;mame-advmame
+4in1boot;mame-libretro
+4in1boot;mame-mame4all
+4 in 1 Row (Europe);videopac2
+64 Mastermind - A Game of Logic (Europe);c64
+8-Letter Anagrams (Tape 1) (Side A) (Europe);zxspectrum
+8-Letter Anagrams (Tape 1) (Side B) (Europe);zxspectrum
+8-Letter Anagrams (Tape 2) (Side A) (Europe);zxspectrum
+8-Letter Anagrams (Tape 2) (Side B) (Europe);zxspectrum
+Ace Pro (Hungary) (Unl);c64
+Acid Drop (Europe);atari2600
+ACME Animation Factory (USA);snes
+Actual Crimes Jack The Ripper (USA);pspminis
+Addgar (Europe);c64
+Adventures of Lolo 2 (USA);nes
+Adventures of Lolo 3 (USA);nes
+Adventures of Lolo (Europe);gb
+Adventures of Lolo (USA);nes
+agress;arcade
+agressb;arcade
+agressb;fba
+agressb;mame-advmame
+agressb;mame-libretro
+agressb;mame-mame4all
+agress;fba
+agress;mame-advmame
+agress;mame-libretro
+agress;mame-mame4all
+Aknakereso (Hungary) (Unl);c64
+Algernon - An Introduction to Programming Logic (USA);c64
+Alien Havoc (USA);pspminis
+Alinka (France) (Unl);amstradcpc
+Alpine Tram Ride (USA);c64
+Altered Space - A 3-D Alien Adventure (USA);gb
+A-mazing Tater (USA);gb
+Ambassador Kane (Europe);pspminis
+Amoba (CP Verlag) (Germany);c64
+Amoba (Rom Software) (USA) (Unl);c64
+Amorphous (USA);c64
+Anagrams (Europe);zxspectrum
+Anarchy (Europe);zxspectrum
+Anastasia (Europe);psx
+Anastasia (Europe);psp
+Angle (Europe);c64
+Animal Football (Europe);psx
+Animal Football (Europe);psp
+Animal Hotel (USA);c64
+Animal Snap - Rescue Them 2 By 2 (Europe);psx
+Animal Snap - Rescue Them 2 By 2 (Europe);psp
+Animal Snap - Rescue Them 2 by 2 (USA);gba
+Aniso (Europe) (Unl);c64
+aquarium;arcade
+aquarium;fba
+aquarium;mame-advmame
+aquarium;mame-libretro
+aquarium;mame-mame4all
+aquarush;arcade
+aquarush;mame-advmame
+aquarush;mame-libretro
+aquarush;mame-mame4all
+Araiguma Rascal (Japan);sfc
+Arcade Essentials (Europe);pspminis
+Arcade Essentials Evolution (Europe);pspminis
+Arcadesearch (USA);c64
+Archibald`s Adventures (USA);pspminis
+Arctic - Active Rail Playing (Japan);msx2
+Arctic (Japan);famicom
+Arcturus (Europe);zxspectrum
+ar_pm;arcade
+ar_pm;fba
+ar_pm;mame-advmame
+ar_pm;mame-libretro
+ar_pm;mame-mame4all
+Art - Das Kunstmagazin Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It);nds
+Artic Adventures - Polar Puzzles (USA);pspminis
+Artic Zone (Asia) (Unl);gb
+Artris (Europe);c64
+Aryol (Japan);sfc
+Ashido (Poland) (Unl);c64
+Assembloids (USA) (Unl);c64
+Astatin (Germany);c64
+Astromus - Rythmamus (Europe);amstradcpc
+Atari Video Cube (USA);atari2600
+Ata - The Revenge (USA) (Unl);c64
+ATA (USA) (Unl);c64
+atetrisa;arcade
+atetrisa;fba
+atetrisa;mame-advmame
+atetrisa;mame-libretro
+atetrisa;mame-mame4all
+atetris;arcade
+atetrisb2;arcade
+atetrisb2;fba
+atetrisb2;mame-advmame
+atetrisb2;mame-libretro
+atetrisb2;mame-mame4all
+atetrisb3;arcade
+atetrisb3;fba
+atetrisb3;mame-advmame
+atetrisb3;mame-libretro
+atetrisb3;mame-mame4all
+atetrisb;arcade
+atetrisb;fba
+atetrisb;mame-advmame
+atetrisb;mame-libretro
+atetrisb;mame-mame4all
+atetrisc2;arcade
+atetrisc2;fba
+atetrisc2;mame-advmame
+atetrisc2;mame-libretro
+atetrisc2;mame-mame4all
+atetrisc;arcade
+atetrisc;fba
+atetrisc;mame-advmame
+atetrisc;mame-libretro
+atetrisc;mame-mame4all
+atetris;fba
+atetris;mame-advmame
+atetris;mame-libretro
+atetris;mame-mame4all
+Atlantis - The Lost Continent (Europe);psx
+Atlantis - The Lost Continent (Europe);psp
+Atock (Europe);c64
+Atom Box (USA);c64
+atomicp;arcade
+atomicp;fba
+atomicp;mame-advmame
+atomicp;mame-libretro
+atomicp;mame-mame4all
+Atomino (Europe) (Unl);c64
+Atomix (Germany);c64
+Averno (Spain);zxspectrum
+Babel no Tou (Japan);famicom
+BABEL - The King of the Blocks (USA);pspminis
+Baku Baku Animal (Brazil);mastersystem
+Baku Baku Animal (USA);gamegear
+bakubaku;arcade
+bakubaku;fba
+bakubaku;mame-advmame
+bakubaku;mame-libretro
+bakubaku;mame-mame4all
+ballbros;arcade
+ballbros;fba
+ballbros;mame-advmame
+ballbros;mame-libretro
+ballbros;mame-mame4all
+Balldozer (Europe) (Unl);amstradcpc
+Balling (France) (Unl);amstradcpc
+Ballistic (USA);gbc
+Ballistic (USA);psx
+Ballistic (USA);psp
+Ball-Job (Germany);c64
+Banana (Japan) (Translated En);famicom
+bangball;arcade
+bangball;fba
+bangball;mame-advmame
+bangball;mame-libretro
+bangball;mame-mame4all
+Barmelo 3D (France);amstradcpc
+barrier;arcade
+barrier;fba
+barrier;mame-advmame
+barrier;mame-libretro
+barrier;mame-mame4all
+Bashi Blocks (USA);pspminis
+batlballa;arcade
+batlballa;fba
+batlballa;mame-advmame
+batlballa;mame-libretro
+batlballa;mame-mame4all
+batlball;arcade
+batlballe;arcade
+batlballe;fba
+batlballe;mame-advmame
+batlballe;mame-libretro
+batlballe;mame-mame4all
+batlball;fba
+batlball;mame-advmame
+batlball;mame-libretro
+batlball;mame-mame4all
+batlballu;arcade
+batlballu;fba
+batlballu;mame-advmame
+batlballu;mame-libretro
+batlballu;mame-mame4all
+batlbubl;arcade
+batlbubl;fba
+batlbubl;mame-advmame
+batlbubl;mame-libretro
+batlbubl;mame-mame4all
+Bazaru Degozaru no Game Degozaru (Japan);pce-cd
+bballsa;arcade
+bballsa;fba
+bballsa;mame-advmame
+bballsa;mame-libretro
+bballsa;mame-mame4all
+bballs;arcade
+bballs;fba
+bballs;mame-advmame
+bballs;mame-libretro
+bballs;mame-mame4all
+Beam 'em Up (USA);pspminis
+Ben (Europe);c64
+BeTiled! (Europe) (Unl);amstradcpc
+bigtwin;arcade
+bigtwinb;arcade
+bigtwinb;fba
+bigtwinb;mame-advmame
+bigtwinb;mame-libretro
+bigtwinb;mame-mame4all
+bigtwin;fba
+bigtwin;mame-advmame
+bigtwin;mame-libretro
+bigtwin;mame-mame4all
+Big Word Puzzle Book (Europe) (En,Fr,De,Es,It) [b];nds
+Bike Hike (USA);c64
+bikkuric;arcade
+bikkuric;fba
+bikkuric;mame-advmame
+bikkuric;mame-libretro
+bikkuric;mame-mame4all
+Billboard (Europe);c64
+Bishoujo Senshi Sailor Moon S - Kondo wa Puzzle de Oshioki yo! (Japan);sfc
+Bishoujo Senshi Sailor Moon S - Kurukkurin (Japan);sfc
+Bishoujo Senshi Sailor Moon Super S - Fuwafuwa Panic (Japan);sfc
+Bishoujo Sexy Puzzle (Japan) (Unl);fds
+Black Box, The (USA);c64
+Black It! (Europe);c64
+Blastermind (Side A) (Europe);zxspectrum
+Blastermind (Side B) (Europe);zxspectrum
+Blast Off (USA);pspminis
+Blind Man's Bluff (USA);c64
+blkbustr;arcade
+blkbustr;fba
+blkbustr;mame-advmame
+blkbustr;mame-libretro
+blkbustr;mame-mame4all
+blktouch;arcade
+blktouch;fba
+blktouch;mame-advmame
+blktouch;mame-libretro
+blktouch;mame-mame4all
+Block Cascade Fusion (USA);pspminis
+blockhl;arcade
+blockhl;fba
+blockhl;mame-advmame
+blockhl;mame-libretro
+blockhl;mame-mame4all
+Blockids (USA);psx
+Blockids (USA);psp
+blockout2;arcade
+blockout2;fba
+blockout2;mame-advmame
+blockout2;mame-libretro
+blockout2;mame-mame4all
+blockout;arcade
+blockout;fba
+blockoutj;arcade
+blockoutj;fba
+blockoutj;mame-advmame
+blockoutj;mame-libretro
+blockoutj;mame-mame4all
+blockout;mame-advmame
+blockout;mame-libretro
+blockout;mame-mame4all
+Block Out (USA);c64
+Block Out (USA, Europe);atarilynx
+Block Out (USA) (Proto);nes
+Blocks (J F Publishing, Inc.) (USA) (Unl);c64
+Blocks (Magna Media) (Europe) (Unl);c64
+Blocktower (Europe);c64
+Blodia (Japan);gb
+Blodia Land - Puzzle Quest (Japan);famicom
+Blok Copy (Europe) (Unl);c64
+Bloons (USA);pspminis
+Blowaway Bob (Europe) (Unl);amstradcpc
+bloxeed;arcade
+bloxeedc;arcade
+bloxeedc;fba
+bloxeedc;mame-advmame
+bloxeedc;mame-libretro
+bloxeedc;mame-mame4all
+bloxeed;fba
+bloxeed;mame-advmame
+bloxeed;mame-libretro
+bloxeed;mame-mame4all
+bloxeedu;arcade
+bloxeedu;fba
+bloxeedu;mame-advmame
+bloxeedu;mame-libretro
+bloxeedu;mame-mame4all
+Blox (Europe) (Unl);c64
+Blubria (Europe);c64
+Blue Angel 69 (CPC+) (Europe) (Unl);amstradcpc
+Blue Angel 69 (Europe);c64
+Blue's Clues - Blue's Alphabet Book (USA);gbc
+Blumen & Muster Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It) [b];nds
+Bobby Yazz Show, The (Europe);zxspectrum
+Boggle Plus (USA);gb
+Boggles - The Mind Boggler (Europe);c64
+Bomber Man GB 3 (Japan) (Translated En);gb
+Bomberman II (USA);nes
+Bomberman (Japan);fds
+Bomberman Max 2 - Blue Advance (USA);gba
+Bomberman Max 2 - Red Advance (USA);gba
+Bomberman - Panic Bomber (Japan);pce-cd
+Bomberman Tournament (USA, Europe);gba
+Bomberman (USA);tg16
+Bomberman (USA);nes
+Bomberman - Users Battle (Japan);pce-cd
+Bombing Islands, The (USA);psx
+Bombing Islands, The (USA);psp
+Bomb Jack (Japan);sg-1000
+Bombsweeper 64 (USA) (Unl);c64
+Bomb Sweeper (World) (Unl);nes
+Bookworm (USA);gba
+Boulder Dash (Europe);gb
+Boulder Dash EX (USA);gba
+Boulder Dash (USA);nes
+Box Boy (World) (Unl);nes
+Boxes (Europe);c64
+Boxxle II (USA);gb
+Boxxle (USA, Europe);gb
+Boxxle (USA, Europe) (Rev A);gb
+boxyboy;arcade
+boxyboy;mame-advmame
+boxyboy;mame-libretro
+boxyboy;mame-mame4all
+Boxyboy (USA);tg16
+Brain Artifice (USA) (Unl);c64
+Brain Bender (USA);gb
+Brain Buster - Puzzle Pak (USA);nds
+Brain Disease II - The Return (Hungary) (Unl);c64
+Brain Disease (USA) (Unl);c64
+Brainies, The (USA);snes
+Brain Spasm (Europe);c64
+Brainstorm (Europe);amstradcpc
+Brainstorm (Firebird Software) (Europe);zxspectrum
+Brainstorm (Micromega) (Side A) (Europe);zxspectrum
+Brainstorm (Micromega) (Side B) (Europe);zxspectrum
+Brain Strainers (USA, Europe);coleco
+Brain Strain (Europe) (Unl);c64
+Break-Away (Europe);zxspectrum
+Break Dance (USA);c64
+BreakQuest - Extra Evolution (USA);pspminis
+Breakquest (USA);pspminis
+BreakThru! (USA);gb
+BreakThru! (USA);snes
+brixian;arcade
+brixian;fba
+brixian;mame-advmame
+brixian;mame-libretro
+brixian;mame-mame4all
+Bubble Bath Babes (USA) (Unl);nes
+Bubble Trubble (USA);pspminis
+bubl2000;arcade
+bubl2000;fba
+bubl2000;mame-advmame
+bubl2000;mame-libretro
+bubl2000;mame-mame4all
+Bug's Life, A - Activity Centre (Europe);psx
+Bug's Life, A - Activity Centre (Europe);psp
+Build It! - Das Bauhaus (Germany);c64
+Burning Paper (Japan);gb
+Bust-A-Move 2 - Arcade Edition (USA, Europe);gb
+Bust-A-Move 2 - Arcade Edition (USA);n64
+Bust-A-Move 2 - Arcade Edition (USA);psx
+Bust-A-Move 2 - Arcade Edition (USA);psp
+Bust-A-Move 3 DX (Europe);gb
+Bust-A-Move 4 (USA, Europe);gbc
+Bust-A-Move 4 (USA);dreamcast
+Bust-A-Move 4 (USA);psx
+Bust-A-Move 4 (USA);psp
+Bust-A-Move '99 (USA);n64
+Bust-A-Move '99 (USA);psx
+Bust-A-Move '99 (USA);psp
+Bust-A-Move Millennium (USA, Europe);gbc
+Bust-A-Move Pocket (USA);ngpc
+Bust-A-Move (USA, Europe);gamegear
+Bust-A-Move (USA);snes
+C-2048 (Europe) (Unl);c64
+C64hess - Chess Puzzles (USA) (Unl);c64
+cachat;arcade
+cachat;fba
+cachat;mame-advmame
+cachat;mame-libretro
+cachat;mame-mame4all
+candy;arcade
+candy;fba
+candy;mame-advmame
+candy;mame-libretro
+candy;mame-mame4all
+cannball;arcade
+cannball;fba
+cannball;mame-advmame
+cannball;mame-libretro
+cannball;mame-mame4all
+cannballv;arcade
+cannballv;fba
+cannballv;mame-advmame
+cannballv;mame-libretro
+cannballv;mame-mame4all
+Canyon (Europe);c64
+Captain Stark - The Mission (Germany);c64
+Capture (Europe) (Unl);c64
+Caramelos (Spain);zxspectrum
+Car-O-Matic (USA);c64
+carrera;arcade
+carrera;fba
+carrera;mame-advmame
+carrera;mame-libretro
+carrera;mame-mame4all
+casanova;arcade
+casanova;fba
+casanova;mame-advmame
+casanova;mame-libretro
+casanova;mame-mame4all
+Cascade (Europe) (Unl);c64
+Castelian (USA);gb
+Castle, The (Japan);sg-1000
+Castor (Europe);c64
+Caterpillar (USA);pspminis
+Catrap (USA);gb
+cdracula;arcade
+cdracula;fba
+cdracula;mame-advmame
+cdracula;mame-libretro
+cdracula;mame-mame4all
+cecmatch;arcade
+cecmatch;fba
+cecmatch;mame-advmame
+cecmatch;mame-libretro
+cecmatch;mame-mame4all
+cfarm;arcade
+cfarm;fba
+cfarm;mame-advmame
+cfarm;mame-libretro
+cfarm;mame-mame4all
+cgangpzl;arcade
+cgangpzl;fba
+cgangpzlj;arcade
+cgangpzlj;fba
+cgangpzlj;mame-advmame
+cgangpzlj;mame-libretro
+cgangpzlj;mame-mame4all
+cgangpzl;mame-advmame
+cgangpzl;mame-libretro
+cgangpzl;mame-mame4all
+Chain-Reaction (USA);c64
+chainrec;arcade
+chainrec;mame-advmame
+chainrec;mame-libretro
+chainrec;mame-mame4all
+Challenge Me - Brain Puzzles 2 (USA) (En,Fr,Es);nds
+Challenge Me - Brain Puzzles (Europe) (En,Fr,De,Es,It);nds
+Challenge Me - Word Puzzles (Europe) (En,Fr,De,Es,It);nds
+Chalvo 55 - Super Puzzle Action (Japan) (Translated En);gb
+Championship Lode Runner (Japan);famicom
+Championship Lode Runner (Japan);sg-1000
+checkman;arcade
+checkman;fba
+checkmanj;arcade
+checkmanj;fba
+checkmanj;mame-advmame
+checkmanj;mame-libretro
+checkmanj;mame-mame4all
+checkman;mame-advmame
+checkman;mame-libretro
+checkman;mame-mame4all
+Chemical (Germany);c64
+Chem Lab (USA);c64
+Chessmaster, The (USA, Europe);gamegear
+Chew Man Fu (USA);tg16
+Chiisana Obake - Acchi Socchi Kocchi (Japan) (Translated En);famicom
+Chiki Chiki Tengoku (Japan);gb
+chinatwn;arcade
+chinatwn;fba
+chinatwn;mame-advmame
+chinatwn;mame-libretro
+chinatwn;mame-mame4all
+Chinese Juggler, The (Europe);zxspectrum
+Chinese Logic (Europe);videopac2
+Chinhai (Japan);sfc
+Chip's Challenge (Europe);amstradcpc
+Chip's Challenge (Europe);zxspectrum
+Chip's Challenge (USA, Europe);atarilynx
+choko;arcade
+choko;fba
+choko;mame-advmame
+choko;mame-libretro
+choko;mame-mame4all
+Chubby Chester (Europe);c64
+ChuChu Rocket! (USA) (En,Ja,Fr,De,Es);gba
+Circles (USA);pspminis
+Circus (Cymbal Software, Inc.) (Europe);c64
+Classic NES Series - Bomberman (USA, Europe);gba
+Classic NES Series - Dr. Mario (USA, Europe);gba
+Classic NES Series - Pac-Man (USA, Europe);gba
+Clear-Out (USA) (Unl);c64
+Cleopatra Fortune (Japan);dreamcast
+cleopatr;arcade
+Cleopatra's Fortune (USA);psx
+Cleopatra's Fortune (USA);psp
+cleopatr;fba
+cleopatr;mame-advmame
+cleopatr;mame-libretro
+cleopatr;mame-mame4all
+Clik Clak (Europe);c64
+Clockwerx (Japan) (Translated En);sfc
+Clone (Europe);c64
+Clox (Japan);fds
+cluclu;arcade
+cluclu;fba
+cluclu;mame-advmame
+cluclu;mame-libretro
+cluclu;mame-mame4all
+cndypuzl;arcade
+cndypuzl;fba
+cndypuzl;mame-advmame
+cndypuzl;mame-libretro
+cndypuzl;mame-mame4all
+Coconut Dodge (USA);pspminis
+Coins (USA) (Unl);c64
+Colee (Europe) (Unl);c64
+Collapse (Europe);amstradcpc
+colmns97;arcade
+colmns97;fba
+colmns97;mame-advmame
+colmns97;mame-libretro
+colmns97;mame-mame4all
+Colora (Europe);c64
+Coloric (France);amstradcpc
+Color Lines (Europe) (Side A) (Unl);amstradcpc
+Color Lines (Europe) (Side B) (Unl);amstradcpc
+Color Mania (Europe);c64
+Color Mind (Italy);c64
+Color Wars (Japan);pce-cd
+Colossus Mah Jong (Europe);c64
+Colouration (Europe) (Unl);c64
+Colour Clash (Europe);zxspectrum
+column2j;arcade
+column2j;fba
+column2j;mame-advmame
+column2j;mame-libretro
+column2j;mame-mame4all
+columns2;arcade
+columns2;fba
+columns2;mame-advmame
+columns2;mame-libretro
+columns2;mame-mame4all
+columns;arcade
+Columns CPC (Europe) (Unl);amstradcpc
+Columns Crown (USA);gba
+columns;fba
+Columns (Japan);sfc
+columnsj;arcade
+columnsj;fba
+columnsj;mame-advmame
+columnsj;mame-libretro
+columnsj;mame-mame4all
+columns;mame-advmame
+columns;mame-libretro
+columns;mame-mame4all
+columnsu;arcade
+columnsu;fba
+columnsu;mame-advmame
+columnsu;mame-libretro
+columnsu;mame-mame4all
+Columns (USA, Europe);gamegear
+Columns (USA, Europe);mastersystem
+Combination Deluxe (Europe) (Unl);c64
+Combination (Europe);c64
+Compare II - The New Levels (Germany);c64
+Computer-Wordsearch (Europe);c64
+Computer-Wordsearch (Europe);zxspectrum
+CompuZzler (USA);c64
+Concentration (USA);c64
+Confuzion (Europe);amstradcpc
+Confuzion (Europe);zxspectrum
+Connect 4 (Europe);c64
+Connect Four (Europe);c64
+Connection - Gravity (Europe);c64
+Connection (Hungary) (Unl);c64
+cookbib2;arcade
+cookbib2;fba
+cookbib2;mame-advmame
+cookbib2;mame-libretro
+cookbib2;mame-mame4all
+cookbib3;arcade
+cookbib3;fba
+cookbib3;mame-advmame
+cookbib3;mame-libretro
+cookbib3;mame-mame4all
+cookbiba;arcade
+cookbiba;fba
+cookbiba;mame-advmame
+cookbiba;mame-libretro
+cookbiba;mame-mame4all
+cookbib;arcade
+cookbib;fba
+cookbib;mame-advmame
+cookbib;mame-libretro
+cookbib;mame-mame4all
+Cool Ball (USA);gb
+Cool Bricks (Europe);gbc
+Cosmo Gang - The Puzzle (Japan);sfc
+cottong;arcade
+cottong;fba
+cottong;mame-advmame
+cottong;mame-libretro
+cottong;mame-mame4all
+Counter Attack (Europe);c64
+couple;arcade
+couple;fba
+couplei;arcade
+couplei;fba
+couplei;mame-advmame
+couplei;mame-libretro
+couplei;mame-mame4all
+couple;mame-advmame
+couple;mame-libretro
+couple;mame-mame4all
+couplep;arcade
+couplep;fba
+couplep;mame-advmame
+couplep;mame-libretro
+couplep;mame-mame4all
+Cover Up! (Europe);zxspectrum
+Crack It! (Europe);c64
+Crack It! Towers (Europe);zxspectrum
+Craft (Europe);c64
+crazyblk;arcade
+crazyblk;fba
+crazyblk;mame-advmame
+crazyblk;mame-libretro
+crazyblk;mame-mame4all
+Crazy Business (USA) (Unl);c64
+Crazy Faces (USA) (Proto);gamegear
+Crazy Valet (USA) (Unl);atari2600
+Creative Contraptions (USA);c64
+Creatom (Spain) (Unl);nes
+croquis;arcade
+croquis;fba
+croquis;mame-advmame
+croquis;mame-libretro
+croquis;mame-mame4all
+crospang;arcade
+crospang;fba
+crospang;mame-advmame
+crospang;mame-libretro
+crospang;mame-mame4all
+Cross It (Europe);c64
+Cross It II - The Revenge (USA);c64
+Crossroad Crisis (USA);psx
+Crossroad Crisis (USA);psp
+Crossword Magic 4.0 (USA);c64
+Crossword Twister (Europe);c64
+CryptoCube (USA);c64
+Crystal Mines (USA) (Unl);nes
+Crystals (Europe) (Unl);amstradcpc
+crzcross;arcade
+crzcross;mame-advmame
+crzcross;mame-libretro
+crzcross;mame-mame4all
+cshift;arcade
+cshift;fba
+cshift;mame-advmame
+cshift;mame-libretro
+cshift;mame-mame4all
+Cube (Europe);zxspectrum
+Cube, The (Germany);c64
+Cubicolor (USA) (Proto);atari2600
+Cubic (Slovakia) (Unl);c64
+Cubis (Germany);c64
+Cubis (USA) (Unl);atari2600
+Cubit (Europe);amstradcpc
+Cubixx (USA);pspminis
+Cubulus (Germany);c64
+Cubulux (France) (Unl);amstradcpc
+Cubulux II (France) (Unl);amstradcpc
+cuebrick;arcade
+cuebrick;fba
+cuebrickj;arcade
+cuebrickj;fba
+cuebrickj;mame-advmame
+cuebrickj;mame-libretro
+cuebrickj;mame-mame4all
+cuebrick;mame-advmame
+cuebrick;mame-libretro
+cuebrick;mame-mame4all
+Cu-On-Pa SFC (Japan) (Translated En);sfc
+Cyberblocks (Europe);c64
+Cyclones (Germany);c64
+Cylogic (Europe);c64
+Daedalian Opus (USA);gb
+daitorida;arcade
+daitorida;fba
+daitorida;mame-advmame
+daitorida;mame-libretro
+daitorida;mame-mame4all
+daitorid;arcade
+daitorid;fba
+daitorid;mame-advmame
+daitorid;mame-libretro
+daitorid;mame-mame4all
+danceyes;arcade
+danceyesj;arcade
+danceyesj;mame-advmame
+danceyesj;mame-libretro
+danceyesj;mame-mame4all
+danceyes;mame-advmame
+danceyes;mame-libretro
+danceyes;mame-mame4all
+David Crane's The Rescue of Princess Blobette (USA);gb
+dblpoint;arcade
+dblpointd;arcade
+dblpointd;fba
+dblpointd;mame-advmame
+dblpointd;mame-libretro
+dblpointd;mame-mame4all
+dblpoint;fba
+dblpoint;mame-advmame
+dblpoint;mame-libretro
+dblpoint;mame-mame4all
+D-Cube Planet (USA);pspminis
+ddealer;arcade
+ddealer;fba
+ddealer;mame-advmame
+ddealer;mame-libretro
+ddealer;mame-mame4all
+Deblock (Japan);famicom
+Deflector (USA);pspminis
+Deflektor (Europe);amstradcpc
+Dekorating Blues (Side A) (Europe);zxspectrum
+Dekorating Blues (Side B) (Europe);zxspectrum
+Delite (USA) (Unl);c64
+Dell Crossword Puzzles - Volume III (USA);c64
+Demineur (Europe);amstradcpc
+Denki Blocks! (Europe);gbc
+Denki Blocks! (USA) (En,Es);gba
+Denki Blocks (USA);pspminis
+Deri Colours (Europe);c64
+deroon;arcade
+deroon;fba
+deroon;mame-advmame
+deroon;mame-libretro
+deroon;mame-mame4all
+De'sign (Europe) (Unl);c64
+Destructo 2 (Europe);psx
+Destructo 2 (Europe);psp
+Detective Mouse (Europe);psx
+Detective Mouse (Europe);psp
+Devil Dice (USA);psx
+Devil Dice (USA);psp
+Dexterity (USA, Europe);gb
+dharma;arcade
+Dharma Doujou (Japan);sfc
+dharma;fba
+dharmaj;arcade
+dharmaj;fba
+dharmaj;mame-advmame
+dharmaj;mame-libretro
+dharmaj;mame-mame4all
+dharmak;arcade
+dharmak;fba
+dharmak;mame-advmame
+dharmak;mame-libretro
+dharmak;mame-mame4all
+dharma;mame-advmame
+dharma;mame-libretro
+dharma;mame-mame4all
+Diablo King (Spain);zxspectrum
+Diamenty (Poland) (Unl);c64
+Dice Puzzle (Europe);atari2600
+Diddl Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It);nds
+Dig Dug II (Japan);fds
+Dig Dug (Japan);fds
+Dig Dug (USA);atari5200
+Dig Dug (USA);gb
+Diggits (Germany);c64
+Digital Tangram (Europe);c64
+Digi-tiles (USA);pspminis
+Dinolympics (USA, Europe);atarilynx
+Dinomaster Party (Europe);psx
+Dinomaster Party (Europe);psp
+Dioroid (Germany);c64
+Disc-O-Very (Europe);c64
+Disney's Party (USA, Europe) (En,Fr,De,Es,It);gba
+Ditris (Europe);c64
+Dodge - The Game (Europe) (Unl);c64
+Dokidoki Penguin Land (Japan);sg-1000
+dolmen;arcade
+dolmen;fba
+dolmen;mame-advmame
+dolmen;mame-libretro
+dolmen;mame-mame4all
+Dolucky no Puzzle Tour '94 (Japan);sfc
+domino;arcade
+domino;mame-advmame
+domino;mame-libretro
+domino;mame-mame4all
+Doodle Fit (USA);pspminis
+Door Door (Japan);famicom
+Doris II (Europe) (Unl);c64
+Dossun! Ganseki Battle (Japan) (Translated En);sfc
+Double (Magna Media) (Europe) (Unl);c64
+dremshpr;arcade
+dremshpr;fba
+dremshpr;mame-advmame
+dremshpr;mame-libretro
+dremshpr;mame-mame4all
+drgnwrld;arcade
+drgnwrld;fba
+drgnwrld;mame-advmame
+drgnwrld;mame-libretro
+drgnwrld;mame-mame4all
+drgnwrldv10c;arcade
+drgnwrldv10c;fba
+drgnwrldv10c;mame-advmame
+drgnwrldv10c;mame-libretro
+drgnwrldv10c;mame-mame4all
+drgnwrldv11h;arcade
+drgnwrldv11h;fba
+drgnwrldv11h;mame-advmame
+drgnwrldv11h;mame-libretro
+drgnwrldv11h;mame-mame4all
+drgnwrldv20j;arcade
+drgnwrldv20j;fba
+drgnwrldv20j;mame-advmame
+drgnwrldv20j;mame-libretro
+drgnwrldv20j;mame-mame4all
+drgnwrldv21;arcade
+drgnwrldv21;fba
+drgnwrldv21j;arcade
+drgnwrldv21j;fba
+drgnwrldv21j;mame-advmame
+drgnwrldv21j;mame-libretro
+drgnwrldv21j;mame-mame4all
+drgnwrldv21;mame-advmame
+drgnwrldv21;mame-libretro
+drgnwrldv21;mame-mame4all
+drgnwrldv30;arcade
+drgnwrldv30;fba
+drgnwrldv30;mame-advmame
+drgnwrldv30;mame-libretro
+drgnwrldv30;mame-mame4all
+drgpunch;arcade
+drgpunch;fba
+drgpunch;mame-advmame
+drgpunch;mame-libretro
+drgpunch;mame-mame4all
+drgw2;arcade
+drgw2c;arcade
+drgw2c;fba
+drgw2c;mame-advmame
+drgw2c;mame-libretro
+drgw2c;mame-mame4all
+drgw2;fba
+drgw2j;arcade
+drgw2j;fba
+drgw2j;mame-advmame
+drgw2j;mame-libretro
+drgw2j;mame-mame4all
+drgw2;mame-advmame
+drgw2;mame-libretro
+drgw2;mame-mame4all
+drgw3100;arcade
+drgw3100;fba
+drgw3100;mame-advmame
+drgw3100;mame-libretro
+drgw3100;mame-mame4all
+drgw3105;arcade
+drgw3105;fba
+drgw3105;mame-advmame
+drgw3105;mame-libretro
+drgw3105;mame-mame4all
+drgw3;arcade
+drgw3;fba
+drgw3;mame-advmame
+drgw3;mame-libretro
+drgw3;mame-mame4all
+Drigus Und Drolan (Germany) (Unl);amstradcpc
+Dr. Mario 64 (USA);n64
+drmario;arcade
+drmario;fba
+Dr. Mario (Japan);sfc
+Dr. Mario (Japan, USA);nes
+drmario;mame-advmame
+drmario;mame-libretro
+drmario;mame-mame4all
+Dr. Mario (World);gb
+Dr. Mario (World) (Rev A);gb
+Drop.Off (USA);tg16
+Dr. Pimples Dog (Europe);c64
+Dr. Robotnik's Mean Bean Machine (Europe);mastersystem
+Dr. Robotnik's Mean Bean Machine (USA, Europe);gamegear
+Dr. Seuss - Fix-Up the Mix-Up Puzzler (USA);c64
+Dr. Seuss's Fix-Up The Mix-Up Puzzler (USA, Europe);coleco
+Dr. Sudoku (USA);gba
+drtomy;arcade
+drtomy;fba
+drtomy;mame-advmame
+drtomy;mame-libretro
+drtomy;mame-mame4all
+D's Garage 21 Koubo Game - Tane o Maku Tori (Japan);wonderswan
+Duck Maze (Australia) (Unl);nes
+Duel Strike (Europe);c64
+Duet (Europe);c64
+Duotris (Europe);c64
+dw2001;arcade
+dw2001;fba
+dw2001;mame-advmame
+dw2001;mame-libretro
+dw2001;mame-mame4all
+dw2v100x;arcade
+dw2v100x;fba
+dw2v100x;mame-advmame
+dw2v100x;mame-libretro
+dw2v100x;mame-mame4all
+dwex;arcade
+dwex;fba
+dwex;mame-advmame
+dwex;mame-libretro
+dwex;mame-mame4all
+dwpc;arcade
+dwpc;fba
+dwpc;mame-advmame
+dwpc;mame-libretro
+dwpc;mame-mame4all
+Dynamix (Europe);amstradcpc
+Dynogems (USA);pspminis
+Edge (USA);pspminis
+Edtris 2600 (USA) (Unl);atari2600
+Eggerland (Japan) (Translated En);fds
+egghunt;arcade
+egghunt;fba
+egghunt;mame-advmame
+egghunt;mame-libretro
+egghunt;mame-mame4all
+Eggland (Europe) (Unl);c64
+Egg Mania (USA) (En,Fr,Es);gba
+Eggman (USA);c64
+Egypt (Japan) (Translated En);famicom
+Einstein (Europe);c64
+Einstein Memory Trainer, The (Europe) (Disk 1 Side A);c64
+Einstein Memory Trainer, The (Europe) (Disk 1 Side B);c64
+Einstein Memory Trainer, The (Europe) (Disk 2);c64
+ejihon;arcade
+ejihon;mame-advmame
+ejihon;mame-libretro
+ejihon;mame-mame4all
+El Bloque Magico (Spain) (Unl);nes
+Eleven Across (USA) (Unl);c64
+elfin;arcade
+elfin;fba
+elfin;mame-advmame
+elfin;mame-libretro
+elfin;mame-mame4all
+emeralda;arcade
+emeraldaja;arcade
+emeraldaja;mame-advmame
+emeraldaja;mame-libretro
+emeraldaja;mame-mame4all
+emeraldaj;arcade
+emeraldaj;mame-advmame
+emeraldaj;mame-libretro
+emeraldaj;mame-mame4all
+emeralda;mame-advmame
+emeralda;mame-libretro
+emeralda;mame-mame4all
+E-Motion (Europe);amstradcpc
+E-Motion (Europe);zxspectrum
+Enchanted Cavern (Europe);pspminis
+Engacho! for WonderSwan (Japan);wonderswan
+Enigma (Mania-Soft) (Europe);c64
+Enigmo (USA);pspminis
+Entity (Europe);c64
+Eoroid (Poland) (Unl);c64
+Erotica (Europe) (Unl);c64
+ertictaca;arcade
+ertictaca;fba
+ertictaca;mame-advmame
+ertictaca;mame-libretro
+ertictaca;mame-mame4all
+ertictac;arcade
+ertictacb;arcade
+ertictacb;fba
+ertictacb;mame-advmame
+ertictacb;mame-libretro
+ertictacb;mame-mame4all
+ertictac;fba
+ertictac;mame-advmame
+ertictac;mame-libretro
+ertictac;mame-mame4all
+eto;arcade
+eto;fba
+eto;mame-advmame
+eto;mame-libretro
+eto;mame-mame4all
+E.T. The Extra Terrestrial - Digital Companion (USA);gbc
+Execution! (Europe);amstradcpc
+EXIS - The Planet Far Away (Germany);c64
+Exodus - Journey to the Promised Land (USA) (Unl);nes
+Eye (Europe);c64
+Face Ache - The Man of a Million Faces (USA);c64
+Facemaker (USA);c64
+Factory, The (USA);c64
+fantasiaa;arcade
+fantasiaa;fba
+fantasiaa;mame-advmame
+fantasiaa;mame-libretro
+fantasiaa;mame-mame4all
+fantasia;arcade
+fantasiab;arcade
+fantasiab;fba
+fantasiab;mame-advmame
+fantasiab;mame-libretro
+fantasiab;mame-mame4all
+fantasia;fba
+fantasia;mame-advmame
+fantasia;mame-libretro
+fantasia;mame-mame4all
+fantasian;arcade
+fantasian;fba
+fantasian;mame-advmame
+fantasian;mame-libretro
+fantasian;mame-mame4all
+Fantasy - An Adult Game (Europe);zxspectrum
+fantsia2a;arcade
+fantsia2a;fba
+fantsia2a;mame-advmame
+fantsia2a;mame-libretro
+fantsia2a;mame-mame4all
+fantsia2;arcade
+fantsia2;fba
+fantsia2;mame-advmame
+fantsia2;mame-libretro
+fantsia2;mame-mame4all
+fantsy95;arcade
+fantsy95;fba
+fantsy95;mame-advmame
+fantsy95;mame-libretro
+fantsy95;mame-mame4all
+Farm Frenzy 2 (USA);pspminis
+Farm Frenzy 3 (USA);pspminis
+Farm Frenzy - Pizza Party (Europe);pspminis
+Fetris (Europe) (Unl);c64
+Fidgetts, The (USA, Europe);gb
+Fields (USA);c64
+Fifteen 3D (Czech Republic) (Unl);c64
+Fifteen (USA);c64
+filetto;arcade
+filetto;fba
+filetto;mame-advmame
+filetto;mame-libretro
+filetto;mame-mame4all
+finalttr;arcade
+finalttr;fba
+finalttr;mame-advmame
+finalttr;mame-libretro
+finalttr;mame-mame4all
+Finders Keepers (Carousel Software, Inc) (USA);c64
+findlove;arcade
+findlove;fba
+findlove;mame-advmame
+findlove;mame-libretro
+findlove;mame-mame4all
+Finger Flashing (Japan) (Translated En);psx
+Finger Flashing (Japan) (Translated En);psp
+Fips (Europe);c64
+Fire 'n Ice (USA);nes
+Fish Tank (USA);pspminis
+Five a Row (Europe);c64
+Fix It! (Europe);c64
+Flag Capture (USA);atari2600
+Flappy (Japan);famicom
+Flappy Special (Japan);gb
+Flashback! (USA);c64
+Flash Koibito-kun (Japan);wonderswancolor
+flipmaze;arcade
+flipmaze;mame-advmame
+flipmaze;mame-libretro
+flipmaze;mame-mame4all
+Flippit (Europe);amstradcpc
+Flippit (Europe);zxspectrum
+Flippit (USA);c64
+Fliptris (Poland) (Unl);c64
+Flipull - An Exciting Cube Game (Japan);famicom
+flipull;arcade
+flipull;fba
+flipull;mame-advmame
+flipull;mame-libretro
+flipull;mame-mame4all
+Flipull (USA);gb
+Flix (Europe);zxspectrum
+Flix (Germany);c64
+Follow the Leader (USA);c64
+Forest Puzzle (USA);pspminis
+Foton (Europe) (Unl);c64
+Four in a Row! (USA);c64
+Fourty Five (Europe);c64
+Four Wins (Europe);c64
+fpoint1;arcade
+fpoint1;fba
+fpoint1;mame-advmame
+fpoint1;mame-libretro
+fpoint1;mame-mame4all
+fpoint;arcade
+fpoint;fba
+fpoint;mame-advmame
+fpoint;mame-libretro
+fpoint;mame-mame4all
+Franky, Joe & Dirk... On the Tiles (Europe);gb
+fredmem;arcade
+fredmemc;arcade
+fredmemc;fba
+fredmemc;mame-advmame
+fredmemc;mame-libretro
+fredmemc;mame-mame4all
+fredmem;fba
+fredmemj;arcade
+fredmemj;fba
+fredmemj;mame-advmame
+fredmemj;mame-libretro
+fredmemj;mame-mame4all
+fredmem;mame-advmame
+fredmem;mame-libretro
+fredmem;mame-mame4all
+fredmemuk;arcade
+fredmemuk;fba
+fredmemuk;mame-advmame
+fredmemuk;mame-libretro
+fredmemuk;mame-mame4all
+fredmemus;arcade
+fredmemus;fba
+fredmemus;mame-advmame
+fredmemus;mame-libretro
+fredmemus;mame-mame4all
+fredmesp;arcade
+fredmesp;fba
+fredmesp;mame-advmame
+fredmesp;mame-libretro
+fredmesp;mame-mame4all
+freezeat2;arcade
+freezeat2;fba
+freezeat2;mame-advmame
+freezeat2;mame-libretro
+freezeat2;mame-mame4all
+freezeat3;arcade
+freezeat3;fba
+freezeat3;mame-advmame
+freezeat3;mame-libretro
+freezeat3;mame-mame4all
+freezeat4;arcade
+freezeat4;fba
+freezeat4;mame-advmame
+freezeat4;mame-libretro
+freezeat4;mame-mame4all
+freezeat5;arcade
+freezeat5;fba
+freezeat5;mame-advmame
+freezeat5;mame-libretro
+freezeat5;mame-mame4all
+freezeat6;arcade
+freezeat6;fba
+freezeat6;mame-advmame
+freezeat6;mame-libretro
+freezeat6;mame-mame4all
+freezeat;arcade
+freezeat;fba
+freezeatjp;arcade
+freezeatjp;fba
+freezeatjp;mame-advmame
+freezeatjp;mame-libretro
+freezeatjp;mame-mame4all
+freezeat;mame-advmame
+freezeat;mame-libretro
+freezeat;mame-mame4all
+Frenzy (Europe);c64
+Frestris (Europe) (Unl);amstradcpc
+Frostbite (USA);atari2600
+Frustration (USA);c64
+funybubl;arcade
+funybublc;arcade
+funybublc;fba
+funybublc;mame-advmame
+funybublc;mame-libretro
+funybublc;mame-mame4all
+funybubl;fba
+funybubl;mame-advmame
+funybubl;mame-libretro
+funybubl;mame-mame4all
+Fushigi na Blobby - Princess Blob o Sukue! (Japan);gb
+Galgje (USA);c64
+galpani3;arcade
+galpani3;fba
+galpani3hk;arcade
+galpani3hk;fba
+galpani3hk;mame-advmame
+galpani3hk;mame-libretro
+galpani3hk;mame-mame4all
+galpani3j;arcade
+galpani3j;fba
+galpani3j;mame-advmame
+galpani3j;mame-libretro
+galpani3j;mame-mame4all
+galpani3k;arcade
+galpani3k;fba
+galpani3k;mame-advmame
+galpani3k;mame-libretro
+galpani3k;mame-mame4all
+galpani3;mame-advmame
+galpani3;mame-libretro
+galpani3;mame-mame4all
+galpani4;arcade
+galpani4;fba
+galpani4k;arcade
+galpani4k;fba
+galpani4k;mame-advmame
+galpani4k;mame-libretro
+galpani4k;mame-mame4all
+galpani4;mame-advmame
+galpani4;mame-libretro
+galpani4;mame-mame4all
+galpanica;arcade
+galpanica;fba
+galpanica;mame-advmame
+galpanica;mame-libretro
+galpanica;mame-mame4all
+galpanic;arcade
+galpanic;fba
+galpanic;mame-advmame
+galpanic;mame-libretro
+galpanic;mame-mame4all
+galpanis;arcade
+galpanis;fba
+galpanisj;arcade
+galpanisj;fba
+galpanisj;mame-advmame
+galpanisj;mame-libretro
+galpanisj;mame-mame4all
+galpanisk;arcade
+galpanisk;fba
+galpanisk;mame-advmame
+galpanisk;mame-libretro
+galpanisk;mame-mame4all
+galpanis;mame-advmame
+galpanis;mame-libretro
+galpanis;mame-mame4all
+galpans2a;arcade
+galpans2a;fba
+galpans2a;mame-advmame
+galpans2a;mame-libretro
+galpans2a;mame-mame4all
+galpans2;arcade
+galpans2;fba
+galpans2;mame-advmame
+galpans2;mame-libretro
+galpans2;mame-mame4all
+galpans3;arcade
+galpans3;fba
+galpans3;mame-advmame
+galpans3;mame-libretro
+galpans3;mame-mame4all
+galpansu;arcade
+galpansu;fba
+galpansu;mame-advmame
+galpansu;mame-libretro
+galpansu;mame-mame4all
+galsnewa;arcade
+galsnewa;fba
+galsnewa;mame-advmame
+galsnewa;mame-libretro
+galsnewa;mame-mame4all
+galsnew;arcade
+galsnew;fba
+galsnewj;arcade
+galsnewj;mame-advmame
+galsnewj;mame-libretro
+galsnewj;mame-mame4all
+galsnewk;arcade
+galsnewk;fba
+galsnewk;mame-advmame
+galsnewk;mame-libretro
+galsnewk;mame-mame4all
+galsnew;mame-advmame
+galsnew;mame-libretro
+galsnew;mame-mame4all
+Gameboy Tetris (Europe) (Unl);c64
+Game no Tetsujin - The Shanghai (Japan);sfc
+Gatecrasher (Europe);amstradcpc
+Gatecrasher (Europe);zxspectrum
+Gem Gem (Japan);gb
+Gem Smashers (USA);gba
+Gem'x (USA);c64
+Geom Cube (USA);psx
+Geom Cube (USA);psp
+Geometric (Europe);c64
+Geometric II (Europe) (Unl);c64
+GEO Wunder Natur Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It);nds
+Gertrude's Puzzles (USA);c64
+Gertrude's Secrets (USA);c64
+Get!! Colonies (Japan);dreamcast
+Get Four (USA);c64
+ghostlop;arcade
+ghostlop;fba
+ghostlop;mame-advmame
+ghostlop;mame-libretro
+ghostlop;mame-mame4all
+ghostlop;neogeo
+Giant and Dwarfs (USA);c64
+Ginga (Japan);gb
+Girltris (USA);c64
+Gliece Security (France) (Unl);amstradcpc
+Global Star - Sudoku Fever (USA);gba
+Glocal Hexcite (Japan);wonderswan
+Godzilla (USA, Europe);gb
+Gold Fever (USA);pspminis
+Goraku Ou Tango! (Japan);wonderswan
+Gorby no Pipeline Daisakusen (Japan) (Translated En);famicom
+Gortek and the Kryptobytes (USA);c64
+Gravitrix (Europe) (Unl);c64
+Green Screen (USA) (Unl);c64
+greenTechPLUS+ (Europe);pspminis
+Grfx-Jump (Europe) (Unl);c64
+Grid (Europe);c64
+grndtour;arcade
+grndtour;fba
+grndtour;mame-advmame
+grndtour;mame-libretro
+grndtour;mame-mame4all
+Groops (Europe) (Unl);amstradcpc
+Guardians (Europe);amstradcpc
+Gubble (USA);psx
+Gubble (USA);psp
+Guesser (Europe);c64
+Guess That Word! (USA);c64
+Gumball (USA);c64
+gumbo;arcade
+gumbo;fba
+gumbo;mame-advmame
+gumbo;mame-libretro
+gumbo;mame-mame4all
+gundealra;arcade
+gundealra;fba
+gundealra;mame-advmame
+gundealra;mame-libretro
+gundealra;mame-mame4all
+gundealr;arcade
+gundealr;fba
+gundealr;mame-advmame
+gundealr;mame-libretro
+gundealr;mame-mame4all
+gundealrt;arcade
+gundealrt;fba
+gundealrt;mame-advmame
+gundealrt;mame-libretro
+gundealrt;mame-mame4all
+gundl94;arcade
+gundl94;fba
+gundl94;mame-advmame
+gundl94;mame-libretro
+gundl94;mame-mame4all
+Gunpey DS - Music x Puzzle (USA);nds
+GunPey EX (Japan);wonderswancolor
+GunPey (Japan);wonderswan
+gururin;arcade
+gururin;fba
+gururin;mame-advmame
+gururin;mame-libretro
+gururin;mame-mame4all
+gururin;neogeo
+gussun;arcade
+gussun;fba
+gussun;mame-advmame
+gussun;mame-libretro
+gussun;mame-mame4all
+gutangtn;arcade
+gutangtn;fba
+gutangtn;mame-advmame
+gutangtn;mame-libretro
+gutangtn;mame-mame4all
+gutsn;arcade
+gutsn;fba
+gutsn;mame-advmame
+gutsn;mame-libretro
+gutsn;mame-mame4all
+Halifax (Europe);c64
+Hanafuda Shiyouyo (Japan);wonderswan
+hanagumi;arcade
+hanagumi;fba
+hanagumi;mame-advmame
+hanagumi;mame-libretro
+hanagumi;mame-mame4all
+Hang'em-64 (USA);c64
+Hangman (Cascade Games Ltd.) (Europe);c64
+Hangman Deluxe (USA) (Unl);c64
+Hangman III (USA);c64
+Hangman II (USA);c64
+Hangman IV (USA);c64
+Hangman (Sectechdesigns) (Europe) (Unl);c64
+Hangman's Hazard (USA) (Unl);c64
+Hangman (USA);atari2600
+Hanoi King (Europe);zxspectrum
+hapytour;arcade
+hapytour;fba
+hapytour;mame-advmame
+hapytour;mame-libretro
+hapytour;mame-mame4all
+haremchl;arcade
+haremchl;fba
+haremchl;mame-advmame
+haremchl;mame-libretro
+haremchl;mame-mame4all
+Hareraiser - Finale (Europe);zxspectrum
+Hareraiser - Prelude (Europe);zxspectrum
+Harlequin (Europe);zxspectrum
+hasamu;arcade
+hasamu;fba
+hasamu;mame-advmame
+hasamu;mame-libretro
+hasamu;mame-mame4all
+hatris;arcade
+hatris;fba
+Hatris (Japan, USA);gb
+hatrisj;arcade
+hatrisj;fba
+hatrisj;mame-advmame
+hatrisj;mame-libretro
+hatrisj;mame-mame4all
+hatris;mame-advmame
+hatris;mame-libretro
+hatris;mame-mame4all
+Hatris (USA);nes
+Hazar (Europe);c64
+Hebereke's Popoitto (Europe);psx
+Hebereke's Popoitto (Europe);psp
+Hebereke's Popoitto (Europe);snes
+Hebereke's Popoon (Europe);snes
+heberpop;arcade
+heberpop;fba
+heberpop;mame-advmame
+heberpop;mame-libretro
+heberpop;mame-mame4all
+Hedge Hog (Europe);amstradcpc
+Hello Kitty - Cube Frenzy (USA);psx
+Hello Kitty - Cube Frenzy (USA);psp
+Hello Kitty - Lovely Fruit Park (Japan);dreamcast
+Hello Kitty no Magical Block (Japan);dreamcast
+Hello Kitty's Cube Frenzy (USA);gbc
+Herkules (Europe);psx
+Herkules (Europe);psp
+hexa;arcade
+hexa;fba
+hexa;mame-advmame
+hexa;mame-libretro
+hexa;mame-mame4all
+Hexcite - The Shapes of Victory (USA, Europe);gbc
+hexion;arcade
+hexion;fba
+hexion;mame-advmame
+hexion;mame-libretro
+hexion;mame-mame4all
+Hex (Slovakia) (Unl);c64
+hidctch2a;arcade
+hidctch2a;fba
+hidctch2a;mame-advmame
+hidctch2a;mame-libretro
+hidctch2a;mame-mame4all
+hidctch2;arcade
+hidctch2;fba
+hidctch2;mame-advmame
+hidctch2;mame-libretro
+hidctch2;mame-mame4all
+hidctch3;arcade
+hidctch3;fba
+hidctch3;mame-advmame
+hidctch3;mame-libretro
+hidctch3;mame-mame4all
+Hide and Seek (USA);c64
+Hiden Inyou Kikouhou - Ca Da (Japan);gb
+hidnc2k;arcade
+hidnc2k;fba
+hidnc2k;mame-advmame
+hidnc2k;mame-libretro
+hidnc2k;mame-mame4all
+hidnctch;arcade
+hidnctch;fba
+hidnctch;mame-advmame
+hidnctch;mame-libretro
+hidnctch;mame-mame4all
+High Memory (Europe);c64
+High Rise (USA);c64
+High Steel (Europe);amstradcpc
+Hirn 64 (Germany);c64
+Hirnris (Europe);c64
+Hi Ska Do (Europe);c64
+Hive Sweeper (Europe);pspminis
+Home Mahjong (Japan);sg-1000
+honeydol;arcade
+honeydol;fba
+honeydol;mame-advmame
+honeydol;mame-libretro
+honeydol;mame-mame4all
+Hong Kong (Japan);fds
+Hong Kong (Japan);gb
+hotblock;arcade
+hotblock;fba
+hotblock;mame-advmame
+hotblock;mame-libretro
+hotblock;mame-mame4all
+hotbubl;arcade
+hotbubl;fba
+hotbubl;mame-advmame
+hotbubl;mame-libretro
+hotbubl;mame-mame4all
+Hotch Potch (Europe);zxspectrum
+hotmemry11;arcade
+hotmemry11;fba
+hotmemry11;mame-advmame
+hotmemry11;mame-libretro
+hotmemry11;mame-mame4all
+hotmemry;arcade
+hotmemry;fba
+hotmemry;mame-advmame
+hotmemry;mame-libretro
+hotmemry;mame-mame4all
+hotminda;arcade
+hotminda;fba
+hotminda;mame-advmame
+hotminda;mame-libretro
+hotminda;mame-mame4all
+hotmind;arcade
+hotmind;fba
+hotmind;mame-advmame
+hotmind;mame-libretro
+hotmind;mame-mame4all
+Hot Tiles (USA) (Unl);c64
+Houdini Escape (USA);c64
+House Of Horrors, The (Europe);amstradcpc
+htchctch;arcade
+htchctch;fba
+htchctch;mame-advmame
+htchctch;mame-libretro
+htchctch;mame-mame4all
+Humans, The (Europe);snes
+Humans, The (USA);gb
+Humpty Dumpty Mystery (USA);c64
+Hunchback of Notredame (Europe);psx
+Hunchback of Notredame (Europe);psp
+Hungry Dinosaurs (Europe);snes
+Hunt & Score (USA);atari2600
+Hyper Aggressive (Europe);c64
+Hyper Lode Runner (World);gb
+Hyper Lode Runner (World) (Rev A);gb
+I Can Remember (USA) (Disk 1);c64
+I Can Remember (USA) (Disk 2);c64
+Ice-Mania (Germany);c64
+Ichidant~R GG (Japan);gamegear
+ichir;arcade
+ichir;fba
+ichirj;arcade
+ichirjbl;arcade
+ichirjbl;fba
+ichirjbl;mame-advmame
+ichirjbl;mame-libretro
+ichirjbl;mame-mame4all
+ichirj;fba
+ichirj;mame-advmame
+ichirj;mame-libretro
+ichirj;mame-mame4all
+ichirk;arcade
+ichirk;fba
+ichirk;mame-advmame
+ichirk;mame-libretro
+ichirk;mame-mame4all
+ichir;mame-advmame
+ichir;mame-libretro
+ichir;mame-mame4all
+Identikit (Europe);c64
+iD (Europe);zxspectrum
+Idiot Squad (USA);pspminis
+Illgen (Germany);c64
+iLogicAll (Europe) (Unl);amstradcpc
+Implode (USA);tg-cd
+inca;arcade
+inca;fba
+inca;mame-advmame
+inca;mame-libretro
+inca;mame-mame4all
+Infection (Europe) (Proto);amstradcpc
+Influence (USA);pspminis
+Injured Engine (USA);c64
+Insanity (USA);c64
+Insector Hecti in The Interchange (Europe);zxspectrum
+Insomnia (Germany);c64
+Interchange (Europe);amstradcpc
+Interlaced Pairs (USA) (Unl);c64
+Invert (USA) (Unl);c64
+Invertus (Poland) (Unl);c64
+IQ 180 (Europe);atari2600
+iqblock;arcade
+iqblock;fba
+iqblock;mame-advmame
+iqblock;mame-libretro
+iqblock;mame-mame4all
+I.Q - Intelligent Qube (USA);psx
+I.Q - Intelligent Qube (USA);psp
+Iron Sphere (Europe) (Unl);amstradcpc
+Irritating Stick (USA);psx
+Irritating Stick (USA);psp
+irrmaze;neogeo
+Ishido (Europe) (Unl);amstradcpc
+Ishido (Japan) (Translated En);fds
+Ishido - The Way of Stones (USA, Europe);atarilynx
+Ishido - The Way of Stones (USA);gb
+I Spy Challenger! (USA);gba
+Istar's Crossword Program (USA) (Side A);c64
+Istar's Crossword Program (USA) (Side B);c64
+itaten;arcade
+itaten;fba
+itaten;mame-advmame
+itaten;mame-libretro
+itaten;mame-mame4all
+It's Mr. Pants (USA, Europe);gba
+Jammes (Japan);sfc
+Janken Disk Shiro (Japan);fds
+Jelly Pops (USA);pspminis
+Jetix Puzzle Buzzle (Europe) (En,Fr,De,Es,It,Nl,Sv,No,Da,Fi);nds
+Jewel Keepers Easter Island (USA);pspminis
+Jigsaw (Europe);amstradcpc
+Jigsaw (Europe);zxspectrum
+Jigsaw Madness (USA);psx
+Jigsaw Madness (USA);psp
+Jigsaw (USA);c64
+Jikai Shounen Met Mag (Japan);fds
+jin;arcade
+jin;fba
+jin;mame-advmame
+jin;mame-libretro
+jin;mame-mame4all
+Jot-a-Word Genie (USA);c64
+joyjoy;arcade
+joyjoy;fba
+joyjoy;mame-advmame
+joyjoy;mame-libretro
+joyjoy;mame-mame4all
+joyjoy;neogeo
+Jumbly (Europe);zxspectrum
+Jump Out (Europe);c64
+Junction (USA, Europe);gamegear
+Kablooey (USA);snes
+Kahoots (USA);pspminis
+Kaleidokubes (USA);c64
+Kaleidoscope (Interactive Synaesthesia Project) (USA);pspminis
+Kamyzol (France) (Unl);amstradcpc
+karianx;arcade
+karianx;fba
+karianx;mame-advmame
+karianx;mame-libretro
+karianx;mame-mame4all
+Karimogi (USA);pspminis
+Kaskade (Europe);c64
+Kayles (USA);c64
+Kaze no Klonoa - Moonlight Museum (Japan);wonderswan
+Keeper (Japan);sfc
+Kemshu (Europe);zxspectrum
+Keycode (Europe);zxspectrum
+Kickle Cubicle (USA);nes
+kikcubic;arcade
+kikcubicb;arcade
+kikcubicb;fba
+kikcubicb;mame-advmame
+kikcubicb;mame-libretro
+kikcubicb;mame-mame4all
+kikcubic;fba
+kikcubic;mame-advmame
+kikcubic;mame-libretro
+kikcubic;mame-mame4all
+Kikugi (Hungary) (Unl);c64
+Killer (Europe) (Unl);c64
+Kineko - Kinetic Connection - The Monitor Puzzle (Japan);fds
+Kineko Vol. II - Kinetic Connection - The Monitor Puzzle (Japan);fds
+Kinetic Connection (Japan);gamegear
+Kinetic Connection (USA);c64
+King Arthur's World (USA);snes
+Kirby no Kirakira Kids (Japan);sfc
+Kirby's Avalanche (USA);snes
+Kirby's Star Stacker (USA, Europe);gb
+Kirel (Europe);zxspectrum
+kittenk;arcade
+kittenk;fba
+kittenk;mame-advmame
+kittenk;mame-libretro
+kittenk;mame-mame4all
+klax2;arcade
+klax2;fba
+klax2;mame-advmame
+klax2;mame-libretro
+klax2;mame-mame4all
+klax3;arcade
+klax3;fba
+klax3;mame-advmame
+klax3;mame-libretro
+klax3;mame-mame4all
+klax;arcade
+Klax (CPC+) (Europe);amstradcpc
+klaxd;arcade
+klaxd;fba
+klaxd;mame-advmame
+klaxd;mame-libretro
+klaxd;mame-mame4all
+Klax (Europe);amstradcpc
+Klax (Europe);atari2600
+Klax (Europe);mastersystem
+Klax (Europe);zxspectrum
+klax;fba
+klaxj;arcade
+klaxj;fba
+klaxj;mame-advmame
+klaxj;mame-libretro
+klaxj;mame-mame4all
+klax;mame-advmame
+klax;mame-libretro
+klax;mame-mame4all
+klaxp1;arcade
+klaxp1;fba
+klaxp1;mame-advmame
+klaxp1;mame-libretro
+klaxp1;mame-mame4all
+klaxp2;arcade
+klaxp2;fba
+klaxp2;mame-advmame
+klaxp2;mame-libretro
+klaxp2;mame-mame4all
+Klax (USA, Europe);atarilynx
+Klax (USA, Europe);gamegear
+Klax (USA);tg16
+Klax (USA);gb
+Klax (USA);gbc
+Klax (USA) (Unl);nes
+Klustar (USA);gbc
+Knight Fortix 2 (USA);pspminis
+Knight Move (Japan) (Translated En);fds
+Knights & Demons (Europe) (Unl);amstradcpc
+Know Your Own IQ & Personality (USA);c64
+knpuzzle;arcade
+knpuzzle;fba
+knpuzzle;mame-advmame
+knpuzzle;mame-libretro
+knpuzzle;mame-mame4all
+Koi wa Kakehiki (Japan);gb
+kollon;arcade
+kollonc;arcade
+kollonc;mame-advmame
+kollonc;mame-libretro
+kollonc;mame-mame4all
+kollon;mame-advmame
+kollon;mame-libretro
+kollon;mame-mame4all
+Kopido (Europe);c64
+Koro Dice (Japan);gb
+Krakit (Europe);zxspectrum
+Krazy Kreatures (USA) (Unl);nes
+Krusty's Fun House (Europe);mastersystem
+Krusty's Fun House (USA, Europe);gb
+Krusty's Fun House (USA, Europe);gamegear
+Krusty's Fun House (USA);nes
+Krusty's Super Fun House (USA);snes
+Krymini (Europe);c64
+Krypton Factor, The (Europe) (Disk 1);amstradcpc
+Krypton Factor, The (Europe) (Disk 2);amstradcpc
+Kubmic (France) (Unl);amstradcpc
+Kunio no Oden (Japan);sfc
+Kurupara! (Japan);wonderswancolor
+Kurushi Final (Europe);psx
+Kurushi Final (Europe);psp
+Kuusou Kagaku Sekai Gulliver Boy - Kuusou Kagaku Puzzle Purittopon!! (Japan);gb
+Labyrinth (Europe);pspminis
+Laced Tiles (Europe) (Unl);c64
+lacrazyc;arcade
+lacrazyc;fba
+lacrazyc;mame-advmame
+lacrazyc;mame-libretro
+lacrazyc;mame-mame4all
+landbrka;arcade
+landbrka;fba
+landbrka;mame-advmame
+landbrka;mame-libretro
+landbrka;mame-mame4all
+landbrk;arcade
+landbrk;fba
+landbrk;mame-advmame
+landbrk;mame-libretro
+landbrk;mame-mame4all
+landmakr;arcade
+landmakr;fba
+landmakr;mame-advmame
+landmakr;mame-libretro
+landmakr;mame-mame4all
+landmakrp;arcade
+landmakrp;fba
+landmakrp;mame-advmame
+landmakrp;mame-libretro
+landmakrp;mame-mame4all
+Lan Master (World) (Unl);nes
+lasstixx;arcade
+lasstixx;fba
+lasstixx;mame-advmame
+lasstixx;mame-libretro
+lasstixx;mame-mame4all
+lastfort;arcade
+lastfortea;arcade
+lastfortea;fba
+lastfortea;mame-advmame
+lastfortea;mame-libretro
+lastfortea;mame-mame4all
+lastforte;arcade
+lastforte;fba
+lastforte;mame-advmame
+lastforte;mame-libretro
+lastforte;mame-mame4all
+lastfort;fba
+lastfortg;arcade
+lastfortg;fba
+lastfortg;mame-advmame
+lastfortg;mame-libretro
+lastfortg;mame-mame4all
+lastfortk;arcade
+lastfortk;fba
+lastfortk;mame-advmame
+lastfortk;mame-libretro
+lastfortk;mame-mame4all
+lastfort;mame-advmame
+lastfort;mame-libretro
+lastfort;mame-mame4all
+Last Of The Smileys (Europe) (Unl);amstradcpc
+Lawn Mower (World) (Unl);nes
+Lazer Maze (Avant-Garde Publishing Corporation) (USA);c64
+Lazlos' Leap (USA);gb
+Lemmings 2 - The Tribes (Europe);gb
+Lemmings 2 - The Tribes (Europe) (Proto);gamegear
+Lemmings 2 - The Tribes (USA);snes
+Lemmings 2 - The Tribes (World) (Proto);mastersystem
+lemmings;arcade
+Lemmings (Europe) (Disk 1);amstradcpc
+Lemmings (Europe) (Disk 2);amstradcpc
+Lemmings (Europe);mastersystem
+Lemmings (Japan);pce-cd
+lemmings;mame-advmame
+lemmings;mame-libretro
+lemmings;mame-mame4all
+Lemmings & Oh No! More Lemmings (USA);psx
+Lemmings & Oh No! More Lemmings (USA);psp
+Lemmings (Side A) (Europe);zxspectrum
+Lemmings (Side B) (Europe);zxspectrum
+Lemmings (USA);nes
+Lemmings (USA);gb
+Lemmings (USA);gbc
+Lemmings (USA);snes
+Lemmings (World);gamegear
+Leonardo (Germany);c64
+Le Parc (Germany);c64
+Lettrix v1.0 (Germany);c64
+Lexis (USA, Europe);atarilynx
+L-Game (Europe);zxspectrum
+liblrabl;arcade
+liblrabl;mame-advmame
+liblrabl;mame-libretro
+liblrabl;mame-mame4all
+Lights On (Europe) (Unl);c64
+linkypip;arcade
+linkypip;fba
+linkypip;mame-advmame
+linkypip;mame-libretro
+linkypip;mame-mame4all
+Lion and the King 2 (Europe);psx
+Lion and the King 2 (Europe);psp
+Lipstick #.1 - Lolita Hen (Japan) (Unl);fds
+Lipstick #.2 - Joshi Gakusei Hen (Japan) (Unl);fds
+Lipstick #.3 - OL Hen (Japan) (Unl);fds
+Lipstick #.4 - Hakui no Tenshi Hen (Japan) (Unl);fds
+Lipstick #.5 - Stewardess Hen (Japan) (Unl);fds
+Little Magic (Japan) (Translated En);sfc
+Live Wire! (Europe);psx
+Live Wire! (Europe);psp
+Lock'n Chase (World);gb
+locoboot;arcade
+locoboot;fba
+locoboot;mame-advmame
+locoboot;mame-libretro
+locoboot;mame-mame4all
+Loco (Campbell Systems) (Europe);zxspectrum
+Locomotion (Europe);amstradcpc
+Locomotion (Europe);zxspectrum
+Locomotion (Kingsoft) (Europe);c64
+locomotn;arcade
+locomotn;fba
+locomotn;mame-advmame
+locomotn;mame-libretro
+locomotn;mame-mame4all
+Lode Runner (Japan, Europe);sg-1000
+Lode Runner - Lost Labyrinth (Japan) (Translated En);pce-cd
+Lode Runner Twin - Justy to Liberty no Daibouken (Japan);sfc
+Lode Runner (USA);nes
+Lode Runner (USA);psx
+Lode Runner (USA);psp
+Log!cal (Europe);c64
+Logical (USA);gbc
+Logic (CP Verlag - Magic Disk 64) (Europe);c64
+Logic Levels (USA);c64
+logicpr2;arcade
+logicpr2;fba
+logicpr2;mame-advmame
+logicpr2;mame-libretro
+logicpr2;mame-mame4all
+logicpro;arcade
+logicpro;fba
+logicpro;mame-advmame
+logicpro;mame-libretro
+logicpro;mame-mame4all
+Logic Workout (USA);c64
+Logik 64 (France);c64
+Logo (Germany);c64
+Logo Robot (USA);c64
+Lojix (Europe);zxspectrum
+Look Sharp! (Europe);c64
+Loopz (Europe);amstradcpc
+Loopz (Europe);c64
+Loopz (Europe);zxspectrum
+Loopz (USA);nes
+Loopz (World);gb
+Lost Vikings 2 (USA);snes
+Lost Vikings, The (USA);gba
+Lost Vikings, The (USA);snes
+lotlot;arcade
+lotlot;fba
+Lot Lot (Japan);famicom
+lotlot;mame-advmame
+lotlot;mame-libretro
+lotlot;mame-mame4all
+Lotti (USA) (Unl);c64
+lpadv;arcade
+lpadv;fba
+lpadv;mame-advmame
+lpadv;mame-libretro
+lpadv;mame-mame4all
+Lucle (Japan, Europe);gb
+luplup29;arcade
+luplup29;fba
+luplup29;mame-advmame
+luplup29;mame-libretro
+luplup29;mame-mame4all
+luplup;arcade
+luplup;fba
+luplup;mame-advmame
+luplup;mame-libretro
+luplup;mame-mame4all
+lvgirl94;arcade
+lvgirl94;fba
+lvgirl94;mame-advmame
+lvgirl94;mame-libretro
+lvgirl94;mame-mame4all
+Lynchmob (Europe);zxspectrum
+Mad Blocker Alpha - Revenge of the Fluzzles (USA);pspminis
+Madness (CP Verlag - Game On) (Europe);c64
+Magazine (Europe);c64
+magdrop2;arcade
+magdrop2;fba
+magdrop2;mame-advmame
+magdrop2;mame-libretro
+magdrop2;mame-mame4all
+magdrop2;neogeo
+magdrop3;arcade
+magdrop3;fba
+magdrop3;mame-advmame
+magdrop3;mame-libretro
+magdrop3;mame-mame4all
+magdrop3;neogeo
+magdrop;arcade
+magdrop;mame-advmame
+magdrop;mame-libretro
+magdrop;mame-mame4all
+magdropp;arcade
+magdropp;mame-advmame
+magdropp;mame-libretro
+magdropp;mame-mame4all
+magerror;arcade
+magerror;fba
+magerror;mame-advmame
+magerror;mame-libretro
+magerror;mame-mame4all
+Magical Drop 2 (Japan);sfc
+Magical Drop CPC (Europe) (Unl);amstradcpc
+Magical Drop for WonderSwan (Japan);wonderswan
+Magical Drop III (Europe) (Disc 1);psx
+Magical Drop III (Europe) (Disc 1);psp
+Magical Drop III (Europe) (Disc 2);psx
+Magical Drop III (Europe) (Disc 2);psp
+Magical Drop (Japan) (Translated En);sfc
+Magical Drop Pocket (USA, Europe);ngpc
+Magical Puzzle Popils (World);gamegear
+Magical Tetris Challenge (Europe);psx
+Magical Tetris Challenge (Europe);psp
+Magical Tetris Challenge (USA);n64
+Magical Tetris Challenge (USA);gbc
+Magic Ball (Taiwan) (Unl);gb
+magicbuba;arcade
+magicbuba;fba
+magicbuba;mame-advmame
+magicbuba;mame-libretro
+magicbuba;mame-mame4all
+magicbub;arcade
+magicbubb;arcade
+magicbubb;fba
+magicbubb;mame-advmame
+magicbubb;mame-libretro
+magicbubb;mame-mame4all
+magicbub;fba
+magicbub;mame-advmame
+magicbub;mame-libretro
+magicbub;mame-mame4all
+Magic Fields (Europe);c64
+Magic Maze (Asia) (Unl);gb
+Magic Square (Commodore) (USA);c64
+Magic Square (Falcon Soft) (Czech Republic) (Unl);c64
+Magic Tile (Europe);c64
+Magiers Kugel, Des (Germany);c64
+magix;arcade
+magixb;arcade
+magixb;fba
+magixb;mame-advmame
+magixb;mame-libretro
+magixb;mame-mame4all
+magix;fba
+magix;mame-advmame
+magix;mame-libretro
+magix;mame-mame4all
+Magnetic (Europe);c64
+Mah Gong - Special Edition (USA) (Unl);c64
+Mahjong (Europe);amstradcpc
+Mah Jongg (Germany);c64
+Mahjong (Japan);sg-1000
+Mahjong Solitaire (USA);pspminis
+Mahou Poi Poi Poitto! (Japan) (Translated En);sfc
+mangchi;arcade
+mangchi;fba
+mangchi;mame-advmame
+mangchi;mame-libretro
+mangchi;mame-mame4all
+maniacsp;arcade
+maniacsp;fba
+maniacsp;mame-advmame
+maniacsp;mame-libretro
+maniacsp;mame-mame4all
+maniacsq;arcade
+maniacsq;fba
+maniacsq;mame-advmame
+maniacsq;mame-libretro
+maniacsq;mame-mame4all
+manybloc;arcade
+manybloc;fba
+manybloc;mame-advmame
+manybloc;mame-libretro
+manybloc;mame-mame4all
+Marbians, The (USA);pspminis
+Marble Madness (USA, Europe);gb
+Marble Madness (USA, Europe);gbc
+Marble Madness (USA);nes
+Marble Master (USA);psx
+Marble Master (USA);psp
+Mario no Super Picross (Japan);sfc
+Mario's Picross (USA, Europe);gb
+Mario to Wario (Japan);sfc
+Marvin's Maze (USA);pspminis
+Mastercode (Europe);zxspectrum
+Master Head (Poland) (Unl);c64
+Mastermind (CP Verlag - Game On) (Europe);c64
+Mastermind (CP Verlag - Magic Disk 64) (Europe);c64
+Master Mind (Europe);c64
+Mastermind (Leisure Genius) (Europe);c64
+Mastermind (Sharedata, Inc.) (USA);c64
+Master Rubik's Cube (France) (Unl);amstradcpc
+Master Word (Europe);zxspectrum
+Matchboxes (USA);c64
+Matchbox (Europe);c64
+Matching Pairs (Europe);zxspectrum
+matchit2;arcade
+matchit2;fba
+matchit2;mame-advmame
+matchit2;mame-libretro
+matchit2;mame-mame4all
+matchit;arcade
+matchit;fba
+matchit;mame-advmame
+matchit;mame-libretro
+matchit;mame-mame4all
+Matchmaker Game (USA);c64
+Matchmaker + Logix + Buzzword (USA);videopac2
+Match Wits (USA);c64
+Maus, Die (Europe);gb
+Maus, Die (Europe);gbc
+mausuke;arcade
+mausuke;mame-advmame
+mausuke;mame-libretro
+mausuke;mame-mame4all
+mayaa;arcade
+mayaa;fba
+mayaa;mame-advmame
+mayaa;mame-libretro
+mayaa;mame-mame4all
+maya;arcade
+mayab;arcade
+mayab;fba
+mayab;mame-advmame
+mayab;mame-libretro
+mayab;mame-mame4all
+maya;fba
+maya;mame-advmame
+maya;mame-libretro
+maya;mame-mame4all
+MazezaM Challenge (World) (Unl);snes
+MegaBrain (Europe) (Unl);c64
+Megalit (USA, Europe);gb
+Meltdown (USA) (Proto);atari2600
+Memologie (Europe);c64
+Memomania (Europe);c64
+Memorix (Europe) (Unl);c64
+Memorix II (Europe) (Unl);c64
+Memory Building Blocks (USA);c64
+Memory Castle (USA);c64
+Memory Manor (USA);c64
+Memotest (Europe) (Unl);c64
+Mental Blocks (USA);c64
+Mental Kombat (USA) (Unl);atari2600
+Mermaids of Atlantis - The Riddle of the Magic Bubble (USA) (Unl);nes
+Metara (Europe);pspminis
+Micro Mouse (Europe);amstradcpc
+Micro Sapiens (France);amstradcpc
+Microsoft - The 6 in 1 Puzzle Collection Entertainment Pack (USA);gbc
+Microsoft - The Best of Entertainment Pack (USA);gbc
+miexchng;arcade
+miexchng;fba
+miexchng;mame-advmame
+miexchng;mame-libretro
+miexchng;mame-mame4all
+miexchng;neogeo
+Mighty Beanz Pocket Puzzles (USA);gba
+Mindbreaker (Europe);c64
+Mind Maze (Europe) (Unl);c64
+Mind Maze (USA) (Proto);atari2600
+Mind Trap (Europe);amstradcpc
+Mindtrap (Europe);c64
+Mindtrap (Europe);zxspectrum
+Minefield (Europe) (Unl);c64
+Minefields (Europe);c64
+Mine Sweeper 9000 (Poland) (Unl);c64
+Minesweeper (Europe);c64
+Mine Sweeper (Europe) (Unl);c64
+Mine Sweeper (Japan);pce-cd
+Minesweeper - Soukaitei (Japan);gb
+Minesweep (Europe) (Unl);c64
+Mine Sweep (USA) (Unl);c64
+Mingle Magnet (Japan);wonderswan
+Minna no Taabou no Nakayoshi Daisakusen (Japan) (Translated En);famicom
+Missing Links (USA);c64
+Miss Mind Ania (Europe);c64
+missmw96;arcade
+missmw96;fba
+missmw96;mame-advmame
+missmw96;mame-libretro
+missmw96;mame-mame4all
+missw96a;arcade
+missw96a;fba
+missw96a;mame-advmame
+missw96a;mame-libretro
+missw96a;mame-mame4all
+missw96;arcade
+missw96b;arcade
+missw96b;fba
+missw96b;mame-advmame
+missw96b;mame-libretro
+missw96b;mame-mame4all
+missw96;fba
+missw96;mame-advmame
+missw96;mame-libretro
+missw96;mame-mame4all
+mmonkey;arcade
+mmonkey;fba
+mmonkey;mame-advmame
+mmonkey;mame-libretro
+mmonkey;mame-mame4all
+M&M's - Blast! (USA);gba
+Moai-Kun (Japan) (Translated En);famicom
+Molecularr 2 (Europe) (Unl);amstradcpc
+Molecularr (Europe) (Unl);amstradcpc
+Mole Mania (USA, Europe);gb
+Money Idol Exchanger (Japan);gb
+Monkey Business (USA);c64
+Monster Buster (USA) (Unl);c64
+Monster Puzzle (Europe);nds
+Moors Challenge, The (Europe);amstradcpc
+Morph (Europe) (Unl);c64
+mosaica;arcade
+mosaica;fba
+mosaica;mame-advmame
+mosaica;mame-libretro
+mosaica;mame-mame4all
+mosaic;arcade
+mosaicf2;arcade
+mosaicf2;fba
+mosaicf2;mame-advmame
+mosaicf2;mame-libretro
+mosaicf2;mame-mame4all
+mosaic;fba
+mosaic;mame-advmame
+mosaic;mame-libretro
+mosaic;mame-mame4all
+Motley Tetris (Germany);c64
+motos;arcade
+Motos (Europe);zxspectrum
+motos;mame-advmame
+motos;mame-libretro
+motos;mame-mame4all
+Motteke Tamago (Japan) (Translated);pce-cd
+mouja;arcade
+mouja;fba
+mouja;mame-advmame
+mouja;mame-libretro
+mouja;mame-mame4all
+Move It (Germany);c64
+Move On! (Europe);c64
+Move Out (Europe);c64
+Move - The Ultimate Challenge (Europe);c64
+mp_col3;arcade
+mp_col3;fba
+mp_col3;mame-advmame
+mp_col3;mame-libretro
+mp_col3;mame-mame4all
+mrdig;arcade
+mrdig;fba
+mrdig;mame-advmame
+mrdig;mame-libretro
+mrdig;mame-mame4all
+Mr. Driller 2 (USA);gba
+Mr. Driller (Japan);wonderswancolor
+Mr. Driller (USA);psx
+Mr. Driller (USA);psp
+mrdrillr;arcade
+mrdrillrj;arcade
+mrdrillrj;mame-advmame
+mrdrillrj;mame-libretro
+mrdrillrj;mame-mame4all
+mrdrillr;mame-advmame
+mrdrillr;mame-libretro
+mrdrillr;mame-mame4all
+mrjong;arcade
+mrjong;fba
+mrjong;mame-advmame
+mrjong;mame-libretro
+mrjong;mame-mame4all
+Mr. T Meets His Match (Europe);c64
+msbingo;arcade
+msbingo;fba
+msbingo;mame-advmame
+msbingo;mame-libretro
+msbingo;mame-mame4all
+msgogo;arcade
+msgogo;fba
+msgogo;mame-advmame
+msgogo;mame-libretro
+msgogo;mame-mame4all
+mslider;arcade
+mslider;fba
+mslider;mame-advmame
+mslider;mame-libretro
+mslider;mame-mame4all
+Ms. Pac-Man - Maze Madness (USA);gba
+mspuzzle;arcade
+mspuzzle;fba
+mspuzzleg;arcade
+mspuzzleg;fba
+mspuzzleg;mame-advmame
+mspuzzleg;mame-libretro
+mspuzzleg;mame-mame4all
+mspuzzle;mame-advmame
+mspuzzle;mame-libretro
+mspuzzle;mame-mame4all
+mt_cols;arcade
+mt_cols;fba
+mt_cols;mame-advmame
+mt_cols;mame-libretro
+mt_cols;mame-mame4all
+mt_tetri;arcade
+mt_tetri;fba
+mt_tetri;mame-advmame
+mt_tetri;mame-libretro
+mt_tetri;mame-mame4all
+MultiDude (World) (Unl);nes
+Musapey's Choco Marker (Japan);dreamcast
+mushitama;arcade
+mushitama;fba
+mushitama;mame-advmame
+mushitama;mame-libretro
+mushitama;mame-mame4all
+mushitam;arcade
+mushitam;fba
+mushitam;mame-advmame
+mushitam;mame-libretro
+mushitam;mame-mame4all
+Music Match (Europe) (Unl);c64
+Muzzy Zoophyte (Germany);c64
+Mystery Circle (Japan);sfc
+Mystery (Magna Media - 64'er) (Europe) (Unl);c64
+Mystery Of The Crystal Portal, The  (USA);pspminis
+My Word - The Ultimate Family Word Game (Europe) (Tape 1) (Single Player);c64
+My Word - The Ultimate Family Word Game (Europe) (Tape 2) (Multi Player);c64
+Namida no Soukoban Special (Japan) (Translated En);fds
+Nanako In Classic Japanese Monster Castle (Europe) (Unl);amstradcpc
+naname;arcade
+naname;fba
+naname;mame-advmame
+naname;mame-libretro
+naname;mame-mame4all
+Nangoku Shounen Papuwa-kun - Ganmadan no Yabou (Japan);gb
+Neopets Puzzle Adventure (USA) [b];nds
+Net Nut (Europe);c64
+Neuronics (Germany);c64
+newfanta;arcade
+newfanta;fba
+newfanta;mame-advmame
+newfanta;mame-libretro
+newfanta;mame-mame4all
+newfant;arcade
+newfant;fba
+newfant;mame-advmame
+newfant;mame-libretro
+newfant;mame-mame4all
+newsa;arcade
+newsa;fba
+newsa;mame-advmame
+newsa;mame-libretro
+newsa;mame-mame4all
+news;arcade
+news;fba
+news;mame-advmame
+news;mame-libretro
+news;mame-mame4all
+New Tetris, The (USA);n64
+Next Tetris - On-line Edition, The (USA);dreamcast
+Next Tetris, The (USA);psx
+Next Tetris, The (USA);psp
+nhidctch;arcade
+nhidctch;fba
+nhidctch;mame-advmame
+nhidctch;mame-libretro
+nhidctch;mame-mame4all
+Nightmare Park (Europe);amstradcpc
+Nim (Europe);c64
+Nintama Rantarou GB - Eawase Challenge Puzzle (Japan);gb
+niyanpai;arcade
+niyanpai;fba
+niyanpai;mame-advmame
+niyanpai;mame-libretro
+niyanpai;mame-mame4all
+noahsark;arcade
+noahsark;fba
+noahsark;mame-advmame
+noahsark;mame-libretro
+noahsark;mame-mame4all
+Nocturnal (Europe);pspminis
+Nocturno (Poland) (Unl);c64
+No Deeper Meaning (Europe);c64
+Nontan to Issho - Kurukuru Puzzle (Japan);gb
+Nontan to Issho - Kurukuru Puzzle (Japan);sfc
+No One Can Stop Mr. Domino (USA);psx
+No One Can Stop Mr. Domino (USA);psp
+Nova (Europe);c64
+Nova II (Europe);c64
+Nowotnik Puzzle, The (Europe);zxspectrum
+nratechu;arcade
+nratechu;fba
+nratechu;mame-advmame
+nratechu;mame-libretro
+nratechu;mame-mame4all
+Numba (Europe);pspminis
+Number Puzzler (USA);c64
+Nuts in the World of Fantasy (Europe) (Unl);c64
+Nuts & Milk (Japan);famicom
+nyanpani;arcade
+nyanpani;fba
+nyanpani;mame-advmame
+nyanpani;mame-libretro
+nyanpani;mame-mame4all
+Ochan no Oekaki Logic (Japan);sfc
+Octoplex (Europe);amstradcpc
+Oekaki Logic 2 (Japan);sfc
+Oekaki Logic (Japan);sfc
+Off Your Rocker (USA) (Proto);atari2600
+ohmygod;arcade
+ohmygod;fba
+ohmygod;mame-advmame
+ohmygod;mame-libretro
+ohmygod;mame-mame4all
+ohpaipee;arcade
+ohpaipee;fba
+ohpaipee;mame-advmame
+ohpaipee;mame-libretro
+ohpaipee;mame-mame4all
+Oil Mania (Europe) (Unl);amstradcpc
+oisipuzl;arcade
+oisipuzl;fba
+oisipuzl;mame-advmame
+oisipuzl;mame-libretro
+oisipuzl;mame-mame4all
+OK! - First for Celebrity News - Puzzle Stars (Europe);nds
+Okie Dokie (USA) (Unl);atari2600
+Olivia no Mystery (Japan);sfc
+On a Move (Germany);c64
+onetwo;arcade
+onetwoe;arcade
+onetwoe;fba
+onetwoe;mame-advmame
+onetwoe;mame-libretro
+onetwoe;mame-mame4all
+onetwo;fba
+onetwo;mame-advmame
+onetwo;mame-libretro
+onetwo;mame-mame4all
+Oops (Europe);zxspectrum
+Open Sesame (Europe);c64
+Oracle (Europe);c64
+Oracle II (Europe);c64
+Oracle III (Europe) (Unl);c64
+Orb (Europe);c64
+Orbit (Europe) (Disk 1 Side A);c64
+Orbit (Europe) (Disk 1 Side B) (Levels);c64
+Orbit (Europe) (Disk 2) (More Levels);c64
+Orbits (Europe);c64
+Orbit (USA);pspminis
+orbs;arcade
+orbs;fba
+orbs;mame-advmame
+orbs;mame-libretro
+orbs;mame-mame4all
+Orion (Europe);c64
+Oru 1 (Japan);fds
+otenki;arcade
+otenki;fba
+otenki;mame-advmame
+otenki;mame-libretro
+otenki;mame-mame4all
+Othello (Japan);sg-1000
+Ou-chan no Oekaki Logic (Japan);wonderswan
+Overkoban (Europe) (Unl);amstradcpc
+Oxxonian (Europe);c64
+Pac-Attack (USA, Europe);gamegear
+Pac-Attack (USA);gb
+Pac-Attack (USA);snes
+Pachinko II (Japan);sg-1000
+Pachinko (Japan);sg-1000
+Pachio-kun - Puzzle Castle (Japan);gb
+pairlove;arcade
+pairlove;fba
+pairlove;mame-advmame
+pairlove;mame-libretro
+pairlove;mame-mame4all
+Pair of Memory (Europe);c64
+pairsa;arcade
+pairsa;fba
+pairsa;mame-advmame
+pairsa;mame-libretro
+pairsa;mame-mame4all
+pairs;arcade
+pairs;fba
+pairs;mame-advmame
+pairs;mame-libretro
+pairs;mame-mame4all
+pairsnb;arcade
+pairsnb;fba
+pairsnb;mame-advmame
+pairsnb;mame-libretro
+pairsnb;mame-mame4all
+pairsred;arcade
+pairsred;fba
+pairsred;mame-advmame
+pairsred;mame-libretro
+pairsred;mame-mame4all
+pairsten;arcade
+pairsten;fba
+pairsten;mame-advmame
+pairsten;mame-libretro
+pairsten;mame-mame4all
+palamed;arcade
+Palamedes (Europe);gb
+Palamedes II - Star Twinkles (Japan) (Translated En);famicom
+Palamedes (USA);nes
+palamed;fba
+palamed;mame-advmame
+palamed;mame-libretro
+palamed;mame-mame4all
+Panel de Pon (Japan) (Translated En);sfc
+Panel no Ninja Kesamaru (Japan);gb
+panicbom;arcade
+Panic Bomber (USA);virtualboy
+panicbom;fba
+panicbom;mame-advmame
+panicbom;mame-libretro
+panicbom;mame-mame4all
+panicbom;neogeo
+Panic Dizzy (Europe);zxspectrum
+Panic Space (Japan);fds
+panicstr;arcade
+panicstr;fba
+panicstr;mame-advmame
+panicstr;mame-libretro
+panicstr;mame-mame4all
+Panic! (USA);segacd
+para2dx;arcade
+para2dx;fba
+para2dx;mame-advmame
+para2dx;mame-libretro
+para2dx;mame-mame4all
+Parabola (Europe);amstradcpc
+paradise;arcade
+paradise;fba
+paradise;mame-advmame
+paradise;mame-libretro
+paradise;mame-mame4all
+paradlx;arcade
+paradlx;fba
+paradlx;mame-advmame
+paradlx;mame-libretro
+paradlx;mame-mame4all
+Paragram (Europe);zxspectrum
+Parallel World (Japan) (Translated En);famicom
+Paranoimia (Europe);c64
+Paranom - Elite Squad II (Europe);c64
+Parejas (Spain);zxspectrum
+Pasteman Pat - Billboard (Europe);zxspectrum
+Pasteman Pat (Europe);amstradcpc
+Pathal (Europe);c64
+Pathwords (USA);c64
+Patternia (Europe);c64
+pbancho;arcade
+pbancho;fba
+pbancho;mame-advmame
+pbancho;mame-libretro
+pbancho;mame-mame4all
+pbobbl2n;arcade
+pbobbl2n;fba
+pbobbl2n;mame-advmame
+pbobbl2n;mame-libretro
+pbobbl2n;mame-mame4all
+pbobbl2n;neogeo
+pbobble2;arcade
+pbobble2;fba
+pbobble2j;arcade
+pbobble2j;fba
+pbobble2j;mame-advmame
+pbobble2j;mame-libretro
+pbobble2j;mame-mame4all
+pbobble2;mame-advmame
+pbobble2;mame-libretro
+pbobble2;mame-mame4all
+pbobble2o;arcade
+pbobble2o;fba
+pbobble2o;mame-advmame
+pbobble2o;mame-libretro
+pbobble2o;mame-mame4all
+pbobble2u;arcade
+pbobble2u;fba
+pbobble2u;mame-advmame
+pbobble2u;mame-libretro
+pbobble2u;mame-mame4all
+pbobble2x;arcade
+pbobble2x;fba
+pbobble2x;mame-advmame
+pbobble2x;mame-libretro
+pbobble2x;mame-mame4all
+pbobble3;arcade
+pbobble3;fba
+pbobble3j;arcade
+pbobble3j;fba
+pbobble3j;mame-advmame
+pbobble3j;mame-libretro
+pbobble3j;mame-mame4all
+pbobble3;mame-advmame
+pbobble3;mame-libretro
+pbobble3;mame-mame4all
+pbobble3u;arcade
+pbobble3u;fba
+pbobble3u;mame-advmame
+pbobble3u;mame-libretro
+pbobble3u;mame-mame4all
+pbobble4;arcade
+pbobble4;fba
+pbobble4j;arcade
+pbobble4j;fba
+pbobble4j;mame-advmame
+pbobble4j;mame-libretro
+pbobble4j;mame-mame4all
+pbobble4;mame-advmame
+pbobble4;mame-libretro
+pbobble4;mame-mame4all
+pbobble4u;arcade
+pbobble4u;fba
+pbobble4u;mame-advmame
+pbobble4u;mame-libretro
+pbobble4u;mame-mame4all
+pbobble;arcade
+pbobble;fba
+pbobble;mame-advmame
+pbobble;mame-libretro
+pbobble;mame-mame4all
+pbobblen;arcade
+pbobblenb;arcade
+pbobblenb;fba
+pbobblenb;mame-advmame
+pbobblenb;mame-libretro
+pbobblenb;mame-mame4all
+pbobblen;fba
+pbobblen;mame-advmame
+pbobblen;mame-libretro
+pbobblen;mame-mame4all
+pbobblen;neogeo
+pc_drmro;arcade
+pc_drmro;fba
+pc_drmro;mame-advmame
+pc_drmro;mame-libretro
+pc_drmro;mame-mame4all
+pclubysa;arcade
+pclubysa;fba
+pclubysa;mame-advmame
+pclubysa;mame-libretro
+pclubysa;mame-mame4all
+pclubys;arcade
+pclubys;fba
+pclubys;mame-advmame
+pclubys;mame-libretro
+pclubys;mame-mame4all
+pc_virus;arcade
+pc_virus;fba
+pc_virus;mame-advmame
+pc_virus;mame-libretro
+pc_virus;mame-mame4all
+Peanuts Picture Puzzlers (Europe);c64
+Peepar Time (Japan);famicom
+Peep Show (Europe);zxspectrum
+Peetan (Japan);gb
+penfana;arcade
+penfana;fba
+penfana;mame-advmame
+penfana;mame-libretro
+penfana;mame-mame4all
+penfan;arcade
+penfan;fba
+penfan;mame-advmame
+penfan;mame-libretro
+penfan;mame-mame4all
+Penguin Land (Japan);gb
+Penguin Land (USA, Europe);mastersystem
+Penguin & Seal, The (Asia, Australia) (Unl);nes
+perestro;arcade
+perestrof;arcade
+perestrof;fba
+perestro;fba
+perestrof;mame-advmame
+perestrof;mame-libretro
+perestrof;mame-mame4all
+perestro;mame-advmame
+perestro;mame-libretro
+perestro;mame-mame4all
+Perplex (Europe);c64
+Pertharion (Europe);c64
+Pescatore (Japan) (Proto) (Translated En);famicom
+Pet Alien - An Intergalactic Puzzlepalooza (USA) (En,Fr,Es);nds
+Pferdefreunde Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It) [b];nds
+Phaedra (Sweden) (Unl);c64
+Phase Out (Germany) (Unl);c64
+Phase Out (USA) (Unl);c64
+Philippic (Europe);c64
+photoy2k102;arcade
+photoy2k102;fba
+photoy2k102;mame-advmame
+photoy2k102;mame-libretro
+photoy2k102;mame-mame4all
+photoy2k104;arcade
+photoy2k104;fba
+photoy2k104;mame-advmame
+photoy2k104;mame-libretro
+photoy2k104;mame-mame4all
+photoy2k;arcade
+photoy2k;fba
+photoy2k;mame-advmame
+photoy2k;mame-libretro
+photoy2k;mame-mame4all
+phozon;arcade
+phozon;mame-advmame
+phozon;mame-libretro
+phozon;mame-mame4all
+phozons;arcade
+phozons;mame-advmame
+phozons;mame-libretro
+phozons;mame-mame4all
+phtetris;arcade
+phtetris;fba
+phtetris;mame-advmame
+phtetris;mame-libretro
+phtetris;mame-mame4all
+pickin;arcade
+pickin;fba
+pickin;mame-advmame
+pickin;mame-libretro
+pickin;mame-mame4all
+Pick 'n' Pile (Europe);amstradcpc
+Pick 'n' Pile (Europe);atari2600
+Pick 'n' Pile (Europe);zxspectrum
+Pick'n'Pile (France);c64
+Pick Out 2 (Slovakia);zxspectrum
+Picross 2 (Japan) (Translated En);gb
+Picross NP Vol. 1 (Japan);sfc
+Picross NP Vol. 2 (Japan);sfc
+Picross NP Vol. 3 (Japan);sfc
+Picross NP Vol. 4 (Japan);sfc
+Picross NP Vol. 5 (Japan);sfc
+Picross NP Vol. 6 (Japan);sfc
+Picross NP Vol. 7 (Japan);sfc
+Picross NP Vol. 8 (Japan);sfc
+Picture Puzzle Collection (Europe) (En,Fr,De,Es,It,Nl);nds
+Picture Puzzle (Japan) (Alt 1);msx
+Picture Puzzle (Japan);msx
+Picture Puzzle (USA, Europe);ngpc
+Pieces (Europe) (Unl);c64
+Pieces (USA);snes
+Pignools, Les (France) (Unl);amstradcpc
+Pikiinya! (Japan);sfc
+Pile Up (Magna Media) (Europe) (Unl);c64
+Pill-Box (Europe) (Unl);c64
+Pipe Dream (Japan);sfc
+Pipe Dreams 3D (USA);psx
+Pipe Dreams 3D (USA);psp
+Pipe Dream (USA);c64
+Pipe Dream (USA);nes
+Pipe Dream (USA);gb
+pipedrm;arcade
+pipedrm;fba
+pipedrmj;arcade
+pipedrmj;fba
+pipedrmj;mame-advmame
+pipedrmj;mame-libretro
+pipedrmj;mame-mame4all
+pipedrm;mame-advmame
+pipedrm;mame-libretro
+pipedrm;mame-mame4all
+pipedrmt;arcade
+pipedrmt;fba
+pipedrmt;mame-advmame
+pipedrmt;mame-libretro
+pipedrmt;mame-mame4all
+pipedrmu;arcade
+pipedrmu;fba
+pipedrmu;mame-advmame
+pipedrmu;mame-libretro
+pipedrmu;mame-mame4all
+Pipe (Europe);c64
+pipeline;arcade
+pipeline;fba
+pipeline;mame-advmame
+pipeline;mame-libretro
+pipeline;mame-mame4all
+Pipe Madness (USA);pspminis
+Pipe Mania (Europe);amstradcpc
+Pipes (USA);c64
+Pi.R Squared (Europe);c64
+Piyotama (Europe);pspminis
+Pizza (USA);c64
+Planet Puzzle League (USA);nds
+Planet Ring (Europe);dreamcast
+plottinga;arcade
+plottinga;fba
+plottinga;mame-advmame
+plottinga;mame-libretro
+plottinga;mame-mame4all
+plotting;arcade
+plottingb;arcade
+plottingb;fba
+plottingb;mame-advmame
+plottingb;mame-libretro
+plottingb;mame-mame4all
+Plotting (CPC+) (Europe);amstradcpc
+Plotting (Europe);c64
+Plotting (Europe);zxspectrum
+plotting;fba
+plotting;mame-advmame
+plotting;mame-libretro
+plotting;mame-mame4all
+plottingu;arcade
+plottingu;fba
+plottingu;mame-advmame
+plottingu;mame-libretro
+plottingu;mame-mame4all
+Plus Plum (Japan);dreamcast
+Plutonium (Europe);c64
+pnickj;arcade
+pnickj;mame-advmame
+pnickj;mame-libretro
+pnickj;mame-mame4all
+pnyaa;arcade
+pnyaa;mame-advmame
+pnyaa;mame-libretro
+pnyaa;mame-mame4all
+pnyaa;neogeo
+Pocket Bomberman (USA, Europe);gbc
+Pocket Puyo Puyo Tsuu (Japan);gb
+poitto;arcade
+poitto;fba
+poitto;mame-advmame
+poitto;mame-libretro
+poitto;mame-mame4all
+Pokemon Puzzle Challenge (USA);gbc
+Pokemon Puzzle League (USA);n64
+Polarium Advance (USA);gba
+Pond, The (USA);c64
+popbingo;arcade
+popbingo;fba
+popbingo;mame-advmame
+popbingo;mame-libretro
+popbingo;mame-mame4all
+popbounc;neogeo
+popnpop;arcade
+Pop n' Pop (Europe);psx
+Pop n' Pop (Europe);psp
+popnpop;fba
+popnpopj;arcade
+popnpopj;fba
+popnpopj;mame-advmame
+popnpopj;mame-libretro
+popnpopj;mame-mame4all
+popnpop;mame-advmame
+popnpop;mame-libretro
+popnpop;mame-mame4all
+popnpopu;arcade
+popnpopu;fba
+popnpopu;mame-advmame
+popnpopu;mame-libretro
+popnpopu;mame-mame4all
+popobear;arcade
+popobear;fba
+popobear;mame-advmame
+popobear;mame-libretro
+popobear;mame-mame4all
+potopoto;arcade
+potopoto;fba
+potopoto;mame-advmame
+potopoto;mame-libretro
+potopoto;mame-mame4all
+Pot Panic (Europe);c64
+Potty Painter (Europe);zxspectrum
+Power Lode Runner (Japan);sfc
+Power Soukoban (Japan);sfc
+Power, The (USA);c64
+Powertris (Europe) (Unl);c64
+Pride (Europe);c64
+primella;arcade
+primella;fba
+primella;mame-advmame
+primella;mame-libretro
+primella;mame-mame4all
+Prince Yeh Rude (Taiwan) (Unl);gb
+Prinzessin Lillifee Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It) [b];nds
+Pri Pri - Primitive Princess! (Japan);gb
+Professor IQ (USA);c64
+Pro Yakyuu Nettou Puzzle Stadium (Japan);sfc
+Puchi Carat (Europe);gbc
+Puchi Carat (Europe);psx
+Puchi Carat (Europe);psp
+pururun;arcade
+pururun;fba
+pururun;mame-advmame
+pururun;mame-libretro
+pururun;mame-mame4all
+Push'em (Germany);c64
+Push-It (Europe);c64
+pushmana;arcade
+pushmana;fba
+pushmana;mame-advmame
+pushmana;mame-libretro
+pushmana;mame-mame4all
+pushman;arcade
+pushman;fba
+pushman;mame-advmame
+pushman;mame-libretro
+pushman;mame-mame4all
+pushmans;arcade
+pushmans;fba
+pushmans;mame-advmame
+pushmans;mame-libretro
+pushmans;mame-mame4all
+pushmant;arcade
+pushmant;fba
+pushmant;mame-advmame
+pushmant;mame-libretro
+pushmant;mame-mame4all
+Push (Markt Technik - 64'er) (Germany);c64
+Pussy - Love Story From Titanic (Europe);zxspectrum
+Puxxle (Germany) (Unl);c64
+puyo;arcade
+puyobl;arcade
+puyobl;fba
+puyobl;mame-advmame
+puyobl;mame-libretro
+puyobl;mame-mame4all
+puyoja;arcade
+puyoja;mame-advmame
+puyoja;mame-libretro
+puyoja;mame-mame4all
+puyoj;arcade
+puyoj;mame-advmame
+puyoj;mame-libretro
+puyoj;mame-mame4all
+puyo;mame-advmame
+puyo;mame-libretro
+puyo;mame-mame4all
+Puyo Pop Fever (Europe) (En,Fr,De,Es,It);gba
+Puyo Pop (USA) (En,Ja);gba
+Puyo Pop (World) (En,Ja) (v1.06);ngpc
+puyopuy2;arcade
+puyopuy2;mame-advmame
+puyopuy2;mame-libretro
+puyopuy2;mame-mame4all
+Puyo Puyo 2 (Japan);gamegear
+Puyo Puyo 4 (Japan);dreamcast
+Puyo Puyo CD (Japan);pce-cd
+Puyo Puyo CD Tsuu (Japan);pce-cd
+Puyo Puyo Fever (Japan);dreamcast
+Puyo Puyo (Japan);fds
+Puyo Puyo (Japan);gb
+Puyo Puyo (Japan);gamegear
+Puyo Puyo (Japan) (Translated En);famicom
+Puyo Puyo Tsuu (Japan);wonderswan
+puyosun;arcade
+puyosun;fba
+puyosun;mame-advmame
+puyosun;mame-libretro
+puyosun;mame-mame4all
+puzlbanga;arcade
+puzlbanga;fba
+puzlbanga;mame-advmame
+puzlbanga;mame-libretro
+puzlbanga;mame-mame4all
+puzlbang;arcade
+puzlbang;fba
+puzlbang;mame-advmame
+puzlbang;mame-libretro
+puzlbang;mame-mame4all
+puzlclub;arcade
+puzlclub;fba
+puzlclub;mame-advmame
+puzlclub;mame-libretro
+puzlclub;mame-mame4all
+puzldama;arcade
+puzldama;fba
+puzldama;mame-advmame
+puzldama;mame-libretro
+puzldama;mame-mame4all
+puzlstar;fba
+Puzslot (Japan);famicom
+Puzzlacki (Europe);c64
+puzzlboy;fba
+puzzldpr;arcade
+puzzldpr;fba
+puzzldpr;mame-advmame
+puzzldpr;mame-libretro
+puzzldpr;mame-mame4all
+puzzldpr;neogeo
+Puzzle Bobble (Japan);wonderswan
+Puzzle Bobble Mini (Japan, Europe) (v1.10);ngpc
+Puzzle Boy (Japan) (Translated En);pce-cd
+Puzzle Boys (Japan) (Translated En);fds
+Puzzle Chronicles (USA) (En,Fr,Es);nds
+Puzzle City (USA) [b];nds
+Puzzle de Harvest Moon (USA);nds
+Puzzled! (Europe);zxspectrum
+puzzledp;arcade
+puzzledp;fba
+puzzledp;mame-advmame
+puzzledp;mame-libretro
+puzzledp;mame-mame4all
+puzzledp;neogeo
+Puzzled (USA);gbc
+Puzzle Expedition (USA);nds
+Puzzle Gates of the Incas (USA);c64
+puzzlekg;arcade
+puzzlekg;fba
+puzzlekg;mame-advmame
+puzzlekg;mame-libretro
+puzzlekg;mame-mame4all
+Puzzle Kingdoms (USA) (En,Fr,De,Es,It);nds
+Puzzle Link 2 (USA, Europe);ngpc
+Puzzle Link (Europe);ngpc
+Puzzle Mania (Europe);c64
+Puzzlemaster (Germany);c64
+Puzzle Master (USA);gbc
+Puzzle'n Desu! (Japan);sfc
+Puzzle Nintama Rantarou - Ninjutsu Gakuen Puzzle Taikai no Dan (Japan);sfc
+Puzzlenoid (Germany);c64
+Puzzle Panic (Japan);msx
+Puzzle Panic (USA);c64
+Puzzle Piece Panic! (USA) (Proto);videopac2
+Puzzle Quest 2 (USA) (En,Fr,Es);nds
+Puzzle Quest - Challenge of the Warlords (USA);nds
+Puzzle Quest - Galactrix (USA) (En,Fr,De,Es,It);nds
+Puzzler Collection (USA);nds
+Puzzler World 2012 (Europe);nds
+Puzzler World 2013 (Europe) (En,Fr,De,Es,It);nds
+Puzzler World 2 (USA);nds
+Puzzler World (Europe);nds
+Puzzles and Posters (USA);c64
+Puzzle Scape (Europe);pspminis
+Puzzle Shuffle (Europe);c64
+Puzzle (Spain);amstradcpc
+Puzzle Star Sweep (USA);psx
+Puzzle Star Sweep (USA);psp
+Puzzle Time (USA);nds
+Puzzle (USA) (Unl);nes
+puzzli2;arcade
+puzzli2;fba
+puzzli2;mame-advmame
+puzzli2;mame-libretro
+puzzli2;mame-mame4all
+puzzli2s;arcade
+puzzli2s;fba
+puzzli2s;mame-advmame
+puzzli2s;mame-libretro
+puzzli2s;mame-mame4all
+puzzli;arcade
+puzzli;fba
+puzzli;mame-advmame
+puzzli;mame-libretro
+puzzli;mame-mame4all
+puzzloopa;arcade
+puzzloopa;fba
+puzzloopa;mame-advmame
+puzzloopa;mame-libretro
+puzzloopa;mame-mame4all
+puzzloop;arcade
+puzzloope;arcade
+puzzloope;fba
+puzzloope;mame-advmame
+puzzloope;mame-libretro
+puzzloope;mame-mame4all
+puzzloop;fba
+puzzloopj;arcade
+puzzloopj;fba
+puzzloopj;mame-advmame
+puzzloopj;mame-libretro
+puzzloopj;mame-mame4all
+puzzloopk;arcade
+puzzloopk;fba
+puzzloopk;mame-advmame
+puzzloopk;mame-libretro
+puzzloopk;mame-mame4all
+puzzloop;mame-advmame
+puzzloop;mame-libretro
+puzzloop;mame-mame4all
+puzzloopu;arcade
+puzzloopu;fba
+puzzloopu;mame-advmame
+puzzloopu;mame-libretro
+puzzloopu;mame-mame4all
+puzznic;arcade
+puzznicb;arcade
+puzznicb;fba
+puzznicb;mame-advmame
+puzznicb;mame-libretro
+puzznicb;mame-mame4all
+Puzznic (Europe);amstradcpc
+Puzznic (Europe);c64
+Puzznic (Europe);zxspectrum
+puzznic;fba
+puzznici;arcade
+puzznici;fba
+puzznici;mame-advmame
+puzznici;mame-libretro
+puzznici;mame-mame4all
+Puzznic (Japan);gb
+puzznicj;arcade
+puzznicj;fba
+puzznicj;mame-advmame
+puzznicj;mame-libretro
+puzznicj;mame-mame4all
+puzznic;mame-advmame
+puzznic;mame-libretro
+puzznic;mame-mame4all
+Puzznic (USA);nes
+Puzznic (USA);psx
+Puzznic (USA);psp
+Pyramid Puzzler (Europe);c64
+Pyramids of Ra (USA);gb
+Pyramid (USA) (Unl);nes
+pzlbowl;arcade
+pzlbowl;fba
+pzlbowl;mame-advmame
+pzlbowl;mame-libretro
+pzlbowl;mame-mame4all
+pzlbreak;arcade
+pzlbreak;fba
+pzlbreak;mame-advmame
+pzlbreak;mame-libretro
+pzlbreak;mame-mame4all
+pzlestar;arcade
+pzlestar;fba
+pzlestar;mame-advmame
+pzlestar;mame-libretro
+pzlestar;mame-mame4all
+pzletime;arcade
+pzletime;fba
+pzletime;mame-advmame
+pzletime;mame-libretro
+pzletime;mame-mame4all
+pzloop2;arcade
+pzloop2j;arcade
+pzloop2j;mame-advmame
+pzloop2j;mame-libretro
+pzloop2j;mame-mame4all
+pzloop2jr1;arcade
+pzloop2jr1;mame-advmame
+pzloop2jr1;mame-libretro
+pzloop2jr1;mame-mame4all
+pzloop2;mame-advmame
+pzloop2;mame-libretro
+pzloop2;mame-mame4all
+Q Billion (USA);gb
+Qb (USA) (Unl);atari2600
+qix2;arcade
+qix2;fba
+qix2;mame-advmame
+qix2;mame-libretro
+qix2;mame-mame4all
+qixa;arcade
+qixa;fba
+qixa;mame-advmame
+qixa;mame-libretro
+qixa;mame-mame4all
+qix;arcade
+qixb;arcade
+qixb;fba
+qixb;mame-advmame
+qixb;mame-libretro
+qixb;mame-mame4all
+qix;fba
+qix;mame-advmame
+qix;mame-libretro
+qix;mame-mame4all
+Qix Neo (USA);psx
+Qix Neo (USA);psp
+qixo;arcade
+qixo;fba
+qixo;mame-advmame
+qixo;mame-libretro
+qixo;mame-mame4all
+Qix (USA);atari5200
+Qix (USA);c64
+Qix (USA, Europe);atarilynx
+Quadrato (Europe);c64
+Quadrax (Slovakia);zxspectrum
+Quadrel (France);amstradcpc
+Quadromania (Europe);c64
+Quadz (World) (Unl);nes
+quantum1;arcade
+quantum1;fba
+quantum1;mame-advmame
+quantum1;mame-libretro
+quantum1;mame-mame4all
+quantum;arcade
+Quantum (Europe) (Unl);c64
+quantum;fba
+quantum;mame-advmame
+quantum;mame-libretro
+quantum;mame-mame4all
+quantump;arcade
+quantump;fba
+quantump;mame-advmame
+quantump;mame-libretro
+quantump;mame-mame4all
+quarth;arcade
+quarth;fba
+Quarth (Japan) (Demo);msx2
+Quarth (Japan);msx2
+Quarth (Japan);famicom
+Quarth (Korea);msx2
+quarth;mame-advmame
+quarth;mame-libretro
+quarth;mame-mame4all
+Quarth (USA, Europe);gb
+Quarx (Germany) (Unl);c64
+Queens (Europe);c64
+Quick Step! (USA);atari2600
+qwak;arcade
+qwak;fba
+qwak;mame-advmame
+qwak;mame-libretro
+qwak;mame-mame4all
+Radical Bomber!! Jirai-kun (Japan);fds
+Railroad Works, The (USA);c64
+Railway (Asia) (Unl);gb
+Rainbow Islands (Europe);gbc
+Rainy Day (Europe);zxspectrum
+Ramen Heaven (USA);pspminis
+Rampage - Puzzle Attack (USA, Europe);gba
+Ranma 1-2 - Ougi Jaanken (Japan);sfc
+Rasdumje (Europe);c64
+Raster Fahndung (USA) (Unl);atari2600
+Rasterscan (Europe);amstradcpc
+Rat Attack! (USA) (En,Fr,De,Es,It,Nl);n64
+Rat Attack! (USA);psx
+Rat Attack! (USA);psp
+Rats (Europe);c64
+Ravening (France) (Unl);amstradcpc
+RC-Quest (Europe) (Unl);amstradcpc
+Reaction (Arcade) (Europe);c64
+Reaction (Puzzle) (Europe);c64
+Reaxion (Europe) (Unl);c64
+Reaxion Extended (Europe) (Unl);c64
+Reckless Rufus (Europe);amstradcpc
+Reckless Rufus (Europe);zxspectrum
+Recog-Nice (Germany);c64
+Red & Blue (Europe) (Unl);amstradcpc
+Reflections (Europe);zxspectrum
+Relaxed Motions (Europe);c64
+Renketsu Puzzle Tsunagete Pon! (Japan);ngp
+Reveal (Europe);zxspectrum
+Revolution (Europe);zxspectrum
+Rhymes & Riddles (USA);c64
+riskchal;arcade
+riskchal;fba
+riskchal;mame-advmame
+riskchal;mame-libretro
+riskchal;mame-mame4all
+Rock'n! Monster!! (Japan);gb
+Rock Paper Shear (USA) (Unl);c64
+rocktris;arcade
+rocktris;fba
+rocktris;mame-advmame
+rocktris;mame-libretro
+rocktris;mame-mame4all
+rolcrush;arcade
+rolcrush;fba
+rolcrush;mame-advmame
+rolcrush;mame-libretro
+rolcrush;mame-mame4all
+Roll Away (USA);psx
+Roll Away (USA);psp
+Roll-a-Word (USA);c64
+RollerBall (Europe);c64
+Roloid (USA) (Unl);c64
+rongrong;arcade
+rongrong;fba
+rongrongg;arcade
+rongrongg;fba
+rongrongg;mame-advmame
+rongrongg;mame-libretro
+rongrongg;mame-mame4all
+rongrongj;arcade
+rongrongj;fba
+rongrongj;mame-advmame
+rongrongj;mame-libretro
+rongrongj;mame-mame4all
+rongrong;mame-advmame
+rongrong;mame-libretro
+rongrong;mame-mame4all
+Rotator (Europe) (Unl);c64
+Route 66 (USA);pspminis
+Rowdy (Europe);c64
+Rox (Europe);psx
+Rox (Europe);psp
+Rox (USA, Europe);gbc
+Rubikon (Czech Republic) (Unl);c64
+Rubik's Cube 3-D (USA) (Proto);atari2600
+ryukyu;arcade
+ryukyu;mame-advmame
+ryukyu;mame-libretro
+ryukyu;mame-mame4all
+Ryuukyuu (Japan);pce-cd
+sadari;arcade
+sadari;fba
+sadari;mame-advmame
+sadari;mame-libretro
+sadari;mame-mame4all
+Safe-Cracker (Europe);c64
+Safecracker - The Ultimate Puzzle Challenge! (USA) (En,Fr,Es);nds
+Same Game (Japan);gb
+Same Game (Japan);sfc
+sandor;arcade
+sandor;fba
+sandor;mame-advmame
+sandor;mame-libretro
+sandor;mame-mame4all
+San-nin Mahjong (Japan);sg-1000
+Sanrio Carnival 2 (Japan);gb
+Sanrio Carnival 2 (Japan) (Translated En);famicom
+Sanrio Carnival (Japan) (Translated En);gb
+Sanrio Shanghai (Japan);sfc
+Sarakon (Germany);c64
+Say Simon (USA);c64
+Sblock - Sliding-Block Puzzles (Europe);c64
+Schere Stein Papier (Europe);c64
+Scrambit Mania (USA);c64
+Scruples (Europe);c64
+Scumm (Europe);c64
+SD Gundam - Power Formation Puzzle (Japan);sfc
+SD Lupin Sansei - Kinko Yaburi Daisakusen (Japan);gb
+searcheya;arcade
+searcheya;fba
+searcheya;mame-advmame
+searcheya;mame-libretro
+searcheya;mame-mame4all
+searchey;arcade
+searchey;fba
+searchey;mame-advmame
+searchey;mame-libretro
+searchey;mame-mame4all
+searchp2;arcade
+searchp2;fba
+searchp2;mame-advmame
+searchp2;mame-libretro
+searchp2;mame-mame4all
+Sega Tetris (Japan);dreamcast
+Segregation (USA);c64
+senknow;arcade
+senknow;fba
+senknow;mame-advmame
+senknow;mame-libretro
+senknow;mame-mame4all
+senkyua;arcade
+senkyua;fba
+senkyua;mame-advmame
+senkyua;mame-libretro
+senkyua;mame-mame4all
+senkyu;arcade
+senkyu;fba
+senkyu;mame-advmame
+senkyu;mame-libretro
+senkyu;mame-mame4all
+Sennou Millennium (Japan);wonderswan
+Sensitive (USA);c64
+Sensor (Europe);c64
+Sentinel, The (Europe);zxspectrum
+September (Europe);c64
+Sequel (Germany);c64
+Serizawa Hachidan no Tsumeshogi (Japan);sg-1000
+Session , The (USA) (Unl);c64
+Session v1.4, The (USA) (Unl);c64
+sexyboom;arcade
+sexyboom;fba
+sexyboom;mame-advmame
+sexyboom;mame-libretro
+sexyboom;mame-mame4all
+shangha2a;arcade
+shangha2a;fba
+shangha2a;mame-advmame
+shangha2a;mame-libretro
+shangha2a;mame-mame4all
+shangha2;arcade
+shangha2;fba
+shangha2;mame-advmame
+shangha2;mame-libretro
+shangha2;mame-mame4all
+shangha3;arcade
+shangha3;fba
+shangha3j;arcade
+shangha3j;fba
+shangha3j;mame-advmame
+shangha3j;mame-libretro
+shangha3j;mame-mame4all
+shangha3;mame-advmame
+shangha3;mame-libretro
+shangha3;mame-mame4all
+shangha3u;arcade
+shangha3u;fba
+shangha3u;mame-advmame
+shangha3u;mame-libretro
+shangha3u;mame-mame4all
+shanghai;arcade
+Shanghai - Banri no Choujou (Japan);sfc
+shanghai;fba
+Shanghai II - Dragon's Eye (USA);snes
+Shanghai III - Dragon's Eye (Japan);pce-cd
+Shanghai III (Japan);sfc
+Shanghai II (Japan);pce-cd
+Shanghai II (Japan);gamegear
+Shanghai (Japan) (Translated En);pce-cd
+shanghaij;arcade
+shanghaij;fba
+shanghaij;mame-advmame
+shanghaij;mame-libretro
+shanghaij;mame-mame4all
+shanghai;mame-advmame
+shanghai;mame-libretro
+shanghai;mame-mame4all
+Shanghai Mini (World) (En,Ja);ngpc
+Shanghai Pocket (Japan);wonderswan
+Shanghai Pocket (Japan);gb
+Shanghai (USA);c64
+Shanghai (USA, Europe);atarilynx
+Shanghai (USA, Europe);mastersystem
+Shanghai (USA);gb
+shanghss;arcade
+shanghss;fba
+shanghss;mame-advmame
+shanghss;mame-libretro
+shanghss;mame-mame4all
+shangtou;arcade
+shangtou;mame-advmame
+shangtou;mame-libretro
+shangtou;mame-mame4all
+shanhigw;arcade
+shanhigw;fba
+shanhigw;mame-advmame
+shanhigw;mame-libretro
+shanhigw;mame-mame4all
+Shapo (USA);pspminis
+Shards (Europe);c64
+Shift (Europe);c64
+Shiftrix (Germany);c64
+Shifty Balls (Hungary) (Unl);c64
+Shikinjou (Japan);gb
+Shikinjou (Japan);gamegear
+Shikinjou (Japan) (Translated En);famicom
+shisen2;arcade
+shisen2;fba
+shisen2;mame-advmame
+shisen2;mame-libretro
+shisen2;mame-mame4all
+shisen;arcade
+shisen;fba
+shisen;mame-advmame
+shisen;mame-libretro
+shisen;mame-mame4all
+Shisenshou - Match-Mania (Japan);gb
+shngmtkb;arcade
+shngmtkb;fba
+shngmtkb;mame-advmame
+shngmtkb;mame-libretro
+shngmtkb;mame-mame4all
+Shockwave (USA) (Unl);nes
+Shoikan (Europe);c64
+Shuffle (Germany);c64
+Shuffler (Europe);c64
+sichuan2a;arcade
+sichuan2a;fba
+sichuan2a;mame-advmame
+sichuan2a;mame-libretro
+sichuan2a;mame-mame4all
+sichuan2;arcade
+sichuan2;fba
+sichuan2;mame-advmame
+sichuan2;mame-libretro
+sichuan2;mame-mame4all
+Sightseeing Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It) [b];nds
+Silva Pod (Europe);c64
+Simon (USA);c64
+sindbadm;arcade
+sindbadm;fba
+sindbadm;mame-advmame
+sindbadm;mame-libretro
+sindbadm;mame-mame4all
+Sixers (Europe);c64
+Six (Europe);c64
+Skipp and Friends (World) (Unl);snes
+Slicker Puzzle (Europe);c64
+Slicker Puzzle (Europe);zxspectrum
+Slide! (Europe) (Unl);c64
+Slide (Germany);c64
+Sliding Skill (Europe) (Unl);c64
+Slither Link (Japan);wonderswan
+sliver;arcade
+sliver;fba
+sliver;mame-advmame
+sliver;mame-libretro
+sliver;mame-mame4all
+smissw;arcade
+smissw;fba
+smissw;mame-advmame
+smissw;mame-libretro
+smissw;mame-mame4all
+Snail Maze (Europe);mastersystem
+Snake Warriors - Training (USA);pspminis
+Snare (Europe);zxspectrum
+Sneak 'n Peek (USA);atari2600
+Sneezies (USA);pspminis
+Snood 2 - On Vacation (USA);gba
+Snoopy - Magic Show (USA, Europe);gb
+Snoopy no Hajimete no Otsukai (Japan);gb
+Sokoban 64 (Europe) (Unl);c64
+Soko-Ban (USA) (Side A);c64
+Soko-Ban (USA) (Side B);c64
+soldam;arcade
+soldam;fba
+Soldam (Japan);gb
+soldamj;arcade
+soldamj;fba
+soldamj;mame-advmame
+soldamj;mame-libretro
+soldamj;mame-mame4all
+soldam;mame-advmame
+soldam;mame-libretro
+soldam;mame-mame4all
+Solitaire (CCS) (Europe);zxspectrum
+Solitaire (No Man's Land) (Europe);zxspectrum
+Solitair (Europe);c64
+Solitax (Europe);c64
+solomon;arcade
+solomon;fba
+solomonj;arcade
+solomonj;fba
+solomonj;mame-advmame
+solomonj;mame-libretro
+solomonj;mame-mame4all
+solomon;mame-advmame
+solomon;mame-libretro
+solomon;mame-mame4all
+Solomon no Kagi (Japan);fds
+Solomon no Kagi - Oujo Rihita no Namida (Japan);mastersystem
+Solomon's Club (USA);gb
+Solomon's Key (USA);nes
+Solstice - The Quest for the Staff of Demnos (USA);nes
+Sorcerer's Maze (USA);psx
+Sorcerer's Maze (USA);psp
+Soreyuke Ebisumaru Karakuri Meiro - Kieta Goemon no Nazo!! (Japan);sfc
+Soroban Gu (Japan);wonderswancolor
+Soukoban (Japan);gamegear
+Soukoban (Japan);sg-1000
+soukobdx;arcade
+soukobdx;mame-advmame
+soukobdx;mame-libretro
+soukobdx;mame-mame4all
+soutenry;arcade
+soutenry;fba
+soutenry;mame-advmame
+soutenry;mame-libretro
+soutenry;mame-mame4all
+Spaceball Revolution (USA);pspminis
+Spaced Out (Europe);zxspectrum
+sparkz;arcade
+sparkz;fba
+sparkz;mame-advmame
+sparkz;mame-libretro
+sparkz;mame-mame4all
+spdcoin;arcade
+spdcoin;fba
+spdcoin;mame-advmame
+spdcoin;mame-libretro
+spdcoin;mame-mame4all
+Speranza (Germany) (Unl);c64
+spf2ta;arcade
+spf2ta;fba
+spf2ta;mame-advmame
+spf2ta;mame-libretro
+spf2ta;mame-mame4all
+spf2t;arcade
+spf2td;arcade
+spf2td;fba
+spf2td;mame-advmame
+spf2td;mame-libretro
+spf2td;mame-mame4all
+spf2t;fba
+spf2th;arcade
+spf2th;fba
+spf2th;mame-advmame
+spf2th;mame-libretro
+spf2th;mame-mame4all
+spf2t;mame-advmame
+spf2t;mame-libretro
+spf2t;mame-mame4all
+spf2xj;arcade
+spf2xjd;arcade
+spf2xjd;fba
+spf2xjd;mame-advmame
+spf2xjd;mame-libretro
+spf2xjd;mame-mame4all
+spf2xj;fba
+spf2xj;mame-advmame
+spf2xj;mame-libretro
+spf2xj;mame-mame4all
+Spherebrain (Europe) (Unl);c64
+Spherical (Europe) (Disk 1);amstradcpc
+Spherical (Europe) (Disk 2);amstradcpc
+spider;arcade
+spider;fba
+spider;mame-advmame
+spider;mame-libretro
+spider;mame-mame4all
+Spin Jam (USA);psx
+Spin Jam (USA);psp
+Splash Lake (USA);tg-cd
+Splatch! (Europe);amstradcpc
+Split Personalities (Europe);amstradcpc
+Split Personalities (Europe);c64
+Split Personalities (Europe);zxspectrum
+Splitter (Europe);c64
+Splitting Images (Europe);zxspectrum
+Splitz (Europe);gb
+Spook - The Game (Europe);c64
+Spot The Differences (USA);pspminis
+Spot - The Video Game (USA);nes
+Spot (USA);gb
+sprtmtch;arcade
+sprtmtch;fba
+sprtmtch;mame-advmame
+sprtmtch;mame-libretro
+sprtmtch;mame-mame4all
+spuzbobl;arcade
+spuzboblj;arcade
+spuzboblj;mame-advmame
+spuzboblj;mame-libretro
+spuzboblj;mame-mame4all
+spuzbobl;mame-advmame
+spuzbobl;mame-libretro
+spuzbobl;mame-mame4all
+sqix;arcade
+sqixb1;arcade
+sqixb1;fba
+sqixb1;mame-advmame
+sqixb1;mame-libretro
+sqixb1;mame-mame4all
+sqixb2;arcade
+sqixb2;fba
+sqixb2;mame-advmame
+sqixb2;mame-libretro
+sqixb2;mame-mame4all
+sqix;mame-advmame
+sqix;mame-libretro
+sqix;mame-mame4all
+sqixr1;arcade
+sqixr1;mame-advmame
+sqixr1;mame-libretro
+sqixr1;mame-mame4all
+sqixu;arcade
+sqixu;mame-advmame
+sqixu;mame-libretro
+sqixu;mame-mame4all
+Square Pairs (USA);c64
+Square Scape II (Europe) (Unl);c64
+Square-Scape (USA);c64
+Square Supremacy (USA);c64
+ssfindo;arcade
+ssfindo;fba
+ssfindo;mame-advmame
+ssfindo;mame-libretro
+ssfindo;mame-mame4all
+sshangha;arcade
+sshanghab;arcade
+sshanghab;fba
+sshanghab;mame-advmame
+sshanghab;mame-libretro
+sshanghab;mame-mame4all
+sshangha;fba
+sshangha;mame-advmame
+sshangha;mame-libretro
+sshangha;mame-mame4all
+Stack 64 Simon (Europe);c64
+Stack Concentration (Europe);c64
+Stack Up (Europe);c64
+Stack Up (Europe);zxspectrum
+Star Mobile (Japan);pce-cd
+starseek;arcade
+starseek;fba
+starseek;mame-advmame
+starseek;mame-libretro
+starseek;mame-mame4all
+Star Sweep (Japan);gb
+starswep;arcade
+starswep;mame-advmame
+starswep;mame-libretro
+starswep;mame-mame4all
+stealsee;arcade
+stealsee;fba
+stealsee;mame-advmame
+stealsee;mame-libretro
+stealsee;mame-mame4all
+steelwkr;arcade
+steelwkr;fba
+steelwkr;mame-advmame
+steelwkr;mame-libretro
+steelwkr;mame-mame4all
+Stix (Europe);c64
+stkclmns;arcade
+stkclmns;fba
+stkclmnsj;arcade
+stkclmnsj;fba
+stkclmnsj;mame-advmame
+stkclmnsj;mame-libretro
+stkclmnsj;mame-mame4all
+stkclmns;mame-advmame
+stkclmns;mame-libretro
+stkclmns;mame-mame4all
+Stones (Germany);c64
+Stranded 2.5 (Europe);zxspectrum
+Stranded (Cronosoft) (Europe);zxspectrum
+Stranded (Cronosoft) (Europe) (Unl);c64
+Stranded (Europe) (Unl);amstradcpc
+Stratagos (Europe);c64
+Strip Takin (France) (Unl);amstradcpc
+Study Hall (USA) (Unl);nes
+Sudoku (Europe);zxspectrum
+Sudoku (Europe) (Unl);amstradcpc
+Sudoku Master (Europe) (Unl);amstradcpc
+Sudoku - Suuji Wa Dokushin Ni Kagiru (Czech Republic) (Unl);c64
+Sudoku (USA);pspminis
+Sudoku (USA) (Unl);c64
+Sudoku (World) (Unl);nes
+Summix (Germany) (Unl);c64
+Sun Computer Crosswords (Europe);amstradcpc
+Supapoon DX (Japan);sfc
+Supapoon (Japan);sfc
+Super Bomberman 4 (Japan) (Translated En);sfc
+Super Bomberman 5 (Japan);sfc
+Super Bomberman - Panic Bomber W (Japan);sfc
+Super Bombliss (Japan);sfc
+Super Bubble Pop (USA);gba
+Super Bubble Pop (USA);psx
+Super Bubble Pop (USA);psp
+Super Bust-A-Move (USA) (En,Fr,Es);gba
+Super Collapse! II (USA);gba
+Super Columns (USA, Europe);gamegear
+Super Fruitfall Deluxe (Europe);pspminis
+Super Gussun Oyoyo 2 (Japan) (Translated En);sfc
+Super Gussun Oyoyo (Japan);sfc
+Super Lode Runner II (Japan);fds
+Super Lode Runner (Japan);fds
+Super Loopz (Japan);sfc
+Supermarket Mania (USA);pspminis
+Supermind (USA);c64
+Super Monkey Ball Jr. (USA);gba
+Super Morph (Europe);snes
+Super Nazo Puyo - Rulue no Roux (Japan);sfc
+Super Nazo Puyo Tsuu - Rulue no Tetsuwan Hanjouki (Japan);sfc
+Super Painter (World) (Unl);nes
+Superpix (Europe) (Side A) (Unl);amstradcpc
+Superpix (Europe) (Side B) (Unl);amstradcpc
+Super Puyo Puyo (Japan);sfc
+Super Puyo Puyo Tsuu (Japan) (Translated En);sfc
+Super Puyo Puyo Tsuu Remix (Japan);sfc
+Super Puzzle Fighter 2 X (Japan);dreamcast
+Super Puzzle Fighter II Turbo (USA);gba
+Super Puzzle Fighter II Turbo (USA);psx
+Super Puzzle Fighter II Turbo (USA);psp
+Super Saper (Poland) (Unl);c64
+Super Seven (Europe) (Unl);c64
+Super Skweek (USA, Europe);atarilynx
+Super Soukoban (Japan);sfc
+Super Tetris 3 (Japan);sfc
+Super Tetris (Europe);amstradcpc
+suplup;arcade
+suplup;fba
+suplup;mame-advmame
+suplup;mame-libretro
+suplup;mame-mame4all
+supmodel;arcade
+supmodel;fba
+supmodel;mame-advmame
+supmodel;mame-libretro
+supmodel;mame-mame4all
+susume;arcade
+susume;fba
+susume;mame-advmame
+susume;mame-libretro
+susume;mame-mame4all
+Su Sweet (Europe);c64
+Sutte Hakkun (Japan);sfc
+Swap (Europe);amstradcpc
+Swap (Europe);c64
+Swap It (Germany);c64
+Swap Zap (Europe);pspminis
+Swivel (Europe);amstradcpc
+Sword of Camelot, The (Europe);psx
+Sword of Camelot, The (Europe);psp
+Synopsis (USA) (Unl);c64
+System (Germany);c64
+System III - The Final Stone (Germany);c64
+System II - Move the Stones (Germany);c64
+Taiyou no Tenshi Marlowe - Ohanabatake wa Dai-panic (Japan) (Translated En);gb
+Take a Break's Puzzle Bonanza (Europe);nds
+Take a Break's Puzzle Master (Europe);nds
+Tall - Infinity (USA);psx
+Tall - Infinity (USA);psp
+tantr;arcade
+tantrbl2;arcade
+tantrbl2;fba
+tantrbl2;mame-advmame
+tantrbl2;mame-libretro
+tantrbl2;mame-mame4all
+tantrbl3;arcade
+tantrbl3;fba
+tantrbl3;mame-advmame
+tantrbl3;mame-libretro
+tantrbl3;mame-mame4all
+tantrbl;arcade
+tantrbl;fba
+tantrbl;mame-advmame
+tantrbl;mame-libretro
+tantrbl;mame-mame4all
+tantr;fba
+tantrkor;arcade
+tantrkor;fba
+tantrkor;mame-advmame
+tantrkor;mame-libretro
+tantrkor;mame-mame4all
+tantr;mame-advmame
+tantr;mame-libretro
+tantr;mame-mame4all
+Tare Panda no GunPey (Japan);wonderswan
+Target Ball (Europe);amstradcpc
+Team Tetris (Europe);c64
+Tecmo Stackers (USA);psx
+Tecmo Stackers (USA);psp
+tekipaki;arcade
+tekipaki;fba
+tekipaki;mame-advmame
+tekipaki;mame-libretro
+tekipaki;mame-mame4all
+Telegraph Crosswords (USA);pspminis
+Telegraph Sudoku & Kakuro (USA);pspminis
+Tesserae (USA, Europe);gamegear
+Tesserae (USA);gb
+Tetrados (Europe);c64
+Tetraminos (USA);pspminis
+tetrbx;arcade
+tetrbx;fba
+tetrbx;mame-advmame
+tetrbx;mame-libretro
+tetrbx;mame-mame4all
+tetris1;arcade
+tetris1;fba
+tetris1;mame-advmame
+tetris1;mame-libretro
+tetris1;mame-mame4all
+tetris2;arcade
+Tetris 2 + Bombliss (Japan);famicom
+tetris2;fba
+tetris2;mame-advmame
+tetris2;mame-libretro
+tetris2;mame-mame4all
+Tetris 2 (USA, Europe);gb
+Tetris 2 (USA);nes
+Tetris 2 (USA);snes
+tetris3;arcade
+tetris3;fba
+tetris3;mame-advmame
+tetris3;mame-libretro
+tetris3;mame-mame4all
+Tetris 4D (Japan);dreamcast
+Tetris (576 Kbyte) (Hungary) (Unl);c64
+Tetris 95 (Europe) (Unl);amstradcpc
+Tetrisack (Poland) (Unl);c64
+tetris;arcade
+Tetris Attack (USA, Europe);gb
+Tetris Attack (USA, Europe) (Rev A);gb
+Tetris Attack (USA);snes
+Tetris Battle Gaiden (Japan);sfc
+tetrisbl;arcade
+Tetris Blast (USA, Europe);gb
+tetrisbl;fba
+tetrisbl;mame-advmame
+tetrisbl;mame-libretro
+tetrisbl;mame-mame4all
+Tetris (Bulletproof) (Japan);famicom
+Tetris (DaCapo) (Europe) (Unl);c64
+Tetris & Dr. Mario (USA);snes
+Tetris DX (World);gbc
+Tetris (Europe);amstradcpc
+Tetris (Europe);zxspectrum
+tetris;fba
+Tetris II (Europe);amstradcpc
+Tetris (Japan);wonderswancolor
+Tetris (Japan);msx2
+tetris;mame-advmame
+tetris;mame-libretro
+tetris;mame-mame4all
+Tetris (Mirrorsoft Ltd.) (Europe);c64
+Tetris Original (Hungary) (Unl);c64
+tetrisp2;arcade
+tetrisp2;fba
+tetrisp2ja;arcade
+tetrisp2ja;fba
+tetrisp2ja;mame-advmame
+tetrisp2ja;mame-libretro
+tetrisp2ja;mame-mame4all
+tetrisp2j;arcade
+tetrisp2j;fba
+tetrisp2j;mame-advmame
+tetrisp2j;mame-libretro
+tetrisp2j;mame-mame4all
+tetrisp2;mame-advmame
+tetrisp2;mame-libretro
+tetrisp2;mame-mame4all
+tetrisp;arcade
+tetrisp;fba
+Tetrisphere (USA);n64
+Tetris Plus (USA, Europe);gb
+Tetris Plus (USA);psx
+Tetris Plus (USA);psp
+tetrisp;mame-advmame
+tetrisp;mame-libretro
+tetrisp;mame-mame4all
+tetrisse;arcade
+tetrisse;fba
+tetrisse;mame-advmame
+tetrisse;mame-libretro
+tetrisse;mame-mame4all
+tetrista;arcade
+tetrista;fba
+tetrista;mame-advmame
+tetrista;mame-libretro
+tetrista;mame-mame4all
+tetrist;arcade
+tetrist;fba
+tetristh;arcade
+Tetris - The Soviet Mind Game (USA) (Unl);nes
+tetristh;fba
+tetristh;mame-advmame
+tetristh;mame-libretro
+tetristh;mame-mame4all
+tetrist;mame-advmame
+tetrist;mame-libretro
+tetrist;mame-mame4all
+Tetris (USA);nes
+Tetris (USA);pspminis
+Tetris (World);gb
+Tetris (World) (Rev A);gb
+Tetris Worlds (USA);gba
+Tetrix (USA) (Unl);c64
+tetrsark;arcade
+tetrsark;fba
+tetrsark;mame-advmame
+tetrsark;mame-libretro
+tetrsark;mame-mame4all
+tgm2;arcade
+tgm2;fba
+tgm2;mame-advmame
+tgm2;mame-libretro
+tgm2;mame-mame4all
+tgm2p;arcade
+tgm2p;fba
+tgm2p;mame-advmame
+tgm2p;mame-libretro
+tgm2p;mame-mame4all
+tgmj;arcade
+tgmj;mame-advmame
+tgmj;mame-libretro
+tgmj;mame-mame4all
+Thepsos (Europe) (Unl);c64
+Thinker, The (Europe);c64
+Thinker, The (Europe);zxspectrum
+Think! (Europe);zxspectrum
+Think Fast (Germany);c64
+Th!nk Cross (Europe);c64
+Thomas the Tank Engine and Friends (Europe);zxspectrum
+Threestone (Turkey) (Unl);c64
+thunt;arcade
+thunt;fba
+thuntk;arcade
+thuntk;fba
+thuntk;mame-advmame
+thuntk;mame-libretro
+thuntk;mame-mame4all
+thunt;mame-advmame
+thunt;mame-libretro
+thunt;mame-mame4all
+Tierbabys Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It) [b];nds
+Tiles of Fate (USA) (Unl);nes
+Tile - The Revenge (Europe) (Unl);c64
+Tilt (Europe);zxspectrum
+Tilt (Genias + LinEL) (Europe);c64
+Timeball (USA);tg16
+Timepuzzle (Europe);c64
+Timon & Pumbaa's Jungle Games (USA);snes
+Timtris (Poland) (Unl);c64
+Tiny Skweeks, The (Europe);amstradcpc
+Tip-Trick (Europe);c64
+Title Memory (Japan);msx2
+tkmmpzdm;arcade
+tkmmpzdm;fba
+tkmmpzdm;mame-advmame
+tkmmpzdm;mame-libretro
+tkmmpzdm;mame-mame4all
+togenkyo;arcade
+togenkyo;fba
+togenkyo;mame-advmame
+togenkyo;mame-libretro
+togenkyo;mame-mame4all
+Toki Tori (USA, Europe);gbc
+tokkae;arcade
+tokkae;fba
+tokkae;mame-advmame
+tokkae;mame-libretro
+tokkae;mame-mame4all
+Tone-Loco (Europe) (Unl);c64
+toride2g;arcade
+toride2g;fba
+toride2gg;arcade
+toride2gg;fba
+toride2gg;mame-advmame
+toride2gg;mame-libretro
+toride2gg;mame-mame4all
+toride2gk;arcade
+toride2gk;fba
+toride2gk;mame-advmame
+toride2gk;mame-libretro
+toride2gk;mame-mame4all
+toride2g;mame-advmame
+toride2g;mame-libretro
+toride2g;mame-mame4all
+toride2j;arcade
+toride2j;fba
+toride2j;mame-advmame
+toride2j;mame-libretro
+toride2j;mame-mame4all
+Toride (Japan);sfc
+torus;arcade
+torus;fba
+torus;mame-advmame
+torus;mame-libretro
+torus;mame-mame4all
+toryumon;arcade
+toryumon;fba
+toryumon;mame-advmame
+toryumon;mame-libretro
+toryumon;mame-mame4all
+Totems (Europe) (Unl);amstradcpc
+Toyballs (Europe);c64
+Toys (Europe);psx
+Toys (Europe);psp
+Toyz (Europe) (Unl);c64
+tp2m32;arcade
+tp2m32;fba
+tp2m32;mame-advmame
+tp2m32;mame-libretro
+tp2m32;mame-mame4all
+Translogic (Europe);c64
+Treasures of Montezuma, The (USA);pspminis
+Trick (USA) (Unl);c64
+Tricky (Germany);c64
+Tricky Kick (USA);tg16
+Triget (Europe);c64
+Tringo (USA);gba
+triplfun;arcade
+triplfun;fba
+triplfun;mame-advmame
+triplfun;mame-libretro
+triplfun;mame-mame4all
+Tritz (Europe);zxspectrum
+Troka (Spain);zxspectrum
+Tronic Force (Europe);c64
+Trooze (Germany) (Unl);c64
+Trouballs (USA);gbc
+Tsuyoshi Shikkari Shinasai - Taisen Puzzle Dama (Japan);sfc
+tubeit;arcade
+tubeit;fba
+tubeit;mame-advmame
+tubeit;mame-libretro
+tubeit;mame-mame4all
+Tube Madness (Europe);c64
+Turbo Turtle Adventure (USA);gba
+Turnabout (USA);psx
+Turnabout (USA);psp
+Turn It 2 - Future Edition (Europe);c64
+Turn It (Europe);c64
+Turn It II (Europe);c64
+Turtle Timewarp (Europe);zxspectrum
+TUSG! (Europe);c64
+Twelve o'Clock (Europe);c64
+Twin-Down (Europe);c64
+twinqix;arcade
+twinqix;fba
+twinqix;mame-advmame
+twinqix;mame-libretro
+twinqix;mame-mame4all
+twinsa;arcade
+twinsa;fba
+twinsa;mame-advmame
+twinsa;mame-libretro
+twinsa;mame-mame4all
+twins;arcade
+twins;fba
+twins;mame-advmame
+twins;mame-libretro
+twins;mame-mame4all
+Twist (Europe);c64
+Two-To-One (Europe);c64
+Two-Tris (Europe) (Unl);c64
+Tycoon - The Crossword Business Game (Europe);zxspectrum
+Type-Rope (Europe);zxspectrum
+Ultimate Brain Games (USA);psx
+Ultimate Brain Games (USA);psp
+Ultimate Puzzle Games - Sudoku Edition (USA);nds
+Ultimate Puzzle Games (USA);gba
+Umihara Kawase (Japan) (Translated En);sfc
+Undake 30 Same Game Daisakusen - Mario Version (Japan);sfc
+Underwater Puzzle - Echter Puzzlespass fuer Unterwegs (Europe) (En,Fr,De,Es,It) [b];nds
+Undoroid (Europe);c64
+Unknown Activision Game #1 (USA) (Proto);atari2600
+uopoko;arcade
+uopoko;fba
+uopokoj;arcade
+uopokoj;fba
+uopokoj;mame-advmame
+uopokoj;mame-libretro
+uopokoj;mame-mame4all
+uopoko;mame-advmame
+uopoko;mame-libretro
+uopoko;mame-mame4all
+Up for Grabs (USA);c64
+Upside Down v2 (USA);c64
+USA Today Puzzle Craze (USA) [b];nds
+Vanquisher (Europe);zxspectrum
+Vempire (USA);pspminis
+Vex Block (Asia) (Unl);gb
+Video Reflex (USA);atari2600
+Viduzzles (USA);c64
+Vioris (Europe) (Unl);c64
+Virtual Lab (Japan);virtualboy
+Vision (Europe) (Unl);c64
+vivdolls;arcade
+vivdolls;fba
+vivdolls;mame-advmame
+vivdolls;mame-libretro
+vivdolls;mame-mame4all
+volfied;arcade
+Volfied (Europe);c64
+volfied;fba
+volfiedj;arcade
+volfiedj;fba
+volfiedj;mame-advmame
+volfiedj;mame-libretro
+volfiedj;mame-mame4all
+volfiedjo;arcade
+volfiedjo;fba
+volfiedjo;mame-advmame
+volfiedjo;mame-libretro
+volfiedjo;mame-mame4all
+volfied;mame-advmame
+volfied;mame-libretro
+volfied;mame-mame4all
+volfiedo;arcade
+volfiedo;fba
+volfiedo;mame-advmame
+volfiedo;mame-libretro
+volfiedo;mame-mame4all
+volfiedu;arcade
+volfiedu;fba
+volfiedu;mame-advmame
+volfiedu;mame-libretro
+volfiedu;mame-mame4all
+volfieduo;arcade
+volfieduo;fba
+volfieduo;mame-advmame
+volfieduo;mame-libretro
+volfieduo;mame-mame4all
+vstetris;arcade
+vstetris;fba
+vstetris;mame-advmame
+vstetris;mame-libretro
+vstetris;mame-mame4all
+V-Tetris (Japan);virtualboy
+Vyrus (Europe);c64
+Wario's Woods (USA);nes
+Wario's Woods (USA);snes
+WarioWare, Inc. - Mega Microgame$! (USA);gba
+WarioWare - Twisted! (USA);gba
+watrball;arcade
+watrball;fba
+watrball;mame-advmame
+watrball;mame-libretro
+watrball;mame-mame4all
+Wedding Peach - Jamapii Panic (Japan);gb
+welltris;arcade
+Welltris (Europe);amstradcpc
+Welltris (Europe);zxspectrum
+welltris;fba
+Welltris (France);c64
+welltrisj;arcade
+welltrisj;fba
+welltrisj;mame-advmame
+welltrisj;mame-libretro
+welltrisj;mame-mame4all
+welltris;mame-advmame
+welltris;mame-libretro
+welltris;mame-mame4all
+Wetrix GB (Europe);gbc
+Wetrix (USA) (En,Fr,De,Es,It,Nl);n64
+Wetrix+ (USA);dreamcast
+Whac-A-Mole (USA);gba
+Where in the World is Carmen Sandiego (USA);mastersystem
+Where in the World Is Carmen Sandiego (USA);snes
+Where in Time Is Carmen Sandiego (USA);nes
+Where in Time Is Carmen Sandiego (USA);snes
+Where is My Heart (Europe);pspminis
+Where's Waldo (USA);nes
+Whizz Kid (Europe);zxspectrum
+Widgets Odyssey 2 (USA);pspminis
+Widgets Odyssey (USA);pspminis
+Wild Snake (USA);gb
+Wild Snake (USA) (Proto);gamegear
+WildSnake (USA);snes
+Win, Lose or Draw (USA);nes
+wiseguy;arcade
+wiseguy;fba
+wiseguy;mame-advmame
+wiseguy;mame-libretro
+wiseguy;mame-mame4all
+Wit's (Japan) (Translated En);famicom
+Witts End (Europe);c64
+Wizorb (USA);pspminis
+wondstck;arcade
+wondstck;fba
+wondstck;mame-advmame
+wondstck;mame-libretro
+wondstck;mame-mame4all
+Word Challenge (USA);c64
+Word Flyer (USA);c64
+Wordsearch (Europe);c64
+Word Search II - Printer Version (USA);c64
+Word Seeker (Europe);zxspectrum
+Wordtris (USA);gb
+Wordtris (USA);snes
+WordZap (USA);gb
+Worms Blast (Europe) (En,Fr,De,Es,It);gba
+Worms World Party (USA) (En,Fr,De,Es,It);gba
+wownfant;arcade
+wownfant;fba
+wownfant;mame-advmame
+wownfant;mame-libretro
+wownfant;mame-mame4all
+Woxxox (Spain);amstradcpc
+Wozzle (Europe);c64
+Wrecking Crew '98 (Japan);sfc
+wtrnymph;arcade
+wtrnymph;fba
+wtrnymph;mame-advmame
+wtrnymph;mame-libretro
+wtrnymph;mame-mame4all
+Wu Lung (Germany) (Unl);c64
+Xain'D Sleena (USA) (Unl);c64
+Xalk (France) (Unl);amstradcpc
+Xanagrams (Europe);c64
+Xanagrams (Europe);zxspectrum
+Xetris (USA) (Unl);c64
+xfiles;arcade
+xfiles;fba
+xfilesk;arcade
+xfilesk;fba
+xfilesk;mame-advmame
+xfilesk;mame-libretro
+xfilesk;mame-mame4all
+xfiles;mame-advmame
+xfiles;mame-libretro
+xfiles;mame-mame4all
+Xiom (Europe) (Unl);c64
+XI (Sai) Little (Japan);wonderswancolor
+XOR (Europe);amstradcpc
+XOR (Europe);zxspectrum
+xorworld;arcade
+xorworld;fba
+xorworld;mame-advmame
+xorworld;mame-libretro
+xorworld;mame-mame4all
+X-Tris (USA) (Unl);c64
+xyonix;arcade
+xyonix;fba
+xyonix;mame-advmame
+xyonix;mame-libretro
+xyonix;mame-mame4all
+Yaba (USA);c64
+yamyam;arcade
+yamyam;fba
+yamyamk;arcade
+yamyamk;fba
+yamyamk;mame-advmame
+yamyamk;mame-libretro
+yamyamk;mame-mame4all
+yamyam;mame-advmame
+yamyam;mame-libretro
+yamyam;mame-mame4all
+Yoshi no Cookie - Kuruppon Oven de Cookie (Japan);sfc
+Yoshi's Cookie (USA, Europe);gb
+Yoshi's Cookie (USA);nes
+Yoshi's Cookie (USA);snes
+Yoshi (USA);nes
+Yoshi (USA);gb
+YoYo's Puzzle Park (Europe);psx
+YoYo's Puzzle Park (Europe);psp
+Zack! (Europe);c64
+Zaxon (Hungary) (Unl);c64
+Zellion (Europe);c64
+Zenji (Europe);zxspectrum
+zerozone;arcade
+zerozone;fba
+zerozone;mame-advmame
+zerozone;mame-libretro
+zerozone;mame-mame4all
+zintrckb;arcade
+zintrckb;fba
+zintrckb;mame-advmame
+zintrckb;mame-libretro
+zintrckb;mame-mame4all
+Zolyx (Europe);c64
+Zolyx (Europe);zxspectrum
+Zoo Block (Asia) (Unl);gb
+ZooCube (USA);gba
+Zoo Mania (USA) (Unl);c64
+Zoomerang (Europe);c64
+zooo;arcade
+zooo;fba
+zooo;mame-advmame
+zooo;mame-libretro
+zooo;mame-mame4all
+Zoop - America's Largest Killer of Time! (USA);psx
+Zoop - America's Largest Killer of Time! (USA);psp
+Zoop (USA, Europe);gb
+Zoop (USA);gamegear
+Zoop (USA);snes
+Zoo Quest - Puzzle Fun! (USA) [b];nds
+ZoZoom (Europe);c64
+Zyx (Europe);c64

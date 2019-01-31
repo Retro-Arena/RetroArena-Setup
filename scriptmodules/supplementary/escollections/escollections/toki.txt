@@ -1,0 +1,36 @@
+exilej;fba
+pstar2j;fba
+pstar3j;fba
+toki1;fba
+tokia;arcade
+tokia;fba
+tokia;mame-advmame
+tokia;mame-libretro
+tokia;mame-mame4all
+toki;arcade
+tokib;arcade
+tokib;fba
+tokib;mame-advmame
+tokib;mame-libretro
+tokib;mame-mame4all
+Toki (Europe);c64
+toki;fba
+toki;mame-advmame
+toki;mame-libretro
+toki;mame-mame4all
+tokisens;arcade
+tokisens;mame-advmame
+tokisens;mame-libretro
+tokisens;mame-mame4all
+Toki Tori (USA, Europe);gbc
+tokiua;arcade
+tokiua;fba
+tokiua;mame-advmame
+tokiua;mame-libretro
+tokiu;arcade
+tokiu;fba
+tokiu;mame-advmame
+tokiu;mame-libretro
+tokiu;mame-mame4all
+Toki (USA, Europe);atarilynx
+Toki (USA);nes

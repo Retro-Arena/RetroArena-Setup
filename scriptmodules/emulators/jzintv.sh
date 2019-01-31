@@ -43,6 +43,10 @@ function install_jzintv() {
     )
 }
 
+function install_bin_jzintv() {
+    downloadAndExtract "$__gitbins_url/jzintv.tar.gz" "$md_inst" 1
+}
+
 function configure_jzintv() {
     mkRomDir "intellivision"
 

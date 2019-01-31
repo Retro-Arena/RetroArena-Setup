@@ -37,6 +37,9 @@ function install_lr-dinothawr() {
     )
 }
 
+function install_bin_lr-dinothawr() {
+    downloadAndExtract "$__gitbins_url/lr-dinothawr.tar.gz" "$md_inst" 1
+}
 
 function configure_lr-dinothawr() {
     setConfigRoot "ports"

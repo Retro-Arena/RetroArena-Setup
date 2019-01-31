@@ -33,6 +33,10 @@ function install_lr-vice() {
     )
 }
 
+function install_bin_lr-vice() {
+    downloadAndExtract "$__gitbins_url/lr-vice.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-vice() {
     mkRomDir "c64"
     ensureSystemretroconfig "c64"

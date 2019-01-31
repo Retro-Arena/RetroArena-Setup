@@ -1,0 +1,713 @@
+3D Golf (Europe);c64
+3-D Golf Simulation (Japan) (Alt 1);msx
+3-D Golf Simulation (Japan) (High Speed);msx
+3-D Golf Simulation (Japan);msx
+Abrasco Golf (Europe);c64
+Actua Golf 3 (Europe);psx
+Actua Golf 3 (Europe);psp
+Amsgolf (Europe);amstradcpc
+ar_ldrba;arcade
+ar_ldrba;mame-advmame
+ar_ldrba;mame-libretro
+ar_ldrba;mame-mame4all
+ar_ldrb;arcade
+ar_ldrbb;arcade
+ar_ldrbb;mame-advmame
+ar_ldrbb;mame-libretro
+ar_ldrbb;mame-mame4all
+ar_ldrb;mame-advmame
+ar_ldrb;mame-libretro
+ar_ldrb;mame-mame4all
+arnoldp;fba
+Awesome Golf (USA, Europe);atarilynx
+Bandai Golf - Challenge Pebble Beach (USA);nes
+battlyui;fba
+bigevglf;arcade
+bigevglfj;arcade
+bigevglfj;mame-advmame
+bigevglfj;mame-libretro
+bigevglfj;mame-mame4all
+bigevglf;mame-advmame
+bigevglf;mame-libretro
+bigevglf;mame-mame4all
+birdtry;arcade
+birdtry;mame-advmame
+birdtry;mame-libretro
+birdtry;mame-mame4all
+bking2;arcade
+bking2;mame-advmame
+bking2;mame-libretro
+bking2;mame-mame4all
+bking3;arcade
+bking3;mame-advmame
+bking3;mame-libretro
+bking3;mame-mame4all
+bking;arcade
+bking;mame-advmame
+bking;mame-libretro
+bking;mame-mame4all
+California Pro Golf (Europe);c64
+CBM 64 Golf (Europe);c64
+Challenge Golf (Europe);c64
+Champion Golf (Japan);sg-1000
+Championship Golf (Europe);amstradcpc
+Championship Golf (Europe);c64
+Championship Golf (Europe);zxspectrum
+chichi;fba
+compgolf;arcade
+compgolf;mame-advmame
+compgolf;mame-libretro
+compgolf;mame-mame4all
+compgolfo;arcade
+compgolfo;mame-advmame
+compgolfo;mame-libretro
+compgolfo;mame-mame4all
+Computer Golf (USA);videopac2
+countryc;arcade
+countryc;mame-advmame
+countryc;mame-libretro
+countryc;mame-mame4all
+cprogolf18;arcade
+cprogolf18;mame-advmame
+cprogolf18;mame-libretro
+cprogolf18;mame-mame4all
+cprogolf;arcade
+cprogolfj;arcade
+cprogolfj;mame-advmame
+cprogolfj;mame-libretro
+cprogolfj;mame-mame4all
+cprogolf;mame-advmame
+cprogolf;mame-libretro
+cprogolf;mame-mame4all
+Crazy Golf (Europe);amstradcpc
+Crazy Golf (Europe);c64
+Crazy Golf (Europe);zxspectrum
+crgolfa;arcade
+crgolfa;mame-advmame
+crgolfa;mame-libretro
+crgolfa;mame-mame4all
+crgolf;arcade
+crgolfb;arcade
+crgolfb;mame-advmame
+crgolfb;mame-libretro
+crgolfb;mame-mame4all
+crgolfbt;arcade
+crgolfbt;mame-advmame
+crgolfbt;mame-libretro
+crgolfbt;mame-mame4all
+crgolfc;arcade
+crgolfc;mame-advmame
+crgolfc;mame-libretro
+crgolfc;mame-mame4all
+crgolfhi;arcade
+crgolfhi;mame-advmame
+crgolfhi;mame-libretro
+crgolfhi;mame-mame4all
+crgolf;mame-advmame
+crgolf;mame-libretro
+crgolf;mame-mame4all
+CyberTiger (USA);n64
+CyberTiger (USA);psx
+CyberTiger (USA);psp
+dcclub;arcade
+dcclubfd;arcade
+dcclubfd;mame-advmame
+dcclubfd;mame-libretro
+dcclubfd;mame-mame4all
+dcclubj;arcade
+dcclubj;mame-advmame
+dcclubj;mame-libretro
+dcclubj;mame-mame4all
+dcclub;mame-advmame
+dcclub;mame-libretro
+dcclub;mame-mame4all
+eaglshot;arcade
+eaglshot;mame-advmame
+eaglshot;mame-libretro
+eaglshot;mame-mame4all
+Ernie Els Golf (Europe);gamegear
+ESPN Final Round Golf 2002 (USA);gba
+Family Computer Golf - Japan Course (Japan);fds
+Family Computer Golf - Special Course (Japan);fds
+Family Computer Golf Tournament - Japan Course (Japan);fds
+Family Computer Golf - U.S. Course (Japan);fds
+Final Round, The (USA);psx
+Final Round, The (USA);psp
+fitegolf;arcade
+fitegolf;mame-advmame
+fitegolf;mame-libretro
+fitegolf;mame-mame4all
+fitegolfu;arcade
+fitegolfu;mame-advmame
+fitegolfu;mame-libretro
+fitegolfu;mame-mame4all
+FOX Sports Golf '99 (USA);psx
+FOX Sports Golf '99 (USA);psp
+Fred Couples' Golf (USA);gamegear
+Ganbare! Golf Boys (Japan);pce-cd
+ganbgolf;fba
+glfgreat;arcade
+glfgreatj;arcade
+glfgreatj;mame-advmame
+glfgreatj;mame-libretro
+glfgreatj;mame-mame4all
+glfgreat;mame-advmame
+glfgreat;mame-libretro
+glfgreat;mame-mame4all
+Golf '92, The (Japan) (Translated En);famicom
+Golf (Abrasco) (Europe);zxspectrum
+Golfamania (Europe);mastersystem
+Golf Club - Birdie Rush (Japan) (Translated En);famicom
+Golf Construction Set (Europe);c64
+Golf (DK'Tronics) (Europe);zxspectrum
+Golf (Europe);amstradcpc
+Golf (Europe);c64
+Golf Game (Japan);msx
+Golf Grand Slam (USA);nes
+Golfing World (Europe);zxspectrum
+Golf (Japan);fds
+Golf (Lyversoft) (Europe);zxspectrum
+Golf Magazine 36 Great Holes Starring Fred Couples (Japan, USA);sega32x
+Golf Mania (USA);pspminis
+Golf's Best (Pinehurst #2 Course) (USA);c64
+Golf's Best (St Andrews) (USA);c64
+Golf - St. Andrews (Europe);c64
+Golf, The - Bishoujo Classic (Japan) (Unl);fds
+Golf Trophee (France);amstradcpc
+Golf (USA);atari2600
+Golf (USA);nes
+Golf (USA);virtualboy
+Golf (Virgin) (Europe);zxspectrum
+Golf (World);gb
+gpgolf;arcade
+gpgolf;mame-advmame
+gpgolf;mame-libretro
+gpgolf;mame-mame4all
+Great Golf (Japan);mastersystem
+Great Golf (World);mastersystem
+Greg Norman's Golf Power (USA);nes
+Greg Norman's Ultimate Golf - Shark Attack (Europe);c64
+gt2k;arcade
+gt2k;mame-advmame
+gt2k;mame-libretro
+gt2k;mame-mame4all
+gt2kp100;arcade
+gt2kp100;mame-advmame
+gt2kp100;mame-libretro
+gt2kp100;mame-mame4all
+gt2ks100;arcade
+gt2ks100;mame-advmame
+gt2ks100;mame-libretro
+gt2ks100;mame-mame4all
+gt2kt500;arcade
+gt2kt500;mame-advmame
+gt2kt500;mame-libretro
+gt2kt500;mame-mame4all
+gt3d;arcade
+gt3dl191;arcade
+gt3dl191;mame-advmame
+gt3dl191;mame-libretro
+gt3dl191;mame-mame4all
+gt3dl192;arcade
+gt3dl192;mame-advmame
+gt3dl192;mame-libretro
+gt3dl192;mame-mame4all
+gt3dl19;arcade
+gt3dl19;mame-advmame
+gt3dl19;mame-libretro
+gt3dl19;mame-mame4all
+gt3d;mame-advmame
+gt3d;mame-libretro
+gt3d;mame-mame4all
+gt3ds192;arcade
+gt3ds192;mame-advmame
+gt3ds192;mame-libretro
+gt3ds192;mame-mame4all
+gt3dt211;arcade
+gt3dt211;mame-advmame
+gt3dt211;mame-libretro
+gt3dt211;mame-mame4all
+gt3dt231;arcade
+gt3dt231;mame-advmame
+gt3dt231;mame-libretro
+gt3dt231;mame-mame4all
+gt3dv14;arcade
+gt3dv14;mame-advmame
+gt3dv14;mame-libretro
+gt3dv14;mame-mame4all
+gt3dv15;arcade
+gt3dv15;mame-advmame
+gt3dv15;mame-libretro
+gt3dv15;mame-mame4all
+gt3dv16;arcade
+gt3dv16;mame-advmame
+gt3dv16;mame-libretro
+gt3dv16;mame-mame4all
+gt3dv17;arcade
+gt3dv17;mame-advmame
+gt3dv17;mame-libretro
+gt3dv17;mame-mame4all
+gt3dv18;arcade
+gt3dv18;mame-advmame
+gt3dv18;mame-libretro
+gt3dv18;mame-mame4all
+gt97;arcade
+gt97;mame-advmame
+gt97;mame-libretro
+gt97;mame-mame4all
+gt97s121;arcade
+gt97s121;mame-advmame
+gt97s121;mame-libretro
+gt97s121;mame-mame4all
+gt97t240;arcade
+gt97t240;mame-advmame
+gt97t240;mame-libretro
+gt97t240;mame-mame4all
+gt97t243;arcade
+gt97t243;mame-advmame
+gt97t243;mame-libretro
+gt97t243;mame-mame4all
+gt97v120;arcade
+gt97v120;mame-advmame
+gt97v120;mame-libretro
+gt97v120;mame-mame4all
+gt97v121;arcade
+gt97v121;mame-advmame
+gt97v121;mame-libretro
+gt97v121;mame-mame4all
+gt97v122;arcade
+gt97v122;mame-advmame
+gt97v122;mame-libretro
+gt97v122;mame-mame4all
+gt98;arcade
+gt98;mame-advmame
+gt98;mame-libretro
+gt98;mame-mame4all
+gt98s100;arcade
+gt98s100;mame-advmame
+gt98s100;mame-libretro
+gt98s100;mame-mame4all
+gt98t303;arcade
+gt98t303;mame-advmame
+gt98t303;mame-libretro
+gt98t303;mame-mame4all
+gt98v100;arcade
+gt98v100;mame-advmame
+gt98v100;mame-libretro
+gt98v100;mame-mame4all
+gt99;arcade
+gt99;mame-advmame
+gt99;mame-libretro
+gt99;mame-mame4all
+gt99s100;arcade
+gt99s100;mame-advmame
+gt99s100;mame-libretro
+gt99s100;mame-mame4all
+gt99t400;arcade
+gt99t400;mame-advmame
+gt99t400;mame-libretro
+gt99t400;mame-mame4all
+gtclassc;arcade
+gtclassc;mame-advmame
+gtclassc;mame-libretro
+gtclassc;mame-mame4all
+gtclasscp;arcade
+gtclasscp;mame-advmame
+gtclasscp;mame-libretro
+gtclasscp;mame-mame4all
+gtclasscs;arcade
+gtclasscs;mame-advmame
+gtclasscs;mame-libretro
+gtclasscs;mame-mame4all
+gtdiamond;arcade
+gtdiamond;mame-advmame
+gtdiamond;mame-libretro
+gtdiamond;mame-mame4all
+gtg2;arcade
+gtg2j;arcade
+gtg2j;mame-advmame
+gtg2j;mame-libretro
+gtg2j;mame-mame4all
+gtg2;mame-advmame
+gtg2;mame-libretro
+gtg2;mame-mame4all
+gtg2t;arcade
+gtg2t;mame-advmame
+gtg2t;mame-libretro
+gtg2t;mame-mame4all
+gtg;arcade
+gtg;mame-advmame
+gtg;mame-libretro
+gtg;mame-mame4all
+gtgt1;arcade
+gtgt1;mame-advmame
+gtgt1;mame-libretro
+gtgt1;mame-mame4all
+gtgt;arcade
+gtgt;mame-advmame
+gtgt;mame-libretro
+gtgt;mame-mame4all
+gtroyal;arcade
+gtroyal;mame-advmame
+gtroyal;mame-libretro
+gtroyal;mame-mame4all
+gtsupreme;arcade
+gtsupreme;mame-advmame
+gtsupreme;mame-libretro
+gtsupreme;mame-mame4all
+HAL's Hole in One Golf (USA);snes
+Handicap Golf (Europe);amstradcpc
+Handicap Golf (Europe);c64
+Handicap Golf (Europe);zxspectrum
+Harukanaru Augusta (Japan);sfc
+Hole-in-One (Europe);c64
+Hole in One Golf (USA);c64
+Hole In One Golf (USA);gbc
+Hot Shots Golf 2 (USA);psx
+Hot Shots Golf 2 (USA);psp
+Hot Shots Golf (USA);psx
+Hot Shots Golf (USA);psp
+Hudson 3D Golf (Japan) (Alt 1);msx
+Hudson 3D Golf (Japan);msx
+Irem Skins Game, The (USA);snes
+Jack Nicklaus Golf (Europe) (Disk 1);amstradcpc
+Jack Nicklaus Golf (Europe) (Disk 2);amstradcpc
+Jack Nicklaus Golf (Europe) (Disk 3);amstradcpc
+Jack Nicklaus Golf (Europe) (Disk 4);amstradcpc
+Jack Nicklaus Golf (USA, Europe);gb
+Jack Nicklaus Golf (USA);snes
+Jack Nicklaus' Greatest 18 Holes of Major Championship Golf (Japan);pce-cd
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 1 Side A);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 1 Side B);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 2 Side A);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 2 Side B);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 3 Side A);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 3 Side B);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 4 Side A);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 4 Side B);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 5 Side A);c64
+Jack Nicklaus Greatest 18 Holes of Major Championship Golf (USA) (Disk 5 Side B);c64
+Jack Nicklaus' Greatest 18 Holes of Major Championship Golf (USA);nes
+Jack Nicklaus' Turbo Golf (USA);tg16
+Jack Nicklaus Turbo Golf (USA);tg-cd
+Jumbo Ozaki no Hole in One Professional (Japan);famicom
+Konami Open Golf (Europe);psx
+Konami Open Golf (Europe);psp
+Konami's Golf (Europe);amstradcpc
+Konami's Golf (Europe);zxspectrum
+Konami's Golf (Japan) (Alt 1);msx
+Konami's Golf (Japan) (Alt 2);msx
+Konami's Golf (Japan);msx
+Krazy Ace - Miniature Golf (USA, Europe);atarilynx
+ladygolf;arcade
+ladygolfe;arcade
+ladygolfe;mame-advmame
+ladygolfe;mame-libretro
+ladygolfe;mame-mame4all
+ladygolf;mame-advmame
+ladygolf;mame-libretro
+ladygolf;mame-mame4all
+La Guerra del Golfo (Spain) (Unl);nes
+Leader Board (Europe);amstradcpc
+Leaderboard (Europe);zxspectrum
+Leaderboard Executive (USA);c64
+Leaderboard Golf (USA);c64
+Leaderboard Tournament (Europe);amstradcpc
+Leaderboard Tournament (Europe);zxspectrum
+Lee Trevino's Fighting Golf (USA);nes
+Let's Golf! (USA);pspminis
+Links - The Challenge of Golf (USA);segacd
+majtitl2;arcade
+majtitl2j;arcade
+majtitl2j;mame-advmame
+majtitl2j;mame-libretro
+majtitl2j;mame-mame4all
+majtitl2;mame-advmame
+majtitl2;mame-libretro
+majtitl2;mame-mame4all
+majtitle;arcade
+majtitlej;arcade
+majtitlej;mame-advmame
+majtitlej;mame-libretro
+majtitlej;mame-mame4all
+majtitle;mame-advmame
+majtitle;mame-libretro
+majtitle;mame-mame4all
+Mario Golf - Advance Tour (USA);gba
+Mario Golf (USA);n64
+Mario Golf (USA);gbc
+Masters - Harukanaru Augusta 2 (Japan);sfc
+Masters New - Harukanaru Augusta 3 (Japan);sfc
+Maxi Golf (USA) (Disk 1);c64
+Maxi Golf (USA) (Disk 2) (Elm Tree Meadows);c64
+Mean 18 Ultimate Golf (USA);atari7800
+Mecarobot Golf (USA);snes
+mgolf;arcade
+mgolf;mame-advmame
+mgolf;mame-libretro
+mgolf;mame-mame4all
+Miniature Golf (USA);atari2600
+minigolf2;arcade
+minigolf2;mame-advmame
+minigolf2;mame-libretro
+minigolf2;mame-mame4all
+minigolf;arcade
+Mini Golf (Japan) (Alt 1);msx
+Mini Golf (Japan);msx
+minigolf;mame-advmame
+minigolf;mame-libretro
+minigolf;mame-mame4all
+Mini Golf (USA);c64
+Mini Putt (Japan);gb
+Mini Putt (Japan) (Translated En);famicom
+Mini-Putt (Side A) (Europe);zxspectrum
+Mini-Putt (Side B) (Europe);zxspectrum
+Mini Putt (USA);c64
+mjegolf;arcade
+mjegolf;mame-advmame
+mjegolf;mame-libretro
+mjegolf;mame-mame4all
+mongolnw;arcade
+mongolnw;mame-advmame
+mongolnw;mame-libretro
+mongolnw;mame-mame4all
+mt_ggolf;arcade
+mt_ggolf;mame-advmame
+mt_ggolf;mame-libretro
+mt_ggolf;mame-mame4all
+mt_tgolf;arcade
+mt_tgolf;mame-advmame
+mt_tgolf;mame-libretro
+mt_tgolf;mame-mame4all
+My Golf (Australia);atari2600
+n3dgaugu;fba
+n3dgdevi;fba
+n3dgpebb;fba
+n3dgwaia;fba
+Namco Classic (Japan);gb
+Neo Turf Masters (World) (En,Ja);ngpc
+NES Open Tournament Golf (USA);nes
+New Birkdale (Europe);zxspectrum
+Nice de Shot (Japan);sfc
+Nice On (Japan);wonderswan
+Nick Faldo Plays the Open (Europe);amstradcpc
+Nick Faldo Plays the Open (Europe);c64
+Nick Faldo Plays the Open (Europe);zxspectrum
+Nick Faldo's Championship Golf (Europe);c64
+nicklaus;fba
+Ninja Golf (USA);atari7800
+nss_skin;arcade
+nss_skin;mame-advmame
+nss_skin;mame-libretro
+nss_skin;mame-mame4all
+Okamoto Ayako no Match Play Golf (Japan);sg-1000
+Okamoto Ayako to Match Play Golf (Japan) (Translated En);sfc
+Open, The (Side A) (Europe);zxspectrum
+Open, The (Side B) (Europe);zxspectrum
+Original Frisbee Disc Sports - Ultimate & Golf (USA);nds
+pblbeach;arcade
+pblbeach;mame-advmame
+pblbeach;mame-libretro
+pblbeach;mame-mame4all
+pc_golf;arcade
+pc_golf;mame-advmame
+pc_golf;mame-libretro
+pc_golf;mame-mame4all
+pc_moglf;arcade
+pc_moglf;mame-advmame
+pc_moglf;mame-libretro
+pc_moglf;mame-mame4all
+Pebble Beach no Hatou New - Tournament Edition (Japan);sfc
+pebble;fba
+pebbleu;fba
+Peter Jacobsen's Golden Tee Golf (USA);psx
+Peter Jacobsen's Golden Tee Golf (USA);psp
+pga2a;fba
+pga2;fba
+pga2j;fba
+pga3;fba
+pgaa;fba
+PGA European Tour Golf (Europe);psx
+PGA European Tour Golf (Europe);psp
+PGA European Tour (USA, Europe);gb
+PGA European Tour (USA);n64
+PGA European Tour (USA);snes
+pga;fba
+PGA Tour '96 (USA, Europe);gb
+PGA Tour 96 (USA, Europe);gamegear
+PGA Tour 96 (USA);psx
+PGA Tour 96 (USA);psp
+PGA Tour 96 (USA);snes
+PGA Tour 97 (USA);psx
+PGA Tour 97 (USA);psp
+PGA Tour 98 (USA);psx
+PGA Tour 98 (USA);psp
+PGA Tour Golf (Europe);mastersystem
+PGA Tour Golf II (USA, Europe);gamegear
+PGA Tour Golf (USA);gamegear
+PGA Tour Golf (USA);snes
+pgolf;fba
+Play Golf - Pineview Southern Golf Tradition (USA);c64
+Play Golf (Ye Olde Course) (USA);c64
+Pocket Golf (Japan);gb
+Power Golf (Japan);pce-cd
+Power Golf (USA);tg16
+Pro 18 - World Tour Golf (USA);psx
+Pro 18 - World Tour Golf (USA);psp
+Professional Tour Golf (USA) (Side A);c64
+Professional Tour Golf (USA) (Side B);c64
+progolf;arcade
+Pro Golf (Atlantis Software) (Europe);zxspectrum
+Pro Golfer Saru - Kage no Tournament (Japan);fds
+Progolf (Europe);c64
+Pro Golf (Hornby Software) (Side A) (Europe);zxspectrum
+Pro Golf (Hornby Software) (Side B) (Europe);zxspectrum
+Pro Golf II (Europe);zxspectrum
+progolf;mame-advmame
+progolf;mame-libretro
+progolf;mame-mame4all
+Pro Golf - Pebble Beach (Europe);amstradcpc
+Pro Golf Simulator (Europe);amstradcpc
+Pro Golf Simulator (Europe);zxspectrum
+Pro Golf - Sunningdale (Europe);amstradcpc
+Pro Golf (USA);c64
+prosporta;arcade
+prosporta;mame-advmame
+prosporta;mame-libretro
+prosporta;mame-mame4all
+prosport;arcade
+prosport;mame-advmame
+prosport;mame-libretro
+prosport;mame-mame4all
+putter;fba
+puttergnk;fba
+Putter Golf (USA);psx
+Putter Golf (USA);psp
+Putt & Putter (Europe);mastersystem
+Putt & Putter (USA, Europe);gamegear
+Putt Putt Golf (Japan);fds
+Queen's Golf (Japan) (Alt 1);msx
+Queen's Golf (Japan) (Alt 2);msx
+Queen's Golf (Japan);msx
+Rescate en el Golfo (Europe);amstradcpc
+Rescate En El Golfo (Side A) (Spain);zxspectrum
+Rescate En El Golfo (Side B) (Spain);zxspectrum
+Royal Birkdale - Championship Golf (Europe);zxspectrum
+Royal Birkdale (Europe);zxspectrum
+Scratch Golf (USA);gamegear
+Sega World Tournament Golf (Europe);mastersystem
+sgmast;arcade
+sgmastc;arcade
+sgmastc;mame-advmame
+sgmastc;mame-libretro
+sgmastc;mame-mame4all
+sgmastj;arcade
+sgmastj;mame-advmame
+sgmastj;mame-libretro
+sgmastj;mame-mame4all
+sgmast;mame-advmame
+sgmast;mame-libretro
+sgmast;mame-mame4all
+Simpsons Itchy & Scratchy, The - Miniature Golf Madness (USA, Europe);gb
+SimulGolf (Italy);c64
+skingame2;arcade
+skingame2;mame-advmame
+skingame2;mame-libretro
+skingame2;mame-mame4all
+skingame;arcade
+skingame;mame-advmame
+skingame;mame-libretro
+skingame;mame-mame4all
+smgolf;arcade
+smgolfb;arcade
+smgolfb;mame-advmame
+smgolfb;mame-libretro
+smgolfb;mame-mame4all
+smgolfj;arcade
+smgolfj;mame-advmame
+smgolfj;mame-libretro
+smgolfj;mame-mame4all
+smgolf;mame-advmame
+smgolf;mame-libretro
+smgolf;mame-mame4all
+Spectrum Golf (Europe);zxspectrum
+speglsht;arcade
+speglsht;mame-advmame
+speglsht;mame-libretro
+speglsht;mame-mame4all
+Sports Illustrated - Golf Classic (USA);gb
+St. Andrews - Eikou to Rekishi no Old Course (Japan);sfc
+St. Andrews Golf (Europe);zxspectrum
+Super Albatross (Japan);pce-cd
+Super Golf (Japan);msx
+Super Golf (Japan);gamegear
+Super Naxat Open - Golf de Shoubu da Dorabocchan (Japan);sfc
+suprgolf;arcade
+suprgolf;mame-advmame
+suprgolf;mame-libretro
+suprgolf;mame-mame4all
+Tecmo World Golf - Japan (USA);psx
+Tecmo World Golf - Japan (USA);psp
+teedoff;arcade
+teedoff;mame-advmame
+teedoff;mame-libretro
+teedoff;mame-mame4all
+Tee Off (USA);dreamcast
+Tiger Woods 99 PGA Tour Golf (USA);psx
+Tiger Woods 99 PGA Tour Golf (USA);psp
+Tiger Woods PGA Tour 2000 (USA, Europe);gbc
+Tiger Woods PGA Tour 2000 (USA);psx
+Tiger Woods PGA Tour 2000 (USA);psp
+Tiger Woods PGA Tour 2004 (USA, Europe);gba
+Tiger Woods PGA Tour Golf (USA, Europe);gba
+Tiger Woods PGA Tour Golf (USA);psx
+Tiger Woods PGA Tour Golf (USA);psp
+topgolf2;fba
+topgolf;fba
+Tournament Golf (USA) (Side A) (North Course);c64
+Tournament Golf (USA) (Side B) (South Course);c64
+tpgolf;arcade
+tpgolf;fba
+tpgolf;mame-advmame
+tpgolf;mame-libretro
+tpgolf;mame-mame4all
+tpgolf;neogeo
+Troon (Europe);zxspectrum
+True Golf Classics - Pebble Beach Golf Links (USA);snes
+True Golf Classics - Waialae Country Club (USA);snes
+True Golf Classics - Wicked 18 (USA);snes
+True Swing Golf (USA) (En,Ja,Fr,De,Es,It);nds
+turfmast;arcade
+turfmast;fba
+turfmast;mame-advmame
+turfmast;mame-libretro
+turfmast;mame-mame4all
+turfmast;neogeo
+Ultra Golf (USA);gb
+usclssic;arcade
+usclssic;mame-advmame
+usclssic;mame-libretro
+usclssic;mame-mame4all
+Virtual Golf (Europe);psx
+Virtual Golf (Europe);psp
+VR Golf '97 (USA);psx
+VR Golf '97 (USA);psp
+Waialae Country Club - True Golf Classics (USA) (Rev A);n64
+wclead;fba
+wcleadu;fba
+Wentworth West and East (Side A) (Europe);zxspectrum
+Wentworth West and East (Side B) (Europe);zxspectrum
+Wonder Classic (Japan);wonderswancolor
+World Class Leadboard (Europe) (Disk 1);amstradcpc
+World Class Leadboard (Europe) (Disk 2);amstradcpc
+World Class Leader Board (Europe);mastersystem
+World Class Leaderboard (Europe);zxspectrum
+World Class Leaderboard (USA) (Side A);c64
+World Class Leaderboard (USA) (Side B);c64
+World Cup Golf - Professional Edition (USA);psx
+World Cup Golf - Professional Edition (USA);psp
+World Masters Golf (Europe);snes
+World Tour Golf (USA) (Side A);c64
+World Tour Golf (USA) (Side B);c64
+zanygolf1;fba
+zanygolf;fba

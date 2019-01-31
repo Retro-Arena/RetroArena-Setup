@@ -14,7 +14,6 @@ rp_module_desc="C64 emulator VICE"
 rp_module_help="ROM Extensions: .crt .d64 .g64 .prg .t64 .tap .x64 .zip .vsf\n\nCopy your Commodore 64 games to $romdir/c64"
 rp_module_licence="GPL2 http://svn.code.sf.net/p/vice-emu/code/trunk/vice/COPYING"
 rp_module_section="sa"
-rp_module_flags=""
 
 function depends_vice() {
     local depends=(libsdl2-dev libmpg123-dev libpng-dev zlib1g-dev libasound2-dev libvorbis-dev libflac-dev libpcap-dev automake checkinstall bison flex subversion libjpeg-dev portaudio19-dev texinfo xa65)
@@ -37,6 +36,10 @@ function build_vice() {
 
 function install_vice() {
     make install
+}
+
+function install_bin_vice() {
+    downloadAndExtract "$__gitbins_url/vice.tar.gz" "$md_inst" 1
 }
 
 function configure_vice() {
@@ -70,23 +73,26 @@ _EOF_
 
     chmod +x "$md_inst/bin/vice.sh"
 
-    mkRomDir "c64"
-
+    local system
+    for system in c64 c128 pet plus4 vic20 ; do
+        mkRomDir "$system"
+        addSystem "$system"
+    done
+    
     addEmulator 1 "$md_id-x64" "c64" "$md_inst/bin/vice.sh x64 %ROM%"
     addEmulator 0 "$md_id-x64sc" "c64" "$md_inst/bin/vice.sh x64sc %ROM%"
-    addEmulator 0 "$md_id-x128" "c64" "$md_inst/bin/vice.sh x128 %ROM%"
-    addEmulator 0 "$md_id-xpet" "c64" "$md_inst/bin/vice.sh xpet %ROM%"
-    addEmulator 0 "$md_id-xplus4" "c64" "$md_inst/bin/vice.sh xplus4 %ROM%"
-    addEmulator 0 "$md_id-xvic" "c64" "$md_inst/bin/vice.sh xvic %ROM%"
-    addEmulator 0 "$md_id-xvic-cart" "c64" "$md_inst/bin/vice.sh xvic %ROM% -cartgeneric"
-    addSystem "c64"
-
+    addEmulator 1 "$md_id-x128" "c128" "$md_inst/bin/vice.sh x128 %ROM%"
+    addEmulator 1 "$md_id-xpet" "pet" "$md_inst/bin/vice.sh xpet %ROM%"
+    addEmulator 1 "$md_id-xplus4" "plus4" "$md_inst/bin/vice.sh xplus4 %ROM%"    
+    addEmulator 1 "$md_id-xvic" "vic20" "$md_inst/bin/vice.sh xvic %ROM%"
+    addEmulator 0 "$md_id-xvic-cart" "vic20" "$md_inst/bin/vice.sh xvic %ROM% -cartgeneric"
+    
     [[ "$md_mode" == "remove" ]] && return
-
+    
     # copy configs and symlink the old and new config folders to $md_conf_root/c64/
     moveConfigDir "$home/.vice" "$md_conf_root/c64"
     moveConfigDir "$home/.config/vice" "$md_conf_root/c64"
-
+    
     local config="$(mktemp)"
     echo "[C64]" > "$config"
     iniConfig "=" "" "$config"
@@ -103,8 +109,11 @@ _EOF_
     else
         iniSet "VICIIFullscreen" "1"
     fi
+    
+    for system in c64 c128 pet plus4 vic20; do
+        copyDefaultConfig "$config" "$md_conf_root/$system/sdl-vicerc"
+    done   
 
-    copyDefaultConfig "$config" "$md_conf_root/c64/sdl-vicerc"
     rm "$config"
 
     if ! isPlatform "x11"; then
@@ -116,5 +125,4 @@ _EOF_
         iniSet "SDLWindowWidth" "384"
         iniSet "SDLWindowHeight" "272"
     fi
-
 }

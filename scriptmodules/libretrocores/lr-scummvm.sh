@@ -41,6 +41,10 @@ function install_lr-scummvm() {
     )
 }
 
+function install_bin_lr-scummvm() {
+    downloadAndExtract "$__gitbins_url/lr-scummvm.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-scummvm() {
     addEmulator 0 "$md_id" "scummvm" "$md_inst/romdir-launcher.sh %ROM%"
     addSystem "scummvm"

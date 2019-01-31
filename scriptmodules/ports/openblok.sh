@@ -33,6 +33,10 @@ function install_openblok() {
     make install/strip
 }
 
+function install_bin_openblok() {
+    downloadAndExtract "$__gitbins_url/openblok.tar.gz" "$md_inst" 1
+}
+
 function configure_openblok() {
     moveConfigDir "$home/.local/share/openblok" "$md_conf_root/openblok"
     addPort "$md_id" "openblok" "OpenBlok" "$md_inst/openblok"

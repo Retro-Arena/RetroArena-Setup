@@ -15,7 +15,7 @@ rp_module_section="core"
 
 function _update_hook_settingsmenu() {
     # to show as installed when upgrading to retroarena-setup 4.x
-    if ! rp_isInstalled "$md_idx" && [[ -f "$home/.emulationstation/gamelists/retroarena/gamelist.xml" ]]; then
+    if ! rp_isInstalled "$md_idx" && [[ -f "$configdir/all/emulationstation/gamelists/retroarena/gamelist.xml" ]]; then
         mkdir -p "$md_inst"
         # to stop older scripts removing when launching from retroarena menu in ES due to not using exec or exiting after running retroarena-setup from this module
         touch "$md_inst/.retroarena"
@@ -24,7 +24,6 @@ function _update_hook_settingsmenu() {
 
 function depends_settingsmenu() {
     getDepends mc
-	
 }
 
 function install_bin_settingsmenu() {
@@ -39,7 +38,7 @@ function configure_settingsmenu()
 {
     [[ "$md_mode" == "remove" ]] && return
 
-    local rpdir="$home/RetroArena/settingsmenu"
+    local rpdir="$datadir/settingsmenu"
     mkdir -p "$rpdir"
     cp -r "$md_data/icons" "$rpdir/"
     chown -R $user:$user "$rpdir"
@@ -48,84 +47,135 @@ function configure_settingsmenu()
 
     # add the gameslist / icons
     local files=(
-        'bezelprojectlaunch'
-        'bgmtoggle'
-        'bluetooth'
-        'caseconfig'
-        'casetheme'
-        'configedit'
-        'controlreset'
-        'esthemes'
-        'fancontrol'
-        'hurstythemes'
-        'filemanager'
-        'odroidconfig'
-        'retroarch'
-        'rpsetup'
-        'runcommand'
-        'showip'
-        'softreboot'
-        'splashscreen'
-        'systeminfo'
-        'wifi'
+        "bezelproject"
+        "bgmtoggle"
+        "bluetooth"
+        "caseconfig"
+        "configedit"
+        "controlreset"
+        "escollections"
+        "esgamelist"
+        "esthemes"
+        "fancontrol"
+        "filemanager"
+        "fruitbox"
+        "hurstythemes"
+        "launchingvideos"
+        "odroidconfig"
+        "removemedia"
+        "retroarch"
+        "rpsetup"
+        "runcommand"
+        "showip"
+        "smartkiosk"
+        "softreboot"
+        "splashscreen"
+        "systeminfo"
+        "wifi"
     )
 
     local names=(
-        'Display: Bezel Project'
-        'System: BGM Toggle'
-        'System: Bluetooth'
-        'Display: Case Config for OGST'
-        'Display: Case Themes for OGST'
-        'General: Configuration Editor'
-        'System: Controller Reset'
-        'Display: ES Themes'
-        'System: Fan Control'
-        'Display: HurstyS ES Themes'
-        'System: File Manager'
-        'System: Odroid-Config'
-        'General: Retroarch'
-        'General: RetroArena-Setup'
-        'System: Run Command Configuration'
-        'System: Show IP'
-        'System: Soft Reboot'
-        'Display: Splash Screens'
-        'System: System Info Utility'
-        'System: Wi-Fi'
+        "Media: Bezel Project"
+        "Sound: BGM Toggle"
+        "Network: Bluetooth"
+        "Media: Case Config for OGST"
+        "System: Configuration Editor"
+        "System: Controller Reset"
+        "Media: ES Collection List Generator"
+        "Media: ES Gamelist Cleanup"
+        "Media: ES Themes"
+        "System: Fan Control"
+        "System: File Manager"
+        "Media: Jukebox Config"
+        "Media: Hursty's ES Themes"
+        "Media: Launching Videos"
+        "System: Odroid-Config"
+        "Media: Remove Media"
+        "System: Retroarch"
+        "System: RetroArena-Setup"
+        "System: Runcommand Config"
+        "Network: Show IP"
+        "System: Smart Kiosk"
+        "System: Soft Reboot"
+        "Media: Splash Screens"
+        "System: System Info Utility"
+        "Network: Wi-Fi"
     )
-
+    
     local descs=(
-        'Downloader for RetroArach system bezel packs to be used for various systems'
-        'Enable or disable the background music feature.'
-        'Register and connect to bluetooth devices. Unregister and remove devices, and display registered and connected devices.'
-        'Case image selector for OGST - choose the type of image displayed upon game launch such as console system, boxart, cartart, snap, wheel, screenshot, or marquee.'
-        'Case theme selector for OGST - choose different theme packs when Console System is selected in Case Config.'
-        'Change common RetroArch options, and manually edit RetroArch configs, global configs, and non-RetroArch configs.'
-        'Reset controller configurations to factory default.
+        "Downloader for RetroArach system bezel packs to be used for various systems"
+        "Enable or disable the background music feature."
+        "Register and connect to bluetooth devices. Unregister and remove devices, and display registered and connected devices."
+        "Install themes for the OGST Case when 'Console System' is selected. In addition, upon game launch, choose different types of scraped images displayed such as boxart, cartart, snap, wheel, screenshot, marquee, or console system (default). There is also an option to completely disable the display."
+        "Change common RetroArch options, and manually edit RetroArch configs, global configs, and non-RetroArch configs."
+        "Reset controller configurations to factory default.
         
-NOTE: This will cause your system to REBOOT.'
-        'Install, uninstall, or update EmulationStation themes.'
-        'Change the fan settings to control cooling and fan noise.'
-        'Install, uninstall, or update HurstyS ES themes.'
-        'Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.
+NOTE: This will cause your system to REBOOT."
+        "Add or update the custom collection gamelist that will be used to show games in the custom collections menu items.
+
+NOTE: This utility only works with rom files using the No-Intro naming convention like Emumovies or Hyperspin."
+        "Perform a cleanup in your EmulationStation 'gamelist.xml' file. The cleanup utility will only work on 'gamelist.xml' files located within the roms folder also.
+
+NOTE: Always make a backup copy of your 'gamelist.xml' and media files before making changes to your system."
+        "Install, uninstall, or update EmulationStation themes."
+        "Change the fan settings to control cooling and fan noise."
+        "Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.
         
-NOTE: Requires a keyboard to be connected.'
-        'Expand filesystem, configure network, boot, localisation, SSH, etc.
+NOTE: Requires a keyboard to be connected."
+        "Configure the default skin and gamepad for Fruitbox jukebox."
+        "Install, uninstall, or update Hursty's ES themes. Also, enable or disable the Theme Randomizer on boot option."
+        "Enable, disable, or update Launching Videos, which plays a video instead of an image during game launch."
+        "Expand filesystem, configure network, boot, localisation, SSH, etc.
         
-NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!'
-        'Launches the RetroArch GUI so you can change RetroArch options.
+NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
+        "Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system where there is not a matching game for it. If you keep your media for MAME or Final Burn Alpha in the 'roms/arcade' folder, there is a special choice just for that.
+
+NOTE: Always make a backup copy of your SD card and your roms and media files before making changes to your system."
+        "Launches the RetroArch GUI so you can change RetroArch options.
         
-NOTE: Changes will not be saved unless you have enabled the "Save Configuration On Exit" option.'
-        'Update Setup Script, install/uninstall Libretro and standalone emulators, ports, drivers, scrapers, and configurations.'
-        'Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration.'
-        'Displays your current IP address, as well as other information provided by the command, "ip addr show."'
-        'Perform a soft reboot to recover local keyboard function if not functional.
+NOTE: Changes will not be saved unless you have enabled the 'Save Configuration On Exit' option."
+        "Update Setup Script, install/uninstall Libretro and standalone emulators, ports, drivers, scrapers, and configurations."
+        "Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration."
+        "Displays your current IP address, as well as other information provided by the command, 'ip addr show.'"
+        "Enables Kiosk mode for RetroArch and EmulationStation. It also disables the Launch Menu. Choose to enable or disable in one setting.
         
-NOTE: Typically only needed after exit from PSP games and there is a need to access the terminal by exit from EmulationStation.'
-        'Enable or disable the splashscreen on boot. Choose a splashscreen, download new splashscreens, and return splashscreen to default.'
-        'View your CPU temps, IP connectivity, and storage to include external storage addons.'
-        'Connect to a wireless network.
+NOTE: This will cause your system to REBOOT."
+        "Perform a soft reboot to recover local keyboard function if not functional.
         
-NOTE: Requires a keyboard to be connected.'
+NOTE: Typically only needed after exit from PSP games and there is a need to access the terminal by exit from EmulationStation."
+        "Enable or disable the splashscreen on boot. Choose a splashscreen, download new splashscreens, and return splashscreen to default."
+        "View your CPU temps, IP connectivity, and storage to include external storage addons."
+        "Connect to a wireless network.
+        
+NOTE: Requires a keyboard to be connected."
+    )
+    
+    local hiddens=(
+        "true"
+        "false"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "true"
+        "false"
+        "true"
+        "true"
+        "true"
+        "true"
     )
 
     setESSystem "RetroArena" "retroarena" "$rpdir" ".rp .sh" "sudo $scriptdir/retroarena_packages.sh settingsmenu launch %ROM% </dev/tty >/dev/tty" "" "retroarena"
@@ -134,6 +184,7 @@ NOTE: Requires a keyboard to be connected.'
     local name
     local desc
     local image
+    local hidden
     local i
     for i in "${!files[@]}"; do
         case "${files[i]}" in
@@ -147,20 +198,21 @@ NOTE: Requires a keyboard to be connected.'
         file="${files[i]}"
         name="${names[i]}"
         desc="${descs[i]}"
-        image="$home/RetroArena/settingsmenu/icons/${files[i]}.png"
+        image="$datadir/settingsmenu/icons/${files[i]}.png"
+        hidden="${hiddens[i]}"
 
         touch "$rpdir/$file.rp"
 
         local function
         for function in $(compgen -A function _add_rom_); do
-            "$function" "retroarena" "RetroArena" "$file.rp" "$name" "$desc" "$image"
+            "$function" "retroarena" "RetroArena" "$file.rp" "$name" "$desc" "$image" "$hidden"
         done
     done
 }
 
 function remove_settingsmenu() {
-    rm -rf "$home/RetroArena/settingsmenu"
-    rm -rf "$home/.emulationstation/gamelists/retroarena"
+    rm -rf "$datadir/settingsmenu"
+    rm -rf "$configdir/all/emulationstation/gamelists/retroarena"
     delSystem retroarena
 }
 
@@ -201,7 +253,7 @@ function launch_settingsmenu() {
             fi
             ;;
         *.sh)
-            cd "$home/RetroArena/settingsmenu"
+            cd "$datadir/settingsmenu"
             sudo -u "$user" bash "$command"
             ;;
     esac

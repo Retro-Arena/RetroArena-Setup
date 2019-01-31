@@ -1,0 +1,15 @@
+<gameList>
+  <game>
+    <path>./kodi.sh</path>
+    <name>Kodi Media Center</name>
+    <desc>Kodi is a free media player that is designed to look great on your big screen TV but is just as home on a small screen.
+
+NOTE: Do not set two controller profiles for the same controller as it will become unstable and may crash.
+
+NOTE: Local and Network LAN based streaming was successfully tested however plugins have not been tested. The only current supported version of Kodi for the XU4 to be stable is 17.3 Krypton. Be wary of this. TheRA is not responsible for any support. The installation comes from the Hard Kernel source therefore it is suggested you seek assistance at the Hard Kernel forums.
+
+NOTE: Due to issues with how EXT storage is accessed by Kodi all exit options have been removed from the default skin. Changing skins is at the user's discretion and TheRA will not be responsible to troubleshoot issues that may arise. Perform skin changes at your own risk.</desc>
+    <image>./boxart/kodi.png</image>
+    <video>./snap/kodi.mp4</video>
+  </game>
+</gameList>
