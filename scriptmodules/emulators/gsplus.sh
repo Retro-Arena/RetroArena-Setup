@@ -10,6 +10,7 @@
 #
 
 rp_module_id="gsplus"
+
 rp_module_desc="Apple 2 GS emulator GSplus a modern sdl2 fork of gsport (alpha)"
 rp_module_help="ROM Extensions: .gsp\n\nCopy your Apple 2 GS games to $romdir/apple2gs Note The Developer considers this to be an alpha build. Expect bugs Known issue: some games do not detect the emulated joystick"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/digarok/gsplus/master/LICENSE.txt"
@@ -40,5 +41,6 @@ function configure_gsplus() {
     mkRomDir "apple2gs"
     mkUserDir "$md_conf_root/apple2gs"
     addEmulator 1 "$md_id" "apple2gs" "$md_inst/gsplus -config %ROM%"
+
     addSystem "apple2gs"
 }
