@@ -15,13 +15,10 @@ rp_module_section="opt"
 
 function install_bin_retrohub() {
     local rhdir="$datadir/retrohub"
-    if [[ -e "$rhdir" ]]; then
-        rm -rf "$rhdir"
-    fi
-    gitPullOrClone "$rhdir" https://github.com/Retro-Arena/RetroArena-hub.git
-    rm -rf "$rhdir/.git"
-    rm -rf "$rhdir/.gitattributes"
+    gitPullOrClone "$rhdir" https://github.com/Retro-Arena/retrohub.git
     chown -R $user:$user "$rhdir"
+    
+    # enable on install
     enable_retrohub
 }
 
