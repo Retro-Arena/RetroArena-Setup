@@ -177,7 +177,7 @@ function gui_caseconfig() {
         local repo
         
         local options=()
-        options+=(1 "Case Image Selector")
+        options+=(C "Case Image Selector")
         
         local status=()
         local default
@@ -195,7 +195,7 @@ function gui_caseconfig() {
         default="$choice"
         [[ -z "$choice" ]] && break
         case "$choice" in
-            1)
+            C)
                 ogst_caseimage
                 ;;
             *)
@@ -203,7 +203,7 @@ function gui_caseconfig() {
                 repo="${theme[0]}"
                 theme="${theme[1]}"
                 if [[ ! "${status[choice]}" == "i" ]]; then
-                    rp_callModule casetheme install_theme "$theme" "$repo"
+                    rp_callModule caseconfig install_theme "$theme" "$repo"
                     printMsgs "dialog" "$repo/$theme case theme installed"
                 fi
                 ;;
