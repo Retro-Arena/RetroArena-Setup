@@ -52,7 +52,7 @@ RemainAfterExit=yes
 WantedBy=sysinit.target
 _EOF_
 
-    gitPullOrClone "$md_inst" https://github.com/Retro-Arena/RetroArena-splashscreens.git
+    gitPullOrClone "$md_inst" https://github.com/Retro-Arena/splashscreens.git
 
     cp "$md_data/asplashscreen.sh" "$md_inst"
 
