@@ -941,12 +941,12 @@ function show_launch() {
             IMG_PID=$!
             sleep "$IMAGE_DELAY"
         else
-            RALV="$HOME/RetroArena/launchingvideos"
+            LAUNCHVIDS="$HOME/RetroArena/launchingvideos"
             if [[ -e "$HOME/.config/launchingvideos" ]]; then
-                if [[ -e "$RALV/system-$SYSTEM.mp4" ]]; then
-                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$RALV/system-$SYSTEM.mp4" </dev/tty &>/dev/null
+                if [[ -e "$LAUNCHVIDS/system-$SYSTEM.mp4" ]]; then
+                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-$SYSTEM.mp4" </dev/tty &>/dev/null
                 else
-                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$RALV/system-default.mp4" </dev/tty &>/dev/null
+                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-default.mp4" </dev/tty &>/dev/null
                 fi
             else
                 fbi -1 -t "$IMAGE_DELAY" -noverbose -a "$image" </dev/tty &>/dev/null
