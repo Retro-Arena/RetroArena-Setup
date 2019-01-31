@@ -34,15 +34,16 @@ function install_lr-mesen() {
 function configure_lr-mesen() {
     mkRomDir "nes"
     mkRomDir "fds"
+    mkRomDir "famicom"
     ensureSystemretroconfig "nes"
     ensureSystemretroconfig "fds"
+    ensureSystemretroconfig "famicom"
 
-    local def=0
-    isPlatform "armv7l" && def=1
-
-    addEmulator "$def" "$md_id" "fds" "$md_inst/mesen_libretro.so"
-    addEmulator "$def" "$md_id" "nes" "$md_inst/mesen_libretro.so"
+    addEmulator 1 "$md_id" "fds" "$md_inst/mesen_libretro.so"
+    addEmulator 1 "$md_id" "famicom" "$md_inst/mesen_libretro.so"
+    addEmulator 0 "$md_id" "nes" "$md_inst/mesen_libretro.so"
     addSystem "nes"
     addSystem "fds"
+    addSystem "famicom"
 }
 
