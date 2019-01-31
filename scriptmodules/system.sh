@@ -39,7 +39,7 @@ function setup_env() {
     [[ "$__has_binaries" -eq 1 ]] && __binary_url="https://$__binary_host/binaries/$__os_codename/$__platform"
 
     __archive_url="https://files.retropie.org.uk/archives"
-    __gitbins_url="https://github.com/Retro-Arena/RetroArena-Bins/raw/master/odroid-xu4/"
+    __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/odroid-xu4/"
 
     # -pipe is faster but will use more memory - so let's only add it if we have more thans 256M free ram.
     [[ $__memory_phys -ge 512 ]] && __default_cflags+=" -pipe"
