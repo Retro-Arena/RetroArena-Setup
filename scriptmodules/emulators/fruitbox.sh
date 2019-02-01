@@ -52,8 +52,8 @@ function build_fruitbox() {
 
 function install_fruitbox() {
     cp "$md_build/fruitbox/build/fruitbox" "$md_inst/"
-	cp "$md_build/fruitbox/skins.txt" "$md_inst/"
-	cp -R "$md_build/fruitbox/skins" "$md_inst/"
+    cp "$md_build/fruitbox/skins.txt" "$md_inst/"
+    cp -R "$md_build/fruitbox/skins" "$md_inst/"
     mkRomDir "jukebox"
     cat > "$romdir/jukebox/+Start Fruitbox.sh" << _EOF_
 #!/bin/bash
