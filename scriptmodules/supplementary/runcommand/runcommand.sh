@@ -1084,6 +1084,8 @@ function ogst_play() {
         EMU_PROC="amiberry-xu4"
     elif [[ $EMULATOR == basilisk ]]; then
         EMU_PROC="BasiliskII"
+    elif [[ $EMULATOR == cavestory ]]; then
+        EMU_PROC="Doukutsu.exe"
     elif [[ $EMULATOR == cgenius ]]; then
         EMU_PROC="CGeniusExe"
     elif [[ $EMULATOR == daphne ]]; then
@@ -1092,6 +1094,8 @@ function ogst_play() {
         EMU_PROC="hatari"
     elif [[ $EMULATOR == lr-* ]]; then
         EMU_PROC="retroarch"
+    elif [[ $EMULATOR == marathon* ]]; then
+        EMU_PROC="alephone"
     elif [[ $EMULATOR == mupen64plus* ]]; then
         EMU_PROC="mupen64plus"
     elif [[ $EMULATOR == openfodder ]]; then
@@ -1104,8 +1108,6 @@ function ogst_play() {
         EMU_PROC="reicast"
     elif [[ $EMULATOR == sdlpop ]]; then
         EMU_PROC="prince"
-    elif [[ $EMULATOR == solarus ]]; then
-        EMU_PROC="solarus_run"
     elif [[ $EMULATOR == ti99sim ]]; then
         EMU_PROC="ti99sim-sdl"
     elif [[ $EMULATOR == vice-x64 ]]; then
@@ -1130,6 +1132,12 @@ function ogst_play() {
         EMU_PROC="xroar"
     elif [[ $EMULATOR == yabause* ]]; then
         EMU_PROC="yabasanshiro"
+    elif [[ $EMULATOR == zsdx ]]; then
+        EMU_PROC="solarus_run"
+    elif [[ $EMULATOR == zsxd ]]; then
+        EMU_PROC="solarus_run"
+    elif [[ $EMULATOR == zelda_roth_se ]]; then
+        EMU_PROC="solarus_run"
     else
         EMU_PROC="$EMULATOR"
     fi  
