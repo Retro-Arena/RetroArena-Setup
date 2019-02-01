@@ -1088,7 +1088,7 @@ function ogst_play() {
         EMU_PROC="daphne.bin"
     elif [[ $EMULATOR == hatari* ]]; then
         EMU_PROC="hatari"
-    elif [[ $EMULATOR == lr* ]]; then
+    elif [[ $EMULATOR == lr-* ]]; then
         EMU_PROC="retroarch"
     elif [[ $EMULATOR == mupen64plus* ]]; then
         EMU_PROC="mupen64plus"
