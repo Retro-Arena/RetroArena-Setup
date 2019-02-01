@@ -1128,8 +1128,12 @@ function ogst_play() {
     elif [[ $EMULATOR == vice-xvic* ]]; then
         EMU_PROC="xvic"
         SYSTEM="vic20"
-    elif [[ $EMULATOR == xroar* ]]; then
+    elif [[ $EMULATOR == xroar-coco* ]]; then
         EMU_PROC="xroar"
+        SYSTEM="coco"
+    elif [[ $EMULATOR == xroar-dragon32 ]]; then
+        EMU_PROC="xroar"
+        SYSTEM="dragon32"
     elif [[ $EMULATOR == yabause* ]]; then
         EMU_PROC="yabasanshiro"
     else
