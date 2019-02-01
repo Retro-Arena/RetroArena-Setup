@@ -1090,6 +1090,8 @@ function ogst_play() {
         EMU_PROC="daphne.bin"
     elif [[ $EMULATOR == hatari* ]]; then
         EMU_PROC="hatari"
+    elif [[ $EMULATOR == kodi ]]; then
+        EMU_PROC="kodi.bin"
     elif [[ $EMULATOR == lr-* ]]; then
         EMU_PROC="retroarch"
     elif [[ $EMULATOR == mupen64plus* ]]; then
