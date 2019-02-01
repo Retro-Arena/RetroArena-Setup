@@ -1088,9 +1088,6 @@ function ogst_play() {
         EMU_PROC="CGeniusExe"
     elif [[ $EMULATOR == daphne ]]; then
         EMU_PROC="daphne.bin"
-    elif [[ $EMULATOR == fruitbox ]]; then
-        EMU_PROC="fruitbox"
-        SYSTEM="fruitbox"
     elif [[ $EMULATOR == hatari* ]]; then
         EMU_PROC="hatari"
     elif [[ $EMULATOR == kodi ]]; then
