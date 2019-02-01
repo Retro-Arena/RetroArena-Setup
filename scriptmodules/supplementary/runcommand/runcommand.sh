@@ -1078,14 +1078,34 @@ function ogst_loading() {
 
 function ogst_play() {
     # wait until process loads
-    if [[ $EMULATOR == reicast* ]]; then
-        EMU_PROC="reicast"
+    if [[ $EMULATOR == advmame* ]]; then
+        EMU_PROC="advmame"
+    elif [[ $EMULATOR == basilisk ]]; then
+        EMU_PROC="BasiliskII"
+    elif [[ $EMULATOR == cgenius ]]; then
+        EMU_PROC="CGeniusExe"
+    elif [[ $EMULATOR == daphne ]]; then
+        EMU_PROC="daphne.bin"
+    elif [[ $EMULATOR == hatari* ]]; then
+        EMU_PROC="hatari"
+    elif [[ $EMULATOR == lr* ]]; then
+        EMU_PROC="retroarch"
+    elif [[ $EMULATOR == mupen64plus* ]]; then
+        EMU_PROC="mupen64plus"
+    elif [[ $EMULATOR == openfodder ]]; then
+        EMU_PROC="OpenFodder"
     elif [[ $EMULATOR == ppsspp ]]; then
         EMU_PROC="PPSSPPSDL"
-    elif [[ $EMULATOR == mupen64plus-* ]]; then
-        EMU_PROC="mupen64plus"
-    elif [[ $EMULATOR == daphne ]]; then
-        EMU_PROC="daphne.bin"        
+    elif [[ $EMULATOR == quasi88 ]]; then
+        EMU_PROC="quasi88.sdl"
+    elif [[ $EMULATOR == reicast* ]]; then
+        EMU_PROC="reicast"
+    elif [[ $EMULATOR == sdlpop ]]; then
+        EMU_PROC="prince"
+    elif [[ $EMULATOR == solarus ]]; then
+        EMU_PROC="solarus_run"
+    elif [[ $EMULATOR == ti99sim ]]; then
+        EMU_PROC="ti99sim-sdl"
     elif [[ $EMULATOR == vice-x64 ]]; then
         EMU_PROC="x64"
         SYSTEM="c64"
@@ -1101,22 +1121,13 @@ function ogst_play() {
     elif [[ $EMULATOR == vice-xplus4 ]]; then
         EMU_PROC="xplus4"
         SYSTEM="plus4"
-    elif [[ $EMULATOR == vice-xvic ]]; then
+    elif [[ $EMULATOR == vice-xvic* ]]; then
         EMU_PROC="xvic"
         SYSTEM="vic20"
-    elif [[ $EMULATOR == vice-xvic-cart ]]; then
-        EMU_PROC="xvic"
-        SYSTEM="vic20"
+    elif [[ $EMULATOR == xroar* ]]; then
+        EMU_PROC="xroar"
     elif [[ $EMULATOR == yabause* ]]; then
         EMU_PROC="yabasanshiro"
-    elif [[ $EMULATOR == lr* ]]; then
-        EMU_PROC="retroarch"
-    elif [[ $EMULATOR == openfodder ]]; then
-        EMU_PROC="OpenFodder"
-    elif [[ $EMULATOR == sdlpop ]]; then
-        EMU_PROC="prince"
-    elif [[ $EMULATOR == solarus ]]; then
-        EMU_PROC="solarus_run"
     else
         EMU_PROC="$EMULATOR"
     fi  
