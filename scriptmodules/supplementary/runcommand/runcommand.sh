@@ -945,8 +945,10 @@ function show_launch() {
             if [[ -e "$HOME/.config/launchingvideos" ]]; then
                 if [[ -e "$LAUNCHVIDS/system-$SYSTEM.mp4" ]]; then
                     mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-$SYSTEM.mp4" </dev/tty &>/dev/null
-                else
+                elif [[ -e "$LAUNCHVIDS/system-default.mp4" ]]; then
                     mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-default.mp4" </dev/tty &>/dev/null
+                else
+                    return
                 fi
             else
                 fbi -1 -t "$IMAGE_DELAY" -noverbose -a "$image" </dev/tty &>/dev/null

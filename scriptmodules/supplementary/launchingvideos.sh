@@ -70,7 +70,6 @@ function gui_launchingvideos() {
         local default
 
         status+=("n")
-        options+=(E "Enable Launching Videos (default)")
         options+=(D "Disable Launching Videos")
 
         local i=1
@@ -93,13 +92,9 @@ function gui_launchingvideos() {
         default="$choice"
         [[ -z "$choice" ]] && break
         case "$choice" in
-            E)
-                touch "$home/.config/launchingvideos"
-                printMsgs "dialog" "Enabled Launching Videos\n\nThis also disabled Launching Images."
-                ;;
             D)
                 rm -rf "$home/.config/launchingvideos"
-                printMsgs "dialog" "Disabled Launching Videos\n\nThis also enabled Launching Images."
+                printMsgs "dialog" "Disabled Launching Videos\n\nThis also re-enabled Launching Images if previously installed."
                 ;;
             *)
                 theme=(${themes[choice-1]})
