@@ -40,7 +40,7 @@ function build_fruitbox() {
     mkdir build && cd build
     cmake .. -DSHARED=off
     make -j4 && make install
-    export PKG_CONFIG_PATH=/opt/retroarena/ports/fruitbox/build/allegro5/build/lib/pkgconfig
+    export PKG_CONFIG_PATH=/opt/retroarena/emulators/fruitbox/build/allegro5/build/lib/pkgconfig
     ldconfig
     cd ../..
 
@@ -51,9 +51,9 @@ function build_fruitbox() {
 }
 
 function install_fruitbox() {
-    cp -v "$md_build/fruitbox/build/fruitbox" "$md_inst/"
-	cp -v "$md_build/fruitbox/skins.txt" "$md_inst/"
-	cp -vR "$md_build/fruitbox/skins" "$md_inst/"
+    cp "$md_build/fruitbox/build/fruitbox" "$md_inst/"
+    cp "$md_build/fruitbox/skins.txt" "$md_inst/"
+    cp -R "$md_build/fruitbox/skins" "$md_inst/"
     mkRomDir "jukebox"
     cat > "$romdir/jukebox/+Start Fruitbox.sh" << _EOF_
 #!/bin/bash
@@ -64,21 +64,21 @@ fi
 if [[ -e "$home/.config/fruitbox" ]]; then
     device=\$(cat /proc/bus/input/devices | grep -m1 -o '".*"' | sed 's/"//g' | sed -n 1p)
     rm -rf "$home/.config/fruitbox"
-    /opt/retroarena/ports/fruitbox/fruitbox --input-device "\$device" --config-buttons
+    /opt/retroarena/emulators/fruitbox/fruitbox --input-device "\$device" --config-buttons
 else
-    /opt/retroarena/ports/fruitbox/fruitbox --cfg /opt/retroarena/ports/fruitbox/skins/\$skin/fruitbox.cfg
+    /opt/retroarena/emulators/fruitbox/fruitbox --cfg /opt/retroarena/emulators/fruitbox/skins/\$skin/fruitbox.cfg
 fi
 _EOF_
     chmod a+x "$romdir/jukebox/+Start Fruitbox.sh"
     chown $user:$user "$romdir/jukebox/+Start Fruitbox.sh"
-    addEmulator 0 "$md_id" "jukebox" "fruitbox %ROM%"
-    addSystem "jukebox" "Fruitbox Jukebox" ".sh"
+    addEmulator 1 "$md_id" "jukebox" "fruitbox %ROM%"
+    addSystem "jukebox"
 }
 
 function remove_fruitbox() {
+    delSystem jukebox
     rm -rf "$home/.config/fruitbox"
     rm -rf "$romdir/jukebox"
-    delSystem jukebox
 }
 
 function skin_fruitbox() {
