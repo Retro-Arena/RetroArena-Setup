@@ -13,6 +13,16 @@ rp_module_id="launchingvideos"
 rp_module_desc="Install Launching Video Packs"
 rp_module_section="config"
 
+function enable_theme_launchingvideos() {
+    local theme="$1"
+    local repo="$2"
+    rm -rf "$datadir/launchingvideos"
+    ln -sf "$datadir/launchingvideos-$theme" "$datadir/launchingvideos"
+    
+    # enable
+    touch "$home/.config/launchingvideos"
+}
+
 function install_theme_launchingvideos() {
     local theme="$1"
     local repo="$2"
@@ -70,7 +80,7 @@ function gui_launchingvideos() {
             theme="${theme[1]}"
             if [[ -d "$datadir/launchingvideos-$theme" ]]; then
                 status+=("i")
-                options+=("$i" "Update or Uninstall $repo/$theme (installed)")
+                options+=("$i" "Enable, Update or Uninstall $repo/$theme (installed)")
                 installed_themes+=("$theme $repo")
             else
                 status+=("n")
@@ -96,14 +106,17 @@ function gui_launchingvideos() {
                 repo="${theme[0]}"
                 theme="${theme[1]}"
                 if [[ "${status[choice]}" == "i" ]]; then
-                    options=(1 "Update $repo/$theme" 2 "Uninstall $repo/$theme")
+                    options=(1 "Enable $repo/$theme" 2 "Update $repo/$theme" 3 "Uninstall $repo/$theme")
                     cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option for theme" 12 40 06)
                     local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
                     case "$choice" in
                         1)
-                            rp_callModule launchingvideos install_theme "$theme" "$repo"
+                            rp_callModule launchingvideos enable_theme "$theme" "$repo"
                             ;;
                         2)
+                            rp_callModule launchingvideos install_theme "$theme" "$repo"
+                            ;;
+                        3)
                             rp_callModule launchingvideos uninstall_theme "$theme"
                             ;;
                     esac
