@@ -1080,6 +1080,8 @@ function ogst_play() {
     # wait until process loads
     if [[ $EMULATOR == advmame* ]]; then
         EMU_PROC="advmame"
+    elif [[ $EMULATOR == amiberry* ]]; then
+        EMU_PROC="amiberry-xu4"
     elif [[ $EMULATOR == basilisk ]]; then
         EMU_PROC="BasiliskII"
     elif [[ $EMULATOR == cgenius ]]; then
