@@ -948,7 +948,7 @@ function show_launch() {
                 elif [[ -e "$LAUNCHVIDS/system-default.mp4" ]]; then
                     mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-default.mp4" </dev/tty &>/dev/null
                 else
-                    break
+                    return
                 fi
             else
                 fbi -1 -t "$IMAGE_DELAY" -noverbose -a "$image" </dev/tty &>/dev/null
