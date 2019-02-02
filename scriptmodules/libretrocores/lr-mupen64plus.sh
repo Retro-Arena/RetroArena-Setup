@@ -41,7 +41,7 @@ function sources_lr-mupen64plus() {
     local commit
     isPlatform "rockpro64" && commit=("master 4ca2fa8633666e26e2f163dcd3c226b598cb2aa4")
 
-    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro.git ${commit[0]}
+    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro.git "$commit"
     isPlatform "mali" && applyPatch "$md_data/odroid.diff"
     else
     isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
