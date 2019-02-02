@@ -411,4 +411,6 @@ function platform_rockpro64() {
     __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
     __default_asflags=""
     __default_makeflags="-j5"
+    
+    }
 
