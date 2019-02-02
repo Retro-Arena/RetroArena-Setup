@@ -19,7 +19,7 @@ rp_module_section="lr"
 function sources_lr-reicast() {
     local commit
     isPlatform "rockpro64" && commit=("master aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
-    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git ${commit[0]}
+    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git "$commit"
     isPlatform "rockpro64" && applyPatch "$md_data/buildfix.patch"
 }
 
