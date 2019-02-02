@@ -17,6 +17,7 @@ rp_module_section="lr"
 
 function sources_lr-4do() {
     gitPullOrClone "$md_build" https://github.com/libretro/4do-libretro.git
+    isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
 }
 
 function build_lr-4do() {
