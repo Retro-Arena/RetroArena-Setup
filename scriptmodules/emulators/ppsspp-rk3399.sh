@@ -137,7 +137,7 @@ function build_ppsspp() {
     elif isPlatform "mali"; then
         params+=(-DUSING_GLES2=ON -DUSING_FBDEV=ON)
     elif isPlatform "rockpro64"; then
-        params+=(-DARMV7=ON -DUSING_FBDEV=ON -DUSING_GLES2=ON -DUSING_EGL=OFF -DUSING_X11_VULKAN=OFF)
+        params+=(-DARMV7=ON -DUSING_FBDEV=ON -DUSING_GLES2=ON -DUSING_EGL=OFF -DUSING_X11_VULKAN=OFF -DUSE_FFMPEG=ON )
     elif isPlatform "vero4k"; then
         params+=(-DCMAKE_TOOLCHAIN_FILE="cmake/Toolchains/vero4k.armv8.cmake")
     fi
