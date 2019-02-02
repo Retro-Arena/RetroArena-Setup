@@ -22,7 +22,7 @@ function sources_lr-4do() {
 
 function build_lr-4do() {
     make clean
-    make
+    make platform=unix-rockpro64
     md_ret_require="$md_build/4do_libretro.so"
 }
 
