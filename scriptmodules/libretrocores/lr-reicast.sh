@@ -17,11 +17,17 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/reicast-emula
 rp_module_section="lr"
 
 function sources_lr-reicast() {
-    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git
+    local commit
+    isPlatform "rockpro64" && commit=("master aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
+    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git ${commit[0]}
+    isPlatform "rockpro64" && applyPatch "$md_data/buildfix.patch"
 }
 
 function build_lr-reicast() {
     make clean
+     if isPlatform "rockpro64"; then
+    make platform=rockpro64 ARCH=arm
+    else
     make platform=odroid BOARD="ODROID-XU3" ARCH=arm
     md_ret_require="$md_build/reicast_libretro.so"
 }
