@@ -26,7 +26,7 @@ function depends_ppsspp() {
 function sources_ppsspp() {
     local branch"master"
     local commit=""
-    isPlatform "rockpro64" && commit=("aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
+    isPlatform "rockpro64" && commit=("90a45deabda02b333faa399cc31fd7b82982ad3f")
     if isPlatform "rockpro64"; then
         gitPullOrClone "$md_build" https://github.com/hrydgard/ppsspp.git "$branch" "$commit"
 	    elif isPlatform "vero4k"; then
