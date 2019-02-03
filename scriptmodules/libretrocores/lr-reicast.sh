@@ -17,9 +17,10 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/reicast-emula
 rp_module_section="lr"
 
 function sources_lr-reicast() {
-    local commit
-    isPlatform "rockpro64" && commit=("master aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
-    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git "$commit"
+    local branch"master"
+    local commit=""
+    isPlatform "rockpro64" && commit=("aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
+    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git "$branch" "$commit"
     isPlatform "rockpro64" && applyPatch "$md_data/buildfix.patch"
 }
 
