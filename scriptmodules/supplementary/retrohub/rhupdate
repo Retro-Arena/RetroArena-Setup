@@ -9,25 +9,13 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-# check for internet connection
-((count = 100))
-while [[ $count -ne 0 ]] ; do
-    ping -c 1 8.8.8.8
-    rc=$?
-    if [[ $rc -eq 0 ]] ; then
-        ((count = 1))
-    fi
-    ((count = count - 1))
-done
+echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
 
-# if sucess then proceed to update
-if [[ $rc -eq 0 ]] ; then
-    local rhdir="/home/pigaming/RetroArena/retrohub"
+if [ $? -eq 0 ]; then
+    rhdir="/home/pigaming/RetroArena/retrohub"
     
-    if [[ -e "$rhdir" ]]; then
-        rm -rf "$rhdir"
-        git clone https://github.com/Retro-Arena/RetroArena-hub.git "$rhdir"
-        rm -rf "$rhdir/.git"
-        rm -rf "$rhdir/.gitattributes"
+    if [ -e "$rhdir" ]; then
+        cd "$rhdir"
+        git pull https://github.com/Retro-Arena/retrohub.git
     fi
 fi
