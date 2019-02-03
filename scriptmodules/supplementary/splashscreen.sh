@@ -12,7 +12,7 @@
 rp_module_id="splashscreen"
 rp_module_desc="Configure Splashscreen"
 rp_module_section="opt"
-rp_module_flags="noinstclean !x86 !osmc !xbian !kms"
+rp_module_flags="noinstclean !x86 !osmc !xbian "
 
 function _update_hook_splashscreen() {
     # make sure splashscreen is always up to date if updating just RetroArena-Setup
