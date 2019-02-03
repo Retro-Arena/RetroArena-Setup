@@ -11,7 +11,7 @@
 
 rp_module_id="fruitbox"
 rp_module_desc="Fruitbox - A customizable MP3 Retro Jukebox. Read the Package Help for more information."
-rp_module_help="Copy your .mp3 files to '$romdir/jukebox' then launch Fruitbox from EmulationStation.\n\nUsing a keyboard, press 'A' then '0' on your keyboard to play the song on the 'AO' slot. To exit, press the 'ESC' button.\n\nTo configure a gamepad, launch 'Jukebox Config' in Settings, then 'Enable Gamepad Configuration'.\n\nKnown Issues: after gamepad configuration, $home/fruitbox.btn may need to be modified to avoid crashing."
+rp_module_help="Copy your .mp3 files to '$romdir/jukebox' then launch Fruitbox from EmulationStation.\n\nTo configure a gamepad, launch 'Jukebox Config' in Settings, then 'Enable Gamepad Configuration'."
 rp_module_section="opt"
 
 function depends_fruitbox() {
@@ -62,14 +62,7 @@ if [[ -e "$home/.config/fruitbox" ]]; then
     rm -rf "$home/.config/fruitbox"
     /opt/retroarena/emulators/fruitbox/fruitbox --config-buttons
 else
-    music=$(ls *.mp3 2> /dev/null | wc -l)
-    if [[ "$music" != "0" ]]; then
-        /opt/retroarena/emulators/fruitbox/fruitbox --cfg /opt/retroarena/emulators/fruitbox/skins/\$skin/fruitbox.cfg
-    else
-        dialog --no-cancel --pause "Place your MP3 files in '/home/pigaming/RetroArena/roms/jukebox' or use Samba via '\\odroid\roms\jukebox'" 22 76 15
-        clear
-        exit 1
-    fi
+    /opt/retroarena/emulators/fruitbox/fruitbox --cfg /opt/retroarena/emulators/fruitbox/skins/\$skin/fruitbox.cfg
 fi
 _EOF_
     chmod a+x "$romdir/jukebox/+Start Fruitbox.sh"
@@ -128,7 +121,7 @@ function skin_fruitbox() {
 
 function gamepad_fruitbox() {
     touch "$home/.config/fruitbox"
-    printMsgs "dialog" "You are all set!\n\nLaunch Fruitbox from EmulationStation to configure your gamepad.\n\nPress OK to Exit."
+    printMsgs "dialog" "Enabled Gamepad Configuration\n\nLaunch Fruitbox from EmulationStation to configure your gamepad.\n\nPress OK to Exit."
     exit 0
 }
 
