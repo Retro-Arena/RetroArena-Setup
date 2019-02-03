@@ -25,11 +25,11 @@ function depends_ppsspp() {
 
 function sources_ppsspp() {
     if isPlatform "rockpro64"; then
-        gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git
+        gitPullOrClone "$md_build" https://github.com/hrydgard/ppsspp.git
 	    elif isPlatform "vero4k"; then
-        gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git
+        gitPullOrClone "$md_build" https://github.com/hrydgard/ppsspp.git
     else
-        gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git v1.5.4
+        gitPullOrClone "$md_build" https://github.com/hrydgard/ppsspp.git v1.5.4
     fi
     cd ppsspp
         if isPlatform "rockpro64"; then
