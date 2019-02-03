@@ -38,9 +38,10 @@ function depends_lr-mupen64plus() {
 }
 
 function sources_lr-mupen64plus() {
+    local branch"master"
     local commit=""
-    isPlatform "rockpro64" && commit=("master 4ca2fa8633666e26e2f163dcd3c226b598cb2aa4")
-    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro.git "$commit"
+    isPlatform "rockpro64" && commit=("4ca2fa8633666e26e2f163dcd3c226b598cb2aa4")
+    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro.git "$branch" "$commit"
     isPlatform "mali" && applyPatch "$md_data/odroid.diff"
     isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
 }
