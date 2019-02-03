@@ -29,6 +29,7 @@ function build_lr-reicast() {
     make platform=rockpro64 ARCH=arm
     else
     make platform=odroid BOARD="ODROID-XU3" ARCH=arm
+    fi
     md_ret_require="$md_build/reicast_libretro.so"
 }
 
