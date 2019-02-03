@@ -14,7 +14,7 @@ rp_module_desc="PlayStation Portable emulator PPSSPP"
 rp_module_help="ROM Extensions: .iso .pbp .cso\n\nCopy your PlayStation Portable roms to $romdir/psp"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/hrydgard/ppsspp/master/LICENSE.TXT"
 rp_module_section="sa"
-rp_module_flags="!mali"
+rp_module_flags=""
 
 function depends_ppsspp() {
     local depends=(cmake libsdl2-dev libzip-dev)
@@ -24,31 +24,29 @@ function depends_ppsspp() {
 }
 
 function sources_ppsspp() {
-    local branch"master"
-    local commit=""
-    isPlatform "rockpro64" && commit=("90a45deabda02b333faa399cc31fd7b82982ad3f")
     if isPlatform "rockpro64"; then
-        gitPullOrClone "$md_build" https://github.com/hrydgard/ppsspp.git "$branch" "$commit"
-	    elif isPlatform "vero4k"; then
-        gitPullOrClone "$md_build" https://github.com/hrydgard/ppsspp.git
+        gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git
+    elif isPlatform "vero4k"; then
+        gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git
     else
-        gitPullOrClone "$md_build" https://github.com/hrydgard/ppsspp.git v1.5.4
+        gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git v1.5.4
     fi
     cd ppsspp
-        if isPlatform "rockpro64"; then
+
+    if isPlatform "rockpro64"; then
         applyPatch "$md_data/02_tinker_options.diff"
-	applyPatch "$md_data/rockpro64.patch"
+      applyPatch "$md_data/rockpro64.patch"
     #elif ! isPlatform "vero4k"; then
      #   applyPatch "$md_data/01_egl_name.diff"
     fi
 
-    # linux_arm.sh changes   
-    sed -i -e 's:cc=arm-linux-gnueabi-gcc:cc=gcc:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i '/   --cross-prefix=arm-linux-gnueabi- \\/d' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i -e 's:nm=arm-linux-gnueabi-nm:nm=nm:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i -e 's:-mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a:-mfloat-abi=hard -mfpu=neon -marm -march=armv7-a:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i -e 's:build_ARMv6:#build_ARMv6:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i -e 's:function #build_ARMv6:function build_ARMv6:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
+    # remove the lines that trigger the ffmpeg build script functions - we will just use the variables from it
+    sed -i "/^build_ARMv6$/,$ d" ffmpeg/linux_arm.sh
+
+    # remove -U__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 as we handle this ourselves if armv7 on Raspbian
+    sed -i "/^  -U__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2/d" cmake/Toolchains/raspberry.armv7.cmake
+    # set ARCH_FLAGS to our own CXXFLAGS (which includes GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 if needed)
+    sed -i "s/^set(ARCH_FLAGS.*/set(ARCH_FLAGS \"$CXXFLAGS\")/" cmake/Toolchains/raspberry.armv7.cmake
 
     if hasPackage cmake 3.6 lt; then
         cd ..
@@ -140,7 +138,7 @@ function build_ppsspp() {
     elif isPlatform "mali"; then
         params+=(-DUSING_GLES2=ON -DUSING_FBDEV=ON)
     elif isPlatform "rockpro64"; then
-        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.armv7.cmake" )
+        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.armv7.cmake")
     elif isPlatform "vero4k"; then
         params+=(-DCMAKE_TOOLCHAIN_FILE="cmake/Toolchains/vero4k.armv8.cmake")
     fi
@@ -168,7 +166,7 @@ function configure_ppsspp() {
     if isPlatform "tinker"; then
         addEmulator 1 "$md_id" "psp" "$md_inst/PPSSPPSDL --fullscreen %ROM%"
     else
-        addEmulator 0 "$md_id" "psp" "$md_inst/PPSSPPSDL --fullscreen%ROM%"
+        addEmulator 0 "$md_id" "psp" "$md_inst/PPSSPPSDL %ROM%"
     fi
     addSystem "psp"
 }
