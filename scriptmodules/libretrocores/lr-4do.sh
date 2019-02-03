@@ -25,6 +25,7 @@ function build_lr-4do() {
      if isPlatform "rockpro64"; then
     make platform=unix-rockpro64
     else make
+    fi
     md_ret_require="$md_build/4do_libretro.so"
 }
 
