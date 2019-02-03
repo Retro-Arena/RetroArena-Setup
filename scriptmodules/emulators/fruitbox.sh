@@ -62,6 +62,9 @@ if [[ -e "$home/.config/fruitbox" ]]; then
     rm -rf "$home/.config/fruitbox"
     /opt/retroarena/emulators/fruitbox/fruitbox --config-buttons
 else
+    if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
+        rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
+    fi
     /opt/retroarena/emulators/fruitbox/fruitbox --cfg /opt/retroarena/emulators/fruitbox/skins/\$skin/fruitbox.cfg
 fi
 _EOF_
