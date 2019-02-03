@@ -32,9 +32,9 @@ function sources_ppsspp() {
         gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git v1.5.4
     fi
     cd ppsspp
-
-    if isPlatform "rockpro64"; then
-        applyPatch "$md_data/rockpro64.patch"
+        if isPlatform "rockpro64"; then
+        applyPatch "$md_data/02_tinker_options.diff"
+	applyPatch "$md_data/rockpro64.patch"
     #elif ! isPlatform "vero4k"; then
      #   applyPatch "$md_data/01_egl_name.diff"
     fi
@@ -137,7 +137,7 @@ function build_ppsspp() {
     elif isPlatform "mali"; then
         params+=(-DUSING_GLES2=ON -DUSING_FBDEV=ON)
     elif isPlatform "rockpro64"; then
-        params+=(-DARMV7=ON -DUSING_FBDEV=ON -DUSING_GLES2=ON -DUSING_EGL=OFF -DUSING_X11_VULKAN=OFF -DUSE_FFMPEG=ON )
+        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.armv7.cmake" )
     elif isPlatform "vero4k"; then
         params+=(-DCMAKE_TOOLCHAIN_FILE="cmake/Toolchains/vero4k.armv8.cmake")
     fi
