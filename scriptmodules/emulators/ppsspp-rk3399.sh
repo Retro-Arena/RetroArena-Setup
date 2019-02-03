@@ -39,13 +39,13 @@ function sources_ppsspp() {
      #   applyPatch "$md_data/01_egl_name.diff"
     fi
 
-    # remove the lines that trigger the ffmpeg build script functions - we will just use the variables from it
-    sed -i "/^build_ARMv6$/,$ d" ffmpeg/linux_arm.sh
-
-    # remove -U__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 as we handle this ourselves if armv7 on Raspbian
-    sed -i "/^  -U__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2/d" cmake/Toolchains/raspberry.armv7.cmake
-    # set ARCH_FLAGS to our own CXXFLAGS (which includes GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 if needed)
-    sed -i "s/^set(ARCH_FLAGS.*/set(ARCH_FLAGS \"$CXXFLAGS\")/" cmake/Toolchains/raspberry.armv7.cmake
+    # linux_arm.sh changes   
+    sed -i -e 's:cc=arm-linux-gnueabi-gcc:cc=gcc:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
+    sed -i '/   --cross-prefix=arm-linux-gnueabi- \\/d' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
+    sed -i -e 's:nm=arm-linux-gnueabi-nm:nm=nm:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
+    sed -i -e 's:-mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a:-mfloat-abi=hard -mfpu=neon -marm -march=armv7-a:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
+    sed -i -e 's:build_ARMv6:#build_ARMv6:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
+    sed -i -e 's:function #build_ARMv6:function build_ARMv6:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
 
     if hasPackage cmake 3.6 lt; then
         cd ..
