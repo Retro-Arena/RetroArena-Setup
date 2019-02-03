@@ -64,12 +64,9 @@ if [[ -e "$home/.config/fruitbox" ]]; then
 else
     music=$(ls *.mp3 2> /dev/null | wc -l)
     if [[ "$music" != "0" ]]; then
-        if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
-            rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
-        fi
         /opt/retroarena/emulators/fruitbox/fruitbox --cfg /opt/retroarena/emulators/fruitbox/skins/\$skin/fruitbox.cfg
     else
-        dialog --no-cancel --pause "Place your MP3 files in /home/pigaming/RetroArena/roms/jukebox or use Samba via \\odroid\roms\jukebox" 22 76 15
+        dialog --no-cancel --pause "Place your MP3 files in '/home/pigaming/RetroArena/roms/jukebox' or use Samba via '\\odroid\roms\jukebox'" 22 76 15
         clear
         exit 1
     fi
