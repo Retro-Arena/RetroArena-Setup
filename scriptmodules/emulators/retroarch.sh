@@ -10,7 +10,7 @@
 #
 
 rp_module_id="retroarch"
-rp_module_desc="RetroArch - frontend to the libretro emulator cores - required by all lr-* emulators"
+rp_module_desc="RetroArch v1.7.6 - frontend to the libretro emulator cores - required by all lr-* emulators"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/master/COPYING"
 rp_module_section="core"
 
@@ -38,7 +38,7 @@ function depends_retroarch() {
 }
 
 function sources_retroarch() {
-    gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git master
+    gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
     applyPatch "$md_data/01_hotkey_hack.diff"
     applyPatch "$md_data/02_disable_search.diff"
     applyPatch "$md_data/03_disable_udev_sort.diff"
@@ -73,7 +73,7 @@ function install_retroarch() {
 }
 
 function install_bin_retroarch() {
-    downloadAndExtract "$__gitbins_url/retroarch_b91938b.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
 }
 
 function update_shaders_retroarch() {

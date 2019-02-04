@@ -14,7 +14,7 @@ rp_module_desc="Atari2600 emulator STELLA"
 rp_module_help="ROM Extensions: .a26 .bin .rom .zip .gz\n\nCopy your Atari 2600 roms to $romdir/atari2600"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/stella-emu/stella/master/License.txt"
 rp_module_section="sa"
-rp_module_flags=""
+rp_module_flags="!mali"
 
 function depends_stella() {
     getDepends libsdl2-dev libpng-dev zlib1g-dev xz-utils

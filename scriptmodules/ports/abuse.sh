@@ -13,6 +13,7 @@ rp_module_id="abuse"
 rp_module_desc="Abuse"
 rp_module_license="GPL https://raw.githubusercontent.com/Xenoveritas/abuse/master/COPYING"
 rp_module_section="prt"
+rp_module_flags="!mali"
 
 # abuse-lib & abuse-sfx will pull in the older abuse package which only works under X
 function depends_abuse() {
