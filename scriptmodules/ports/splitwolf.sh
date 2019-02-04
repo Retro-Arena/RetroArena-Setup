@@ -71,6 +71,10 @@ function install_splitwolf() {
     md_ret_files=('bin')
 }
 
+function install_bin_splitwolf() {
+    downloadAndExtract "$__gitbins_url/splitwolf.tar.gz" "$md_inst" 1
+}
+
 function configure_splitwolf() {
     local game
 

@@ -31,6 +31,10 @@ function install_lr-mesen() {
     )
 }
 
+function install_bin_lr-mesen() {
+    downloadAndExtract "$__gitbins_url/lr-mesen.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-mesen() {
     mkRomDir "nes"
     mkRomDir "fds"

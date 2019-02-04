@@ -36,6 +36,10 @@ function install_gsplus() {
     )
 }
 
+function install_bin_gsplus() {
+    downloadAndExtract "$__gitbins_url/gsplus.tar.gz" "$md_inst" 1
+}
+
 function configure_gsplus() {
     mkRomDir "apple2gs"
     mkUserDir "$md_conf_root/apple2gs"

@@ -34,6 +34,10 @@ function install_digger() {
     )
 }
 
+function install_bin_digger() {
+    downloadAndExtract "$__gitbins_url/digger.tar.gz" "$md_inst" 1
+}
+
 function configure_digger() {
     # remove symlink that isn't used
     rm -f "$home/.config/digger"

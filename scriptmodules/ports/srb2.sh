@@ -44,6 +44,11 @@ function install_srb2() {
     )
 }
 
+function install_bin_srb2() {
+    downloadAndExtract "$__gitbins_url/srb2.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/srb2a.tar.gz" "$md_inst" 1
+}
+
 function configure_srb2() {
     addPort "$md_id" "srb2" "Sonic Robo Blast 2" "pushd $md_inst; ./srb2; popd"
 

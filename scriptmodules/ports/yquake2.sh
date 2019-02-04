@@ -48,6 +48,10 @@ function install_yquake2() {
     )
 }
 
+function install_bin_yquake2() {
+    downloadAndExtract "$__gitbins_url/yquake2.tar.gz" "$md_inst" 1
+}
+
 function add_games_yquake2() {
     local cmd="$1"
     declare -A games=(
