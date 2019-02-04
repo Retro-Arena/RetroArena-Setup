@@ -72,8 +72,12 @@ function install_retroarch() {
     )
 }
 
-function install_bin_retroarch() {
-    downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
+function install_bin_retroarch() {   
+    # v1.7.5 thru commit b91938b with ozone
+    downloadAndExtract "$__gitbins_url/retroarch_b91938b.tar.gz" "$md_inst" 1
+    
+    # v1.7.6 freezing issue with lr-reicast Quick Menu > Resume
+    #downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
 }
 
 function update_shaders_retroarch() {
