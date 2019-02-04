@@ -39,6 +39,10 @@ function install_tyrquake() {
     )
 }
 
+function install_bin_tyrquake() {
+    downloadAndExtract "$__gitbins_url/tyrquake.tar.gz" "$md_inst" 1
+}
+
 function add_games_tyrquake() {
     _add_games_lr-tyrquake "$md_inst/bin/tyr-quake -basedir $romdir/ports/quake -game %QUAKEDIR%"
     if isPlatform "x11"; then

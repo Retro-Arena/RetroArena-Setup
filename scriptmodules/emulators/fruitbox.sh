@@ -74,6 +74,10 @@ _EOF_
     addSystem "jukebox"
 }
 
+function install_bin_fruitbox() {
+    downloadAndExtract "$__gitbins_url/fruitbox.tar.gz" "$md_inst" 1
+}
+
 function remove_fruitbox() {
     delSystem jukebox
     rm -rf "$home/.config/fruitbox"

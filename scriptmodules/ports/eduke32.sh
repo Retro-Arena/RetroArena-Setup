@@ -45,6 +45,10 @@ function install_eduke32() {
     )
 }
 
+function install_bin_eduke32() {
+    downloadAndExtract "$__gitbins_url/eduke32.tar.gz" "$md_inst" 1
+}
+
 function game_data_eduke32() {
     cd "$_tmpdir"
     if [[ ! -f "$romdir/ports/duke3d/duke3d.grp" ]]; then

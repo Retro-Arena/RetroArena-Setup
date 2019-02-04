@@ -33,6 +33,11 @@ function install_lr-freechaf() {
     )
 }
 
+function install_bin_lr-freechaf() {
+    downloadAndExtract "$__gitbins_url/lr-freechaf.tar.gz" "$md_inst" 1
+}
+
+
 function configure_lr-freechaf() {
     mkRomDir "channelf"
     ensureSystemretroconfig "channelf"
