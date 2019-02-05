@@ -147,4 +147,10 @@ function configure_advmame() {
     addSystem "channelf"
     addSystem "electron"
     addSystem "supervision"
+    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/arcadia/"
+    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/astrocade/"
+    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/bbcmicro/"
+    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/channelf/"
+    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/electron/"
+    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/supervision/"
 }
