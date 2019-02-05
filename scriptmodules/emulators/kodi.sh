@@ -18,9 +18,9 @@ rp_module_flags="!osmc !xbian !kms"
 
 function install_bin_kodi() {
     aptInstall kodi-fbdev
-    cp -r "$scriptdir/scriptmodules/ports/kodi/kodi" "$romdir/"
-    cp "$scriptdir/scriptmodules/ports/kodi/Kodi.bash" "/usr/bin/kodi"
-    cp "$scriptdir/scriptmodules/ports/kodi/DialogButtonMenu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
+    cp -r "$scriptdir/scriptmodules/emulators/kodi/kodi" "$romdir/"
+    cp "$scriptdir/scriptmodules/emulators/kodi/Kodi.bash" "/usr/bin/kodi"
+    cp "$scriptdir/scriptmodules/emulators/kodi/DialogButtonMenu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
     mkRomDir "kodi"
     chown -R $user:$user "$romdir/kodi"
     moveConfigDir "$home/.kodi" "$md_conf_root/kodi"

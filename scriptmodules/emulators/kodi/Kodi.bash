@@ -159,7 +159,7 @@ if command_exists gdb; then
   fi
 fi
 
-  # Stop mpg123 from playing behind Kodi
+# Stop background music on launch
 (sleep 2; pkill -STOP mpg123) &
 
 sleep 1
@@ -180,6 +180,7 @@ do
   fi
 done
 
+# Start background music on exit
 (sleep 2; pkill -CONT mpg123) &
 
 exit $RET
