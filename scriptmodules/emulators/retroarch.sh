@@ -361,6 +361,7 @@ function gui_retroarch() {
                 ;;
             6)
                 config_retroarch
+                printMsgs "dialog" "Completed the reset retroarch and retroarch-core-option configs"
                 ;;
             *)
                 break
