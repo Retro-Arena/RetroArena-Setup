@@ -69,6 +69,10 @@ function governor_runcommand() {
     fi
 }
 
+function config_runcommand() {
+    cp -R "$scriptdir/configs/runcommand/." "$md_conf_root/all"
+}
+
 function gui_runcommand() {
     local config="$configdir/all/runcommand.cfg"
     iniConfig " = " '"' "$config"
@@ -109,6 +113,7 @@ function gui_runcommand() {
 
         options+=(4 "Launch image delay in seconds (currently $image_delay)")
         options+=(5 "CPU configuration")
+        options+=(6 "Reset runcommand configs")
 
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
@@ -130,6 +135,9 @@ function gui_runcommand() {
                 ;;
             5)
                 governor_runcommand
+                ;;
+            6)
+                config_runcommand
                 ;;
         esac
     done

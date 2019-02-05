@@ -74,10 +74,10 @@ function install_retroarch() {
 
 function install_bin_retroarch() {   
     # v1.7.5 thru commit b91938b with ozone
-    downloadAndExtract "$__gitbins_url/retroarch_b91938b.tar.gz" "$md_inst" 1
+    #downloadAndExtract "$__gitbins_url/retroarch_b91938b.tar.gz" "$md_inst" 1
     
-    # v1.7.6 freezing issue with lr-reicast Quick Menu > Resume
-    #downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
+    # v1.7.6
+    downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
 }
 
 function update_shaders_retroarch() {
@@ -304,6 +304,10 @@ function hotkey_retroarch() {
     fi
 }
 
+function config_retroarch() {
+    cp -R "$scriptdir/configs/retroarch/." "$md_conf_root/all"
+}
+
 function gui_retroarch() {
     while true; do
         local names=(shaders overlays assets)
@@ -323,6 +327,7 @@ function gui_retroarch() {
         options+=(
             4 "Configure keyboard for use with RetroArch"
             5 "Configure keyboard hotkey behaviour for RetroArch"
+            6 "Reset retroarch and retroarch-core-option configs"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -353,6 +358,9 @@ function gui_retroarch() {
                 ;;
             5)
                 hotkey_retroarch
+                ;;
+            6)
+                config_retroarch
                 ;;
             *)
                 break
