@@ -24,19 +24,29 @@ function depends_reicast() {
 
 function sources_reicast() {
     gitPullOrClone "$md_build" https://github.com/reicast/reicast-emulator.git
+    isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
     sed -i "s/CXXFLAGS += -fno-rtti -fpermissive -fno-operator-names/CXXFLAGS += -fno-rtti -fpermissive -fno-operator-names -D_GLIBCXX_USE_CXX11_ABI=0/g" shell/linux/Makefile
 }
 
 function build_reicast() {
     cd shell/linux
-    make clean
-    make
-    md_ret_require="$md_build/shell/linux/reicast.elf"
+    if isPlatform "rockpro64"; then
+        make USE_GLES=1 USE_SDL=1  platform=rockpro64 clean
+        make USE_GLES=1 USE_SDL=1 platform=rockpro64
+    else
+        make clean
+        make
+        fi
+        md_ret_require="$md_build/shell/linux/reicast.elf"
 }
 
 function install_reicast() {
     cd shell/linux
-    make PREFIX="$md_inst" install
+    if isPlatform "rockpro64"; then
+        make USE_GLES=1 USE_SDL=1 PREFIX="$md_inst" platform=rockpro64 install
+    else 
+        make PREFIX="$md_inst" install
+        fi
     md_ret_files=(
         'LICENSE'
         'README.md'

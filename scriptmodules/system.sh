@@ -264,8 +264,8 @@ function get_platform() {
                 __platform="vero4k"
                 ;;
             *)
-                if grep -q "Rock64" /sys/firmware/devicetree/base/model 2>/dev/null; then
-                    __platform="rock64"
+            if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                    __platform="rockpro64"
                 else
                     case $architecture in
                         i686|x86_64|amd64)
@@ -402,4 +402,15 @@ function platform_vero4k() {
     __default_makeflags="-j4"
     __platform_flags="arm armv8 neon vero4k gles"
 }
+
+function platform_rockpro64() {
+    __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a72.cortex-a53 -mfpu=neon-fp-armv8"
+    __platform_flags="arm armv8 neon kms gles"
+    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
+    # required for mali headers to define GL functions!
+    __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
+    __default_asflags=""
+    __default_makeflags="-j5"
+    
+    }
 

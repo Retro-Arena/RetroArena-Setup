@@ -16,6 +16,7 @@ rp_module_licence="GPL3 https://sourceforge.net/p/zesarux/code/ci/master/tree/LI
 rp_module_section="sa"
 rp_module_flags="dispmanx !kms !mali"
 
+
 function depends_zesarux() {
     local depends=(libssl-dev libpthread-stubs0-dev libsdl1.2-dev libasound2-dev)
     isPlatform "x11" && depends+=(libpulse-dev)

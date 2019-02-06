@@ -28,13 +28,14 @@ function sources_lr-parallel-n64() {
     # build from ab155da1 due to https://github.com/libretro/parallel-n64/issues/544
     isPlatform "arm" && commit="ab155da1"
     gitPullOrClone "$md_build" https://github.com/libretro/parallel-n64.git "$branch" "$commit"
+    isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
 }
 
 function build_lr-parallel-n64() {
     rpSwap on 1000
     make clean
     local params=()
-    if isPlatform "rpi" || isPlatform "odroid-c1" || isPlatform "odroid-xu"; then
+    if isPlatform "rockpro64" || isPlatform "odroid-c1" || isPlatform "odroid-xu"; then
         params+=(platform="$__platform")
     elif isPlatform "tinker"; then
         params+=(CPUFLAGS="-DNO_ASM -DARM -D__arm__ -DARM_ASM -D__NEON_OPT -DNOSSE")
