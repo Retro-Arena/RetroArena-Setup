@@ -1,21 +1,4 @@
-#!/bin/sh
-
-# This file is part of The RetroArena (TheRA)
-#
-# The RetroArena (TheRA) is the legal property of its developers, whose names are
-# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
-#
-# See the LICENSE.md file at the top-level directory of this distribution and
-# at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
-#
-
-echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
-
-if [ $? -eq 0 ]; then
-    rhdir="/home/pigaming/RetroArena/retrohub"
-    
-    if [ -e "$rhdir" ]; then
-        cd "$rhdir"
-        git pull https://github.com/Retro-Arena/retrohub.git
-    fi
-fi
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+cd /home/pigaming/RetroArena/retrohub
+git pull https://github.com/Retro-Arena/retrohub.git

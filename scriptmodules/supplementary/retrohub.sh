@@ -29,12 +29,12 @@ function configure_retrohub() {
 }
 
 function enable_retrohub() {
-    sudo cp -R "$scriptdir/scriptmodules/supplementary/retrohub/rhupdate" "/etc"
-    sudo chmod +x "/etc/rhupdate"
+    cp "$scriptdir/scriptmodules/supplementary/retrohub/rhupdate" "$home/.config/rhupdate"
+    chmod +x "$home/.config/rhupdate"
 }
 
 function disable_retrohub() {
-    sudo rm -rf "/etc/rhupdate"
+    rm -rf "$home/.config/rhupdate"
 }
 
 function remove_retrohub() {
