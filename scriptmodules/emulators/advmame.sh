@@ -53,16 +53,16 @@ function install_bin_advmame() {
 }
 
 function configure_advmame() {
-    mkRomDir "arcade"
+    local system
+    for system in arcade arcadia astrocade bbcmicro channelf electron mame-advmame supervision; do
+        mkRomDir "$system"
+        addSystem "$system"
+        cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/$system/"
+    done
+    
+    # unsure why this is necessary
     mkRomDir "arcade/advmame"
-    mkRomDir "mame-advmame"
-    mkRomDir "arcadia"
-    mkRomDir "astrocade"
-    mkRomDir "bbcmicro"
-    mkRomDir "channelf"
-    mkRomDir "electron"
-    mkRomDir "supervision"
-
+    
     moveConfigDir "$home/.advance" "$md_conf_root/mame-advmame"
 
     # move any old named configs (with 3.2 taking priority)
@@ -129,28 +129,4 @@ function configure_advmame() {
             iniSet "sound_samplerate" "44100"
         fi
     fi
-
-    addEmulator 1 "$md_id" "arcade" "$md_inst/bin/advmame %BASENAME%"
-    addEmulator 1 "$md_id" "mame-advmame" "$md_inst/bin/advmame %BASENAME%"
-    addEmulator 1 "$md_id" "arcadia" "$md_inst/bin/advmess -cfg $md_conf_root/arcadia/advmess.rc -cart %ROM%"
-    addEmulator 1 "$md_id" "astrocade" "$md_inst/bin/advmess -cfg $md_conf_root/astrocade/advmess.rc -cart %ROM%"
-    addEmulator 1 "$md_id" "bbcmicro" "$md_inst/bin/advmess -cfg $md_conf_root/bbcmicro/advmess.rc -floppy %ROM%"
-    addEmulator 1 "$md_id" "channelf" "$md_inst/bin/advmess -cfg $md_conf_root/channelf/advmess.rc -cart %ROM%"
-    addEmulator 1 "$md_id" "electron" "$md_inst/bin/advmess -cfg $md_conf_root/electron/advmess.rc -cass %ROM%"
-    addEmulator 1 "$md_id" "supervision" "$md_inst/bin/advmess -cfg $md_conf_root/supervision/advmess.rc -cart %ROM%"
-    
-    addSystem "arcade"
-    addSystem "mame-advmame"
-    addSystem "arcadia"
-    addSystem "astrocade"
-    addSystem "bbcmicro"
-    addSystem "channelf"
-    addSystem "electron"
-    addSystem "supervision"
-    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/arcadia/"
-    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/astrocade/"
-    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/bbcmicro/"
-    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/channelf/"
-    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/electron/"
-    cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/supervision/"
 }
