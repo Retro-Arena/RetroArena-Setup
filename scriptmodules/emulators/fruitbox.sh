@@ -62,9 +62,6 @@ if [[ -e "$home/.config/fruitbox" ]]; then
     rm -rf "$home/.config/fruitbox"
     /opt/retroarena/emulators/fruitbox/fruitbox --config-buttons
 else
-    if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
-        rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
-    fi
     /opt/retroarena/emulators/fruitbox/fruitbox --cfg /opt/retroarena/emulators/fruitbox/skins/\$skin/fruitbox.cfg
 fi
 _EOF_
@@ -134,11 +131,20 @@ function gamepad_fruitbox() {
     exit 0
 }
 
+function dbscan_fruitbox() {
+    if [[ -e "$home/RetroArena/roms/jukebox/fruitbox.db" ]]; then
+        rm -rf "$home/RetroArena/roms/jukebox/fruitbox.db"
+    fi
+    printMsgs "dialog" "Enabled Database Scan\n\nCopy your .mp3 files to '$romdir/jukebox' then launch Fruitbox from EmulationStation.\n\nPress OK to Exit."
+    exit 0
+}
+
 function gui_fruitbox() {  
     while true; do
         local options=(
             1 "Select Fruitbox Skin"
             2 "Enable Gamepad Configuration"
+            3 "Enable Database Scan"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -149,6 +155,9 @@ function gui_fruitbox() {
                 ;;
             2)
                 gamepad_fruitbox
+                ;;
+            3)
+                dbscan_fruitbox
                 ;;
         esac
     done
