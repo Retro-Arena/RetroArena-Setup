@@ -60,8 +60,16 @@ function configure_advmame() {
         cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/$system/"
     done
     
-    # unsure why this is necessary
     mkRomDir "arcade/advmame"
+    
+    addEmulator 1 "$md_id" "arcade" "$md_inst/bin/advmame %BASENAME%"
+    addEmulator 1 "$md_id" "mame-advmame" "$md_inst/bin/advmame %BASENAME%"
+    addEmulator 1 "$md_id" "arcadia" "$md_inst/bin/advmess -cfg $md_conf_root/arcadia/advmess.rc -cart %ROM%"
+    addEmulator 1 "$md_id" "astrocade" "$md_inst/bin/advmess -cfg $md_conf_root/astrocade/advmess.rc -cart %ROM%"
+    addEmulator 1 "$md_id" "bbcmicro" "$md_inst/bin/advmess -cfg $md_conf_root/bbcmicro/advmess.rc -floppy %ROM%"
+    addEmulator 1 "$md_id" "channelf" "$md_inst/bin/advmess -cfg $md_conf_root/channelf/advmess.rc -cart %ROM%"
+    addEmulator 1 "$md_id" "electron" "$md_inst/bin/advmess -cfg $md_conf_root/electron/advmess.rc -cass %ROM%"
+    addEmulator 1 "$md_id" "supervision" "$md_inst/bin/advmess -cfg $md_conf_root/supervision/advmess.rc -cart %ROM%"
     
     moveConfigDir "$home/.advance" "$md_conf_root/mame-advmame"
 
