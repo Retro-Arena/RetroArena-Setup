@@ -29,12 +29,12 @@ function configure_retrohub() {
 }
 
 function enable_retrohub() {
-    sudo cp -R "$scriptdir/scriptmodules/supplementary/retrohub/rhupdate" "/etc/cron.daily"
-    sudo chmod +x "/etc/cron.daily/rhupdate"
+    sudo cp -R "$scriptdir/scriptmodules/supplementary/retrohub/rhupdate" "/etc"
+    sudo chmod +x "/etc/rhupdate"
 }
 
 function disable_retrohub() {
-    sudo rm -rf "/etc/cron.daily/rhupdate"
+    sudo rm -rf "/etc/rhupdate"
 }
 
 function remove_retrohub() {
