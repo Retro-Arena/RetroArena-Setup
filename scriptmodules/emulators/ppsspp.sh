@@ -14,6 +14,7 @@ rp_module_desc="PlayStation Portable emulator PPSSPP"
 rp_module_help="ROM Extensions: .iso .pbp .cso\n\nCopy your PlayStation Portable roms to $romdir/psp"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/hrydgard/ppsspp/master/LICENSE.TXT"
 rp_module_section="sa"
+rp_module_flags="!kms"
 
 function sources_ppsspp() {
     gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git

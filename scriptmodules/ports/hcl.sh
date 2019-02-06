@@ -14,7 +14,7 @@ rp_module_desc="hcl - Hydra Castle Labyrinth - Metroidvania game"
 rp_module_licence="GPL2 https://github.com/ptitSeb/hydracastlelabyrinth/blob/master/LICENSE"
 rp_module_help="Make sure to set the language to English from the options menu before playing. If you are experiencing slowdowns in game, make sure the xBRZ shader is turned off in the options menu."
 rp_module_section="prt"
-rp_module_flags="!x86"
+rp_module_flags="!x86 !kms"
 
 function depends_hcl() {
     getDepends libsdl1.2-dev libsdl-mixer1.2-dev cmake

@@ -14,14 +14,14 @@ rp_module_desc="N64 emulator MUPEN64Plus"
 rp_module_help="ROM Extensions: .z64 .n64 .v64\n\nCopy your N64 roms to $romdir/n64"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/mupen64plus/mupen64plus-core/master/LICENSES"
 rp_module_section="sa"
-rp_module_flags="!kms"
+rp_module_flags=""
 
 function depends_mupen64plus() {
     local depends=(cmake libsamplerate0-dev libspeexdsp-dev libsdl2-dev libpng-dev fonts-freefont-ttf)
     isPlatform "rpi" && depends+=(libraspberrypi-bin libraspberrypi-dev)
     isPlatform "x11" && depends+=(libglew-dev libglu1-mesa-dev libboost-filesystem-dev)
     isPlatform "x86" && depends+=(nasm)
-    isPlatform "vero4k" && depends+=(vero3-userland-dev-osmc libboost-all-dev)
+    isPlatform "rockpro64" && depends+=(libboost-all-dev)
     getDepends "${depends[@]}"
 }
 
@@ -44,11 +44,12 @@ function sources_mupen64plus() {
             #'mupen64plus rsp-cxd4'
             'mupen64plus rsp-z64'
         )
-    elif isPlatform "vero4k"; then
+    elif isPlatform "rockpro64"; then
         repos+=(
-            'ricrpi video-gles2n64'
+            'mupen64plus video-rice '
             'mupen64plus video-glide64mk2'
-            'ricrpi video-gles2rice pandora-backport'
+            #'mupen64plus rsp-cxd4'
+            'mupen64plus rsp-z64'
         )
     else
         repos+=(
@@ -91,7 +92,7 @@ function build_mupen64plus() {
             isPlatform "neon" && params+=("NEON=1")
             isPlatform "x11" && params+=("OSD=1" "PIE=1")
             isPlatform "x86" && params+=("SSE=SSE2")
-            isPlatform "vero4k" && params+=("HOST_CPU=armv8" "USE_GLES=1")
+            isPlatform "rockpro64" && params+=("HOST_CPU=armv8" "USE_GLES=1")
 
             [[ "$dir" == "mupen64plus-ui-console" ]] && params+=("COREDIR=$md_inst/lib/" "PLUGINDIR=$md_inst/lib/mupen64plus/")
             make -C "$dir/projects/unix" "${params[@]}" clean
@@ -108,8 +109,8 @@ function build_mupen64plus() {
 	isPlatform "mali" && params+=( "-DODROID=ON" "-DGLES2=ON" "-DEGL=ON")
     if isPlatform "rpi3"; then
         params+=("-DCRC_ARMV8=On")
-    elif isPlatform "vero4k"; then
-        params+=("-DVERO4K=On" "-DCRC_ARMV8=On" "-DEGL=On")
+    elif isPlatform "rockpro64"; then
+        params+=("-DCRC_ARMV8=On" "-DEGL=On")
     else
         params+=("-DCRC_OPT=On")
     fi
@@ -133,11 +134,12 @@ function build_mupen64plus() {
             'mupen64plus-rsp-z64/projects/unix/mupen64plus-rsp-z64.so'
 			#'mupen64plus-rsp-cxd4/projects/unix/mupen64plus-rsp-cxd4.so'
         )
-    elif isPlatform "vero4k"; then
+    elif isPlatform "rockpro64"; then
         md_ret_require+=(
-            'mupen64plus-video-gles2rice/projects/unix/mupen64plus-video-rice.so'
-            'mupen64plus-video-gles2n64/projects/unix/mupen64plus-video-n64.so'
+             'mupen64plus-video-rice/projects/unix/mupen64plus-video-rice.so'
             'mupen64plus-video-glide64mk2/projects/unix/mupen64plus-video-glide64mk2.so'
+            'mupen64plus-rsp-z64/projects/unix/mupen64plus-rsp-z64.so'
+			#'mupen64plus-rsp-cxd4/projects/unix/mupen64plus-rsp-cxd4.so'
         )
     else
         md_ret_require+=(
@@ -161,7 +163,7 @@ function install_mupen64plus() {
             isPlatform "rpi" && params+=("VC=1")
             isPlatform "neon" && params+=("NEON=1")
             isPlatform "x86" && params+=("SSE=SSE2")
-            isPlatform "vero4k" && params+=("HOST_CPU=armv8" "USE_GLES=1")
+            isPlatform "rockpro64" && params+=("HOST_CPU=armv8" "USE_GLES=1")
             make -C "$source/projects/unix" PREFIX="$md_inst" OPTFLAGS="$CFLAGS -O3 -flto" "${params[@]}" install
         fi
     done
@@ -184,13 +186,12 @@ function configure_mupen64plus() {
             [[ "$res" == "640x480" ]] && name="-highres"
             addEmulator 0 "${md_id}-GLideN64$name" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-GLideN64 %ROM% $res"
             addEmulator 0 "${md_id}-gles2rice$name" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-rice %ROM% $res"
-			addEmulator 0 "${md_id}-glide64" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-glide64mk2 %ROM%"
+			addEmulator 0 "${md_id}-glide64mk2" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-glide64mk2 %ROM%"
         done
              addEmulator 1 "${md_id}-auto" "n64" "$md_inst/bin/mupen64plus.sh AUTO %ROM%"
-    elif isPlatform "vero4k"; then
-        addEmulator 1 "${md_id}-gles2n64" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-n64 %ROM%"
+    elif isPlatform "rockpro64"; then
         addEmulator 0 "${md_id}-GLideN64" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-GLideN64 %ROM%"
-        addEmulator 0 "${md_id}-glide64" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-glide64mk2 %ROM%"
+        addEmulator 0 "${md_id}-glide64mk2" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-glide64mk2 %ROM%"
         addEmulator 0 "${md_id}-gles2rice" "n64" "$md_inst/bin/mupen64plus.sh mupen64plus-video-rice %ROM%"
         addEmulator 0 "${md_id}-auto" "n64" "$md_inst/bin/mupen64plus.sh AUTO %ROM%"
     else
