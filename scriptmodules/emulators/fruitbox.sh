@@ -72,10 +72,12 @@ _EOF_
     chown $user:$user "$romdir/jukebox/+Start Fruitbox.sh"
     addEmulator 1 "$md_id" "jukebox" "fruitbox %ROM%"
     addSystem "jukebox"
+    touch "$home/.config/fruitbox"
 }
 
 function install_bin_fruitbox() {
     downloadAndExtract "$__gitbins_url/fruitbox.tar.gz" "$md_inst" 1
+    touch "$home/.config/fruitbox"
 }
 
 function remove_fruitbox() {

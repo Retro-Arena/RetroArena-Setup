@@ -1059,12 +1059,14 @@ function bios_check() {
         done
     fi
     if [[ "$SYSTEM" == "jukebox" ]]; then
-        JUKEBOX=$(ls $HOME/RetroArena/roms/jukebox/*.mp3 2> /dev/null | wc -l)
-        if [[ "$JUKEBOX" = "0" ]]; then
-            dialog --no-ok --no-cancel --pause "REQUIRED MUSIC FILES\n\nCopy your MP3 files in '$HOME/RetroArena/roms/jukebox'\n\nTo configure a gamepad, launch 'Jukebox Config' in Settings, then 'Enable Gamepad Configuration'." 22 76 15
-            clear
-            user_script "runcommand-onend.sh"
-            exit 1
+        if [[ ! -e "$HOME/.config/fruitbox" ]]; then
+            JUKEBOX=$(ls $HOME/RetroArena/roms/jukebox/*.mp3 2> /dev/null | wc -l)
+            if [[ "$JUKEBOX" = "0" ]]; then
+                dialog --no-ok --no-cancel --pause "REQUIRED MUSIC FILES\n\nCopy your MP3 files in '$HOME/RetroArena/roms/jukebox'\n\nTo configure a gamepad, launch 'Jukebox Config' in Settings, then 'Enable Gamepad Configuration'." 22 76 15
+                clear
+                user_script "runcommand-onend.sh"
+                exit 1
+            fi
         fi
     fi
 }
