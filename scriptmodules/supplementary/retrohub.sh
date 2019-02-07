@@ -17,9 +17,7 @@ function install_bin_retrohub() {
     local rhdir="$datadir/retrohub"
     gitPullOrClone "$rhdir" https://github.com/Retro-Arena/retrohub.git
     chown -R $user:$user "$rhdir"
-    
-    # enable on install
-    enable_retrohub
+    touch "$home/.config/retrohub"
 }
 
 function configure_retrohub() {
@@ -28,38 +26,8 @@ function configure_retrohub() {
     setESSystem "RetroHub" "retrohub" "$rhdir" ".png" "fbi --noverbose -t 15 -1 %ROM% >/dev/null 2>&1" "" "retrohub"
 }
 
-function enable_retrohub() {
-    touch "$home/.config/retrohub"
-}
-
-function disable_retrohub() {
-    rm -rf "$home/.config/retrohub"
-}
-
 function remove_retrohub() {
     rm -rf "$datadir/retrohub"
     delSystem retrohub
-    disable_retrohub
-}
-
-function gui_retrohub() {
-    while true; do
-        local options=(
-            1 "Enable RetroHub Daily Update (default)"
-            2 "Disable RetroHub Daily Update"
-        )
-        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
-        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-        [[ -z "$choice" ]] && break
-        case "$choice" in
-            1)
-                enable_retrohub
-                printMsgs "dialog" "Enabled Retrohub Auto-update\n\nThe update will occur weekly on Sundays at 03:00 UTC."
-                ;;
-            2)
-                disable_retrohub
-                printMsgs "dialog" "Disabled Retrohub Auto-update"
-                ;;
-        esac
-    done
+    rm -rf "$home/.config/retrohub"
 }
