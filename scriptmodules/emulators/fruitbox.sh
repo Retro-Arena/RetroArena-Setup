@@ -74,6 +74,21 @@ _EOF_
 
 function install_bin_fruitbox() {
     downloadAndExtract "$__gitbins_url/fruitbox.tar.gz" "$md_inst" 1
+    mkRomDir "jukebox"
+    cat > "$romdir/jukebox/+Start Fruitbox.sh" << _EOF_
+#!/bin/bash
+skin=WallJuke
+if [[ -e "$home/.config/fruitbox" ]]; then
+    rm -rf "$home/.config/fruitbox"
+    /opt/retroarena/emulators/fruitbox/fruitbox --config-buttons
+else
+    /opt/retroarena/emulators/fruitbox/fruitbox --cfg /opt/retroarena/emulators/fruitbox/skins/\$skin/fruitbox.cfg
+fi
+_EOF_
+    chmod a+x "$romdir/jukebox/+Start Fruitbox.sh"
+    chown $user:$user "$romdir/jukebox/+Start Fruitbox.sh"
+    addEmulator 1 "$md_id" "jukebox" "fruitbox %ROM%"
+    addSystem "jukebox"
     touch "$home/.config/fruitbox"
 }
 
