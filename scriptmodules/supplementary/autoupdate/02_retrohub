@@ -1,8 +1,9 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-if [[ -e "/home/pigaming/.config/retrohub" ]]; then
+if [ -f /home/pigaming/.config/retrohub ]; then
     cd /home/pigaming/RetroArena/retrohub
     sudo git pull https://github.com/Retro-Arena/retrohub.git
-    chown -R $user:$user /home/pigaming/RetroArena/retrohub
+	chown -R pigaming:pigaming /home/pigaming/RetroArena/retrohub
+	touch /home/pigaming/test002
 fi
