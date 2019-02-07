@@ -15,7 +15,7 @@ rp_module_section="config"
 
 function enable_autoupdate() {
     sudo systemctl start cron.service
-    crontab "$scriptdir/scriptmodules/supplementary/autoupdate/autoupdate"
+    crontab -u pigaming "$scriptdir/scriptmodules/supplementary/autoupdate/autoupdate"
 }
 
 function disable_autoupdate() {
