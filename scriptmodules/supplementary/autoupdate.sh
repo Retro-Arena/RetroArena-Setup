@@ -21,6 +21,8 @@ function enable_autoupdate() {
 function disable_autoupdate() {
     sudo systemctl stop cron.service
     crontab -u pigaming -r
+    rm -rf "$home/.config/setupscript"
+    rm -rf "$home/.config/retrohub"
 }
 
 function gui_autoupdate() {
