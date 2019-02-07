@@ -1,0 +1,7 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+if [[ -e "/home/pigaming/.config/setupscript" ]]; then
+    cd /home/pigaming/RetroArena-Setup
+    git pull https://github.com/Retro-Arena/RetroArena-Setup.git
+fi
