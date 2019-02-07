@@ -20,7 +20,7 @@ function enable_autoupdate() {
 
 function disable_autoupdate() {
     sudo systemctl stop cron.service
-    crontab -r
+    crontab -u pigaming -r
 }
 
 function gui_autoupdate() {
@@ -38,12 +38,10 @@ function gui_autoupdate() {
         case "$choice" in
             1)
                 enable_autoupdate
-                touch "$home/.config/bgmtoggle"
                 printMsgs "dialog" "Enabled Auto-update Service"
                 ;;
             2)
                 disable_autoupdate
-                rm -rf "$home/.config/bgmtoggle"
                 printMsgs "dialog" "Disabled Auto-update Service"
                 ;;
             3)

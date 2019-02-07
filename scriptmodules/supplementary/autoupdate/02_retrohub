@@ -5,5 +5,4 @@ if [ -f /home/pigaming/.config/retrohub ]; then
     cd /home/pigaming/RetroArena/retrohub
     sudo git pull https://github.com/Retro-Arena/retrohub.git
 	chown -R pigaming:pigaming /home/pigaming/RetroArena/retrohub
-	touch /home/pigaming/test002
 fi
