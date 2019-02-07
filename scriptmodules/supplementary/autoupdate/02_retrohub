@@ -4,5 +4,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 if [ -f /home/pigaming/.config/retrohub ]; then
     cd /home/pigaming/RetroArena/retrohub
     sudo git pull https://github.com/Retro-Arena/retrohub.git
-	chown -R pigaming:pigaming /home/pigaming/RetroArena/retrohub
+    sudo chown -R pigaming:pigaming /home/pigaming/RetroArena/retrohub
 fi
