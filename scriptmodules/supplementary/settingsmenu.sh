@@ -63,7 +63,6 @@ function configure_settingsmenu()
         "launchingvideos"
         "odroidconfig"
         "removemedia"
-        "retroarch"
         "rpsetup"
         "runcommand"
         "showip"
@@ -91,7 +90,6 @@ function configure_settingsmenu()
         "Media: Launching Videos"
         "System: Odroid-Config"
         "Media: Remove Media"
-        "System: Retroarch"
         "System: RetroArena-Setup"
         "System: Runcommand Config"
         "Network: Show IP"
@@ -131,9 +129,6 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
         "Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system where there is not a matching game for it. If you keep your media for MAME or Final Burn Alpha in the 'roms/arcade' folder, there is a special choice just for that.
 
 NOTE: Always make a backup copy of your SD card and your roms and media files before making changes to your system."
-        "Launches the RetroArch GUI so you can change RetroArch options.
-        
-NOTE: Changes will not be saved unless you have enabled the 'Save Configuration On Exit' option."
         "Update Setup Script, install/uninstall Libretro and standalone emulators, ports, drivers, scrapers, and configurations."
         "Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration."
         "Displays your current IP address, as well as other information provided by the command, 'ip addr show.'"
@@ -153,7 +148,6 @@ NOTE: Requires a keyboard to be connected."
     local hiddens=(
         "true"
         "false"
-        "true"
         "true"
         "true"
         "true"
@@ -223,14 +217,6 @@ function launch_settingsmenu() {
     local no_ext="${basename%.rp}"
     joy2keyStart
     case "$basename" in
-        retroarch.rp)
-            joy2keyStop
-            cp "$configdir/all/retroarch.cfg" "$configdir/all/retroarch.cfg.bak"
-            chown $user:$user "$configdir/all/retroarch.cfg.bak"
-            su $user -c "\"$emudir/retroarch/bin/retroarch\" --menu --config \"$configdir/all/retroarch.cfg\""
-            iniConfig " = " '"' "$configdir/all/retroarch.cfg"
-            iniSet "config_save_on_exit" "false"
-            ;;
         rpsetup.rp)
             rp_callModule setup gui
             ;;
