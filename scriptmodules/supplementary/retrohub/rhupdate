@@ -1,4 +1,4 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 cd /home/pigaming/RetroArena/retrohub
-git pull https://github.com/Retro-Arena/retrohub.git
+sudo git pull https://github.com/Retro-Arena/retrohub.git

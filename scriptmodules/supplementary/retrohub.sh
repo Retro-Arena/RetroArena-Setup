@@ -29,12 +29,13 @@ function configure_retrohub() {
 }
 
 function enable_retrohub() {
-    cp "$scriptdir/scriptmodules/supplementary/retrohub/rhupdate" "$home/.config/rhupdate"
-    chmod +x "$home/.config/rhupdate"
+    sudo systemctl start cron.service
+    crontab "$scriptdir/scriptmodules/supplementary/retrohub/rhcron"
 }
 
 function disable_retrohub() {
-    rm -rf "$home/.config/rhupdate"
+    sudo systemctl stop cron.service
+    crontab -r
 }
 
 function remove_retrohub() {
