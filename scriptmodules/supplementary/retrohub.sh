@@ -29,13 +29,11 @@ function configure_retrohub() {
 }
 
 function enable_retrohub() {
-    sudo systemctl start cron.service
-    crontab "$scriptdir/scriptmodules/supplementary/retrohub/rhcron"
+    touch "$home/.config/retrohub"
 }
 
 function disable_retrohub() {
-    sudo systemctl stop cron.service
-    crontab -r
+    rm -rf "$home/.config/retrohub"
 }
 
 function remove_retrohub() {
@@ -56,11 +54,11 @@ function gui_retrohub() {
         case "$choice" in
             1)
                 enable_retrohub
-                printMsgs "dialog" "Enabled RetroHub Daily Update"
+                printMsgs "dialog" "Enabled Retrohub Auto-update\n\nThe update will occur weekly on Sundays at 03:00 UTC."
                 ;;
             2)
                 disable_retrohub
-                printMsgs "dialog" "Disabled RetroHub Daily Update"
+                printMsgs "dialog" "Disabled Retrohub Auto-update"
                 ;;
         esac
     done
