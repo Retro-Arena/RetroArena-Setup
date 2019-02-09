@@ -121,7 +121,15 @@ function configure_advmame() {
     fi
     
     mkRomDir "arcade/advmame"
-
+  
+    local system
+    for system in arcade arcadia astrocade bbcmicro channelf electron mame-advmame supervision; do
+        mkRomDir "$system"
+        addSystem "$system"
+        mkdir -p "$md_conf_root/$system"
+        cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/$system/"
+    done
+    
     addEmulator 1 "$md_id" "arcade" "$md_inst/bin/advmame %BASENAME%"
     addEmulator 1 "$md_id" "mame-advmame" "$md_inst/bin/advmame %BASENAME%"
     addEmulator 1 "$md_id" "advmame_arcadia" "$md_inst/bin/advmess -cfg $md_conf_root/arcadia/advmess.rc -cart %ROM%"
@@ -130,12 +138,4 @@ function configure_advmame() {
     addEmulator 1 "$md_id" "advmame_channelf" "$md_inst/bin/advmess -cfg $md_conf_root/channelf/advmess.rc -cart %ROM%"
     addEmulator 1 "$md_id" "advmame_electron" "$md_inst/bin/advmess -cfg $md_conf_root/electron/advmess.rc -cass %ROM%"
     addEmulator 1 "$md_id" "advmame_supervision" "$md_inst/bin/advmess -cfg $md_conf_root/supervision/advmess.rc -cart %ROM%"
-    
-    local system
-    for system in arcade arcadia astrocade bbcmicro channelf electron mame-advmame supervision; do
-        mkRomDir "$system"
-        addSystem "$system"
-        mkdir -p "$md_conf_root/$system"
-        cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/$system/"
-    done
 }
