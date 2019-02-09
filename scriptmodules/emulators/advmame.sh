@@ -145,7 +145,5 @@ function configure_advmame() {
         mkRomDir "$system"
         addSystem "$system"
         cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/$system/"
-        sed -i -e "s:advmame =:advmame_$system =:g" "$md_conf_root/$system/emulators.cfg"
-        sed -i -e 's:default = "advmame":default = "advmame_'$system'":g' "$md_conf_root/$system/emulators.cfg"
     done   
 }
