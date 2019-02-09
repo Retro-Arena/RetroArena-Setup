@@ -119,20 +119,29 @@ function configure_advmame() {
             iniSet "sound_samplerate" "44100"
         fi
     fi
-    
+
+    # mame
     addEmulator 1 "$md_id" "arcade" "$md_inst/bin/advmame %BASENAME%"
     addEmulator 1 "$md_id" "mame-advmame" "$md_inst/bin/advmame %BASENAME%"
+    
+    local system
+    for system in arcade mame-advmame; do
+        mkRomDir "$system"
+        addSystem "$system"
+    done   
+    
+    mkRomDir "arcade/advmame"
+    
+    # mess
     addEmulator 1 "$md_id_arcadia" "arcadia" "$md_inst/bin/advmess -cfg $md_conf_root/arcadia/advmess.rc -cart %ROM%"
     addEmulator 1 "$md_id_astrocade" "astrocade" "$md_inst/bin/advmess -cfg $md_conf_root/astrocade/advmess.rc -cart %ROM%"
     addEmulator 1 "$md_id_bbcmicro" "bbcmicro" "$md_inst/bin/advmess -cfg $md_conf_root/bbcmicro/advmess.rc -floppy %ROM%"
     addEmulator 1 "$md_id_channelf" "channelf" "$md_inst/bin/advmess -cfg $md_conf_root/channelf/advmess.rc -cart %ROM%"
     addEmulator 1 "$md_id_electron" "electron" "$md_inst/bin/advmess -cfg $md_conf_root/electron/advmess.rc -cass %ROM%"
     addEmulator 1 "$md_id_supervision" "supervision" "$md_inst/bin/advmess -cfg $md_conf_root/supervision/advmess.rc -cart %ROM%"
-    
-    mkRomDir "arcade/advmame"
-  
+     
     local system
-    for system in arcade arcadia astrocade bbcmicro channelf electron mame-advmame supervision; do
+    for system in arcadia astrocade bbcmicro channelf electron supervision; do
         mkRomDir "$system"
         addSystem "$system"
         cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/$system/"
