@@ -133,12 +133,12 @@ function configure_advmame() {
     mkRomDir "arcade/advmame"
     
     # mess
-    addEmulator 1 "$md_id" "arcadia" "$md_inst/bin/advmess -cfg $md_conf_root/arcadia/advmess.rc -cart %ROM%"
-    addEmulator 1 "$md_id" "astrocade" "$md_inst/bin/advmess -cfg $md_conf_root/astrocade/advmess.rc -cart %ROM%"
-    addEmulator 1 "$md_id" "bbcmicro" "$md_inst/bin/advmess -cfg $md_conf_root/bbcmicro/advmess.rc -floppy %ROM%"
-    addEmulator 1 "$md_id" "channelf" "$md_inst/bin/advmess -cfg $md_conf_root/channelf/advmess.rc -cart %ROM%"
-    addEmulator 1 "$md_id" "electron" "$md_inst/bin/advmess -cfg $md_conf_root/electron/advmess.rc -cass %ROM%"
-    addEmulator 1 "$md_id" "supervision" "$md_inst/bin/advmess -cfg $md_conf_root/supervision/advmess.rc -cart %ROM%"
+    addEmulator 1 "$md_id" "arcadia" "$md_inst/bin/advmess arcadia -cfg $md_conf_root/arcadia/advmess.rc -cart %ROM%"
+    addEmulator 1 "$md_id" "astrocade" "$md_inst/bin/advmess astrocde -cfg $md_conf_root/astrocade/advmess.rc -cart %ROM%"
+    addEmulator 1 "$md_id" "bbcmicro" "$md_inst/bin/advmess bbcb -cfg $md_conf_root/bbcmicro/advmess.rc -floppy %ROM%"
+    addEmulator 1 "$md_id" "channelf" "$md_inst/bin/advmess channelf -cfg $md_conf_root/channelf/advmess.rc -cart %ROM%"
+    addEmulator 1 "$md_id" "electron" "$md_inst/bin/advmess electron -cfg $md_conf_root/electron/advmess.rc -cass %ROM%"
+    addEmulator 1 "$md_id" "supervision" "$md_inst/bin/advmess svision -cfg $md_conf_root/supervision/advmess.rc -cart %ROM%"
      
     local system
     for system in arcadia astrocade bbcmicro channelf electron supervision; do
