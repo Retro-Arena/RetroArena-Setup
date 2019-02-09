@@ -53,6 +53,8 @@ function install_bin_advmame() {
 }
 
 function configure_advmame() {
+    moveConfigDir "$home/.advance" "$md_conf_root/mame-advmame"
+
     # move any old named configs (with 3.2 taking priority)
     local ver
     for ver in 3.1 3.2; do
@@ -94,18 +96,18 @@ function configure_advmame() {
         iniSet "dir_snap" "$romdir/mame-advmame/snap"
         iniSet "dir_sta" "$romdir/mame-advmame/nvram"
 
-        if isPlatform "mali"; then
-            iniSet "device_video" "sdl"
+        if isPlatform "rpi"; then
+            iniSet "device_video" "fb"
             iniSet "device_video_cursor" "off"
-            iniSet "device_keyboard" "sdl"
+            iniSet "device_keyboard" "raw"
             iniSet "device_sound" "alsa"
             iniSet "display_vsync" "no"
             iniSet "sound_normalize" "no"
             iniSet "display_resizeeffect" "none"
-            iniSet "display_resize" "fractional"
+            iniSet "display_resize" "integer"
             iniSet "display_magnify" "1"
-            iniSet "device_video_output" "fullscreen"
-            iniset "display_mode sdl_1920x1080"
+        else
+            iniSet "device_video_output" "overlay"
             iniSet "display_aspectx" 16
             iniSet "display_aspecty" 9
         fi
@@ -118,6 +120,8 @@ function configure_advmame() {
         fi
     fi
     
+    mkRomDir "arcade/advmame"
+
     addEmulator 1 "$md_id" "arcade" "$md_inst/bin/advmame %BASENAME%"
     addEmulator 1 "$md_id" "mame-advmame" "$md_inst/bin/advmame %BASENAME%"
     addEmulator 1 "$md_id" "advmame_arcadia" "$md_inst/bin/advmess -cfg $md_conf_root/arcadia/advmess.rc -cart %ROM%"
@@ -126,15 +130,12 @@ function configure_advmame() {
     addEmulator 1 "$md_id" "advmame_channelf" "$md_inst/bin/advmess -cfg $md_conf_root/channelf/advmess.rc -cart %ROM%"
     addEmulator 1 "$md_id" "advmame_electron" "$md_inst/bin/advmess -cfg $md_conf_root/electron/advmess.rc -cass %ROM%"
     addEmulator 1 "$md_id" "advmame_supervision" "$md_inst/bin/advmess -cfg $md_conf_root/supervision/advmess.rc -cart %ROM%"
-
+    
     local system
     for system in arcade arcadia astrocade bbcmicro channelf electron mame-advmame supervision; do
         mkRomDir "$system"
         addSystem "$system"
+        mkdir -p "$md_conf_root/$system"
         cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/$system/"
     done
-    
-    mkRomDir "arcade/advmame"
-       
-    moveConfigDir "$home/.advance" "$md_conf_root/mame-advmame"
 }
