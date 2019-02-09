@@ -43,10 +43,6 @@ function install_lr-hatari() {
     )
 }
 
-function install_bin_lr-hatari() {
-    downloadAndExtract "$__gitbins_url/lr-hatari.tar.gz" "$md_inst" 1
-}
-
 function configure_lr-hatari() {
     mkRomDir "atarist"
     ensureSystemretroconfig "atarist"
