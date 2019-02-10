@@ -52,7 +52,7 @@ function configure_lr-mess() {
     for system in arcadia cdimono1 crvision coleco gb neocdz nes; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
-        addEmulator 0 "$md_id" "$system" "$md_inst/$module"
+        addEmulator 1 "$md_id" "$system" "$md_inst/$module"
         addSystem "$system"
     done
 
