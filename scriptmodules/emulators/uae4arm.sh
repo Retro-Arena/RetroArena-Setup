@@ -43,14 +43,18 @@ function install_uae4arm() {
 
 function configure_uae4arm() {
     mkRomDir "amiga"
+    mkRomDir "amigacd32"
 
     mkUserDir "$md_conf_root/amiga"
+    mkUserDir "$md_conf_root/amigacd32"
     mkUserDir "$md_conf_root/amiga/$md_id"
+    mkUserDir "$md_conf_root/amigacd32/$md_id"
 
     # move config / save folders to $md_conf_root/amiga/$md_id
     local dir
     for dir in conf savestates screenshots; do
         moveConfigDir "$md_inst/$dir" "$md_conf_root/amiga/$md_id/$dir"
+         moveConfigDir "$md_inst/$dir" "$md_conf_root/amigacd32/$md_id/$dir"
     done
 
     # and kickstart dir (removing old symlinks first)
@@ -81,6 +85,7 @@ function configure_uae4arm() {
     iniSet "cachesize" "0"
     iniSet "kickstart_rom_file" "\$(FILE_PATH)/kick31.rom"
     copyDefaultConfig "$conf" "$md_conf_root/amiga/$md_id/conf/rp-a1200.uae"
+    copyDefaultConfig "$conf" "$md_conf_root/amigacd32/$md_id/conf/rp-a1200.uae"
     rm "$conf"
 
     # copy launch script (used for uae4arm and amiberry)
@@ -90,6 +95,7 @@ function configure_uae4arm() {
     local script="+Start UAE4Arm.sh"
     [[ "$md_id" == "amiberry" ]] && script="+Start Amiberry.sh"
     rm -f "$romdir/amiga/$script"
+    rm -f "$romdir/amigacd32/$script"
     if [[ "$md_mode" == "install" ]]; then
         cat > "$romdir/amiga/$script" << _EOF_
 #!/bin/bash
@@ -97,10 +103,12 @@ function configure_uae4arm() {
 _EOF_
         chmod a+x "$romdir/amiga/$script"
         chown $user:$user "$romdir/amiga/$script"
+        cp "$romdir/amiga/$script" "$romdir/amigacd32/"
     fi
 
     addEmulator 1 "$md_id" "amiga" "$md_inst/$md_id.sh auto %ROM%"
     addEmulator 1 "$md_id-a500" "amiga" "$md_inst/$md_id.sh rp-a500.uae %ROM%"
     addEmulator 1 "$md_id-a1200" "amiga" "$md_inst/$md_id.sh rp-a1200.uae %ROM%"
     addSystem "amiga"
+    addsystem "amigacd32"
 }
