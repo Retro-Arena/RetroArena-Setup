@@ -63,5 +63,5 @@ function configure_lr-mess() {
     mkdir "$biosdir/mame"
     cp -rv "$md_build/hash" "$biosdir/mame/"
     chown -R $user:$user "$biosdir/mame"
-    cp -R "$scriptdir/configs//lr-mess/cdimono1/." "$md_conf_root/cdimono1/"
+    cp -R "$scriptdir/configs/cdimono1/." "$md_conf_root/cdimono1/"
 }
