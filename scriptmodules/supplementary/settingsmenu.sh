@@ -261,11 +261,13 @@ function gui_settingsmenu() {
             1)
                 rm -rf "$datadir/settingsmenu/icons"
                 cp -r "$scriptdir/scriptmodules/supplementary/settingsmenu/icons" "$datadir/settingsmenu/icons"
+                chown -R $user:$user "$datadir/settingsmenu/icons"
                 printMsgs "dialog" "Settings menu default icons installed\n\nRestart EmulationStation to apply."
                 ;;
             2)
                 rm -rf "$datadir/settingsmenu/icons"
                 cp -r "$scriptdir/scriptmodules/supplementary/settingsmenu/icons_cart" "$datadir/settingsmenu/icons"
+                chown -R $user:$user "$datadir/settingsmenu/icons"
                 printMsgs "dialog" "Settings menu cart icons installed.\n\nRestart EmulationStation to apply."
                 ;;
         esac
