@@ -93,22 +93,21 @@ function configure_amiberry() {
     ln -sf "$configdir/all/retroarch/autoconfig" "$md_inst/controllers"
     ln -sf "$configdir/all/retroarch.cfg" "$md_inst/conf/retroarch.cfg"
 
-    local system
-    for system in amiga amigacd32; do       
-        # create whdboot config area
-        moveConfigDir "$md_inst/whdboot" "$md_conf_root/$system/$md_id/whdboot"               
-        
-        # move hostprefs.conf from previous location
-        if [[ -f "$md_conf_root/$system/$md_id/conf/hostprefs.conf" ]]; then
-            mv "$md_conf_root/$system/$md_id/conf/hostprefs.conf" "$md_conf_root/$system/$md_id/whdboot/hostprefs.conf"
-        fi
-        
-        # whdload auto-booter user config - copy default configuration
-        copyDefaultConfig "$md_inst/whdboot-dist/hostprefs.conf" "$md_conf_root/$system/$md_id/whdboot/hostprefs.conf"
-        
-        # copy game-data, save-data folders and boot-data.zip
-        cp -R "$md_inst/whdboot-dist/"{game-data,save-data,boot-data.zip} "$md_conf_root/$system/$md_id/whdboot/"
-        
-        chown -R $user:$user "$md_conf_root/$system/$md_id/whdboot"
-    done
+    local config_dir="$md_conf_root/amiga/$md_id"
+
+    # create whdboot config area
+    moveConfigDir "$md_inst/whdboot" "$config_dir/whdboot"
+
+    # move hostprefs.conf from previous location
+    if [[ -f "$config_dir/conf/hostprefs.conf" ]]; then
+        mv "$config_dir/conf/hostprefs.conf" "$config_dir/whdboot/hostprefs.conf"
+    fi
+
+    # whdload auto-booter user config - copy default configuration
+    copyDefaultConfig "$md_inst/whdboot-dist/hostprefs.conf" "$config_dir/whdboot/hostprefs.conf"
+
+    # copy game-data, save-data folders and boot-data.zip
+    cp -R "$md_inst/whdboot-dist/"{game-data,save-data,boot-data.zip} "$config_dir/whdboot/"
+
+    chown -R $user:$user "$config_dir/whdboot"
 }
