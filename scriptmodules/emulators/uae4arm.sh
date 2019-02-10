@@ -106,7 +106,8 @@ _EOF_
     
     # amigacd32
     cp -R "$romdir/amiga" "$romdir/amigacd32"
-    cp -R "$md_conf_root/amiga/emulators.cfg" "$md_conf_root/amigacd32/emulators.cfg"
+    cp -R "$md_conf_root/amiga" "$md_conf_root/amigacd32"
+    rm -rf "$md_conf_root/amigacd32/amiberry"
     chown -R $user:$user "$romdir/amigacd32"
     chown -R $user:$user "$md_conf_root/amigacd32"
     addSystem "amigacd32"
