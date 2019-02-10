@@ -94,9 +94,9 @@ function configure_uae4arm() {
         
         if [[ "$md_mode" == "install" ]]; then
             cat > "$romdir/$system/$script" << _EOF_
-    #!/bin/bash
-    "$md_inst/$md_id.sh"
-    _EOF_
+#!/bin/bash
+"$md_inst/$md_id.sh"
+_EOF_
             chmod a+x "$romdir/$system/$script"
             chown $user:$user "$romdir/$system/$script"
         fi
