@@ -36,6 +36,7 @@ function install_scraper() {
         'src/github.com/sselph/scraper/README.md'
         'src/github.com/sselph/scraper/hash.csv'
     )
+    cp "$scriptdir/configs/all/scraper.cfg" "$md_conf_root/all"
 }
 
 function remove_scraper() {
@@ -191,7 +192,7 @@ function _load_config_scraper() {
 
 function gui_scraper() {
     if pgrep "emulationstatio" >/dev/null; then
-        printMsgs "dialog" "This scraper must not be run while Emulation Station is running or the scraped data will be overwritten. \n\nPlease quit from Emulation Station, and run TheRA-Setup from the terminal"
+        printMsgs "dialog" "This scraper must not be run while EmulationStation is running or the scraped data will be overwritten. \n\nPlease quit from EmulationStation, and run RetroArena-Setup from the terminal"
         return
     fi
 

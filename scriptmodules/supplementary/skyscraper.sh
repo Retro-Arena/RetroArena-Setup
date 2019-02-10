@@ -176,6 +176,7 @@ function configure_skyscraper() {
 
     _init_config_skyscraper
     chown -R $user:$user "$configdir/all/skyscraper"
+    cp "$scriptdir/configs/all/skyscraper.cfg" "$md_conf_root/all"
 }
 
 function _init_config_skyscraper() {

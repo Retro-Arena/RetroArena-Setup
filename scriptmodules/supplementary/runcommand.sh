@@ -70,7 +70,10 @@ function governor_runcommand() {
 }
 
 function config_runcommand() {
-    cp -R "$scriptdir/configs/runcommand/." "$md_conf_root/all"
+    cp "$scriptdir/configs/all/runcommand.cfg" "$md_conf_root/all"
+    cp "$scriptdir/configs/all/runcommand-launch-dialog.cfg" "$md_conf_root/all"
+    cp "$scriptdir/configs/all/runcommand-onend.sh" "$md_conf_root/all"
+    cp "$scriptdir/configs/all/runcommand-onstart.sh" "$md_conf_root/all"
 }
 
 function gui_runcommand() {

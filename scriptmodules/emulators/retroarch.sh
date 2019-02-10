@@ -305,7 +305,9 @@ function hotkey_retroarch() {
 }
 
 function config_retroarch() {
-    cp -R "$scriptdir/configs/retroarch/." "$md_conf_root/all"
+    cp "$scriptdir/configs/all/retroarch.cfg" "$md_conf_root/all"
+    cp "$scriptdir/configs/all/retroarch.cfg.bak" "$md_conf_root/all"
+    cp "$scriptdir/configs/all/retroarch-core-options.cfg" "$md_conf_root/all"
 }
 
 function gui_retroarch() {
