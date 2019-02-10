@@ -260,11 +260,11 @@ function gui_settingsmenu() {
         case "$choice" in
             1)
                 cp -r "$scriptdir/scriptmodules/supplementary/settingsmenu/icons" "$datadir/settingsmenu/icons"
-                printMsgs "dialog" "Default icon set installed"
+                printMsgs "dialog" "Settings menu default icons installed\n\nRestart EmulationStation to apply."
                 ;;
             2)
                 cp -r "$scriptdir/scriptmodules/supplementary/settingsmenu/icons_cart" "$datadir/settingsmenu/icons"
-                printMsgs "dialog" "Cart style icon set installed"
+                printMsgs "dialog" "Settings menu cart icons installed.\n\nRestart EmulationStation to apply."
                 ;;
         esac
     done
