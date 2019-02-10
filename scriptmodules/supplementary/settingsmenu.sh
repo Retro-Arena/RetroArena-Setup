@@ -246,3 +246,26 @@ function launch_settingsmenu() {
     joy2keyStop
     clear
 }
+
+function gui_settingsmenu() {
+    while true; do
+        local options=(
+            1 "Install default icon set"
+            2 "Install cart style icon set"
+        )
+        local cmd=(dialog --default-item "$default" --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        default="$choice"
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            1)
+                cp -r "$scriptdir/scriptmodules/supplementary/settingsmenu/icons" "$datadir/settingsmenu/icons"
+                printMsgs "dialog" "Default icon set installed"
+                ;;
+            2)
+                cp -r "$scriptdir/scriptmodules/supplementary/settingsmenu/icons_cart" "$datadir/settingsmenu/icons"
+                printMsgs "dialog" "Cart style icon set installed"
+                ;;
+        esac
+    done
+}
