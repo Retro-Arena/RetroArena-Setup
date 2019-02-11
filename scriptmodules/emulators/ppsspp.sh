@@ -25,7 +25,6 @@ function sources_ppsspp() {
     cd "$md_id"
     
     if isPlatform "rockpro64"; then
-        applyPatch "$md_data/02_tinker_options.diff"
         applyPatch "$md_data/rockpro64.patch"
     fi
 
