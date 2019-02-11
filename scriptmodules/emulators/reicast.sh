@@ -30,7 +30,7 @@ function sources_reicast() {
 function build_reicast() {
     cd shell/linux
     if isPlatform "rockpro64"; then
-        make USE_GLES=1 USE_SDL=1  platform=rockpro64 clean
+        make USE_GLES=1 USE_SDL=1 platform=rockpro64 clean
         make USE_GLES=1 USE_SDL=1 platform=rockpro64
     else
         make clean
