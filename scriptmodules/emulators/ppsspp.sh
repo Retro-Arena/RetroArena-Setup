@@ -14,41 +14,97 @@ rp_module_desc="PlayStation Portable emulator PPSSPP"
 rp_module_help="ROM Extensions: .iso .pbp .cso\n\nCopy your PlayStation Portable roms to $romdir/psp"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/hrydgard/ppsspp/master/LICENSE.TXT"
 rp_module_section="sa"
-rp_module_flags="!kms"
+
+function depends_ppsspp() {
+    local depends=(cmake libsdl2-dev libzip-dev)
+    getDepends "${depends[@]}"
+}
 
 function sources_ppsspp() {
-    gitPullOrClone "$md_build/ppsspp" https://github.com/hrydgard/ppsspp.git
+    gitPullOrClone "$md_build/$md_id" https://github.com/hrydgard/ppsspp.git
+    cd "$md_id"
     
-    # gl2ext.h fix
-    if [[ -e /usr/include/GLES2/gl2ext.h.org ]]; then
-        cp -p /usr/include/GLES2/gl2ext.h.org /usr/include/GLES2/gl2ext.h
-    else
-        cp -p /usr/include/GLES2/gl2ext.h /usr/include/GLES2/gl2ext.h.org
+    if isPlatform "rockpro64"; then
+        applyPatch "$md_data/02_tinker_options.diff"
+        applyPatch "$md_data/rockpro64.patch"
     fi
-    sed -i -e 's:GL_APICALL void GL_APIENTRY glBufferStorageEXT://GL_APICALL void GL_APIENTRY glBufferStorageEXT:g' /usr/include/GLES2/gl2ext.h
-    sed -i -e 's:GL_APICALL void GL_APIENTRY glCopyImageSubDataOES://GL_APICALL void GL_APIENTRY glCopyImageSubDataOES:g' /usr/include/GLES2/gl2ext.h
-    sed -i -e 's:GL_APICALL void GL_APIENTRY glBindFragDataLocationIndexedEXT://GL_APICALL void GL_APIENTRY glBindFragDataLocationIndexedEXT:g' /usr/include/GLES2/gl2ext.h
-    sed -i -e 's:GL_APICALL void GL_APIENTRY glBindFragDataLocationEXT://GL_APICALL void GL_APIENTRY glBindFragDataLocationEXT:g' /usr/include/GLES2/gl2ext.h
-    sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT://GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT:g' /usr/include/GLES2/gl2ext.h
-    sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT://GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT:g' /usr/include/GLES2/gl2ext.h
-    
-    # CMakeLists.txt changes
-    #sed -i -e 's:set(ARM ON):set(ARM ON)\n    add_definitions(-mfloat-abi=hard -marm -mtune=cortex-a15.cortex-a7 -mcpu=cortex-a15 -mfpu=neon-vfpv4 -fomit-frame-pointer -ftree-vectorize -mvectorize-with-neon-quad -ffast-math -DARM_NEON):g' "$md_build/ppsspp/CMakeLists.txt"
-    #sed -i -e 's:set(VULKAN ON):set(VULKAN OFF):g' "$md_build/ppsspp/CMakeLists.txt"
-	
-    # linux_arm.sh changes   
-    sed -i -e 's:cc=arm-linux-gnueabi-gcc:cc=gcc:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i '/   --cross-prefix=arm-linux-gnueabi- \\/d' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i -e 's:nm=arm-linux-gnueabi-nm:nm=nm:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i -e 's:-mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a:-mfloat-abi=hard -mfpu=neon -marm -march=armv7-a:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i -e 's:build_ARMv6:#build_ARMv6:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
-    sed -i -e 's:function #build_ARMv6:function build_ARMv6:g' "$md_build/ppsspp/ffmpeg/linux_arm.sh"
+
+    # remove the lines that trigger the ffmpeg build script functions - we will just use the variables from it
+    sed -i "/^build_ARMv6$/,$ d" ffmpeg/linux_arm.sh
+      
+    # gl2ext.h fix
+    local gles2="/usr/include/GLES2"
+    if [[ -e "$gles2/gl2ext.h.org" ]]; then
+        cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
+    else
+        cp -p "$gles2/gl2ext.h" "$gles2/gl2ext.h.org"
+    fi
+    sed -i -e 's:GL_APICALL void GL_APIENTRY glBufferStorageEXT://GL_APICALL void GL_APIENTRY glBufferStorageEXT:g' "$gles2/gl2ext.h"
+    sed -i -e 's:GL_APICALL void GL_APIENTRY glCopyImageSubDataOES://GL_APICALL void GL_APIENTRY glCopyImageSubDataOES:g' "$gles2/gl2ext.h"
+    sed -i -e 's:GL_APICALL void GL_APIENTRY glBindFragDataLocationIndexedEXT://GL_APICALL void GL_APIENTRY glBindFragDataLocationIndexedEXT:g' "$gles2/gl2ext.h"
+    sed -i -e 's:GL_APICALL void GL_APIENTRY glBindFragDataLocationEXT://GL_APICALL void GL_APIENTRY glBindFragDataLocationEXT:g' "$gles2/gl2ext.h"
+    sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT://GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT:g' "$gles2/gl2ext.h"
+    sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT://GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT:g' "$gles2/gl2ext.h"
     
     if hasPackage cmake 3.6 lt; then
         cd ..
         mkdir -p cmake
         downloadAndExtract "$__archive_url/cmake-3.6.2.tar.gz" "$md_build/cmake" 1
     fi
+}
+
+function build_ffmpeg_ppsspp() {
+    cd "$1"
+    local arch
+    if isPlatform "arm"; then
+        if isPlatform "armv6"; then
+            arch="arm"
+        else
+            arch="armv7"
+        fi
+    elif isPlatform "x86"; then
+        if isPlatform "x86_64"; then
+            arch="x86_64";
+        else
+            arch="x86";
+        fi
+    elif isPlatform "aarch64"; then
+        arch="arm64"
+    fi
+    isPlatform "rockpro64" && local extra_params='--arch=arm'
+
+    local MODULES
+    local VIDEO_DECODERS
+    local AUDIO_DECODERS
+    local VIDEO_ENCODERS
+    local AUDIO_ENCODERS
+    local DEMUXERS
+    local MUXERS
+    local PARSERS
+    local GENERAL
+    local OPTS # used by older lr-ppsspp fork
+    # get the ffmpeg configure variables from the ppsspp ffmpeg distributed script
+    source linux_arm.sh
+    # linux_arm.sh has set -e which we need to switch off
+    set +e
+    ./configure $extra_params \
+        --prefix="./linux/$arch" \
+        --extra-cflags="-fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300" \
+        --disable-shared \
+        --enable-static \
+        --enable-zlib \
+        --enable-pic \
+        --disable-everything \
+        ${MODULES} \
+        ${VIDEO_DECODERS} \
+        ${AUDIO_DECODERS} \
+        ${VIDEO_ENCODERS} \
+        ${AUDIO_ENCODERS} \
+        ${DEMUXERS} \
+        ${MUXERS} \
+        ${PARSERS}
+    make clean
+    make install
 }
 
 function build_cmake_ppsspp() {
@@ -58,6 +114,7 @@ function build_cmake_ppsspp() {
 }
 
 function build_ppsspp() {
+    local ppsspp_binary="PPSSPPSDL"
     local cmake="cmake"
     if hasPackage cmake 3.6 lt; then
         build_cmake_ppsspp
@@ -65,18 +122,29 @@ function build_ppsspp() {
     fi
 
     # build ffmpeg
-    source "$md_build/ppsspp/ffmpeg/linux_arm.sh"
+    build_ffmpeg_ppsspp "$md_build/$md_id/ffmpeg"
 
     # build ppsspp
-    cd "$md_build/ppsspp"
+    cd "$md_build/$md_id"
     rm -rf CMakeCache.txt CMakeFiles
     local params=()
-    params+=(-DARMV7=ON -DARM=ON -DUSING_EGL=ON -DUSING_GLES2=ON -DUSING_FBDEV=ON -DUSING_X11_VULKAN=OFF -DUSING_QT_UI=OFF -DHEADLESS=OFF -DUNITTEST=OFF -DSIMULATOR=OFF -DUSE_WAYLAND_WSI=OFF -DUSE_FFMPEG=YES -DUSE_SYSTEM_FFMPEG=NO)
+    if isPlatform "mali"; then
+        params+=(-DUSING_GLES2=ON -DUSING_FBDEV=ON)
+    elif isPlatform "rockpro64"; then
+        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.armv7.cmake")
+    fi
+    if isPlatform "arm" && ! isPlatform "x11"; then
+        params+=(-DARM_NO_VULKAN=ON)
+    fi
+    if [ "$md_id" == "lr-ppsspp" ]; then
+        params+=(-DLIBRETRO=On)
+        ppsspp_binary="lib/ppsspp_libretro.so"
+    fi
     "$cmake" "${params[@]}" .
     make clean
     make
 
-    md_ret_require="$md_build/ppsspp/PPSSPPSDL"
+    md_ret_require="$md_build/$md_id/$ppsspp_binary"
 }
 
 function install_ppsspp() {
@@ -90,7 +158,7 @@ function install_bin_ppsspp() {
     downloadAndExtract "$__gitbins_url/ppsspp.tar.gz" "$md_inst" 1
 }
 
-function configure_ppsspp() {
+function configure_ppsspp() { 
     local system
     for system in psp pspminis; do
         mkRomDir "$system"
@@ -104,8 +172,9 @@ function configure_ppsspp() {
     ln -snf "$md_conf_root/psp/PSP/SYSTEM" "$md_conf_root/pspminis/PSP/SYSTEM"
 	
     # gl2ext.h revert
-    if [[ -e /usr/include/GLES2/gl2ext.h.org ]]; then
-        cp -p /usr/include/GLES2/gl2ext.h.org /usr/include/GLES2/gl2ext.h
-        rm /usr/include/GLES2/gl2ext.h.org
+    local gles2="/usr/include/GLES2"
+    if [[ -e "$gles2/gl2ext.h.org" ]]; then
+        cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
+        rm "$gles2/gl2ext.h.org"
     fi
 }
