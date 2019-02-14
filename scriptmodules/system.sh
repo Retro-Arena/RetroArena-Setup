@@ -39,7 +39,12 @@ function setup_env() {
     [[ "$__has_binaries" -eq 1 ]] && __binary_url="https://$__binary_host/binaries/$__os_codename/$__platform"
 
     __archive_url="https://files.retropie.org.uk/archives"
-    __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/odroid-xu4/"
+    
+    if isPlatform "odroid-xu"; then
+        __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/odroid-xu4/"
+    elif isPlatform "rockpro64"; then
+        __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/rockpro64/"
+    fi
 
     # -pipe is faster but will use more memory - so let's only add it if we have more thans 256M free ram.
     [[ $__memory_phys -ge 512 ]] && __default_cflags+=" -pipe"
@@ -264,7 +269,7 @@ function get_platform() {
                 __platform="vero4k"
                 ;;
             *)
-            if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="rockpro64"
                 else
                     case $architecture in
