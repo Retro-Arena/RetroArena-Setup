@@ -26,7 +26,7 @@ __sections[core]="core"
 __sections[opt]="optional"
 __sections[lr]="libretro"
 __sections[sa]="standalone"
-__sections[prt]="prt"
+__sections[prt]="ports"
 __sections[driver]="driver"
 __sections[config]="configuration"
 
