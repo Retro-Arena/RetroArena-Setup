@@ -12,6 +12,7 @@
 rp_module_id="odroidconfig"
 rp_module_desc="Expand filesystem, configure network, boot, localisation, SSH"
 rp_module_section="config"
+#rp_module_flags="!rockpro64"
 
 function gui_odroidconfig() {
     source /usr/bin/odroid-config

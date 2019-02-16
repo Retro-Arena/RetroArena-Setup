@@ -12,7 +12,7 @@
 rp_module_id="fancontrol"
 rp_module_desc="Change the fan settings to control cooling and fan noise."
 rp_module_section="config"
-rp_module_flags="mali"
+rp_module_flags="!rockpro64"
 
 function gui_fancontrol() {
     while true; do
