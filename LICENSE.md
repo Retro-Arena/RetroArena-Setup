@@ -627,4 +627,4 @@ END OF TERMS AND CONDITIONS
 
 ## Copyright
 
-(c) Copyright 2012-2015 RetroArena Project (See COPYRIGHT.md)
+(c) Copyright 2019 RetroArena Project (See COPYRIGHT.md)
