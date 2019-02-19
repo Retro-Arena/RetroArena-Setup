@@ -48,12 +48,16 @@ function install_shares_samba() {
     cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
     add_share_samba "bgm" "$datadir/bgm"
     add_share_samba "bios" "$datadir/BIOS"
-    add_share_samba "casetheme" "$datadir/casetheme"
     add_share_samba "configs" "$configdir"
     add_share_samba "esthemes" "$configdir/all/emulationstation/themes"
     add_share_samba "launchingvideos" "$datadir/launchingvideos"
     add_share_samba "roms" "$romdir"
     add_share_samba "splashscreens" "$datadir/splashscreens"
+    
+    if isPlatform="odroid-xu"; then
+        add_share_samba "casetheme" "$datadir/casetheme"
+    fi
+    
     restart_samba
 }
 
