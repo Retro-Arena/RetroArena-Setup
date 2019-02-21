@@ -276,6 +276,8 @@ function get_platform() {
             *)
                 if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="rockpro64"
+                elif grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                    __platform="odroid-n2"
                 else
                     case $architecture in
                         i686|x86_64|amd64)
