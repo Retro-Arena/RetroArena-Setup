@@ -14,7 +14,7 @@ rp_module_desc="Kodi - Open source home theatre software. Read the Package Help 
 rp_module_licence="GPL2 https://raw.githubusercontent.com/xbmc/xbmc/master/LICENSE.GPL"
 rp_module_help="The Kodi package is provided AS-IS and WITHOUT support, including for any addons you install.\n\nA keyboard may be required in order to map a gamepad controller.\n\nKnown Issues: Mapping two of the same gamepad controllers will cause instability and may crash."
 rp_module_section="opt"
-rp_module_flags="!osmc !xbian !kms"
+rp_module_flags="!osmc !xbian !rockpro64 !odroid-n2"
 
 function install_bin_kodi() {
     aptInstall kodi-fbdev

@@ -12,7 +12,7 @@
 rp_module_id="caseconfig"
 rp_module_desc="Install themes for OGST display and case image selector."
 rp_module_section="config"
-rp_module_flags="!rockpro64"
+rp_module_flags="!rockpro64 !odroid-n2"
 
 function off_caseconfig() {
     if lsmod | grep -q 'fbtft_device'; then

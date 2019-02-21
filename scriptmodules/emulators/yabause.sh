@@ -14,7 +14,7 @@ rp_module_desc="Sega Saturn Emulator"
 rp_module_help="ROM Extensions: .iso .bin .zip\n\nCopy your Sega Saturn roms to $romdir/saturn\n\nCopy the required BIOS file saturn_bios_us.bin and saturn_bios_jp.bin to $biosdir"
 rp_module_licence="https://github.com/devmiyax/yabause/blob/minimum_linux/yabause/COPYING"
 rp_module_section="sa"
-rp_module_flags="!armv6"
+rp_module_flags="!armv6 !rockpro64 !odroid-n2"
 
 function depends_yabause() {
     local depends=(cmake libgles2-mesa-dev libsdl2-dev libboost-filesystem-dev libboost-system-dev libboost-locale-dev libboost-date-time-dev)
