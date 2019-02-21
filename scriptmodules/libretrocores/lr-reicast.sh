@@ -26,10 +26,12 @@ function sources_lr-reicast() {
 
 function build_lr-reicast() {
     make clean
-     if isPlatform "rockpro64"; then
-    make platform=rockpro64 ARCH=arm
+    if isPlatform "rockpro64"; then
+        make platform=rockpro64 ARCH=arm
+    elif isPlatform "odroid-n2"; then
+        make platform=odroid-n2
     else
-    make platform=odroid BOARD="ODROID-XU3" ARCH=arm
+        make platform=odroid BOARD="ODROID-XU3" ARCH=arm
     fi
     md_ret_require="$md_build/reicast_libretro.so"
 }
