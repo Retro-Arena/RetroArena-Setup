@@ -17,7 +17,7 @@ rp_module_section="core"
 function depends_retroarch() {
     local depends=(libudev-dev libxkbcommon-dev libsdl2-dev libasound2-dev libusb-1.0-0-dev libpulse-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
-    isPlatform "mali" && depends+=(mali-fbdev)
+    #isPlatform "mali" && depends+=(mali-fbdev)
     isPlatform "rock64" && depends+=(libmali-rk-dev)
     isPlatform "x11" && depends+=(libx11-xcb-dev libpulse-dev libvulkan-dev)
     isPlatform "vero4k" && depends+=(vero3-userland-dev-osmc zlib1g-dev libfreetype6-dev)
@@ -47,7 +47,7 @@ function sources_retroarch() {
 function build_retroarch() {
    
     local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse)
-    ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland)
+    ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland --disable-kms)
     if compareVersions "$__os_debian_ver" lt 9; then
         params+=(--disable-ffmpeg)
     fi
