@@ -17,10 +17,13 @@ rp_module_section="core"
 function depends_retroarch() {
     local depends=(libudev-dev libxkbcommon-dev libsdl2-dev libasound2-dev libusb-1.0-0-dev libpulse-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
-    #isPlatform "mali" && depends+=(mali-fbdev)
     isPlatform "rock64" && depends+=(libmali-rk-dev)
     isPlatform "x11" && depends+=(libx11-xcb-dev libpulse-dev libvulkan-dev)
     isPlatform "vero4k" && depends+=(vero3-userland-dev-osmc zlib1g-dev libfreetype6-dev)
+    
+    if ! isPlatform "odroid-n2"; then
+        isPlatform "mali" && params+=(--enable-mali_fbdev)
+    fi
 
     if compareVersions "$__os_debian_ver" ge 9; then
         depends+=(libavcodec-dev libavformat-dev libavdevice-dev)
@@ -59,6 +62,7 @@ function build_retroarch() {
     isPlatform "neon" && params+=(--enable-neon)
     isPlatform "x11" && params+=(--enable-vulkan)
     isPlatform "vero4k" && params+=(--enable-mali_fbdev --with-opengles_libs='-L/opt/vero3/lib')
+       
     ./configure --prefix="$md_inst" "${params[@]}"
     make clean
     make
