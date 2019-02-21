@@ -28,6 +28,11 @@ function sources_ppsspp() {
         applyPatch "$md_data/02_tinker_options.diff"
         applyPatch "$md_data/rockpro64.patch"
     fi
+    
+    if isPlatform "odroid-n2"; then
+        applyPatch "$md_data/02_tinker_options.diff"
+        applyPatch "$md_data/odroid-n2.patch"
+    fi
 
     # remove the lines that trigger the ffmpeg build script functions - we will just use the variables from it
     sed -i "/^build_ARMv6$/,$ d" ffmpeg/linux_arm.sh
@@ -130,6 +135,8 @@ function build_ppsspp() {
     local params=()
     if isPlatform "mali"; then
         params+=(-DUSING_GLES2=ON -DUSING_FBDEV=ON)
+    elif isPlatform "odroid-n2"; then
+        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/odroid-n2.armv7.cmake")
     elif isPlatform "rockpro64"; then
         params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.armv7.cmake")
     fi
