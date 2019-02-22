@@ -25,12 +25,12 @@ function sources_ppsspp() {
     cd "$md_id"
     
     if isPlatform "rockpro64"; then
-        applyPatch "$md_data/02_tinker_options.diff"
+        applyPatch "$md_data/cmakelists.patch"
         applyPatch "$md_data/rockpro64.patch"
     fi
     
     if isPlatform "odroid-n2"; then
-        applyPatch "$md_data/02_tinker_options.diff"
+        applyPatch "$md_data/cmakelists.patch"
         applyPatch "$md_data/odroid-n2.patch"
     fi
 
@@ -89,7 +89,11 @@ function build_ffmpeg_ppsspp() {
     local GENERAL
     local OPTS # used by older lr-ppsspp fork
     # get the ffmpeg configure variables from the ppsspp ffmpeg distributed script
-    source linux_arm.sh
+    if isPlatform "odroid-n2"; then
+        source linux_arm64.sh
+    else
+        source linux_arm.sh
+    fi
     # linux_arm.sh has set -e which we need to switch off
     set +e
     ./configure $extra_params \
