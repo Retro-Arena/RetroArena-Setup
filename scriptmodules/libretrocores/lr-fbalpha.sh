@@ -10,7 +10,7 @@
 #
 
 rp_module_id="lr-fbalpha"
-rp_module_desc="Arcade emu - Final Burn Alpha (v0.2.97.43) port for libretro"
+rp_module_desc="Arcade emu - Final Burn Alpha (v0.2.97.44) port for libretro"
 rp_module_help="Previously called lr-fba-next\n\ROM Extension: .zip\n\nCopy your FBA roms to\n$romdir/fba or\n$romdir/neogeo or\n$romdir/arcade\n\nFor NeoGeo games the neogeo.zip BIOS is required and must be placed in the same directory as your FBA roms."
 rp_module_licence="NONCOM https://raw.githubusercontent.com/libretro/fbalpha/master/src/license.txt"
 rp_module_section="lr"
@@ -20,8 +20,9 @@ function sources_lr-fbalpha() {
 }
 
 function build_lr-fbalpha() {
+    ! isPlatform "odroid-n2" && local params='HAVE_NEON=1'
     make -f makefile.libretro clean
-    make -f makefile.libretro HAVE_NEON=1
+    make -f makefile.libretro "$params"
     md_ret_require="$md_build/fbalpha_libretro.so"
 }
 
