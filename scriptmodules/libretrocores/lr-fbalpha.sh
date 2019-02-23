@@ -20,9 +20,9 @@ function sources_lr-fbalpha() {
 }
 
 function build_lr-fbalpha() {
-    ! isPlatform "odroid-n2" && local params='HAVE_NEON=1'
+    ! isPlatform "odroid-n2" && local params="HAVE_NEON=1"
     make -f makefile.libretro clean
-    make -f makefile.libretro "$params"
+    make -f makefile.libretro $params
     md_ret_require="$md_build/fbalpha_libretro.so"
 }
 
