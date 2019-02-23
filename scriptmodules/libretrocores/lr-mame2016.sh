@@ -14,17 +14,17 @@ rp_module_desc="MAME emulator - MAME 0.174 port for libretro"
 rp_module_help="ROM Extension: .zip\n\nCopy your MAME roms to either $romdir/mame-libretro or\n$romdir/arcade"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/mame2016-libretro/master/LICENSE.md"
 rp_module_section="lr"
-rp_module_flags="!mali"
+rp_module_flags=""
 
 function sources_lr-mame2016() {
     gitPullOrClone "$md_build" https://github.com/libretro/mame2016-libretro.git
 }
 
 function build_lr-mame2016() {
-    rpSwap on 1200
+    rpSwap on 2000
     local params=($(_get_params_lr-mame) SUBTARGET=arcade)
     make -f Makefile.libretro clean
-    make -f Makefile.libretro "${params[@]}"
+    make -f Makefile.libretro "${params[@]}" -j1
     rpSwap off
     md_ret_require="$md_build/mamearcade2016_libretro.so"
 }
