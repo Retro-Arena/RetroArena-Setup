@@ -33,10 +33,10 @@ function sources_lr-mame() {
 }
 
 function build_lr-mame() {
-    rpSwap on 2000
+    rpSwap on 5000
     local params=($(_get_params_lr-mame) SUBTARGET=arcade)
     make clean
-    make "${params[@]}"
+    make "${params[@]}" -j1
     rpSwap off
     md_ret_require="$md_build/mamearcade_libretro.so"
 }
