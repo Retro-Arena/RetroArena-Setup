@@ -34,9 +34,9 @@ function install_lr-mame2015() {
     )
 }
 
-#function install_bin_lr-mame2015() {
-    #downloadAndExtract "$__gitbins_url/lr-mame2015.tar.gz" "$md_inst" 1
-#}
+function install_bin_lr-mame2015() {
+    downloadAndExtract "$__gitbins_url/lr-mame2015.tar.gz" "$md_inst" 1
+}
 
 function configure_lr-mame2015() {
     local system
