@@ -32,10 +32,7 @@ do_start () {
         while ! pgrep "dbus" >/dev/null; do
             sleep 1
         done
-        if isPlatform="odroid-xu"; then
-            mplayer -vo sdl -fs "$line"
-        else
-            mpv -vo sdl -fs "$line"
+        mpv -vo sdl -fs "$line"
     elif $(echo "$line" | grep -q "$REGEX_IMAGE"); then
         if [ "$RANDOMIZE" = "disabled" ]; then
             local count=$(wc -l <"$config")
