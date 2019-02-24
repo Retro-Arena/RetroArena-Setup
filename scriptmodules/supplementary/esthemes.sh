@@ -47,6 +47,8 @@ function gui_esthemes() {
         'Retro-Arena ghc'
         'Retro-Arena greatest-hits'
         'Retro-Arena greatest-hits-vertical'
+        'Retro-Arena insert-rom'
+        'Retro-Arena insert-rom-detailed'
         'Retro-Arena megaman'
         'Retro-Arena odroidhursty'
         'Retro-Arena retroarena'
