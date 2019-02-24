@@ -14,7 +14,7 @@ rp_module_desc="N64 emu - Mupen64Plus + GLideN64 for libretro"
 rp_module_help="ROM Extensions: .z64 .n64 .v64\n\nCopy your N64 roms to $romdir/n64"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/mupen64plus-libretro/master/LICENSE"
 rp_module_section="lr"
-rp_module_flags="!aarch64"
+rp_module_flags=""
 
 function _update_hook_lr-mupen64plus() {
     # retroarch renamed lr-mupen64plus to lr-parallel-n64 and
