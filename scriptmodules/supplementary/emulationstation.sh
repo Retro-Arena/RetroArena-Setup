@@ -147,7 +147,7 @@ function sources_emulationstation() {
 function build_emulationstation() {
     # overwrite files for green ES logo and branding
     rm -rf "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
-    cp "$scriptdir/scriptmodules/supplementary/emulationstation/build/splash.svg" "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
+    cp "$scriptdir/scriptmodules/supplementary/emulationstation/splash.svg" "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
     
     rpSwap on 1000
     cmake . -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2/
