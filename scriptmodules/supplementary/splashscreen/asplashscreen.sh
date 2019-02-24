@@ -32,7 +32,11 @@ do_start () {
         while ! pgrep "dbus" >/dev/null; do
             sleep 1
         done
-        mpv -vo sdl -fs "$line"
+        if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+            mpv -vo sdl -fs "$line"
+        else
+            mplayer -vo sdl -fs "$line"
+        fi
     elif $(echo "$line" | grep -q "$REGEX_IMAGE"); then
         if [ "$RANDOMIZE" = "disabled" ]; then
             local count=$(wc -l <"$config")
