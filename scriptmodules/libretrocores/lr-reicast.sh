@@ -83,6 +83,7 @@ function configure_lr-reicast() {
     setRetroArchCoreOption "${dir_name}reicast_extra_depth_scale" "auto"
     setRetroArchCoreOption "${dir_name}reicast_framerate" "fullspeed"
     setRetroArchCoreOption "${dir_name}reicast_gdrom_fast_loading" "disabled"
+    setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "640x480"
     setRetroArchCoreOption "${dir_name}reicast_mipmapping" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_region" "USA"
     setRetroArchCoreOption "${dir_name}reicast_render_to_texture_upscaling" "1x"
@@ -120,9 +121,13 @@ function configure_lr-reicast() {
     setRetroArchCoreOption "${dir_name}reicast_volume_modifier_enable" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_widescreen_hack" "disabled"
     
-    if isPlatform "odroid-n2"; then
-        setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "1440x1080"
-    else
-        setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "640x480"
+    # copy configs
+    cp -R "$scriptdir/configs/all/retroarch/config/Reicast/." "$md_conf_root/all/retroarch/config/Reicast"
+
+    if isPlatform="odroid-n2"; then
+        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1440x1080"/g' "$md_conf_root/all/retroarch-core-options.cfg"    
+        cd "/opt/retroarena/configs/all/retroarch/config/Reicast"
+        find . -type f -name "*.opt" -print0 | xargs -0 sed -i '' -e 's/640x480/1440x1080/g'
+        cd -
     fi
 }

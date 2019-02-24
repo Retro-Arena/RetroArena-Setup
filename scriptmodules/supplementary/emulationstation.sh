@@ -145,9 +145,11 @@ function sources_emulationstation() {
 }
 
 function build_emulationstation() {
-    # overwrite files for green ES logo and branding
+    # buildfix
+    rm -rf "$scriptdir/tmp/build/emulationstation/es-app/src/views/UIModeController.cpp"
     rm -rf "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
-    cp "$scriptdir/scriptmodules/supplementary/emulationstation/splash.svg" "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
+    cp "$scriptdir/scriptmodules/supplementary/emulationstation/buildfix/UIModeController.cpp" "$scriptdir/tmp/build/emulationstation/es-app/src/views/UIModeController.cpp"
+    cp "$scriptdir/scriptmodules/supplementary/emulationstation/buildfix/splash.svg" "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
     
     rpSwap on 1000
     cmake . -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2/
