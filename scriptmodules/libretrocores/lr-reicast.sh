@@ -83,7 +83,6 @@ function configure_lr-reicast() {
     setRetroArchCoreOption "${dir_name}reicast_extra_depth_scale" "auto"
     setRetroArchCoreOption "${dir_name}reicast_framerate" "fullspeed"
     setRetroArchCoreOption "${dir_name}reicast_gdrom_fast_loading" "disabled"
-    setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "640x480"
     setRetroArchCoreOption "${dir_name}reicast_mipmapping" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_region" "USA"
     setRetroArchCoreOption "${dir_name}reicast_render_to_texture_upscaling" "1x"
@@ -120,4 +119,10 @@ function configure_lr-reicast() {
     setRetroArchCoreOption "${dir_name}reicast_vmu4_screen_size_mult" "1x"
     setRetroArchCoreOption "${dir_name}reicast_volume_modifier_enable" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_widescreen_hack" "disabled"
+    
+    if isPlatform "odroid-n2"; then
+        setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "1440x1080"
+    else
+        setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "640x480"
+    fi
 }
