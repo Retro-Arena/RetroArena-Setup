@@ -125,9 +125,9 @@ function configure_lr-reicast() {
     cp -R "$scriptdir/configs/all/retroarch/config/Reicast/." "$md_conf_root/all/retroarch/config/Reicast"
 
     if isPlatform="odroid-n2"; then
-        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1440x1080"/g' "$md_conf_root/all/retroarch-core-options.cfg"    
+        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"    
         cd "/opt/retroarena/configs/all/retroarch/config/Reicast"
-        find . -type f -name "*.opt" -print0 | xargs -0 sed -i '' -e 's/640x480/1440x1080/g'
+        find . -type f -name "*.opt" -print0 | xargs -0 sed -i '' -e 's/640x480/1280x960/g'
         cd -
     fi
 }
