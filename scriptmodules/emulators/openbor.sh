@@ -14,7 +14,7 @@ rp_module_desc="OpenBOR (v6510) - Beat 'em Up Game Engine"
 rp_module_help="Place your pak files in $romdir/openbor and launch from ES.\n\nUse a keyboard to configure controls."
 rp_module_licence="BSD https://raw.githubusercontent.com/crcerror/OpenBOR-Raspberry/master/LICENSE"
 rp_module_section="sa"
-rp_module_flags="x11"
+rp_module_flags="!rockpro64 !odroid-n2"
 
 function depends_openbor() {
     getDepends libsdl2-gfx-dev libvorbisidec-dev libvpx-dev libogg-dev libsdl2-gfx-1.0-0 libvorbisidec1
