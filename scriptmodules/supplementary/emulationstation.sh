@@ -126,8 +126,7 @@ function _add_rom_emulationstation() {
 
 function depends_emulationstation() {
     local depends=(
-        libboost-system-dev libboost-filesystem-dev
-        libboost-date-time-dev libfreeimage-dev libfreetype6-dev
+        libfreeimage-dev libfreetype6-dev
         libcurl4-openssl-dev libasound2-dev cmake libsdl2-dev libsm-dev
         libvlc-dev libvlccore-dev vlc rapidjson-dev
     )
@@ -140,12 +139,18 @@ function depends_emulationstation() {
 function sources_emulationstation() {
     local repo="$1"
     local branch="$2"
-    [[ -z "$repo" ]] && repo="https://github.com/Retro-Arena/EmulationStation"
+    [[ -z "$repo" ]] && repo="https://github.com/RetroPie/EmulationStation"
     [[ -z "$branch" ]] && branch="stable"
     gitPullOrClone "$md_build" "$repo" "$branch"
 }
 
 function build_emulationstation() {
+    # buildfix
+    rm -rf "$scriptdir/tmp/build/emulationstation/es-app/src/views/UIModeController.cpp"
+    rm -rf "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
+    cp "$scriptdir/scriptmodules/supplementary/emulationstation/buildfix/UIModeController.cpp" "$scriptdir/tmp/build/emulationstation/es-app/src/views/UIModeController.cpp"
+    cp "$scriptdir/scriptmodules/supplementary/emulationstation/buildfix/splash.svg" "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
+    
     rpSwap on 1000
     cmake . -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2/
     make clean
@@ -160,8 +165,8 @@ function install_emulationstation() {
         'emulationstation'
         'emulationstation.sh'
         'GAMELISTS.md'
-        'resources'
         'README.md'
+        'resources'
         'THEMES.md'
     )
 }
@@ -211,7 +216,7 @@ if [[ \$(id -u) -eq 0 ]]; then
 fi
 
 if [[ -d "/sys/module/vc4" ]]; then
-    echo -e "ERROR: You have the experimental desktop GL driver enabled. This is NOT compatible with TheRA, and Emulation Station as well as emulators will fail to launch.\\n\\nPlease disable the experimental desktop GL driver from the raspi-config 'Advanced Options' menu."
+    echo -e "ERROR: You have the experimental desktop GL driver enabled. This is NOT compatible with TheRA, and EmulationStation as well as emulators will fail to launch.\\n\\nPlease disable the experimental desktop GL driver from the raspi-config 'Advanced Options' menu."
     exit 1
 fi
 
@@ -230,7 +235,7 @@ clear
 tput civis
 "$md_inst/emulationstation.sh" "\$@"
 if [[ \$? -eq 139 ]]; then
-    dialog --cr-wrap --no-collapse --msgbox "Emulation Station crashed!\n\nIf this is your first boot of TheRA - make sure you are using the correct image for your system.\n\\nCheck your rom file/folder permissions and if running on a Raspberry Pi, make sure your gpu_split is set high enough and/or switch back to using carbon theme." 20 60 >/dev/tty
+    dialog --cr-wrap --no-collapse --msgbox "EmulationStation crashed!\n\nIf this is your first boot of TheRA - make sure you are using the correct image for your system." 20 60 >/dev/tty
 fi
 tput cnorm
 _EOF_
