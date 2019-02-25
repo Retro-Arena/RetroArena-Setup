@@ -35,6 +35,10 @@ function install_lr-mame2016() {
     )
 }
 
+function install_bin_lr-mame2016() {
+    downloadAndExtract "$__gitbins_url/lr-mame2016.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-mame2016() {
     local system
     for system in arcade mame-libretro; do
