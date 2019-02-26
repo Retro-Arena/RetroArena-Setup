@@ -83,6 +83,7 @@ function configure_lr-mame2003() {
     setRetroArchCoreOption "${dir_name}-skip_disclaimer" "enabled"
     setRetroArchCoreOption "${dir_name}-dcs-speedhack" "enabled"
     setRetroArchCoreOption "${dir_name}-samples" "enabled"
+    setRetroArchCoreOption "${dir_name}-analog" "digital"
 
     local so_name="$(_get_so_name_${md_id})"
     addEmulator 0 "$md_id" "arcade" "$md_inst/${so_name}_libretro.so"
