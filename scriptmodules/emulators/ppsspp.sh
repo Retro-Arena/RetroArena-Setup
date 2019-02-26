@@ -31,7 +31,7 @@ function sources_ppsspp() {
     
     if isPlatform "odroid-n2"; then
         applyPatch "$md_data/cmakelists.patch"
-        applyPatch "$md_data/odroid-n2.patch"
+        #applyPatch "$md_data/odroid-n2.patch"
     fi
 
     # remove the lines that trigger the ffmpeg build script functions - we will just use the variables from it
