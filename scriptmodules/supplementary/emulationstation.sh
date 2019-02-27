@@ -140,7 +140,7 @@ function sources_emulationstation() {
     local repo="$1"
     local branch="$2"
     [[ -z "$repo" ]] && repo="https://github.com/RetroPie/EmulationStation"
-    [[ -z "$branch" ]] && branch="stable"
+    [[ -z "$branch" ]] && branch="stable-new-fixed"
     gitPullOrClone "$md_build" "$repo" "$branch"
 }
 
