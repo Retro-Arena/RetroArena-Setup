@@ -140,17 +140,11 @@ function sources_emulationstation() {
     local repo="$1"
     local branch="$2"
     [[ -z "$repo" ]] && repo="https://github.com/Retro-Arena/EmulationStation"
-    [[ -z "$branch" ]] && branch="stable-new-fixed"
+    [[ -z "$branch" ]] && branch="stable"
     gitPullOrClone "$md_build" "$repo" "$branch"
 }
 
-function build_emulationstation() {
-    # buildfix
-    #rm -rf "$scriptdir/tmp/build/emulationstation/es-app/src/views/UIModeController.cpp"
-    rm -rf "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
-    #cp "$scriptdir/scriptmodules/supplementary/emulationstation/buildfix/UIModeController.cpp" "$scriptdir/tmp/build/emulationstation/es-app/src/views/UIModeController.cpp"
-    cp "$scriptdir/scriptmodules/supplementary/emulationstation/buildfix/splash.svg" "$scriptdir/tmp/build/emulationstation/resources/splash.svg"
-    
+function build_emulationstation() {    
     rpSwap on 1000
     cmake . -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2/
     make clean
