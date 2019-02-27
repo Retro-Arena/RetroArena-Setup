@@ -159,7 +159,7 @@ NOTE: Requires a keyboard to be connected."
         "true"
     )
     
-    if isPlatform "odroid-xu"; then
+    if [ isPlatform "odroid-xu"] || [ isPlatform "odroid-n2" ]; then
         local files+=(
             "caseconfig"
             "fancontrol"
