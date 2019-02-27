@@ -159,7 +159,7 @@ NOTE: Requires a keyboard to be connected."
         "true"
     )
     
-    if [ isPlatform "odroid-xu" ] || [ isPlatform "odroid-n2" ]; then
+    if isPlatform "odroid-xu"; then
         local files+=(
             "caseconfig"
             "fancontrol"
@@ -183,6 +183,26 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
         local hiddens+=(
             "true"
             "true"
+            "true"
+        )
+    fi
+    
+    if isPlatform "odroid-n2"; then
+        local files+=(
+            "odroidconfig"
+        )
+        
+        local names+=(
+            "System: Odroid-Config"
+        )
+        
+        local desc+=(
+            "Expand filesystem, configure network, boot, localisation, SSH, etc.
+            
+NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
+        )
+        
+        local hiddens+=(
             "true"
         )
     fi
