@@ -126,9 +126,10 @@ function _add_rom_emulationstation() {
 
 function depends_emulationstation() {
     local depends=(
-        libfreeimage-dev libfreetype6-dev
+        libboost-system-dev libboost-filesystem-dev
+        libboost-date-time-dev libfreeimage-dev libfreetype6-dev
         libcurl4-openssl-dev libasound2-dev cmake libsdl2-dev libsm-dev
-        libvlc-dev libvlccore-dev vlc rapidjson-dev
+        libvlc-dev libvlccore-dev vlc
     )
 
     isPlatform "x11" && depends+=(gnome-terminal)
@@ -144,7 +145,7 @@ function sources_emulationstation() {
     gitPullOrClone "$md_build" "$repo" "$branch"
 }
 
-function build_emulationstation() {    
+function build_emulationstation() {
     rpSwap on 1000
     cmake . -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2/
     make clean
@@ -160,7 +161,6 @@ function install_emulationstation() {
         'emulationstation.sh'
         'GAMELISTS.md'
         'README.md'
-        'resources'
         'THEMES.md'
     )
 }
