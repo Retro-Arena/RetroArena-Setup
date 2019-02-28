@@ -35,20 +35,24 @@ function sources_ppsspp() {
 
     # remove the lines that trigger the ffmpeg build script functions - we will just use the variables from it
     sed -i "/^build_ARMv6$/,$ d" ffmpeg/linux_arm.sh
-      
+    sed -i "/^build_ARMv7$/,$ d" ffmpeg/linux_arm.sh
+    sed -i "/^build_ARM64$/,$ d" ffmpeg/linux_arm64.sh
+    
     # gl2ext.h fix
-    local gles2="/usr/include/GLES2"
-    if [[ -e "$gles2/gl2ext.h.org" ]]; then
-        cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
-    else
-        cp -p "$gles2/gl2ext.h" "$gles2/gl2ext.h.org"
+    if isPlatform "odroid-xu"; then
+        local gles2="/usr/include/GLES2"
+        if [[ -e "$gles2/gl2ext.h.org" ]]; then
+            cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
+        else
+            cp -p "$gles2/gl2ext.h" "$gles2/gl2ext.h.org"
+        fi
+        sed -i -e 's:GL_APICALL void GL_APIENTRY glBufferStorageEXT://GL_APICALL void GL_APIENTRY glBufferStorageEXT:g' "$gles2/gl2ext.h"
+        sed -i -e 's:GL_APICALL void GL_APIENTRY glCopyImageSubDataOES://GL_APICALL void GL_APIENTRY glCopyImageSubDataOES:g' "$gles2/gl2ext.h"
+        sed -i -e 's:GL_APICALL void GL_APIENTRY glBindFragDataLocationIndexedEXT://GL_APICALL void GL_APIENTRY glBindFragDataLocationIndexedEXT:g' "$gles2/gl2ext.h"
+        sed -i -e 's:GL_APICALL void GL_APIENTRY glBindFragDataLocationEXT://GL_APICALL void GL_APIENTRY glBindFragDataLocationEXT:g' "$gles2/gl2ext.h"
+        sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT://GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT:g' "$gles2/gl2ext.h"
+        sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT://GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT:g' "$gles2/gl2ext.h"
     fi
-    sed -i -e 's:GL_APICALL void GL_APIENTRY glBufferStorageEXT://GL_APICALL void GL_APIENTRY glBufferStorageEXT:g' "$gles2/gl2ext.h"
-    sed -i -e 's:GL_APICALL void GL_APIENTRY glCopyImageSubDataOES://GL_APICALL void GL_APIENTRY glCopyImageSubDataOES:g' "$gles2/gl2ext.h"
-    sed -i -e 's:GL_APICALL void GL_APIENTRY glBindFragDataLocationIndexedEXT://GL_APICALL void GL_APIENTRY glBindFragDataLocationIndexedEXT:g' "$gles2/gl2ext.h"
-    sed -i -e 's:GL_APICALL void GL_APIENTRY glBindFragDataLocationEXT://GL_APICALL void GL_APIENTRY glBindFragDataLocationEXT:g' "$gles2/gl2ext.h"
-    sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT://GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT:g' "$gles2/gl2ext.h"
-    sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT://GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT:g' "$gles2/gl2ext.h"
     
     if hasPackage cmake 3.6 lt; then
         cd ..
@@ -60,23 +64,7 @@ function sources_ppsspp() {
 function build_ffmpeg_ppsspp() {
     cd "$1"
     local arch
-    if isPlatform "arm"; then
-        if isPlatform "armv6"; then
-            arch="arm"
-        else
-            arch="armv7"
-        fi
-    elif isPlatform "x86"; then
-        if isPlatform "x86_64"; then
-            arch="x86_64";
-        else
-            arch="x86";
-        fi
-    elif isPlatform "aarch64"; then
-        arch="arm64"
-    fi
-    isPlatform "rockpro64" && local extra_params='--arch=arm'
-
+    local extra_cflags
     local MODULES
     local VIDEO_DECODERS
     local AUDIO_DECODERS
@@ -87,17 +75,23 @@ function build_ffmpeg_ppsspp() {
     local PARSERS
     local GENERAL
     local OPTS # used by older lr-ppsspp fork
+    
     # get the ffmpeg configure variables from the ppsspp ffmpeg distributed script
     if isPlatform "odroid-n2"; then
         source linux_arm64.sh
+        arch='aarch64'
+        extra_cflags=' -O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 '
     else
         source linux_arm.sh
+        arch='armv7'
+        extra_cflags=' -O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 -mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a '
     fi
+    
     # linux_arm.sh has set -e which we need to switch off
     set +e
-    ./configure $extra_params \
+    ./configure --target-os=linux \
         --prefix="./linux/$arch" \
-        --extra-cflags="-fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300" \
+        --extra-cflags="$extra_cflags" \
         --disable-shared \
         --enable-static \
         --enable-zlib \
@@ -135,25 +129,24 @@ function build_ppsspp() {
     # build ppsspp
     cd "$md_build/$md_id"
     rm -rf CMakeCache.txt CMakeFiles
+    
     local params=()
-    if isPlatform "mali"; then
+    if isPlatform "odroid-xu"; then
         params+=(-DUSING_GLES2=ON -DUSING_FBDEV=ON)
     elif isPlatform "odroid-n2"; then
         params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/odroid-n2.armv7.cmake")
     elif isPlatform "rockpro64"; then
         params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.armv7.cmake")
     fi
-    if isPlatform "arm" && ! isPlatform "x11"; then
-        params+=(-DARM_NO_VULKAN=ON)
-    fi
+    
     if [ "$md_id" == "lr-ppsspp" ]; then
         params+=(-DLIBRETRO=On)
         ppsspp_binary="lib/ppsspp_libretro.so"
     fi
+    
     "$cmake" "${params[@]}" .
     make clean
     make
-
     md_ret_require="$md_build/$md_id/$ppsspp_binary"
 }
 
