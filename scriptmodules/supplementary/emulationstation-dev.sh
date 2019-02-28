@@ -15,28 +15,20 @@ rp_module_licence="MIT https://raw.githubusercontent.com/Retro-Arena/EmulationSt
 rp_module_section="core"
 rp_module_flags="frontend"
 
-function _get_input_cfg_emulationstation-dev() {
-    _get_input_cfg_emulationstation
-}
-
 function _update_hook_emulationstation-dev() {
-    update_hook_emulationstation
-}
-
-function _sort_systems_emulationstation-dev() {
-    _sort_systems_emulationstation
+    _update_hook_emulationstation
 }
 
 function _add_system_emulationstation-dev() {
-    _add_system_emulationstation
+    _add_system_emulationstation "$@"
 }
 
 function _del_system_emulationstation-dev() {
-    _del_system_emulationstation
+    _del_system_emulationstation "$@"
 }
 
 function _add_rom_emulationstation-dev() {
-    _add_rom_emulationstation
+    _add_rom_emulationstation "$@"
 }
 
 function depends_emulationstation-dev() {
@@ -52,14 +44,10 @@ function depends_emulationstation-dev() {
 }
 
 function sources_emulationstation-dev() {
-    local repo="$1"
-    local branch="$2"
-    [[ -z "$repo" ]] && repo="https://github.com/Retro-Arena/EmulationStation"
-    [[ -z "$branch" ]] && branch="dev"
-    gitPullOrClone "$md_build" "$repo" "$branch"
+    sources_emulationstation "" "dev"
 }
 
-function build_emulationstation-dev() {    
+function build_emulationstation-dev() {
     build_emulationstation
 }
 
@@ -75,28 +63,13 @@ function install_emulationstation-dev() {
     )
 }
 
-function init_input_emulationstation-dev() {
-    init_input_emulationstation
-}
-
-function copy_inputscripts_emulationstation-dev() {
-    copy_inputscripts_emulationstation
-}
-
-function install_launch_emulationstation-dev() {
-    install_launch_emulationstation
-}
-
-function clear_input_emulationstation-dev() {
-    clear_input_emulationstation
+function configure_emulationstation-dev() {
+    rp_callModule "emulationstation" remove
+    configure_emulationstation
 }
 
 function remove_emulationstation-dev() {
     remove_emulationstation
-}
-
-function configure_emulationstation-dev() {
-    configure_emulationstation
 }
 
 function gui_emulationstation-dev() {
