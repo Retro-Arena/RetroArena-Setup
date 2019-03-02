@@ -55,9 +55,11 @@ function configure_lr-ppsspp() {
     fi
     
     # gl2ext.h revert
-    local gles2="/usr/include/GLES2"
-    if [[ -e "$gles2/gl2ext.h.org" ]]; then
-        cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
-        rm "$gles2/gl2ext.h.org"
+    if isPlatform "odroid-xu"; then
+        local gles2="/usr/include/GLES2"
+        if [[ -e "$gles2/gl2ext.h.org" ]]; then
+            cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
+            rm "$gles2/gl2ext.h.org"
+        fi
     fi
 }

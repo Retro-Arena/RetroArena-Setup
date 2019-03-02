@@ -24,22 +24,8 @@ function sources_ppsspp() {
     gitPullOrClone "$md_build/$md_id" https://github.com/hrydgard/ppsspp.git
     cd "$md_id"
     
-    if isPlatform "rockpro64"; then
-        applyPatch "$md_data/cmakelists.patch"
-        applyPatch "$md_data/rockpro64.patch"
-    fi
-    
-    if isPlatform "odroid-n2"; then
-        applyPatch "$md_data/cmakelists.patch"
-    fi
-
-    # remove the lines that trigger the ffmpeg build script functions - we will just use the variables from it
-    sed -i "/^build_ARMv6$/,$ d" ffmpeg/linux_arm.sh
-    sed -i "/^build_ARMv7$/,$ d" ffmpeg/linux_arm.sh
-    sed -i "/^build_ARM64$/,$ d" ffmpeg/linux_arm64.sh
-    
-    # gl2ext.h fix
     if isPlatform "odroid-xu"; then
+        # gl2ext.h fix
         local gles2="/usr/include/GLES2"
         if [[ -e "$gles2/gl2ext.h.org" ]]; then
             cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
@@ -53,6 +39,19 @@ function sources_ppsspp() {
         sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT://GL_APICALL GLint GL_APIENTRY glGetProgramResourceLocationIndexEXT:g' "$gles2/gl2ext.h"
         sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT://GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT:g' "$gles2/gl2ext.h"
     fi
+    
+    if isPlatform "odroid-n2"; then
+        applyPatch "$md_data/cmakelists.patch"
+    fi
+
+    if isPlatform "rockpro64"; then
+        applyPatch "$md_data/cmakelists.patch"
+        applyPatch "$md_data/rockpro64.patch"
+    fi
+    
+    # remove the lines that trigger the ffmpeg build script functions - we will just use the variables from it
+    sed -i "/^build_ARMv6$/,$ d" ffmpeg/linux_arm.sh
+    sed -i "/^build_ARM64$/,$ d" ffmpeg/linux_arm64.sh
     
     if hasPackage cmake 3.6 lt; then
         cd ..
@@ -82,7 +81,6 @@ function build_ffmpeg_ppsspp() {
         source linux_arm64.sh
         arch='aarch64'
         extra_cflags='-O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300'
-        extra_params='--target-os=linux'
     elif isPlatform "rockpro64"; then
         source linux_arm.sh
         arch='armv7'
@@ -92,7 +90,6 @@ function build_ffmpeg_ppsspp() {
         source linux_arm.sh
         arch='armv7'
         extra_cflags='-O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 -mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a'
-        extra_params='--target-os=linux'
     fi
     
     # linux_arm.sh has set -e which we need to switch off
@@ -182,10 +179,12 @@ function configure_ppsspp() {
     moveConfigDir "$home/.config/ppsspp" "$md_conf_root/psp"
     ln -snf "$md_conf_root/psp/PSP/SYSTEM" "$md_conf_root/pspminis/PSP/SYSTEM"
 	
-    # gl2ext.h revert
-    local gles2="/usr/include/GLES2"
-    if [[ -e "$gles2/gl2ext.h.org" ]]; then
-        cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
-        rm "$gles2/gl2ext.h.org"
+    if isPlatform "odroid-xu"; then
+        # gl2ext.h revert
+        local gles2="/usr/include/GLES2"
+        if [[ -e "$gles2/gl2ext.h.org" ]]; then
+            cp -p "$gles2/gl2ext.h.org" "$gles2/gl2ext.h"
+            rm "$gles2/gl2ext.h.org"
+        fi
     fi
 }
