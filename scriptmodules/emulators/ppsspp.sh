@@ -65,6 +65,7 @@ function build_ffmpeg_ppsspp() {
     cd "$1"
     local arch
     local extra_cflags
+    local extra_params
     local MODULES
     local VIDEO_DECODERS
     local AUDIO_DECODERS
@@ -81,15 +82,22 @@ function build_ffmpeg_ppsspp() {
         source linux_arm64.sh
         arch='aarch64'
         extra_cflags=' -O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 '
+        extra_params='--target-os=linux'
+    elif isPlatform "rockpro64"; then
+        source linux_arm.sh
+        arch='armv7'
+        extra_cflags=' -O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 -mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a '
+        extra_params='--target-os=linux --arch=arm'
     else
         source linux_arm.sh
         arch='armv7'
         extra_cflags=' -O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 -mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a '
+        extra_params='--target-os=linux'
     fi
     
     # linux_arm.sh has set -e which we need to switch off
     set +e
-    ./configure --target-os=linux \
+    ./configure $extra_params \
         --prefix="./linux/$arch" \
         --extra-cflags="$extra_cflags" \
         --disable-shared \
