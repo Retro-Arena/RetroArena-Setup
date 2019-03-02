@@ -38,6 +38,10 @@ function install_creativision() {
     )
 }
 
+function install_bin_creativision() {
+    downloadAndExtract "$__gitbins_url/creativision.tar.gz" "$md_inst" 1
+}
+
 function configure_creativision() {
     mkRomDir "crvision"
     mkUserDir "$md_conf_root/crvision"
