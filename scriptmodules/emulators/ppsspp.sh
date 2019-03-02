@@ -80,23 +80,20 @@ function build_ffmpeg_ppsspp() {
     if isPlatform "odroid-n2"; then
         source linux_arm64.sh
         arch='aarch64'
-        extra_cflags='-O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300'
     elif isPlatform "rockpro64"; then
         source linux_arm.sh
         arch='armv7'
-        extra_cflags='-fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300'
         extra_params='--arch=arm'
     else
         source linux_arm.sh
         arch='armv7'
-        extra_cflags='-O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 -mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a'
     fi
     
     # linux_arm.sh has set -e which we need to switch off
     set +e
     ./configure $extra_params \
         --prefix="./linux/$arch" \
-        --extra-cflags="\""$extra_cflags"\"" \
+        --extra-cflags="-fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300" \
         --disable-shared \
         --enable-static \
         --enable-zlib \
