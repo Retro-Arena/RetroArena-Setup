@@ -34,6 +34,8 @@ do_start () {
         done
         if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
             mpv -vo sdl -fs "$line"
+        elif grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
+            mpv -vo sdl -fs "$line"    
         else
             mplayer -vo sdl -fs "$line"
         fi
