@@ -86,7 +86,7 @@ function build_ffmpeg_ppsspp() {
     elif isPlatform "rockpro64"; then
         source linux_arm.sh
         arch='armv7'
-        extra_cflags=' -O3 -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 -mfloat-abi=softfp -mfpu=neon -marm -march=armv7-a '
+        extra_cflags=' -fasm -Wno-psabi -fno-short-enums -fno-strict-aliasing -finline-limit=300 '
         extra_params='--arch=arm'
     else
         source linux_arm.sh
