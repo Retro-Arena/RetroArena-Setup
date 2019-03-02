@@ -90,4 +90,6 @@ _EOF_
     addEmulator 1 "$md_id" "scummvm" "bash $romdir/scummvm/+Start\ $name.sh %BASENAME%"
     addSystem "scummvm"
     cp "$scriptdir/configs/scummvm/scummvm.ini" "$md_conf_root/scummvm/"
+    chown -R $user:$user "$md_conf_root/scummvm/scummvm.ini"
+    chmod a+x "$md_conf_root/scummvm/scummvm.ini"
 }
