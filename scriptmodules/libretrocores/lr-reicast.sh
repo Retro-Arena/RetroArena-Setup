@@ -26,10 +26,12 @@ function sources_lr-reicast() {
 
 function build_lr-reicast() {
     make clean
-     if isPlatform "rockpro64"; then
-    make platform=rockpro64 ARCH=arm
+    if isPlatform "rockpro64"; then
+        make platform=rockpro64 ARCH=arm
+    elif isPlatform "odroid-n2"; then
+        make platform=odroid-n2
     else
-    make platform=odroid BOARD="ODROID-XU3" ARCH=arm
+        make platform=odroid BOARD="ODROID-XU3" ARCH=arm
     fi
     md_ret_require="$md_build/reicast_libretro.so"
 }
@@ -118,4 +120,14 @@ function configure_lr-reicast() {
     setRetroArchCoreOption "${dir_name}reicast_vmu4_screen_size_mult" "1x"
     setRetroArchCoreOption "${dir_name}reicast_volume_modifier_enable" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_widescreen_hack" "disabled"
+    
+    # copy configs
+    cp -R "$scriptdir/configs/all/retroarch/config/Reicast/." "$md_conf_root/all/retroarch/config/Reicast"
+
+    if isPlatform="odroid-n2"; then
+        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"    
+        cd "/opt/retroarena/configs/all/retroarch/config/Reicast"
+        find . -type f -name "*.opt" -print0 | xargs -0 sed -i '' -e 's/640x480/1280x960/g'
+        cd -
+    fi
 }

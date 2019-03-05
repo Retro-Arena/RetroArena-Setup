@@ -24,6 +24,7 @@ function build_lr-mame2010() {
     make clean
     local params=()
     isPlatform "arm" && params+=("VRENDER=soft" "ARM_ENABLED=1")
+    isPlatform "aarch64" && params+=("VRENDER=soft" "ARM_ENABLED=1" "PTR64=1") 
     make "${params[@]}" ARCHOPTS="$CFLAGS" buildtools
     make "${params[@]}" ARCHOPTS="$CFLAGS"
     rpSwap off

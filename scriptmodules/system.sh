@@ -42,6 +42,8 @@ function setup_env() {
     
     if isPlatform "odroid-xu"; then
         __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/odroid-xu4/"
+    elif isPlatform "odroid-n2"; then
+        __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/"
     elif isPlatform "rockpro64"; then
         __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/rockpro64/"
     fi
@@ -250,14 +252,17 @@ function get_platform() {
                     esac
                 fi
                 ;;
+            "Freescale i.MX6 Quad/DualLite (Device Tree)")
+                __platform="imx6"
+                ;;
             ODROIDC)
                 __platform="odroid-c1"
                 ;;
             ODROID-C2)
                 __platform="odroid-c2"
                 ;;
-            "Freescale i.MX6 Quad/DualLite (Device Tree)")
-                __platform="imx6"
+            ODROID-N2)
+                __platform="odroid-n2"
                 ;;
             ODROID-XU[34])
                 __platform="odroid-xu"
@@ -271,6 +276,8 @@ function get_platform() {
             *)
                 if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="rockpro64"
+                elif grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                    __platform="odroid-n2"
                 else
                     case $architecture in
                         i686|x86_64|amd64)
@@ -339,6 +346,19 @@ function platform_odroid-c2() {
     __default_makeflags="-j2"
 }
 
+function platform_odroid-n2() {
+    if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
+        __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a53 -mfpu=neon-fp-armv8"
+        __platform_flags="arm armv8 neon mali gles"
+    else
+        __default_cflags="-O2 -march=native"
+        __platform_flags="aarch64 mali gles"
+    fi
+    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
+    __default_asflags=""
+    __default_makeflags="-j4"
+}
+
 function platform_odroid-xu() {
     __default_cflags="-O2  -mcpu=cortex-a15 -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
     # required for mali-fbdev headers to define GL functions
@@ -362,6 +382,16 @@ function platform_rock64() {
     __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
     __default_asflags=""
     __default_makeflags="-j2"
+}
+
+function platform_rockpro64() {
+    __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a72.cortex-a53 -mfpu=neon-fp-armv8"
+    __platform_flags="arm armv8 neon kms gles"
+    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
+    # required for mali headers to define GL functions!
+    __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
+    __default_asflags=""
+    __default_makeflags="-j5"
 }
 
 function platform_tinker() {
@@ -407,15 +437,3 @@ function platform_vero4k() {
     __default_makeflags="-j4"
     __platform_flags="arm armv8 neon vero4k gles"
 }
-
-function platform_rockpro64() {
-    __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a72.cortex-a53 -mfpu=neon-fp-armv8"
-    __platform_flags="arm armv8 neon kms gles"
-    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
-    # required for mali headers to define GL functions!
-    __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
-    __default_asflags=""
-    __default_makeflags="-j5"
-    
-    }
-

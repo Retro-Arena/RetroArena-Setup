@@ -24,6 +24,8 @@ function build_lr-mupen64plus-nx() {
     local params=()
     if isPlatform "rockpro64" || isPlatform "odroid-c1" || isPlatform "odroid-xu"; then
         params+=(platform="$__platform")
+    elif isPlatform "odroid-n2"; then
+        params+=("platform=unix" "FORCE_GLES3=1" "WITH_DYNAREC=aarch64") 
     fi
     make "${params[@]}"
     md_ret_require="$md_build/mupen64plus_next_libretro.so"

@@ -14,7 +14,7 @@ rp_module_desc="N64 emu - Mupen64Plus + GLideN64 for libretro"
 rp_module_help="ROM Extensions: .z64 .n64 .v64\n\nCopy your N64 roms to $romdir/n64"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/mupen64plus-libretro/master/LICENSE"
 rp_module_section="lr"
-rp_module_flags="!aarch64"
+rp_module_flags=""
 
 function _update_hook_lr-mupen64plus() {
     # retroarch renamed lr-mupen64plus to lr-parallel-n64 and
@@ -42,7 +42,7 @@ function sources_lr-mupen64plus() {
     local commit=""
     isPlatform "rockpro64" && commit=("4ca2fa8633666e26e2f163dcd3c226b598cb2aa4")
     gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro.git "$branch" "$commit"
-    isPlatform "mali" && applyPatch "$md_data/odroid.diff"
+    isPlatform "odroid-xu" && applyPatch "$md_data/odroid.diff"
     isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
 }
 
@@ -51,10 +51,11 @@ function build_lr-mupen64plus() {
     local params=()
     if isPlatform "rockpro64"; then
         params+=(platform="$__platform")
-    elif isPlatform "mali"; then
+    elif isPlatform "odroid-xu"; then
         params+=(platform="unix odroid")
     else
         isPlatform "arm" && params+=(WITH_DYNAREC=arm)
+        isPlatform "aarch64" && params+=(WITH_DYNAREC=aarch64)
         isPlatform "neon" && params+=(HAVE_NEON=1)
         isPlatform "gles" && params+=(FORCE_GLES=1)
         isPlatform "kms" && params+=(FORCE_GLES3=1)

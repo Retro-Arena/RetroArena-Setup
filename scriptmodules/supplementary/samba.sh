@@ -48,20 +48,21 @@ function install_shares_samba() {
     cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
     add_share_samba "bgm" "$datadir/bgm"
     add_share_samba "bios" "$datadir/BIOS"
-    add_share_samba "casetheme" "$datadir/casetheme"
     add_share_samba "configs" "$configdir"
     add_share_samba "esthemes" "$configdir/all/emulationstation/themes"
     add_share_samba "launchingvideos" "$datadir/launchingvideos"
     add_share_samba "roms" "$romdir"
     add_share_samba "splashscreens" "$datadir/splashscreens"
+    isPlatform="odroid-xu" && add_share_samba "casetheme" "$datadir/casetheme"
     restart_samba
 }
 
 function remove_shares_samba() {
     local name
-    for name in roms bios configs splashscreens; do
+    for name in bgm bios configs esthemes launchingvideos roms splashscreens; do
         remove_share_samba "$name"
-    done
+    done    
+    isPlatform="odroid-xu" && remove_share_samba "casetheme"
 }
 
 function gui_samba() {

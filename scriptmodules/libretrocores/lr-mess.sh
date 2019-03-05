@@ -24,10 +24,10 @@ function sources_lr-mess() {
 }
 
 function build_lr-mess() {
-    rpSwap on 2000
+    rpSwap on 5000
     local params=($(_get_params_lr-mame) SUBTARGET=mess)
     make clean
-    make "${params[@]}"
+    make "${params[@]}" -j1
     rpSwap off
     md_ret_require="$md_build/mess_libretro.so"
 }
@@ -49,7 +49,7 @@ function configure_lr-mess() {
     [[ -z "$module" ]] && module="mess_libretro.so"
 
     local system
-    for system in arcadia cdimono1 crvision coleco gb neocdz nes; do
+    for system in arcadia cdimono1 crvision coleco gb neocdz nes scv; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
         addEmulator 1 "$md_id" "$system" "$md_inst/$module"
@@ -64,4 +64,5 @@ function configure_lr-mess() {
     cp -rv "$md_build/hash" "$biosdir/mame/"
     chown -R $user:$user "$biosdir/mame"
     cp -R "$scriptdir/configs/cdimono1/." "$md_conf_root/cdimono1/"
+    cp -R "$scriptdir/configs/scv/." "$md_conf_root/scv/"
 }

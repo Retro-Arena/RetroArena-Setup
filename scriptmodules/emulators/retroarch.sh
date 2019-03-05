@@ -17,7 +17,7 @@ rp_module_section="core"
 function depends_retroarch() {
     local depends=(libudev-dev libxkbcommon-dev libsdl2-dev libasound2-dev libusb-1.0-0-dev libpulse-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
-    isPlatform "mali" && depends+=(mali-fbdev)
+    isPlatform "odroid-xu" && params+=(--enable-mali_fbdev)
     isPlatform "rock64" && depends+=(libmali-rk-dev)
     isPlatform "x11" && depends+=(libx11-xcb-dev libpulse-dev libvulkan-dev)
     isPlatform "vero4k" && depends+=(vero3-userland-dev-osmc zlib1g-dev libfreetype6-dev)
@@ -47,7 +47,7 @@ function sources_retroarch() {
 function build_retroarch() {
    
     local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse)
-    ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland)
+    ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland --disable-kms)
     if compareVersions "$__os_debian_ver" lt 9; then
         params+=(--disable-ffmpeg)
     fi
@@ -59,6 +59,7 @@ function build_retroarch() {
     isPlatform "neon" && params+=(--enable-neon)
     isPlatform "x11" && params+=(--enable-vulkan)
     isPlatform "vero4k" && params+=(--enable-mali_fbdev --with-opengles_libs='-L/opt/vero3/lib')
+       
     ./configure --prefix="$md_inst" "${params[@]}"
     make clean
     make
@@ -149,7 +150,6 @@ function configure_retroarch() {
     
     # install cheats by default
     update_cheats_retroarch
-    
 
     # install minimal assets
     install_xmb_monochrome_assets_retroarch
