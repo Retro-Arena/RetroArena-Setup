@@ -27,5 +27,4 @@ Good Luck!"
 function install_dolphinbar() {
     # install  to /etc/udev/rules.d/
 	cp "$md_data/51-usb-device.rules" /etc/udev/rules.d/
-	
-	}
+}
