@@ -143,6 +143,7 @@ function configure_retroarch() {
     moveConfigDir "$md_inst/assets" "$configdir/all/retroarch/assets"
     moveConfigDir "$md_inst/overlays" "$configdir/all/retroarch/overlay"
     moveConfigDir "$md_inst/shader" "$configdir/all/retroarch/shaders"
+    moveConfigDir "$md_inst/cheats" "$configdir/all/retroarch/cheats"
 
     # install shaders by default
     update_shaders_retroarch
