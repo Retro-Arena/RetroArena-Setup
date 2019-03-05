@@ -82,11 +82,9 @@ function install_bin_retroarch() {
 
 function update_shaders_retroarch() {
     local dir="$configdir/all/retroarch/shaders"
-    local branch=""
-    isPlatform "rpi" && branch="rpi"
     # remove if not git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/libretro/common-shaders.git "$branch"
+    gitPullOrClone "$dir" https://github.com/Retro-Arena/glsl-shaders.git
     chown -R $user:$user "$dir"
 }
 
@@ -95,6 +93,14 @@ function update_overlays_retroarch() {
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
     gitPullOrClone "$configdir/all/retroarch/overlay" https://github.com/libretro/common-overlays.git
+    chown -R $user:$user "$dir"
+}
+
+function update_cheats_retroarch() {
+    local dir="$configdir/all/retroarch/cheats"
+    # remove if not a git repository for fresh checkout
+    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
+    gitPullOrClone "$configdir/all/retroarch/cheats" https://github.com/Retro-Arena/cheats.git
     chown -R $user:$user "$dir"
 }
 
@@ -136,9 +142,14 @@ function configure_retroarch() {
     moveConfigDir "$md_inst/assets" "$configdir/all/retroarch/assets"
     moveConfigDir "$md_inst/overlays" "$configdir/all/retroarch/overlay"
     moveConfigDir "$md_inst/shader" "$configdir/all/retroarch/shaders"
+    moveConfigDir "$md_inst/cheats" "$configdir/all/retroarch/cheats"
 
     # install shaders by default
     update_shaders_retroarch
+    
+    # install cheats by default
+    update_cheats_retroarch
+    
 
     # install minimal assets
     install_xmb_monochrome_assets_retroarch
