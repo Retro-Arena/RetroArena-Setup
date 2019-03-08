@@ -61,7 +61,7 @@ function configure_settingsmenu()
         "hurstythemes"
         "launchingvideos"
         "removemedia"
-		"retroarch"
+	"retroarch"
         "rpsetup"
         "runcommand"
         "showip"
@@ -86,7 +86,7 @@ function configure_settingsmenu()
         "Media: Hursty's ES Themes"
         "Media: Launching Videos"
         "Media: Remove Media"
-		"System: Retroarch"
+	"System: Retroarch"
         "System: RetroArena-Setup"
         "System: Runcommand Config"
         "Network: Show IP"
@@ -257,13 +257,13 @@ function launch_settingsmenu() {
     local no_ext="${basename%.rp}"
     joy2keyStart
     case "$basename" in
-		retroarch.rp)
-            joy2keyStop
-            cp "$configdir/all/retroarch.cfg" "$configdir/all/retroarch.cfg.bak"
-            chown $user:$user "$configdir/all/retroarch.cfg.bak"
-            su $user -c "\"$emudir/retroarch/bin/retroarch\" --menu --config \"$configdir/all/retroarch.cfg\"" && sudo bash -c 'echo 0 > /sys/class/graphics/fbcon/cursor_blink'
-            iniConfig " = " '"' "$configdir/all/retroarch.cfg"
-            iniSet "config_save_on_exit" "false"
+	retroarch.rp)
+        joy2keyStop
+        cp "$configdir/all/retroarch.cfg" "$configdir/all/retroarch.cfg.bak"
+        chown $user:$user "$configdir/all/retroarch.cfg.bak"
+        su $user -c "\"$emudir/retroarch/bin/retroarch\" --menu --config \"$configdir/all/retroarch.cfg\"" && sudo bash -c 'echo 0 > /sys/class/graphics/fbcon/cursor_blink'
+        iniConfig " = " '"' "$configdir/all/retroarch.cfg"
+        iniSet "config_save_on_exit" "false"
             ;;
         rpsetup.rp)
             rp_callModule setup gui
