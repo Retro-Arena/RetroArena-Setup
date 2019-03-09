@@ -38,6 +38,10 @@ function install_lr-mupen64plus-nx() {
     )
 }
 
+function install_bin_lr-mupen64plus-nx() {
+    downloadAndExtract "$__gitbins_url/lr-mupen64plus-nx.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-mupen64plus-nx() {
     mkRomDir "n64"
     ensureSystemretroconfig "n64"
