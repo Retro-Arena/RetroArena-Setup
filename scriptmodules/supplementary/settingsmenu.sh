@@ -166,19 +166,19 @@ NOTE: Requires a keyboard to be connected."
     )
     
     if isPlatform "odroid-xu"; then
-        local files+=(
+        files+=(
             "caseconfig"
             "fancontrol"
             "odroidconfig"
         )
         
-        local names+=(
+        names+=(
             "Media: Case Config for OGST"
             "System: Fan Control"
             "System: Odroid-Config"
         )
         
-        local desc+=(
+        desc+=(
             "Install themes for the OGST Case when 'Console System' is selected. In addition, upon game launch, choose different types of scraped images displayed such as boxart, cartart, snap, wheel, screenshot, marquee, or console system (default). There is also an option to completely disable the display."
             "Change the fan settings to control cooling and fan noise."
             "Expand filesystem, configure network, boot, localisation, SSH, etc.
@@ -186,7 +186,7 @@ NOTE: Requires a keyboard to be connected."
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
         )
         
-        local hiddens+=(
+        hiddens+=(
             "true"
             "true"
             "true"
@@ -194,21 +194,21 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
     fi
     
     if isPlatform "odroid-n2"; then
-        local files+=(
+        files+=(
             "odroidconfig"
         )
         
-        local names+=(
+        names+=(
             "System: Odroid-Config"
         )
         
-        local desc+=(
+        desc+=(
             "Expand filesystem, configure network, boot, localisation, SSH, etc.
             
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
         )
         
-        local hiddens+=(
+        hiddens+=(
             "true"
         )
     fi
