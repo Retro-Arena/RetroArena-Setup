@@ -213,7 +213,7 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
         )
     fi
 
-    setESSystem "RetroArena" "retroarena" "$rpdir" ".rp .sh" "sudo $scriptdir/retroarena_packages.sh settingsmenu launch %ROM% </dev/tty >/dev/tty2 && clear" "" "retroarena"
+    setESSystem "RetroArena" "retroarena" "$rpdir" ".rp .sh" "sudo $scriptdir/retroarena_packages.sh settingsmenu launch %ROM% </dev/tty >/dev/tty && clear" "" "retroarena"
 
     local file
     local name
