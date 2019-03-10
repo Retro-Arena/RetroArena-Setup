@@ -61,6 +61,7 @@ function configure_settingsmenu()
         "hurstythemes"
         "launchingvideos"
         "removemedia"
+        "retroarch"
         "rpsetup"
         "runcommand"
         "showip"
@@ -85,6 +86,7 @@ function configure_settingsmenu()
         "Media: Hursty's ES Themes"
         "Media: Launching Videos"
         "Media: Remove Media"
+        "System: Retroarch"
         "System: RetroArena-Setup"
         "System: Runcommand Config"
         "Network: Show IP"
@@ -119,6 +121,9 @@ NOTE: Requires a keyboard to be connected."
         "Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system where there is not a matching game for it. If you keep your media for MAME or Final Burn Alpha in the 'roms/arcade' folder, there is a special choice just for that.
 
 NOTE: Always make a backup copy of your SD card and your roms and media files before making changes to your system."
+        "Launches the RetroArch GUI so you can change RetroArch options.
+        
+NOTE: Changes will not be saved unless you have enabled the 'Save Configuration On Exit' option."
         "Update Setup Script, install/uninstall Libretro and standalone emulators, ports, drivers, scrapers, and configurations."
         "Change what appears on the runcommand screen. Enable or disable the menu, enable or disable box art, and change CPU configuration."
         "Displays your current IP address, as well as other information provided by the command, 'ip addr show.'"
@@ -152,6 +157,7 @@ NOTE: Requires a keyboard to be connected."
         "true"
         "true"
         "true"
+        "true"
         "false"
         "true"
         "true"
@@ -160,19 +166,19 @@ NOTE: Requires a keyboard to be connected."
     )
     
     if isPlatform "odroid-xu"; then
-        local files+=(
+        files+=(
             "caseconfig"
             "fancontrol"
             "odroidconfig"
         )
         
-        local names+=(
+        names+=(
             "Media: Case Config for OGST"
             "System: Fan Control"
             "System: Odroid-Config"
         )
         
-        local desc+=(
+        desc+=(
             "Install themes for the OGST Case when 'Console System' is selected. In addition, upon game launch, choose different types of scraped images displayed such as boxart, cartart, snap, wheel, screenshot, marquee, or console system (default). There is also an option to completely disable the display."
             "Change the fan settings to control cooling and fan noise."
             "Expand filesystem, configure network, boot, localisation, SSH, etc.
@@ -180,7 +186,7 @@ NOTE: Requires a keyboard to be connected."
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
         )
         
-        local hiddens+=(
+        hiddens+=(
             "true"
             "true"
             "true"
@@ -188,26 +194,26 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
     fi
     
     if isPlatform "odroid-n2"; then
-        local files+=(
+        files+=(
             "odroidconfig"
         )
         
-        local names+=(
+        names+=(
             "System: Odroid-Config"
         )
         
-        local desc+=(
+        desc+=(
             "Expand filesystem, configure network, boot, localisation, SSH, etc.
             
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
         )
         
-        local hiddens+=(
+        hiddens+=(
             "true"
         )
     fi
 
-    setESSystem "RetroArena" "retroarena" "$rpdir" ".rp .sh" "sudo $scriptdir/retroarena_packages.sh settingsmenu launch %ROM% </dev/tty >/dev/tty" "" "retroarena"
+    setESSystem "RetroArena" "retroarena" "$rpdir" ".rp .sh" "sudo $scriptdir/retroarena_packages.sh settingsmenu launch %ROM% </dev/tty >/dev/tty && clear" "" "retroarena"
 
     local file
     local name
@@ -252,6 +258,14 @@ function launch_settingsmenu() {
     local no_ext="${basename%.rp}"
     joy2keyStart
     case "$basename" in
+        retroarch.rp)
+            joy2keyStop
+            cp "$configdir/all/retroarch.cfg" "$configdir/all/retroarch.cfg.bak"
+            chown $user:$user "$configdir/all/retroarch.cfg.bak"
+            su $user -c "\"$emudir/retroarch/bin/retroarch\" --menu --config \"$configdir/all/retroarch.cfg\"" && sudo bash -c 'echo 0 > /sys/class/graphics/fbcon/cursor_blink'
+            iniConfig " = " '"' "$configdir/all/retroarch.cfg"
+            iniSet "config_save_on_exit" "false"
+            ;;
         rpsetup.rp)
             rp_callModule setup gui
             ;;

@@ -9,7 +9,7 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-__version="3.0.4 PUBLIC RELEASE"
+__version="3.0.5 Alpha"
 
 [[ "$__debug" -eq 1 ]] && set -x
 
