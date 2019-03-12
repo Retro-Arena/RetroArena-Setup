@@ -261,7 +261,7 @@ function get_platform() {
             ODROID-C2)
                 __platform="odroid-c2"
                 ;;
-            ODROID-N2)
+            "Hardkernel ODROID-N2")
                 __platform="odroid-n2"
                 ;;
             ODROID-XU[34])
@@ -276,8 +276,6 @@ function get_platform() {
             *)
                 if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="rockpro64"
-                elif grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-                    __platform="odroid-n2"
                 else
                     case $architecture in
                         i686|x86_64|amd64)
@@ -347,13 +345,8 @@ function platform_odroid-c2() {
 }
 
 function platform_odroid-n2() {
-    if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
-        __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a53 -mfpu=neon-fp-armv8"
-        __platform_flags="arm armv8 neon mali gles"
-    else
-        __default_cflags="-O2 -march=native"
-        __platform_flags="aarch64 mali gles"
-    fi
+    __default_cflags="-O2 -march=native"
+    __platform_flags="aarch64 mali gles"
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     __default_asflags=""
     __default_makeflags="-j4"

@@ -14,23 +14,36 @@ rp_module_desc="Sega Saturn Emulator"
 rp_module_help="ROM Extensions: .iso .bin .zip\n\nCopy your Sega Saturn roms to $romdir/saturn\n\nCopy the required BIOS file saturn_bios_us.bin and saturn_bios_jp.bin to $biosdir"
 rp_module_licence="https://github.com/devmiyax/yabause/blob/minimum_linux/yabause/COPYING"
 rp_module_section="sa"
-rp_module_flags="!armv6 !rockpro64 !odroid-n2"
+rp_module_flags="!rockpro64"
 
 function depends_yabause() {
     local depends=(cmake libgles2-mesa-dev libsdl2-dev libboost-filesystem-dev libboost-system-dev libboost-locale-dev libboost-date-time-dev)
     getDepends "${depends[@]}"
 }
 
-function sources_yabause() {
-    git clone --recursive https://github.com/devmiyax/yabause.git -b minimum_linux   "$md_build" 
+function sources_yabause() {    
+    if isPlatform "odroid-n2"; then
+        gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux_n2
+    elif isPlatform "odroid-xu"; then
+        gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
+    else
+        exit
+    fi
 }
 
 function build_yabause() {
-    mkdir build 
-	  cd build
-	  export CFLAGS="-O2 -mcpu=cortex-a15 -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-	  cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON
-    make    
+    mkdir build
+    cd build
+    if isPlatform "odroid-n2"; then
+        export CFLAGS="-O2 -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53 -funsafe-math-optimizations"
+        cmake ../yabause -DYAB_PORTS=xu4 -DCMAKE_SYSTEM_PROCESSOR="aarch64"
+    elif isPlatform "odroid-xu"; then
+        export CFLAGS="-O2 -mcpu=cortex-a15 -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
+        cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON
+    else
+        exit
+    fi
+    make
     md_ret_require="$md_build/build/src/xu4/yabasanshiro"
 }
 
@@ -45,9 +58,9 @@ function install_bin_yabause() {
 }
 
 function configure_yabause() {
-    rm $configdir/saturn/emulators.cfg
     mkRomDir "saturn"
     addEmulator 1 "${md_id}-1x" "saturn" "$md_inst/yabasanshiro -a -nf -r 3 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
     addEmulator 1 "${md_id}-2x" "saturn" "$md_inst/yabasanshiro -a -nf -r 2 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 1 "${md_id}-3x" "saturn" "$md_inst/yabasanshiro -a -nf -r 1 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
     addSystem "saturn"
 }
