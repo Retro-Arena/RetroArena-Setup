@@ -58,7 +58,7 @@ function gui_esthemes() {
         'RetroHursty69 OdroidHursty'
         'RetroHursty69 OdroidRAV1'
         'RetroHursty69 OdroidRAV2'
-		'RetroHursty69 mariobrosiii'
+        'RetroHursty69 mariobrosiii'
         'dmmarti steampunk'
         'dmmarti hurstyblue'
         'dmmarti maximuspie'
