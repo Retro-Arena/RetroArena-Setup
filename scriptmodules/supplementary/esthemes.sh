@@ -60,6 +60,7 @@ function gui_esthemes() {
         'RetroHursty69 OdroidRAV2'
         'RetroHursty69 mariobrosiii'
 		'RetroHursty69 hurstybluetake2'
+		'RetroHursty69 heychromey'
         'dmmarti steampunk'
         'dmmarti maximuspie'
         'waweedman Blade-360'
