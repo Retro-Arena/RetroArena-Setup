@@ -14,7 +14,7 @@ rp_module_desc="Vtech Creativision emulator"
 rp_module_help="ROM Extensions: .bin .rom \n\n Copy your Creativision games to  $romdir/crvision \n You need to copy the Creativision BIOS files (bioscv.rom cslbios.rom cslbiossm.rom disk.rom laser2001.rom saloram.rom) to the folder $biosdir/crvision"
 rp_module_licence="?"
 rp_module_section="sa"
-rp_module_flags=" !kms"
+rp_module_flags=""
 
 function depends_creativision() {
     local depends=(libsdl2-dev libsdl2-net-dev autoconf zlib1g-dev libpng-dev)
