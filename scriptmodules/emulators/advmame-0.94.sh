@@ -14,7 +14,7 @@ rp_module_desc="AdvanceMAME v0.94.0"
 rp_module_help="ROM Extension: .zip\n\nCopy your AdvanceMAME roms to either $romdir/mame-advmame or\n$romdir/arcade"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/amadvance/advancemame/master/COPYING"
 rp_module_section="sa"
-rp_module_flags=" !kms"
+rp_module_flags=""
 
 function depends_advmame-0.94() {
     local depends=(libsdl1.2-dev)
@@ -27,6 +27,8 @@ function sources_advmame-0.94() {
 }
 
 function build_advmame-0.94() {
+    cp /usr/share/misc/config.guess "$md_build/"
+    cp /usr/share/misc/config.sub "$md_build/"
     ./configure CFLAGS="$CFLAGS -fsigned-char -fno-stack-protector" LDFLAGS="-s -lm -Wl,--no-as-needed" --prefix="$md_inst"
     make clean
     make
