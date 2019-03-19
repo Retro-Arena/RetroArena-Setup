@@ -119,6 +119,9 @@ function download_bezel() {
             theme=($theme)
             repo="${theme[0]}"
             theme="${theme[1]}"
+            if [[ $theme == "MegaDrive" ]]; then
+              theme="Megadrive"
+            fi
             if [[ -d "/opt/retroarena/configs/all/retroarch/overlay/GameBezels/$theme" ]]; then
                 status+=("i")
                 options+=("$i" "Update or Uninstall $theme (installed)")
