@@ -31,7 +31,7 @@ JS_EVENT_BUTTON = 0x01
 JS_EVENT_AXIS = 0x02
 JS_EVENT_INIT = 0x80
 
-CONFIG_DIR = '/opt/retropie/configs/'
+CONFIG_DIR = '/opt/retroarena/configs/'
 RETROARCH_CFG = CONFIG_DIR + 'all/retroarch.cfg'
 
 def ini_get(key, cfg_file):
