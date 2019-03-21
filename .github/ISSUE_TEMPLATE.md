@@ -1,7 +1,5 @@
-Please start a topic on the RetroArena forum before opening an issue - https://retroarena.org.uk/forum/
+What is the issue?
 
-This includes edit suggestions for the wiki. There are more people to help on the forum.
+How can we reproduce the issue from a fresh image?
 
-Once a problem has been verified on the forum, an issue can be opened here.
-
-Please remove this text before posting.
+Provide hardware details below:
