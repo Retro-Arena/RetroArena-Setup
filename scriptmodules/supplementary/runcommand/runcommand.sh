@@ -115,19 +115,14 @@ function start_joy2key() {
 
         # call joy2key.py: arguments are curses capability names or hex values starting with '0x'
         # see: http://pubs.opengroup.org/onlinepubs/7908799/xcurses/terminfo.html
-        "$ROOTDIR/supplementary/runcommand/joy2key.py" "$JOY2KEY_DEV" kcub1 kcuf1 kcuu1 kcud1 0x0a 0x09
-        JOY2KEY_PID=$(pgrep -f joy2key.py)
-
-    # ensure coherency between on-screen prompts and actual button mapping functionality
-    sleep 0.3
+        __joy2key_ppid=$$ "$ROOTDIR/supplementary/runcommand/joy2key.py" "$JOY2KEY_DEV" kcub1 kcuf1 kcuu1 kcud1 0x0a 0x09 &
+        JOY2KEY_PID=$!
     fi
 }
 
 function stop_joy2key() {
     if [[ -n "$JOY2KEY_PID" ]]; then
         kill "$JOY2KEY_PID"
-        JOY2KEY_PID=""
-        sleep 1
     fi
 }
 
@@ -360,9 +355,9 @@ function load_mode_defaults() {
     # get default fb_res (if not running on X)
     #FB_ORIG=()
     #if [[ -z "$DISPLAY" ]]; then
-        #local status=($(fbset | tr -s '\n'))
-        #FB_ORIG[0]="${status[3]}"
-        #FB_ORIG[1]="${status[4]}"
+     #   local status=($(fbset | tr -s '\n'))
+      #  FB_ORIG[0]="${status[3]}"
+       #FB_ORIG[1]="${status[4]}"
         #FB_ORIG[2]="${status[7]}"
     #fi
 
@@ -600,7 +595,6 @@ function choose_emulator() {
     done < <(sort "$EMU_SYS_CONF")
     if [[ -z "${options[*]}" ]]; then
         dialog --msgbox "No emulator options found for $SYSTEM - Do you have a valid $EMU_SYS_CONF ?" 20 60 >/dev/tty
-        stop_joy2key
         exit 1
     fi
     local cmd=(dialog $cancel --default-item "$default_id" --menu "Choose default emulator"  22 76 16 )
@@ -852,7 +846,6 @@ function restore_governor() {
 function get_sys_command() {
     if [[ ! -f "$EMU_SYS_CONF" ]]; then
         echo "No config found for system $SYSTEM"
-        stop_joy2key
         exit 1
     fi
 
@@ -974,6 +967,7 @@ function show_launch() {
 
 function check_menu() {
     local dont_launch=0
+    start_joy2key
     # check for key pressed to enter configuration
     IFS= read -s -t 2 -N 1 key </dev/tty
     if [[ -n "$key" ]]; then
@@ -987,6 +981,7 @@ function check_menu() {
         tput civis
         clear
     fi
+    stop_joy2key
     return $dont_launch
 }
 
@@ -1015,7 +1010,7 @@ function launch_command() {
     echo -e "Parameters: $@\nExecuting: $COMMAND" >>"$LOG"
     if [[ "$CONSOLE_OUT" -eq 1 ]]; then
         # turn cursor on
-        tput cnorm
+        #tput cnorm
         eval $COMMAND </dev/tty 2>>"$LOG"
         ret=$?
         tput civis
@@ -1333,18 +1328,15 @@ function runcommand() {
 
     load_mode_defaults
 
-    start_joy2key
     show_launch
 
     if [[ "$DISABLE_MENU" -ne 1 ]]; then
         if ! check_menu; then
-            stop_joy2key
             user_script "runcommand-onend.sh"
             clear
             restore_cursor_and_exit 0
         fi
     fi
-    stop_joy2key
 
     mode_switch "$MODE_REQ_ID"
 
