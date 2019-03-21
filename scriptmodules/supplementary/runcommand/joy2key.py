@@ -1,11 +1,11 @@
 #!/usr/bin/python
 
-# This file is part of TheRA - RetroArena (a fork of The RetroPie Project)
-# 
-# The RetroPie Project is the legal property of its developers, whose names are
+# This file is part of The RetroArena (TheRA)
+#
+# The RetroArena (TheRA) is the legal property of its developers, whose names are
 # too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
-# 
-# See the LICENSE.md file at the top-level directory of this distribution and 
+#
+# See the LICENSE.md file at the top-level directory of this distribution and
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
@@ -31,7 +31,7 @@ JS_EVENT_BUTTON = 0x01
 JS_EVENT_AXIS = 0x02
 JS_EVENT_INIT = 0x80
 
-CONFIG_DIR = '/opt/retropie/configs/'
+CONFIG_DIR = '/opt/retroarena/configs/'
 RETROARCH_CFG = CONFIG_DIR + 'all/retroarch.cfg'
 
 def ini_get(key, cfg_file):
