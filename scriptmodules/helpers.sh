@@ -44,6 +44,7 @@ function printHeading() {
 function fatalError() {
     printHeading "Error"
     echo -e "$1"
+    joy2keyStop
     exit 1
 }
 
@@ -369,9 +370,13 @@ function gitPullOrClone() {
 
     if [[ -n "$commit" ]]; then
         printMsgs "console" "Winding back $repo->$branch to commit: #$commit"
-        git branch -D "$commit" &>/dev/null
+        git -C "$dir" branch -D "$commit" &>/dev/null
         runCmd git -C "$dir" checkout -f "$commit" -b "$commit"
     fi
+
+    branch=$(runCmd git -C "$dir" rev-parse --abbrev-ref HEAD)
+    commit=$(runCmd git -C "$dir" rev-parse HEAD)
+    printMsgs "console" "HEAD is now in branch '$branch' at commit '$commit'"
 }
 
 # @fn setupDirectories()
@@ -383,6 +388,12 @@ function setupDirectories() {
     mkUserDir "$biosdir"
     mkUserDir "$configdir"
     mkUserDir "$configdir/all"
+
+    # some home folders for configs that modules rely on
+    mkUserDir "$home/.cache"
+    mkUserDir "$home/.config"
+    mkUserDir "$home/.local"
+    mkUserDir "$home/.local/share"
 
     # make sure we have inifuncs.sh in place and that it is up to date
     mkdir -p "$rootdir/lib"
@@ -423,6 +434,11 @@ function mkUserDir() {
 ## @brief Creates a directory under $romdir owned by the current user.
 function mkRomDir() {
     mkUserDir "$romdir/$1"
+    if [[ "$1" == "megadrive" ]]; then
+        pushd "$romdir"
+        ln -snf "$1" "genesis"
+        popd
+    fi
 }
 
 ## @fn moveConfigDir()
@@ -928,16 +944,15 @@ function applyPatch() {
 ## @fn downloadAndExtract()
 ## @param url url of archive
 ## @param dest destination folder for the archive
-## @param opts number of leading components from file to strip off or unzip params
+## @param optional additional parameters to pass to the decompression tool.
 ## @brief Download and extract an archive
-## @details Download and extract an archive, optionally stripping off a number
-## of directories - equivalent to the tar `--strip-components parameter`. For
-## zip files, the strip parameter can contain additional options to send to unzip
+## @details Download and extract an archive.
 ## @retval 0 on success
 function downloadAndExtract() {
     local url="$1"
     local dest="$2"
-    local opts="$3"
+    shift 2
+    local opts=("$@")
 
     local ext="${url##*.}"
     local cmd=(tar -xv)
@@ -959,15 +974,14 @@ function downloadAndExtract() {
             local tmp="$(mktemp -d)"
             local file="${url##*/}"
             runCmd wget -q -O"$tmp/$file" "$url"
-            runCmd unzip $opts -o "$tmp/$file" -d "$dest"
+            runCmd unzip "${opts[@]}" -o "$tmp/$file" -d "$dest"
             rm -rf "$tmp"
             ret=$?
     esac
 
     if [[ "$is_tar" -eq 1 ]]; then
         mkdir -p "$dest"
-        cmd+=(-C "$dest")
-        [[ -n "$opts" ]] && cmd+=(--strip-components "$opts")
+        cmd+=(-C "$dest" "${opts[@]}")
 
         runCmd "${cmd[@]}" < <(wget -q -O- "$url")
         ret=$?
@@ -1030,8 +1044,8 @@ function joy2keyStart() {
     [[ -z "$__joy2key_dev" ]] || pgrep -f joy2key.py >/dev/null && return 1
 
     # if joy2key.py is installed run it with cursor keys for axis/dpad, and enter + space for buttons 0 and 1
-    if __joy2key_ppid=$$ "$scriptdir/scriptmodules/supplementary/runcommand/joy2key.py" "$__joy2key_dev" "${params[@]}" & 2>/dev/null; then
-        __joy2key_pid=$!
+    if "$scriptdir/scriptmodules/supplementary/runcommand/joy2key.py" "$__joy2key_dev" "${params[@]}" 2>/dev/null; then
+        __joy2key_pid=$(pgrep -f joy2key.py)
         return 0
     fi
 
@@ -1043,7 +1057,8 @@ function joy2keyStart() {
 function joy2keyStop() {
     if [[ -n $__joy2key_pid ]]; then
         kill $__joy2key_pid 2>/dev/null
-       
+        __joy2key_pid=""
+        sleep 1
     fi
 }
 
@@ -1315,7 +1330,7 @@ function patchVendorGraphics() {
 ## @param mode dkms operation type
 ## @module_name name of dkms module
 ## @module_ver version of dkms module
-## Helper function to manage DKMS modules installed by RetroPie
+## Helper function to manage DKMS modules installed by RetroArena
 function dkmsManager() {
     local mode="$1"
     local module_name="$2"
@@ -1339,7 +1354,7 @@ function dkmsManager() {
             fi
             ;;
         remove)
-            for ver in $(dkms status "$module_name" | cut -d"," -f2); do
+            for ver in $(dkms status "$module_name" | cut -d"," -f2 | cut -d":" -f1); do
                 dkms remove -m "$module_name" -v "$ver" --all
                 rm -f "/usr/src/${module_name}-${ver}"
             done
