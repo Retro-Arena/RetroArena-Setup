@@ -16,7 +16,7 @@ rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/mupen64plus-l
 rp_module_section="lr"
 
 function sources_lr-mupen64plus-nx() {
-    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git mupen_next
+    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git GlideN64
 }
 
 function build_lr-mupen64plus-nx() {
