@@ -17,8 +17,8 @@ rp_module_section="lr"
 rp_module_flags="!armv6 !rockpro64"
 
 function sources_lr-yabasanshiro() {
-    #gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git libretro
-    gitPullOrClone "$md_build" https://github.com/barbudreadmon/yabause.git libretro
+    #gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
+    gitPullOrClone "$md_build" https://github.com/libretro/yabause.git yabasanshiro
     cd "$md_build/yabause"
 }
 
