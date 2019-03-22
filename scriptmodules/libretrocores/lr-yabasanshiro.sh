@@ -16,12 +16,6 @@ rp_module_licence="https://github.com/devmiyax/yabause/blob/minimum_linux/yabaus
 rp_module_section="lr"
 rp_module_flags="!armv6 !rockpro64"
 
-function depends_lr-yabasanshiro() {
-    local depends=(
-        clang-7
-    )
-}
-
 function sources_lr-yabasanshiro() {
     #gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
     gitPullOrClone "$md_build" https://github.com/libretro/yabause.git yabasanshiro
