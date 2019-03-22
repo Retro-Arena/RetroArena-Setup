@@ -16,6 +16,12 @@ rp_module_licence="https://github.com/devmiyax/yabause/blob/minimum_linux/yabaus
 rp_module_section="lr"
 rp_module_flags="!armv6 !rockpro64"
 
+function depends_lr-yabasanshiro() {
+    local depends=(
+        clang-7
+    )
+}
+
 function sources_lr-yabasanshiro() {
     #gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
     gitPullOrClone "$md_build" https://github.com/libretro/yabause.git yabasanshiro
@@ -25,9 +31,9 @@ function sources_lr-yabasanshiro() {
 function build_lr-yabasanshiro() {
     make -C yabause/src/libretro generate-files
     if isPlatform "odroid-n2"; then
-        make -j5 -C yabause/src/libretro platform=odroid-n2
+        CC=clang-7 CXX=clang++-7 make -j5 -C yabause/src/libretro/ platform=odroid-n2
     elif isPlatform "odroid-xu"; then
-        make -j5 -C yabause/src/libretro platform=odroid BOARD="ODROID-XU3"
+        CC=clang-7 CXX=clang++-7 make -j5 -C yabause/src/libretro platform=odroid BOARD="ODROID-XU3"
     else
         exit
     fi
