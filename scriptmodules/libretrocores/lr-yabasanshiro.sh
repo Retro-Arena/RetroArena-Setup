@@ -51,7 +51,9 @@ function configure_lr-yabasanshiro() {
     # set core options
     setRetroArchCoreOption "${dir_name}yabasanshiro_addon_cart" "4M_extended_ram"
     setRetroArchCoreOption "${dir_name}yabasanshiro_force_hle_bios" "disabled"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_frameskip" "enabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_multitap_port1" "disabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_multitap_port2" "disabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_resolution_mode" "2x"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_videoformattype" "NTSC"
 }
