@@ -56,14 +56,9 @@ function configure_lr-reicast() {
         ensureSystemretroconfig "$system"
         iniConfig " = " "" "$configdir/$system/retroarch.cfg"
         iniSet "video_shared_context" "true"
-        addEmulator 1 "$md_id" "$system" "$md_inst/reicast_libretro.so"
+        addEmulator 1 "$md_id" "$system" "$md_inst/reicast_libretro.so </dev/null"
         addSystem "$system"
     done
-    
-    # temp fix
-    sed -i -e 's:/opt/retroarena/emulators/retroarch/bin/retroarch:/opt/retroarena/emulators/retroarch/bin/retroarch < /dev/null :g' "$configdir/atomiswave/emulators.cfg"
-    sed -i -e 's:/opt/retroarena/emulators/retroarch/bin/retroarch:/opt/retroarena/emulators/retroarch/bin/retroarch < /dev/null :g' "$configdir/dreamcast/emulators.cfg"
-    sed -i -e 's:/opt/retroarena/emulators/retroarch/bin/retroarch:/opt/retroarena/emulators/retroarch/bin/retroarch < /dev/null :g' "$configdir/naomi/emulators.cfg"
 
     # set core options
     setRetroArchCoreOption "${dir_name}reicast_allow_service_buttons" "enabled"
