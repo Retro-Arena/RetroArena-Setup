@@ -26,7 +26,7 @@ function build_lr-yabasanshiro() {
     if isPlatform "odroid-n2"; then
         CC=clang-7 CXX=clang++-7 make -j5 -C yabause/src/libretro/ platform=odroid-n2
     elif isPlatform "odroid-xu"; then
-        CC=clang-7 CXX=clang++-7 make -j5 -C yabause/src/libretro platform=odroid BOARD="ODROID-XU3"
+        CC=clang-7 CXX=clang++-7 make -j5 -C yabause/src/libretro/ platform=odroid BOARD="ODROID-XU3"
     else
         exit
     fi
