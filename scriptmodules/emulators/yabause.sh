@@ -22,13 +22,7 @@ function depends_yabause() {
 }
 
 function sources_yabause() {    
-    if isPlatform "odroid-n2"; then
-        gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux_n2
-    elif isPlatform "odroid-xu"; then
-        gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
-    else
-        exit
-    fi
+    gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
 }
 
 function build_yabause() {
