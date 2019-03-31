@@ -74,5 +74,5 @@ function remove_uqm() {
 
 function configure_uqm() {
     moveConfigDir "$home/.uqm" "$md_conf_root/uqm"
-    addPort "$md_id" "uqm" "Ur-quan Masters" "xinit uqm -f"
+    addPort "$md_id" "uqm" "Ur-quan Masters" "xinit uqm"
 }
