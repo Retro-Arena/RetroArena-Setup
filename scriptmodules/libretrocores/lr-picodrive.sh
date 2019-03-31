@@ -25,7 +25,7 @@ function build_lr-picodrive() {
     if isPlatform "armv6"; then
         params+=(use_cz80=0 use_drz80=1)
     else
-        params+=(use_cz80=1 use_drz80=0)
+        params+=(use_cz80=1 use_drz80=0 use_sh2drc=0)
     fi
     make clean
     make -f Makefile.libretro "${params[@]}"

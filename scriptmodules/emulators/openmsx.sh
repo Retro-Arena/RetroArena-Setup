@@ -14,7 +14,7 @@ rp_module_desc="MSX emulator OpenMSX"
 rp_module_help="ROM Extensions: .rom .mx1 .mx2 .col .dsk .zip\n\nCopy your MSX/MSX2 games to $romdir/msx"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/openMSX/openMSX/master/doc/GPL.txt"
 rp_module_section="sa"
-rp_module_flags="!mali"
+rp_module_flags=""
 
 function depends_openmsx() {
     getDepends libsdl1.2-dev libsdl-ttf2.0-dev libglew-dev libao-dev libogg-dev libtheora-dev libxml2-dev libvorbis-dev tcl-dev
@@ -42,7 +42,11 @@ function install_openmsx() {
 
 function configure_openmsx() {
     mkRomDir "msx"
+    mkRomDir "msx2"
 
-    addEmulator 0 "$md_id" "msx" "xinit $md_inst/bin/openmsx %ROM%"
+    addEmulator 0 "$md_id" "msx" "$md_inst/bin/openmsx %ROM%"
     addSystem "msx"
+    addEmulator 0 "$md_id" "msx2" "$md_inst/bin/openmsx %ROM%"
+    addSystem "msx2"
+    
 }
