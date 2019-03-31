@@ -17,7 +17,7 @@ rp_module_section="sa"
 rp_module_flags=""
 
 function depends_openmsx() {
-    getDepends libsdl1.2-dev libsdl-ttf2.0-dev libglew-dev libao-dev libogg-dev libtheora-dev libxml2-dev libvorbis-dev tcl-dev
+    getDepends libsdl2-dev libsdl1.2-dev libsdl-ttf2.0-dev libglew-dev libao-dev libogg-dev libtheora-dev libxml2-dev libvorbis-dev tcl-dev
 }
 
 function sources_openmsx() {
