@@ -40,6 +40,11 @@ function install_openmsx() {
     downloadAndExtract "$__archive_url/openmsxroms.tar.gz" "$md_inst/share/systemroms/"
 }
 
+function install_bin_openmsx() {
+    downloadAndExtract "$__gitbins_url/openmsx.tar.gz" "$md_inst" 1
+}
+
+
 function configure_openmsx() {
     mkRomDir "msx"
     mkRomDir "msx2"
