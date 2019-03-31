@@ -36,5 +36,5 @@ function configure_openttd() {
 
     moveConfigDir "$home/.local/openttd" "$md_conf_root/openttd"
 
-    addPort "$md_id" "openttd" "OpenTTD" "openttd"
+    addPort "$md_id" "openttd" "OpenTTD" "xinit openttd"
 }
