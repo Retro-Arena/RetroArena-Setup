@@ -24,11 +24,11 @@ function sources_gsplus() {
 }
 
 function build_gsplus() {
-if isPlatform "arm"; then
-cp "$md_data/vars_armv7-a_sdl2" "$md_build/src/vars"
-elif isPlatform "odroid-n2"; then
-cp "$md_data/vars_aarch64_sdl2" "$md_build/src/vars"
-fi
+    if isPlatform "arm"; then
+        cp "$md_data/vars_armv7-a_sdl2" "$md_build/src/vars"
+    elif isPlatform "odroid-n2"; then
+        cp "$md_data/vars_aarch64_sdl2" "$md_build/src/vars"
+    fi
     cd src
     make clean
     make

@@ -345,7 +345,7 @@ function platform_odroid-c2() {
 }
 
 function platform_odroid-n2() {
-    __default_cflags="-O2 -march=native -mtune=cortex-a73.cortex-a53 "
+    __default_cflags="-O2 -march=native -mtune=cortex-a73.cortex-a53"
     __platform_flags="aarch64 mali gles"
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     __default_asflags=""
