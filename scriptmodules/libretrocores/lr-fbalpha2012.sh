@@ -44,6 +44,10 @@ function install_lr-fbalpha2012() {
     )
 }
 
+function install_bin_lr-fbalpha2012() {
+    downloadAndExtract "$__gitbins_url/lr-fbalpha2012.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-fbalpha2012() {
     local system
     for system in arcade fba neogeo; do
