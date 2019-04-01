@@ -29,10 +29,13 @@ function build_yabause() {
     mkdir build
     cd build
     if isPlatform "odroid-n2"; then
-        export CFLAGS="-O2 -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53 -funsafe-math-optimizations"
-        cmake ../yabause -DYAB_PORTS=xu4 -DCMAKE_SYSTEM_PROCESSOR="aarch64"
+        export CFLAGS="-O2 -march=armv8-a+crc -mtune=cortex-a73.cortex-a53 -ftree-vectorize -funsafe-math-optimizations -pipe"
+        cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DCMAKE_SYSTEM_PROCESSOR="aarch64"
     elif isPlatform "odroid-xu"; then
-        export CFLAGS="-O2 -mcpu=cortex-a15 -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
+        export CFLAGS="-O2 -march=armv8-a+crc -mtune=cortex-a72.cortex-a53 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations -pipe"
+        cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON -DCMAKE_TOOLCHAIN_FILE=../yabause/src/xu4/rp64.cmake
+    elif isPlatform "rockpro64"; then
+        export CFLAGS="-O2 -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
         cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON
     else
         exit
