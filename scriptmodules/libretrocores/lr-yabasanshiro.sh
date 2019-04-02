@@ -14,7 +14,7 @@ rp_module_desc="Sega Saturn Emulator"
 rp_module_help="ROM Extensions: .iso .bin .zip\n\nCopy your Sega Saturn roms to $romdir/saturn\n\nCopy the required BIOS file saturn_bios_us.bin and saturn_bios_jp.bin to $biosdir"
 rp_module_licence="https://github.com/devmiyax/yabause/blob/minimum_linux/yabause/COPYING"
 rp_module_section="lr"
-rp_module_flags="!armv6 !rockpro64"
+rp_module_flags=""
 
 function sources_lr-yabasanshiro() {
     #gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
@@ -28,6 +28,8 @@ function build_lr-yabasanshiro() {
         make -j5 -C yabause/src/libretro/ platform=odroid-n2
     elif isPlatform "odroid-xu"; then
         make -j5 -C yabause/src/libretro/ platform=odroid BOARD="ODROID-XU3"
+    elif isPlatform "rockpro64"; then       
+        make -j5 -C yabause/src/libretro/ platform=rockpro64
     else
         exit
     fi
