@@ -56,8 +56,8 @@ function install_bin_yabause() {
 
 function configure_yabause() {
     mkRomDir "saturn"
-    addEmulator 1 "${md_id}-1x" "saturn" "$md_inst/yabasanshiro -a -nf -r 3 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
-    addEmulator 1 "${md_id}-2x" "saturn" "$md_inst/yabasanshiro -a -nf -r 2 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
-    addEmulator 1 "${md_id}-3x" "saturn" "$md_inst/yabasanshiro -a -nf -r 1 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 1 "${md_id}-1x" "saturn" "$md_inst/yabasanshiro -a -r 3 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 1 "${md_id}-2x" "saturn" "$md_inst/yabasanshiro -a -r 2 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 1 "${md_id}-3x" "saturn" "$md_inst/yabasanshiro -a -r 1 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
     addSystem "saturn"
 }
