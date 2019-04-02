@@ -34,6 +34,9 @@ function install_lr-mess2016() {
         'mess2016_libretro.so'
     )
 }
+function install_bin_lr-mess2016() {
+    downloadAndExtract "$__gitbins_url/lr-mess2016.tar.gz" "$md_inst" 1
+}
 
 function configure_lr-mess2016() {
     configure_lr-mess "mess2016_libretro.so"
