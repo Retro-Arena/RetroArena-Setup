@@ -33,6 +33,10 @@ function install_rawgl() {
     md_ret_files=('rawgl')
 }
 
+function install_bin_rawgl() {
+    downloadAndExtract "$__gitbins_url/rawgl.gz" "$md_inst" 1
+}
+
 function configure_rawgl() {
     mkRomDir "ports"
     mkRomDir "ports/$md_id"
