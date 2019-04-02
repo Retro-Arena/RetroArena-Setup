@@ -45,6 +45,10 @@ function install_easyrpgplayer() {
     make install
 }
 
+ function install_bin_easyrpgplayer() {
+    downloadAndExtract "$__gitbins_url/easyrpgplayer.tar.gz" "$md_inst" 1
+}
+
 function configure_easyrpgplayer() {
     mkRomDir "ports"
     mkRomDir "ports/$md_id"
