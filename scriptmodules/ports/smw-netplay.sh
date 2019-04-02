@@ -42,6 +42,10 @@ function install_smw-netplay() {
     )
 }
 
+ function install_bin_smw-netplay() {
+    downloadAndExtract "$__gitbins_url/smw-netplay.tar.gz" "$md_inst" 1
+}
+
 function configure_smw-netplay() {
     setConfigRoot "ports"
 
