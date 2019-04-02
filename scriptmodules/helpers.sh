@@ -946,8 +946,7 @@ function applyPatch() {
 function downloadAndExtract() {
     local url="$1"
     local dest="$2"
-    shift 2
-    local opts=("$@")
+    local opts="$3"
 
     local ext="${url##*.}"
     local cmd=(tar -xv)
