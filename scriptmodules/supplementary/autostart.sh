@@ -71,7 +71,8 @@ function enable_autostart() {
             cat >/etc/systemd/system/getty@tty1.service.d/autologin.conf <<_EOF_
 [Service]
 ExecStart=
-ExecStart=-/sbin/agetty --autologin $user --noclear %I \$TERM
+ExecStart=-/sbin/agetty --skip-login --noclear --noissue --login-options "-f pigaming" %I $TERM
+Type=idle
 _EOF_
         fi
 
