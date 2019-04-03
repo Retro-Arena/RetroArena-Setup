@@ -26,7 +26,7 @@ function _autostart_script_autostart() {
 
     local script="$configdir/all/autostart.sh"
 
-    cat >/etc/profile.d/10-retropie.sh <<_EOF_
+    cat >/etc/profile.d/10-retroarena.sh <<_EOF_
 # launch our autostart apps (if we are on the correct tty)
 if [ "\`tty\`" = "/dev/tty1" ] && [ "\$USER" = "$user" ]; then
     bash "$script"
@@ -54,7 +54,7 @@ function enable_autostart() {
 
     if isPlatform "x11"; then
         mkUserDir "$home/.config/autostart"
-        ln -sf "/usr/local/share/applications/retropie.desktop" "$home/.config/autostart/"
+        ln -sf "/usr/local/share/applications/retroarena.desktop" "$home/.config/autostart/"
     else
         if [[ "$__os_id" == "Raspbian" ]]; then
             if [[ "$__chroot" -eq 1 ]]; then
@@ -83,7 +83,7 @@ function disable_autostart() {
     local login_type="$1"
     [[ -z "$login_type" ]] && login_type="B2"
     if isPlatform "x11"; then
-        rm "$home/.config/autostart/retropie.desktop"
+        rm "$home/.config/autostart/retroarena.desktop"
     else
         if [[ "$__os_id" == "Raspbian" ]]; then
             if [[ "$__chroot" -eq 1 ]]; then
@@ -98,7 +98,7 @@ function disable_autostart() {
             systemctl enable lightdm.service
         fi
         rm -f /etc/profile.d/10-emulationstation.sh
-        rm -f /etc/profile.d/10-retropie.sh
+        rm -f /etc/profile.d/10-retroarena.sh
     fi
 }
 
@@ -111,7 +111,7 @@ function gui_autostart() {
     while true; do
         if isPlatform "x11"; then
             local x11_autostart
-            if [[ -f "$home/.config/autostart/retropie.desktop" ]]; then
+            if [[ -f "$home/.config/autostart/retroarena.desktop" ]]; then
                 options=(1 "Autostart Emulation Station after login (Enabled)")
                 x11_autostart=1
             else
