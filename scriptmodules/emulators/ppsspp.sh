@@ -160,8 +160,7 @@ function install_ppsspp() {
 }
 
 function install_bin_ppsspp() {
-    #downloadAndExtract "$__gitbins_url/ppsspp.tar.gz" "$md_inst" 1
-    downloadAndExtract "$__gitbins_url/ppssppn2.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/ppsspp.tar.gz" "$md_inst" 1
 }
 
 function configure_ppsspp() { 
