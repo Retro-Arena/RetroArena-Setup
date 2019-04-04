@@ -16,11 +16,6 @@ rp_module_licence="https://github.com/devmiyax/yabause/blob/minimum_linux/yabaus
 rp_module_section="sa"
 rp_module_flags=""
 
-function depends_yabause() {
-    local depends=(cmake libgles2-mesa-dev libsdl2-dev libboost-filesystem-dev libboost-system-dev libboost-locale-dev libboost-date-time-dev)
-    getDepends "${depends[@]}"
-}
-
 function sources_yabause() {    
     gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
 }
