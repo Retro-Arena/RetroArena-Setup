@@ -26,16 +26,19 @@ function sources_lr-pcsx-rearmed() {
 }
 
 function build_lr-pcsx-rearmed() {
-    local platform
-    if isPlatform "rpi2" || isPlatform "rpi3"; then
-        platform="$__platform"
-    else
-        isPlatform "arm" && platform+="armv"
-        isPlatform "neon" && platform+="neon"
+    local params=()
+
+    if isPlatform "arm"; then
+        params+=(ARCH=arm USE_DYNAREC=1)
+        if isPlatform "neon"; then
+            params+=(HAVE_NEON=1 BUILTIN_GPU=neon)
+        else
+            params+=(HAVE_NEON=0 BUILTIN_GPU=peops)
+        fi
     fi
-    [[ -z "$platform" ]] && platform="unix"
-    make -f Makefile.libretro clean
-    make -f Makefile.libretro platform="$platform"
+
+    make -f Makefile.libretro "${params[@]}" clean
+    make -f Makefile.libretro "${params[@]}"
     md_ret_require="$md_build/pcsx_rearmed_libretro.so"
 }
 
@@ -49,10 +52,6 @@ function install_lr-pcsx-rearmed() {
         'README.md'
         'readme.txt'
     )
-}
-
-function install_bin_lr-pcsx-rearmed() {
-    downloadAndExtract "$__gitbins_url/lr-pcsx-rearmed.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-pcsx-rearmed() {
