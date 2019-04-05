@@ -54,6 +54,10 @@ function install_lr-pcsx-rearmed() {
     )
 }
 
+function install_bin_lr-pcsx-rearmed() {
+    downloadAndExtract "$__gitbins_url/lr-pcsx-rearmed.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-pcsx-rearmed() {
     mkRomDir "psx"
     ensureSystemretroconfig "psx"
