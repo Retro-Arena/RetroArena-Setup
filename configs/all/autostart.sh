@@ -8,25 +8,19 @@ while pgrep vlc >/dev/null;
 do sleep 1;
 done
 
-case "$(sed -n '/^Hardware/s/^.*: \(.*\)/\1/p' < /proc/cpuinfo)" in
-    "Hardkernel ODROID-N2")
-        while pgrep mpv &>/dev/null;
-            do sleep 1;
-        done
-        ;;
-    ODROID-XU[34])
-        while pgrep mplayer &>/dev/null;
-            do sleep 1;
-        done
-        ;;
-    *)
-        if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
-            while pgrep mplayer &>/dev/null;
-                do sleep 1;
-            done
-        fi
-        ;;
-esac
+if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+    while pgrep mpv &>/dev/null;
+        do sleep 1;
+    done
+elif grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
+    while pgrep mpv &>/dev/null;
+        do sleep 1;
+    done
+else
+    while pgrep mplayer &>/dev/null;
+        do sleep 1;
+    done
+fi
 
 if [[ -e "$HOME/.config/themerandomizer" ]]; then
     # Get list of currently installed themes and count

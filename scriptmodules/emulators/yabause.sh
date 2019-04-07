@@ -31,9 +31,6 @@ function build_yabause() {
     if isPlatform "odroid-n2"; then
         export CFLAGS="-O2 -march=armv8-a+crc -mtune=cortex-a73.cortex-a53 -ftree-vectorize -funsafe-math-optimizations -pipe"
         cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DCMAKE_SYSTEM_PROCESSOR="aarch64"
-        cd /root/mali
-        sudo ./install.sh
-        cd -
     elif isPlatform "odroid-xu"; then
         export CFLAGS="-O2 -march=armv7-a -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
         cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON
