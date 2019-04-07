@@ -16,6 +16,11 @@ rp_module_licence="https://github.com/devmiyax/yabause/blob/minimum_linux/yabaus
 rp_module_section="sa"
 rp_module_flags=""
 
+function depends_yabause() {
+    local depends=(cmake libgles2-mesa-dev libsdl2-dev libboost-filesystem-dev libboost-system-dev libboost-locale-dev libboost-date-time-dev)
+    getDepends "${depends[@]}"
+}
+
 function sources_yabause() {    
     gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
 }
@@ -26,6 +31,9 @@ function build_yabause() {
     if isPlatform "odroid-n2"; then
         export CFLAGS="-O2 -march=armv8-a+crc -mtune=cortex-a73.cortex-a53 -ftree-vectorize -funsafe-math-optimizations -pipe"
         cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DCMAKE_SYSTEM_PROCESSOR="aarch64"
+        cd /root/mali
+        sudo ./install.sh
+        cd -
     elif isPlatform "odroid-xu"; then
         export CFLAGS="-O2 -march=armv7-a -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
         cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON
