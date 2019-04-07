@@ -150,9 +150,9 @@ function configure_retroarch() {
     
     # install cheats by default
     update_cheats_retroarch
-
-    # install minimal assets
-    install_xmb_monochrome_assets_retroarch
+    
+    # install assets by default
+    update_assets_retroarch
 
     local config="$(mktemp)"
 
