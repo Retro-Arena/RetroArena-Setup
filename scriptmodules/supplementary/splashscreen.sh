@@ -82,7 +82,7 @@ function disable_plymouth_splashscreen() {
 }
 
 function default_splashscreen() {
-    echo "$md_inst/retroarena-default.png" >/etc/splashscreen.list
+    echo "$md_inst/TheRA 30 Sec.mp4" >/etc/splashscreen.list
 }
 
 function enable_splashscreen() {
