@@ -38,9 +38,7 @@ function build_lr-parallel-n64-nx() {
         params+=(GLES=1 HAVE_NEON=1 WITH_DYNAREC=arm)
         params+=(GL_LIB:=-lGLESv2)
     elif isPlatform "odroid-n2"; then
-        params+=(CPUFLAGS="-DNO_ASM -DARM -DARM_ASM -DDONT_WANT_ARM_OPTIMIZATIONS -DARM_FIX -DARM64 -D__NEON_OPT")
-        params+=(platform=unix)
-        params+=(FORCE_GLES=1 WITH_DYNAREC=aarch64 HAVE_NEON=1)
+        params+=(platform="unix $_platform")
     fi
     make "${params[@]}"
     rpSwap off
