@@ -230,48 +230,11 @@ function get_platform() {
     local architecture="$(uname --machine)"
     if [[ -z "$__platform" ]]; then
         case "$(sed -n '/^Hardware/s/^.*: \(.*\)/\1/p' < /proc/cpuinfo)" in
-            BCM*)
-                # calculated based on information from https://github.com/AndrewFromMelbourne/raspberry_pi_revision
-                local rev="0x$(sed -n '/^Revision/s/^.*: \(.*\)/\1/p' < /proc/cpuinfo)"
-                # if bit 23 is not set, we are on a rpi1 (bit 23 means the revision is a bitfield)
-                if [[ $((($rev >> 23) & 1)) -eq 0 ]]; then
-                    __platform="rpi1"
-                else
-                    # if bit 23 is set, get the cpu from bits 12-15
-                    local cpu=$((($rev >> 12) & 15))
-                    case $cpu in
-                        0)
-                            __platform="rpi1"
-                            ;;
-                        1)
-                            __platform="rpi2"
-                            ;;
-                        2)
-                            __platform="rpi3"
-                            ;;
-                    esac
-                fi
-                ;;
-            "Freescale i.MX6 Quad/DualLite (Device Tree)")
-                __platform="imx6"
-                ;;
-            ODROIDC)
-                __platform="odroid-c1"
-                ;;
-            ODROID-C2)
-                __platform="odroid-c2"
-                ;;
             "Hardkernel ODROID-N2")
                 __platform="odroid-n2"
                 ;;
             ODROID-XU[34])
                 __platform="odroid-xu"
-                ;;
-            "Rockchip (Device Tree)")
-                __platform="tinker"
-                ;;
-            Vero4K)
-                __platform="vero4k"
                 ;;
             *)
                 if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
@@ -295,55 +258,6 @@ function get_platform() {
     [[ -z "$__default_cxxflags" ]] && __default_cxxflags="$__default_cflags"
 }
 
-function platform_rpi1() {
-    # values to be used for configure/make
-    __default_cflags="-O2 -mcpu=arm1176jzf-s -mfpu=vfp -mfloat-abi=hard"
-    __default_asflags=""
-    __default_makeflags=""
-    __platform_flags="arm armv6 rpi gles"
-    # if building in a chroot, what cpu should be set by qemu
-    # make chroot identify as arm6l
-    __qemu_cpu=arm1176
-}
-
-function platform_rpi2() {
-    __default_cflags="-O2 -mcpu=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-    __default_asflags=""
-    __default_makeflags="-j2"
-    __platform_flags="arm armv7 neon rpi gles"
-    __qemu_cpu=cortex-a7
-}
-
-# note the rpi3 currently uses the rpi2 binaries - for ease of maintenance - rebuilding from source
-# could improve performance with the compiler options below but needs further testing
-function platform_rpi3() {
-    __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-    __default_asflags=""
-    __default_makeflags="-j2"
-    __platform_flags="arm armv8 neon rpi gles"
-}
-
-function platform_odroid-c1() {
-    __default_cflags="-O2 -mcpu=cortex-a5 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-    __default_asflags=""
-    __default_makeflags="-j2"
-    __platform_flags="arm armv7 neon mali gles"
-    __qemu_cpu=cortex-a9
-}
-
-function platform_odroid-c2() {
-    if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
-        __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a53 -mfpu=neon-fp-armv8"
-        __platform_flags="arm armv8 neon mali gles"
-    else
-        __default_cflags="-O2 -march=native"
-        __platform_flags="aarch64 mali gles"
-    fi
-    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
-    __default_asflags=""
-    __default_makeflags="-j2"
-}
-
 function platform_odroid-n2() {
     __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53 -ftree-vectorize -funsafe-math-optimizations -pipe"
     __platform_flags="aarch64 mali gles"
@@ -362,21 +276,6 @@ function platform_odroid-xu() {
     __has_binaries=0
 }
 
-function platform_rock64() {
-    if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
-        __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a53 -mfpu=neon-fp-armv8"
-        __platform_flags="arm armv8 neon kms gles"
-    else
-        __default_cflags="-O2 -march=native"
-        __platform_flags="aarch64 kms gles"
-    fi
-    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
-    # required for mali headers to define GL functions
-    __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
-    __default_asflags=""
-    __default_makeflags="-j2"
-}
-
 function platform_rockpro64() {
     __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72.cortex-a53 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations -pipe"
     __platform_flags="arm armv8 neon kms gles"
@@ -387,46 +286,9 @@ function platform_rockpro64() {
     __default_makeflags="-j5"
 }
 
-function platform_tinker() {
-    __default_cflags="-O2 -marm -march=armv7-a -mtune=cortex-a17 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-    # required for mali headers to define GL functions
-    __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
-    __default_asflags=""
-    __default_makeflags="-j2"
-    __platform_flags="arm armv7 neon kms gles"
-}
-
-function platform_x86() {
-    __default_cflags="-O2 -march=native"
-    __default_asflags=""
-    __default_makeflags="-j$(nproc)"
-    __platform_flags="x11 gl"
-}
-
 function platform_generic-x11() {
     __default_cflags="-O2"
     __default_asflags=""
     __default_makeflags="-j$(nproc)"
     __platform_flags="x11 gl"
-}
-
-function platform_armv7-mali() {
-    __default_cflags="-O2 -march=armv7-a -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-    __default_asflags=""
-    __default_makeflags="-j$(nproc)"
-    __platform_flags="arm armv7 neon mali gles"
-}
-
-function platform_imx6() {
-    __default_cflags="-O2 -march=armv7-a -mfpu=neon -mtune=cortex-a9 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-    __default_asflags=""
-    __default_makeflags="-j2"
-    __platform_flags="arm armv7 neon"
-}
-
-function platform_vero4k() {
-    __default_cflags="-I/opt/vero3/include -L/opt/vero3/lib -O2 -march=armv8-a+crc -mtune=cortex-a53 -mfpu=neon-fp-armv8 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-    __default_asflags=""
-    __default_makeflags="-j4"
-    __platform_flags="arm armv8 neon vero4k gles"
 }
