@@ -63,4 +63,9 @@ function configure_yabause() {
     addEmulator 1 "${md_id}-2x-fs" "saturn" "$md_inst/yabasanshiro -a -r 2 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
     addEmulator 1 "${md_id}-4x-fs" "saturn" "$md_inst/yabasanshiro -a -r 1 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
     addSystem "saturn"
+    
+    if isPlatform "odroid-n2"; then
+        cd $HOME/mali
+        sudo ./install.sh
+    fi
 }
