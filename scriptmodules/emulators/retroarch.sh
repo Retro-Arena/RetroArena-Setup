@@ -86,7 +86,7 @@ function update_assets_retroarch() {
     local dir="$configdir/all/retroarch/assets"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
+    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
     chown -R $user:$user "$dir"
 }
 
