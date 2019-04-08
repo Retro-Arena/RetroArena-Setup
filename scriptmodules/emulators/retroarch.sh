@@ -16,7 +16,6 @@ rp_module_section="core"
 
 function depends_retroarch() {
     local depends=(libudev-dev libxkbcommon-dev libsdl2-dev libasound2-dev libusb-1.0-0-dev libpulse-dev)
-    isPlatform "mali" && depends+=(mali-fbdev)
     getDepends "${depends[@]}"
     addUdevInputRules
 }
