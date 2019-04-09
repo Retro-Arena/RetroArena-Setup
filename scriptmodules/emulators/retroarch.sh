@@ -28,7 +28,7 @@ function sources_retroarch() {
 }
 
 function build_retroarch() {  
-    local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse --disable-gl1)
+    local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse --disable-opengl1)
     ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland --disable-kms)
     isPlatform "gles" && params+=(--enable-opengles --enable-opengles3)
     isPlatform "mali" && params+=(--enable-mali_fbdev)
