@@ -14,18 +14,27 @@ rp_module_desc="N64 emu - Highly modified Mupen64Plus port for libretro"
 rp_module_help="ROM Extensions: .z64 .n64 .v64\n\nCopy your N64 roms to $romdir/n64"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/mupen64plus-libretro-nx/mupen_next/LICENSE"
 rp_module_section="lr"
+rp_module_flags=""
 
 function sources_lr-mupen64plus-nx() {
-    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git mupen_next
+    if isPlatform "rockpro64"; then
+    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git 
+	else gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git GLideN64
+	fi
+    isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
 }
 
 function build_lr-mupen64plus-nx() {
     make clean
     local params=()
-    if isPlatform "rockpro64" || isPlatform "odroid-c1" || isPlatform "odroid-xu"; then
-        params+=(platform="$__platform")
-    elif isPlatform "odroid-n2"; then
-        params+=("platform=unix" "FORCE_GLES3=1" "WITH_DYNAREC=aarch64") 
+    if isPlatform "odroid-n2"; then
+        params+=(platform=odroid64 BOARD=N2)
+    elif isPlatform  "odroid-xu"; then
+        params+=(platform=odroid BOARD=ODROID-XU)
+    elif isPlatform "rockpro64"; then
+        params+=(platform=rockpro64)
+    else
+        exit
     fi
     make "${params[@]}"
     md_ret_require="$md_build/mupen64plus_next_libretro.so"

@@ -38,6 +38,7 @@ function depends_emulationstation-dev() {
         libvlc-dev libvlccore-dev vlc rapidjson-dev
     )
 
+    compareVersions "$__os_debian_ver" gt 8 && depends+=(rapidjson-dev)
     isPlatform "x11" && depends+=(gnome-terminal)
     isPlatform "rock64" && depends+=(libmali-rk-dev)
     getDepends "${depends[@]}"

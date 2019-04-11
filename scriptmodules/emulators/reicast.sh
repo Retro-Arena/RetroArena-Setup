@@ -45,7 +45,7 @@ function install_reicast() {
         make USE_GLES=1 USE_SDL=1 PREFIX="$md_inst" platform=rockpro64 install
     else 
         make PREFIX="$md_inst" install
-        fi
+    fi
     md_ret_files=(
         'LICENSE'
         'README.md'

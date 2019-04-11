@@ -14,7 +14,7 @@ rp_module_desc="Daphne - Laserdisc Emulator"
 rp_module_help="ROM Extension: .daphne\n\nCopy your Daphne roms to $romdir/daphne"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/RetroArena/daphne-emu/master/COPYING"
 rp_module_section="sa"
-rp_module_flags="!x86  !kms"
+rp_module_flags="!x86"
 
 function depends_daphne() {
     getDepends libsdl1.2-dev libvorbis-dev libglew-dev zlib1g-dev
@@ -26,6 +26,8 @@ function sources_daphne() {
 
 function build_daphne() {
     cd src/vldp2
+    cp /usr/share/misc/config.guess "$md_build/src/vldp2/autotools/"
+    cp /usr/share/misc/config.sub "$md_build/src/vldp2/autotools/"
     ./configure
     make -f Makefile.rp
     cd ..

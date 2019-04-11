@@ -4,13 +4,23 @@ while pgrep fbi &>/dev/null;
 do sleep 1;
 done
 
-while pgrep mplayer &>/dev/null;
-do sleep 1;
-done
-
 while pgrep vlc >/dev/null;
 do sleep 1;
 done
+
+if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+    while pgrep mpv &>/dev/null;
+        do sleep 1;
+    done
+elif grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
+    while pgrep mpv &>/dev/null;
+        do sleep 1;
+    done
+else
+    while pgrep mplayer &>/dev/null;
+        do sleep 1;
+    done
+fi
 
 if [[ -e "$HOME/.config/themerandomizer" ]]; then
     # Get list of currently installed themes and count

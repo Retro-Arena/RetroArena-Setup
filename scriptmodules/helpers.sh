@@ -44,6 +44,7 @@ function printHeading() {
 function fatalError() {
     printHeading "Error"
     echo -e "$1"
+    joy2keyStop
     exit 1
 }
 
@@ -369,9 +370,13 @@ function gitPullOrClone() {
 
     if [[ -n "$commit" ]]; then
         printMsgs "console" "Winding back $repo->$branch to commit: #$commit"
-        git branch -D "$commit" &>/dev/null
+        git -C "$dir" branch -D "$commit" &>/dev/null
         runCmd git -C "$dir" checkout -f "$commit" -b "$commit"
     fi
+
+    branch=$(runCmd git -C "$dir" rev-parse --abbrev-ref HEAD)
+    commit=$(runCmd git -C "$dir" rev-parse HEAD)
+    printMsgs "console" "HEAD is now in branch '$branch' at commit '$commit'"
 }
 
 # @fn setupDirectories()
@@ -383,6 +388,12 @@ function setupDirectories() {
     mkUserDir "$biosdir"
     mkUserDir "$configdir"
     mkUserDir "$configdir/all"
+
+    # some home folders for configs that modules rely on
+    mkUserDir "$home/.cache"
+    mkUserDir "$home/.config"
+    mkUserDir "$home/.local"
+    mkUserDir "$home/.local/share"
 
     # make sure we have inifuncs.sh in place and that it is up to date
     mkdir -p "$rootdir/lib"
@@ -928,11 +939,9 @@ function applyPatch() {
 ## @fn downloadAndExtract()
 ## @param url url of archive
 ## @param dest destination folder for the archive
-## @param opts number of leading components from file to strip off or unzip params
+## @param optional additional parameters to pass to the decompression tool.
 ## @brief Download and extract an archive
-## @details Download and extract an archive, optionally stripping off a number
-## of directories - equivalent to the tar `--strip-components parameter`. For
-## zip files, the strip parameter can contain additional options to send to unzip
+## @details Download and extract an archive.
 ## @retval 0 on success
 function downloadAndExtract() {
     local url="$1"
@@ -1030,8 +1039,8 @@ function joy2keyStart() {
     [[ -z "$__joy2key_dev" ]] || pgrep -f joy2key.py >/dev/null && return 1
 
     # if joy2key.py is installed run it with cursor keys for axis/dpad, and enter + space for buttons 0 and 1
-    if __joy2key_ppid=$$ "$scriptdir/scriptmodules/supplementary/runcommand/joy2key.py" "$__joy2key_dev" "${params[@]}" & 2>/dev/null; then
-        __joy2key_pid=$!
+    if "$scriptdir/scriptmodules/supplementary/runcommand/joy2key.py" "$__joy2key_dev" "${params[@]}" 2>/dev/null; then
+        __joy2key_pid=$(pgrep -f joy2key.py)
         return 0
     fi
 
@@ -1043,7 +1052,8 @@ function joy2keyStart() {
 function joy2keyStop() {
     if [[ -n $__joy2key_pid ]]; then
         kill $__joy2key_pid 2>/dev/null
-       
+        __joy2key_pid=""
+        sleep 1
     fi
 }
 
@@ -1315,7 +1325,7 @@ function patchVendorGraphics() {
 ## @param mode dkms operation type
 ## @module_name name of dkms module
 ## @module_ver version of dkms module
-## Helper function to manage DKMS modules installed by RetroPie
+## Helper function to manage DKMS modules installed by RetroArena
 function dkmsManager() {
     local mode="$1"
     local module_name="$2"
@@ -1339,7 +1349,7 @@ function dkmsManager() {
             fi
             ;;
         remove)
-            for ver in $(dkms status "$module_name" | cut -d"," -f2); do
+            for ver in $(dkms status "$module_name" | cut -d"," -f2 | cut -d":" -f1); do
                 dkms remove -m "$module_name" -v "$ver" --all
                 rm -f "/usr/src/${module_name}-${ver}"
             done
@@ -1355,4 +1365,26 @@ function dkmsManager() {
             fi
             ;;
     esac
+}
+
+## @fn getIPAddress()
+## @param dev optional specific network device to use for address lookup
+## @brief Obtains the current externally routable source IP address of the machine
+## @details This function first tries to obtain an external IPv4 route and
+## otherwise tries an IPv6 route if the IPv4 route can not be determined.
+## If no external route can be determined, nothing will be returned.
+## This function uses Google's DNS servers as the external lookup address.
+function getIPAddress() {
+    local dev="$1"
+    local ip_route
+
+    # first try to obtain an external IPv4 route
+    ip_route=$(ip -4 route get 8.8.8.8 ${dev:+dev $dev} 2>/dev/null)
+    if [[ -z "$ip_route" ]]; then
+        # if there is no IPv4 route, try to obtain an IPv6 route instead
+        ip_route=$(ip -6 route get 2001:4860:4860::8888 ${dev:+dev $dev} 2>/dev/null)
+    fi
+
+    # if an external route was found, report its source address
+    [[ -n "$ip_route" ]] && grep -oP "src \K[^\s]+" <<< "$ip_route"
 }

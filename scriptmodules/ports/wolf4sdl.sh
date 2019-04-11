@@ -13,7 +13,7 @@ rp_module_id="wolf4sdl"
 rp_module_desc="Wolf4SDL - port of Wolfenstein 3D / Spear of Destiny engine"
 rp_module_licence="NONCOM https://raw.githubusercontent.com/mozzwald/wolf4sdl/master/license-mame.txt"
 rp_module_section="prt"
-rp_module_flags="dispmanx !mali !kms"
+rp_module_flags="dispmanx !mali"
 
 function depends_wolf4sdl() {
     getDepends libsdl1.2-dev libsdl-mixer1.2-dev
@@ -84,12 +84,12 @@ function game_data_wolf4sdl() {
     if [[ ! -f "$romdir/ports/wolf3d/vswap.wl6" && ! -f "$romdir/ports/wolf3d/vswap.wl1" ]]; then
         cd "$__tmpdir"
         # Get shareware game data
-        downloadAndExtract "http://maniacsvault.net/ecwolf/files/shareware/wolf3d14.zip" "$romdir/ports/wolf3d" "-j -LL"
+        downloadAndExtract "http://maniacsvault.net/ecwolf/files/shareware/wolf3d14.zip" "$romdir/ports/wolf3d" -j -LL
     fi
     if [[ ! -f "$romdir/ports/wolf3d/vswap.sdm" && ! -f "$romdir/ports/wolf3d/vswap.sod" ]]; then
         cd "$__tmpdir"
         # Get shareware game data
-        downloadAndExtract "http://maniacsvault.net/ecwolf/files/shareware/soddemo.zip" "$romdir/ports/wolf3d" "-j -LL"
+        downloadAndExtract "http://maniacsvault.net/ecwolf/files/shareware/soddemo.zip" "$romdir/ports/wolf3d" -j -LL
     fi
 
     chown -R $user:$user "$romdir/ports/wolf3d"

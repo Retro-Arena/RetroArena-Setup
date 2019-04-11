@@ -3,16 +3,16 @@
 emulator="./EMULATOR"
 config="$1"
 rom="$2"
-rom_bn="${rom%.*}"
+rom_path="${rom%/*}"
+rom_name="${rom##*/}"
+rom_bn="${rom_name%.*}"
 
 pushd "${0%/*}" >/dev/null
 if [[ -z "$rom" ]]; then
     "$emulator"
 elif [[ "$rom" == *.uae ]]; then
     "$emulator" -config="$rom" -G
-elif [[ "$rom" == *.lha ]]; then
-    "$emulator" -autowhdload="$rom" -G
-elif [[ "$rom" == *.cue ]]; then
+elif [[ "$rom" == *.lha || "$rom" == *.cue ]]; then
     "$emulator" -autoload="$rom" -G
 else
     source "../../lib/archivefuncs.sh"
@@ -41,9 +41,11 @@ else
 
     # if no config or auto provided, then look for rom config or choose automatically 
     if [[ -z "$config" || "$config" == "auto" ]]; then
-        # check for .uae file with the same base name as the adf/zip
-        if [[ -f "$rom_bn.uae" ]]; then
-            config="$rom_bn.uae"
+        # check for .uae files with the base name as the adf/zip
+        if [[ -f "$rom_path/$rom_bn.uae" ]]; then
+            config="$rom_path/$rom_bn.uae"
+        elif [[ -f "conf/$rom_bn.uae" ]]; then
+            config="conf/$rom_bn.uae"
         else
             if [[ "$name" =~ AGA|CD32 ]]; then
                 config="conf/rp-a1200.uae"

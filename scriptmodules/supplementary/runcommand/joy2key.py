@@ -1,11 +1,11 @@
 #!/usr/bin/python
 
-# This file is part of TheRA - RetroArena (a fork of The RetroPie Project)
-# 
-# The RetroPie Project is the legal property of its developers, whose names are
+# This file is part of The RetroArena (TheRA)
+#
+# The RetroArena (TheRA) is the legal property of its developers, whose names are
 # too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
-# 
-# See the LICENSE.md file at the top-level directory of this distribution and 
+#
+# See the LICENSE.md file at the top-level directory of this distribution and
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
@@ -98,11 +98,10 @@ def get_button_codes(dev_path):
     biggest_num = 0
     i = 0
     for btn in list(btn_map):
-        if i > len(dev_button_codes)-1:
+        if i >= len(dev_button_codes):
             break
-        btn_num[btn] = get_btn_num(btn, js_cfg)
         try:
-            btn_num[btn] = int(btn_num[btn])
+            btn_num[btn] = int(get_btn_num(btn, js_cfg))
         except ValueError:
             btn_map.pop(i)
             dev_button_codes.pop(i)
@@ -116,22 +115,30 @@ def get_button_codes(dev_path):
     btn_codes = [''] * (biggest_num + 1)
     i = 0
     for btn in btn_map:
+        if i >= len(dev_button_codes):
+            break
         btn_codes[btn_num[btn]] = dev_button_codes[i]
         i += 1
-        if i >= len(dev_button_codes): break
-
     try:
         # if button A is <enter> and menu_swap_ok_cancel_buttons is true, swap buttons A and B functions
-        if btn_codes[btn_num['a']] == '\n' and ini_get('menu_swap_ok_cancel_buttons', RETROARCH_CFG) == 'true':
+        if (ini_get('menu_swap_ok_cancel_buttons', RETROARCH_CFG) == 'true' and
+           'a' in btn_num and 'b' in btn_num and btn_codes[btn_num['a']] == '\n'):
             btn_codes[btn_num['a']] = btn_codes[btn_num['b']]
             btn_codes[btn_num['b']] = '\n'
-    except:
+
+    except (IOError, ValueError):
+
         pass
 
     return btn_codes
 
 def signal_handler(signum, frame):
-    close_fds(js_fds)
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+    signal.signal(signal.SIGTERM, signal.SIG_IGN)
+    if (js_fds):
+        close_fds(js_fds)
+    if (tty_fd):
+        tty_fd.close()
     sys.exit(0)
 
 def get_hex_chars(key_str):
@@ -213,7 +220,16 @@ def process_event(event):
 
     return False
 
+
+js_fds = []
+tty_fd = []
+
+
 signal.signal(signal.SIGINT, signal_handler)
+
+# daemonize when signal handlers are registered
+if os.fork():
+    os._exit(0)
 
 js_button_codes = {}
 button_codes = []
@@ -235,12 +251,13 @@ event_format = 'IhBB'
 event_size = struct.calcsize(event_format)
 
 try:
-    tty_fd = open('/dev/tty', 'w')
-except:
+
+    tty_fd = open('/dev/tty', 'a')
+except IOError:
+
     print 'Unable to open /dev/tty'
     sys.exit(1)
 
-js_fds = []
 rescan_time = time.time()
 while True:
     do_sleep = True

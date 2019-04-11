@@ -14,7 +14,7 @@ rp_module_desc="Macintosh emulator"
 rp_module_help="ROM Extensions: .img .rom\n\nCopy your Macintosh roms mac.rom and disk.img to $romdir/macintosh"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/cebix/macemu/master/BasiliskII/COPYING"
 rp_module_section="sa"
-rp_module_flags="!dispmanx  !kms"
+rp_module_flags="!dispmanx"
 
 function depends_basilisk() {
     local depends=(libsdl1.2-dev autoconf automake oss-compat)
@@ -29,6 +29,8 @@ function sources_basilisk() {
 
 function build_basilisk() {
     cd BasiliskII/src/Unix
+    cp /usr/share/misc/config.guess "$md_build/BasiliskII/src/Unix/"
+    cp /usr/share/misc/config.sub "$md_build/BasiliskII/src/Unix/"
     local params=(--enable-sdl-video --enable-sdl-audio --disable-vosf --without-mon --without-esd)
     ! isPlatform "x86" && params+=(--disable-jit-compiler)
     ! isPlatform "x11" && params+=(--without-x --without-gtk)
