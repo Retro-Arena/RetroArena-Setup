@@ -34,7 +34,7 @@ function install_rawgl() {
 }
 
 function install_bin_rawgl() {
-    downloadAndExtract "$__gitbins_url/rawgl.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/rawgl.tar.gz" "$md_inst" 1
 }
 
 function configure_rawgl() {
