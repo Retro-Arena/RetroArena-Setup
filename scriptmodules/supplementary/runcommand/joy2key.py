@@ -125,7 +125,9 @@ def get_button_codes(dev_path):
            'a' in btn_num and 'b' in btn_num and btn_codes[btn_num['a']] == '\n'):
             btn_codes[btn_num['a']] = btn_codes[btn_num['b']]
             btn_codes[btn_num['b']] = '\n'
+
     except (IOError, ValueError):
+
         pass
 
     return btn_codes
@@ -164,7 +166,7 @@ def open_devices():
         try:
             fds.append(os.open(dev, os.O_RDONLY | os.O_NONBLOCK ))
             js_button_codes[fds[-1]] = get_button_codes(dev)
-        except (OSError, ValueError):
+        except:
             pass
 
     return devs, fds
@@ -218,11 +220,12 @@ def process_event(event):
 
     return False
 
+
 js_fds = []
 tty_fd = []
 
+
 signal.signal(signal.SIGINT, signal_handler)
-signal.signal(signal.SIGTERM, signal_handler)
 
 # daemonize when signal handlers are registered
 if os.fork():
@@ -248,8 +251,10 @@ event_format = 'IhBB'
 event_size = struct.calcsize(event_format)
 
 try:
+
     tty_fd = open('/dev/tty', 'a')
 except IOError:
+
     print 'Unable to open /dev/tty'
     sys.exit(1)
 
