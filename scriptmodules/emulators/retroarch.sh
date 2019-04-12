@@ -90,22 +90,6 @@ function update_assets_retroarch() {
     chown -R $user:$user "$dir"
 }
 
-function install_xmb_monochrome_assets_retroarch() {
-    local dir="$configdir/all/retroarch/assets"
-    [[ -d "$dir/.git" ]] && return
-    [[ ! -d "$dir" ]] && mkUserDir "$dir"
-    downloadAndExtract "$__archive_url/retroarch-xmb-monochrome.tar.gz" "$dir"
-    chown -R $user:$user "$dir"
-}
-
-function _package_xmb_monochrome_assets_retroarch() {
-    gitPullOrClone "$md_build/assets" https://github.com/libretro/retroarch-assets.git
-    mkdir -p "$__tmpdir/archives"
-    local archive="$__tmpdir/archives/retroarch-xmb-monochrome.tar.gz"
-    rm -f "$archive"
-    tar cvzf "$archive" -C "$md_build/assets" xmb/monochrome
-}
-
 function configure_retroarch() {
     [[ "$md_mode" == "remove" ]] && return
 
@@ -198,21 +182,12 @@ function configure_retroarch() {
     iniSet "input_joypad_driver" "udev"
     iniSet "all_users_control_menu" "true"
 
-    # rgui by default
-    iniSet "menu_driver" "rgui"
+    # ozone by default
+    iniSet "menu_driver" "ozone"
 
     # hide online updater menu options
     iniSet "menu_show_core_updater" "false"
     iniSet "menu_show_online_updater" "false"
-
-    # disable unnecessary xmb menu tabs
-    iniSet "xmb_show_add" "false"
-    iniSet "xmb_show_history" "false"
-    iniSet "xmb_show_images" "false"
-    iniSet "xmb_show_music" "false"
-
-    # disable xmb menu driver icon shadows
-    iniSet "xmb_shadows_enable" "false"
 
     # swap A/B buttons based on ES configuration
     iniSet "menu_swap_ok_cancel_buttons" "$es_swap"
@@ -220,13 +195,13 @@ function configure_retroarch() {
     copyDefaultConfig "$config" "$configdir/all/retroarch.cfg"
     rm "$config"
 
-    # if no menu_driver is set, force RGUI, as the default has now changed to XMB.
+    # if no menu_driver is set, force OZONE
     iniConfig " = " '"' "$configdir/all/retroarch.cfg"
     iniGet "menu_driver"
-    [[ -z "$ini_value" ]] && iniSet "menu_driver" "rgui"
+    [[ -z "$ini_value" ]] && iniSet "menu_driver" "ozone"
 
     # if no menu_unified_controls is set, force it on so that keyboard player 1 can control
-    # the RGUI menu which is important for arcade sticks etc that map to keyboard inputs
+    # the OZONE menu which is important for arcade sticks etc that map to keyboard inputs
     iniGet "menu_unified_controls"
     [[ -z "$ini_value" ]] && iniSet "menu_unified_controls" "true"
 
@@ -335,7 +310,7 @@ function gui_retroarch() {
                         ;;
                     2)
                         rm -rf "$configdir/all/retroarch/$dir"
-                        [[ "$dir" == "assets" ]] && install_xmb_monochrome_assets_retroarch
+                        [[ "$dir" == "assets" ]] && update_assets_retroarch
                         ;;
                     *)
                         continue

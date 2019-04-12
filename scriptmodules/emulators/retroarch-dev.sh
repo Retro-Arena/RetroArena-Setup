@@ -15,6 +15,7 @@ rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/mas
 rp_module_section="core"
 
 function depends_retroarch-dev() {
+    printMsgs "dialog" "NOTE:\n\nIt is normal that retroarch-dev is not mark as installed because it overwrites retroarch.\n\nClick OK to continue."
     depends_retroarch
 }
 
@@ -53,15 +54,11 @@ function update_overlays_retroarch-dev() {
 }
 
 function update_assets_retroarch-dev() {
-    update_assets_retroarch
-}
-
-function install_xmb_monochrome_assets_retroarch-dev() {
-    install_xmb_monochrome_assets_retroarch
-}
-
-function _package_xmb_monochrome_assets_retroarch-dev() {
-    _package_xmb_monochrome_assets_retroarch
+    local dir="$configdir/all/retroarch-dev/assets"
+    # remove if not a git repository for fresh checkout
+    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
+    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
+    chown -R $user:$user "$dir"
 }
 
 function configure_retroarch-dev() {
