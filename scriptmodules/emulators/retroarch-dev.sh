@@ -15,53 +15,36 @@ rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/mas
 rp_module_section="core"
 
 function depends_retroarch-dev() {
+    printMsgs "dialog" "NOTE:\n\nIt is normal that retroarch-dev is not mark as installed because it overwrites retroarch.\n\nClick OK to continue."
     depends_retroarch
 }
 
 function sources_retroarch-dev() {
-    gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git master
-    applyPatch "$md_data/01_hotkey_hack.diff"
-    applyPatch "$md_data/02_disable_search.diff"
-    applyPatch "$md_data/03_disable_udev_sort.diff"
+    sources_retroarch
 }
 
 function build_retroarch-dev() {
-    local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse --disable-opengl1)
-    ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland --disable-kms)
-    isPlatform "gles" && params+=(--enable-opengles --enable-opengles3)
-    isPlatform "mali" && params+=(--enable-mali_fbdev)
-    isPlatform "kms" && params+=(--enable-kms)
-    isPlatform "arm" && params+=(--enable-floathard)
-    isPlatform "neon" && params+=(--enable-neon)
-       
-    ./configure --prefix="$md_inst" "${params[@]}"
-    make clean
-    make
-    md_ret_require="$md_build/retroarch"
+    build_retroarch
 }
 
 function install_retroarch-dev() {
     install_retroarch
 }
 
-function update_shaders_retroarch-dev() {
-    update_shaders_retroarch
+function update_assets_retroarch-dev() {
+    update_assets_retroarch
+}
+
+function update_cheats_retroarch-dev() {
+    update_cheats_retroarch
 }
 
 function update_overlays_retroarch-dev() {
     update_overlays_retroarch
 }
 
-function update_assets_retroarch-dev() {
-    update_assets_retroarch
-}
-
-function install_xmb_monochrome_assets_retroarch-dev() {
-    install_xmb_monochrome_assets_retroarch
-}
-
-function _package_xmb_monochrome_assets_retroarch-dev() {
-    _package_xmb_monochrome_assets_retroarch
+function update_shaders_retroarch-dev() {
+    update_shaders_retroarch
 }
 
 function configure_retroarch-dev() {

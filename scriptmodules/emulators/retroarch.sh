@@ -22,7 +22,11 @@ function depends_retroarch() {
 }
 
 function sources_retroarch() {
-    gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
+    if [ "$md_id" == "retroarch" ]; then
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
+    else
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git
+    fi
     applyPatch "$md_data/01_hotkey_hack.diff"
     applyPatch "$md_data/02_disable_search.diff"
     applyPatch "$md_data/03_disable_udev_sort.diff"
@@ -30,6 +34,7 @@ function sources_retroarch() {
 
 function build_retroarch() {  
     local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse)
+    [ "$md_id" == "retroarch-dev" ] && params+=(--disable-opengl1)
     ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland --disable-kms)
     isPlatform "gles" && params+=(--enable-opengles --enable-opengles3)
     isPlatform "mali" && params+=(--enable-mali_fbdev)
@@ -51,11 +56,35 @@ function install_retroarch() {
 }
 
 function install_bin_retroarch() {   
-    # v1.7.5 thru commit b91938b with ozone
-    #downloadAndExtract "$__gitbins_url/retroarch_b91938b.tar.gz" "$md_inst" 1
-    
-    # v1.7.6
     downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
+}
+
+function update_assets_retroarch() {
+    local dir="$configdir/all/retroarch/assets"
+    # remove if not a git repository for fresh checkout
+    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
+    if [ "$md_id" == "retroarch" ]; then
+        gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
+    else
+        gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
+    fi
+    chown -R $user:$user "$dir"
+}
+
+function update_cheats_retroarch() {
+    local dir="$configdir/all/retroarch/cheats"
+    # remove if not a git repository for fresh checkout
+    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
+    gitPullOrClone "$dir" https://github.com/Retro-Arena/cheats.git
+    chown -R $user:$user "$dir"
+}
+
+function update_overlays_retroarch() {
+    local dir="$configdir/all/retroarch/overlay"
+    # remove if not a git repository for fresh checkout
+    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
+    gitPullOrClone "$dir" https://github.com/libretro/common-overlays.git
+    chown -R $user:$user "$dir"
 }
 
 function update_shaders_retroarch() {
@@ -64,46 +93,6 @@ function update_shaders_retroarch() {
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
     gitPullOrClone "$dir" https://github.com/Retro-Arena/glsl-shaders.git
     chown -R $user:$user "$dir"
-}
-
-function update_overlays_retroarch() {
-    local dir="$configdir/all/retroarch/overlay"
-    # remove if not a git repository for fresh checkout
-    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$configdir/all/retroarch/overlay" https://github.com/libretro/common-overlays.git
-    chown -R $user:$user "$dir"
-}
-
-function update_cheats_retroarch() {
-    local dir="$configdir/all/retroarch/cheats"
-    # remove if not a git repository for fresh checkout
-    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$configdir/all/retroarch/cheats" https://github.com/Retro-Arena/cheats.git
-    chown -R $user:$user "$dir"
-}
-
-function update_assets_retroarch() {
-    local dir="$configdir/all/retroarch/assets"
-    # remove if not a git repository for fresh checkout
-    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
-    chown -R $user:$user "$dir"
-}
-
-function install_xmb_monochrome_assets_retroarch() {
-    local dir="$configdir/all/retroarch/assets"
-    [[ -d "$dir/.git" ]] && return
-    [[ ! -d "$dir" ]] && mkUserDir "$dir"
-    downloadAndExtract "$__archive_url/retroarch-xmb-monochrome.tar.gz" "$dir"
-    chown -R $user:$user "$dir"
-}
-
-function _package_xmb_monochrome_assets_retroarch() {
-    gitPullOrClone "$md_build/assets" https://github.com/libretro/retroarch-assets.git
-    mkdir -p "$__tmpdir/archives"
-    local archive="$__tmpdir/archives/retroarch-xmb-monochrome.tar.gz"
-    rm -f "$archive"
-    tar cvzf "$archive" -C "$md_build/assets" xmb/monochrome
 }
 
 function configure_retroarch() {
@@ -118,18 +107,18 @@ function configure_retroarch() {
 
     # move / symlink old assets / overlays and shader folder
     moveConfigDir "$md_inst/assets" "$configdir/all/retroarch/assets"
+    moveConfigDir "$md_inst/cheats" "$configdir/all/retroarch/cheats"
     moveConfigDir "$md_inst/overlays" "$configdir/all/retroarch/overlay"
     moveConfigDir "$md_inst/shader" "$configdir/all/retroarch/shaders"
-    moveConfigDir "$md_inst/cheats" "$configdir/all/retroarch/cheats"
+
+    # install assets by default
+    update_assets_retroarch
+
+    # install cheats by default
+    update_cheats_retroarch
 
     # install shaders by default
     update_shaders_retroarch
-    
-    # install cheats by default
-    update_cheats_retroarch
-    
-    # install assets by default
-    update_assets_retroarch
 
     local config="$(mktemp)"
 
@@ -198,21 +187,12 @@ function configure_retroarch() {
     iniSet "input_joypad_driver" "udev"
     iniSet "all_users_control_menu" "true"
 
-    # rgui by default
-    iniSet "menu_driver" "rgui"
+    # ozone by default
+    iniSet "menu_driver" "ozone"
 
     # hide online updater menu options
     iniSet "menu_show_core_updater" "false"
     iniSet "menu_show_online_updater" "false"
-
-    # disable unnecessary xmb menu tabs
-    iniSet "xmb_show_add" "false"
-    iniSet "xmb_show_history" "false"
-    iniSet "xmb_show_images" "false"
-    iniSet "xmb_show_music" "false"
-
-    # disable xmb menu driver icon shadows
-    iniSet "xmb_shadows_enable" "false"
 
     # swap A/B buttons based on ES configuration
     iniSet "menu_swap_ok_cancel_buttons" "$es_swap"
@@ -220,13 +200,13 @@ function configure_retroarch() {
     copyDefaultConfig "$config" "$configdir/all/retroarch.cfg"
     rm "$config"
 
-    # if no menu_driver is set, force RGUI, as the default has now changed to XMB.
+    # if no menu_driver is set, force OZONE
     iniConfig " = " '"' "$configdir/all/retroarch.cfg"
     iniGet "menu_driver"
-    [[ -z "$ini_value" ]] && iniSet "menu_driver" "rgui"
+    [[ -z "$ini_value" ]] && iniSet "menu_driver" "ozone"
 
     # if no menu_unified_controls is set, force it on so that keyboard player 1 can control
-    # the RGUI menu which is important for arcade sticks etc that map to keyboard inputs
+    # the OZONE menu which is important for arcade sticks etc that map to keyboard inputs
     iniGet "menu_unified_controls"
     [[ -z "$ini_value" ]] && iniSet "menu_unified_controls" "true"
 
@@ -300,8 +280,8 @@ function config_retroarch() {
 
 function gui_retroarch() {
     while true; do
-        local names=(shaders overlays assets)
-        local dirs=(shaders overlay assets)
+        local names=(assets cheats shaders overlays)
+        local dirs=(assets cheats shaders overlays)
         local options=()
         local name
         local dir
@@ -315,14 +295,14 @@ function gui_retroarch() {
             ((i++))
         done
         options+=(
-            4 "Configure keyboard for use with RetroArch"
-            5 "Configure keyboard hotkey behaviour for RetroArch"
-            6 "Reset retroarch and retroarch-core-option configs"
+            5 "Configure keyboard for use with RetroArch"
+            6 "Configure keyboard hotkey behaviour for RetroArch"
+            7 "Reset retroarch and retroarch-core-option configs"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         case "$choice" in
-            1|2|3)
+            1|2|3|4)
                 name="${names[choice-1]}"
                 dir="${dirs[choice-1]}"
                 options=(1 "Install/Update $name" 2 "Uninstall $name" )
@@ -335,7 +315,6 @@ function gui_retroarch() {
                         ;;
                     2)
                         rm -rf "$configdir/all/retroarch/$dir"
-                        [[ "$dir" == "assets" ]] && install_xmb_monochrome_assets_retroarch
                         ;;
                     *)
                         continue
@@ -343,13 +322,13 @@ function gui_retroarch() {
 
                 esac
                 ;;
-            4)
+            5)
                 keyboard_retroarch
                 ;;
-            5)
+            6)
                 hotkey_retroarch
                 ;;
-            6)
+            7)
                 config_retroarch
                 printMsgs "dialog" "Completed the reset retroarch and retroarch-core-option configs"
                 ;;

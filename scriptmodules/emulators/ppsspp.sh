@@ -136,9 +136,9 @@ function build_ppsspp() {
     if isPlatform "odroid-xu"; then
         params+=(-DUSING_GLES2=ON -DUSING_FBDEV=ON)
     elif isPlatform "odroid-n2"; then
-        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/odroid-n2.armv7.cmake")
+        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/odroid-n2.cmake")
     elif isPlatform "rockpro64"; then
-        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.armv7.cmake")
+        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.cmake")
     fi
     
     if [ "$md_id" == "lr-ppsspp" ]; then
