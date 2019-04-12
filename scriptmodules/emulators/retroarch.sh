@@ -16,6 +16,7 @@ rp_module_section="core"
 
 function depends_retroarch() {
     local depends=(libudev-dev libxkbcommon-dev libsdl2-dev libasound2-dev libusb-1.0-0-dev libpulse-dev)
+    isPlatform "odroid-xu" && depends+=(libavcodec-dev libavformat-dev libavdevice-dev)
     getDepends "${depends[@]}"
     addUdevInputRules
 }
@@ -35,7 +36,6 @@ function build_retroarch() {
     isPlatform "kms" && params+=(--enable-kms)
     isPlatform "arm" && params+=(--enable-floathard)
     isPlatform "neon" && params+=(--enable-neon)
-    isPlatform "odroid-n2" && params+=(--disable-opengl1)
        
     ./configure --prefix="$md_inst" "${params[@]}"
     make clean
