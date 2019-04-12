@@ -35,7 +35,6 @@ function build_retroarch() {
     isPlatform "kms" && params+=(--enable-kms)
     isPlatform "arm" && params+=(--enable-floathard)
     isPlatform "neon" && params+=(--enable-neon)
-    isPlatform "odroid-n2" && params+=(--disable-opengl1)
        
     ./configure --prefix="$md_inst" "${params[@]}"
     make clean
