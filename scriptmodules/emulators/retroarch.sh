@@ -275,8 +275,8 @@ function config_retroarch() {
 
 function gui_retroarch() {
     while true; do
-        local names=(shaders overlays assets)
-        local dirs=(shaders overlay assets)
+        local names=(assets cheats shaders overlays)
+        local dirs=(assets cheats shaders overlays)
         local options=()
         local name
         local dir
@@ -290,9 +290,9 @@ function gui_retroarch() {
             ((i++))
         done
         options+=(
-            4 "Configure keyboard for use with RetroArch"
-            5 "Configure keyboard hotkey behaviour for RetroArch"
-            6 "Reset retroarch and retroarch-core-option configs"
+            5 "Configure keyboard for use with RetroArch"
+            6 "Configure keyboard hotkey behaviour for RetroArch"
+            7 "Reset retroarch and retroarch-core-option configs"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
