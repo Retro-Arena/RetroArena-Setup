@@ -70,7 +70,7 @@ function update_overlays_retroarch() {
     local dir="$configdir/all/retroarch/overlay"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$configdir/all/retroarch/overlay" https://github.com/libretro/common-overlays.git
+    gitPullOrClone "$dir" https://github.com/libretro/common-overlays.git
     chown -R $user:$user "$dir"
 }
 
@@ -78,7 +78,7 @@ function update_cheats_retroarch() {
     local dir="$configdir/all/retroarch/cheats"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$configdir/all/retroarch/cheats" https://github.com/Retro-Arena/cheats.git
+    gitPullOrClone "$dir" https://github.com/Retro-Arena/cheats.git
     chown -R $user:$user "$dir"
 }
 
@@ -86,7 +86,7 @@ function update_assets_retroarch() {
     local dir="$configdir/all/retroarch/assets"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$configdir/all/retroarch/assets" https://github.com/libretro/retroarch-assets.git master dec1fb1
+    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
     chown -R $user:$user "$dir"
 }
 
