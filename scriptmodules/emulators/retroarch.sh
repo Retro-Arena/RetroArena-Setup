@@ -28,13 +28,14 @@ function sources_retroarch() {
 }
 
 function build_retroarch() {  
-    local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse )
+    local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse)
     ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland --disable-kms)
     isPlatform "gles" && params+=(--enable-opengles --enable-opengles3)
     isPlatform "mali" && params+=(--enable-mali_fbdev)
     isPlatform "kms" && params+=(--enable-kms)
     isPlatform "arm" && params+=(--enable-floathard)
     isPlatform "neon" && params+=(--enable-neon)
+    isPlatform "odroid-n2" && params+=(--disable-opengl1)
        
     ./configure --prefix="$md_inst" "${params[@]}"
     make clean
