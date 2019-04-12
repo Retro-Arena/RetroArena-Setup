@@ -22,7 +22,11 @@ function depends_retroarch() {
 }
 
 function sources_retroarch() {
-    gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
+    if [ "$md_id" == "retroarch" ]; then
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
+    else
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git master
+    fi
     applyPatch "$md_data/01_hotkey_hack.diff"
     applyPatch "$md_data/02_disable_search.diff"
     applyPatch "$md_data/03_disable_udev_sort.diff"
@@ -30,6 +34,7 @@ function sources_retroarch() {
 
 function build_retroarch() {  
     local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse)
+    [ "$md_id" == "retroarch-dev" ] && params+=(--disable-opengl1)
     ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland --disable-kms)
     isPlatform "gles" && params+=(--enable-opengles --enable-opengles3)
     isPlatform "mali" && params+=(--enable-mali_fbdev)
@@ -51,10 +56,6 @@ function install_retroarch() {
 }
 
 function install_bin_retroarch() {   
-    # v1.7.5 thru commit b91938b with ozone
-    #downloadAndExtract "$__gitbins_url/retroarch_b91938b.tar.gz" "$md_inst" 1
-    
-    # v1.7.6
     downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
 }
 
@@ -62,7 +63,11 @@ function update_assets_retroarch() {
     local dir="$configdir/all/retroarch/assets"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
+    if [ "$md_id" == "retroarch" ]; then
+        gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
+    else
+        gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
+    fi
     chown -R $user:$user "$dir"
 }
 

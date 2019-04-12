@@ -20,25 +20,11 @@ function depends_retroarch-dev() {
 }
 
 function sources_retroarch-dev() {
-    gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git master
-    applyPatch "$md_data/01_hotkey_hack.diff"
-    applyPatch "$md_data/02_disable_search.diff"
-    applyPatch "$md_data/03_disable_udev_sort.diff"
+    sources_retroarch
 }
 
 function build_retroarch-dev() {
-    local params=(--disable-sdl --enable-sdl2 --disable-oss --disable-al --disable-jack --disable-qt --enable-pulse --disable-opengl1)
-    ! isPlatform "x11" && params+=(--disable-x11 --disable-wayland --disable-kms)
-    isPlatform "gles" && params+=(--enable-opengles --enable-opengles3)
-    isPlatform "mali" && params+=(--enable-mali_fbdev)
-    isPlatform "kms" && params+=(--enable-kms)
-    isPlatform "arm" && params+=(--enable-floathard)
-    isPlatform "neon" && params+=(--enable-neon)
-       
-    ./configure --prefix="$md_inst" "${params[@]}"
-    make clean
-    make
-    md_ret_require="$md_build/retroarch"
+    build_retroarch
 }
 
 function install_retroarch-dev() {
@@ -46,11 +32,7 @@ function install_retroarch-dev() {
 }
 
 function update_assets_retroarch-dev() {
-    local dir="$configdir/all/retroarch-dev/assets"
-    # remove if not a git repository for fresh checkout
-    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
-    chown -R $user:$user "$dir"
+    update_assets_retroarch
 }
 
 function update_cheats_retroarch-dev() {
