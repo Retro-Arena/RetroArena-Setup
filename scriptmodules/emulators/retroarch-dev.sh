@@ -45,20 +45,24 @@ function install_retroarch-dev() {
     install_retroarch
 }
 
-function update_shaders_retroarch-dev() {
-    update_shaders_retroarch
-}
-
-function update_overlays_retroarch-dev() {
-    update_overlays_retroarch
-}
-
 function update_assets_retroarch-dev() {
     local dir="$configdir/all/retroarch-dev/assets"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
     gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
     chown -R $user:$user "$dir"
+}
+
+function update_cheats_retroarch-dev() {
+    update_cheats_retroarch
+}
+
+function update_overlays_retroarch-dev() {
+    update_overlays_retroarch
+}
+
+function update_shaders_retroarch-dev() {
+    update_shaders_retroarch
 }
 
 function configure_retroarch-dev() {

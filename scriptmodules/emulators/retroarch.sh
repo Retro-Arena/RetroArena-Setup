@@ -58,19 +58,11 @@ function install_bin_retroarch() {
     downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
 }
 
-function update_shaders_retroarch() {
-    local dir="$configdir/all/retroarch/shaders"
-    # remove if not git repository for fresh checkout
-    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/Retro-Arena/glsl-shaders.git
-    chown -R $user:$user "$dir"
-}
-
-function update_overlays_retroarch() {
-    local dir="$configdir/all/retroarch/overlay"
+function update_assets_retroarch() {
+    local dir="$configdir/all/retroarch/assets"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/libretro/common-overlays.git
+    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
     chown -R $user:$user "$dir"
 }
 
@@ -82,11 +74,19 @@ function update_cheats_retroarch() {
     chown -R $user:$user "$dir"
 }
 
-function update_assets_retroarch() {
-    local dir="$configdir/all/retroarch/assets"
+function update_overlays_retroarch() {
+    local dir="$configdir/all/retroarch/overlay"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
+    gitPullOrClone "$dir" https://github.com/libretro/common-overlays.git
+    chown -R $user:$user "$dir"
+}
+
+function update_shaders_retroarch() {
+    local dir="$configdir/all/retroarch/shaders"
+    # remove if not git repository for fresh checkout
+    [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
+    gitPullOrClone "$dir" https://github.com/Retro-Arena/glsl-shaders.git
     chown -R $user:$user "$dir"
 }
 
@@ -102,18 +102,18 @@ function configure_retroarch() {
 
     # move / symlink old assets / overlays and shader folder
     moveConfigDir "$md_inst/assets" "$configdir/all/retroarch/assets"
+    moveConfigDir "$md_inst/cheats" "$configdir/all/retroarch/cheats"
     moveConfigDir "$md_inst/overlays" "$configdir/all/retroarch/overlay"
     moveConfigDir "$md_inst/shader" "$configdir/all/retroarch/shaders"
-    moveConfigDir "$md_inst/cheats" "$configdir/all/retroarch/cheats"
+
+    # install assets by default
+    update_assets_retroarch
+
+    # install cheats by default
+    update_cheats_retroarch
 
     # install shaders by default
     update_shaders_retroarch
-    
-    # install cheats by default
-    update_cheats_retroarch
-    
-    # install assets by default
-    update_assets_retroarch
 
     local config="$(mktemp)"
 
@@ -297,7 +297,7 @@ function gui_retroarch() {
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         case "$choice" in
-            1|2|3)
+            1|2|3|4)
                 name="${names[choice-1]}"
                 dir="${dirs[choice-1]}"
                 options=(1 "Install/Update $name" 2 "Uninstall $name" )
@@ -317,13 +317,13 @@ function gui_retroarch() {
 
                 esac
                 ;;
-            4)
+            5)
                 keyboard_retroarch
                 ;;
-            5)
+            6)
                 hotkey_retroarch
                 ;;
-            6)
+            7)
                 config_retroarch
                 printMsgs "dialog" "Completed the reset retroarch and retroarch-core-option configs"
                 ;;
