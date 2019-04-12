@@ -259,7 +259,7 @@ function get_platform() {
 }
 
 function platform_odroid-n2() {
-    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53 -mfpu=neon-fp-armv8"
+    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53"
     __platform_flags="aarch64 mali gles"
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     __default_asflags=""
