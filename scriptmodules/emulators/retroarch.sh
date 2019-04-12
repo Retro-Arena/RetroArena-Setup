@@ -280,8 +280,8 @@ function config_retroarch() {
 
 function gui_retroarch() {
     while true; do
-        local names=(assets cheats shaders overlays)
-        local dirs=(assets cheats shaders overlays)
+        local names=(assets cheats overlays shaders)
+        local dirs=(assets cheats overlays shaders)
         local options=()
         local name
         local dir
