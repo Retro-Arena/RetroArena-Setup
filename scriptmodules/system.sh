@@ -259,7 +259,7 @@ function get_platform() {
 }
 
 function platform_odroid-n2() {
-    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53 -ftree-vectorize -funsafe-math-optimizations -pipe"
+    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53"
     __platform_flags="aarch64 mali gles"
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     __default_asflags=""
@@ -267,7 +267,7 @@ function platform_odroid-n2() {
 }
 
 function platform_odroid-xu() {
-    __default_cflags="-O2  -mcpu=cortex-a15 -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
+    __default_cflags="-O2 -march=armv7-a -mcpu=cortex-a15 -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard"
     # required for mali-fbdev headers to define GL functions
     __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
     __default_asflags=""
@@ -277,7 +277,7 @@ function platform_odroid-xu() {
 }
 
 function platform_rockpro64() {
-    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72.cortex-a53 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations -pipe"
+    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72.cortex-a53 -mfpu=neon-fp-armv8"
     __platform_flags="arm armv8 neon kms gles"
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     # required for mali headers to define GL functions!
