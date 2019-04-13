@@ -277,7 +277,7 @@ function platform_odroid-xu() {
 }
 
 function platform_rockpro64() {
-    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72.cortex-a53 -mfpu=neon-fp-armv8"
+    __default_cflags="-O2 -marm -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72.cortex-a53 -mfpu=neon-fp-armv8"
     __platform_flags="arm armv8 neon kms gles"
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     # required for mali headers to define GL functions!
