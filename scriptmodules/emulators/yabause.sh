@@ -22,7 +22,7 @@ function depends_yabause() {
 }
 
 function sources_yabause() {    
-    gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git minimum_linux
+    gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git master
 }
 
 function build_yabause() {
@@ -30,23 +30,23 @@ function build_yabause() {
     cd build
     if isPlatform "odroid-n2"; then
         export CFLAGS="-O2 -march=armv8-a+crc -mtune=cortex-a73.cortex-a53 -ftree-vectorize -funsafe-math-optimizations -pipe"
-        cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DCMAKE_SYSTEM_PROCESSOR="aarch64"
+        cmake ../yabause -DYAB_PORTS=retro_arena -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DCMAKE_TOOLCHAIN_FILE=../yabause/src/retro_arena/n2.cmake
     elif isPlatform "odroid-xu"; then
         export CFLAGS="-O2 -march=armv7-a -mtune=cortex-a15.cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
-        cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON
+        cmake ../yabause -DYAB_PORTS=retro_arena -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON -DCMAKE_TOOLCHAIN_FILE=../yabause/src/retro_arena/xu4.cmake
     elif isPlatform "rockpro64"; then       
         export CFLAGS="-O2 -march=armv8-a+crc -mtune=cortex-a72.cortex-a53 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations -pipe"
-        cmake ../yabause -DYAB_PORTS=xu4 -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON -DCMAKE_TOOLCHAIN_FILE=../yabause/src/xu4/rp64.cmake
+        cmake ../yabause -DYAB_PORTS=retro_arena -DYAB_WANT_DYNAREC_DEVMIYAX=ON -DYAB_WANT_ARM7=ON -DCMAKE_TOOLCHAIN_FILE=../yabause/src/retro_arena/rp64.cmake
     else
         exit
     fi
     make
-    md_ret_require="$md_build/build/src/xu4/yabasanshiro"
+    md_ret_require="$md_build/build/src/retro_arena/yabasanshiro"
 }
 
 function install_yabause() {
     md_ret_files=(
-        'build/src/xu4/yabasanshiro'
+        'build/src/retro_arena/yabasanshiro'
     )
 }
 
