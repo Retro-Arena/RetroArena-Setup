@@ -35,7 +35,7 @@ function setup_env() {
     fi
 
     # set location of binary downloads
-    __binary_host="odroidarena.com/pub/binaries/v2"
+    __binary_host="files.retropie.org.uk"
     [[ "$__has_binaries" -eq 1 ]] && __binary_url="https://$__binary_host/binaries/$__os_codename/$__platform"
 
     __archive_url="https://files.retropie.org.uk/archives"
