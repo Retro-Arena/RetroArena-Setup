@@ -20,6 +20,7 @@ function main_menu() {
             2 "Enable system bezel pack" \
             3 "Disable system bezel pack" \
             4 "Information:  Retroarch cores setup for bezels per system" \
+            5 "Uninstall the bezel project completely" \
             2>&1 > /dev/tty)
 
         case "$choice" in
@@ -27,6 +28,7 @@ function main_menu() {
             2) enable_bezel  ;;
             3) disable_bezel  ;;
             4) retroarch_bezelinfo  ;;
+            5) removebezelproject ;;
             *)  break ;;
         esac
     done
@@ -51,6 +53,7 @@ function install_bezel_pack() {
     if [[ "${atheme}" == "mame" ]];then
       mv "/opt/retroarena/configs/all/retroarch/config/disable_FB Alpha" "/opt/retroarena/configs/all/retroarch/config/FB Alpha" 2> /dev/null
       mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003" "/opt/retroarena/configs/all/retroarch/config/MAME 2003" 2> /dev/null
+      mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003 (0.78)" "/opt/retroarena/configs/all/retroarch/config/MAME 2003 (0.78)" 2> /dev/null
       mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2010" "/opt/retroarena/configs/all/retroarch/config/MAME 2010" 2> /dev/null
     fi
 
@@ -83,6 +86,32 @@ function uninstall_bezel_pack() {
         rm -rf "/opt/retroarena/configs/all/retroarch/overlay/ArcadeBezels"
       fi
     fi
+}
+
+function removebezelproject() {
+    hide_bezel vectrex
+    hide_bezel supergrafx
+    hide_bezel sega32x
+    hide_bezel sg-1000
+    hide_bezel arcade
+    hide_bezel fba
+    hide_bezel mame-libretro
+    hide_bezel nes
+    hide_bezel mastersystem
+    hide_bezel atari5200
+    hide_bezel atari7800
+    hide_bezel snes
+    hide_bezel megadrive
+    hide_bezel segacd
+    hide_bezel psx
+    hide_bezel tg16
+    hide_bezel tg-cd
+    hide_bezel atari2600
+    hide_bezel coleco
+    hide_bezel n64
+
+    rm -rf /opt/retroarena/configs/all/retroarch/overlay/GameBezels
+    rm -rf /opt/retroarena/configs/all/retroarch/overlay/ArcadeBezels
 }
 
 function download_bezel() {
@@ -284,6 +313,7 @@ arcade)
   cp /tmp/retroarch.cfg /opt/retroarena/configs/${emulator}/retroarch.cfg
   mv "/opt/retroarena/configs/all/retroarch/config/FB Alpha" "/opt/retroarena/configs/all/retroarch/config/disable_FB Alpha"
   mv "/opt/retroarena/configs/all/retroarch/config/MAME 2003" "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003"
+  mv "/opt/retroarena/configs/all/retroarch/config/MAME 2003 (0.78)" "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003 (0.78)"
   mv "/opt/retroarena/configs/all/retroarch/config/MAME 2010" "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2010"
   ;;
 fba)
@@ -297,6 +327,7 @@ mame-libretro)
   cat /opt/retroarena/configs/${emulator}/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
   cp /tmp/retroarch.cfg /opt/retroarena/configs/${emulator}/retroarch.cfg
   mv "/opt/retroarena/configs/all/retroarch/config/MAME 2003" "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003"
+  mv "/opt/retroarena/configs/all/retroarch/config/MAME 2003 (0.78)" "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003 (0.78)"
   mv "/opt/retroarena/configs/all/retroarch/config/MAME 2010" "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2010"
   ;;
 *)
@@ -325,6 +356,7 @@ arcade)
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/arcade/retroarch.cfg
     mv "/opt/retroarena/configs/all/retroarch/config/disable_FB Alpha" "/opt/retroarena/configs/all/retroarch/config/FB Alpha"
     mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003" "/opt/retroarena/configs/all/retroarch/config/MAME 2003"
+    mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003 (0.78)" "/opt/retroarena/configs/all/retroarch/config/MAME 2003 (0.78)"
     mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2010" "/opt/retroarena/configs/all/retroarch/config/MAME 2010"
   else
     cp /opt/retroarena/configs/arcade/retroarch.cfg /opt/retroarena/configs/arcade/retroarch.cfg.bkp
@@ -332,6 +364,7 @@ arcade)
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/arcade/retroarch.cfg
     mv "/opt/retroarena/configs/all/retroarch/config/disable_FB Alpha" "/opt/retroarena/configs/all/retroarch/config/FB Alpha"
     mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003" "/opt/retroarena/configs/all/retroarch/config/MAME 2003"
+    mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003 (0.78)" "/opt/retroarena/configs/all/retroarch/config/MAME 2003 (0.78)"
     mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2010" "/opt/retroarena/configs/all/retroarch/config/MAME 2010"
   fi
   ;;
@@ -362,12 +395,14 @@ mame-libretro)
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/MAME-Horizontal.cfg"' /opt/retroarena/configs/mame-libretro/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/mame-libretro/retroarch.cfg
     mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003" "/opt/retroarena/configs/all/retroarch/config/MAME 2003"
+    mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003 (0.78)" "/opt/retroarena/configs/all/retroarch/config/MAME 2003 (0.78)"
     mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2010" "/opt/retroarena/configs/all/retroarch/config/MAME 2010"
   else
     cp /opt/retroarena/configs/mame-libretro/retroarch.cfg /opt/retroarena/configs/mame-libretro/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/MAME-Horizontal.cfg"' /opt/retroarena/configs/mame-libretro/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/mame-libretro/retroarch.cfg
     mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003" "/opt/retroarena/configs/all/retroarch/config/MAME 2003"
+    mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2003 (0.78)" "/opt/retroarena/configs/all/retroarch/config/MAME 2003 (0.78)"
     mv "/opt/retroarena/configs/all/retroarch/config/disable_MAME 2010" "/opt/retroarena/configs/all/retroarch/config/MAME 2010"
   fi
   ;;
