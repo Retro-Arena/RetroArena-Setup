@@ -1794,5 +1794,3 @@ function handheld_themes() {
         esac
     done
 }
-
-gui_hurstythemes
