@@ -50,19 +50,18 @@ function gui_hurstythemes() {
         local status=()
         local default
 
-        options+=(E "Enable ES bootup theme randomizer")
-        options+=(D "Disable ES bootup theme randomizer")
-        options+=(F "Mini Sweet Themes Manager")
-        options+=(G "Cool Themes Manager")
-        options+=(H "Spin Themes Manager")
-        options+=(I "16:9 Aspect Themes Manager")
-        options+=(J "5:4 Aspect Themes Manager")
-        options+=(K "Vertical Aspect Themes Manager")
-        options+=(L "Chromey Blue Themes Manager")
-        options+=(M "Chromey Green Themes Manager")
-        options+=(N "Chromey Neon Themes Manager")
-        options+=(O "Hursty's Picks Themes Manager")
-		options+=(P "Handheld (3:2, 4:3) Themes Manager")		
+        options+=(A "Enable ES bootup theme randomizer")
+        options+=(B "Disable ES bootup theme randomizer")
+        options+=(C "Cool Themes Manager")
+        options+=(D "Spin Themes Manager")
+        options+=(E "16:9 Aspect Themes Manager")
+        options+=(F "5:4 Aspect Themes Manager")
+        options+=(G "Vertical Aspect Themes Manager")
+        options+=(H "Chromey Blue Themes Manager")
+        options+=(I "Chromey Green Themes Manager")
+        options+=(J "Chromey Neon Themes Manager")
+        options+=(K "Hursty's Picks Themes Manager")
+		options+=(L "Handheld (3:2, 4:3) Themes Manager")		
 
         local i=1
         for theme in "${themes[@]}"; do
@@ -84,45 +83,42 @@ function gui_hurstythemes() {
         default="$choice"
         [[ -z "$choice" ]] && break
         case "$choice" in
-            E)  #enable ES bootup theme randomizer
+            A)  #enable ES bootup theme randomizer
                 touch $home/.config/themerandomizer
                 printMsgs "dialog" "Theme Randomizer enabled"
                 ;;
-            D)  #disable ES bootup theme randomizer
+            B)  #disable ES bootup theme randomizer
                 rm -rf $home/.config/themerandomizer
                 printMsgs "dialog" "Theme Randomizer disabled"
                 ;;
-            F)  #mini sweet themes only
-                sweet_themes
-                ;;
-            G)  #cool themes only
+            C)  #cool themes only
                 cool_themes
                 ;;
-            H)  #spin themes only
+            D)  #spin themes only
                 spin_themes
                 ;;
-            I)  #16:9 themes only
+            E)  #16:9 themes only
                 16x9_themes
                 ;;
-            J)  #4:3 themes only
+            F)  #4:3 themes only
                 5x4_themes
                 ;;
-            K)  #vertical themes only
+            G)  #vertical themes only
                 vertical_themes
                 ;;
-            L)  #chromey blue themes only
+            H)  #chromey blue themes only
                 chromeyblue_themes
                 ;;
-            M)  #chromey green themes only
+            I)  #chromey green themes only
                 chromeygreen_themes
                 ;;
-            N)  #chromey neon themes only
+            J)  #chromey neon themes only
                 chromeyneon_themes
                 ;;
-            O)  #hursty's picks
+            K)  #hursty's picks
                 hurstypicks_themes
                 ;;
-            P)  #handheld themes
+            L)  #handheld themes
                 handheld_themes
                 ;;				
             *)  #install or update themes
