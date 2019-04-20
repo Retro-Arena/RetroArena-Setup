@@ -1358,24 +1358,15 @@ function chromeyneon_themes() {
 
 function hurstypicks_themes() {
     local themes=(
-        'RetroHursty69 bluray'
-        'RetroHursty69 boxalloyblue'
-        'RetroHursty69 boxalloyred'
-        'RetroHursty69 cardcrazy'
-        'RetroHursty69 circuit'
         'RetroHursty69 corg'
         'RetroHursty69 fabuloso'
-        'RetroHursty69 greenilicious'
         'RetroHursty69 heychromey'
         'RetroHursty69 hurstybluetake2'
         'RetroHursty69 lightswitch'
         'RetroHursty69 magazinemadness'
         'RetroHursty69 mariobrosiii'
-        'RetroHursty69 retroroid'
         'RetroHursty69 soda'
-        'RetroHursty69 stirling'
         'RetroHursty69 supersweet'
-        'RetroHursty69 whiteslide'
     )
     while true; do
         local theme
