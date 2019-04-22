@@ -302,6 +302,39 @@ function configure_emulationstation() {
     fi
 }
 
+function esreload_emulationstation() {
+    cp -rf "$scriptdir/configs/all/runcommand-onend.sh" "$configdir/all/runcommand-onend.sh"
+    cat > "$configdir/all/runcommand-esreload.sh" << _EOF_
+#!/bin/bash
+read -r SYSTEM < /dev/shm/runcommand.info
+esconfig="/opt/retroarena/configs/all/emulationstation/es_settings.cfg"
+espid="\$(pgrep -f "/opt/retroarena/supplementary/.*/emulationstation([^.]|$)")"
+
+if ! grep -Fq 'SplashScreen' "\$esconfig"; then
+    echo '<bool name="SplashScreen" value="false" />' >> \$esconfig
+fi    
+if ! grep -Fq 'SplashScreenProgress' "\$esconfig"; then
+    echo '<bool name="SplashScreenProgress" value="false" />' >> \$esconfig
+fi
+   
+sed -i -e 's:SplashScreen" value=".*":SplashScreen" value="false":g' "\$esconfig"
+sed -i -e 's:SplashScreenProgress" value=".*":SplashScreenProgress" value="false":g' "\$esconfig"    
+sed -i -e 's:StartupSystem" value=".*":StartupSystem" value="'"\$SYSTEM"'":g' "\$esconfig"
+sed -i -e 's:ParseGamelistOnly" value=".*":ParseGamelistOnly" value="true":g' "\$esconfig"
+
+touch /tmp/es-restart
+kill -13 \$espid
+sleep 1
+
+sed -i -e 's:SplashScreen" value=".*":SplashScreen" value="true":g' "\$esconfig"
+sed -i -e 's:SplashScreenProgress" value=".*":SplashScreenProgress" value="true":g' "\$esconfig"    
+sed -i -e 's:StartupSystem" value=".*":StartupSystem" value="":g' "\$esconfig"
+sed -i -e 's:ParseGamelistOnly" value=".*":ParseGamelistOnly" value="false":g' "\$esconfig"
+_EOF_
+    chmod a+x "$configdir/all/runcommand-esreload.sh"
+    touch "$home/.config/esreload"
+}
+
 function gui_emulationstation() {
     local es_swap=0
     getAutoConf "es_swap_a_b" && es_swap=1
@@ -327,6 +360,12 @@ function gui_emulationstation() {
         else
             options+=(3 "Swap A/B Buttons in ES (Currently: Swapped)")
         fi
+        
+        if [[ "$esreload" -eq 0 ]]; then
+            options+=(4 "Reload ES on Emulator Exit (Currently: Disabled)")
+        else
+            options+=(4 "Reload ES on Emulator Exit (Currently: Enabled)")
+        fi
 
         local cmd=(dialog --backtitle "$__backtitle" --default-item "$default" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -351,6 +390,18 @@ function gui_emulationstation() {
                 getAutoConf "es_swap_a_b" && ra_swap="true"
                 iniSet "menu_swap_ok_cancel_buttons" "$ra_swap" "$configdir/all/retroarch.cfg"
                 printMsgs "dialog" "You will need to reconfigure you controller in Emulation Station for the changes to take effect."
+                ;;
+            4)
+                esreload="$((esreload ^ 1))"
+                if [[ "$esreload" -eq 0 ]]; then
+                    rm -rf "$configdir/all/runcommand-esreload.sh"
+                    rm -rf "$home/.config/esreload"
+                    printMsgs "dialog" "Reload ES on Emulator Exit is now disabled."
+                fi
+                if [[ "$esreload" -eq 1 ]]; then
+                    esreload_emulationstation
+                    printMsgs "dialog" "Reload ES on Emulator Exit is now enabled.\n\nNOTE: An experimental feature as a workaround to ES high CPU issue when exiting an emulator.\n\nAlso note that this feature will automatically enable 'Parse Gamelists Only' during reload for best performance."
+                fi
                 ;;
         esac
     done

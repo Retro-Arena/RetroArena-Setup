@@ -15,3 +15,6 @@ fi
 if [[ -e "$HOME/.config/bgmtoggle" ]];  then
     (sleep 2; pkill -CONT mpg123) &
 fi
+if [[ -e "$HOME/.config/esreload" ]];  then
+    bash /opt/retroarena/configs/all/runcommand-esreload.sh &>/dev/null
+fi
