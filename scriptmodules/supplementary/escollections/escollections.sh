@@ -276,7 +276,8 @@ do
       :
     fi
   fi
-done < ./escollections/${filename}
+done < /home/pigaming/RetroArena-Setup/scriptmodules/supplementary/escollections/escollections/${filename}
+
 
 cat /tmp/tempfile.cfg |sort -u > /tmp/custom-${choice}.cfg
 cp /tmp/custom-${choice}.cfg /opt/retroarena/configs/all/emulationstation/collections
