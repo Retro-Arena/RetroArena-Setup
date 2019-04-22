@@ -54,7 +54,6 @@ function configure_openmsx() {
     addSystem "msx"
     addEmulator 0 "$md_id" "msx2" "$md_inst/bin/openmsx %ROM%"
     addSystem "msx2"
-    addEmulator 0 "$md_id" "coleco" "$md_inst/bin/openmsx -machine ColecoVision %ROM%"
-    addEmulator 1 "coleco" "coleco-sgm" "$md_inst/bin/openmsx -machine ColecoVision_SGM %ROM%"
+    addEmulator 0 "$md_id" "coleco" "$md_inst/bin/openmsx -machine ColecoVision_SGM %ROM%"
     addSystem "coleco"
 }
