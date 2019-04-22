@@ -56,4 +56,5 @@ function configure_openmsx() {
     addSystem "msx2"
     addEmulator 0 "$md_id" "coleco" "$md_inst/bin/openmsx -machine ColecoVision_SGM %ROM%"
     addSystem "coleco"
+    ln -sfn "$biosdir/COLECO.ROM" "$md_inst/share/systemroms/COLECO.ROM"
 }
