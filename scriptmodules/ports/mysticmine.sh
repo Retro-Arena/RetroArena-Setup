@@ -13,6 +13,7 @@ rp_module_id="mysticmine"
 rp_module_desc="Mystic Mine - Rail game for up to six players on one keyboard"
 rp_module_licence="MIT https://raw.githubusercontent.com/dewitters/MysticMine/master/LICENSE.txt"
 rp_module_section="prt"
+rp_module_flags="!odroid-n2"
 
 function depends_mysticmine() {
     getDepends python-pyrex python-numpy python-pygame
