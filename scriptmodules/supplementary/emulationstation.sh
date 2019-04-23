@@ -310,26 +310,39 @@ read -r SYSTEM < /dev/shm/runcommand.info
 esconfig="/opt/retroarena/configs/all/emulationstation/es_settings.cfg"
 espid="\$(pgrep -f "/opt/retroarena/supplementary/.*/emulationstation([^.]|$)")"
 
+if ! grep -Fq '"StartupSystem" value="'"\$SYSTEM"'"' "\$esconfig"; then
+    sed -i -e 's:StartupSystem" value=".*":StartupSystem" value="'"\$SYSTEM"'":g' "\$esconfig"
+fi
+
 if ! grep -Fq 'SplashScreen' "\$esconfig"; then
     echo '<bool name="SplashScreen" value="false" />' >> \$esconfig
-fi    
+elif grep -Fq '"SplashScreen" value="true"' "\$esconfig"; then
+    sed -i -e 's:SplashScreen" value="true":SplashScreen" value="false":g' "\$esconfig"
+fi
+
 if ! grep -Fq 'SplashScreenProgress' "\$esconfig"; then
     echo '<bool name="SplashScreenProgress" value="false" />' >> \$esconfig
+elif grep -Fq '"SplashScreenProgress" value="true"' "\$esconfig"; then
+    sed -i -e 's:SplashScreenProgress" value="true":SplashScreenProgress" value="false":g' "\$esconfig"
 fi
-   
-sed -i -e 's:SplashScreen" value=".*":SplashScreen" value="false":g' "\$esconfig"
-sed -i -e 's:SplashScreenProgress" value=".*":SplashScreenProgress" value="false":g' "\$esconfig"    
-sed -i -e 's:StartupSystem" value=".*":StartupSystem" value="'"\$SYSTEM"'":g' "\$esconfig"
-sed -i -e 's:ParseGamelistOnly" value=".*":ParseGamelistOnly" value="true":g' "\$esconfig"
+
+if grep -Fq '"ParseGamelistOnly" value="false"' "\$esconfig"; then
+    sed -i -e 's:ParseGamelistOnly" value="false":ParseGamelistOnly" value="true":g' "\$esconfig"
+fi
 
 touch /tmp/es-restart
 kill -13 \$espid
-sleep 1
 
-sed -i -e 's:SplashScreen" value=".*":SplashScreen" value="true":g' "\$esconfig"
-sed -i -e 's:SplashScreenProgress" value=".*":SplashScreenProgress" value="true":g' "\$esconfig"    
-sed -i -e 's:StartupSystem" value=".*":StartupSystem" value="":g' "\$esconfig"
-sed -i -e 's:ParseGamelistOnly" value=".*":ParseGamelistOnly" value="false":g' "\$esconfig"
+until pids=\$(pgrep -f "/opt/retroarena/supplementary/.*/emulationstation([^.]|$)")
+do
+    sleep 1
+done
+
+for pid in \$pids; do
+    sed -i -e 's:StartupSystem" value=".*":StartupSystem" value="":g' "\$esconfig"
+done
+
+exit
 _EOF_
     chmod a+x "$configdir/all/runcommand-esreload.sh"
     touch "$home/.config/esreload"
