@@ -349,11 +349,13 @@ _EOF_
 }
 
 function gui_emulationstation() {
-    local es_swap=0
-    getAutoConf "es_swap_a_b" && es_swap=1
-
     local disable=0
     getAutoConf "disable" && disable=1
+
+    local es_swap=0
+    getAutoConf "es_swap_a_b" && es_swap=1
+    
+    local esreload=0
 
     local default
     local options
@@ -373,11 +375,11 @@ function gui_emulationstation() {
         else
             options+=(3 "Swap A/B Buttons in ES (Currently: Swapped)")
         fi
-        
-        if [[ "$esreload" -eq 0 ]]; then
-            options+=(4 "Reload ES on Emulator Exit (Currently: Disabled)")
-        else
+
+        if [[ -e "$home/.config/esreload" ]]; then
             options+=(4 "Reload ES on Emulator Exit (Currently: Enabled)")
+        else
+            options+=(4 "Reload ES on Emulator Exit (Currently: Disabled)")
         fi
 
         local cmd=(dialog --backtitle "$__backtitle" --default-item "$default" --menu "Choose an option" 22 76 16)
@@ -387,7 +389,7 @@ function gui_emulationstation() {
 
         case "$choice" in
             1)
-                if dialog --defaultno --yesno "Are you sure you want to reset the Emulation Station controller configuration ? This will wipe all controller configs for ES and it will prompt to reconfigure on next start" 22 76 2>&1 >/dev/tty; then
+                if dialog --defaultno --yesno "Are you sure you want to reset the EmulationStation controller configuration ? This will wipe all controller configs for ES and it will prompt to reconfigure on next start" 22 76 2>&1 >/dev/tty; then
                     clear_input_emulationstation
                     printMsgs "dialog" "$(_get_input_cfg_emulationstation) has been reset to default values."
                 fi
