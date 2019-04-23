@@ -10,7 +10,7 @@
 #
 
 rp_module_id="autostart"
-rp_module_desc="Auto-start EmulationStation / Kodi on boot"
+rp_module_desc="Auto-start EmulationStation"
 rp_module_section="config"
 
 function _update_hook_autostart() {
@@ -34,14 +34,11 @@ fi
 _EOF_
 
     touch "$script"
-    # delete any previous entries for emulationstation / kodi in autostart.sh
+    # delete any previous entries for emulationstation
     sed -i '/#auto/d' "$script"
     # make sure there is a newline
     sed -i '$a\' "$script"
     case "$mode" in
-        kodi)
-            echo -e "kodi-standalone #auto\nemulationstation #auto" >>"$script"
-            ;;
         es|*)
             echo "emulationstation #auto" >>"$script"
             ;;
@@ -122,7 +119,6 @@ function gui_autostart() {
         else
             options=(
                 1 "Start EmulationStation at boot"
-                2 "Start Kodi at boot (exit for EmulationStation)"
                 E "Manually edit $configdir/autostart.sh"
             )
             if [[ "$__os_id" == "Raspbian" ]]; then
@@ -153,10 +149,6 @@ function gui_autostart() {
                         enable_autostart
                         printMsgs "dialog" "EmulationStation is set to launch at boot."
                     fi
-                    ;;
-                2)
-                    enable_autostart kodi
-                    printMsgs "dialog" "Kodi is set to launch at boot."
                     ;;
                 E)
                     editFile "$configdir/all/autostart.sh"
