@@ -141,7 +141,7 @@ function gui_runcommand() {
                 ;;
             6)
                 config_runcommand
-                printMsgs "dialog" "Completed the reset runcommand configs"
+                printMsgs "dialog" "Completed the reset of runcommand config, onend, and onstart scripts."
                 ;;
         esac
     done

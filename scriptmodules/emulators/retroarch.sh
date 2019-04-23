@@ -330,7 +330,7 @@ function gui_retroarch() {
                 ;;
             7)
                 config_retroarch
-                printMsgs "dialog" "Completed the reset retroarch and retroarch-core-option configs"
+                printMsgs "dialog" "Completed the reset of retroarch and retroarch-core-options configs."
                 ;;
             *)
                 break

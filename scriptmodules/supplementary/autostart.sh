@@ -78,11 +78,16 @@ function remove_autostart() {
     disable_autostart
 }
 
+function config_autostart() {
+    cp "$scriptdir/configs/all/autostart.sh" "$md_conf_root/all"
+}
+
 function gui_autostart() {
     cmd=(dialog --backtitle "$__backtitle" --menu "Choose the desired boot behaviour." 22 76 16)
     while true; do
         options=(
             1 "Start EmulationStation at boot"
+            2 "Reset autostart scripts
             E "Manually edit $configdir/autostart.sh"
         )
         choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -91,6 +96,10 @@ function gui_autostart() {
                 1)
                     enable_autostart
                     printMsgs "dialog" "EmulationStation is set to launch at boot."
+                    ;;
+                2)
+                    config_autostart
+                    printMsgs "dialog" "Completed the reset of autostart script."
                     ;;
                 E)
                     editFile "$configdir/all/autostart.sh"
