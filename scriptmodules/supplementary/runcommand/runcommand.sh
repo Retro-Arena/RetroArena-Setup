@@ -951,9 +951,21 @@ function show_launch() {
             LAUNCHVIDS="$HOME/RetroArena/launchingvideos"
             if [[ -e "$HOME/.config/launchingvideos" ]]; then
                 if [[ -e "$LAUNCHVIDS/system-$SYSTEM.mp4" ]]; then
-                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-$SYSTEM.mp4" </dev/tty &>/dev/null
+                    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                        mpv -really-quiet -vo sdl -fs "$LAUNCHVIDS/system-$SYSTEM.mp4" </dev/tty &>/dev/null
+                    elif grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                        mpv -really-quiet -vo sdl -fs "$LAUNCHVIDS/system-$SYSTEM.mp4" </dev/tty &>/dev/null
+                    else
+                        mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-$SYSTEM.mp4" </dev/tty &>/dev/null
+                    fi
                 elif [[ -e "$LAUNCHVIDS/system-default.mp4" ]]; then
-                    mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-default.mp4" </dev/tty &>/dev/null
+                    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                        mpv -really-quiet -vo sdl -fs "$LAUNCHVIDS/system-default.mp4" </dev/tty &>/dev/null
+                    elif grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                        mpv -really-quiet -vo sdl -fs "$LAUNCHVIDS/system-default.mp4" </dev/tty &>/dev/null
+                    else
+                        mplayer -slave -nogui -really-quiet -vo sdl -fs -zoom "$LAUNCHVIDS/system-default.mp4" </dev/tty &>/dev/null
+                    fi
                 else
                     return
                 fi

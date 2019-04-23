@@ -64,6 +64,7 @@ function configure_lr-fbalpha() {
     isPlatform "armv6" && def=0
     addEmulator 0 "$md_id" "arcade" "$md_inst/fbalpha_libretro.so"
     addEmulator 0 "$md_id-neocd" "arcade" "$md_inst/fbalpha_libretro.so --subsystem neocd"
+    addEmulator 0 "$md_id-neocd" "neocdz" "$md_inst/fbalpha_libretro.so --subsystem neocd"
     addEmulator $def "$md_id" "neogeo" "$md_inst/fbalpha_libretro.so"
     addEmulator 0 "$md_id-neocd" "neogeo" "$md_inst/fbalpha_libretro.so --subsystem neocd"
     addEmulator $def "$md_id" "fba" "$md_inst/fbalpha_libretro.so"
