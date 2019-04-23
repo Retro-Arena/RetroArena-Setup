@@ -87,7 +87,7 @@ function gui_autostart() {
     while true; do
         options=(
             1 "Start EmulationStation at boot"
-            2 "Reset autostart scripts"
+            2 "Reset autostart script"
             E "Manually edit $configdir/autostart.sh"
         )
         choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
