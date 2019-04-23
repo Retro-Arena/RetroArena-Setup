@@ -354,8 +354,6 @@ function gui_emulationstation() {
 
     local es_swap=0
     getAutoConf "es_swap_a_b" && es_swap=1
-    
-    local esreload=0
 
     local default
     local options
@@ -377,8 +375,10 @@ function gui_emulationstation() {
         fi
 
         if [[ -e "$home/.config/esreload" ]]; then
+            local esreload=1
             options+=(4 "Reload ES on Emulator Exit (Currently: Enabled)")
         else
+            local esreload=0
             options+=(4 "Reload ES on Emulator Exit (Currently: Disabled)")
         fi
 
