@@ -14,7 +14,7 @@ rp_module_desc="ZX Spectrum emulator ZEsarUX"
 rp_module_help="ROM Extensions: .sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk .zip\n\nCopy your ZX Spectrum games to $romdir/zxspectrum"
 rp_module_licence="GPL3 https://sourceforge.net/p/zesarux/code/ci/master/tree/LICENSE"
 rp_module_section="sa"
-rp_module_flags="dispmanx"
+rp_module_flags="dispmanx !odroid-n2"
 
 
 function depends_zesarux() {
