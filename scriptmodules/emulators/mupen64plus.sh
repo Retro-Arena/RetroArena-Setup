@@ -14,7 +14,7 @@ rp_module_desc="N64 emulator MUPEN64Plus"
 rp_module_help="ROM Extensions: .z64 .n64 .v64\n\nCopy your N64 roms to $romdir/n64"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/mupen64plus/mupen64plus-core/master/LICENSES"
 rp_module_section="sa"
-rp_module_flags="!odroid-n2"
+rp_module_flags=""
 
 function depends_mupen64plus() {
     local depends=(cmake libsamplerate0-dev libspeexdsp-dev libsdl2-dev libpng-dev fonts-freefont-ttf)
@@ -93,6 +93,11 @@ function build_mupen64plus() {
             isPlatform "x11" && params+=("OSD=1" "PIE=1")
             isPlatform "x86" && params+=("SSE=SSE2")
             isPlatform "rockpro64" && params+=("HOST_CPU=armv8" "USE_GLES=1")
+			if [[ "$dir" == "mupen64plus-core" ]]; then
+                    isPlatform "odroid-n2" && params+=("HOST_CPU=aarch64")
+            else
+                    isPlatform "odroid-n2" && params+=("HOST_CPU=armv8")
+            fi
 
             [[ "$dir" == "mupen64plus-ui-console" ]] && params+=("COREDIR=$md_inst/lib/" "PLUGINDIR=$md_inst/lib/mupen64plus/")
             make -C "$dir/projects/unix" "${params[@]}" clean
@@ -164,6 +169,11 @@ function install_mupen64plus() {
             isPlatform "neon" && params+=("NEON=1")
             isPlatform "x86" && params+=("SSE=SSE2")
             isPlatform "rockpro64" && params+=("HOST_CPU=armv8" "USE_GLES=1")
+			if [[ "$source" == "mupen64plus-core" ]]; then
+                    isPlatform "odroid-n2" && params+=("HOST_CPU=aarch64")
+            else
+                    isPlatform "odroid-n2" && params+=("HOST_CPU=armv8")
+            fi
             make -C "$source/projects/unix" PREFIX="$md_inst" OPTFLAGS="$CFLAGS -O3 -flto" "${params[@]}" install
         fi
     done
