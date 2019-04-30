@@ -14,7 +14,7 @@ rp_module_desc="NES and Famicom emulator - Mesen Port for libretro"
 rp_module_help="ROM Extensions: .nes .zip\n\nCopy your NES roms to $romdir/nes and your Famicon roms to $romdir/fds"
 rp_module_licence="GPL3"
 rp_module_section="lr"
-rp_module_flags="!odroid-n2"
+rp_module_flags=""
 
 function sources_lr-mesen() {
     gitPullOrClone "$md_build" "https://github.com/retrontology/Mesen" "xu4"
@@ -22,7 +22,13 @@ function sources_lr-mesen() {
 
 function build_lr-mesen() {
     make clean
-    MESENPLATFORM=armv7l make libretro -j7
+	if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
+        MESENPLATFORM=x86
+    else
+        MESENPLATFORM=x86
+    fi
+    MESENPLATFORM=$MESENPLATFORM make libretro -j7
+
     md_ret_require="$md_build/mesen_libretro.so"
 }
 
