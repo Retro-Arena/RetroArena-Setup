@@ -9,7 +9,7 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-rp_module_id="lr-REminiscence"
+rp_module_id="lr-reminiscence"
 rp_module_desc="REminiscence (FLASHBACK) port for libretro"
 rp_module_help="Copy the original FLASHBACK game files to $romdir/ports/reminiscence so you have the file $romdir/ports/reminiscence/DATA/LEVEL1.MAP present."
 rp_module_licence="GPL3 https://raw.githubusercontent.com/kanishka-linux/reminiscence/master/LICENSE"
