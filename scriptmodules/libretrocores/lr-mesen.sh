@@ -16,6 +16,11 @@ rp_module_licence="GPL3"
 rp_module_section="lr"
 rp_module_flags=""
 
+function depends_lr-mesen() {
+    local depends=(llvm-6.0-dev)
+    getDepends "${depends[@]}"
+}
+
 function sources_lr-mesen() {
     gitPullOrClone "$md_build" "https://github.com/retrontology/Mesen" "xu4"
 }
@@ -27,7 +32,7 @@ function build_lr-mesen() {
     else
         MESENPLATFORM=x86
     fi
-    MESENPLATFORM=$MESENPLATFORM make libretro -j7
+    MESENPLATFORM=$MESENPLATFORM LTO=true make libretro -j7
 
     md_ret_require="$md_build/mesen_libretro.so"
 }
