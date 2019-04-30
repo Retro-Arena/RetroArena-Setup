@@ -30,7 +30,7 @@ function build_lr-mesen() {
 	if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
         MESENPLATFORM=x86
     else
-        MESENPLATFORM=x86
+        MESENPLATFORM=x64
     fi
     MESENPLATFORM=$MESENPLATFORM LTO=true make libretro -j7
 
