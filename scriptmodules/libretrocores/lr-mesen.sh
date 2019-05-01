@@ -27,13 +27,12 @@ function sources_lr-mesen() {
 
 function build_lr-mesen() {
     make clean
-	if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
+    if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
         MESENPLATFORM=x86
     else
         MESENPLATFORM=x64
     fi
     MESENPLATFORM=$MESENPLATFORM LTO=true make libretro -j7
-
     md_ret_require="$md_build/mesen_libretro.so"
 }
 
