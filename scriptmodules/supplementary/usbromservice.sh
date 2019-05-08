@@ -98,7 +98,7 @@ function createdir_usbromservice() {
     fi
 }
 
-function sync_usbromservice() {
+function synctousb_usbromservice() {
     if ls -la /var/run/usbmount | grep "\->" >/dev/null; then
         if [[ ! -d "/media/usb0/retroarena/roms" ]]; then
             mkdir -p "/media/usb0/retroarena" "/media/usb0/retroarena/roms"
@@ -108,9 +108,21 @@ function sync_usbromservice() {
         umount -l "$datadir/roms"
         cd ~
         echo "---------------------------------------------------"
-        echo "Sync is now starting..............................."
+        echo "Sync from SD to USB 'roms' is now starting........."
         rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "$datadir/roms/" "/media/usb0/retroarena/roms/"
         printMsgs "dialog" "Sync completed!\n\nOnce rebooted, it will automatically mount the USB drive.\n\nPress OK to reboot!"
+        reboot
+    else
+        printMsgs "dialog" "USB drive is not mounted"
+    fi
+}
+
+function synctosd_usbromservice() {
+    if ls -la /var/run/usbmount | grep "\->" >/dev/null; then
+        echo "---------------------------------------------------"
+        echo "Sync from USB to SD 'RetroArena' is now starting..."
+        rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "/media/usb0/retroarena/" "$datadir/"
+        printMsgs "dialog" "Sync completed!\n\nUnplug the USB drive before rebooting.\n\nPress OK to reboot!"
         reboot
     else
         printMsgs "dialog" "USB drive is not mounted"
@@ -125,24 +137,30 @@ function gui_usbromservice() {
         cmd=(dialog --backtitle "$__backtitle" --menu "Choose from an option below." 22 86 16)
         options=(
             1 "Sync from SD to USB 'roms'"
-            2 "Create 'retroarena/roms' directories only"
-            3 "Enable USB ROM Service"
-            4 "Disable USB ROM Service"
+            2 "Sync from USB to SD 'RetroArena'"
+            3 "Create 'retroarena/roms' directories in the USB"
+            4 "Enable USB ROM Service"
+            5 "Disable USB ROM Service"
         )
         choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         if [[ -n "$choice" ]]; then
             case "$choice" in
                 1)
-                    sync_usbromservice
+                    printMsgs "dialog" "This will sync all files from the SD card '$datadir/roms' directory to the USB drive 'retroarena/roms' directory.\n\nOnly the 'retroarena/roms' folder is mounted due to various system requirements.\n\nWARNING: This may take a long time.\n\nPress OK to continue."
+                    synctousb_usbromservice
                     ;;
                 2)
-                    createdir_usbromservice
+                    printMsgs "dialog" "This will sync all files and folders from the USB drive 'retroarena' directory to the SD card '$datadir' directory.\n\nCommon folders include: bgm, BIOS, roms, settingsmenu, and splashscreens.\n\nWARNING: Ensure your internal SD card has enough space. This may take a long time.\n\nPress OK to continue."
+                    synctosd_usbromservice
                     ;;
                 3)
+                    createdir_usbromservice
+                    ;;
+                4)
                     rp_callModule "$md_id" enable
                     printMsgs "dialog" "Enabled $md_desc\n\nOnly 'retroarena/roms' directory will be mounted on the USB drive.\n\nAll other directories will remain in the SD card, including: 'BIOS', 'settingsmenu', and 'splashscreens'."
                     ;;
-                4)
+                5)
                     rp_callModule "$md_id" disable
                     printMsgs "dialog" "Disabled $md_desc"
                     ;;

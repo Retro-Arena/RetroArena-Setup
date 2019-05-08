@@ -16,7 +16,7 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/stella-libret
 rp_module_section="lr"
 
 function sources_lr-stella() {
-    gitPullOrClone "$md_build" https://github.com/libretro/stella-libretro.git
+    gitPullOrClone "$md_build" https://github.com/libretro/stella2014-libretro.git
 }
 
 function build_lr-stella() {
