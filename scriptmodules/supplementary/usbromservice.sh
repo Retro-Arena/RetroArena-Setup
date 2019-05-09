@@ -133,8 +133,8 @@ function gui_usbromservice() {
         cmd=(dialog --backtitle "$__backtitle" --menu "Choose from an option below." 22 86 16)
         options=(
             1 "Sync from SD to USB 'roms'"
-            2 "Sync from USB to SD 'RetroArena'"
-            3 "Create 'retroarena/roms' directory structure on USB drive"
+            2 "Sync from SD to USB 'roms' directory structure only"
+            3 "Sync from USB to SD 'RetroArena'"
             4 "Enable USB ROM Service"
             5 "Disable USB ROM Service"
         )
@@ -146,11 +146,12 @@ function gui_usbromservice() {
                     synctousb_usbromservice
                     ;;
                 2)
-                    printMsgs "dialog" "This will sync all folders and files from the USB drive 'retroarena-sync' directory to the SD card '$datadir' directory.\n\nThe SD card has $avail of available space. Ensure your USB drive does NOT have more than $avail being copied from 'retroarena-sync' directory.\n\nWARNING: This may take a long time. Press OK to continue."
-                    synctosd_usbromservice
+                    printMsgs "dialog" "This will sync only the folder structure of the SD card '$datadir/roms' directory to the USB drive 'retroarena/roms' directory.\n\nPress OK to continue."
+                    createdir_usbromservice
                     ;;
                 3)
-                    createdir_usbromservice
+                    printMsgs "dialog" "This will sync all folders and files from the USB drive 'retroarena-sync' directory to the SD card '$datadir' directory.\n\nThe SD card has $avail of available space. Ensure the USB drive 'retroarena-sync' directory does NOT have more than $avail of files being copied.\n\nWARNING: This may take a long time. Press OK to continue."
+                    synctosd_usbromservice
                     ;;
                 4)
                     rp_callModule "$md_id" enable
