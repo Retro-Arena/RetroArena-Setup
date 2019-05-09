@@ -25,7 +25,7 @@ function _update_hook_usbromservice() {
 function install_bin_usbromservice() {
     local depends=(rsync ntfs-3g exfat-fuse)
     if ! hasPackage usbmount $(_get_ver_usbromservice); then
-        depends+=(rsync debhelper devscripts pmount lockfile-progs)
+        depends+=(debhelper devscripts pmount lockfile-progs)
         getDepends "${depends[@]}"
         gitPullOrClone "$md_build/usbmount" https://github.com/rbrito/usbmount.git
         cd "$md_build/usbmount"
@@ -134,7 +134,7 @@ function gui_usbromservice() {
         options=(
             1 "Sync from SD to USB 'roms'"
             2 "Sync from SD to USB 'roms' directory structure only"
-            3 "Sync from USB to SD 'RetroArena'"
+            3 "Sync from USB 'retroarena-sync' to SD 'RetroArena'"
             4 "Enable USB ROM Service"
             5 "Disable USB ROM Service"
         )
