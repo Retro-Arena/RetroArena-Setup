@@ -44,8 +44,8 @@ function uninstall_theme_esthemes() {
 
 function gui_esthemes() {
     local themes=(
-        'Retro-Arena DedSimple'
-	'Retro-Arena ghc'
+        'Retro-Arena dedsimple'
+        'Retro-Arena ghc'
         'Retro-Arena greatest-hits'
         'Retro-Arena greatest-hits-vertical'
         'Retro-Arena insert-rom'

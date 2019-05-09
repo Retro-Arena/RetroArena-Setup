@@ -14,7 +14,7 @@ rp_module_desc="Jump 'n Bump, play cute bunnies jumping on each other's heads - 
 rp_module_help="Copy custom game levels (.dat) to $romdir/ports/jumpnbump"
 rp_module_licence="GPL2 https://gitlab.com/LibreGames/jumpnbump/raw/master/COPYING"
 rp_module_section="prt"
-rp_module_flags=""
+rp_module_flags="!odroid-n2"
 
 function depends_jumpnbump() {
     getDepends libsdl2-dev libsdl2-net-dev libsdl2-mixer-dev libbz2-dev zlib1g-dev

@@ -38,6 +38,10 @@ function install_lr-superflappybirds() {
     )
 }
 
+function install_bin_lr-superflappybirds() {
+    downloadAndExtract "$__gitbins_url/lr-superflappybirds.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-superflappybirds() {
     setConfigRoot "ports"
 

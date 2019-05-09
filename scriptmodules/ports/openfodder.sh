@@ -13,7 +13,7 @@ rp_module_id="openfodder"
 rp_module_desc="openfodder - Cannon Fodder Engine"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/OpenFodder/openfodder/master/gpl-3.0.txt"
 rp_module_section="prt"
-rp_module_flags="!x86 "
+rp_module_flags="!x86 !odroid-n2"
 
 function depends_openfodder() {
     getDepends build-essential libsdl2-dev libsdl2-mixer-dev clang 

@@ -13,7 +13,7 @@ rp_module_id="zdoom"
 rp_module_desc="ZDoom - Enhanced port of the official DOOM source"
 rp_module_licence="OTHER https://raw.githubusercontent.com/RetroArena/zdoom/master/docs/licenses/README.TXT"
 rp_module_section="prt"
-rp_module_flags=""
+rp_module_flags="!odroid-n2"
 
 function depends_zdoom() {
     local depends=(
