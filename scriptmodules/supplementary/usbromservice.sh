@@ -87,12 +87,8 @@ function configure_usbromservice() {
 
 function createdir_usbromservice() {
     if ls -la /var/run/usbmount | grep "\->" >/dev/null; then
-        if [[ ! -d "/media/usb0/retroarena/roms" ]]; then
-            mkdir -p "/media/usb0/retroarena" "/media/usb0/retroarena/roms"
-            printMsgs "dialog" "Directories created on USB drive: 'retroarena/roms'"
-        else
-            printMsgs "dialog" "Directories 'retroarena/roms' already exists!"
-        fi
+        rsync -a -f"+ */" -f"- *" "$datadir/roms/" "/media/usb0/retroarena/roms/"
+        printMsgs "dialog" "The 'retroarena/roms' directory structure has been created on the USB drive"
     else
         printMsgs "dialog" "USB drive is not mounted"
     fi
@@ -121,7 +117,7 @@ function synctosd_usbromservice() {
     if ls -la /var/run/usbmount | grep "\->" >/dev/null; then
         echo "---------------------------------------------------"
         echo "Sync from USB to SD 'RetroArena' is now starting..."
-        rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "/media/usb0/retroarena/" "$datadir/"
+        rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "/media/usb0/retroarena-sync/" "$datadir/"
         printMsgs "dialog" "Sync completed!\n\nUnplug the USB drive before rebooting.\n\nPress OK to reboot!"
         reboot
     else
@@ -130,6 +126,7 @@ function synctosd_usbromservice() {
 }
 
 function gui_usbromservice() {
+    local avail=$(df -h | awk '$NF == "/" { print $4 }')
     local cmd
     local options
     local choice
@@ -138,7 +135,7 @@ function gui_usbromservice() {
         options=(
             1 "Sync from SD to USB 'roms'"
             2 "Sync from USB to SD 'RetroArena'"
-            3 "Create 'retroarena/roms' directories in the USB"
+            3 "Create 'retroarena/roms' directory structure on USB drive"
             4 "Enable USB ROM Service"
             5 "Disable USB ROM Service"
         )
@@ -146,11 +143,11 @@ function gui_usbromservice() {
         if [[ -n "$choice" ]]; then
             case "$choice" in
                 1)
-                    printMsgs "dialog" "This will sync all files from the SD card '$datadir/roms' directory to the USB drive 'retroarena/roms' directory.\n\nOnly the 'retroarena/roms' folder is mounted due to various system requirements.\n\nWARNING: This may take a long time.\n\nPress OK to continue."
+                    printMsgs "dialog" "This will sync all folders and files from the SD card '$datadir/roms' directory to the USB drive 'retroarena/roms' directory.\n\nOnly the 'retroarena/roms' folder is mounted due to various system requirements.\n\nWARNING: This may take a long time. Press OK to continue."
                     synctousb_usbromservice
                     ;;
                 2)
-                    printMsgs "dialog" "This will sync all files and folders from the USB drive 'retroarena' directory to the SD card '$datadir' directory.\n\nCommon folders include: bgm, BIOS, roms, settingsmenu, and splashscreens.\n\nWARNING: Ensure your internal SD card has enough space. This may take a long time.\n\nPress OK to continue."
+                    printMsgs "dialog" "This will sync all folders and files from the USB drive 'retroarena-sync' directory to the SD card '$datadir' directory.\n\nThe SD card has $avail of available space. Ensure your USB drive does NOT have more than $avail being copied from 'retroarena-sync' directory.\n\nWARNING: This may take a long time. Press OK to continue."
                     synctosd_usbromservice
                     ;;
                 3)
