@@ -343,6 +343,7 @@ function spin_themes() {
         'RetroHursty69 BOrchidSpin'	
         'RetroHursty69 BowserSpin'
         'RetroHursty69 BubbleBobbleSpin'
+		'RetroHursty69 CapcomColorSpin'
         'RetroHursty69 CaptainAmericaSpin'
         'RetroHursty69 CharizardSpin'
         'RetroHursty69 ChunLiSpin'
@@ -552,6 +553,8 @@ function spin_themes() {
 function 16x9_themes() {
     local themes=(
         'RetroHursty69 bitfit'
+		'RetroHursty69 CapcomColorHorizontal'
+		'RetroHursty69 CapcomColorVertical'
         'RetroHursty69 cardcrazy'
         'RetroHursty69 corg'
         'RetroHursty69 darkswitch'
