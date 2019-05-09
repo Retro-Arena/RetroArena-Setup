@@ -118,8 +118,7 @@ function synctosd_usbromservice() {
         echo "---------------------------------------------------"
         echo "Sync from USB to SD 'RetroArena' is now starting..."
         rsync -rtu --human-readable --no-i-r --copy-links --info=progress2 "/media/usb0/retroarena-sync/" "$datadir/"
-        printMsgs "dialog" "Sync completed!\n\nUnplug the USB drive before rebooting.\n\nPress OK to reboot!"
-        reboot
+        printMsgs "dialog" "Sync completed!"
     else
         printMsgs "dialog" "USB drive is not mounted"
     fi
