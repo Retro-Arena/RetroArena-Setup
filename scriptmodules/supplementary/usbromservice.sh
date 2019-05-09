@@ -25,7 +25,7 @@ function _update_hook_usbromservice() {
 function install_bin_usbromservice() {
     local depends=(rsync ntfs-3g exfat-fuse)
     if ! hasPackage usbmount $(_get_ver_usbromservice); then
-        depends+=(debhelper devscripts pmount lockfile-progs)
+        depends+=(rsync debhelper devscripts pmount lockfile-progs)
         getDepends "${depends[@]}"
         gitPullOrClone "$md_build/usbmount" https://github.com/rbrito/usbmount.git
         cd "$md_build/usbmount"
