@@ -27,6 +27,7 @@ function build_lr-fbalpha() {
     isPlatform "x86" && isPlatform "64bit" && params+=(USE_X64_DRC=1)
     make clean
     make "${params[@]}"
+    md_ret_require="$md_build/src/burner/libretro/fbalpha_libretro.so"
 }
 
 function install_lr-fbalpha() {
