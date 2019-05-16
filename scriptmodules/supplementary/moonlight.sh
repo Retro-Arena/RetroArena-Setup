@@ -63,7 +63,7 @@ function depends_moonlight() {
     local depends=(
         libssl-dev libopus-dev libasound2-dev libudev-dev
         libavahi-client-dev libcurl4-openssl-dev libevdev-dev
-        libexpat1-dev libpulse-dev libenet-dev uuid-dev cmake
+        libexpat1-dev libpulse-dev libenet-dev uuid-dev cmake ffmpeg
     )
 
     # for remote host autodiscovery features
