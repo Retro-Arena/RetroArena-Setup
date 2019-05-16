@@ -112,7 +112,7 @@ function retroarena_welcome() {
                 out+="${fgred}Running Processes..: $(ps ax | wc -l | tr -d " ")"
                 ;;
             8)
-                out+="${fgred}IP Address.........: $(hostname -I)"
+                out+="${fgred}IP Address.........: $(hostname -I | awk '{print $1}')"
                 ;;
             9)
                 out+="${fgred}Temperature........: CPU: $cpuTempC°C/$cpuTempF°F GPU: $gpuTempC°C/$gpuTempF°F${fgwht}"
