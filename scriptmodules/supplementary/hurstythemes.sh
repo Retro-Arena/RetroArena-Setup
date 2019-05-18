@@ -681,9 +681,9 @@ function 5x4_themes() {
 
 function vertical_themes() {
     local themes=(
+        'RetroHursty69 CapcomColorVertical'
         'RetroHursty69 vertical_arcade'
         'RetroHursty69 vertical_limit_verticaltheme'
-        'RetroHursty69 CapcomColorVertical'
     )
     while true; do
         local theme
