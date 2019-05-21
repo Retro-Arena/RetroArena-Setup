@@ -17,7 +17,7 @@ rp_module_section="lr"
 rp_module_flags=""
 
 function sources_lr-mupen64plus-nx() {
-    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git mupen_next
+    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git GLideN64
     isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
 }
 
