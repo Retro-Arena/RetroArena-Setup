@@ -10,37 +10,10 @@
 #
 
 rp_module_id="lr-fbalpha"
-rp_module_desc="Arcade emu - FB Alpha (FB Edition) v0.2.97.44 port for libretro"
+rp_module_desc="Arcade emu - FB Alpha v0.2.97.44 port for libretro"
 rp_module_help="ROM Extension: .zip\n\nCopy your FBA roms to\n$romdir/fba or\n$romdir/neogeo or\n$romdir/arcade\n\nFor NeoGeo games the neogeo.zip BIOS is required and must be placed in the same directory as your FBA roms."
 rp_module_licence="NONCOM https://raw.githubusercontent.com/libretro/FBAlphaFB/master/src/license.txt"
 rp_module_section="lr"
-
-function sources_lr-fbalpha() {
-    gitPullOrClone "$md_build" https://github.com/libretro/FBAlphaFB.git
-}
-
-function build_lr-fbalpha() {
-    cd src/burner/libretro
-    local params=()
-    isPlatform "arm" && params+=(USE_CYCLONE=1)
-    isPlatform "neon" && params+=(HAVE_NEON=1)
-    isPlatform "x86" && isPlatform "64bit" && params+=(USE_X64_DRC=1)
-    make clean
-    make "${params[@]}"
-    md_ret_require="$md_build/src/burner/libretro/fbalpha_libretro.so"
-}
-
-function install_lr-fbalpha() {
-    md_ret_files=(
-        'fba.chm'
-        'src/burner/libretro/fbalpha_libretro.so'
-        'gamelist.txt'
-        'whatsnew.html'
-        'preset-example.zip'
-        'metadata'
-        'dats'
-    )
-}
 
 function install_bin_lr-fbalpha() {
     downloadAndExtract "$__gitbins_url/lr-fbalpha.tar.gz" "$md_inst" 1
