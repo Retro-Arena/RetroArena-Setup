@@ -42,7 +42,7 @@ function depends_sdl2() {
     # these were removed by a PR for vero4k support (cannot test). Needed though at least for for RPI and X11
     ! isPlatform "vero4k" && depends+=(libx11-dev libxcursor-dev libxext-dev libxi-dev libxinerama-dev libxrandr-dev libxss-dev libxt-dev libxxf86vm-dev libgl1-mesa-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
-    # these packages must already be installed for mali-fbdev: libegl1 libgles1 libgles2
+    # the libegl1, libgles1, and libgles2 packages must NOT be installed for mali-fbdev; symlinks are created automatically
     isPlatform "mali" && depends+=(mali-fbdev)
     isPlatform "kms" && depends+=(libdrm-dev libgbm-dev)
     isPlatform "x11" && depends+=(libpulse-dev libegl1-mesa-dev libgles2-mesa-dev libglu1-mesa-dev)
