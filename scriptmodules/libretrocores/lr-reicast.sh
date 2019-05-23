@@ -12,7 +12,6 @@
 rp_module_id="lr-reicast"
 rp_module_desc="Dreamcast emu - Reicast port for libretro"
 rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave/Naomi ROM Extensions: .bin .dat .zip (Mame 0.198+)\n\nCopy ROM files to:\n$romdir/dreamcast\n$romdir/atomiswave\n$romdir/naomi\n\nCopy BIOS files to: $biosdir/dc\ndc_boot.bin, dc_flash.bin, airlbios.zip, awbios.zip, f355bios.zip, f355dlx.zip, hod2bios.zip, naomi.zip\n\nCheck http://bit.do/lr-reicast for more information."
-
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/reicast-emulator/master/LICENSE"
 rp_module_section="lr"
 
@@ -64,7 +63,6 @@ function configure_lr-reicast() {
     setRetroArchCoreOption "${dir_name}reicast_allow_service_buttons" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_alpha_sorting" "per-triangle (normal)"
     setRetroArchCoreOption "${dir_name}reicast_analog_stick_deadzone" "15%"
-    setRetroArchCoreOption "${dir_name}reicast_audio_buffer_size" "2048"
     setRetroArchCoreOption "${dir_name}reicast_boot_to_bios" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_broadcast" "NTSC"
     setRetroArchCoreOption "${dir_name}reicast_cable_type" "TV (RGB)"
@@ -75,7 +73,6 @@ function configure_lr-reicast() {
     setRetroArchCoreOption "${dir_name}reicast_enable_purupuru" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_enable_rtt" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_enable_rttb" "disabled"
-    setRetroArchCoreOption "${dir_name}reicast_extra_depth_scale" "auto"
     setRetroArchCoreOption "${dir_name}reicast_framerate" "fullspeed"
     setRetroArchCoreOption "${dir_name}reicast_gdrom_fast_loading" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "640x480"

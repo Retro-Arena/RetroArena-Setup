@@ -20,7 +20,7 @@ function sources_lr-mess2016() {
 }
 
 function build_lr-mess2016() {
-isPlatform "arm" && applyPatch "$md_data/lr-mame2016.patch"
+    isPlatform "arm" && applyPatch "$md_data/lr-mame2016.patch"
     rpSwap on 5000
     local params=($(_get_params_lr-mame) SUBTARGET=mess)
     make clean

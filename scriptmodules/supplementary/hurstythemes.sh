@@ -553,8 +553,6 @@ function spin_themes() {
 function 16x9_themes() {
     local themes=(
         'RetroHursty69 bitfit'
-        'RetroHursty69 CapcomColorHorizontal'
-        'RetroHursty69 CapcomColorVertical'
         'RetroHursty69 cardcrazy'
         'RetroHursty69 corg'
         'RetroHursty69 darkswitch'
@@ -683,6 +681,7 @@ function 5x4_themes() {
 
 function vertical_themes() {
     local themes=(
+        'RetroHursty69 CapcomColorVertical'
         'RetroHursty69 vertical_arcade'
         'RetroHursty69 vertical_limit_verticaltheme'
     )
@@ -750,6 +749,9 @@ function chromeyblue_themes() {
         'RetroHursty69 AsteroidsBlue'
         'RetroHursty69 AstroBoyBlue'
         'RetroHursty69 BatmanBlue'
+        'RetroHursty69 bluesteel'
+        'RetroHursty69 blueprism'
+        'RetroHursty69 bluesmooth'
         'RetroHursty69 BombermanBlue'
         'RetroHursty69 BubbleBobbleBlue'
         'RetroHursty69 BumbleBeeBlue'
