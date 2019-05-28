@@ -15,32 +15,6 @@ rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/reicast-emulator/master/LICENSE"
 rp_module_section="lr"
 
-function sources_lr-reicast() {
-    local branch"master"
-    local commit=""
-    isPlatform "rockpro64" && commit=("aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
-    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git "$branch" "$commit"
-    isPlatform "rockpro64" && applyPatch "$md_data/buildfix.patch"
-}
-
-function build_lr-reicast() {
-    make clean
-    if isPlatform "rockpro64"; then
-        make platform=rockpro64 ARCH=arm
-    elif isPlatform "odroid-n2"; then
-        make platform=odroid-n2
-    else
-        make platform=odroid BOARD="ODROID-XU3" ARCH=arm
-    fi
-    md_ret_require="$md_build/reicast_libretro.so"
-}
-
-function install_lr-reicast() {
-    md_ret_files=(
-        'reicast_libretro.so'
-    )
-}
-
 function install_bin_lr-reicast() {
     downloadAndExtract "$__gitbins_url/lr-reicast.tar.gz" "$md_inst" 1
 }
