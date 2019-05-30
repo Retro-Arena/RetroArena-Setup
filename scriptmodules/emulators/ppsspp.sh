@@ -186,7 +186,7 @@ function configure_ppsspp() {
     fi
     
     if isPlatform "odroid-n2"; then
-        mkdir -p "$scriptdir/configs/psp/PSP/SYSTEM"
+        mkdir -p "$md_conf_root/configs/psp/PSP/SYSTEM"
         cp -R "$scriptdir/configs/psp/PSP/SYSTEM/ppsspp.ini" "$md_conf_root/psp/PSP/SYSTEM/ppsspp.ini"
     fi
 }
