@@ -184,4 +184,8 @@ function configure_ppsspp() {
             rm "$gles2/gl2ext.h.org"
         fi
     fi
+    
+    if isPlatform "odroid-n2"; then
+        cp -R "$scriptdir/configs/psp/PSP/SYSTEM/ppsspp.ini" "$md_conf_root/psp/PSP/SYSTEM/ppsspp.ini"
+    fi
 }
