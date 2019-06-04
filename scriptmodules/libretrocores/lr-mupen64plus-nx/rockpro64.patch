@@ -1,5 +1,5 @@
 --- Makefile	2019-05-24 09:56:14.000000000 -0700
-+++ Makefile.new	2019-06-03 20:11:48.876546700 -0700
++++ Makefile	2019-06-03 20:11:48.876546700 -0700
 @@ -226,6 +226,17 @@
     COREFLAGS += -DAMLOGIC -DOS_LINUX -DUNDEF_GL_GLEXT_PROTOTYPES
     CPUFLAGS += -march=armv8-a -mcpu=cortex-a53 -mtune=cortex-a53
