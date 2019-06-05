@@ -124,6 +124,18 @@ function retroarena_welcome() {
 }
 
 retroarena_welcome
+# Common Aliases
+alias setup='cd ~/RetroArena-Setup&&sudo ./retroarena_setup.sh'
+alias upgrade='sudo apt-get update&&sudo apt-get upgrade -y'
+alias shutdown='sudo shutdown -h now'
+alias reboot='sudo reboot -h now'
+alias fstab='sudo nano /etc/fstab'
+alias rclocal='sudo nano /etc/rc.local'
+alias autostart='sudo nano /opt/retroarena/configs/all/autostart.sh'
+alias configs='cd /opt/retroarena/configs'
+alias alsa='alsamixer'
+alias log='sudo nano /dev/shm/runcommand.log'
+alias ifconfig='ip address'
 # RETROARENA PROFILE END
 _EOF_
 
