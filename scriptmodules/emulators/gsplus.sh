@@ -16,7 +16,7 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/digarok/gsplus/master/
 rp_module_section="sa"
 
 function depends_gsplus() {
-    getDepends libpcap0.8-dev libfreetype6-dev libsdl2-dev libsdl2-image-dev
+    getDepends libpcap0.8-dev libfreetype6-dev libsdl2-dev libsdl2-image-dev re2c
 }
 
 function sources_gsplus() {
