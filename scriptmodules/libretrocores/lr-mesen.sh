@@ -14,7 +14,7 @@ rp_module_desc="NES and Famicom emulator - Mesen Port for libretro"
 rp_module_help="ROM Extensions: .nes .zip\n\nCopy your NES roms to $romdir/nes and your Famicon roms to $romdir/fds"
 rp_module_licence="GPL3"
 rp_module_section="lr"
-rp_module_flags=""
+rp_module_flags="!odroid-n2"
 
 function depends_lr-mesen() {
     local depends=(llvm-6.0-dev)
