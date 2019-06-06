@@ -125,8 +125,9 @@ function retroarena_welcome() {
 
 retroarena_welcome
 # Common Aliases
-alias setup='cd ~/RetroArena-Setup&&sudo ./retroarena_setup.sh'
-alias upgrade='sudo apt-get update&&sudo apt-get upgrade -y'
+alias setup='sudo ~/RetroArena-Setup/retroarena_setup.sh'
+alias gitreset='cd RetroArena-Setup && git reset --hard && git clean -f -d && cd -'
+alias upgrade='sudo apt-get update && sudo apt-get upgrade -y'
 alias shutdown='sudo shutdown -h now'
 alias reboot='sudo reboot -h now'
 alias fstab='sudo nano /etc/fstab'
