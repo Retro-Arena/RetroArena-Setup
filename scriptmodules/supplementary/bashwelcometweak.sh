@@ -126,7 +126,7 @@ function retroarena_welcome() {
 retroarena_welcome
 # Common Aliases
 alias setup='sudo ~/RetroArena-Setup/retroarena_setup.sh'
-alias gitreset='cd RetroArena-Setup && git reset --hard && git clean -f -d && cd -'
+alias gitreset='cd RetroArena-Setup && git reset --hard && git clean -f -d && cd ~'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade -y'
 alias shutdown='sudo shutdown -h now'
 alias reboot='sudo reboot -h now'
@@ -139,8 +139,6 @@ alias log='sudo nano /dev/shm/runcommand.log'
 alias ifconfig='ip address'
 # RETROARENA PROFILE END
 _EOF_
-
-
 }
 
 function remove_bashwelcometweak() {
