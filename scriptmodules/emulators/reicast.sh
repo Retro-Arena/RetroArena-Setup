@@ -17,7 +17,7 @@ rp_module_section="sa"
 rp_module_flags="!armv6 !odroid-n2"
 
 function depends_reicast() {
-    local depends=(libsdl2-dev python-dev python-pip alsa-oss python-setuptools libevdev-dev libasound2-dev)
+    local depends=(libsdl2-dev python-dev python-pip alsa-oss python-setuptools libevdev-dev libasound2-dev libudev-dev)
     getDepends "${depends[@]}"
     pip install evdev
 }

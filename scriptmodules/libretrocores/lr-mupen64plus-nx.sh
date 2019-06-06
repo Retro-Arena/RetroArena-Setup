@@ -16,23 +16,23 @@ rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/mupen64plus-l
 rp_module_section="lr"
 rp_module_flags=""
 
+function depends_lr-mupen64plus-next() {
+    local depends=(flex bison libpng-dev)
+    getDepends "${depends[@]}"
+}
+
 function sources_lr-mupen64plus-nx() {
     gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git GLideN64
     isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
 }
 
 function build_lr-mupen64plus-nx() {
-    make clean
     local params=()
-    if isPlatform "odroid-n2"; then
-        params+=(platform=odroid64 BOARD=N2)
-    elif isPlatform  "odroid-xu"; then
-        params+=(platform=odroid BOARD=ODROID-XU)
-    elif isPlatform "rockpro64"; then
-        params+=(platform=rockpro64)
-    else
-        exit
-    fi
+    isPlatform "odroid-n2" && params+=(platform=odroid64 BOARD=N2)
+    isPlatform "odroid-xu" && params+=(platform=odroid BOARD=ODROID-XU)
+    isPlatform "rockpro64" && params+=(platform=rockpro64)
+    # use a custom core name to avoid core option name clashes with lr-mupen64plus
+    make "${params[@]}" clean
     make "${params[@]}"
     md_ret_require="$md_build/mupen64plus_next_libretro.so"
 }

@@ -15,6 +15,10 @@ rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/flycast-emulator/master/LICENSE"
 rp_module_section="lr"
 
+function _update_hook_lr-flycast() {
+    renameModule "lr-reicast" "lr-flycast"
+}
+
 function sources_lr-flycast() {
     local commit
     isPlatform "rockpro64" && commit=("aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
