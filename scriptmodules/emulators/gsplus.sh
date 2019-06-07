@@ -37,7 +37,7 @@ function build_gsplus() {
 
 function install_gsplus() {
     md_ret_files=(
-        'gsplus'
+        '/build//bin/GSplus'
     )
 }
 
