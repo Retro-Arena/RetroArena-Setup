@@ -48,6 +48,6 @@ function install_bin_gsplus() {
 function configure_gsplus() {
     mkRomDir "apple2gs"
     mkUserDir "$md_conf_root/apple2gs"
-    addEmulator 1 "$md_id" "apple2gs" "$md_inst/gsplus -config %ROM%"
+    addEmulator 1 "$md_id" "apple2gs" "$md_inst/GSplus -config %ROM%"
     addSystem "apple2gs"
 }
