@@ -29,8 +29,9 @@ function build_gsplus() {
     elif isPlatform "odroid-n2"; then
         cp "$md_data/vars_aarch64_sdl2" "$md_build/src/vars"
     fi
-    cd src
-    make clean
+    mkdir build
+    cd build
+    cmake ..
     make
 }
 
