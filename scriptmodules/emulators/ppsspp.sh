@@ -189,5 +189,6 @@ function configure_ppsspp() {
         mkdir -p "$md_conf_root/psp/PSP/SYSTEM"
         cp -R "$scriptdir/configs/psp/PSP/SYSTEM/." "$md_conf_root/psp/PSP/SYSTEM"
         chown -R $user:$user "$md_conf_root/psp/PSP/SYSTEM"
+        chmod -R +x "$md_conf_root/psp/PSP/SYSTEM"
     fi
 }
