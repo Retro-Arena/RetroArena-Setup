@@ -186,8 +186,14 @@ function configure_ppsspp() {
     fi
     
     if isPlatform "odroid-n2"; then
+        mkdir -p "$md_conf_root/psp/PSP/Cheats"
+        cp -R "$scriptdir/configs/psp/PSP/Cheats/." "$md_conf_root/psp/PSP/Cheats"
+        chown -R $user:$user "$md_conf_root/psp/PSP/Cheats"
+        chmod -R +x "$md_conf_root/psp/PSP/Cheats"
+        
         mkdir -p "$md_conf_root/psp/PSP/SYSTEM"
         cp -R "$scriptdir/configs/psp/PSP/SYSTEM/." "$md_conf_root/psp/PSP/SYSTEM"
         chown -R $user:$user "$md_conf_root/psp/PSP/SYSTEM"
+        chmod -R +x "$md_conf_root/psp/PSP/SYSTEM"
     fi
 }
