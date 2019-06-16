@@ -76,22 +76,24 @@ function set1080p_kodi() {
     printMsgs "dialog" "The system will now boot at 1080p. Restart the system to apply."
 }
 
-function gui_kodi() {  
-    while true; do
-        local options=(
-            1 "Enable 1080p - fixes Kodi"
-            2 "Enable  720p - breaks Kodi but better performance"
-        )
-        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
-        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-        [[ -z "$choice" ]] && break
-        case "$choice" in
-            1)
-                set1080p_kodi
-                ;;
-            2)
-                set720p_kodi
-                ;;
-        esac
-    done
+function gui_kodi() {
+    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+        while true; do
+            local options=(
+                1 "Enable 1080p - fixes Kodi"
+                2 "Enable  720p - breaks Kodi but better performance"
+            )
+            local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+            local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+            [[ -z "$choice" ]] && break
+            case "$choice" in
+                1)
+                    set1080p_kodi
+                    ;;
+                2)
+                    set720p_kodi
+                    ;;
+            esac
+        done
+    fi
 }
