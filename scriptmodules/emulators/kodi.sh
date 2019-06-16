@@ -76,7 +76,7 @@ function set1080p_kodi() {
     printMsgs "dialog" "The system will now boot at 1080p. Restart the system to apply."
 }
 
-function gui_fruitbox() {  
+function gui_kodi() {  
     while true; do
         local options=(
             1 "Enable 1080p - fixes Kodi"
