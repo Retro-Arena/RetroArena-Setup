@@ -23,13 +23,8 @@ function depends_kodi() {
 }
 
 function install_bin_kodi() {
-    if isPlatform="odroid-xu"; then
-        aptInstall kodi-fbdev
-        cp "$scriptdir/scriptmodules/emulators/kodi/Kodi.bash" "/usr/bin/kodi"
-        cp "$scriptdir/scriptmodules/emulators/kodi/DialogButtonMenu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
-    fi
-    
-    if isPlatform="odroid-n2"; then
+    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the following parameters in /media/boot/boot.ini\n\nsetenv display_autodetect "false"\nsetenv hdmimode "1080p60hz"'
         cd /usr
         wget https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/kodi.tar.gz
         tar -xzf kodi.tar.gz --strip-components=1
@@ -40,6 +35,11 @@ function install_bin_kodi() {
         chmod -R +x /usr/local/lib/kodi
         chmod -R +x /usr/local/share/kodi
         cd -
+    else
+        printMsgs "dialog" "IMPORTANT NOTE\n\nOnly Kodi Krypton 17.3 is supported for the Odroid-XU4\n\nDo not set two controller profiles for the same controller as it will become unstable and may crash.\n\nLocal and Network LAN based streaming was successfully tested however plugins have not been tested. TheRA is not responsible for any support. The installation comes from the Hard Kernel source therefore it is suggested you seek assistance at the Hard Kernel forums.\n\nDue to issues with how EXT storage is accessed by Kodi all exit options have been removed from the default skin. Changing skins is at the user's discretion and TheRA will not be responsible to troubleshoot issues that may arise. Perform skin changes at your own risk."
+        aptInstall kodi-fbdev
+        cp "$scriptdir/scriptmodules/emulators/kodi/Kodi.bash" "/usr/bin/kodi"
+        cp "$scriptdir/scriptmodules/emulators/kodi/DialogButtonMenu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
     fi
 
     cp -r "$scriptdir/scriptmodules/emulators/kodi/kodi" "$romdir/"
@@ -50,18 +50,16 @@ function install_bin_kodi() {
 }
 
 function remove_kodi() {
-    if isPlatform="odroid-xu"; then
-        aptRemove kodi-fbdev
-        aptRemove kodi-fbdev-bin
-        aptRemove kodi-fbdev-data
-    fi
-    
-    if isPlatform="odroid-n2"; then
+    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
         rm -rf /usr/local/bin/kodi*
         rm -rf /usr/local/bin/TexturePacker
         rm -rf /usr/local/include/kodi
         rm -rf /usr/local/lib/kodi
         rm -rf /usr/local/share/kodi
+    else
+        aptRemove kodi-fbdev
+        aptRemove kodi-fbdev-bin
+        aptRemove kodi-fbdev-data
     fi
 
     delSystem kodi
