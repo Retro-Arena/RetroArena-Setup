@@ -24,7 +24,7 @@ function depends_kodi() {
 
 function install_bin_kodi() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the following parameters in /media/boot/boot.ini\n\nsetenv display_autodetect "false"\nsetenv hdmimode "1080p60hz"'
+        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the following parameters in /media/boot/boot.ini\n\nsetenv display_autodetect "false"\nsetenv hdmimode "1080p60hz"\n\nTo apply the settings, go into Kodi > Configuration / Options menu'
         cd /usr
         wget https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/kodi.tar.gz
         tar -xzf kodi.tar.gz --strip-components=1
@@ -64,4 +64,34 @@ function remove_kodi() {
 
     delSystem kodi
     rm -rf "$romdir/kodi"
+}
+
+function set720p_kodi() {
+    sed -i 's/setenv hdmimode "1080p60hz"/setenv hdmimode "720p60hz"/g' /media/boot/boot.ini
+    printMsgs "dialog" "The system will now boot at 720p. Restart the system to apply."
+}
+
+function set1080p_kodi() {
+    sed -i 's/setenv hdmimode "720p60hz"/setenv hdmimode "1080p60hz"/g' /media/boot/boot.ini
+    printMsgs "dialog" "The system will now boot at 1080p. Restart the system to apply."
+}
+
+function gui_fruitbox() {  
+    while true; do
+        local options=(
+            1 "Enable 1080p - fixes Kodi"
+            2 "Enable  720p - breaks Kodi but better performance"
+        )
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            1)
+                set1080p_kodi
+                ;;
+            2)
+                set720p_kodi
+                ;;
+        esac
+    done
 }
