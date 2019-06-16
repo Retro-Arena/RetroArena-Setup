@@ -24,7 +24,7 @@ function depends_kodi() {
 
 function install_bin_kodi() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the following parameters in /media/boot/boot.ini\n\nsetenv display_autodetect "false"\nsetenv hdmimode "1080p60hz"\n\nTo apply the settings, go into Kodi > Configuration / Options menu'
+        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the following parameters in /media/boot/boot.ini\n\nsetenv display_autodetect "false"\nsetenv hdmimode "1080p60hz"\n\nTo apply the settings, go into\nKodi > Configuration / Options menu'
         cd /usr
         wget https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/kodi.tar.gz
         tar -xzf kodi.tar.gz --strip-components=1
