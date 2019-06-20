@@ -27,11 +27,8 @@ function depends_mupen64plus() {
 
 function sources_mupen64plus() {
     local commit
-    #addresses segfault from "Add support for 64 Disk Drive. #446" in mupen64plus-core master
-    isPlatform "vero4k" && commit=("master b75fdfb")
-
     local repos=(
-        "mupen64plus core ${commit[0]}"
+        'mupen64plus core'
         'mupen64plus ui-console'
         'mupen64plus audio-sdl'
         'mupen64plus input-sdl'
