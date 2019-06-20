@@ -1065,16 +1065,6 @@ function bios_check() {
             fi
         done
     fi
-    if [[ "$SYSTEM" == "saturn" ]]; then
-        for filename in saturn_bios; do
-            if [[ ! -f "$BIOS/$filename.bin" ]]; then
-                dialog --no-ok --no-cancel --pause "REQUIRED BIOS FILES\n\nCopy saturn_bios.bin to the internal SD card:\n\n$BIOS\n\nIt is recommended to use the region free BIOS with MD5 of:\n\nbde8d6225194b1be7d7127f9f5a7bb29" 22 76 15
-                clear
-                user_script "runcommand-onend.sh"
-                exit 1
-            fi
-        done
-    fi
 }
 
 function ogst_off() {

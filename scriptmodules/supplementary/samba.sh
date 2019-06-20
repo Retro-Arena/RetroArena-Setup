@@ -53,16 +53,17 @@ function install_shares_samba() {
     add_share_samba "launchingvideos" "$datadir/launchingvideos"
     add_share_samba "roms" "$romdir"
     add_share_samba "splashscreens" "$datadir/splashscreens"
-    isPlatform="odroid-xu" && add_share_samba "casetheme" "$datadir/casetheme"
+    if lsmod | grep -q 'fbtft_device'; then
+        add_share_samba "casetheme" "$datadir/casetheme"
+    else
     restart_samba
 }
 
 function remove_shares_samba() {
     local name
-    for name in bgm bios configs esthemes launchingvideos roms splashscreens; do
+    for name in bgm bios casetheme configs esthemes launchingvideos roms splashscreens; do
         remove_share_samba "$name"
-    done    
-    isPlatform="odroid-xu" && remove_share_samba "casetheme"
+    done
 }
 
 function gui_samba() {
