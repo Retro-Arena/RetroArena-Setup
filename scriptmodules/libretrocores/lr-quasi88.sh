@@ -32,6 +32,10 @@ function install_lr-quasi88() {
     )
 }
 
+function install_bin_lr-quasi88() {
+    downloadAndExtract "$__gitbins_url/lr-quasi88.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-quasi88() {
     mkRomDir "pc88"
     ensureSystemretroconfig "pc88"
