@@ -24,7 +24,7 @@ function depends_kodi() {
 
 function install_bin_kodi() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the following parameters in /media/boot/boot.ini\n\nsetenv display_autodetect "false"\nsetenv hdmimode "1080p60hz"\n\nTo apply the settings, go into\nKodi > Configuration / Options menu'
+        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the HDMI resolution set to 1080p.\n\nTo enable, go to Options in EmulationStation, launch RetroArena-Setup > Settings > Kodi then select the "Enable 1080p" option.'
         cd /usr
         wget https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/kodi.tar.gz
         tar -xzf kodi.tar.gz --strip-components=1
@@ -44,6 +44,11 @@ function install_bin_kodi() {
 
     cp -r "$scriptdir/scriptmodules/emulators/kodi/kodi" "$romdir/"
     chown -R $user:$user "$romdir/kodi"
+    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+        rm -rf "$romdir/kodi/kodi.sh"
+        mv "$romdir/kodi/kodi_n2.sh" "$romdir/kodi/kodi.sh"
+    fi
+
     moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
     addEmulator 1 "$md_id" "kodi" "kodi %ROM%"
     addSystem "kodi"
@@ -68,20 +73,20 @@ function remove_kodi() {
 
 function set720p_kodi() {
     sed -i 's/setenv hdmimode "1080p60hz"/setenv hdmimode "720p60hz"/g' /media/boot/boot.ini
-    printMsgs "dialog" "The system will now boot at 720p. Restart the system to apply."
+    printMsgs "dialog" "Resolution is now set at 720p. Restart the system to apply."
 }
 
 function set1080p_kodi() {
     sed -i 's/setenv hdmimode "720p60hz"/setenv hdmimode "1080p60hz"/g' /media/boot/boot.ini
-    printMsgs "dialog" "The system will now boot at 1080p. Restart the system to apply."
+    printMsgs "dialog" "Resolution is now set at 1080p. Restart the system to apply."
 }
 
 function gui_kodi() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
         while true; do
             local options=(
-                1 "Enable 1080p - fixes Kodi"
-                2 "Enable  720p - breaks Kodi but better performance"
+                1 "Enable 1080p"
+                2 "Enable  720p"
             )
             local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
             local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
