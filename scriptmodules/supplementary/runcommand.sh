@@ -48,27 +48,6 @@ function install_bin_runcommand() {
     md_ret_require="$md_inst/runcommand.sh"
 }
 
-function governor_runcommand() {
-    cmd=(dialog --backtitle "$__backtitle" --cancel-label "Back" --menu "Configure CPU Governor on command launch" 22 86 16)
-    local governors
-    local governor
-    local options=("1" "Default (don't change)")
-    local i=2
-    if [[ -f /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors ]]; then
-        for governor in $(</sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors); do
-            governors[$i]="$governor"
-            options+=("$i" "Force $governor")
-            ((i++))
-        done
-    fi
-    local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-    if [[ -n "$choice" ]]; then
-        governor="${governors[$choice]}"
-        iniSet "governor" "$governor"
-        chown $user:$user "$configdir/all/runcommand.cfg"
-    fi
-}
-
 function config_runcommand() {
     cp "$scriptdir/configs/all/runcommand.cfg" "$md_conf_root/all"
     cp "$scriptdir/configs/all/runcommand-launch-dialog.cfg" "$md_conf_root/all"
@@ -137,9 +116,6 @@ function gui_runcommand() {
                 iniSet "image_delay" "$choice"
                 ;;
             5)
-                governor_runcommand
-                ;;
-            6)
                 config_runcommand
                 printMsgs "dialog" "Completed the reset of runcommand config, onend, and onstart scripts."
                 ;;
