@@ -55,7 +55,7 @@ function install_shares_samba() {
     add_share_samba "splashscreens" "$datadir/splashscreens"
     if lsmod | grep -q 'fbtft_device'; then
         add_share_samba "casetheme" "$datadir/casetheme"
-    else
+    fi
     restart_samba
 }
 
