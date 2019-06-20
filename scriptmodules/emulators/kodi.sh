@@ -44,10 +44,6 @@ function install_bin_kodi() {
 
     cp -r "$scriptdir/scriptmodules/emulators/kodi/kodi" "$romdir/"
     chown -R $user:$user "$romdir/kodi"
-    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        rm -rf "$romdir/kodi/kodi.sh"
-        mv "$romdir/kodi/kodi_n2.sh" "$romdir/kodi/kodi.sh"
-    fi
 
     moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
     addEmulator 1 "$md_id" "kodi" "kodi %ROM%"
