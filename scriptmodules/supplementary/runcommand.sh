@@ -94,8 +94,7 @@ function gui_runcommand() {
         fi
 
         options+=(4 "Launch image delay in seconds (currently $image_delay)")
-        options+=(5 "CPU configuration")
-        options+=(6 "Reset runcommand configs")
+        options+=(5 "Reset runcommand configs")
 
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
