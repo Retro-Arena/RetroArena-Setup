@@ -9,21 +9,24 @@
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
 
-rp_module_id="lr-reicast"
-rp_module_desc="Dreamcast emu - Reicast port for libretro"
-rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave/Naomi ROM Extensions: .bin .dat .zip (Mame 0.198+)\n\nCopy ROM files to:\n$romdir/dreamcast\n$romdir/atomiswave\n$romdir/naomi\n\nCopy BIOS files to: $biosdir/dc\ndc_boot.bin, dc_flash.bin, airlbios.zip, awbios.zip, f355bios.zip, f355dlx.zip, hod2bios.zip, naomi.zip\n\nCheck http://bit.do/lr-reicast for more information."
-rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/reicast-emulator/master/LICENSE"
+rp_module_id="lr-flycast"
+rp_module_desc="Dreamcast emu - flycast port for libretro"
+rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave/Naomi ROM Extensions: .bin .dat .zip (Mame 0.198+)\n\nCopy ROM files to:\n$romdir/dreamcast\n$romdir/atomiswave\n$romdir/naomi\n\nCopy BIOS files to: $biosdir/dc\ndc_boot.bin, dc_flash.bin, airlbios.zip, awbios.zip, f355bios.zip, f355dlx.zip, hod2bios.zip, naomi.zip\n\nCheck http://bit.do/lr-flycast for more information."
+rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/flycast-emulator/master/LICENSE"
 rp_module_section="lr"
 
-function sources_lr-reicast() {
-    local branch"master"
-    local commit=""
+function _update_hook_lr-flycast() {
+    renameModule "lr-reicast" "lr-flycast"
+}
+
+function sources_lr-flycast() {
+    local commit
     isPlatform "rockpro64" && commit=("aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
-    gitPullOrClone "$md_build" https://github.com/libretro/reicast-emulator.git "$branch" "$commit"
+    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master" "$commit"
     isPlatform "rockpro64" && applyPatch "$md_data/buildfix.patch"
 }
 
-function build_lr-reicast() {
+function build_lr-flycast() {
     make clean
     if isPlatform "rockpro64"; then
         make platform=rockpro64 ARCH=arm
@@ -32,20 +35,20 @@ function build_lr-reicast() {
     else
         make platform=odroid BOARD="ODROID-XU3" ARCH=arm
     fi
-    md_ret_require="$md_build/reicast_libretro.so"
+    md_ret_require="$md_build/flycast_libretro.so"
 }
 
-function install_lr-reicast() {
+function install_lr-flycast() {
     md_ret_files=(
-        'reicast_libretro.so'
+        'flycast_libretro.so'
     )
 }
 
-function install_bin_lr-reicast() {
-    downloadAndExtract "$__gitbins_url/lr-reicast.tar.gz" "$md_inst" 1
+function install_bin_lr-flycast() {
+    downloadAndExtract "$__gitbins_url/lr-flycast.tar.gz" "$md_inst" 1
 }
 
-function configure_lr-reicast() {    
+function configure_lr-flycast() {    
     # bios
     mkUserDir "$biosdir/dc"
     
@@ -55,7 +58,7 @@ function configure_lr-reicast() {
         ensureSystemretroconfig "$system"
         iniConfig " = " "" "$configdir/$system/retroarch.cfg"
         iniSet "video_shared_context" "true"
-        addEmulator 1 "$md_id" "$system" "$md_inst/reicast_libretro.so </dev/null"
+        addEmulator 1 "$md_id" "$system" "$md_inst/flycast_libretro.so </dev/null"
         addSystem "$system"
     done
 
@@ -114,11 +117,11 @@ function configure_lr-reicast() {
     setRetroArchCoreOption "${dir_name}reicast_widescreen_hack" "disabled"
     
     # copy configs
-    cp -R "$scriptdir/configs/all/retroarch/config/Reicast/." "$md_conf_root/all/retroarch/config/Reicast"
+    cp -R "$scriptdir/configs/all/retroarch/config/reicast/." "$md_conf_root/all/retroarch/config/reicast"
 
     if isPlatform="odroid-n2"; then
         sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"    
-        cd "/opt/retroarena/configs/all/retroarch/config/Reicast"
+        cd "/opt/retroarena/configs/all/retroarch/config/reicast"
         find . -type f -name "*.opt" -print0 | xargs -0 sed -i '' -e 's/640x480/1280x960/g'
         cd -
     fi

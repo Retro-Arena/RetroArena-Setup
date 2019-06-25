@@ -2,7 +2,7 @@ diff -Naur reicast-a2a14be/Makefile reicast.patch/Makefile
 --- reicast-a2a14be/Makefile	2018-08-12 16:28:43.398877322 +0200
 +++ reicast.patch/Makefile	2018-08-12 16:04:39.396217020 +0200
 @@ -21,18 +21,12 @@
- TARGET_NAME   := reicast
+ TARGET_NAME   := flycast
  endif
  
 -CXX      = ${CC_PREFIX}g++

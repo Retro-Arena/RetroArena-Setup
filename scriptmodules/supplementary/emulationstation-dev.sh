@@ -45,7 +45,7 @@ function depends_emulationstation-dev() {
 }
 
 function sources_emulationstation-dev() {
-    sources_emulationstation "" "dev"
+    sources_emulationstation "" "master"
 }
 
 function build_emulationstation-dev() {
@@ -62,6 +62,10 @@ function install_emulationstation-dev() {
         'resources'
         'THEMES.md'
     )
+}
+
+function install_bin_emulationstation-dev() {
+    downloadAndExtract "$__gitbins_url/emulationstation-dev.tar.gz" "$md_inst" 1
 }
 
 function configure_emulationstation-dev() {

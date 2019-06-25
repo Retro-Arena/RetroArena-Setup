@@ -15,6 +15,10 @@ rp_module_help="ROM Extension: .zip\n\nCopy your roms to\n$romdir/fbneo or\n$rom
 rp_module_licence="NONCOM https://raw.githubusercontent.com/libretro/FBNeo/master/src/license.txt"
 rp_module_section="lr"
 
+function _update_hook_lr-fbneo() {
+    renameModule "lr-fbalpha" "lr-fbneo"
+}
+
 function sources_lr-fbneo() {
     gitPullOrClone "$md_build" https://github.com/libretro/FBNeo.git
 }

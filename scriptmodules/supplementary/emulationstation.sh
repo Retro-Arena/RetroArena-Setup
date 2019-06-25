@@ -326,10 +326,6 @@ elif grep -Fq '"SplashScreenProgress" value="true"' "\$esconfig"; then
     sed -i -e 's:SplashScreenProgress" value="true":SplashScreenProgress" value="false":g' "\$esconfig"
 fi
 
-if grep -Fq '"ParseGamelistOnly" value="false"' "\$esconfig"; then
-    sed -i -e 's:ParseGamelistOnly" value="false":ParseGamelistOnly" value="true":g' "\$esconfig"
-fi
-
 touch /tmp/es-restart
 kill -13 \$espid
 
@@ -415,7 +411,7 @@ function gui_emulationstation() {
                 fi
                 if [[ "$esreload" -eq 1 ]]; then
                     esreload_emulationstation
-                    printMsgs "dialog" "Reload ES on Emulator Exit is now enabled.\n\nNOTE: An experimental feature as a workaround to ES high CPU issue when exiting an emulator.\n\nAlso note that this feature will automatically enable 'Parse Gamelists Only' during reload for best performance."
+                    printMsgs "dialog" "Reload ES on Emulator Exit is now enabled.\n\nNOTE: An experimental feature as a workaround to ES high CPU issue when exiting an emulator."
                 fi
                 ;;
         esac

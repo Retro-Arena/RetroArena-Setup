@@ -16,7 +16,7 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/digarok/gsplus/master/
 rp_module_section="sa"
 
 function depends_gsplus() {
-    getDepends libpcap0.8-dev libfreetype6-dev libsdl2-dev libsdl2-image-dev
+    getDepends libpcap0.8-dev libfreetype6-dev libsdl2-dev libsdl2-image-dev re2c
 }
 
 function sources_gsplus() {
@@ -29,14 +29,15 @@ function build_gsplus() {
     elif isPlatform "odroid-n2"; then
         cp "$md_data/vars_aarch64_sdl2" "$md_build/src/vars"
     fi
-    cd src
-    make clean
+    mkdir build
+    cd build
+    cmake ..
     make
 }
 
 function install_gsplus() {
     md_ret_files=(
-        'gsplus'
+        '/build/bin/GSplus'
     )
 }
 
@@ -47,6 +48,6 @@ function install_bin_gsplus() {
 function configure_gsplus() {
     mkRomDir "apple2gs"
     mkUserDir "$md_conf_root/apple2gs"
-    addEmulator 1 "$md_id" "apple2gs" "$md_inst/gsplus -config %ROM%"
+    addEmulator 1 "$md_id" "apple2gs" "$md_inst/GSplus -config %ROM%"
     addSystem "apple2gs"
 }

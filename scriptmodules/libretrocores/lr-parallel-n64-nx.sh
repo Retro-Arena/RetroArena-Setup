@@ -23,7 +23,7 @@ function depends_lr-parallel-n64-nx() {
 }
 
 function sources_lr-parallel-n64-nx() {
-   gitPullOrClone "$md_build" https://github.com/sikotik/paraLLeXT.git 
+   gitPullOrClone "$md_build" https://github.com/sikotik/paraLLeXT.git
     
 }
 
