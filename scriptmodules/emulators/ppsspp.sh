@@ -186,14 +186,34 @@ function configure_ppsspp() {
     fi
     
     if isPlatform "odroid-n2"; then
-        mkdir -p "$md_conf_root/psp/PSP/Cheats"
-        cp -R "$scriptdir/configs/psp/PSP/Cheats/." "$md_conf_root/psp/PSP/Cheats"
-        chown -R $user:$user "$md_conf_root/psp/PSP/Cheats"
-        chmod -R +x "$md_conf_root/psp/PSP/Cheats"
-        
         mkdir -p "$md_conf_root/psp/PSP/SYSTEM"
         cp -R "$scriptdir/configs/psp/PSP/SYSTEM/." "$md_conf_root/psp/PSP/SYSTEM"
         chown -R $user:$user "$md_conf_root/psp/PSP/SYSTEM"
         chmod -R +x "$md_conf_root/psp/PSP/SYSTEM"
     fi
+    
+    cheats_ppsspp
+}
+
+function cheats_ppsspp() {
+    mkdir -p "$md_conf_root/psp/PSP/Cheats"
+    cp -R "$scriptdir/configs/psp/PSP/Cheats/." "$md_conf_root/psp/PSP/Cheats"
+    chown -R $user:$user "$md_conf_root/psp/PSP/Cheats"
+    chmod -R +x "$md_conf_root/psp/PSP/Cheats"
+}
+
+function gui_ppsspp() {
+    while true; do
+        local options=(
+            1 "Update 60fps performance cheats"
+        )
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            1)
+                cheats_ppsspp
+                ;;
+        esac
+    done
 }
