@@ -35,7 +35,7 @@ function depends_emulationstation-dev() {
     local depends=(
         libfreeimage-dev libfreetype6-dev
         libcurl4-openssl-dev libasound2-dev cmake libsdl2-dev libsm-dev
-        libvlc-dev libvlccore-dev vlc
+        libvlc-dev libvlccore-dev vlc rapidjson-dev
     )
 
     compareVersions "$__os_debian_ver" gt 8 && depends+=(rapidjson-dev)
