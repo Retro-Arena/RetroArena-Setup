@@ -24,12 +24,12 @@ function depends_retroarch() {
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
         gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
+        applyPatch "$md_data/01_hotkey_hack.diff"
+        applyPatch "$md_data/02_disable_search.diff"
+        applyPatch "$md_data/03_disable_udev_sort.diff"
     else
         gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git
     fi
-    applyPatch "$md_data/01_hotkey_hack.diff"
-    applyPatch "$md_data/02_disable_search.diff"
-    applyPatch "$md_data/03_disable_udev_sort.diff"
 }
 
 function build_retroarch() {  
