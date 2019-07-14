@@ -14,6 +14,7 @@ rp_module_desc="Dreamcast emu - flycast port for libretro - wince branch"
 rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave/Naomi ROM Extensions: .bin .dat .zip (Mame 0.198+)\n\nCopy ROM files to:\n$romdir/dreamcast\n$romdir/atomiswave\n$romdir/naomi\n\nCopy BIOS files to: $biosdir/dc\ndc_boot.bin, dc_flash.bin, airlbios.zip, awbios.zip, f355bios.zip, f355dlx.zip, hod2bios.zip, naomi.zip\n\nCheck http://bit.do/lr-flycast-wince for more information."
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/flycast-emulator/master/LICENSE"
 rp_module_section="lr"
+rp_module_flags="!rockpro64 !odroid-xu"
 
 function sources_lr-flycast-wince() {
     sources_lr-flycast
