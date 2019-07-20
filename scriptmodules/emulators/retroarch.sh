@@ -29,6 +29,8 @@ function sources_retroarch() {
         applyPatch "$md_data/03_disable_udev_sort.diff"
     else
         gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git
+        applyPatch "$md_data/01_hotkey_hack.diff"
+        applyPatch "$md_data/02_disable_search.diff"
     fi
 }
 
