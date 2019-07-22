@@ -27,14 +27,13 @@ function depends_lr-mupen64plus-nx() {
 
 function sources_lr-mupen64plus-nx() {
     gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git GLideN64
-    isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
-}
+    }
 
 function build_lr-mupen64plus-nx() {
     local params=()
     isPlatform "odroid-n2" && params+=(platform=odroid64 BOARD=N2)
     isPlatform "odroid-xu" && params+=(platform=odroid BOARD=ODROID-XU)
-    isPlatform "rockpro64" && params+=(platform=rockpro64)
+    isPlatform "rockpro64" && params+=(platform=RK3399)
     make "${params[@]}" clean
     make "${params[@]}"
     md_ret_require="$md_build/mupen64plus_next_libretro.so"
