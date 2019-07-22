@@ -23,10 +23,7 @@ function sources_lr-flycast() {
     if [ "$md_id" == "lr-flycast-wince" ]; then
         gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "fh/wince"
     else
-        local commit
-        isPlatform "rockpro64" && commit=("aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
-        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master" "$commit"
-        isPlatform "rockpro64" && applyPatch "$md_data/buildfix.patch"        
+        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"     
     fi
 }
 
