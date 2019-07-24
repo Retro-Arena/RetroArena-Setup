@@ -15,8 +15,8 @@ rp_module_section="config"
 rp_module_flags="!rockpro64 !odroid-n2"
 
 function install_audioswitch() {
-    cp "$md_build/audioswitch/audioswitch" "/bin/audioswitch"
-    chmod a+x "/bin/audioswitch"
+    sudo cp "$scriptdir/scriptmodules/supplementary/audioswitch/audioswitch" "/bin/audioswitch"
+    sudo chmod a+x "/bin/audioswitch"
 }
 
 function remove_audioswitch() {
@@ -31,25 +31,24 @@ function enable_audioswitch() {
 function gui_audioswitch() {
     while true; do
         local options=(
-            1 "Toggle AudioSwitch"
-            2 "Install AudioSwitch"
-            3 "Remove AudioSwitch"
+            1 "Install AudioSwitch"
+            2 "Remove AudioSwitch"
+            3 "Toggle AudioSwitch"
         )
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         case "$choice" in
             1)
-                enable_audioswitch
-                printMsgs "dialog" "Audio is now switched to either HDMI or USB."
-                ;;
-            2)
                 install_audioswitch
                 printMsgs "dialog" "AudioSwitch is now installed."
                 ;;
-            3)
+            2)
                 remove_audioswitch
                 printMsgs "dialog" "AudioSwitch is now removed."
+                ;;
+            3)
+                enable_audioswitch
                 ;;
         esac
     done
