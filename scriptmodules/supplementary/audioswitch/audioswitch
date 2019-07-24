@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+ASPLASH="/opt/retroarena/supplementary/splashscreen/asplashscreen.sh"
+
+if pgrep mpg123; then killall mpg123; fi
+
+read -ra array <<<$(pactl list short sinks | awk '!/^ / && NF {print $1; print $2}')
+SELAUD=$(whiptail --title "I am $USER, with uid $UID" --menu "select your choice" 16 78 5 "${array[@]}" 3>&1 1>&2 2>&3)
+
+if [[ ! $SELAUD == "" ]] ; then 
+	SELCARD=$(pactl list short sinks | grep "^$SELAUD" | awk '!/^ / {print $2}')
+	pactl set-default-sink "$SELCARD"
+
+	case "$SELCARD" in
+		*USB*)
+		    AUDOUT="-ao alsa:device=hw=1.0"
+		    sudo sed -i "s@AUDOUT=.*@AUDOUT=\"$AUDOUT\"@" "$ASPLASH"
+		    ;;
+		*)
+		    sudo sed -i "s@AUDOUT=.*@AUDOUT=\"\"@" "$ASPLASH"
+		    ;;
+	esac
+
+	whiptail --title "Audio Default" --msgbox "                        Audio Output is set to:: \n\n$SELCARD" 10 78
+fi
+
+if [ -a "$HOME/.config/bgmtoggle" ];  then
+    (mpg123 -f 18000 -Z /home/pigaming/RetroArena/bgm/*.mp3 >/dev/null 2>&1) &
+fi
+
+exit
