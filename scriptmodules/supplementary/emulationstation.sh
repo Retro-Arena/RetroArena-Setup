@@ -193,9 +193,12 @@ function init_input_emulationstation() {
 
 function copy_inputscripts_emulationstation() {
     mkdir -p "$md_inst/scripts"
-
     cp -r "$scriptdir/scriptmodules/$md_type/emulationstation/"* "$md_inst/scripts/"
     chmod +x "$md_inst/scripts/inputconfiguration.sh"
+    
+    if [[ "$md_id" == "emulationstation-dev" ]]; then
+        sed -i -e 's:emulationstation:emulationstation-dev:g' "$md_inst/scripts/es_input_reset.cfg"
+    fi
 }
 
 function install_launch_emulationstation() {
