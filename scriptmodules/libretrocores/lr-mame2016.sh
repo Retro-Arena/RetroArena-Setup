@@ -21,7 +21,6 @@ function sources_lr-mame2016() {
 }
 
 function build_lr-mame2016() {
-    isPlatform "arm" && applyPatch "$md_data/lr-mame2016.patch"
     rpSwap on 2000
     local params=($(_get_params_lr-mame) SUBTARGET=arcade)
     make -f Makefile.libretro clean
