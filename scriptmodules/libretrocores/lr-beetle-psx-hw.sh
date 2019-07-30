@@ -16,10 +16,10 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/beetle-psx-li
 rp_module_section="lr"
 rp_module_flags=""
 
-#function depends_lr-beetle-psx() {
-    #local depends=(libvulkan-dev libgl1-mesa-dev)
-    #getDepends "${depends[@]}"
-#}
+function depends_lr-beetle-psx() {
+    local depends=(libgl1-mesa-dev)
+    getDepends "${depends[@]}"
+}
 
 function sources_lr-beetle-psx-hw() {
     gitPullOrClone "$md_build" https://github.com/libretro/beetle-psx-libretro.git
