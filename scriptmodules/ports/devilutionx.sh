@@ -22,8 +22,8 @@ function install_bin_devilutionx() {
 
 function configure_devilutionx() {
     mkRomDir "ports/$md_id"
-	ln -sfn /home/pigaming/RetroArena/roms/ports/devilutionx/diabdat.mpq "$md_inst/diabdat.mpq"
-	addPort "$md_id" "devilutionx" "devilutionx" "$md_inst/devilutionx"
-	chown -R $user:$user "$md_inst"
-	chmod -R 755 "$md_inst"
+    ln -sfn /home/pigaming/RetroArena/roms/ports/devilutionx/diabdat.mpq "$md_inst/diabdat.mpq"
+    addPort "$md_id" "devilutionx" "devilutionx" "$md_inst/devilutionx"
+    chown -R $user:$user "$md_inst"
+    chmod -R 755 "$md_inst"
 }

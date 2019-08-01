@@ -27,15 +27,14 @@ function sources_lr-easyrpgplayer() {
 function build_lr-easyrpgplayer() {
     cmake . -DPLAYER_TARGET_PLATFORM=libretro -DBUILD_SHARED_LIBS=ON
     make clean
-    make
- 
+    make 
     md_ret_require="$md_build/easyrpg_libretro.so"
-     }
+}
 
 function install_lr-easyrpgplayer() {
     md_ret_files=(
         'easyrpg_libretro.so'
-            )
+    )
 }
 
 function install_bin_lr-easyrpgplayer() {
@@ -43,17 +42,13 @@ function install_bin_lr-easyrpgplayer() {
 }
 
 function configure_lr-easyrpgplayer() {
-    
     mkRomDir "easyrpgplayer"
     mkRomDir "easyrpgplayer/data/"
     mkRomDir "easyrpgplayer/rtp2000"
     mkRomDir "easyrpgplayer/rtp2003"
     mkRomDir "easyrpgplayer/games/"
 	ensureSystemretroconfig "easyrpgplayer"
-    
-	addEmulator 1 "$md_id" "easyrpgplayer" "$md_inst/easyrpg_libretro.so"
-         
+    addEmulator 1 "$md_id" "easyrpgplayer" "$md_inst/easyrpg_libretro.so"
     addSystem "easyrpgplayer"
-    
     chown $user:$user -R "$romdir/easyrpgplayer"
 }
