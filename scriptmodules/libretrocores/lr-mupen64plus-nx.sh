@@ -74,7 +74,7 @@ function configure_lr-mupen64plus-nx() {
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableFBEmulation" "True"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableFragmentDepthWrite" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableHWLighting" "False"
-    setRetroArchCoreOption "${dir_name}mupen64plus-EnableLegacyBlending" "True"
+    setRetroArchCoreOption "${dir_name}mupen64plus-EnableLegacyBlending" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableLODEmulation" "True"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableNativeResTexrects" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableOverscan" "Disabled"
