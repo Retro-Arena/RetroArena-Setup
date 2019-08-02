@@ -1065,17 +1065,6 @@ function bios_check() {
             fi
         done
     fi
-    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        if [[ "$SYSTEM" == "kodi" ]]; then
-            rescheck=$(sudo cat /media/boot/boot.ini | grep -c 'setenv hdmimode "1080p60hz"')
-            if [ $rescheck -eq 0 ]; then
-                dialog --no-ok --no-cancel --pause 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the HDMI resolution set to 1080p.\n\nTo enable, go to Options in EmulationStation, launch RetroArena-Setup > Settings > Kodi then select the "Enable 1080p" option.\n\nPlease note that 720p will perform better in majority of emulators than 1080p. There is an option to revert back to 720p.' 22 76 15
-                clear
-                user_script "runcommand-onend.sh"
-                exit 1
-            fi
-        fi
-    fi
 }
 
 function ogst_off() {
