@@ -14,7 +14,7 @@ rp_module_desc="Easy RPG player for libretro"
 rp_module_help="You need to unzip your RPG Maker games into subdirectories in $romdir/$md_id/games. Obtain the translated RPG Maker 2000 RTP by Don Miguel and extract it to $romdir/$md_id/data/rtp2000. Obtain the translated RPG Maker 2003 RTP by Advocate and extract it to $romdir/$md_id/data/rtp2003/."
 rp_module_licence="GPL3 https://raw.githubusercontent.com/EasyRPG/Player/master/COPYING"
 rp_module_section="lr"
-rp_module_flags="!odroid-xu"
+rp_module_flags="!odroid-xu !odroid-n2"
 
 function depends_lr-easyrpgplayer() {
     getDepends libsdl2-dev libsdl2-mixer-dev libpng12-dev libfreetype6-dev libboost-dev libpixman-1-dev libexpat1-dev zlib1g-dev autoconf automake libicu-dev libtool
