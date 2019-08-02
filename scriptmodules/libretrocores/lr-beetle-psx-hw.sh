@@ -39,6 +39,10 @@ function install_lr-beetle-psx-hw() {
     )
 }
 
+function install_bin_lr-beetle-psx-hw() {
+    downloadAndExtract "$__gitbins_url/lr-beetle-psx-hw.tar.gz" "$md_inst" 1
+}
+
 function configure_lr-beetle-psx-hw() {
     mkRomDir "psx"
     ensureSystemretroconfig "psx"
