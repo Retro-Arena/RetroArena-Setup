@@ -200,7 +200,7 @@ function cheats_ppsspp() {
     cp -R "$scriptdir/configs/psp/PSP/Cheats/." "$md_conf_root/psp/PSP/Cheats"
     chown -R $user:$user "$md_conf_root/psp/PSP/Cheats"
     chmod -R +x "$md_conf_root/psp/PSP/Cheats"
-    printMsgs "dialog" "60fps cheats have been updated for PPSSPP. Enable in the Home menu, then restart the game with cheats activated."
+    #printMsgs "dialog" "60fps cheats have been updated for PPSSPP. Enable in the Home menu, then restart the game with cheats activated."
 }
 
 function gui_ppsspp() {
