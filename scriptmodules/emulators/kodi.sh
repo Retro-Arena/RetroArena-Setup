@@ -24,22 +24,18 @@ function depends_kodi() {
 
 function install_bin_kodi() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the HDMI resolution set to 1080p.\n\nTo enable, go to Options in EmulationStation, launch RetroArena-Setup > Settings > Kodi then select the "Enable 1080p" option.'
-        cd /usr
-        wget https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/kodi.tar.gz
-        tar -xzf kodi.tar.gz --strip-components=1
-        rm -rf kodi.tar.gz
-        chmod +x /usr/local/bin/kodi*
-        chmod +x /usr/local/bin/TexturePacker
-        chmod -R +x /usr/local/include/kodi
-        chmod -R +x /usr/local/lib/kodi
-        chmod -R +x /usr/local/share/kodi
-        cd -
+        aptInstall kodi
+        aptInstall aml-libs
+        sudo wget https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/kodi-joystick.tar.gz
+        sudo tar -xzf kodi-joystick.tar.gz
+        sudo mv peripheral.joystick /usr/share/kodi/addons
+        sudo rm kodi-joystick.tar.gz
+        cp "$scriptdir/scriptmodules/emulators/kodi/kodi-leia.bash" "/usr/bin/kodi"
     else
         printMsgs "dialog" "IMPORTANT NOTE\n\nOnly Kodi Krypton 17.3 is supported for the Odroid-XU4\n\nDo not set two controller profiles for the same controller as it will become unstable and may crash.\n\nLocal and Network LAN based streaming was successfully tested however plugins have not been tested. TheRA is not responsible for any support. The installation comes from the Hard Kernel source therefore it is suggested you seek assistance at the Hard Kernel forums.\n\nDue to issues with how EXT storage is accessed by Kodi all exit options have been removed from the default skin. Changing skins is at the user's discretion and TheRA will not be responsible to troubleshoot issues that may arise. Perform skin changes at your own risk."
         aptInstall kodi-fbdev
-        cp "$scriptdir/scriptmodules/emulators/kodi/Kodi.bash" "/usr/bin/kodi"
-        cp "$scriptdir/scriptmodules/emulators/kodi/DialogButtonMenu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
+        cp "$scriptdir/scriptmodules/emulators/kodi/kodi-krypton.bash" "/usr/bin/kodi"
+        cp "$scriptdir/scriptmodules/emulators/kodi/kodi-krypton-menu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
     fi
 
     cp -r "$scriptdir/scriptmodules/emulators/kodi/kodi" "$romdir/"
@@ -52,11 +48,9 @@ function install_bin_kodi() {
 
 function remove_kodi() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        rm -rf /usr/local/bin/kodi*
-        rm -rf /usr/local/bin/TexturePacker
-        rm -rf /usr/local/include/kodi
-        rm -rf /usr/local/lib/kodi
-        rm -rf /usr/local/share/kodi
+        aptRemove kodi
+        aptRemove aml-libs
+        sudo rm -rf /usr/share/kodi
     else
         aptRemove kodi-fbdev
         aptRemove kodi-fbdev-bin
