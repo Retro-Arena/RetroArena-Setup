@@ -24,26 +24,14 @@ function configure_lr-reicast() {
     # bios
     mkUserDir "$biosdir/dc"
     
-    local system    
-    if [ "$md_id" == "lr-flycast-wince" ]; then
-        for system in atomiswave dreamcast naomi; do
-            mkRomDir "$system"
-            ensureSystemretroconfig "$system"
-            iniConfig " = " "" "$configdir/$system/retroarch.cfg"
-            iniSet "video_shared_context" "true"
-            addEmulator 1 "$md_id" "$system" "$md_inst/flycast_wince_libretro.so </dev/null"
-            addSystem "$system"
-        done
-    else
-        for system in atomiswave dreamcast naomi; do
-            mkRomDir "$system"
-            ensureSystemretroconfig "$system"
-            iniConfig " = " "" "$configdir/$system/retroarch.cfg"
-            iniSet "video_shared_context" "true"
-            addEmulator 1 "$md_id" "$system" "$md_inst/flycast_libretro.so </dev/null"
-            addSystem "$system"
-        done
-    fi
+    for system in atomiswave dreamcast naomi; do
+        mkRomDir "$system"
+        ensureSystemretroconfig "$system"
+        iniConfig " = " "" "$configdir/$system/retroarch.cfg"
+        iniSet "video_shared_context" "true"
+        addEmulator 1 "$md_id" "$system" "$md_inst/reicast_libretro.so </dev/null"
+        addSystem "$system"
+    done
 
     # set core options
     setRetroArchCoreOption "${dir_name}reicast_allow_service_buttons" "enabled"
