@@ -74,7 +74,7 @@ function configure_settingsmenu()
     )
 
     local names=(
-        "System: Audio Switch"
+        "Sound: Audio Switch"
         "Media: Bezel Project"
         "Sound: BGM Toggle"
         "Network: Bluetooth"
