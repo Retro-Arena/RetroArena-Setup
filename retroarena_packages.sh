@@ -8,7 +8,7 @@
 # See the LICENSE.md file at the top-level directory of this distribution and
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
-__version="3.1.0 MASTER"
+__version="3.1.1 MASTER"
 
 [[ "$__debug" -eq 1 ]] && set -x
 
