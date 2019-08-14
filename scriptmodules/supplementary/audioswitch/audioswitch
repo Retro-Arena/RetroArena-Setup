@@ -1,10 +1,21 @@
 #!/usr/bin/env bash
 
+# This file is part of The RetroArena (TheRA)
+#
+# The RetroArena (TheRA) is the legal property of its developers, whose names are
+# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
+#
+# See the LICENSE.md file at the top-level directory of this distribution and
+# at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
+#
+
 ASPLASH="/opt/retroarena/supplementary/splashscreen/asplashscreen.sh"
 
-if pgrep mpg123; then killall mpg123; fi
+if pgrep mpg123; then pkill mpg123; fi
 
-read -ra array <<<$(pactl list short sinks | awk '!/^ / && NF {print $1; print $2}')
+#read -ra array <<<$(pactl list short sinks | awk '!/^ / && NF {print $1; print $2}')
+
+array=( $(pactl list short sinks | awk '!/^ / && NF {print $1; print $2}') )
 SELAUD=$(whiptail --title "I am $USER, with uid $UID" --menu "select your choice" 16 78 5 "${array[@]}" 3>&1 1>&2 2>&3)
 
 if [[ ! $SELAUD == "" ]] ; then 
@@ -13,7 +24,11 @@ if [[ ! $SELAUD == "" ]] ; then
 
 	case "$SELCARD" in
 		*USB*)
-		    AUDOUT="-ao alsa:device=hw=1.0"
+		    if ! egrep -q "ODROID-N2|RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
+		    	AUDOUT="-ao alsa:device=hw=1.0"
+		    else
+		    	AUDOUT="--audio-device=alsa/sysdefault:CARD=Device"
+		    fi
 		    sudo sed -i "s@AUDOUT=.*@AUDOUT=\"$AUDOUT\"@" "$ASPLASH"
 		    ;;
 		*)

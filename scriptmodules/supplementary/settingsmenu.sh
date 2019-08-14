@@ -48,6 +48,7 @@ function configure_settingsmenu()
     
     # add the gameslist / icons
     local files=(
+        "audioswitch"
         "bezelproject"
         "bgmtoggle"
         "bluetooth"
@@ -73,6 +74,7 @@ function configure_settingsmenu()
     )
 
     local names=(
+        "System: Audio Switch"
         "Media: Bezel Project"
         "Sound: BGM Toggle"
         "Network: Bluetooth"
@@ -98,6 +100,7 @@ function configure_settingsmenu()
     )
     
     local descs=(
+        "Switch between HDMI and USB Audio."
         "Downloader for RetroArach system bezel packs to be used for various systems"
         "Enable or disable the background music feature."
         "Register and connect to bluetooth devices. Unregister and remove devices, and display registered and connected devices."
@@ -142,6 +145,7 @@ NOTE: Requires a keyboard to be connected."
     
     local hiddens=(
         "true"
+        "true"
         "false"
         "true"
         "true"
@@ -168,21 +172,18 @@ NOTE: Requires a keyboard to be connected."
     if isPlatform "odroid-xu"; then
         files+=(
             "caseconfig"
-            "audioswitch"
             "fancontrol"
             "odroidconfig"
         )
         
         names+=(
             "Media: Case Config for OGST"
-            "System: Audio Switch"
             "System: Fan Control"
             "System: Odroid-Config"
         )
         
         desc+=(
             "Install themes for the OGST Case when 'Console System' is selected. In addition, upon game launch, choose different types of scraped images displayed such as boxart, cartart, snap, wheel, screenshot, marquee, or console system (default). There is also an option to completely disable the display."
-            "Switch between HDMI and USB Audio."
             "Change the fan settings to control cooling and fan noise."
             "Expand filesystem, configure network, boot, localisation, SSH, etc.
             
@@ -190,7 +191,6 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
         )
         
         hiddens+=(
-            "true"
             "true"
             "true"
             "true"

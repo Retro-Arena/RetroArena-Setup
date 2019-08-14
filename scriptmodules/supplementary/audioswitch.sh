@@ -10,9 +10,9 @@
 #
 
 rp_module_id="audioswitch"
-rp_module_desc="Switch between HDMI or USB Audio"
+rp_module_desc="Switch between HDMI or USB Audio by KEgg"
 rp_module_section="config"
-rp_module_flags="!rockpro64 !odroid-n2"
+rp_module_flags=""
 
 function install_audioswitch() {
     sudo cp "$scriptdir/scriptmodules/supplementary/audioswitch/audioswitch" "/bin/audioswitch"
