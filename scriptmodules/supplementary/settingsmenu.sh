@@ -182,7 +182,7 @@ NOTE: Requires a keyboard to be connected."
             "System: Odroid-Config"
         )
         
-        desc+=(
+        descs+=(
             "Install themes for the OGST Case when 'Console System' is selected. In addition, upon game launch, choose different types of scraped images displayed such as boxart, cartart, snap, wheel, screenshot, marquee, or console system (default). There is also an option to completely disable the display."
             "Change the fan settings to control cooling and fan noise."
             "Expand filesystem, configure network, boot, localisation, SSH, etc.
@@ -206,7 +206,7 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
             "System: Odroid-Config"
         )
         
-        desc+=(
+        descs+=(
             "Set the display resolution to 720p or 1080p."
         )
         
@@ -272,7 +272,7 @@ function launch_settingsmenu() {
             rp_callModule setup gui
             ;;
         odroidconfig.rp)
-            odroid-config
+            source odroidconfig.sh
             ;;
         filemanager.rp)
             mc
