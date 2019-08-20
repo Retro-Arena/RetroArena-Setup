@@ -57,7 +57,9 @@ function configure_lr-yabasanshiro() {
     setRetroArchCoreOption "${dir_name}yabasanshiro_frameskip" "disabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_multitap_port1" "disabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_multitap_port2" "disabled"
-    setRetroArchCoreOption "${dir_name}yabasanshiro_resolution_mode" "2x"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_polygon_mode" "perspective_correction"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_resolution_mode" "original"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_rbg_use_compute_shader" "disabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_sh2coretype" "dynarec"
     setRetroArchCoreOption "${dir_name}yabasanshiro_videoformattype" "NTSC"
 }
