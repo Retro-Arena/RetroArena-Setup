@@ -16,12 +16,12 @@ rp_module_flags="!rockpro64"
 
 function set720p() {
     sed -i 's/setenv hdmimode "1080p60hz"/setenv hdmimode "720p60hz"/g' /media/boot/boot.ini
-    printMsgs "dialog" "Resolution is now set at 720p. Restart the system to apply."
+    reboot
 }
 
 function set1080p() {
     sed -i 's/setenv hdmimode "720p60hz"/setenv hdmimode "1080p60hz"/g' /media/boot/boot.ini
-    printMsgs "dialog" "Resolution is now set at 1080p. Restart the system to apply."
+    reboot
 }
 
 function expandfs() {
@@ -36,8 +36,8 @@ function gui_odroidconfig() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
         while true; do
             local options=(
-                1 "Set display resolution to  720p (default)"
-                2 "Set display resolution to 1080p (Kodi fix)"
+                1 "Set display resolution to  720p and reboot (default)"
+                2 "Set display resolution to 1080p and reboot (Kodi fix)"
                 3 "Expand filesystem and reboot"
             )
             local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
