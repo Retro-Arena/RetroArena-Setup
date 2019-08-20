@@ -199,6 +199,13 @@ function _init_config_skyscraper() {
 
     # If we don't have a previous config.ini file, copy the example one
     [[ ! -f "$md_conf_dir/config.ini" ]] && cp "$md_inst/config.ini.example" "$md_conf_dir/config.ini"
+    
+    # Update configs for TheRA
+    sed -i -e 's:#inputFolder="/home/pi/RetroPie/roms":inputFolder="/home/pigaming/RetroArena/roms":g' "$configdir/all/skyscraper/config.ini"
+    sed -i -e 's:#gamelistFolder="/home/pi/RetroPie/roms":gamelistFolder="/home/pigaming/RetroArena/roms":g' "$configdir/all/skyscraper/config.ini"
+    sed -i -e 's:#mediaFolder="/home/pi/RetroPie/roms":mediaFolder="/home/pigaming/RetroArena/roms":g' "$configdir/all/skyscraper/config.ini"
+    sed -i -e 's:#cacheFolder="/home/pi/.skyscraper/cache":cacheFolder="/home/pigaming/.skyscraper/cache":g' "$configdir/all/skyscraper/config.ini"
+    sed -i -e 's:#importFolder="/home/pi/.skyscraper/import":importFolder="/home/pigaming/.skyscraper/import":g' "$configdir/all/skyscraper/config.ini"
 
     # Try to find the rest of the necesary files from the qmake build file
     # They should be listed in the `unix:examples.file` configuration line
