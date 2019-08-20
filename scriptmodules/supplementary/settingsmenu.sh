@@ -207,7 +207,7 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
         )
         
         descs+=(
-            "Set the display resolution to 720p or 1080p."
+            "Set the display resolution to 720p or 1080p. And the ability to expand the filesystem."
         )
         
         hiddens+=(
