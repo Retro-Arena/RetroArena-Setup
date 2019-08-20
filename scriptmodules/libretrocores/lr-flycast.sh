@@ -107,7 +107,7 @@ function configure_lr-flycast() {
     setRetroArchCoreOption "${dir_name}reicast_volume_modifier_enable" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_widescreen_hack" "disabled"
     
-    if isPlatform="odroid-n2"; then
+    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
         sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"
     fi
 }
