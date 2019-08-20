@@ -196,6 +196,24 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
             "true"
         )
     fi
+    
+    if isPlatform "odroid-n2"; then
+        files+=(
+            "odroidconfig"
+        )
+        
+        names+=(
+            "System: Odroid-Config"
+        )
+        
+        desc+=(
+            "Set the display resolution to 720p or 1080p."
+        )
+        
+        hiddens+=(
+            "true"
+        )
+    fi
 
     setESSystem "RetroArena" "retroarena" "$rpdir" ".rp .sh" "sudo $scriptdir/retroarena_packages.sh settingsmenu launch %ROM% </dev/tty >/dev/tty && clear" "" "retroarena"
 

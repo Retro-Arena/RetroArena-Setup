@@ -70,35 +70,3 @@ function remove_kodi() {
     delSystem kodi
     rm -rf "$romdir/kodi"
 }
-
-function set720p_kodi() {
-    sed -i 's/setenv hdmimode "1080p60hz"/setenv hdmimode "720p60hz"/g' /media/boot/boot.ini
-    printMsgs "dialog" "Resolution is now set at 720p. Restart the system to apply."
-}
-
-function set1080p_kodi() {
-    sed -i 's/setenv hdmimode "720p60hz"/setenv hdmimode "1080p60hz"/g' /media/boot/boot.ini
-    printMsgs "dialog" "Resolution is now set at 1080p. Restart the system to apply."
-}
-
-function gui_kodi() {
-    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        while true; do
-            local options=(
-                1 "Enable 1080p"
-                2 "Enable  720p"
-            )
-            local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
-            local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-            [[ -z "$choice" ]] && break
-            case "$choice" in
-                1)
-                    set1080p_kodi
-                    ;;
-                2)
-                    set720p_kodi
-                    ;;
-            esac
-        done
-    fi
-}
