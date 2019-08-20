@@ -272,7 +272,7 @@ function launch_settingsmenu() {
             rp_callModule setup gui
             ;;
         odroidconfig.rp)
-            source odroidconfig.sh
+            rp_callModule odroidconfig gui
             ;;
         filemanager.rp)
             mc
