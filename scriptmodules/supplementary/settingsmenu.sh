@@ -196,26 +196,6 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
             "true"
         )
     fi
-    
-    if isPlatform "odroid-n2"; then
-        files+=(
-            "odroidconfig"
-        )
-        
-        names+=(
-            "System: Odroid-Config"
-        )
-        
-        desc+=(
-            "Expand filesystem, configure network, boot, localisation, SSH, etc.
-            
-NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
-        )
-        
-        hiddens+=(
-            "true"
-        )
-    fi
 
     setESSystem "RetroArena" "retroarena" "$rpdir" ".rp .sh" "sudo $scriptdir/retroarena_packages.sh settingsmenu launch %ROM% </dev/tty >/dev/tty && clear" "" "retroarena"
 
