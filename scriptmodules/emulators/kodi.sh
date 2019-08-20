@@ -36,10 +36,7 @@ function install_bin_kodi() {
         # fix mali
         cd ~/mali
         ./install.sh
-        cd -
-        
-        # reboot
-        reboot
+        cd -        
     else
         printMsgs "dialog" "IMPORTANT NOTE\n\nOnly Kodi Krypton 17.3 is supported for the Odroid-XU4.\n\nDo not set two controller profiles for the same controller as it will become unstable and may crash.\n\nLocal and Network LAN based streaming was successfully tested however plugins have not been tested. TheRA is not responsible for any support. The installation comes from the Hard Kernel source therefore it is suggested you seek assistance at the Hard Kernel forums.\n\nDue to issues with how EXT storage is accessed by Kodi all exit options have been removed from the default skin. Changing skins is at the user's discretion and TheRA will not be responsible to troubleshoot issues that may arise. Perform skin changes at your own risk."
         aptInstall kodi-fbdev
@@ -53,6 +50,10 @@ function install_bin_kodi() {
     moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
     addEmulator 1 "$md_id" "kodi" "kodi %ROM%"
     addSystem "kodi"
+    
+    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+        reboot
+    fi
 }
 
 function remove_kodi() {
