@@ -10,7 +10,7 @@
 #
 
 rp_module_id="odroidconfig"
-rp_module_desc="Expand filesystem, configure network, boot, localisation, SSH"
+rp_module_desc="Set various system related settings"
 rp_module_section="config"
 rp_module_flags="!rockpro64"
 
@@ -24,22 +24,34 @@ function set1080p() {
     printMsgs "dialog" "Resolution is now set at 1080p. Restart the system to apply."
 }
 
+function expandfs() {
+    wget -O /aafirstboot https://raw.githubusercontent.com/Retro-Arena/base-installer/master/aafirstboot
+    chmod a+x /aafirstboot
+    touch /.first_boot
+    sleep 5
+    reboot
+}
+
 function gui_odroidconfig() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
         while true; do
             local options=(
-                1 "Enable 1080p (allows Kodi to launch, average performance)"
-                2 "Enable  720p (disallows Kodi to launch, best performance)"
+                1 "Set display resolution to  720p (default)"
+                2 "Set display resolution to 1080p (Kodi fix)"
+                3 "Expand filesystem and reboot"
             )
             local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
             local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
             [[ -z "$choice" ]] && break
             case "$choice" in
                 1)
-                    set1080p
+                    set720p
                     ;;
                 2)
-                    set720p
+                    set1080p
+                    ;;
+                3)
+                    expandfs
                     ;;
             esac
         done
