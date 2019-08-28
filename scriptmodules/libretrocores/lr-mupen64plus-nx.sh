@@ -54,7 +54,7 @@ function configure_lr-mupen64plus-nx() {
     mkRomDir "n64"
     ensureSystemretroconfig "n64"
 
-    addEmulator 0 "$md_id" "n64" "$md_inst/mupen64plus_next_libretro.so"
+    addEmulator 1 "$md_id" "n64" "$md_inst/mupen64plus_next_libretro.so"
     addSystem "n64"
     
     # set core options
