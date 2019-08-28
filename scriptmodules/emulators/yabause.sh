@@ -56,9 +56,17 @@ function install_bin_yabause() {
 
 function configure_yabause() {
     mkRomDir "saturn"
-    addEmulator 0 "${md_id}-720p" "saturn" "$md_inst/yabasanshiro -a -nf -r 4 -i %ROM%"
-    addEmulator 1 "${md_id}-720p-frameskip" "saturn" "$md_inst/yabasanshiro -a -r 4 -i %ROM%"
+    addEmulator 1 "${md_id}-1x-bios" "saturn" "$md_inst/yabasanshiro -a -nf -r 3 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 0 "${md_id}-1x-bios-fs" "saturn" "$md_inst/yabasanshiro -a -r 3 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 0 "${md_id}-1x-hle" "saturn" "$md_inst/yabasanshiro -a -nf -r 3 -i %ROM%"
+    addEmulator 0 "${md_id}-1x-hle-fs" "saturn" "$md_inst/yabasanshiro -a -r 3 -i %ROM%"
+    addEmulator 0 "${md_id}-2x-bios" "saturn" "$md_inst/yabasanshiro -a -nf -r 2 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 0 "${md_id}-2x-bios-fs" "saturn" "$md_inst/yabasanshiro -a -r 2 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 0 "${md_id}-2x-hle" "saturn" "$md_inst/yabasanshiro -a -nf -r 2 -i %ROM%"
+    addEmulator 0 "${md_id}-2x-hle-fs" "saturn" "$md_inst/yabasanshiro -a -r 2 -i %ROM%"
     addEmulator 0 "${md_id}-720p-bios" "saturn" "$md_inst/yabasanshiro -a -nf -r 4 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
-    addEmulator 0 "${md_id}-720p-bios-frameskip" "saturn" "$md_inst/yabasanshiro -a -r 4 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 0 "${md_id}-720p-bios-fs" "saturn" "$md_inst/yabasanshiro -a -r 4 -b /home/pigaming/RetroArena/BIOS/saturn_bios.bin -i %ROM%"
+    addEmulator 0 "${md_id}-720p-hle" "saturn" "$md_inst/yabasanshiro -a -nf -r 4 -i %ROM%"
+    addEmulator 0 "${md_id}-720p-hle-fs" "saturn" "$md_inst/yabasanshiro -a -r 4 -i %ROM%"    
     addSystem "saturn"
 }

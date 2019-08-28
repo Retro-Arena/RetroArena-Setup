@@ -21,7 +21,6 @@ function sources_lr-mame2016() {
 }
 
 function build_lr-mame2016() {
-    isPlatform "arm" && applyPatch "$md_data/lr-mame2016.patch"
     rpSwap on 2000
     local params=($(_get_params_lr-mame) SUBTARGET=arcade)
     make -f Makefile.libretro clean
@@ -48,4 +47,6 @@ function configure_lr-mame2016() {
         addEmulator 0 "$md_id" "$system" "$md_inst/mamearcade2016_libretro.so"
         addSystem "$system"
     done
+    
+    setRetroArchCoreOption "${dir_name}mame2016_throttle" "enabled"
 }

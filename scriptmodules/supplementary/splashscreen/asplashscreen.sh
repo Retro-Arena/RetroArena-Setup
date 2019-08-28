@@ -5,6 +5,7 @@ DATADIR=""
 RANDOMIZE="disabled"
 REGEX_VIDEO=""
 REGEX_IMAGE=""
+AUDOUT=""
 
 do_start () {
     local config="/etc/splashscreen.list"

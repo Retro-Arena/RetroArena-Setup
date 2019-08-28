@@ -27,9 +27,7 @@ function _sources_libcapsimage_hatari() {
 }
 
 function sources_hatari() {
-    downloadAndExtract "$__archive_url/hatari-1.9.0.tar.bz2" "$md_build" 1
-    # we need to use capsimage 5, as there is no source for 4.2
-    sed -i "s/CAPSIMAGE_VERSION 4/CAPSIMAGE_VERSION 5/" cmake/FindCapsImage.cmake
+    gitPullOrClone "$md_build" https://github.com/hatari/hatari.git
     # capsimage 5.1 misses these types that were defined in 4.2
     sed -i "s/CapsLong/Sint32/g" src/floppy_ipf.c
     sed -i "s/CapsULong/Uint32/g" src/floppy_ipf.c

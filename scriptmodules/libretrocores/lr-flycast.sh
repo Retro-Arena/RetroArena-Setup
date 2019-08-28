@@ -15,15 +15,8 @@ rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/flycast-emulator/master/LICENSE"
 rp_module_section="lr"
 
-function _update_hook_lr-flycast() {
-    renameModule "lr-reicast" "lr-flycast"
-}
-
-function sources_lr-flycast() {
-    local commit
-    isPlatform "rockpro64" && commit=("aefaf1068f5bc70b9e0a5eb6b0143288153d7031")
-    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master" "$commit"
-    isPlatform "rockpro64" && applyPatch "$md_data/buildfix.patch"
+function sources_lr-flycast() {  
+    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"     
 }
 
 function build_lr-flycast() {
@@ -39,9 +32,7 @@ function build_lr-flycast() {
 }
 
 function install_lr-flycast() {
-    md_ret_files=(
-        'flycast_libretro.so'
-    )
+    md_ret_files=('flycast_libretro.so')
 }
 
 function install_bin_lr-flycast() {
@@ -61,7 +52,7 @@ function configure_lr-flycast() {
         addEmulator 1 "$md_id" "$system" "$md_inst/flycast_libretro.so </dev/null"
         addSystem "$system"
     done
-
+    
     # set core options
     setRetroArchCoreOption "${dir_name}reicast_allow_service_buttons" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_alpha_sorting" "per-triangle (normal)"
@@ -78,6 +69,7 @@ function configure_lr-flycast() {
     setRetroArchCoreOption "${dir_name}reicast_enable_rttb" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_framerate" "fullspeed"
     setRetroArchCoreOption "${dir_name}reicast_gdrom_fast_loading" "disabled"
+    setRetroArchCoreOption "${dir_name}reicast_hle_bios" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "640x480"
     setRetroArchCoreOption "${dir_name}reicast_mipmapping" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_region" "USA"
@@ -116,13 +108,7 @@ function configure_lr-flycast() {
     setRetroArchCoreOption "${dir_name}reicast_volume_modifier_enable" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_widescreen_hack" "disabled"
     
-    # copy configs
-    cp -R "$scriptdir/configs/all/retroarch/config/reicast/." "$md_conf_root/all/retroarch/config/reicast"
-
-    if isPlatform="odroid-n2"; then
-        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"    
-        cd "/opt/retroarena/configs/all/retroarch/config/reicast"
-        find . -type f -name "*.opt" -print0 | xargs -0 sed -i '' -e 's/640x480/1280x960/g'
-        cd -
+    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"
     fi
 }

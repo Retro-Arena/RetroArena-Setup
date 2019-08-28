@@ -43,6 +43,7 @@ function configure_lr-px68k() {
     ensureSystemretroconfig "x68000"
 
     mkUserDir "$biosdir/keropi"
+    cp -R "$scriptdir/scriptmodules/libretrocores/lr-px68k/keropi/." "$biosdir/keropi"
 
     addEmulator 1 "$md_id" "x68000" "$md_inst/px68k_libretro.so"
     addSystem "x68000"

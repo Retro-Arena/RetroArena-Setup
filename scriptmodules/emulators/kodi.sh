@@ -24,22 +24,24 @@ function depends_kodi() {
 
 function install_bin_kodi() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        printMsgs "dialog" 'IMPORTANT NOTE\n\nKodi Leia 18.1 requires the HDMI resolution set to 1080p.\n\nTo enable, go to Options in EmulationStation, launch RetroArena-Setup > Settings > Kodi then select the "Enable 1080p" option.'
-        cd /usr
-        wget https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/kodi.tar.gz
-        tar -xzf kodi.tar.gz --strip-components=1
-        rm -rf kodi.tar.gz
-        chmod +x /usr/local/bin/kodi*
-        chmod +x /usr/local/bin/TexturePacker
-        chmod -R +x /usr/local/include/kodi
-        chmod -R +x /usr/local/lib/kodi
-        chmod -R +x /usr/local/share/kodi
-        cd -
+        printMsgs "dialog" "IMPORTANT NOTE\n\nOnly Kodi Leia 18.3 is supported for the Odroid-N2.\n\nThe system will automatically reboot upon installation."
+        aptInstall kodi
+        aptInstall aml-libs
+        sudo wget https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/kodi-joystick.tar.gz
+        sudo tar -xzf kodi-joystick.tar.gz
+        sudo mv peripheral.joystick /usr/share/kodi/addons
+        sudo rm kodi-joystick.tar.gz
+        cp "$scriptdir/scriptmodules/emulators/kodi/kodi-leia.bash" "/usr/bin/kodi"
+        
+        # fix mali
+        cd ~/mali
+        ./install.sh
+        cd -        
     else
-        printMsgs "dialog" "IMPORTANT NOTE\n\nOnly Kodi Krypton 17.3 is supported for the Odroid-XU4\n\nDo not set two controller profiles for the same controller as it will become unstable and may crash.\n\nLocal and Network LAN based streaming was successfully tested however plugins have not been tested. TheRA is not responsible for any support. The installation comes from the Hard Kernel source therefore it is suggested you seek assistance at the Hard Kernel forums.\n\nDue to issues with how EXT storage is accessed by Kodi all exit options have been removed from the default skin. Changing skins is at the user's discretion and TheRA will not be responsible to troubleshoot issues that may arise. Perform skin changes at your own risk."
+        printMsgs "dialog" "IMPORTANT NOTE\n\nOnly Kodi Krypton 17.3 is supported for the Odroid-XU4.\n\nDo not set two controller profiles for the same controller as it will become unstable and may crash.\n\nLocal and Network LAN based streaming was successfully tested however plugins have not been tested. TheRA is not responsible for any support. The installation comes from the Hard Kernel source therefore it is suggested you seek assistance at the Hard Kernel forums.\n\nDue to issues with how EXT storage is accessed by Kodi all exit options have been removed from the default skin. Changing skins is at the user's discretion and TheRA will not be responsible to troubleshoot issues that may arise. Perform skin changes at your own risk."
         aptInstall kodi-fbdev
-        cp "$scriptdir/scriptmodules/emulators/kodi/Kodi.bash" "/usr/bin/kodi"
-        cp "$scriptdir/scriptmodules/emulators/kodi/DialogButtonMenu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
+        cp "$scriptdir/scriptmodules/emulators/kodi/kodi-krypton.bash" "/usr/bin/kodi"
+        cp "$scriptdir/scriptmodules/emulators/kodi/kodi-krypton-menu.xml" "/usr/share/kodi/addons/skin.estuary/xml"
     fi
 
     cp -r "$scriptdir/scriptmodules/emulators/kodi/kodi" "$romdir/"
@@ -48,15 +50,17 @@ function install_bin_kodi() {
     moveConfigDir "$home/.kodi" "$md_conf_root/kodi"
     addEmulator 1 "$md_id" "kodi" "kodi %ROM%"
     addSystem "kodi"
+    
+    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
+        reboot
+    fi
 }
 
 function remove_kodi() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        rm -rf /usr/local/bin/kodi*
-        rm -rf /usr/local/bin/TexturePacker
-        rm -rf /usr/local/include/kodi
-        rm -rf /usr/local/lib/kodi
-        rm -rf /usr/local/share/kodi
+        aptRemove kodi
+        aptRemove aml-libs
+        sudo rm -rf /usr/share/kodi
     else
         aptRemove kodi-fbdev
         aptRemove kodi-fbdev-bin
@@ -65,36 +69,4 @@ function remove_kodi() {
 
     delSystem kodi
     rm -rf "$romdir/kodi"
-}
-
-function set720p_kodi() {
-    sed -i 's/setenv hdmimode "1080p60hz"/setenv hdmimode "720p60hz"/g' /media/boot/boot.ini
-    printMsgs "dialog" "Resolution is now set at 720p. Restart the system to apply."
-}
-
-function set1080p_kodi() {
-    sed -i 's/setenv hdmimode "720p60hz"/setenv hdmimode "1080p60hz"/g' /media/boot/boot.ini
-    printMsgs "dialog" "Resolution is now set at 1080p. Restart the system to apply."
-}
-
-function gui_kodi() {
-    if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        while true; do
-            local options=(
-                1 "Enable 1080p"
-                2 "Enable  720p"
-            )
-            local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
-            local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-            [[ -z "$choice" ]] && break
-            case "$choice" in
-                1)
-                    set1080p_kodi
-                    ;;
-                2)
-                    set720p_kodi
-                    ;;
-            esac
-        done
-    fi
 }

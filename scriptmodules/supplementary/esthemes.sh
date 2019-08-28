@@ -28,7 +28,7 @@ function install_theme_esthemes() {
         repo="Retro-Arena"
     fi
     if [[ -z "$theme" ]]; then
-        theme="ghc"
+        theme="rad"
         repo="Retro-Arena"
     fi
     mkdir -p "/etc/emulationstation/themes"
@@ -51,6 +51,7 @@ function gui_esthemes() {
         'Retro-Arena insert-rom'
         'Retro-Arena insert-rom-detailed'
         'Retro-Arena megaman'
+        'Retro-Arena rad'
         'Retro-Arena retroarena'
         'Retro-Arena rick-and-morty'
         'Retro-Arena showcase'

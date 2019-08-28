@@ -126,13 +126,10 @@ function _add_rom_emulationstation() {
 
 function depends_emulationstation() {
     local depends=(
-        libboost-system-dev libboost-filesystem-dev
-        libboost-date-time-dev libfreeimage-dev libfreetype6-dev
+        libfreeimage-dev libfreetype6-dev
         libcurl4-openssl-dev libasound2-dev cmake libsdl2-dev libsm-dev
-        libvlc-dev libvlccore-dev vlc cec-utils rapidjson-dev
+        libvlc-dev libvlccore-dev vlc rapidjson-dev
     )
-
-    isPlatform "x11" && depends+=(gnome-terminal)
     isPlatform "rock64" && depends+=(libmali-rk-dev)
     getDepends "${depends[@]}"
 }
@@ -161,6 +158,7 @@ function install_emulationstation() {
         'emulationstation.sh'
         'GAMELISTS.md'
         'README.md'
+        'resources'
         'THEMES.md'
     )
 }
@@ -195,9 +193,12 @@ function init_input_emulationstation() {
 
 function copy_inputscripts_emulationstation() {
     mkdir -p "$md_inst/scripts"
-
     cp -r "$scriptdir/scriptmodules/$md_type/emulationstation/"* "$md_inst/scripts/"
     chmod +x "$md_inst/scripts/inputconfiguration.sh"
+    
+    if [[ "$md_id" == "emulationstation-dev" ]]; then
+        sed -i -e 's:emulationstation:emulationstation-dev:g' "$md_inst/scripts/es_input_reset.cfg"
+    fi
 }
 
 function install_launch_emulationstation() {
@@ -206,11 +207,6 @@ function install_launch_emulationstation() {
 
 if [[ \$(id -u) -eq 0 ]]; then
     echo "emulationstation should not be run as root. If you used 'sudo emulationstation' please run without sudo."
-    exit 1
-fi
-
-if [[ -d "/sys/module/vc4" ]]; then
-    echo -e "ERROR: You have the experimental desktop GL driver enabled. This is NOT compatible with TheRA, and EmulationStation as well as emulators will fail to launch.\\n\\nPlease disable the experimental desktop GL driver from the raspi-config 'Advanced Options' menu."
     exit 1
 fi
 
@@ -234,25 +230,6 @@ fi
 tput cnorm
 _EOF_
     chmod +x /usr/bin/emulationstation
-
-    if isPlatform "x11"; then
-        mkdir -p /usr/local/share/{icons,applications}
-        cp "$scriptdir/scriptmodules/$md_type/emulationstation/retroarena.svg" "/usr/local/share/icons/"
-        cat > /usr/local/share/applications/retroarena.desktop << _EOF_
-[Desktop Entry]
-Type=Application
-Exec=gnome-terminal --full-screen --hide-menubar -e emulationstation
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
-Name[de_DE]=RetroArena
-Name=rpie
-Comment[de_DE]=RetroArena
-Comment=retroarena
-Icon=/usr/local/share/icons/retroarena.svg
-Categories=Game
-_EOF_
-    fi
 }
 
 function clear_input_emulationstation() {

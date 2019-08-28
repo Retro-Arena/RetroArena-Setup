@@ -8,7 +8,7 @@
 # See the LICENSE.md file at the top-level directory of this distribution and
 # at https://raw.githubusercontent.com/Retro-Arena/RetroArena-Setup/master/LICENSE.md
 #
-__version="3.0.17 STABLE"	
+__version="3.1.4 STABLE"
 
 [[ "$__debug" -eq 1 ]] && set -x
 
@@ -54,7 +54,6 @@ source "$scriptdir/scriptmodules/system.sh"
 source "$scriptdir/scriptmodules/helpers.sh"
 source "$scriptdir/scriptmodules/inifuncs.sh"
 source "$scriptdir/scriptmodules/packages.sh"
-source "$scriptdir/scriptmodules/fixes.sh" > /dev/null 2>&1
 
 setup_env
 

@@ -26,15 +26,14 @@ function depends_lr-mupen64plus-nx() {
 }
 
 function sources_lr-mupen64plus-nx() {
-    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git GLideN64
-    isPlatform "rockpro64" && applyPatch "$md_data/rockpro64.patch"
+    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git develop
 }
 
 function build_lr-mupen64plus-nx() {
     local params=()
     isPlatform "odroid-n2" && params+=(platform=odroid64 BOARD=N2)
     isPlatform "odroid-xu" && params+=(platform=odroid BOARD=ODROID-XU)
-    isPlatform "rockpro64" && params+=(platform=rockpro64)
+    isPlatform "rockpro64" && params+=(platform=RK3399)
     make "${params[@]}" clean
     make "${params[@]}"
     md_ret_require="$md_build/mupen64plus_next_libretro.so"
@@ -55,7 +54,7 @@ function configure_lr-mupen64plus-nx() {
     mkRomDir "n64"
     ensureSystemretroconfig "n64"
 
-    addEmulator 0 "$md_id" "n64" "$md_inst/mupen64plus_next_libretro.so"
+    addEmulator 1 "$md_id" "n64" "$md_inst/mupen64plus_next_libretro.so"
     addSystem "n64"
     
     # set core options
@@ -75,7 +74,7 @@ function configure_lr-mupen64plus-nx() {
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableFBEmulation" "True"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableFragmentDepthWrite" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableHWLighting" "False"
-    setRetroArchCoreOption "${dir_name}mupen64plus-EnableLegacyBlending" "True"
+    setRetroArchCoreOption "${dir_name}mupen64plus-EnableLegacyBlending" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableLODEmulation" "True"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableNativeResTexrects" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableOverscan" "Disabled"

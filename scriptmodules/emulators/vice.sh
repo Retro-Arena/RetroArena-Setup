@@ -16,7 +16,7 @@ rp_module_licence="GPL2 http://svn.code.sf.net/p/vice-emu/code/trunk/vice/COPYIN
 rp_module_section="sa"
 
 function depends_vice() {
-    local depends=(libsdl2-dev libmpg123-dev libpng-dev zlib1g-dev libasound2-dev libvorbis-dev libflac-dev libpcap-dev automake checkinstall bison flex subversion libjpeg-dev portaudio19-dev texinfo xa65)
+    local depends=(libsdl2-dev libmpg123-dev libpng-dev zlib1g-dev libasound2-dev libvorbis-dev libflac-dev libpcap-dev automake bison flex subversion libjpeg-dev portaudio19-dev texinfo xa65)
     isPlatform "x11" && depends+=(libpulse-dev)
     getDepends "${depends[@]}"
 }

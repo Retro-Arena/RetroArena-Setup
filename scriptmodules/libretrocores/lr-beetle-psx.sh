@@ -16,10 +16,10 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/beetle-psx-li
 rp_module_section="lr"
 rp_module_flags=""
 
-#function depends_lr-beetle-psx() {
- #   local depends=(libvulkan-dev libgl1-mesa-dev)
-  #  getDepends "${depends[@]}"
-#}
+function depends_lr-beetle-psx() {
+    local depends=(libgl1-mesa-dev)
+    getDepends "${depends[@]}"
+}
 
 function sources_lr-beetle-psx() {
     gitPullOrClone "$md_build" https://github.com/libretro/beetle-psx-libretro.git
@@ -37,6 +37,10 @@ function install_lr-beetle-psx() {
     md_ret_files=(
         'mednafen_psx_libretro.so'
     )
+}
+
+function install_bin_lr-beetle-psx() {
+    downloadAndExtract "$__gitbins_url/lr-beetle-psx.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-beetle-psx() {

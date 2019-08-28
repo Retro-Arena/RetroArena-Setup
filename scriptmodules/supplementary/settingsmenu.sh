@@ -48,6 +48,7 @@ function configure_settingsmenu()
     
     # add the gameslist / icons
     local files=(
+        "audioswitch"
         "bezelproject"
         "bgmtoggle"
         "bluetooth"
@@ -57,7 +58,6 @@ function configure_settingsmenu()
         "esgamelist"
         "esthemes"
         "filemanager"
-        "fruitbox"
         "hurstythemes"
         "launchingvideos"
         "removemedia"
@@ -73,6 +73,7 @@ function configure_settingsmenu()
     )
 
     local names=(
+        "Sound: Audio Switch"
         "Media: Bezel Project"
         "Sound: BGM Toggle"
         "Network: Bluetooth"
@@ -82,7 +83,6 @@ function configure_settingsmenu()
         "Media: ES Gamelist Cleanup"
         "Media: ES Themes"
         "System: File Manager"
-        "Media: Jukebox Config"
         "Media: Hursty's ES Themes"
         "Media: Launching Videos"
         "Media: Remove Media"
@@ -98,6 +98,7 @@ function configure_settingsmenu()
     )
     
     local descs=(
+        "Switch between HDMI and USB Audio."
         "Downloader for RetroArach system bezel packs to be used for various systems"
         "Enable or disable the background music feature."
         "Register and connect to bluetooth devices. Unregister and remove devices, and display registered and connected devices."
@@ -115,7 +116,6 @@ NOTE: Always make a backup copy of your 'gamelist.xml' and media files before ma
         "Basic ascii file manager for linux allowing you to browse, copy, delete, and move files.
         
 NOTE: Requires a keyboard to be connected."
-        "Configure the default skin and gamepad for Fruitbox jukebox."
         "Install, uninstall, or update Hursty's ES themes. Also, enable or disable the Theme Randomizer on boot option."
         "Enable, disable, or update Launching Videos, which plays a video instead of an image during game launch."
         "Remove extra media files (boxart, cartart, snap, and wheel) for a chosen system where there is not a matching game for it. If you keep your media for MAME or Final Burn Alpha in the 'roms/arcade' folder, there is a special choice just for that.
@@ -142,8 +142,8 @@ NOTE: Requires a keyboard to be connected."
     
     local hiddens=(
         "true"
-        "false"
         "true"
+        "false"
         "true"
         "true"
         "true"
@@ -169,24 +169,28 @@ NOTE: Requires a keyboard to be connected."
         files+=(
             "caseconfig"
             "fancontrol"
+            "fruitbox"
             "odroidconfig"
         )
         
         names+=(
             "Media: Case Config for OGST"
             "System: Fan Control"
+            "Media: Jukebox Config"
             "System: Odroid-Config"
         )
         
-        desc+=(
+        descs+=(
             "Install themes for the OGST Case when 'Console System' is selected. In addition, upon game launch, choose different types of scraped images displayed such as boxart, cartart, snap, wheel, screenshot, marquee, or console system (default). There is also an option to completely disable the display."
             "Change the fan settings to control cooling and fan noise."
+            "Configure the default skin and gamepad for Fruitbox jukebox."
             "Expand filesystem, configure network, boot, localisation, SSH, etc.
             
 NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
         )
         
         hiddens+=(
+            "true"
             "true"
             "true"
             "true"
@@ -202,10 +206,8 @@ NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your
             "System: Odroid-Config"
         )
         
-        desc+=(
-            "Expand filesystem, configure network, boot, localisation, SSH, etc.
-            
-NOTE: This menu is EXPERIMENTAL. Use at your own risk and be sure to backup your image!"
+        descs+=(
+            "Set the display resolution to 720p or 1080p. And the ability to expand the filesystem."
         )
         
         hiddens+=(
@@ -270,7 +272,7 @@ function launch_settingsmenu() {
             rp_callModule setup gui
             ;;
         odroidconfig.rp)
-            odroid-config
+            rp_callModule odroidconfig gui
             ;;
         filemanager.rp)
             mc
