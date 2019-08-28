@@ -26,7 +26,7 @@ function depends_lr-mupen64plus-nx() {
 }
 
 function sources_lr-mupen64plus-nx() {
-    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git GLideN64
+    gitPullOrClone "$md_build" https://github.com/libretro/mupen64plus-libretro-nx.git develop
 }
 
 function build_lr-mupen64plus-nx() {
