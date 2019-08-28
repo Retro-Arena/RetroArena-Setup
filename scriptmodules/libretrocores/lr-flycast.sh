@@ -69,6 +69,7 @@ function configure_lr-flycast() {
     setRetroArchCoreOption "${dir_name}reicast_enable_rttb" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_framerate" "fullspeed"
     setRetroArchCoreOption "${dir_name}reicast_gdrom_fast_loading" "disabled"
+    setRetroArchCoreOption "${dir_name}reicast_hle_bios" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_internal_resolution" "640x480"
     setRetroArchCoreOption "${dir_name}reicast_mipmapping" "enabled"
     setRetroArchCoreOption "${dir_name}reicast_region" "USA"
