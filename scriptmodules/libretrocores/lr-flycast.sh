@@ -16,7 +16,7 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/flycast-emula
 rp_module_section="lr"
 
 function sources_lr-flycast() {  
-    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"     
+    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"
 }
 
 function build_lr-flycast() {

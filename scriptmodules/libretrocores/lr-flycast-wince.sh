@@ -17,7 +17,7 @@ rp_module_section="lr"
 rp_module_flags="!rockpro64 !odroid-xu"
 
 function sources_lr-flycast-wince() {
-    sources_lr-flycast
+    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "fh/wince"
 }
 
 function build_lr-flycast-wince() {
@@ -26,10 +26,6 @@ function build_lr-flycast-wince() {
 
 function install_lr-flycast-wince() {
     install_lr-flycast
-}
-
-function install_bin_lr-flycast-wince() {
-    downloadAndExtract "$__gitbins_url/lr-flycast-wince.tar.gz" "$md_inst" 1
 }
 
 function configure_lr-flycast-wince() {    
