@@ -17,7 +17,7 @@ rp_module_section="lr"
 rp_module_flags="!rockpro64 !odroid-xu"
 
 function sources_lr-flycast-wince() {
-    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "fh/wince"
+    sources_lr-flycast
 }
 
 function build_lr-flycast-wince() {
