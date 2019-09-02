@@ -14,46 +14,38 @@ rp_module_desc="Amiga emulator with JIT support (forked from uae4arm)"
 rp_module_help="ROM Extension: .adf\n\nCopy your Amiga games to $romdir/amiga\n\nCopy the required BIOS files\nkick13.rom\nkick20.rom\nkick31.rom\nto $biosdir"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/midwan/amiberry/master/COPYING"
 rp_module_section="sa"
-rp_module_flags="!x86 !odroid-n2"
+rp_module_flags="!x86"
+
+function _get_platform_bin_amiberry() {
+    local choice="$1"
+    local amiberry_bin="$__platform-sdl2"
+    local amiberry_platform="$__platform-sdl2"
+    if isPlatform "odroid-xu"; then
+        amiberry_bin="xu4"
+        amiberry_platform="xu4"
+    elif isPlatform "odroid-n2"; then
+        amiberry_bin="n2"
+        amiberry_platform="n2"
+    elif isPlatform "rockpro64"; then
+        amiberry_bin="rockpro64"
+        amiberry_platform="rockpro64"
+    fi
+    [[ "$choice" == "bin" ]] && echo "$amiberry_bin"
+    [[ "$choice" == "platform" ]] && echo "$amiberry_platform"
+}
 
 function depends_amiberry() {
-    local depends=(libpng-dev libmpeg2-4-dev zlib1g-dev)
-    if ! isPlatform "rpi" || isPlatform "kms" || isPlatform "vero4k"; then
-        depends+=(libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev)
-    fi
-
-    if isPlatform "vero4k"; then
-        depends+=(vero3-userland-dev-osmc libmpg123-dev libxml2-dev libflac-dev)
-        getDepends "${depends[@]}"
-    else
-        depends_uae4arm "${depends[@]}"
-    fi
+    local depends=(libpng-dev libmpeg2-4-dev zlib1g-dev libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev)
+    depends_uae4arm "${depends[@]}"
 }
 
 function sources_amiberry() {
-    gitPullOrClone "$md_build" https://github.com/midwan/amiberry/
+    gitPullOrClone "$md_build" https://github.com/midwan/amiberry.git dev
 }
 
 function build_amiberry() {
-    local amiberry_bin="$__platform-sdl2"
-    local amiberry_platform="$__platform-sdl2"
-    if isPlatform "rpi" && ! isPlatform "kms"; then
-        amiberry_bin="$__platform-sdl1"
-        amiberry_platform="$__platform"
-    elif isPlatform "odroid-xu"; then
-        amiberry_bin="xu4"
-        amiberry_platform="xu4"
-    elif isPlatform "tinker"; then
-        amiberry_bin="tinker"
-        amiberry_platform="tinker"
-    elif isPlatform "vero4k"; then
-        amiberry_bin="vero4k"
-        amiberry_platform="vero4k"
-    elif isPlatform "rockpro64"; then
-        amiberry_bin="rockpro64"
-        amiberry_platform="rockpro64"    
-    fi
-
+    local amiberry_bin=$(_get_platform_bin_amiberry bin)
+    local amiberry_platform=$(_get_platform_bin_amiberry platform)
     make clean
     CXXFLAGS="" make PLATFORM="$amiberry_platform"
     ln -sf "amiberry-$amiberry_bin" "amiberry"
@@ -61,19 +53,7 @@ function build_amiberry() {
 }
 
 function install_amiberry() {
-    local amiberry_bin="$__platform-sdl2"
-    if isPlatform "rpi" && ! isPlatform "kms"; then
-        amiberry_bin="$__platform-sdl1"
-    elif isPlatform "odroid-xu"; then
-        amiberry_bin="xu4"
-    elif isPlatform "tinker"; then
-        amiberry_bin="tinker"
-    elif isPlatform "vero4k"; then
-        amiberry_bin="vero4k"
-     elif isPlatform "rockpro64"; then
-        amiberry_bin="rockpro64"    
-    fi
-
+    local amiberry_bin=$(_get_platform_bin_amiberry bin)
     md_ret_files=(
         'amiberry'
         "amiberry-$amiberry_bin"
@@ -83,15 +63,11 @@ function install_amiberry() {
     cp -R "$md_build/whdboot" "$md_inst/whdboot-dist"
 }
 
-function install_bin_amiberry() {
-    downloadAndExtract "$__gitbins_url/amiberry.tar.gz" "$md_inst" 1
-}
-
 function configure_amiberry() {
     configure_uae4arm
-    
+
     [[ "$md_mode" == "remove" ]] && return
-    
+
     # symlink the retroarch config / autoconfigs for amiberry to use
     ln -sf "$configdir/all/retroarch/autoconfig" "$md_inst/controllers"
     ln -sf "$configdir/all/retroarch.cfg" "$md_inst/conf/retroarch.cfg"

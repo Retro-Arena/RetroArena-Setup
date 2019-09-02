@@ -11,16 +11,21 @@
 
 rp_module_id="lr-flycast"
 rp_module_desc="Dreamcast emu - flycast port for libretro"
-rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave/Naomi ROM Extensions: .bin .dat .zip (Mame 0.198+)\n\nCopy ROM files to:\n$romdir/dreamcast\n$romdir/atomiswave\n$romdir/naomi\n\nCopy BIOS files to: $biosdir/dc\ndc_boot.bin, dc_flash.bin, airlbios.zip, awbios.zip, f355bios.zip, f355dlx.zip, hod2bios.zip, naomi.zip\n\nCheck http://bit.do/lr-flycast for more information."
+rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave/Naomi ROM Extensions: .zip (Mame 0.198+)\n\nCopy ROM files to:\n$romdir/dreamcast\n$romdir/atomiswave\n$romdir/naomi\n\nCopy BIOS files to: $biosdir/dc\ndc_boot.bin, dc_flash.bin, airlbios.zip, awbios.zip, f355bios.zip, f355dlx.zip, hod2bios.zip, naomi.zip\n\nCheck http://bit.do/lr-flycast for more information."
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/flycast-emulator/master/LICENSE"
 rp_module_section="lr"
 
 function sources_lr-flycast() {  
-    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"     
+    if [ "$md_id" == "lr-flycast-wince" ]; then
+        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "fh/wince"
+    else
+        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"     
+    fi
 }
 
 function build_lr-flycast() {
     make clean
+
     if isPlatform "rockpro64"; then
         make platform=rockpro64 ARCH=arm
     elif isPlatform "odroid-n2"; then
@@ -28,11 +33,20 @@ function build_lr-flycast() {
     else
         make platform=odroid BOARD="ODROID-XU3" ARCH=arm
     fi
-    md_ret_require="$md_build/flycast_libretro.so"
+
+    if [ "$md_id" == "lr-flycast-wince" ]; then
+        md_ret_require="$md_build/flycast_wince_libretro.so"
+    else
+        md_ret_require="$md_build/flycast_libretro.so"
+    fi
 }
 
 function install_lr-flycast() {
-    md_ret_files=('flycast_libretro.so')
+    if [ "$md_id" == "lr-flycast-wince" ]; then
+        md_ret_files=('flycast_wince_libretro.so')
+    else
+        md_ret_files=('flycast_libretro.so')
+    fi
 }
 
 function install_bin_lr-flycast() {
@@ -44,14 +58,25 @@ function configure_lr-flycast() {
     mkUserDir "$biosdir/dc"
     
     local system
-    for system in atomiswave dreamcast naomi; do
-        mkRomDir "$system"
-        ensureSystemretroconfig "$system"
-        iniConfig " = " "" "$configdir/$system/retroarch.cfg"
-        iniSet "video_shared_context" "true"
-        addEmulator 1 "$md_id" "$system" "$md_inst/flycast_libretro.so </dev/null"
-        addSystem "$system"
-    done
+    if [ "$md_id" == "lr-flycast-wince" ]; then
+        for system in atomiswave dreamcast naomi; do
+            mkRomDir "$system"
+            ensureSystemretroconfig "$system"
+            iniConfig " = " "" "$configdir/$system/retroarch.cfg"
+            iniSet "video_shared_context" "true"
+            addEmulator 1 "$md_id" "$system" "$md_inst/flycast_wince_libretro.so </dev/null"
+            addSystem "$system"
+        done
+    else
+        for system in atomiswave dreamcast naomi; do
+            mkRomDir "$system"
+            ensureSystemretroconfig "$system"
+            iniConfig " = " "" "$configdir/$system/retroarch.cfg"
+            iniSet "video_shared_context" "true"
+            addEmulator 1 "$md_id" "$system" "$md_inst/flycast_libretro.so </dev/null"
+            addSystem "$system"
+        done
+    fi
     
     # set core options
     setRetroArchCoreOption "${dir_name}reicast_allow_service_buttons" "enabled"
