@@ -35,12 +35,12 @@ function _get_platform_bin_amiberry() {
 }
 
 function depends_amiberry() {
-    local depends=(libpng-dev libmpeg2-4-dev zlib1g-dev libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev)
+    local depends=(libpng-dev libmpeg2-4-dev zlib1g-dev)
     depends_uae4arm "${depends[@]}"
 }
 
 function sources_amiberry() {
-    gitPullOrClone "$md_build" https://github.com/midwan/amiberry.git dev
+    gitPullOrClone "$md_build" https://github.com/midwan/amiberry.git master
 }
 
 function build_amiberry() {
