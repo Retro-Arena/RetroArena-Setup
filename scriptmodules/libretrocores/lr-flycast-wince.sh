@@ -17,6 +17,7 @@ rp_module_section="lr"
 rp_module_flags="!rockpro64 !odroid-xu"
 
 function sources_lr-flycast-wince() {
+    printMsgs "dialog" "WARNING\n\nThis core is experimental and has performance issues."
     sources_lr-flycast
 }
 
