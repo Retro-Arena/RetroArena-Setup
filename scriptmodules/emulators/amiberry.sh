@@ -14,7 +14,7 @@ rp_module_desc="Amiga emulator with JIT support (forked from uae4arm)"
 rp_module_help="ROM Extension: .adf\n\nCopy your Amiga games to $romdir/amiga\n\nCopy the required BIOS files\nkick13.rom\nkick20.rom\nkick31.rom\nto $biosdir"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/midwan/amiberry/master/COPYING"
 rp_module_section="sa"
-rp_module_flags="!x86"
+rp_module_flags="!x86 !odroid-n2"
 
 function _get_platform_bin_amiberry() {
     local choice="$1"
@@ -35,12 +35,12 @@ function _get_platform_bin_amiberry() {
 }
 
 function depends_amiberry() {
-    local depends=(libpng-dev libmpeg2-4-dev zlib1g-dev libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev)
+    local depends=(libpng-dev libmpeg2-4-dev zlib1g-dev)
     depends_uae4arm "${depends[@]}"
 }
 
 function sources_amiberry() {
-    gitPullOrClone "$md_build" https://github.com/midwan/amiberry.git dev
+    gitPullOrClone "$md_build" https://github.com/midwan/amiberry.git master
 }
 
 function build_amiberry() {
