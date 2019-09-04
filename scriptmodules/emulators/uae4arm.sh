@@ -43,6 +43,7 @@ function install_uae4arm() {
 
 function configure_uae4arm() {
     mkRomDir "amiga"
+    mkRomDir "amigacd32"
 
     if [[ "$md_mode" == "install" ]]; then
         mkUserDir "$md_conf_root/amiga"
@@ -107,9 +108,7 @@ _EOF_
     addSystem "amiga"
     
     # amigacd32
-
     cp  "$romdir/amiga/+Start Amiberry.sh" "$romdir/amigacd32/"
-
     cp -r "$md_conf_root/amiga" "$md_conf_root/amigacd32"
     rm -rf "$md_conf_root/amigacd32/amiberry"
     chown -R $user:$user "$romdir/amigacd32"
