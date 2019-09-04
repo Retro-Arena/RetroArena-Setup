@@ -144,7 +144,14 @@ function sources_emulationstation() {
 
 function build_emulationstation() {
     rpSwap on 1000
-    cmake . -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2/
+
+    # dev branch requires GL parameter
+    if [ "$md_id" == "emulationstation-dev" ]; then
+        cmake . -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2/ -DOPENGLES_INCLUDE_DIR=/usr/include/GL
+    else
+        cmake . -DFREETYPE_INCLUDE_DIRS=/usr/include/freetype2/
+    fi
+
     make clean
     make
     rpSwap off
