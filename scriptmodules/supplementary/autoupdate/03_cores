@@ -1,134 +1,67 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
+# ensure scripts are up to date
+cd /home/pigaming/RetroArena-Setup
+git pull https://github.com/Retro-Arena/RetroArena-Setup.git
+
+# install from source if enabled
 if [ -f /home/pigaming/.config/au_lr-fbneo ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo
 fi
 
 if [ -f /home/pigaming/.config/au_lr-flycast ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast
 fi
 
 if [ -f /home/pigaming/.config/au_lr-flycast-wince ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince
 fi
 
 if [ -f /home/pigaming/.config/au_lr-genesis-plus-gx ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-genesis-plus-gx depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-genesis-plus-gx sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-genesis-plus-gx build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-genesis-plus-gx install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-genesis-plus-gx clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-genesis-plus-gx
 fi
 
 if [ -f /home/pigaming/.config/au_lr-mame2003-plus ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mame2003-plus depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mame2003-plus sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mame2003-plus build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mame2003-plus install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mame2003-plus clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-mame2003-plus
 fi
 
 if [ -f /home/pigaming/.config/au_lr-mgba ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mgba depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mgba sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mgba build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mgba install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mgba clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-mgba
 fi
 
 if [ -f /home/pigaming/.config/au_lr-mupen64plus-nx ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mupen64plus-nx depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mupen64plus-nx sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mupen64plus-nx build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mupen64plus-nx install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mupen64plus-nx clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-mupen64plus-nx
 fi
 
 if [ -f /home/pigaming/.config/au_lr-nestopia ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-nestopia depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-nestopia sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-nestopia build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-nestopia install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-nestopia clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-nestopia
 fi
 
 if [ -f /home/pigaming/.config/au_lr-pcsx-rearmed ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-pcsx-rearmed depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-pcsx-rearmed sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-pcsx-rearmed build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-pcsx-rearmed install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-pcsx-rearmed clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-pcsx-rearmed
 fi
 
 if [ -f /home/pigaming/.config/au_lr-picodrive ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-picodrive depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-picodrive sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-picodrive build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-picodrive install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-picodrive clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-picodrive
 fi
 
 if [ -f /home/pigaming/.config/au_lr-quicknes ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-quicknes depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-quicknes sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-quicknes build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-quicknes install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-quicknes clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-quicknes
 fi
 
 if [ -f /home/pigaming/.config/au_lr-snes9x ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-snes9x sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-snes9x build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-snes9x install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-snes9x clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-snes9x
 fi
 
 if [ -f /home/pigaming/.config/au_lr-yabasanshiro ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh lr-yabasanshiro depends
-    sudo __nodialog=1 ./retroarena_packages.sh lr-yabasanshiro sources
-    sudo __nodialog=1 ./retroarena_packages.sh lr-yabasanshiro build
-    sudo __nodialog=1 ./retroarena_packages.sh lr-yabasanshiro install
-    sudo __nodialog=1 ./retroarena_packages.sh lr-yabasanshiro clean
+    sudo __nodialog=1 ./retroarena_packages.sh lr-yabasanshiro
 fi
 
 if [ -f /home/pigaming/.config/au_ppsspp ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh ppsspp depends
-    sudo __nodialog=1 ./retroarena_packages.sh ppsspp sources
-    sudo __nodialog=1 ./retroarena_packages.sh ppsspp build
-    sudo __nodialog=1 ./retroarena_packages.sh ppsspp install
-    sudo __nodialog=1 ./retroarena_packages.sh ppsspp clean
+    sudo __nodialog=1 ./retroarena_packages.sh ppsspp
 fi
 
 if [ -f /home/pigaming/.config/au_yabause ]; then
-    cd /home/pigaming/RetroArena-Setup
-    sudo __nodialog=1 ./retroarena_packages.sh yabause depends
-    sudo __nodialog=1 ./retroarena_packages.sh yabause sources
-    sudo __nodialog=1 ./retroarena_packages.sh yabause build
-    sudo __nodialog=1 ./retroarena_packages.sh yabause install
-    sudo __nodialog=1 ./retroarena_packages.sh yabause clean
+    sudo __nodialog=1 ./retroarena_packages.sh yabause
 fi
