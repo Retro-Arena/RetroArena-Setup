@@ -147,8 +147,13 @@ function gui_lr-flycast() {
         [[ -z "$choice" ]] && break
         case "$choice" in
             A)
-                touch "$home/.config/$rp_module_id"
-                printMsgs "dialog" "Enabled $rp_module_id AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
+                if [[ -e "$home/.config/$rp_module_id" ]]; then
+                    rm -rf "$home/.config/$rp_module_id"
+                    printMsgs "dialog" "Disabled $rp_module_id AutoUpdate"
+                else
+                    touch "$home/.config/$rp_module_id"
+                    printMsgs "dialog" "Enabled $rp_module_id AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
+                fi
                 ;;
         esac
     done
