@@ -141,18 +141,18 @@ function configure_lr-flycast() {
 function gui_lr-flycast() {
     while true; do
         local options=()
-            [[ -e "$home/.config/$rp_module_id" ]] && options+=(A "Disable $rp_module_id AutoUpdate (Daily)") || options+=(A "Enable $rp_module_id AutoUpdate")
+            [[ -e "$home/.config/lr-flycast" ]] && options+=(A "Disable lr-flycast AutoUpdate (Daily)") || options+=(A "Enable lr-flycast AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         case "$choice" in
             A)
-                if [[ -e "$home/.config/$rp_module_id" ]]; then
-                    rm -rf "$home/.config/$rp_module_id"
-                    printMsgs "dialog" "Disabled $rp_module_id AutoUpdate"
+                if [[ -e "$home/.config/lr-flycast" ]]; then
+                    rm -rf "$home/.config/lr-flycast"
+                    printMsgs "dialog" "Disabled lr-flycast AutoUpdate"
                 else
-                    touch "$home/.config/$rp_module_id"
-                    printMsgs "dialog" "Enabled $rp_module_id AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
+                    touch "$home/.config/lr-flycast"
+                    printMsgs "dialog" "Enabled lr-flycast AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
                 fi
                 ;;
         esac
