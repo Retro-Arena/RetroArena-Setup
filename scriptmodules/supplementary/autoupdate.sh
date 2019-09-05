@@ -48,11 +48,11 @@ function gui_autoupdate() {
                             printMsgs "dialog" "Enabled RetroArena-Setup AutoUpdate\n\nThe update will occur weekly on Sundays at 03:00 UTC."
                         fi
                     else
-                        printMsgs "dialog" "ERROR\n\nYou must enable the required AutoUpdate Service."
+                        printMsgs "dialog" "You must enable the required AutoUpdate Service."
                     fi
                     ;;
                 3)
-                    printMsgs "dialog" "Enabled Core Packages AutoUpdate\n\nPer core package is available in Settings. Only certain cores are available for auto updates at this time."
+                    printMsgs "dialog" "Per core package is available in Settings. Only certain cores are available for auto updates at this time."
                     ;;
             esac
         fi
