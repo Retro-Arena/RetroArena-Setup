@@ -52,7 +52,7 @@ function gui_autoupdate() {
                     fi
                     ;;
                 3)
-                    printMsgs "dialog" "Per core package is available in Settings. Only certain cores are available for auto updates at this time."
+                    printMsgs "dialog" "AutoUpdate per core is available in Settings. Only certain cores can be auto updated."
                     ;;
             esac
         fi
