@@ -18,7 +18,7 @@ if [ -f /home/pigaming/.config/au_lr-flycast ]; then
     sudo __nodialog=1 ./retroarena_packages.sh lr-flycast clean
 fi
 
-if [ -f /home/pigaming/.config/au_lr-wince ]; then
+if [ -f /home/pigaming/.config/au_lr-flycast-wince ]; then
     cd /home/pigaming/RetroArena-Setup
     sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince sources
     sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince build
