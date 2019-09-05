@@ -49,6 +49,8 @@ function gui_retrohub() {
                         touch "$home/.config/au_retrohub"
                         printMsgs "dialog" "Enabled retrohub AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
                     fi
+                else
+                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
                 fi
                 ;;
         esac
