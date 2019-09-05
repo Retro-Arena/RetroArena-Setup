@@ -1,7 +1,7 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-if [ -f /home/pigaming/.config/setupscript ]; then
+if [ -f /home/pigaming/.config/au_setupscript ]; then
     cd /home/pigaming/RetroArena-Setup
     git pull https://github.com/Retro-Arena/RetroArena-Setup.git
 fi
