@@ -35,7 +35,7 @@ function gui_autoupdate() {
                         sudo systemctl start cron.service
                         crontab -u pigaming "$scriptdir/scriptmodules/supplementary/autoupdate/autoupdate"
                         touch "$home/.config/au_service"
-                        printMsgs "dialog" "Enabled AutoUpdate Service.\n\nPer core AutoUpdates is now available in Settings."
+                        printMsgs "dialog" "Enabled AutoUpdate Service.\n\nAutoUpdate per core is available in Settings. Only certain cores can be auto updated."
                     fi
                     ;;
                 2)
