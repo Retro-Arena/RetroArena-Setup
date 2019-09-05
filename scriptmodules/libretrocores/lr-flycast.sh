@@ -153,7 +153,7 @@ function gui_lr-flycast() {
                         printMsgs "dialog" "Disabled lr-flycast AutoUpdate"
                     else
                         touch "$home/.config/au_lr-flycast"
-                        printMsgs "dialog" "Enabled lr-flycast AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
+                        printMsgs "dialog" "Enabled lr-flycast AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
                     fi
                 fi
                 ;;

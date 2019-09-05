@@ -17,7 +17,7 @@ function gui_autoupdate() {
     while true; do
         local options=()
         [[ -e "$home/.config/au_service" ]] && options+=(1 "Disable AutoUpdate Service") || options+=(1 "Enable AutoUpdate Service (Required)")
-        [[ -e "$home/.config/au_setupscript" ]] && options+=(2 "Disable RetroArena-Setup AutoUpdate (Weekly)") || options+=(2 "Enable RetroArena-Setup AutoUpdate")
+        [[ -e "$home/.config/au_setupscript" ]] && options+=(2 "Disable RetroArena-Setup AutoUpdate") || options+=(2 "Enable RetroArena-Setup AutoUpdate")
         options+=(3 "Enable Core Packages AutoUpdate")
         
         local cmd=(dialog --backtitle "$__backtitle" --menu "AutoUpdate: a RetroArena Exclusive" 22 86 16)
@@ -45,7 +45,7 @@ function gui_autoupdate() {
                             printMsgs "dialog" "Disabled RetroArena-Setup AutoUpdate"
                         else
                             touch "$home/.config/au_setupscript"
-                            printMsgs "dialog" "Enabled RetroArena-Setup AutoUpdate\n\nThe update will occur weekly on Sundays at 03:00 UTC."
+                            printMsgs "dialog" "Enabled RetroArena-Setup AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
                         fi
                     else
                         printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
