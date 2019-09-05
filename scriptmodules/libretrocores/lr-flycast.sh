@@ -19,7 +19,7 @@ function sources_lr-flycast() {
     if [ "$md_id" == "lr-flycast-wince" ]; then
         gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "fh/wince"
     else
-        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master" "eb2fbb1"
+        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"
     fi
 }
 
