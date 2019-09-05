@@ -1,0 +1,10 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+if [ -f /home/pigaming/.config/lr-flycast ]; then
+    cd /home/pigaming/RetroArena-Setup
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast sources
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast build
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast install
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast clean
+fi

@@ -137,3 +137,19 @@ function configure_lr-flycast() {
         sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"
     fi
 }
+
+function gui_lr-flycast() {
+    while true; do
+        local options=()
+            [[ -e "$home/.config/$rp_module_id " ]] && options+=(A "Disable $rp_module_id AutoUpdate (Daily)") || options+=(A "Enable $rp_module_id AutoUpdate")
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            A)
+                touch "$home/.config/$rp_module_id"
+                printMsgs "dialog" "Enabled $rp_module_id AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
+                ;;
+        esac
+    done
+}

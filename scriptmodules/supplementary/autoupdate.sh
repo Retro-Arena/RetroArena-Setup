@@ -55,6 +55,7 @@ function gui_autoupdate() {
         [[ -e "$home/.config/autoupdate" ]] && options+=(A "Disable AutoUpdate Service") || options+=(A "Enable AutoUpdate Service (Required)")
         [[ -e "$home/.config/setupscript" ]] && options+=(1 "Disable RetroArena-Setup AutoUpdate (Weekly)") || options+=(1 "Enable RetroArena-Setup AutoUpdate")     
         [[ -e "$home/.config/retrohub" ]] && options+=(2 "Disable Retrohub AutoUpdate (Weekly)") || options+=(2 "Enable Retrohub AutoUpdate")
+        options+=(3 "Enable Core Packages AutoUpdate")
         
         local cmd=(dialog --backtitle "$__backtitle" --menu "AutoUpdate: a RetroArena Exclusive" 22 86 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -69,6 +70,9 @@ function gui_autoupdate() {
                     ;;
                 2)
                     toggle_retrohub
+                    ;;
+                3)
+                    printMsgs "dialog" "Enabled Core Packages AutoUpdate\n\nPer core package is available in Settings. Only certain cores are available for auto updates at this time."
                     ;;
             esac
         fi
