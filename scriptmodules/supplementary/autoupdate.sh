@@ -49,6 +49,7 @@ function gui_autoupdate() {
                         fi
                     else
                         printMsgs "dialog" "ERROR\n\nYou must enable the required AutoUpdate Service."
+                    fi
                     ;;
                 3)
                     printMsgs "dialog" "Enabled Core Packages AutoUpdate\n\nPer core package is available in Settings. Only certain cores are available for auto updates at this time."
