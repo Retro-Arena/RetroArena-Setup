@@ -16,8 +16,8 @@ rp_module_section="config"
 function gui_autoupdate() {
     while true; do
         local options=()
-        [[ -e "$home/.config/autoupdate" ]] && options+=(1 "Disable AutoUpdate Service") || options+=(1 "Enable AutoUpdate Service (Required)")
-        [[ -e "$home/.config/setupscript" ]] && options+=(2 "Disable RetroArena-Setup AutoUpdate (Weekly)") || options+=(2 "Enable RetroArena-Setup AutoUpdate")
+        [[ -e "$home/.config/au_service" ]] && options+=(1 "Disable AutoUpdate Service") || options+=(1 "Enable AutoUpdate Service (Required)")
+        [[ -e "$home/.config/au_setupscript" ]] && options+=(2 "Disable RetroArena-Setup AutoUpdate (Weekly)") || options+=(2 "Enable RetroArena-Setup AutoUpdate")
         options+=(3 "Enable Core Packages AutoUpdate")
         
         local cmd=(dialog --backtitle "$__backtitle" --menu "AutoUpdate: a RetroArena Exclusive" 22 86 16)
@@ -30,7 +30,7 @@ function gui_autoupdate() {
                         sudo systemctl stop cron.service
                         crontab -u pigaming -r
                         rm -rf "$home/.config/au_*"
-                        printMsgs "dialog" "Disabled AutoUpdate Service.\n\nPer core AutoUpdates is now automatically disabled."
+                        printMsgs "dialog" "Disabled AutoUpdate Service.\n\nAutoUpdate is now also disabled for all cores."
                     else
                         sudo systemctl start cron.service
                         crontab -u pigaming "$scriptdir/scriptmodules/supplementary/autoupdate/autoupdate"
