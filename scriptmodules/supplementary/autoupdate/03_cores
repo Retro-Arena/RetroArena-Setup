@@ -1,10 +1,26 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-if [ -f /home/pigaming/.config/lr-flycast ]; then
+if [ -f /home/pigaming/.config/au_lr-fbneo ]; then
+    cd /home/pigaming/RetroArena-Setup
+    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo sources
+    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo build
+    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo install
+    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo clean
+fi
+
+if [ -f /home/pigaming/.config/au_lr-flycast ]; then
     cd /home/pigaming/RetroArena-Setup
     sudo __nodialog=1 ./retroarena_packages.sh lr-flycast sources
     sudo __nodialog=1 ./retroarena_packages.sh lr-flycast build
     sudo __nodialog=1 ./retroarena_packages.sh lr-flycast install
     sudo __nodialog=1 ./retroarena_packages.sh lr-flycast clean
+fi
+
+if [ -f /home/pigaming/.config/au_lr-flycast-wince ]; then
+    cd /home/pigaming/RetroArena-Setup
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince sources
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince build
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince install
+    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince clean
 fi
