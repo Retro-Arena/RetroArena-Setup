@@ -48,7 +48,7 @@ function gui_autoupdate() {
                             printMsgs "dialog" "Enabled RetroArena-Setup AutoUpdate\n\nThe update will occur weekly on Sundays at 03:00 UTC."
                         fi
                     else
-                        printMsgs "dialog" "You must enable the required AutoUpdate Service."
+                        printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
                     fi
                     ;;
                 3)
