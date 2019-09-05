@@ -53,3 +53,28 @@ function configure_lr-snes9x() {
         addSystem "$system"
     done
 }
+
+function gui_lr-snes9x() {
+    while true; do
+        local options=()
+            [[ -e "$home/.config/au_lr-snes9x" ]] && options+=(A "Disable lr-snes9x AutoUpdate (Daily)") || options+=(A "Enable lr-snes9x AutoUpdate")
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            A)
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/au_lr-snes9x" ]]; then
+                        rm -rf "$home/.config/au_lr-snes9x"
+                        printMsgs "dialog" "Disabled lr-snes9x AutoUpdate"
+                    else
+                        touch "$home/.config/au_lr-snes9x"
+                        printMsgs "dialog" "Enabled lr-snes9x AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
+                    fi
+                else
+                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
+                fi
+                ;;
+        esac
+    done
+}

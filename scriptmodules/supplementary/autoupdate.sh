@@ -10,15 +10,15 @@
 #
 
 rp_module_id="autoupdate"
-rp_module_desc="Automatically update scripts and Github repositories"
+rp_module_desc="AutoUpdate Setup Script and Core Packages"
 rp_module_section="config"
 
 function gui_autoupdate() {
     while true; do
         local options=()
-        [[ -e "$home/.config/au_service" ]] && options+=(1 "Disable AutoUpdate Service") || options+=(1 "Enable AutoUpdate Service (Required)")
-        [[ -e "$home/.config/au_setupscript" ]] && options+=(2 "Disable RetroArena-Setup AutoUpdate") || options+=(2 "Enable RetroArena-Setup AutoUpdate")
-        options+=(3 "Enable Core Packages AutoUpdate")
+            [[ -e "$home/.config/au_service" ]] && options+=(1 "Disable AutoUpdate Service") || options+=(1 "Enable AutoUpdate Service (Required)")
+            [[ -e "$home/.config/au_setupscript" ]] && options+=(2 "Disable RetroArena-Setup AutoUpdate") || options+=(2 "Enable RetroArena-Setup AutoUpdate")
+            options+=(3 "Enable Core Packages AutoUpdate")
         
         local cmd=(dialog --backtitle "$__backtitle" --menu "AutoUpdate: a RetroArena Exclusive" 22 86 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)

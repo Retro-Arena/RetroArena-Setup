@@ -32,3 +32,28 @@ function install_lr-flycast-wince() {
 function configure_lr-flycast-wince() {    
     configure_lr-flycast
 }
+
+function gui_lr-flycast-wince() {
+    while true; do
+        local options=()
+            [[ -e "$home/.config/au_lr-flycast-wince" ]] && options+=(A "Disable lr-flycast-wince AutoUpdate (Daily)") || options+=(A "Enable lr-flycast-wince AutoUpdate")
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            A)
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/au_lr-flycast-wince" ]]; then
+                        rm -rf "$home/.config/au_lr-flycast-wince"
+                        printMsgs "dialog" "Disabled lr-flycast-wince AutoUpdate"
+                    else
+                        touch "$home/.config/au_lr-flycast-wince"
+                        printMsgs "dialog" "Enabled lr-flycast-wince AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
+                    fi
+                else
+                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
+                fi
+                ;;
+        esac
+    done
+}

@@ -63,3 +63,28 @@ function configure_lr-yabasanshiro() {
     setRetroArchCoreOption "${dir_name}yabasanshiro_sh2coretype" "dynarec"
     setRetroArchCoreOption "${dir_name}yabasanshiro_videoformattype" "NTSC"
 }
+
+function gui_lr-yabasanshiro() {
+    while true; do
+        local options=()
+            [[ -e "$home/.config/au_lr-yabasanshiro" ]] && options+=(A "Disable lr-yabasanshiro AutoUpdate (Daily)") || options+=(A "Enable lr-yabasanshiro AutoUpdate")
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            A)
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/au_lr-yabasanshiro" ]]; then
+                        rm -rf "$home/.config/au_lr-yabasanshiro"
+                        printMsgs "dialog" "Disabled lr-yabasanshiro AutoUpdate"
+                    else
+                        touch "$home/.config/au_lr-yabasanshiro"
+                        printMsgs "dialog" "Enabled lr-yabasanshiro AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
+                    fi
+                else
+                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
+                fi
+                ;;
+        esac
+    done
+}
