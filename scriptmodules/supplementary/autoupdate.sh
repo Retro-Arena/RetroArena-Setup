@@ -29,13 +29,13 @@ function gui_autoupdate() {
                     if [[ -e "$home/.config/au_service" ]]; then
                         sudo systemctl stop cron.service
                         crontab -u pigaming -r
-                        rm -rf "$home/.config/au_*"
-                        printMsgs "dialog" "Disabled AutoUpdate Service.\n\nAutoUpdate is now also disabled for all cores."
+                        rm -rf $home/.config/au_*
+                        printMsgs "dialog" "Disabled AutoUpdate Service\n\nAutoUpdate is now also disabled for all cores."
                     else
                         sudo systemctl start cron.service
                         crontab -u pigaming "$scriptdir/scriptmodules/supplementary/autoupdate/autoupdate"
                         touch "$home/.config/au_service"
-                        printMsgs "dialog" "Enabled AutoUpdate Service.\n\nAutoUpdate per core is available in Settings. Only certain cores can be auto updated."
+                        printMsgs "dialog" "Enabled AutoUpdate Service\n\nAutoUpdate per core is available in Settings. Only certain cores can be auto updated."
                     fi
                     ;;
                 2)
