@@ -141,7 +141,7 @@ function configure_lr-flycast() {
 function gui_lr-flycast() {
     while true; do
         local options=()
-            [[ -e "$home/.config/$rp_module_id " ]] && options+=(A "Disable $rp_module_id AutoUpdate (Daily)") || options+=(A "Enable $rp_module_id AutoUpdate")
+            [[ -e "$home/.config/$rp_module_id" ]] && options+=(A "Disable $rp_module_id AutoUpdate (Daily)") || options+=(A "Enable $rp_module_id AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
