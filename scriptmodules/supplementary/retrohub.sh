@@ -31,3 +31,26 @@ function remove_retrohub() {
     delSystem retrohub
     rm -rf "$home/.config/retrohub"
 }
+
+function gui_retrohub() {
+    while true; do
+        local options=()
+            [[ -e "$home/.config/au_retrohub" ]] && options+=(A "Disable retrohub AutoUpdate (Daily)") || options+=(A "Enable retrohub AutoUpdate")
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            A)
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/au_retrohub" ]]; then
+                        rm -rf "$home/.config/au_retrohub"
+                        printMsgs "dialog" "Disabled retrohub AutoUpdate"
+                    else
+                        touch "$home/.config/au_retrohub"
+                        printMsgs "dialog" "Enabled retrohub AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
+                    fi
+                fi
+                ;;
+        esac
+    done
+}

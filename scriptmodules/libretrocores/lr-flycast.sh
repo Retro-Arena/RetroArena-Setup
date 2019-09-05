@@ -147,12 +147,14 @@ function gui_lr-flycast() {
         [[ -z "$choice" ]] && break
         case "$choice" in
             A)
-                if [[ -e "$home/.config/lr-flycast" ]]; then
-                    rm -rf "$home/.config/lr-flycast"
-                    printMsgs "dialog" "Disabled lr-flycast AutoUpdate"
-                else
-                    touch "$home/.config/lr-flycast"
-                    printMsgs "dialog" "Enabled lr-flycast AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/lr-flycast" ]]; then
+                        rm -rf "$home/.config/lr-flycast"
+                        printMsgs "dialog" "Disabled lr-flycast AutoUpdate"
+                    else
+                        touch "$home/.config/lr-flycast"
+                        printMsgs "dialog" "Enabled lr-flycast AutoUpdate\n\nThe update will occur daily at 03:00 UTC."
+                    fi
                 fi
                 ;;
         esac
