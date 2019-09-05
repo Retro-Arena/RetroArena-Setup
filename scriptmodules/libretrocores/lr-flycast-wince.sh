@@ -36,7 +36,7 @@ function configure_lr-flycast-wince() {
 function gui_lr-flycast-wince() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-flycast-wince" ]] && options+=(A "Disable lr-flycast-wince AutoUpdate (Daily)") || options+=(A "Enable lr-flycast-wince AutoUpdate")
+            [[ -e "$home/.config/au_lr-flycast-wince" ]] && options+=(A "Disable lr-flycast-wince AutoUpdate") || options+=(A "Enable lr-flycast-wince AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break

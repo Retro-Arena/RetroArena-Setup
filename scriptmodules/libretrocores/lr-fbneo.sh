@@ -99,7 +99,7 @@ function configure_lr-fbneo() {
 function gui_lr-fbneo() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-fbneo" ]] && options+=(A "Disable lr-fbneo AutoUpdate (Daily)") || options+=(A "Enable lr-fbneo AutoUpdate")
+            [[ -e "$home/.config/au_lr-fbneo" ]] && options+=(A "Disable lr-fbneo AutoUpdate") || options+=(A "Enable lr-fbneo AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break

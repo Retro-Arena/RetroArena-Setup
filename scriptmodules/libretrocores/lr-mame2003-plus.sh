@@ -46,7 +46,7 @@ function configure_lr-mame2003-plus() {
 function gui_lr-mame2003-plus() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-mame2003-plus" ]] && options+=(A "Disable lr-mame2003-plus AutoUpdate (Daily)") || options+=(A "Enable lr-mame2003-plus AutoUpdate")
+            [[ -e "$home/.config/au_lr-mame2003-plus" ]] && options+=(A "Disable lr-mame2003-plus AutoUpdate") || options+=(A "Enable lr-mame2003-plus AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break

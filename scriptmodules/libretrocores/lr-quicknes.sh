@@ -49,7 +49,7 @@ function configure_lr-quicknes() {
 function gui_lr-quicknes() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-quicknes" ]] && options+=(A "Disable lr-quicknes AutoUpdate (Daily)") || options+=(A "Enable lr-quicknes AutoUpdate")
+            [[ -e "$home/.config/au_lr-quicknes" ]] && options+=(A "Disable lr-quicknes AutoUpdate") || options+=(A "Enable lr-quicknes AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break

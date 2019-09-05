@@ -205,7 +205,7 @@ function cheats_ppsspp() {
 function gui_ppsspp() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_ppsspp" ]] && options+=(A "Disable ppsspp AutoUpdate (Daily)") || options+=(A "Enable ppsspp AutoUpdate")
+            [[ -e "$home/.config/au_ppsspp" ]] && options+=(A "Disable ppsspp AutoUpdate") || options+=(A "Enable ppsspp AutoUpdate")
             options+=(1 "Update 60fps performance cheats")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)

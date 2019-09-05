@@ -57,7 +57,7 @@ function configure_lr-snes9x() {
 function gui_lr-snes9x() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-snes9x" ]] && options+=(A "Disable lr-snes9x AutoUpdate (Daily)") || options+=(A "Enable lr-snes9x AutoUpdate")
+            [[ -e "$home/.config/au_lr-snes9x" ]] && options+=(A "Disable lr-snes9x AutoUpdate") || options+=(A "Enable lr-snes9x AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break

@@ -54,7 +54,7 @@ function configure_lr-picodrive() {
 function gui_lr-picodrive() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-picodrive" ]] && options+=(A "Disable lr-picodrive AutoUpdate (Daily)") || options+=(A "Enable lr-picodrive AutoUpdate")
+            [[ -e "$home/.config/au_lr-picodrive" ]] && options+=(A "Disable lr-picodrive AutoUpdate") || options+=(A "Enable lr-picodrive AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
