@@ -58,7 +58,7 @@ function gui_lr-mame2003-plus() {
                         printMsgs "dialog" "Disabled lr-mame2003-plus AutoUpdate"
                     else
                         touch "$home/.config/au_lr-mame2003-plus"
-                        printMsgs "dialog" "Enabled lr-mame2003-plus AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
+                        printMsgs "dialog" "Enabled lr-mame2003-plus AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
                     fi
                 else
                     printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."

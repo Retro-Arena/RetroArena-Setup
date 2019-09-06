@@ -111,7 +111,7 @@ function gui_lr-fbneo() {
                         printMsgs "dialog" "Disabled lr-fbneo AutoUpdate"
                     else
                         touch "$home/.config/au_lr-fbneo"
-                        printMsgs "dialog" "Enabled lr-fbneo AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
+                        printMsgs "dialog" "Enabled lr-fbneo AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
                     fi
                 else
                     printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."

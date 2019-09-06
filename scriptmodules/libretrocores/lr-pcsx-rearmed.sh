@@ -81,7 +81,7 @@ function gui_lr-pcsx-rearmed() {
                         printMsgs "dialog" "Disabled lr-pcsx-rearmed AutoUpdate"
                     else
                         touch "$home/.config/au_lr-pcsx-rearmed"
-                        printMsgs "dialog" "Enabled lr-pcsx-rearmed AutoUpdate\n\nThe update will occur daily at 05:00 UTC."
+                        printMsgs "dialog" "Enabled lr-pcsx-rearmed AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
                     fi
                 else
                     printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
