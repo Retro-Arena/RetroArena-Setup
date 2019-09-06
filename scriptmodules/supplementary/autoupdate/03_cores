@@ -40,4 +40,6 @@ echo '' >> $AULOG
 echo 'The following failed to compile:' >> $AULOG
 cd $BUILD
 ls >> $AULOG
+echo '' >> $AULOG
+echo 'If there is nothing listed above, everything compiled successfully!' >> $AULOG
 rm -R -- */
