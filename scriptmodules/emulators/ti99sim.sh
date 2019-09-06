@@ -14,7 +14,7 @@ rp_module_desc="TI-99/SIM - Texas Instruments Home Computer Emulator"
 rp_module_help="ROM Extensions: .ctg .dsk .cf7\n\nCopy your TI-99 games to $romdir/ti99\n\nCopy the required BIOS files TI-994A.ctg cf7+.ctg ti-disk.ctg (case sensitive) to $biosdir. \n For Disk Support you will also require a TI Extended Basic cartridge named xb.ctg \n and an Editor Assembler cartridge named ea.ctg in the $romdir/ti99 folder "
 rp_module_licence="GPL2 http://www.mrousseau.org/programs/ti99sim/"
 rp_module_section="sa"
-rp_module_flags=""
+rp_module_flags="!odroid-n2"
 
 function depends_ti99sim() {
     getDepends libsdl1.2-dev libssl-dev
