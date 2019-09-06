@@ -1,9 +1,24 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-# clear log and empty build directories
-cd /home/pigaming/RetroArena-Setup/tmp/build
-rm -rf /home/pigaming/.config/au_failed.log
+CONFG=/home/pigaming/.config
+AULOG=/home/pigaming/.config/au_cores.log
+BUILD=/home/pigaming/RetroArena-Setup/tmp/build
+
+# start log
+cd /home/pigaming/.config/
+rm -rf $AULOG
+echo '===========================' >> $AULOG
+echo '+  AutoUpdate Log: Cores  +' >> $AULOG
+echo '===========================' >> $AULOG
+echo '' >> $AULOG
+echo -n 'Started ' ; date +'%F %H:%M:%S' >> $AULOG
+echo '' >> $AULOG
+echo 'The following are scheduled:' >> $AULOG
+ls au_* | sed 's/^...//' >> $AULOG
+
+# empty build directories
+cd $BUILD
 rm -R -- */
 
 # ensure scripts are up to date
@@ -11,67 +26,18 @@ cd /home/pigaming/RetroArena-Setup
 git pull https://github.com/Retro-Arena/RetroArena-Setup.git
 
 # install from source if enabled
-if [ -f /home/pigaming/.config/au_lr-fbneo ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-fbneo
-fi
+for core in $(ls au_* | sed 's/^...//')
+do
+    if [ -f $CONFG/au_$core ]; then
+        sudo __nodialog=1 ./retroarena_packages.sh $core
+    fi
+done
 
-if [ -f /home/pigaming/.config/au_lr-flycast ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast
-fi
-
-if [ -f /home/pigaming/.config/au_lr-flycast-wince ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-flycast-wince
-fi
-
-if [ -f /home/pigaming/.config/au_lr-genesis-plus-gx ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-genesis-plus-gx
-fi
-
-if [ -f /home/pigaming/.config/au_lr-mame2003-plus ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mame2003-plus
-fi
-
-if [ -f /home/pigaming/.config/au_lr-mgba ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mgba
-fi
-
-if [ -f /home/pigaming/.config/au_lr-mupen64plus-nx ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-mupen64plus-nx
-fi
-
-if [ -f /home/pigaming/.config/au_lr-nestopia ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-nestopia
-fi
-
-if [ -f /home/pigaming/.config/au_lr-pcsx-rearmed ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-pcsx-rearmed
-fi
-
-if [ -f /home/pigaming/.config/au_lr-picodrive ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-picodrive
-fi
-
-if [ -f /home/pigaming/.config/au_lr-quicknes ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-quicknes
-fi
-
-if [ -f /home/pigaming/.config/au_lr-snes9x ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-snes9x
-fi
-
-if [ -f /home/pigaming/.config/au_lr-yabasanshiro ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh lr-yabasanshiro
-fi
-
-if [ -f /home/pigaming/.config/au_ppsspp ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh ppsspp
-fi
-
-if [ -f /home/pigaming/.config/au_yabause ]; then
-    sudo __nodialog=1 ./retroarena_packages.sh yabause
-fi
-
-# create log and empty build directories
-cd /home/pigaming/RetroArena-Setup/tmp/build
-ls >> /home/pigaming/.config/au_failed.log
+# end log and empty build directories
+echo '' >> $AULOG
+echo -n 'Ended   ' ; date +'%F %H:%M:%S' >> $AULOG
+echo '' >> $AULOG
+echo 'The following failed to compile:' >> $AULOG
+cd $BUILD
+ls >> $AULOG
 rm -R -- */
