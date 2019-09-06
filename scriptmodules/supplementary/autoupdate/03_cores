@@ -13,7 +13,9 @@ echo '===========================' >> $AULOG
 echo '+  AutoUpdate Log: Cores  +' >> $AULOG
 echo '===========================' >> $AULOG
 echo '' >> $AULOG
+echo '--------------------------- ' >> $AULOG
 echo -n 'Started ' >> $AULOG ; date +'%F %H:%M:%S' >> $AULOG
+echo '--------------------------- ' >> $AULOG
 echo '' >> $AULOG
 echo 'The following are scheduled:' >> $AULOG
 ls auc_* | sed 's/^....//' >> $AULOG
@@ -34,13 +36,23 @@ do
     sudo __nodialog=1 ./retroarena_packages.sh $core
 done
 
-# end log and empty build directories
+# end log
 echo '' >> $AULOG
+echo '--------------------------- ' >> $AULOG
 echo -n 'Ended   ' >> $AULOG ; date +'%F %H:%M:%S' >> $AULOG
+echo '--------------------------- ' >> $AULOG
 echo '' >> $AULOG
-echo 'The following failed to compile:' >> $AULOG
-cd $BUILD
-ls >> $AULOG
-echo '' >> $AULOG
-echo 'If there is nothing listed above, everything compiled successfully!' >> $AULOG
+echo '--------------------------- ' >> $AULOG
+echo 'Results                     ' >> $AULOG
+echo '--------------------------- ' >> $AULOG
+
+if ls -1qA $BUILD | grep -q .; then
+    echo 'The following failed' >> $AULOG
+    cd $BUILD
+    ls >> $AULOG
+else
+    echo 'Completed Successfully' >> $AULOG
+fi
+
+# empty build directories
 rm -R -- */
