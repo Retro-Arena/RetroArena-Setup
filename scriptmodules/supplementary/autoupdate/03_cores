@@ -1,8 +1,10 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-# clear logs
+# clear log and empty build directories
+cd /home/pigaming/RetroArena-Setup/tmp/build
 rm -rf /home/pigaming/.config/au_failed.log
+rm -R -- */
 
 # ensure scripts are up to date
 cd /home/pigaming/RetroArena-Setup
@@ -69,7 +71,7 @@ if [ -f /home/pigaming/.config/au_yabause ]; then
     sudo __nodialog=1 ./retroarena_packages.sh yabause
 fi
 
-# create logs and empty build directories
+# create log and empty build directories
 cd /home/pigaming/RetroArena-Setup/tmp/build
 ls >> /home/pigaming/.config/au_failed.log
 rm -R -- */
