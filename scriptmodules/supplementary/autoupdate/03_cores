@@ -12,7 +12,7 @@ echo '===========================' >> $AULOG
 echo '+  AutoUpdate Log: Cores  +' >> $AULOG
 echo '===========================' >> $AULOG
 echo '' >> $AULOG
-echo -n 'Started ' ; date +'%F %H:%M:%S' >> $AULOG
+echo -n 'Started ' >> $AULOG ; date +'%F %H:%M:%S' >> $AULOG
 echo '' >> $AULOG
 echo 'The following are scheduled:' >> $AULOG
 ls {au_lr-*,au_ppsspp,au_yabause} | sed 's/^...//' >> $AULOG
@@ -35,7 +35,7 @@ done
 
 # end log and empty build directories
 echo '' >> $AULOG
-echo -n 'Ended   ' ; date +'%F %H:%M:%S' >> $AULOG
+echo -n 'Ended   ' >> $AULOG ; date +'%F %H:%M:%S' >> $AULOG
 echo '' >> $AULOG
 echo 'The following failed to compile:' >> $AULOG
 cd $BUILD
