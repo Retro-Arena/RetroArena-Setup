@@ -74,18 +74,18 @@ function configure_yabause() {
 function gui_yabause() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_yabause" ]] && options+=(A "Disable yabause AutoUpdate") || options+=(A "Enable yabause AutoUpdate")
+            [[ -e "$home/.config/auc_yabause" ]] && options+=(A "Disable yabause AutoUpdate") || options+=(A "Enable yabause AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         case "$choice" in
             A)
                 if [[ -e "$home/.config/au_service" ]]; then
-                    if [[ -e "$home/.config/au_yabause" ]]; then
-                        rm -rf "$home/.config/au_yabause"
+                    if [[ -e "$home/.config/auc_yabause" ]]; then
+                        rm -rf "$home/.config/auc_yabause"
                         printMsgs "dialog" "Disabled yabause AutoUpdate"
                     else
-                        touch "$home/.config/au_yabause"
+                        touch "$home/.config/auc_yabause"
                         printMsgs "dialog" "Enabled yabause AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
                     fi
                 else

@@ -67,18 +67,18 @@ function configure_lr-yabasanshiro() {
 function gui_lr-yabasanshiro() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-yabasanshiro" ]] && options+=(A "Disable lr-yabasanshiro AutoUpdate") || options+=(A "Enable lr-yabasanshiro AutoUpdate")
+            [[ -e "$home/.config/auc_lr-yabasanshiro" ]] && options+=(A "Disable lr-yabasanshiro AutoUpdate") || options+=(A "Enable lr-yabasanshiro AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         case "$choice" in
             A)
                 if [[ -e "$home/.config/au_service" ]]; then
-                    if [[ -e "$home/.config/au_lr-yabasanshiro" ]]; then
-                        rm -rf "$home/.config/au_lr-yabasanshiro"
+                    if [[ -e "$home/.config/auc_lr-yabasanshiro" ]]; then
+                        rm -rf "$home/.config/auc_lr-yabasanshiro"
                         printMsgs "dialog" "Disabled lr-yabasanshiro AutoUpdate"
                     else
-                        touch "$home/.config/au_lr-yabasanshiro"
+                        touch "$home/.config/auc_lr-yabasanshiro"
                         printMsgs "dialog" "Enabled lr-yabasanshiro AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
                     fi
                 else

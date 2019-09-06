@@ -69,18 +69,18 @@ function configure_lr-pcsx-rearmed() {
 function gui_lr-pcsx-rearmed() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-pcsx-rearmed" ]] && options+=(A "Disable lr-pcsx-rearmed AutoUpdate") || options+=(A "Enable lr-pcsx-rearmed AutoUpdate")
+            [[ -e "$home/.config/auc_lr-pcsx-rearmed" ]] && options+=(A "Disable lr-pcsx-rearmed AutoUpdate") || options+=(A "Enable lr-pcsx-rearmed AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         case "$choice" in
             A)
                 if [[ -e "$home/.config/au_service" ]]; then
-                    if [[ -e "$home/.config/au_lr-pcsx-rearmed" ]]; then
-                        rm -rf "$home/.config/au_lr-pcsx-rearmed"
+                    if [[ -e "$home/.config/auc_lr-pcsx-rearmed" ]]; then
+                        rm -rf "$home/.config/auc_lr-pcsx-rearmed"
                         printMsgs "dialog" "Disabled lr-pcsx-rearmed AutoUpdate"
                     else
-                        touch "$home/.config/au_lr-pcsx-rearmed"
+                        touch "$home/.config/auc_lr-pcsx-rearmed"
                         printMsgs "dialog" "Enabled lr-pcsx-rearmed AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
                     fi
                 else

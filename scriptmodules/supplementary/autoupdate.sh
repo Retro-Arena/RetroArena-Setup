@@ -30,6 +30,7 @@ function gui_autoupdate() {
                         sudo systemctl stop cron.service
                         crontab -u pigaming -r
                         rm -rf $home/.config/au_*
+                        rm -rf $home/.config/auc_*
                         printMsgs "dialog" "Disabled AutoUpdate Service\n\nAutoUpdate is now also disabled for all cores."
                     else
                         sudo systemctl start cron.service

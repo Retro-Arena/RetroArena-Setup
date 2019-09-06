@@ -62,18 +62,18 @@ function configure_lr-nestopia() {
 function gui_lr-nestopia() {
     while true; do
         local options=()
-            [[ -e "$home/.config/au_lr-nestopia" ]] && options+=(A "Disable lr-nestopia AutoUpdate") || options+=(A "Enable lr-nestopia AutoUpdate")
+            [[ -e "$home/.config/auc_lr-nestopia" ]] && options+=(A "Disable lr-nestopia AutoUpdate") || options+=(A "Enable lr-nestopia AutoUpdate")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         case "$choice" in
             A)
                 if [[ -e "$home/.config/au_service" ]]; then
-                    if [[ -e "$home/.config/au_lr-nestopia" ]]; then
-                        rm -rf "$home/.config/au_lr-nestopia"
+                    if [[ -e "$home/.config/auc_lr-nestopia" ]]; then
+                        rm -rf "$home/.config/auc_lr-nestopia"
                         printMsgs "dialog" "Disabled lr-nestopia AutoUpdate"
                     else
-                        touch "$home/.config/au_lr-nestopia"
+                        touch "$home/.config/auc_lr-nestopia"
                         printMsgs "dialog" "Enabled lr-nestopia AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
                     fi
                 else
