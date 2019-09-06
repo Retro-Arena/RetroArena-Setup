@@ -15,7 +15,7 @@ echo '' >> $AULOG
 echo -n 'Started ' ; date +'%F %H:%M:%S' >> $AULOG
 echo '' >> $AULOG
 echo 'The following are scheduled:' >> $AULOG
-ls au_* | sed 's/^...//' >> $AULOG
+ls {au_lr-*,au_ppsspp,au_yabause} | sed 's/^...//' >> $AULOG
 
 # empty build directories
 cd $BUILD
@@ -26,7 +26,7 @@ cd /home/pigaming/RetroArena-Setup
 git pull https://github.com/Retro-Arena/RetroArena-Setup.git
 
 # install from source if enabled
-for core in $(ls au_* | sed 's/^...//')
+for core in $(cd $CONFG && ls {au_lr-*,au_ppsspp,au_yabause} | sed 's/^...//' && cd --)
 do
     if [ -f $CONFG/au_$core ]; then
         sudo __nodialog=1 ./retroarena_packages.sh $core
