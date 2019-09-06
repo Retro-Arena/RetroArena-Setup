@@ -4,6 +4,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 CONFG=/home/pigaming/.config
 AULOG=/home/pigaming/.config/au_cores.log
 BUILD=/home/pigaming/RetroArena-Setup/tmp/build
+SCRPT=/home/pigaming/RetroArena-Setup
 
 # start log
 cd $CONFG
@@ -22,15 +23,15 @@ cd $BUILD
 rm -R -- */
 
 # ensure scripts are up to date
-cd /home/pigaming/RetroArena-Setup
+cd $SCRPT
 git pull https://github.com/Retro-Arena/RetroArena-Setup.git
 
 # install from source if enabled
-for core in $(cd $CONFG && ls auc_* | sed 's/^....//' && cd --)
+cd $CONFG
+for core in $(ls auc_* | sed 's/^....//')
 do
-    if [ -f $CONFG/au_$core ]; then
-        sudo __nodialog=1 ./retroarena_packages.sh $core
-    fi
+    cd $SCRPT
+    sudo __nodialog=1 ./retroarena_packages.sh $core
 done
 
 # end log and empty build directories
