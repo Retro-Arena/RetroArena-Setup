@@ -52,7 +52,7 @@ function install_bin_lr-fbneo() {
 
 function configure_lr-fbneo() {
     local dir
-    for dir in arcade fbneo neogeo; do
+    for dir in arcade neogeo neocdz fbneo pcengine supergrafx tg16 gamegear mastersystem megadrive sg-1000 coleco msx zxspectrum; do
         mkRomDir "$dir"
         ensureSystemretroconfig "$dir"
     done
@@ -76,8 +76,8 @@ function configure_lr-fbneo() {
     addEmulator 1 "$md_id" "fbneo" "$md_inst/fbneo_libretro.so"
     addEmulator 0 "$md_id-neocd" "fbneo" "$md_inst/fbneo_libretro.so --subsystem neocd"
     addEmulator 0 "$md_id-pce" "pcengine" "$md_inst/fbneo_libretro.so --subsystem pce"
-    addEmulator 0 "$md_id-sgx" "pcengine" "$md_inst/fbneo_libretro.so --subsystem sgx"
-    addEmulator 0 "$md_id-tg" "pcengine" "$md_inst/fbneo_libretro.so --subsystem tg"
+    addEmulator 0 "$md_id-sgx" "supergrafx" "$md_inst/fbneo_libretro.so --subsystem sgx"
+    addEmulator 0 "$md_id-tg" "tg16" "$md_inst/fbneo_libretro.so --subsystem tg"
     addEmulator 0 "$md_id-gg" "gamegear" "$md_inst/fbneo_libretro.so --subsystem gg"
     addEmulator 0 "$md_id-sms" "mastersystem" "$md_inst/fbneo_libretro.so --subsystem sms"
     addEmulator 0 "$md_id-md" "megadrive" "$md_inst/fbneo_libretro.so --subsystem md"
@@ -91,6 +91,8 @@ function configure_lr-fbneo() {
     addSystem "neocdz"
     addSystem "fbneo"
     addSystem "pcengine"
+    addSystem "supergrafx"
+    addSystem "tg16"
     addSystem "gamegear"
     addSystem "mastersystem"
     addSystem "megadrive"
