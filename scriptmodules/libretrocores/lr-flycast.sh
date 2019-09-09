@@ -86,6 +86,7 @@ function configure_lr-flycast() {
     setRetroArchCoreOption "${dir_name}reicast_broadcast" "NTSC"
     setRetroArchCoreOption "${dir_name}reicast_cable_type" "TV (RGB)"
     setRetroArchCoreOption "${dir_name}reicast_cpu_mode" "dynamic_recompiler"
+    setRetroArchCoreOption "${dir_name}reicast_delay_frame_swapping" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_digital_triggers" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_div_matching" "auto"
     setRetroArchCoreOption "${dir_name}reicast_enable_dsp" "disabled"
