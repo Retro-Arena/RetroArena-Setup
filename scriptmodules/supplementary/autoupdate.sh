@@ -33,10 +33,11 @@ function gui_autoupdate() {
                         rm -rf $home/.config/auc_*
                         printMsgs "dialog" "Disabled AutoUpdate Service\n\nAutoUpdate is now also disabled for all cores."
                     else
+                        sudo timedatectl set-timezone UTC
                         sudo systemctl start cron.service
                         crontab -u pigaming "$scriptdir/scriptmodules/supplementary/autoupdate/autoupdate"
                         touch "$home/.config/au_service"
-                        printMsgs "dialog" "Enabled AutoUpdate Service\n\nAutoUpdate per core is available in Settings. Only certain cores can be auto updated."
+                        printMsgs "dialog" "Enabled AutoUpdate Service\n\nAutoUpdate must be enabled per core and is available in Settings. Only certain cores can be auto updated.\n\nThe system timezone is now set to Coordinated Universal Time (UTC)."
                     fi
                     ;;
                 2)
