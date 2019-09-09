@@ -46,7 +46,7 @@ function configure_lr-gambatte() {
     setRetroArchCoreOption "gambatte_gb_colorization" "custom"
     
     local system
-    for system in gb gbc sgb; do
+    for system in gb gbc; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
         addEmulator 1 "$md_id" "$system" "$md_inst/gambatte_libretro.so"

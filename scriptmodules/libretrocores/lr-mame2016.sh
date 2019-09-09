@@ -41,7 +41,7 @@ function install_bin_lr-mame2016() {
 
 function configure_lr-mame2016() {
     local system
-    for system in arcade mame-libretro; do
+    for system in arcade mame-libretro daphne; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
         addEmulator 0 "$md_id" "$system" "$md_inst/mamearcade2016_libretro.so"

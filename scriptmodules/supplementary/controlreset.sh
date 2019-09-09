@@ -24,6 +24,7 @@ function gui_controlreset() {
             1)
                 rm -rf /opt/retroarena/configs/all/retroarch-joypads/*
                 rm -rf $home/.emulationstation/es_input.cfg
+                rm -rf $home/.yabasanshiro/keymapv2.json
                 cp $scriptdir/scriptmodules/supplementary/emulationstation/es_input_reset.cfg $home/.emulationstation/es_input.cfg
                 dos2unix $home/.emulationstation/es_input.cfg
                 chmod a+x $home/.emulationstation/es_input.cfg

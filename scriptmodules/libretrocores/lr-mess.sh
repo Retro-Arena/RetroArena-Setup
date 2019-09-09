@@ -49,7 +49,7 @@ function configure_lr-mess() {
     [[ -z "$module" ]] && module="mess_libretro.so"
 
     local system
-    for system in arcadia cdimono1 crvision coleco gb neocdz nes scv; do
+    for system in arcadia cdimono1 crvision coleco gb scv; do
         mkRomDir "$system"
         ensureSystemretroconfig "$system"
         addEmulator 1 "$md_id" "$system" "$md_inst/$module"
