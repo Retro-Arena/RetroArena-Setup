@@ -1,0 +1,58 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+CONFG=/home/pigaming/.config
+AULOG=/home/pigaming/.config/au_cores.log
+BUILD=/home/pigaming/RetroArena-Setup/tmp/build
+SCRPT=/home/pigaming/RetroArena-Setup
+
+# start log
+cd $CONFG
+rm -rf $AULOG
+echo '===========================' >> $AULOG
+echo '+  AutoUpdate Log: Cores  +' >> $AULOG
+echo '===========================' >> $AULOG
+echo '' >> $AULOG
+echo '--------------------------- ' >> $AULOG
+echo -n 'Started ' >> $AULOG ; date +'%F %H:%M:%S' >> $AULOG
+echo '--------------------------- ' >> $AULOG
+echo '' >> $AULOG
+echo 'The following are scheduled:' >> $AULOG
+ls auc_* | sed 's/^....//' >> $AULOG
+
+# empty build directories
+cd $BUILD
+rm -R -- */
+
+# ensure scripts are up to date
+cd $SCRPT
+git pull https://github.com/Retro-Arena/RetroArena-Setup.git
+
+# install from source if enabled
+cd $CONFG
+for core in $(ls auc_* | sed 's/^....//')
+do
+    cd $SCRPT
+    sudo __nodialog=1 ./retroarena_packages.sh $core
+done
+
+# end log
+echo '' >> $AULOG
+echo '--------------------------- ' >> $AULOG
+echo -n 'Ended   ' >> $AULOG ; date +'%F %H:%M:%S' >> $AULOG
+echo '--------------------------- ' >> $AULOG
+echo '' >> $AULOG
+echo '--------------------------- ' >> $AULOG
+echo 'Results                     ' >> $AULOG
+echo '--------------------------- ' >> $AULOG
+
+if ls -1qA $BUILD | grep -q .; then
+    echo 'The following failed' >> $AULOG
+    cd $BUILD
+    ls >> $AULOG
+else
+    echo 'Completed Successfully' >> $AULOG
+fi
+
+# empty build directories
+rm -R -- */

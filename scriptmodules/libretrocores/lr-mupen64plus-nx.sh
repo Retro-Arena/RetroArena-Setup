@@ -103,3 +103,28 @@ function configure_lr-mupen64plus-nx() {
     setRetroArchCoreOption "${dir_name}mupen64plus-u-cbutton" "C4"
     setRetroArchCoreOption "${dir_name}mupen64plus-virefresh" "Auto"
 }
+
+function gui_lr-mupen64plus-nx() {
+    while true; do
+        local options=()
+            [[ -e "$home/.config/auc_lr-mupen64plus-nx" ]] && options+=(A "Disable lr-mupen64plus-nx AutoUpdate") || options+=(A "Enable lr-mupen64plus-nx AutoUpdate")
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            A)
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/auc_lr-mupen64plus-nx" ]]; then
+                        rm -rf "$home/.config/auc_lr-mupen64plus-nx"
+                        printMsgs "dialog" "Disabled lr-mupen64plus-nx AutoUpdate"
+                    else
+                        touch "$home/.config/auc_lr-mupen64plus-nx"
+                        printMsgs "dialog" "Enabled lr-mupen64plus-nx AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
+                    fi
+                else
+                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
+                fi
+                ;;
+        esac
+    done
+}

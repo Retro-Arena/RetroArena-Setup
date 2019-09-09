@@ -45,3 +45,28 @@ function configure_lr-quicknes() {
     addEmulator "$def" "$md_id" "nes" "$md_inst/quicknes_libretro.so"
     addSystem "nes"
 }
+
+function gui_lr-quicknes() {
+    while true; do
+        local options=()
+            [[ -e "$home/.config/auc_lr-quicknes" ]] && options+=(A "Disable lr-quicknes AutoUpdate") || options+=(A "Enable lr-quicknes AutoUpdate")
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            A)
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/auc_lr-quicknes" ]]; then
+                        rm -rf "$home/.config/auc_lr-quicknes"
+                        printMsgs "dialog" "Disabled lr-quicknes AutoUpdate"
+                    else
+                        touch "$home/.config/auc_lr-quicknes"
+                        printMsgs "dialog" "Enabled lr-quicknes AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
+                    fi
+                else
+                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
+                fi
+                ;;
+        esac
+    done
+}

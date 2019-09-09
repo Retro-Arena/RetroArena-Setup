@@ -1,7 +1,7 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-if [ -f /home/pigaming/.config/retrohub ]; then
+if [ -f /home/pigaming/.config/au_retrohub ]; then
     cd /home/pigaming/RetroArena/retrohub
     sudo git pull https://github.com/Retro-Arena/retrohub.git
     sudo chown -R pigaming:pigaming /home/pigaming/RetroArena/retrohub

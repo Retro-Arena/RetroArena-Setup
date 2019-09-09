@@ -51,3 +51,28 @@ function configure_lr-mgba() {
         addSystem "$system"
     done
 }
+
+function gui_lr-mgba() {
+    while true; do
+        local options=()
+            [[ -e "$home/.config/auc_lr-mgba" ]] && options+=(A "Disable lr-mgba AutoUpdate") || options+=(A "Enable lr-mgba AutoUpdate")
+        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
+        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
+        [[ -z "$choice" ]] && break
+        case "$choice" in
+            A)
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/auc_lr-mgba" ]]; then
+                        rm -rf "$home/.config/auc_lr-mgba"
+                        printMsgs "dialog" "Disabled lr-mgba AutoUpdate"
+                    else
+                        touch "$home/.config/auc_lr-mgba"
+                        printMsgs "dialog" "Enabled lr-mgba AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
+                    fi
+                else
+                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
+                fi
+                ;;
+        esac
+    done
+}

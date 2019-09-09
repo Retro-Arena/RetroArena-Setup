@@ -204,13 +204,26 @@ function cheats_ppsspp() {
 
 function gui_ppsspp() {
     while true; do
-        local options=(
-            1 "Update 60fps performance cheats"
-        )
+        local options=()
+            [[ -e "$home/.config/auc_ppsspp" ]] && options+=(A "Disable ppsspp AutoUpdate") || options+=(A "Enable ppsspp AutoUpdate")
+            options+=(1 "Update 60fps performance cheats")
         local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         [[ -z "$choice" ]] && break
         case "$choice" in
+            A)
+                if [[ -e "$home/.config/au_service" ]]; then
+                    if [[ -e "$home/.config/auc_ppsspp" ]]; then
+                        rm -rf "$home/.config/auc_ppsspp"
+                        printMsgs "dialog" "Disabled ppsspp AutoUpdate"
+                    else
+                        touch "$home/.config/auc_ppsspp"
+                        printMsgs "dialog" "Enabled ppsspp AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
+                    fi
+                else
+                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
+                fi
+                ;;
             1)
                 cheats_ppsspp
                 printMsgs "dialog" "60fps cheats have been updated for PPSSPP. Enable in the Home menu, then restart the game with cheats activated."
