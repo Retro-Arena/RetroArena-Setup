@@ -86,6 +86,7 @@ function configure_lr-flycast() {
     setRetroArchCoreOption "${dir_name}reicast_broadcast" "NTSC"
     setRetroArchCoreOption "${dir_name}reicast_cable_type" "TV (RGB)"
     setRetroArchCoreOption "${dir_name}reicast_cpu_mode" "dynamic_recompiler"
+    setRetroArchCoreOption "${dir_name}reicast_delay_frame_swapping" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_digital_triggers" "disabled"
     setRetroArchCoreOption "${dir_name}reicast_div_matching" "auto"
     setRetroArchCoreOption "${dir_name}reicast_enable_dsp" "disabled"
@@ -134,6 +135,6 @@ function configure_lr-flycast() {
     setRetroArchCoreOption "${dir_name}reicast_widescreen_hack" "disabled"
     
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
-        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"
+        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "960x720"/g' "$md_conf_root/all/retroarch-core-options.cfg"
     fi
 }
