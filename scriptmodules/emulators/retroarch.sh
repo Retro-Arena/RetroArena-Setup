@@ -23,7 +23,7 @@ function depends_retroarch() {
 
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.8.3
         applyPatch "$md_data/01_hotkey_hack.diff"
         applyPatch "$md_data/02_disable_search.diff"
         applyPatch "$md_data/03_disable_udev_sort.diff"
@@ -65,11 +65,7 @@ function update_assets_retroarch() {
     local dir="$configdir/all/retroarch/assets"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
-    else
-        gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
-    fi
+    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
     chown -R $user:$user "$dir"
 }
 
