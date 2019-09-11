@@ -8,7 +8,7 @@ SCRPT=/home/pigaming/RetroArena-Setup
 
 # start log
 cd $CONFG
-rm -rf $AULOG
+sudo rm -rf $AULOG
 echo '===========================' >> $AULOG
 echo '+  AutoUpdate Log: Cores  +' >> $AULOG
 echo '===========================' >> $AULOG
@@ -22,7 +22,7 @@ ls auc_* | sed 's/^....//' >> $AULOG
 
 # empty build directories
 cd $BUILD
-rm -R -- */
+sudo rm -R -- */
 
 # ensure scripts are up to date
 cd $SCRPT
@@ -55,4 +55,4 @@ else
 fi
 
 # empty build directories
-rm -R -- */
+sudo rm -R -- */
