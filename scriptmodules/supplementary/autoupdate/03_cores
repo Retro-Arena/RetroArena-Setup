@@ -55,4 +55,5 @@ else
 fi
 
 # empty build directories
+cd $BUILD
 sudo rm -R -- */
