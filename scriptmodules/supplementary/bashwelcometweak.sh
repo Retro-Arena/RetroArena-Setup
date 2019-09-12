@@ -136,7 +136,7 @@ alias log='sudo nano /dev/shm/runcommand.log'
 alias openbeta='rm -rf /home/pigaming/RetroArena-Setup/scriptmodules/admin/setup.sh && wget -P /home/pigaming/RetroArena-Setup/scriptmodules/admin https://github.com/Retro-Arena/base-installer/raw/master/setup.sh'
 alias rclocal='sudo nano /etc/rc.local'
 alias reboot='sudo reboot -h now'
-alias setup='sudo ~/RetroArena-Setup/retroarena_setup.sh'
+alias setup='sudo ~/RetroArena-Setup/retroarena_setup.sh && cd ~'
 alias shutdown='sudo shutdown -h now'
 alias upgrade='sudo apt-get update && sudo apt-get upgrade -y'
 # RETROARENA PROFILE END
