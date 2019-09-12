@@ -57,7 +57,7 @@ function install_retroarch() {
 }
 
 function install_bin_retroarch() {   
-    downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/retroarch.tar.gz" "$md_inst" 1
 }
 
 function update_assets_retroarch() {
