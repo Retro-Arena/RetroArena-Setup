@@ -987,7 +987,8 @@ function downloadAndExtract() {
 
     if [[ "$is_tar" -eq 1 ]]; then
         mkdir -p "$dest"
-        cmd+=(-C "$dest" "${opts[@]}")
+        cmd+=(-C "$dest")
+        [[ -n "$opts" ]] && cmd+=(--strip-components "$opts")
 
         runCmd "${cmd[@]}" < <(wget -q -O- "$url")
         ret=$?
