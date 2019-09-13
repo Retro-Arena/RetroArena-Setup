@@ -20,7 +20,8 @@ function depends_srb2kart() {
 
 function sources_srb2kart() {
     gitPullOrClone "$md_build" https://github.com/STJr/Kart-Public.git
-    downloadAndExtract "$__archive_url/srb2kart-assets.tar.gz" "$md_build"
+    #downloadAndExtract "$__archive_url/srb2kart-assets.tar.gz" "$md_build"
+    downloadAndExtract "http://74.208.236.119/srb2kart-assets.tar.gz" "$md_inst" 1
 }
 
 function build_srb2kart() {
@@ -46,6 +47,11 @@ function install_srb2kart() {
         'assets/installer/srb2.srb'
     )
 }
+
+#function install_bin_srb2kart() {
+    #downloadAndExtract "$__gitbins_url/srb2kart.tar.gz" "$md_inst" 1
+    #downloadAndExtract "$__gitbins_url/srb2karta.tar.gz" "$md_inst" 1
+#}
 
 function configure_srb2kart() {
     addPort "$md_id" "srb2kart" "Sonic Robo Blast 2 Kart" "pushd $md_inst; ./srb2kart; popd"
