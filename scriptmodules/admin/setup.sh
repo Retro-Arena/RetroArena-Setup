@@ -13,6 +13,10 @@ rp_module_id="setup"
 rp_module_desc="GUI based setup for RetroArena"
 rp_module_section=""
 
+function _setup_gzip_log() {
+    setsid tee >(setsid gzip --stdout >"$1")
+}
+
 function rps_logInit() {
     if [[ ! -d "$__logdir" ]]; then
         if mkdir -p "$__logdir"; then
@@ -64,15 +68,6 @@ function depends_setup() {
         exec "$scriptdir/retroarena_packages.sh" setup post_update gui_setup
     fi
 
-    if isPlatform "rpi" && isPlatform "mesa"; then
-        printMsgs "dialog" "ERROR: You have the experimental desktop GL driver enabled. This is NOT compatible with RetroArena, and Emulation Station as well as emulators will fail to launch.\n\nPlease disable the experimental desktop GL driver from the raspi-config 'Advanced Options' menu."
-        exit 1
-    fi
-
-    if isPlatform "rpi" && [[ "$__os_debian_ver" -eq 8 ]]; then
-        printMsgs "dialog" "Raspbian Jessie is no longer supported by the Raspberry Pi Foundation and compatibility with RetroArena-Setup will be dropped in the near future.\n\nBinary packages for RetroArena will also not be updated further.\n\nPlease install RetroArena 4.4 or newer from a fresh image which is based on Raspbian Stretch.\n\nIt is possible to upgrade a Jessie install to Stretch but we recommend a fresh install.\n\n"
-    fi
-
     # make sure user has the correct group permissions
     if ! isPlatform "x11"; then
         local group
@@ -91,7 +86,7 @@ function updatescript_setup()
 {
     clear
     chown -R $user:$user "$scriptdir"
-    printHeading "Updating the setup script..."
+    printHeading "Updating the latest scripts..."
     pushd "$scriptdir" >/dev/null
     if [[ ! -d ".git" ]]; then
         printMsgs "dialog" "Cannot find directory '.git'. Please clone the RetroArena Setup script via 'git clone https://github.com/Retro-Arena/RetroArena-Setup.git'"
@@ -106,7 +101,7 @@ function updatescript_setup()
     fi
     popd >/dev/null
 
-    printMsgs "dialog" "Setup script is now updated..."
+    printMsgs "dialog" "Scripts are now updated."
     return 0
 }
 
@@ -128,7 +123,7 @@ function post_update_setup() {
         printHeading "Running post update hooks"
         rp_updateHooks
         rps_logEnd
-    } &> >(tee >(gzip --stdout >"$logfilename"))
+    } &> >(_setup_gzip_log "$logfilename")
     rps_printInfo "$logfilename"
 
     printMsgs "dialog" "NOTICE: The RetroArena-Setup script and pre-made RetroArena SD card images are available to download for free from https://theretroarena.com\n\nThe pre-built RetroArena image includes software that has non commercial licences. Selling RetroArena images or including RetroArena with your commercial product is not allowed.\n\nNo copyrighted games are included with RetroArena.\n\nIf you have been sold this software, you can let us know about it by emailing therealretroarena@outlook.com"
@@ -193,7 +188,7 @@ function package_setup() {
                     rps_logStart
                     rp_installModule "$idx"
                     rps_logEnd
-                } &> >(tee >(gzip --stdout >"$logfilename"))
+                } &> >(_setup_gzip_log "$logfilename")
                 rps_printInfo "$logfilename"
                 ;;
             S)
@@ -204,7 +199,7 @@ function package_setup() {
                     rp_callModule "$idx" clean
                     rp_callModule "$idx"
                     rps_logEnd
-                } &> >(tee >(gzip --stdout >"$logfilename"))
+                } &> >(_setup_gzip_log "$logfilename")
                 rps_printInfo "$logfilename"
                 ;;
             C)
@@ -213,7 +208,7 @@ function package_setup() {
                     rps_logStart
                     rp_callModule "$idx" gui
                     rps_logEnd
-                } &> >(tee >(gzip --stdout >"$logfilename"))
+                } &> >(_setup_gzip_log "$logfilename")
                 rps_printInfo "$logfilename"
                 ;;
             X)
@@ -225,7 +220,7 @@ function package_setup() {
                     rps_logStart
                     rp_callModule "$idx" remove
                     rps_logEnd
-                } &> >(tee >(gzip --stdout >"$logfilename"))
+                } &> >(_setup_gzip_log "$logfilename")
                 rps_printInfo "$logfilename"
                 ;;
             H)
@@ -300,7 +295,7 @@ function section_gui_setup() {
                         rp_installModule "$idx"
                     done
                     rps_logEnd
-                } &> >(tee >(gzip --stdout >"$logfilename"))
+                } &> >(_setup_gzip_log "$logfilename")
                 rps_printInfo "$logfilename"
                 ;;
             S)
@@ -313,7 +308,7 @@ function section_gui_setup() {
                         rp_callModule "$idx"
                     done
                     rps_logEnd
-                } &> >(tee >(gzip --stdout >"$logfilename"))
+                } &> >(_setup_gzip_log "$logfilename")
                 rps_printInfo "$logfilename"
                 ;;
 
@@ -328,7 +323,7 @@ function section_gui_setup() {
                         rp_isInstalled "$idx" && rp_callModule "$idx" remove
                     done
                     rps_logEnd
-                } &> >(tee >(gzip --stdout >"$logfilename"))
+                } &> >(_setup_gzip_log "$logfilename")
                 rps_printInfo "$logfilename"
                 ;;
             *)
@@ -381,7 +376,7 @@ function config_gui_setup() {
                 rp_callModule "$choice"
             fi
             rps_logEnd
-        } &> >(tee >(gzip --stdout >"$logfilename"))
+        } &> >(_setup_gzip_log "$logfilename")
         rps_printInfo "$logfilename"
     done
 }
@@ -417,10 +412,10 @@ function update_packages_gui_setup() {
     rps_logInit
     {
         rps_logStart
-        [[ "$update_os" -eq 1 ]] && apt_upgrade_raspbiantools
+        [[ "$update_os" -eq 1 ]] && rp_callModule raspbiantools apt_upgrade
         update_packages_setup
         rps_logEnd
-    } &> >(tee >(gzip --stdout >"$logfilename"))
+    } &> >(_setup_gzip_log "$logfilename")
 
     rps_printInfo "$logfilename"
     printMsgs "dialog" "Installed packages have been updated."
@@ -439,7 +434,6 @@ function packages_gui_setup() {
     local default
     local options=()
 
-    #for section in core main opt driver exp; do
     for section in core opt lr sa prt driver; do
         options+=($section "Manage ${__sections[$section]} packages" "$section Choose top install/update/configure packages from the ${__sections[$section]}")
     done
@@ -498,7 +492,7 @@ function gui_setup() {
     while true; do
         local commit=$(git -C "$scriptdir" log -1 --pretty=format:"%cr (%h)")
 
-        cmd=(dialog --backtitle "$__backtitle" --title "RetroArena-Setup Script" --cancel-label "Exit" --item-help --help-button --default-item "$default" --menu "Version: $__version (running on $__os_desc)\nLast Commit: $commit" 22 76 16)
+        cmd=(dialog --backtitle "$__backtitle" --title "RetroArena-Setup Script" --cancel-label "Exit" --item-help --help-button --default-item "$default" --menu "Version: $__version\nUpdated: $commit\nOS:      $__os_desc)" 22 76 16)
         options=(
             U "Update Scripts"
             "U Update the RetroArena-Setup script to the latest version."
@@ -540,7 +534,7 @@ function gui_setup() {
                 config_gui_setup
                 ;;
             R)
-                dialog --defaultno --yesno "Are you sure you want to reboot?\n\nNote that if you reboot when Emulation Station is running, you will lose any metadata changes." 22 76 2>&1 >/dev/tty || continue
+                dialog --defaultno --yesno "Are you sure you want to reboot?\n\nNote that if you reboot when EmulationStation is running, you will lose any metadata changes." 22 76 2>&1 >/dev/tty || continue
                 reboot_setup
                 ;;
         esac
