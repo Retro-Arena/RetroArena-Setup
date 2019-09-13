@@ -40,6 +40,7 @@ function setup_env() {
 
     __archive_url="https://files.retropie.org.uk/archives"
     
+    # TheRA binaries
     if isPlatform "odroid-xu"; then
         __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/odroid-xu4/"
     elif isPlatform "odroid-n2"; then
@@ -89,9 +90,10 @@ function get_os_version() {
 
             # Debian unstable is not officially supported though
             if [[ "$__os_release" == "unstable" ]]; then
-                __os_release=10
+                __os_debian_ver=11
             fi
 
+            # we still allow Raspbian 8 (jessie) to work (We show an popup in the setup module)
             if compareVersions "$__os_debian_ver" lt 8; then
                 error="You need Raspbian/Debian Stretch or newer"
             fi
@@ -137,17 +139,31 @@ function get_os_version() {
                     error="You need Linux Mint 18 or newer"
                 elif compareVersions "$__os_release" lt 19; then
                     __os_ubuntu_ver="16.04"
-                    __os_debian_ver="8"
+                    __os_debian_ver="9"
                 else
                     __os_ubuntu_ver="18.04"
-                    __os_debian_ver="9"
+                    __os_debian_ver="10"
                 fi
             fi
             ;;
-        Ubuntu)
+        Ubuntu|neon)
             if compareVersions "$__os_release" lt 16.04; then
                 error="You need Ubuntu 16.04 or newer"
-            elif compareVersions "$__os_release" lt 16.10; then
+            # although ubuntu 16.10 reports as being based on stretch it is before some
+            # packages were changed - we map to version 8 to avoid issues (eg libpng-dev name)
+            elif compareVersions "$__os_release" eq 16.10; then
+                __os_debian_ver="8"
+            elif compareVersions "$__os_release" lt 18.04; then
+                __os_debian_ver="9"
+            else
+                __os_debian_ver="10"
+            fi
+            __os_ubuntu_ver="$__os_release"
+            ;;
+        Zorin)
+            if compareVersions "$__os_release" lt 14; then
+                error="You need Zorin OS 14 or newer"
+            elif compareVersions "$__os_release" lt 14; then
                 __os_debian_ver="8"
             else
                 __os_debian_ver="9"
@@ -168,15 +184,7 @@ function get_os_version() {
                 __os_debian_ver="8"
             else
                 __os_ubuntu_ver="18.04"
-                __os_debian_ver="9"
-            fi
-            ;;
-        neon)
-            __os_ubuntu_ver="$__os_release"
-            if compareVersions "$__os_release" lt 16.10; then
-                __os_debian_ver="8"
-            else
-                __os_debian_ver="9"
+                __os_debian_ver="10"
             fi
             ;;
         *)
@@ -194,7 +202,7 @@ function get_os_version() {
 }
 
 function get_retroarena_depends() {
-    local depends=(git dialog wget gcc g++ build-essential unzip xmlstarlet python-pyudev ca-certificates dos2unix)
+    local depends=(git dialog wget gcc g++ build-essential unzip xmlstarlet python-pyudev ca-certificates)
 
     if ! getDepends "${depends[@]}"; then
         fatalError "Unable to install packages required by $0 - ${md_ret_errors[@]}"
@@ -228,21 +236,21 @@ function get_platform() {
     local architecture="$(uname --machine)"
     if [[ -z "$__platform" ]]; then
         case "$(sed -n '/^Hardware/s/^.*: \(.*\)/\1/p' < /proc/cpuinfo)" in
-            "Hardkernel ODROID-N2")
-                __platform="odroid-n2"
+            ODROIDC)
+                __platform="odroid-c1"
+                ;;
+            ODROID-C2)
+                __platform="odroid-c2"
                 ;;
             ODROID-XU[34])
                 __platform="odroid-xu"
                 ;;
+            "Hardkernel ODROID-N2")
+                __platform="odroid-n2"
+                ;;
             *)
                 if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="rockpro64"
-                else
-                    case $architecture in
-                        i686|x86_64|amd64)
-                            __platform="x86"
-                            ;;
-                    esac
                 fi
                 ;;
         esac
@@ -256,12 +264,25 @@ function get_platform() {
     [[ -z "$__default_cxxflags" ]] && __default_cxxflags="$__default_cflags"
 }
 
-function platform_odroid-n2() {
-    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53"
-    __platform_flags="aarch64 mali gles"
+function platform_odroid-c1() {
+    __default_cflags="-O2 -mcpu=cortex-a5 -mfpu=neon-vfpv4 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
+    __default_asflags=""
+    __default_makeflags="-j2"
+    __platform_flags="arm armv7 neon mali gles"
+    __qemu_cpu=cortex-a9
+}
+
+function platform_odroid-c2() {
+    if [[ "$(getconf LONG_BIT)" -eq 32 ]]; then
+        __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a53 -mfpu=neon-fp-armv8"
+        __platform_flags="arm armv8 neon mali gles"
+    else
+        __default_cflags="-O2 -march=native"
+        __platform_flags="aarch64 mali gles"
+    fi
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     __default_asflags=""
-    __default_makeflags="-j4"
+    __default_makeflags="-j2"
 }
 
 function platform_odroid-xu() {
@@ -274,6 +295,14 @@ function platform_odroid-xu() {
     __has_binaries=0
 }
 
+function platform_odroid-n2() {
+    __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a73 -mtune=cortex-a73.cortex-a53"
+    __platform_flags="aarch64 mali gles"
+    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
+    __default_asflags=""
+    __default_makeflags="-j4"
+}
+
 function platform_rockpro64() {
     __default_cflags="-O2 -march=armv8-a+crc -mcpu=cortex-a72 -mtune=cortex-a72.cortex-a53 -mfpu=neon-fp-armv8"
     __platform_flags="arm armv8 neon kms gles"
@@ -282,11 +311,4 @@ function platform_rockpro64() {
     __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
     __default_asflags=""
     __default_makeflags="-j5"
-}
-
-function platform_generic-x11() {
-    __default_cflags="-O2"
-    __default_asflags=""
-    __default_makeflags="-j$(nproc)"
-    __platform_flags="x11 gl"
 }
