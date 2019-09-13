@@ -20,7 +20,7 @@ function depends_cgenius() {
 }
 
 function sources_cgenius() {
-    gitPullOrClone "$md_build" https://gitlab.com/Dringgstein/Commander-Genius.git stable
+    gitPullOrClone "$md_build" https://gitlab.com/Dringgstein/Commander-Genius.git v2.3.6
 
     # use -O2 on older GCC due to segmentation fault when compiling with -O3
     if compareVersions $__gcc_version lt 6.0.0; then
@@ -47,7 +47,9 @@ function install_bin_cgenius() {
 
 function configure_cgenius() {
     addPort "$md_id" "cgenius" "Commander Genius" "pushd $md_inst; ./CGeniusExe; popd"
+
     mkRomDir "ports/$md_id"
+
     moveConfigDir "$home/.CommanderGenius"  "$md_conf_root/$md_id"
     moveConfigDir "$md_conf_root/$md_id/games"  "$romdir/ports/$md_id"
 }
