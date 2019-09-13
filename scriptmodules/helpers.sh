@@ -958,8 +958,7 @@ function applyPatch() {
 function downloadAndExtract() {
     local url="$1"
     local dest="$2"
-    shift 2
-    local opts=("$@")
+    local opts="$3"
 
     local ext="${url##*.}"
     local cmd=(tar -xv)
@@ -981,7 +980,7 @@ function downloadAndExtract() {
             local tmp="$(mktemp -d)"
             local file="${url##*/}"
             runCmd wget -q -O"$tmp/$file" "$url"
-            runCmd unzip "${opts[@]}" -o "$tmp/$file" -d "$dest"
+            runCmd unzip $opts -o "$tmp/$file" -d "$dest"
             rm -rf "$tmp"
             ret=$?
     esac
