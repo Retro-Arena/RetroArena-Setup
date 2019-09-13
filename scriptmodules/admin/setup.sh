@@ -492,7 +492,7 @@ function gui_setup() {
     while true; do
         local commit=$(git -C "$scriptdir" log -1 --pretty=format:"%cr (%h)")
 
-        cmd=(dialog --backtitle "$__backtitle" --title "RetroArena-Setup Script" --cancel-label "Exit" --item-help --help-button --default-item "$default" --menu "Version: $__version\nUpdated: $commit\nOS:      $__os_desc\nIP:      $(hostname -I | awk '{print $1}')" 22 76 16)
+        cmd=(dialog --backtitle "$__backtitle" --title "RetroArena-Setup Script" --cancel-label "Exit" --item-help --help-button --default-item "$default" --menu "Version: $__version\nUpdated: $commit\nSystem:  $__os_desc\nIP Addr:      $(hostname -I | awk '{print $1}')" 22 76 16)
         options=(
             U "Update Scripts"
             "U Update the RetroArena-Setup script to the latest version."
