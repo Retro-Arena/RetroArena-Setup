@@ -20,8 +20,6 @@ __mod_section=()
 __mod_flags=()
 
 declare -A __sections
-#__sections[exp]="experimental"
-#__sections[main]="main"
 __sections[core]="core"
 __sections[opt]="optional"
 __sections[lr]="libretro"
