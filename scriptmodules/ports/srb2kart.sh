@@ -20,8 +20,9 @@ function depends_srb2kart() {
 
 function sources_srb2kart() {
     gitPullOrClone "$md_build" https://github.com/STJr/Kart-Public.git
-    #downloadAndExtract "$__archive_url/srb2kart-assets.tar.gz" "$md_build"
-    downloadAndExtract "http://s525034382.onlinehome.us/srb2kart-assets.tar.gz" "$md_build"
+    downloadAndExtract "https://github.com/Retro-Arena/binaries/raw/master/common/srb2kart-assets1.tar.gz" "$md_build"
+    downloadAndExtract "https://github.com/Retro-Arena/binaries/raw/master/common/srb2kart-assets2.tar.gz" "$md_build"
+    downloadAndExtract "https://github.com/Retro-Arena/binaries/raw/master/common/srb2kart-assets3.tar.gz" "$md_build"
 }
 
 function build_srb2kart() {
