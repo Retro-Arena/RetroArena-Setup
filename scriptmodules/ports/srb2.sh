@@ -35,12 +35,12 @@ function install_srb2() {
     # copy and dereference, so we get a srb2 binary rather than a symlink to srb2-version
     cp -L 'build/bin/srb2' "$md_inst/srb2"
     md_ret_files=(
-        'assets/music.dta'
-        'assets/patch.dta'
-        'assets/player.dta'
-        'assets/rings.dta'
-        'assets/zones.dta'
-        'assets/srb2.srb'
+        'assets/installer/music.dta'
+        'assets/installer/patch.dta'
+        'assets/installer/player.dta'
+        'assets/installer/rings.dta'
+        'assets/installer/zones.dta'
+        'assets/installer/srb2.srb'
     )
 }
 
