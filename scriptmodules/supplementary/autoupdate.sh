@@ -36,7 +36,7 @@ function gui_autoupdate() {
                         sudo systemctl start cron.service
                         crontab -u pigaming "$scriptdir/scriptmodules/supplementary/autoupdate/autoupdate"
                         touch "$home/.config/au_service"
-                        printMsgs "dialog" "Enabled AutoUpdate Service\n\nAutoUpdate must be enabled per core and is available in Settings. Only certain cores can be auto updated.\n\nThe system timezone is now set to Coordinated Universal Time (UTC)."
+                        printMsgs "dialog" "Enabled AutoUpdate Service\n\nThe system timezone is now set to Coordinated Universal Time (UTC).\n\nAvailable items for auto updates are RetroArena-Setup and retrohub."
                     fi
                     ;;
                 2)
