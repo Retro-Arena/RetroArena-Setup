@@ -24,7 +24,7 @@ function depends_zesarux() {
 }
 
 function sources_zesarux() {
-   gitPullOrClone "$md_build" https://github.com/chernandezba/zesarux.git 7.0
+   gitPullOrClone "$md_build" https://github.com/chernandezba/zesarux.git 8.0
 }
 
 function build_zesarux() {
@@ -42,6 +42,9 @@ function install_zesarux() {
     make install
 }
 
+function install_bin_zesarux() {
+    downloadAndExtract "$__gitbins_url/zesarux.tar.gz" "$md_inst" 1
+}
 
 function configure_zesarux() {
     mkRomDir "zxspectrum"
