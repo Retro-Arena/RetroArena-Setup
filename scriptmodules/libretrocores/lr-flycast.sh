@@ -15,12 +15,8 @@ rp_module_help="Dreamcast ROM Extensions: .cdi .gdi .chd (chdman v5)\nAtomiswave
 rp_module_licence="GPL2 https://raw.githubusercontent.com/libretro/flycast-emulator/master/LICENSE"
 rp_module_section="lr"
 
-function sources_lr-flycast() {  
-    if [ "$md_id" == "lr-flycast-wince" ]; then
-        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "fh/wince"
-    else
-        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"     
-    fi
+function sources_lr-flycast() {
+    gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"
 }
 
 function build_lr-flycast() {
@@ -34,19 +30,11 @@ function build_lr-flycast() {
         make platform=odroid BOARD="ODROID-XU3" ARCH=arm
     fi
 
-    if [ "$md_id" == "lr-flycast-wince" ]; then
-        md_ret_require="$md_build/flycast_wince_libretro.so"
-    else
-        md_ret_require="$md_build/flycast_libretro.so"
-    fi
+    md_ret_require="$md_build/flycast_libretro.so"
 }
 
 function install_lr-flycast() {
-    if [ "$md_id" == "lr-flycast-wince" ]; then
-        md_ret_files=('flycast_wince_libretro.so')
-    else
-        md_ret_files=('flycast_libretro.so')
-    fi
+    md_ret_files=('flycast_libretro.so')
 }
 
 function install_bin_lr-flycast() {
@@ -58,25 +46,14 @@ function configure_lr-flycast() {
     mkUserDir "$biosdir/dc"
     
     local system
-    if [ "$md_id" == "lr-flycast-wince" ]; then
-        for system in atomiswave dreamcast naomi; do
-            mkRomDir "$system"
-            ensureSystemretroconfig "$system"
-            iniConfig " = " "" "$configdir/$system/retroarch.cfg"
-            iniSet "video_shared_context" "true"
-            addEmulator 1 "$md_id" "$system" "$md_inst/flycast_wince_libretro.so </dev/null"
-            addSystem "$system"
-        done
-    else
-        for system in atomiswave dreamcast naomi; do
-            mkRomDir "$system"
-            ensureSystemretroconfig "$system"
-            iniConfig " = " "" "$configdir/$system/retroarch.cfg"
-            iniSet "video_shared_context" "true"
-            addEmulator 1 "$md_id" "$system" "$md_inst/flycast_libretro.so </dev/null"
-            addSystem "$system"
-        done
-    fi
+    for system in atomiswave dreamcast naomi; do
+        mkRomDir "$system"
+        ensureSystemretroconfig "$system"
+        iniConfig " = " "" "$configdir/$system/retroarch.cfg"
+        iniSet "video_shared_context" "true"
+        addEmulator 1 "$md_id" "$system" "$md_inst/flycast_libretro.so </dev/null"
+        addSystem "$system"
+    done
     
     # set core options
     setRetroArchCoreOption "${dir_name}reicast_allow_service_buttons" "enabled"
