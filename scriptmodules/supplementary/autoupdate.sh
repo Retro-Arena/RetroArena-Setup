@@ -18,7 +18,6 @@ function gui_autoupdate() {
         local options=()
             [[ -e "$home/.config/au_service" ]] && options+=(1 "Disable AutoUpdate Service") || options+=(1 "Enable AutoUpdate Service (Required)")
             [[ -e "$home/.config/au_setupscript" ]] && options+=(2 "Disable AutoUpdate of Setup Scripts") || options+=(2 "Enable AutoUpdate of Setup Scripts")
-            options+=(3 "Enable AutoUpdate of Core Packages")
         
         local cmd=(dialog --backtitle "$__backtitle" --menu "AutoUpdate: a RetroArena Exclusive" 22 86 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
@@ -52,9 +51,6 @@ function gui_autoupdate() {
                     else
                         printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
                     fi
-                    ;;
-                3)
-                    printMsgs "dialog" "AutoUpdate per core is available in Settings.\n\nOnly certain cores can be auto updated."
                     ;;
             esac
         fi

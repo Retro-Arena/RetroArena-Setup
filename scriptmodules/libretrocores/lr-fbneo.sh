@@ -15,6 +15,10 @@ rp_module_help="ROM Extension: .zip\n\nCopy your roms to\n$romdir/fbneo or\n$rom
 rp_module_licence="NONCOM https://raw.githubusercontent.com/libretro/FBNeo/master/src/license.txt"
 rp_module_section="lr"
 
+function _update_hook_lr-fbneo() {
+    renameModule "lr-fbalpha" "lr-fbneo"
+}
+
 function sources_lr-fbneo() {
     gitPullOrClone "$md_build" https://github.com/libretro/FBNeo.git
 }
@@ -96,29 +100,4 @@ function configure_lr-fbneo() {
     addSystem "coleco"
     addSystem "msx"
     addSystem "zxspectrum"
-}
-
-function gui_lr-fbneo() {
-    while true; do
-        local options=()
-            [[ -e "$home/.config/auc_lr-fbneo" ]] && options+=(A "Disable lr-fbneo AutoUpdate") || options+=(A "Enable lr-fbneo AutoUpdate")
-        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
-        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-        [[ -z "$choice" ]] && break
-        case "$choice" in
-            A)
-                if [[ -e "$home/.config/au_service" ]]; then
-                    if [[ -e "$home/.config/auc_lr-fbneo" ]]; then
-                        rm -rf "$home/.config/auc_lr-fbneo"
-                        printMsgs "dialog" "Disabled lr-fbneo AutoUpdate"
-                    else
-                        touch "$home/.config/auc_lr-fbneo"
-                        printMsgs "dialog" "Enabled lr-fbneo AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
-                    fi
-                else
-                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
-                fi
-                ;;
-        esac
-    done
 }

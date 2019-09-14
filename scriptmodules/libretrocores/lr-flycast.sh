@@ -19,7 +19,7 @@ function sources_lr-flycast() {
     if [ "$md_id" == "lr-flycast-wince" ]; then
         gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "fh/wince"
     else
-        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"
+        gitPullOrClone "$md_build" https://github.com/libretro/flycast.git "master"     
     fi
 }
 
@@ -137,29 +137,4 @@ function configure_lr-flycast() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
         sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"
     fi
-}
-
-function gui_lr-flycast() {
-    while true; do
-        local options=()
-            [[ -e "$home/.config/auc_lr-flycast" ]] && options+=(A "Disable lr-flycast AutoUpdate") || options+=(A "Enable lr-flycast AutoUpdate")
-        local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option" 22 76 16)
-        local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
-        [[ -z "$choice" ]] && break
-        case "$choice" in
-            A)
-                if [[ -e "$home/.config/au_service" ]]; then
-                    if [[ -e "$home/.config/auc_lr-flycast" ]]; then
-                        rm -rf "$home/.config/auc_lr-flycast"
-                        printMsgs "dialog" "Disabled lr-flycast AutoUpdate"
-                    else
-                        touch "$home/.config/auc_lr-flycast"
-                        printMsgs "dialog" "Enabled lr-flycast AutoUpdate\n\nThe update will occur daily at 10:00 UTC / 03:00 PT."
-                    fi
-                else
-                    printMsgs "dialog" "ERROR\n\nAutoUpdate Service must be enabled."
-                fi
-                ;;
-        esac
-    done
 }
