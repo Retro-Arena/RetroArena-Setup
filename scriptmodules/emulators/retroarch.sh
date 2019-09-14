@@ -10,7 +10,7 @@
 #
 
 rp_module_id="retroarch"
-rp_module_desc="RetroArch v1.7.6 - frontend to the libretro emulator cores - required by all lr-* emulators"
+rp_module_desc="RetroArch v1.7.8.3 - frontend to the libretro emulator cores - required by all lr-* emulators"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/master/COPYING"
 rp_module_section="core"
 
@@ -23,10 +23,9 @@ function depends_retroarch() {
 
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.8.3
         applyPatch "$md_data/01_hotkey_hack.diff"
         applyPatch "$md_data/02_disable_search.diff"
-        applyPatch "$md_data/03_disable_udev_sort.diff"
     else
         gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git
         applyPatch "$md_data/01_hotkey_hack.diff"
@@ -58,18 +57,14 @@ function install_retroarch() {
 }
 
 function install_bin_retroarch() {   
-    downloadAndExtract "$__gitbins_url/retroarch_v176.tar.gz" "$md_inst" 1
+    downloadAndExtract "$__gitbins_url/retroarch.tar.gz" "$md_inst" 1
 }
 
 function update_assets_retroarch() {
     local dir="$configdir/all/retroarch/assets"
     # remove if not a git repository for fresh checkout
     [[ ! -d "$dir/.git" ]] && rm -rf "$dir"
-    if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git master dec1fb1
-    else
-        gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
-    fi
+    gitPullOrClone "$dir" https://github.com/libretro/retroarch-assets.git
     chown -R $user:$user "$dir"
 }
 
