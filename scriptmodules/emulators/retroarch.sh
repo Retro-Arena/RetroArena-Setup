@@ -10,7 +10,7 @@
 #
 
 rp_module_id="retroarch"
-rp_module_desc="RetroArch v1.7.6 - frontend to the libretro emulator cores - required by all lr-* emulators"
+rp_module_desc="RetroArch v1.7.8.3 - frontend to the libretro emulator cores - required by all lr-* emulators"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/master/COPYING"
 rp_module_section="core"
 
@@ -23,7 +23,7 @@ function depends_retroarch() {
 
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.6
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.8.3
         applyPatch "$md_data/01_hotkey_hack.diff"
         applyPatch "$md_data/02_disable_search.diff"
     else
