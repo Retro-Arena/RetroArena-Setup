@@ -10,7 +10,7 @@
 #
 
 rp_module_id="retroarch-dev"
-rp_module_desc="RetroArch latest - for development use only"
+rp_module_desc="RetroArch (master branch) - CAUTION - may cause issues"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/master/COPYING "
 rp_module_section="core"
 
