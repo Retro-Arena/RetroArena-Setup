@@ -154,7 +154,7 @@ function get_os_version() {
             elif compareVersions "$__os_release" eq 16.10; then
                 __os_debian_ver="8"
             elif compareVersions "$__os_release" lt 18.04; then
-                __os_debian_ver="9"
+                __os_debian_ver="8"
             else
                 __os_debian_ver="10"
             fi
