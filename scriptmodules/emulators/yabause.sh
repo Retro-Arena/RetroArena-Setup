@@ -21,8 +21,11 @@ function depends_yabause() {
     getDepends "${depends[@]}"
 }
 
-function sources_yabause() {    
-    gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git master
+function sources_yabause() { 
+    local branch"master"
+    local commit=""
+    isPlatform "odroid-xu" && commit="f8586ad4adb54a6722d5f6dc518f6c0e22473cb1"
+    gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git "$branch" "$commit"
 }
 
 function build_yabause() {
