@@ -22,7 +22,7 @@ function depends_yabause() {
 }
 
 function sources_yabause() { 
-     gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git master
+    gitPullOrClone "$md_build" https://github.com/devmiyax/yabause.git master
 }
 
 function build_yabause() {
