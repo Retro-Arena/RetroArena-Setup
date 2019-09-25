@@ -20,7 +20,6 @@ function main_menu() {
             2 "Enable system bezel pack" \
             3 "Disable system bezel pack" \
             4 "Information:  Retroarch cores setup for bezels per system" \
-            5 "Uninstall the bezel project completely" \
             2>&1 > /dev/tty)
 
         case "$choice" in
@@ -28,7 +27,6 @@ function main_menu() {
             2) enable_bezel  ;;
             3) disable_bezel  ;;
             4) retroarch_bezelinfo  ;;
-            5) removebezelproject ;;
             *)  break ;;
         esac
     done
@@ -59,10 +57,11 @@ function install_bezel_pack() {
 
     git clone "https://github.com/$repo/bezelproject-$theme.git" "/tmp/${theme}"
     
-    # replace retropie with retroarena prior to copying
+    # START of TheRA custom code to replace retropie with retroarena prior to copying
     cd "/tmp/${theme}"
     find . -type f -name "*.cfg" -print0 | xargs -0 sed -i '' -e 's/retropie/retroarena/g' &>/dev/null
     cd - &>/dev/null
+    # END of TheRA custom code to replace retropie with retroarena prior to copying
     
     cp -r "/tmp/${theme}/retroarch/" /opt/retroarena/configs/all/
     sudo rm -rf "/tmp/${theme}"
@@ -110,9 +109,16 @@ function removebezelproject() {
     hide_bezel coleco
     hide_bezel n64
     hide_bezel sfc
+    hide_bezel gb
+    hide_bezel gbc
+    hide_bezel gba
+    hide_bezel dreamcast
+    hide_bezel naomi
+    hide_bezel atomiswave
 
     rm -rf /opt/retroarena/configs/all/retroarch/overlay/GameBezels
     rm -rf /opt/retroarena/configs/all/retroarch/overlay/ArcadeBezels
+
 }
 
 function download_bezel() {
@@ -121,7 +127,8 @@ function download_bezel() {
         'thebezelproject Atari2600'
         'thebezelproject Atari5200'
         'thebezelproject Atari7800'
-        'thebezelproject ColecoVision'
+        'thebezelproject GB'
+        'thebezelproject GBC'
         'thebezelproject GCEVectrex'
         'thebezelproject MasterSystem'
         'thebezelproject MegaDrive'
@@ -131,11 +138,15 @@ function download_bezel() {
         'thebezelproject SegaCD'
         'thebezelproject SG-1000'
         'thebezelproject SNES'
-        'thebezelproject SFC'
         'thebezelproject SuperGrafx'
+        'thebezelproject SFC'
         'thebezelproject PSX'
         'thebezelproject TG16'
         'thebezelproject TG-CD'
+        'thebezelproject ColecoVision'
+        'thebezelproject Dreamcast'
+        'thebezelproject Naomi'
+        'thebezelproject Atomiswave'
     )
     while true; do
         local theme
@@ -219,6 +230,11 @@ clear
             19 "ColecoVision" \
             20 "Nintendo 64" \
             21 "Super Famicom" \
+            22 "Game Boy" \
+            23 "Game Boy Color" \
+            24 "Sega Dreamcast" \
+            25 "Sega Naomi" \
+            26 "Sammy Atomiswave" \
             2>&1 > /dev/tty)
 
         case "$choice" in
@@ -243,6 +259,12 @@ clear
             19) hide_bezel coleco ;;
             20) hide_bezel n64 ;;
             21) hide_bezel sfc ;;
+            22) hide_bezel gb ;;
+            23) hide_bezel gbc ;;
+            24) hide_bezel gba ;;
+            25) hide_bezel dreamcast ;;
+            26) hide_bezel naomi ;;
+            27) hide_bezel atomiswave ;;
             *)  break ;;
         esac
     done
@@ -277,6 +299,11 @@ clear
             19 "ColecoVision" \
             20 "Nintendo 64" \
             21 "Super Famicom" \
+            22 "Game Boy" \
+            23 "Game Boy Color" \
+            24 "Sega Dreamcast" \
+            25 "Sega Naomi" \
+            26 "Sammy Atomiswave" \
             2>&1 > /dev/tty)
 
         case "$choice" in
@@ -301,6 +328,12 @@ clear
             19) show_bezel coleco ;;
             20) show_bezel n64 ;;
             21) show_bezel sfc ;;
+            22) show_bezel gb ;;
+            23) show_bezel gbc ;;
+            24) show_bezel gba ;;
+            25) show_bezel dreamcast ;;
+            26) show_bezel naomi ;;
+            27) show_bezel atomiswave ;;
             *)  break ;;
         esac
     done
@@ -457,6 +490,21 @@ atari7800)
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atari7800/retroarch.cfg
   fi
   ;;
+atomiswave)
+  ifexist=`cat /opt/retroarena/configs/atomiswave/retroarch.cfg |grep "input_overlay" |wc -l`
+  if [[ ${ifexist} > 0 ]]
+  then
+    cp /opt/retroarena/configs/atomiswave/retroarch.cfg /opt/retroarena/configs/atomiswave/retroarch.cfg.bkp
+    cat /opt/retroarena/configs/atomiswave/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
+    cp /tmp/retroarch.cfg /opt/retroarena/configs/atomiswave/retroarch.cfg
+    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Atomiswave.cfg"' /opt/retroarena/configs/atomiswave/retroarch.cfg
+    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atomiswave/retroarch.cfg
+  else
+    cp /opt/retroarena/configs/atomiswave/retroarch.cfg /opt/retroarena/configs/atomiswave/retroarch.cfg.bkp
+    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Atomiswave.cfg"' /opt/retroarena/configs/atomiswave/retroarch.cfg
+    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atomiswave/retroarch.cfg
+  fi
+  ;;
 coleco)
   ifexist=`cat /opt/retroarena/configs/coleco/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
@@ -470,6 +518,21 @@ coleco)
     cp /opt/retroarena/configs/coleco/retroarch.cfg /opt/retroarena/configs/coleco/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Colecovision.cfg"' /opt/retroarena/configs/coleco/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/coleco/retroarch.cfg
+  fi
+  ;;
+dreamcast)
+  ifexist=`cat /opt/retroarena/configs/dreamcast/retroarch.cfg |grep "input_overlay" |wc -l`
+  if [[ ${ifexist} > 0 ]]
+  then
+    cp /opt/retroarena/configs/dreamcast/retroarch.cfg /opt/retroarena/configs/dreamcast/retroarch.cfg.bkp
+    cat /opt/retroarena/configs/dreamcast/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
+    cp /tmp/retroarch.cfg /opt/retroarena/configs/dreamcast/retroarch.cfg
+    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Dreamcast.cfg"' /opt/retroarena/configs/dreamcast/retroarch.cfg
+    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/dreamcast/retroarch.cfg
+  else
+    cp /opt/retroarena/configs/dreamcast/retroarch.cfg /opt/retroarena/configs/dreamcast/retroarch.cfg.bkp
+    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Dreamcast.cfg"' /opt/retroarena/configs/dreamcast/retroarch.cfg
+    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/dreamcast/retroarch.cfg
   fi
   ;;
 famicom)
@@ -560,6 +623,21 @@ n64)
     cp /opt/retroarena/configs/n64/retroarch.cfg /opt/retroarena/configs/n64/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-64.cfg"' /opt/retroarena/configs/n64/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/n64/retroarch.cfg
+  fi
+  ;;
+naomi)
+  ifexist=`cat /opt/retroarena/configs/naomi/retroarch.cfg |grep "input_overlay" |wc -l`
+  if [[ ${ifexist} > 0 ]]
+  then
+    cp /opt/retroarena/configs/naomi/retroarch.cfg /opt/retroarena/configs/naomi/retroarch.cfg.bkp
+    cat /opt/retroarena/configs/naomi/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
+    cp /tmp/retroarch.cfg /opt/retroarena/configs/naomi/retroarch.cfg
+    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Naomi.cfg"' /opt/retroarena/configs/naomi/retroarch.cfg
+    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/naomi/retroarch.cfg
+  else
+    cp /opt/retroarena/configs/naomi/retroarch.cfg /opt/retroarena/configs/naomi/retroarch.cfg.bkp
+    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Naomi.cfg"' /opt/retroarena/configs/naomi/retroarch.cfg
+    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/naomi/retroarch.cfg
   fi
   ;;
 neogeo)
@@ -778,7 +856,7 @@ gcevectrex)
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/vectrex/retroarch.cfg
   fi
   ;;
-atarilynx_1080)
+atarilynx)
   ifexist=`cat /opt/retroarena/configs/atarilynx/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -787,73 +865,13 @@ atarilynx_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/atarilynx/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Atari-Lynx-Horizontal.cfg"' /opt/retroarena/configs/atarilynx/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1010"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '6i custom_viewport_height = "640"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '7i custom_viewport_x = "455"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '8i custom_viewport_y = "225"' /opt/retroarena/configs/atarilynx/retroarch.cfg
   else
     cp /opt/retroarena/configs/atarilynx/retroarch.cfg /opt/retroarena/configs/atarilynx/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Atari-Lynx-Horizontal.cfg"' /opt/retroarena/configs/atarilynx/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1010"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '6i custom_viewport_height = "640"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '7i custom_viewport_x = "455"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '8i custom_viewport_y = "225"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-  fi  
-  ;;  
-atarilynx_720)
-  ifexist=`cat /opt/retroarena/configs/atarilynx/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/atarilynx/retroarch.cfg /opt/retroarena/configs/atarilynx/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/atarilynx/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Atari-Lynx-Horizontal.cfg"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '5i custom_viewport_width = "670"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '6i custom_viewport_height = "425"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '7i custom_viewport_x = "305"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '8i custom_viewport_y = "150"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/atarilynx/retroarch.cfg /opt/retroarena/configs/atarilynx/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Atari-Lynx-Horizontal.cfg"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '5i custom_viewport_width = "670"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '6i custom_viewport_height = "425"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '7i custom_viewport_x = "305"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '8i custom_viewport_y = "150"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-  fi  
-  ;;
-atarilynx_other)
-  ifexist=`cat /opt/retroarena/configs/atarilynx/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/atarilynx/retroarch.cfg /opt/retroarena/configs/atarilynx/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/atarilynx/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Atari-Lynx-Horizontal.cfg"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '5i custom_viewport_width = "715"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '6i custom_viewport_height = "460"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '7i custom_viewport_x = "325"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '8i custom_viewport_y = "160"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/atarilynx/retroarch.cfg /opt/retroarena/configs/atarilynx/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Atari-Lynx-Horizontal.cfg"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '5i custom_viewport_width = "715"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '6i custom_viewport_height = "460"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '7i custom_viewport_x = "325"' /opt/retroarena/configs/atarilynx/retroarch.cfg
-    sed -i '8i custom_viewport_y = "160"' /opt/retroarena/configs/atarilynx/retroarch.cfg
   fi
   ;;
-gamegear_1080)
+gamegear)
   ifexist=`cat /opt/retroarena/configs/gamegear/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -862,73 +880,13 @@ gamegear_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/gamegear/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sega-Game-Gear.cfg"' /opt/retroarena/configs/gamegear/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1160"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '6i custom_viewport_height = "850"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '7i custom_viewport_x = "380"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '8i custom_viewport_y = "120"' /opt/retroarena/configs/gamegear/retroarch.cfg
   else
     cp /opt/retroarena/configs/gamegear/retroarch.cfg /opt/retroarena/configs/gamegear/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sega-Game-Gear.cfg"' /opt/retroarena/configs/gamegear/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1160"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '6i custom_viewport_height = "850"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '7i custom_viewport_x = "380"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '8i custom_viewport_y = "120"' /opt/retroarena/configs/gamegear/retroarch.cfg
-  fi  
-  ;;  
-gamegear_720)
-  ifexist=`cat /opt/retroarena/configs/gamegear/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/gamegear/retroarch.cfg /opt/retroarena/configs/gamegear/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/gamegear/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sega-Game-Gear.cfg"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '5i custom_viewport_width = "780"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '6i custom_viewport_height = "580"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '7i custom_viewport_x = "245"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '8i custom_viewport_y = "70"' /opt/retroarena/configs/gamegear/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/gamegear/retroarch.cfg /opt/retroarena/configs/gamegear/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sega-Game-Gear.cfg"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '5i custom_viewport_width = "780"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '6i custom_viewport_height = "580"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '7i custom_viewport_x = "245"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '8i custom_viewport_y = "70"' /opt/retroarena/configs/gamegear/retroarch.cfg
-  fi  
-  ;;
-gamegear_other)
-  ifexist=`cat /opt/retroarena/configs/gamegear/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/gamegear/retroarch.cfg /opt/retroarena/configs/gamegear/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/gamegear/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sega-Game-Gear.cfg"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '5i custom_viewport_width = "835"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '6i custom_viewport_height = "625"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '7i custom_viewport_x = "270"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '8i custom_viewport_y = "75"' /opt/retroarena/configs/gamegear/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/gamegear/retroarch.cfg /opt/retroarena/configs/gamegear/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sega-Game-Gear.cfg"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '5i custom_viewport_width = "835"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '6i custom_viewport_height = "625"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '7i custom_viewport_x = "270"' /opt/retroarena/configs/gamegear/retroarch.cfg
-    sed -i '8i custom_viewport_y = "75"' /opt/retroarena/configs/gamegear/retroarch.cfg
   fi
   ;;
-gb_1080)
+gb)
   ifexist=`cat /opt/retroarena/configs/gb/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -937,73 +895,13 @@ gb_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/gb/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy.cfg"' /opt/retroarena/configs/gb/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '5i custom_viewport_width = "625"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '6i custom_viewport_height = "565"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '7i custom_viewport_x = "645"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '8i custom_viewport_y = "235"' /opt/retroarena/configs/gb/retroarch.cfg
   else
     cp /opt/retroarena/configs/gb/retroarch.cfg /opt/retroarena/configs/gb/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy.cfg"' /opt/retroarena/configs/gb/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '5i custom_viewport_width = "625"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '6i custom_viewport_height = "565"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '7i custom_viewport_x = "645"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '8i custom_viewport_y = "235"' /opt/retroarena/configs/gb/retroarch.cfg
-  fi  
-  ;;  
-gb_720)
-  ifexist=`cat /opt/retroarena/configs/gb/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/gb/retroarch.cfg /opt/retroarena/configs/gb/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/gb/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy.cfg"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '5i custom_viewport_width = "429"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '6i custom_viewport_height = "380"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '7i custom_viewport_x = "420"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/gb/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/gb/retroarch.cfg /opt/retroarena/configs/gb/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy.cfg"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '5i custom_viewport_width = "429"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '6i custom_viewport_height = "380"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '7i custom_viewport_x = "420"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/gb/retroarch.cfg
-  fi  
-  ;;
-gb_other)
-  ifexist=`cat /opt/retroarena/configs/gb/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/gb/retroarch.cfg /opt/retroarena/configs/gb/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/gb/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy.cfg"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '5i custom_viewport_width = "455"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '6i custom_viewport_height = "415"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '7i custom_viewport_x = "455"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '8i custom_viewport_y = "162"' /opt/retroarena/configs/gb/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/gb/retroarch.cfg /opt/retroarena/configs/gb/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy.cfg"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '5i custom_viewport_width = "455"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '6i custom_viewport_height = "415"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '7i custom_viewport_x = "455"' /opt/retroarena/configs/gb/retroarch.cfg
-    sed -i '8i custom_viewport_y = "162"' /opt/retroarena/configs/gb/retroarch.cfg
   fi
   ;;
-gba_1080)
+gba)
   ifexist=`cat /opt/retroarena/configs/gba/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -1012,73 +910,13 @@ gba_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/gba/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Advance.cfg"' /opt/retroarena/configs/gba/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1005"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '6i custom_viewport_height = "645"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '7i custom_viewport_x = "455"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '8i custom_viewport_y = "215"' /opt/retroarena/configs/gba/retroarch.cfg
   else
     cp /opt/retroarena/configs/gba/retroarch.cfg /opt/retroarena/configs/gba/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Advance.cfg"' /opt/retroarena/configs/gba/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1005"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '6i custom_viewport_height = "645"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '7i custom_viewport_x = "455"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '8i custom_viewport_y = "215"' /opt/retroarena/configs/gba/retroarch.cfg
-  fi  
-  ;;  
-gba_720)
-  ifexist=`cat /opt/retroarena/configs/gba/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/gba/retroarch.cfg /opt/retroarena/configs/gba/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/gba/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Advance.cfg"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '5i custom_viewport_width = "467"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '6i custom_viewport_height = "316"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '7i custom_viewport_x = "405"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '8i custom_viewport_y = "190"' /opt/retroarena/configs/gba/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/gba/retroarch.cfg /opt/retroarena/configs/gba/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Advance.cfg"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '5i custom_viewport_width = "467"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '6i custom_viewport_height = "316"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '7i custom_viewport_x = "405"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '8i custom_viewport_y = "190"' /opt/retroarena/configs/gba/retroarch.cfg
-  fi  
-  ;;
-gba_other)
-  ifexist=`cat /opt/retroarena/configs/gba/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/gba/retroarch.cfg /opt/retroarena/configs/gba/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/gba/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Advance.cfg"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '5i custom_viewport_width = "720"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '6i custom_viewport_height = "455"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '7i custom_viewport_x = "320"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/gba/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/gba/retroarch.cfg /opt/retroarena/configs/gba/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Advance.cfg"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '5i custom_viewport_width = "720"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '6i custom_viewport_height = "455"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '7i custom_viewport_x = "320"' /opt/retroarena/configs/gba/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/gba/retroarch.cfg
   fi
   ;;
-gbc_1080)
+gbc)
   ifexist=`cat /opt/retroarena/configs/gbc/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -1087,73 +925,13 @@ gbc_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/gbc/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Color.cfg"' /opt/retroarena/configs/gbc/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "625"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "565"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "645"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "235"' /opt/retroarena/configs/gbc/retroarch.cfg
   else
     cp /opt/retroarena/configs/gbc/retroarch.cfg /opt/retroarena/configs/gbc/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Color.cfg"' /opt/retroarena/configs/gbc/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "625"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "565"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "645"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "235"' /opt/retroarena/configs/gbc/retroarch.cfg
-  fi  
-  ;;  
-gbc_720)
-  ifexist=`cat /opt/retroarena/configs/gbc/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/gbc/retroarch.cfg /opt/retroarena/configs/gbc/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/gbc/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Color.cfg"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "430"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "380"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "425"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/gbc/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/gbc/retroarch.cfg /opt/retroarena/configs/gbc/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Color.cfg"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "430"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "380"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "425"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/gbc/retroarch.cfg
-  fi  
-  ;;
-gbc_other)
-  ifexist=`cat /opt/retroarena/configs/gbc/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/gbc/retroarch.cfg /opt/retroarena/configs/gbc/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/gbc/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Color.cfg"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "455"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "405"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "455"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "165"' /opt/retroarena/configs/gbc/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/gbc/retroarch.cfg /opt/retroarena/configs/gbc/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Game-Boy-Color.cfg"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "455"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "405"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "455"' /opt/retroarena/configs/gbc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "165"' /opt/retroarena/configs/gbc/retroarch.cfg
   fi
   ;;
-ngp_1080)
+ngp)
   ifexist=`cat /opt/retroarena/configs/ngp/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -1162,73 +940,13 @@ ngp_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/ngp/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket.cfg"' /opt/retroarena/configs/ngp/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "700"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "635"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "610"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "220"' /opt/retroarena/configs/ngp/retroarch.cfg
   else
     cp /opt/retroarena/configs/ngp/retroarch.cfg /opt/retroarena/configs/ngp/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket.cfg"' /opt/retroarena/configs/ngp/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "700"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "635"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "610"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "220"' /opt/retroarena/configs/ngp/retroarch.cfg
-  fi  
-  ;;  
-ngp_720)
-  ifexist=`cat /opt/retroarena/configs/ngp/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/ngp/retroarch.cfg /opt/retroarena/configs/ngp/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/ngp/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket.cfg"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "461"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "428"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "407"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "145"' /opt/retroarena/configs/ngp/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/ngp/retroarch.cfg /opt/retroarena/configs/ngp/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket.cfg"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "461"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "428"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "407"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "145"' /opt/retroarena/configs/ngp/retroarch.cfg
-  fi  
-  ;;
-ngp_other)
-  ifexist=`cat /opt/retroarena/configs/ngp/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/ngp/retroarch.cfg /opt/retroarena/configs/ngp/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/ngp/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket.cfg"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "490"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "455"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "435"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/ngp/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/ngp/retroarch.cfg /opt/retroarena/configs/ngp/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket.cfg"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "490"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "455"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "435"' /opt/retroarena/configs/ngp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/ngp/retroarch.cfg
   fi
   ;;
-ngpc_1080)
+ngpc)
   ifexist=`cat /opt/retroarena/configs/ngpc/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -1237,73 +955,13 @@ ngpc_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/ngpc/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket-Color.cfg"' /opt/retroarena/configs/ngpc/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "700"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "640"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "610"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "215"' /opt/retroarena/configs/ngpc/retroarch.cfg
   else
     cp /opt/retroarena/configs/ngpc/retroarch.cfg /opt/retroarena/configs/ngpc/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket-Color.cfg"' /opt/retroarena/configs/ngpc/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "700"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "640"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "610"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "215"' /opt/retroarena/configs/ngpc/retroarch.cfg
-  fi  
-  ;;  
-ngpc_720)
-  ifexist=`cat /opt/retroarena/configs/ngpc/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/ngpc/retroarch.cfg /opt/retroarena/configs/ngpc/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/ngpc/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket-Color.cfg"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "460"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "428"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "407"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "145"' /opt/retroarena/configs/ngpc/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/ngpc/retroarch.cfg /opt/retroarena/configs/ngpc/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket-Color.cfg"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "460"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "428"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "407"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "145"' /opt/retroarena/configs/ngpc/retroarch.cfg
-  fi  
-  ;;
-ngpc_other)
-  ifexist=`cat /opt/retroarena/configs/ngpc/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/ngpc/retroarch.cfg /opt/retroarena/configs/ngpc/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/ngpc/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket-Color.cfg"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "490"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "455"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "435"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/ngpc/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/ngpc/retroarch.cfg /opt/retroarena/configs/ngpc/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/SNK-Neo-Geo-Pocket-Color.cfg"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '5i custom_viewport_width = "490"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '6i custom_viewport_height = "455"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '7i custom_viewport_x = "435"' /opt/retroarena/configs/ngpc/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/ngpc/retroarch.cfg
   fi
   ;;
-psp_1080)
+psp)
   ifexist=`cat /opt/retroarena/configs/psp/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -1312,73 +970,13 @@ psp_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/psp/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/psp/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1430"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "820"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "250"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "135"' /opt/retroarena/configs/psp/retroarch.cfg
   else
     cp /opt/retroarena/configs/psp/retroarch.cfg /opt/retroarena/configs/psp/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/psp/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1430"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "820"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "250"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "135"' /opt/retroarena/configs/psp/retroarch.cfg
-  fi  
-  ;;  
-psp_720)
-  ifexist=`cat /opt/retroarena/configs/psp/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/psp/retroarch.cfg /opt/retroarena/configs/psp/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/psp/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "950"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "540"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "165"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "90"' /opt/retroarena/configs/psp/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/psp/retroarch.cfg /opt/retroarena/configs/psp/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "950"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "540"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "165"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "90"' /opt/retroarena/configs/psp/retroarch.cfg
-  fi  
-  ;;
-psp_other)
-  ifexist=`cat /opt/retroarena/configs/psp/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/psp/retroarch.cfg /opt/retroarena/configs/psp/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/psp/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1015"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "575"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "175"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "95"' /opt/retroarena/configs/psp/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/psp/retroarch.cfg /opt/retroarena/configs/psp/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1015"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '6i custom_viewport_height = "575"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '7i custom_viewport_x = "175"' /opt/retroarena/configs/psp/retroarch.cfg
-    sed -i '8i custom_viewport_y = "95"' /opt/retroarena/configs/psp/retroarch.cfg
   fi
   ;;
-pspminis_1080)
+pspminis)
   ifexist=`cat /opt/retroarena/configs/pspminis/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -1387,73 +985,13 @@ pspminis_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/pspminis/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/pspminis/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1430"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '6i custom_viewport_height = "820"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '7i custom_viewport_x = "250"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '8i custom_viewport_y = "135"' /opt/retroarena/configs/pspminis/retroarch.cfg
   else
     cp /opt/retroarena/configs/pspminis/retroarch.cfg /opt/retroarena/configs/pspminis/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/pspminis/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1430"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '6i custom_viewport_height = "820"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '7i custom_viewport_x = "250"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '8i custom_viewport_y = "135"' /opt/retroarena/configs/pspminis/retroarch.cfg
-  fi  
-  ;;  
-pspminis_720)
-  ifexist=`cat /opt/retroarena/configs/pspminis/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/pspminis/retroarch.cfg /opt/retroarena/configs/pspminis/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/pspminis/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '5i custom_viewport_width = "950"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '6i custom_viewport_height = "540"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '7i custom_viewport_x = "165"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '8i custom_viewport_y = "90"' /opt/retroarena/configs/pspminis/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/pspminis/retroarch.cfg /opt/retroarena/configs/pspminis/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '5i custom_viewport_width = "950"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '6i custom_viewport_height = "540"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '7i custom_viewport_x = "165"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '8i custom_viewport_y = "90"' /opt/retroarena/configs/pspminis/retroarch.cfg
-  fi  
-  ;;
-pspminis_other)
-  ifexist=`cat /opt/retroarena/configs/pspminis/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/pspminis/retroarch.cfg /opt/retroarena/configs/pspminis/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/pspminis/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1015"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '6i custom_viewport_height = "575"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '7i custom_viewport_x = "175"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '8i custom_viewport_y = "95"' /opt/retroarena/configs/pspminis/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/pspminis/retroarch.cfg /opt/retroarena/configs/pspminis/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Sony-PSP.cfg"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1015"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '6i custom_viewport_height = "575"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '7i custom_viewport_x = "175"' /opt/retroarena/configs/pspminis/retroarch.cfg
-    sed -i '8i custom_viewport_y = "95"' /opt/retroarena/configs/pspminis/retroarch.cfg
   fi
   ;;
-virtualboy_1080)
+virtualboy)
   ifexist=`cat /opt/retroarena/configs/virtualboy/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -1462,73 +1000,13 @@ virtualboy_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/virtualboy/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Virtual-Boy.cfg"' /opt/retroarena/configs/virtualboy/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1115"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '6i custom_viewport_height = "695"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '7i custom_viewport_x = "405"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '8i custom_viewport_y = "215"' /opt/retroarena/configs/virtualboy/retroarch.cfg
   else
     cp /opt/retroarena/configs/virtualboy/retroarch.cfg /opt/retroarena/configs/virtualboy/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Virtual-Boy.cfg"' /opt/retroarena/configs/virtualboy/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '5i custom_viewport_width = "1115"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '6i custom_viewport_height = "695"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '7i custom_viewport_x = "405"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '8i custom_viewport_y = "215"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-  fi  
-  ;;  
-virtualboy_720)
-  ifexist=`cat /opt/retroarena/configs/virtualboy/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/virtualboy/retroarch.cfg /opt/retroarena/configs/virtualboy/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/virtualboy/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Virtual-Boy.cfg"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '5i custom_viewport_width = "740"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '6i custom_viewport_height = "470"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '7i custom_viewport_x = "270"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '8i custom_viewport_y = "140"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/virtualboy/retroarch.cfg /opt/retroarena/configs/virtualboy/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Virtual-Boy.cfg"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '5i custom_viewport_width = "740"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '6i custom_viewport_height = "470"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '7i custom_viewport_x = "270"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '8i custom_viewport_y = "140"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-  fi  
-  ;;
-virtualboy_other)
-  ifexist=`cat /opt/retroarena/configs/virtualboy/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/virtualboy/retroarch.cfg /opt/retroarena/configs/virtualboy/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/virtualboy/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Virtual-Boy.cfg"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '5i custom_viewport_width = "787"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '6i custom_viewport_height = "494"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '7i custom_viewport_x = "290"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '8i custom_viewport_y = "153"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/virtualboy/retroarch.cfg /opt/retroarena/configs/virtualboy/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Nintendo-Virtual-Boy.cfg"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '5i custom_viewport_width = "787"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '6i custom_viewport_height = "494"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '7i custom_viewport_x = "290"' /opt/retroarena/configs/virtualboy/retroarch.cfg
-    sed -i '8i custom_viewport_y = "153"' /opt/retroarena/configs/virtualboy/retroarch.cfg
   fi
   ;;
-wonderswan_1080)
+wonderswan)
   ifexist=`cat /opt/retroarena/configs/wonderswan/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
@@ -1537,145 +1015,25 @@ wonderswan_1080)
     cp /tmp/retroarch.cfg /opt/retroarena/configs/wonderswan/retroarch.cfg
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Horizontal.cfg"' /opt/retroarena/configs/wonderswan/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '5i custom_viewport_width = "950"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '6i custom_viewport_height = "605"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '7i custom_viewport_x = "495"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '8i custom_viewport_y = "225"' /opt/retroarena/configs/wonderswan/retroarch.cfg
   else
     cp /opt/retroarena/configs/wonderswan/retroarch.cfg /opt/retroarena/configs/wonderswan/retroarch.cfg.bkp
     sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Horizontal.cfg"' /opt/retroarena/configs/wonderswan/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '5i custom_viewport_width = "950"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '6i custom_viewport_height = "605"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '7i custom_viewport_x = "495"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '8i custom_viewport_y = "225"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-  fi  
-  ;;  
-wonderswan_720)
-  ifexist=`cat /opt/retroarena/configs/wonderswan/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/wonderswan/retroarch.cfg /opt/retroarena/configs/wonderswan/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/wonderswan/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Horizontal.cfg"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '5i custom_viewport_width = "645"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '6i custom_viewport_height = "407"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '7i custom_viewport_x = "325"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '8i custom_viewport_y = "148"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/wonderswan/retroarch.cfg /opt/retroarena/configs/wonderswan/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Horizontal.cfg"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '5i custom_viewport_width = "645"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '6i custom_viewport_height = "407"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '7i custom_viewport_x = "325"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '8i custom_viewport_y = "148"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-  fi  
-  ;;
-wonderswan_other)
-  ifexist=`cat /opt/retroarena/configs/wonderswan/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/wonderswan/retroarch.cfg /opt/retroarena/configs/wonderswan/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/wonderswan/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Horizontal.cfg"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '5i custom_viewport_width = "690"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '6i custom_viewport_height = "435"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '7i custom_viewport_x = "345"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/wonderswan/retroarch.cfg /opt/retroarena/configs/wonderswan/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Horizontal.cfg"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '5i custom_viewport_width = "690"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '6i custom_viewport_height = "435"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '7i custom_viewport_x = "345"' /opt/retroarena/configs/wonderswan/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/wonderswan/retroarch.cfg
   fi
   ;;
-wonderswancolor_1080)
+wonderswancolor)
   ifexist=`cat /opt/retroarena/configs/wonderswancolor/retroarch.cfg |grep "input_overlay" |wc -l`
   if [[ ${ifexist} > 0 ]]
   then
     cp /opt/retroarena/configs/wonderswancolor/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg.bkp
     cat /opt/retroarena/configs/wonderswancolor/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
     cp /tmp/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Color-Horizontal.cfg"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
+    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan—Color-Horizontal.cfg"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '5i custom_viewport_width = "950"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '6i custom_viewport_height = "605"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '7i custom_viewport_x = "490"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '8i custom_viewport_y = "225"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
   else
     cp /opt/retroarena/configs/wonderswancolor/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Color-Horizontal.cfg"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
+    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan—Color-Horizontal.cfg"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
     sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '5i custom_viewport_width = "950"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '6i custom_viewport_height = "605"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '7i custom_viewport_x = "490"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '8i custom_viewport_y = "225"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-  fi  
-  ;;  
-wonderswancolor_720)
-  ifexist=`cat /opt/retroarena/configs/wonderswancolor/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/wonderswancolor/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/wonderswancolor/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Color-Horizontal.cfg"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '5i custom_viewport_width = "643"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '6i custom_viewport_height = "405"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '7i custom_viewport_x = "325"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '8i custom_viewport_y = "150"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/wonderswancolor/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Color-Horizontal.cfg"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '5i custom_viewport_width = "643"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '6i custom_viewport_height = "405"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '7i custom_viewport_x = "325"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '8i custom_viewport_y = "150"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-  fi  
-  ;;
-wonderswancolor_other)
-  ifexist=`cat /opt/retroarena/configs/wonderswancolor/retroarch.cfg |grep "input_overlay" |wc -l` 
-  if [[ ${ifexist} > 0 ]]
-  then
-    cp /opt/retroarena/configs/wonderswancolor/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg.bkp
-    cat /opt/retroarena/configs/wonderswancolor/retroarch.cfg |grep -v input_overlay |grep -v aspect_ratio |grep -v custom_viewport > /tmp/retroarch.cfg
-    cp /tmp/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Color-Horizontal.cfg"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '5i custom_viewport_width = "690"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '6i custom_viewport_height = "435"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '7i custom_viewport_x = "345"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-  else
-    cp /opt/retroarena/configs/wonderswancolor/retroarch.cfg /opt/retroarena/configs/wonderswancolor/retroarch.cfg.bkp
-    sed -i '2i input_overlay = "/opt/retroarena/configs/all/retroarch/overlay/Bandai-WonderSwan-Color-Horizontal.cfg"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '3i input_overlay_opacity = "1.000000"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '4i aspect_ratio_index = "22"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '5i custom_viewport_width = "690"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '6i custom_viewport_height = "435"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '7i custom_viewport_x = "345"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
-    sed -i '8i custom_viewport_y = "155"' /opt/retroarena/configs/wonderswancolor/retroarch.cfg
   fi
   ;;
 amstradcpc)
@@ -1860,6 +1218,7 @@ echo "Atari 5200                                      lr-atari800" >> /tmp/bezel
 echo "Atari 7800                                      lr-prosystem" >> /tmp/bezelprojectinfo.txt
 echo "ColecoVision                                    lr-bluemsx" >> /tmp/bezelprojectinfo.txt
 echo "GCE Vectrex                                     lr-vecx" >> /tmp/bezelprojectinfo.txt
+echo "MAME                                            lr-various" >> /tmp/bezelprojectinfo.txt
 echo "NEC PC Engine CD                                lr-beetle-pce-fast" >> /tmp/bezelprojectinfo.txt
 echo "NEC PC Engine                                   lr-beetle-pce-fast" >> /tmp/bezelprojectinfo.txt
 echo "NEC SuperGrafx                                  lr-beetle-supergrafx" >> /tmp/bezelprojectinfo.txt
@@ -1869,13 +1228,19 @@ echo "Nintendo 64                                     lr-Mupen64plus" >> /tmp/be
 echo "Nintendo Entertainment System                   lr-fceumm, lr-nestopia" >> /tmp/bezelprojectinfo.txt
 echo "Nintendo Famicom Disk System                    lr-fceumm, lr-nestopia" >> /tmp/bezelprojectinfo.txt
 echo "Nintendo Famicom                                lr-fceumm, lr-nestopia" >> /tmp/bezelprojectinfo.txt
+echo "Nintendo Game Boy                               lr-gambatte" >> /tmp/bezelprojectinfo.txt
+echo "Nintendo Game Boy Color                         lr-gambatte" >> /tmp/bezelprojectinfo.txt
+echo "Nintendo Game Boy Advance                       lr-mgba" >> /tmp/bezelprojectinfo.txt
 echo "Nintendo Super Famicom                          lr-snes9x, lr-snes9x2010" >> /tmp/bezelprojectinfo.txt
+echo "Sammy Atomiswave                                lr-flycast" >> /tmp/bezelprojectinfo.txt
 echo "Sega 32X                                        lr-picodrive, lr-genesis-plus-gx" >> /tmp/bezelprojectinfo.txt
 echo "Sega CD                                         lr-picodrive, lr-genesis-plus-gx" >> /tmp/bezelprojectinfo.txt
+echo "Sega Dreamcast                                  lr-flycast" >> /tmp/bezelprojectinfo.txt
 echo "Sega Genesis                                    lr-picodrive, lr-genesis-plus-gx" >> /tmp/bezelprojectinfo.txt
 echo "Sega Master System                              lr-picodrive, lr-genesis-plus-gx" >> /tmp/bezelprojectinfo.txt
 echo "Sega Mega Drive                                 lr-picodrive, lr-genesis-plus-gx" >> /tmp/bezelprojectinfo.txt
 echo "Sega Mega Drive Japan                           lr-picodrive, lr-genesis-plus-gx" >> /tmp/bezelprojectinfo.txt
+echo "Sega Naomi                                      lr-flycast" >> /tmp/bezelprojectinfo.txt
 echo "Sega SG-1000                                    lr-genesis-plus-gx" >> /tmp/bezelprojectinfo.txt
 echo "Sony PlayStation                                lr-pcsx-rearmed" >> /tmp/bezelprojectinfo.txt
 echo "Super Nintendo Entertainment System             lr-snes9x, lr-snes9x2010" >> /tmp/bezelprojectinfo.txt
@@ -1889,3 +1254,4 @@ dialog --backtitle "The Bezel Project" \
 # Main
 
 main_menu
+
