@@ -22,7 +22,8 @@ function depends_lr-beetle-psx() {
 }
 
 function sources_lr-beetle-psx-hw() {
-    gitPullOrClone "$md_build" https://github.com/libretro/beetle-psx-libretro.git
+    #gitPullOrClone "$md_build" https://github.com/libretro/beetle-psx-libretro.git
+    gitPullOrClone "$md_build" https://github.com/ZachCook/beetle-psx-libretro.git lightrec
 }
 
 function build_lr-beetle-psx-hw() {
