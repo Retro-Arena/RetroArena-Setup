@@ -30,13 +30,13 @@ function build_lr-beetle-psx() {
     make clean
     make HAVE_HW=1
     md_ret_require=(
-        'mednafen_psx_libretro.so'
+        'mednafen_psx_hw_libretro.so'
     )
 }
 
 function install_lr-beetle-psx() {
     md_ret_files=(
-        'mednafen_psx_libretro.so'
+        'mednafen_psx_hw_libretro.so'
     )
 }
 
