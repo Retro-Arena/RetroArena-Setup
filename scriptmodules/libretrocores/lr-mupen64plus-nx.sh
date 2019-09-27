@@ -78,7 +78,7 @@ function configure_lr-mupen64plus-nx() {
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableLODEmulation" "True"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableNativeResTexrects" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableOverscan" "Disabled"
-    setRetroArchCoreOption "${dir_name}mupen64plus-EnableShadersStorage" "True"
+    setRetroArchCoreOption "${dir_name}mupen64plus-EnableShadersStorage" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-EnableTextureCache" "True"
     setRetroArchCoreOption "${dir_name}mupen64plus-FrameDuping" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-Framerate" "Fullspeed"
