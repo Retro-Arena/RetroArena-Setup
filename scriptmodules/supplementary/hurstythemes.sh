@@ -34,6 +34,12 @@ function install_theme_hurstythemes() {
     sudo git clone "https://github.com/$repo/es-theme-$theme.git" "/etc/emulationstation/themes/$theme"
 }
 
+function uninstall_theme_hurstythemes() {
+    local theme="$1"
+    if [[ -d "/etc/emulationstation/themes/$theme" ]]; then
+        sudo rm -rf "/etc/emulationstation/themes/$theme"
+    fi
+
 function disable_themerandomizer() {
     rm -rf $home/.config/themerandomizer
     printMsgs "dialog" "Theme Randomizer disabled"
