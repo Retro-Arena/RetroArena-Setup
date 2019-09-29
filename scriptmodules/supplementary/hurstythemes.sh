@@ -39,6 +39,7 @@ function uninstall_theme_hurstythemes() {
     if [[ -d "/etc/emulationstation/themes/$theme" ]]; then
         sudo rm -rf "/etc/emulationstation/themes/$theme"
     fi
+}
 
 function disable_themerandomizer() {
     rm -rf $home/.config/themerandomizer
