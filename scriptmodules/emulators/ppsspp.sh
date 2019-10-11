@@ -43,7 +43,6 @@ function sources_ppsspp() {
     if isPlatform "odroid-n2"; then
         applyPatch "$md_data/cmakelists.patch"
     fi
-
     if isPlatform "rockpro64"; then
         applyPatch "$md_data/cmakelists.patch"
         applyPatch "$md_data/rockpro64.patch"
@@ -78,6 +77,9 @@ function build_ffmpeg_ppsspp() {
     
     # get the ffmpeg configure variables from the ppsspp ffmpeg distributed script
     if isPlatform "odroid-n2"; then
+        source linux_arm64.sh
+        arch='aarch64'
+    elif isPlatform "jetson-nano"; then
         source linux_arm64.sh
         arch='aarch64'
     elif isPlatform "rockpro64"; then
@@ -137,6 +139,8 @@ function build_ppsspp() {
         params+=(-DUSING_GLES2=ON -DUSING_FBDEV=ON)
     elif isPlatform "odroid-n2"; then
         params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/odroid-n2.cmake")
+    elif isPlatform "jetson-nano"; then
+        params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/jetson-nano.cmake")
     elif isPlatform "rockpro64"; then
         params+=(-DCMAKE_TOOLCHAIN_FILE="$md_data/rockpro64.cmake")
     fi
@@ -186,6 +190,12 @@ function configure_ppsspp() {
     fi
     
     if isPlatform "odroid-n2"; then
+        mkdir -p "$md_conf_root/psp/PSP/SYSTEM"
+        cp -R "$scriptdir/configs/psp/PSP/SYSTEM/." "$md_conf_root/psp/PSP/SYSTEM"
+        chown -R $user:$user "$md_conf_root/psp/PSP/SYSTEM"
+        chmod -R +x "$md_conf_root/psp/PSP/SYSTEM"
+    fi
+    if isPlatform "jetson-nano"; then
         mkdir -p "$md_conf_root/psp/PSP/SYSTEM"
         cp -R "$scriptdir/configs/psp/PSP/SYSTEM/." "$md_conf_root/psp/PSP/SYSTEM"
         chown -R $user:$user "$md_conf_root/psp/PSP/SYSTEM"
