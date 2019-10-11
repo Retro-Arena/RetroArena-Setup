@@ -26,6 +26,8 @@ function build_lr-flycast() {
         make platform=rockpro64 ARCH=arm
     elif isPlatform "odroid-n2"; then
         make platform=odroid-n2
+    elif isPlatform "jetson-nano"; then
+        make platform=jetson-nano
     else
         make platform=odroid BOARD="ODROID-XU3" ARCH=arm
     fi
@@ -113,5 +115,8 @@ function configure_lr-flycast() {
     
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
         sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "960x720"/g' "$md_conf_root/all/retroarch-core-options.cfg"
+    elif grep -q "NVIDIA Jetson Nano Developer Kit" /sys/firmware/devicetree/base/model 2>/dev/null; then
+        sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1920x1080"/g' "$md_conf_root/all/retroarch-core-options.cfg"
+
     fi
 }
