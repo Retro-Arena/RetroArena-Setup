@@ -54,6 +54,7 @@ function configure_settingsmenu()
         "bluetooth"
         "configedit"
         "controlreset"
+		"controlreset-saturn"
         "escollections"
         "esgamelist"
         "esthemes"
@@ -79,6 +80,7 @@ function configure_settingsmenu()
         "Network: Bluetooth"
         "System: Configuration Editor"
         "System: Controller Reset"
+		"System: Yabasanshiro Controller Reset"
         "Media: ES Collection List Generator"
         "Media: ES Gamelist Cleanup"
         "Media: ES Themes"
@@ -106,6 +108,9 @@ function configure_settingsmenu()
         "Reset controller configurations to factory default.
         
 NOTE: This will cause your system to REBOOT."
+"Reset Yabasanshiro controller configurations to factory default."
+        
+
         "Add or update the custom collection gamelist that will be used to show games in the custom collections menu items.
 
 NOTE: This utility only works with rom files using the No-Intro naming convention like Emumovies or Hyperspin."
