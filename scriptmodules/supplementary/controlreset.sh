@@ -34,6 +34,7 @@ function gui_controlreset() {
                 ;;
             2)
                 rm -rf $home/.yabasanshiro/keymapv2.json
+                ;;
         esac
     fi
 }
