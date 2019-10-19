@@ -16,7 +16,8 @@ rp_module_section="config"
 function gui_controlreset() {
     local cmd=(dialog --backtitle "$__backtitle" --menu "Controller Reset" 22 86 16)
     local options=(
-        1 "Reset controller to factory default then REBOOT"
+        1 "Reset all controllers to factory default then REBOOT"
+        2 "Reset yabause controller config"
     )
     local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
     if [[ -n "$choice" ]]; then
@@ -31,6 +32,8 @@ function gui_controlreset() {
                 chown pigaming:pigaming $home/.emulationstation/es_input.cfg
                 reboot
                 ;;
+            2)
+                rm -rf $home/.yabasanshiro/keymapv2.json
         esac
     fi
 }
