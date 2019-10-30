@@ -27,9 +27,12 @@ function sources_kernel-headers() {
 function build_kernel-headers() {
     rm -r /lib/modules/$(uname -r)/build
     rm -r /lib/modules/$(uname -r)/source
-    make -j5 INSTALL_HDR_PATH=/lib/modules/$(uname -r)/build headers_install
+    make -j5 INSTALL_HDR_PATH=/usr/src/linux-headers-$(uname -r)/ headers_install
+    
 }
 
 function install_kernel-headers() {
-    md_ret_require= "/lib/modules/$(uname -r)/source/linux/.install"   
+    mv  -T "$md_build" /usr/src/linux-$(uname -r)/
+    ln -sfn /usr/src/linux-$(uname -r) /lib/modules/$(uname -r)/build
+    ln -sfn /usr/src/linux-$(uname -r) /lib/modules/$(uname -r)/source
 }
