@@ -27,8 +27,8 @@ function _get_platform_bin_amiberry() {
         amiberry_bin="n2"
         amiberry_platform="n2"
     elif isPlatform "rockpro64"; then
-        amiberry_bin="rockpro64"
-        amiberry_platform="rockpro64"
+        amiberry_bin="RK3399"
+        amiberry_platform="RK3399"
     fi
     [[ "$choice" == "bin" ]] && echo "$amiberry_bin"
     [[ "$choice" == "platform" ]] && echo "$amiberry_platform"
