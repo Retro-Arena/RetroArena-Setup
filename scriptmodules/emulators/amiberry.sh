@@ -46,9 +46,15 @@ function sources_amiberry() {
 function build_amiberry() {
     local amiberry_bin=$(_get_platform_bin_amiberry bin)
     local amiberry_platform=$(_get_platform_bin_amiberry platform)
+     cd external/capsimg
+    make clean
+    ./bootstrap.fs
+    ./configure.fs
+    make -f Makefile.fs
+    cd "$md_build"
     make clean
     CXXFLAGS="" make PLATFORM="$amiberry_platform"
-    ln -sf "amiberry-$amiberry_bin" "amiberry"
+    ln -sf "amiberry" "amiberry-$amiberry_bin"
     md_ret_require="$md_build/amiberry-$amiberry_bin"
 }
 
@@ -58,6 +64,7 @@ function install_amiberry() {
         'amiberry'
         "amiberry-$amiberry_bin"
         'data'
+        'external/capsimg/capsimg.so'
     )
 
     cp -R "$md_build/whdboot" "$md_inst/whdboot-dist"
