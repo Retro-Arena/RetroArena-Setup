@@ -46,4 +46,10 @@ function configure_lr-fuse() {
 
     addEmulator 1 "$md_id" "zxspectrum" "$md_inst/fuse_libretro.so"
     addSystem "zxspectrum"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

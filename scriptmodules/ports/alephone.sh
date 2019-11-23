@@ -86,4 +86,10 @@ function configure_alephone() {
     fi
 
     [[ "$md_mode" == "install" ]] && game_data_alephone
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

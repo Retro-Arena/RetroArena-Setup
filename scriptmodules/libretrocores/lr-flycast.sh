@@ -114,4 +114,10 @@ function configure_lr-flycast() {
     if grep -q "ODROID-N2" /sys/firmware/devicetree/base/model 2>/dev/null; then
         sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1280x960"/g' "$md_conf_root/all/retroarch-core-options.cfg"
     fi
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

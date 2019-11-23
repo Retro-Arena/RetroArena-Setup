@@ -59,4 +59,10 @@ function configure_openbor() {
     ln -snf "$datadir/roms/openbor" "$md_inst/Paks"
     ln -snf "$configdir/openbor/ScreenShots" "$md_inst/ScreenShots"
     ln -snf "$configdir/openbor/Saves" "$md_inst/Saves"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

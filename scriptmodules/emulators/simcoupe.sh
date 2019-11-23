@@ -52,4 +52,10 @@ function configure_simcoupe() {
 
     addEmulator 1 "$md_id" "samcoupe" "pushd $md_inst; $md_inst/simcoupe autoboot -disk1 %ROM% -fullscreen; popd"
     addSystem "samcoupe"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

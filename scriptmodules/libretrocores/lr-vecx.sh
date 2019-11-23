@@ -52,4 +52,10 @@ function configure_lr-vecx() {
 
     addEmulator 1 "$md_id" "vectrex" "$md_inst/vecx_libretro.so"
     addSystem "vectrex"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

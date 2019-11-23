@@ -148,5 +148,9 @@ function configure_advmame() {
         mkRomDir "$system"
         addSystem "$system"
         cp "$scriptdir/configs/mame-advmame/advmess.rc" "$md_conf_root/$system/"
-    done   
+    done  
+    	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
 }

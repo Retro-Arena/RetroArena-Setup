@@ -41,4 +41,10 @@ function configure_lr-beetle-pcfx() {
 
     addEmulator 1 "$md_id" "pcfx" "$md_inst/mednafen_pcfx_libretro.so"
     addSystem "pcfx"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

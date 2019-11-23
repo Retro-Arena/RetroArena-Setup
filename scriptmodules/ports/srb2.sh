@@ -48,4 +48,10 @@ function configure_srb2() {
     addPort "$md_id" "srb2" "Sonic Robo Blast 2" "pushd $md_inst; ./srb2; popd"
 
     moveConfigDir "$home/.srb2"  "$md_conf_root/$md_id"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

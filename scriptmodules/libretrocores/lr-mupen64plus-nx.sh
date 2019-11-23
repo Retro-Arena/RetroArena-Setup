@@ -102,4 +102,10 @@ function configure_lr-mupen64plus-nx() {
     setRetroArchCoreOption "${dir_name}mupen64plus-txHiresFullAlphaChannel" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-u-cbutton" "C4"
     setRetroArchCoreOption "${dir_name}mupen64plus-virefresh" "Auto"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

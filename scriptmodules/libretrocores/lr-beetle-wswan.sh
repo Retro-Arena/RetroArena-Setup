@@ -50,4 +50,10 @@ function configure_lr-beetle-wswan() {
     addEmulator 1 "$md_id" "wonderswancolor" "$md_inst/mednafen_wswan_libretro.so"
     addSystem "wonderswan"
     addSystem "wonderswancolor"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

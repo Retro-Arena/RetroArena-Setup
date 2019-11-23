@@ -38,4 +38,10 @@ function game_data_love-0.10.2() {
 
 function configure_love-0.10.2() {
     configure_love
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

@@ -45,4 +45,9 @@ function configure_ags() {
     fi
 
     addSystem "ags"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
 }

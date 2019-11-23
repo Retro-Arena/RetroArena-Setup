@@ -41,4 +41,10 @@ function configure_lr-beetle-lynx() {
 
     addEmulator 1 "$md_id" "atarilynx" "$md_inst/mednafen_lynx_libretro.so"
     addSystem "atarilynx"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

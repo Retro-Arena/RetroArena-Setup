@@ -51,4 +51,10 @@ function configure_lr-easyrpgplayer() {
     addEmulator 1 "$md_id" "easyrpgplayer" "$md_inst/easyrpg_libretro.so"
     addSystem "easyrpgplayer"
     chown $user:$user -R "$romdir/easyrpgplayer"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

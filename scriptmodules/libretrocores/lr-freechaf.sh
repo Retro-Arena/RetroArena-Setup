@@ -44,4 +44,10 @@ function configure_lr-freechaf() {
 
     addEmulator 1 "$md_id" "channelf" "$md_inst/freechaf_libretro.so"
     addSystem "channelf"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

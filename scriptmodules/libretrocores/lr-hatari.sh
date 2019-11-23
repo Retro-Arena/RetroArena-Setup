@@ -57,4 +57,10 @@ function configure_lr-hatari() {
     iniConfig " = " '"' "$configdir/atarist/emulators.cfg"
     iniGet "$md_id"
     iniSet "$md_id" "LD_LIBRARY_PATH='$md_inst' $ini_value"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

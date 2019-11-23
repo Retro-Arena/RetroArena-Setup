@@ -51,4 +51,10 @@ function configure_lr-dosbox() {
 
     addEmulator 1 "$md_id" "pc" "$md_inst/dosbox_libretro.so"
     addSystem "pc"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

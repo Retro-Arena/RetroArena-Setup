@@ -52,4 +52,10 @@ function configure_openfodder() {
     chown -R $user:$user "$romdir/ports/$md_id"
 
     addPort "$md_id" "openfodder" "openfodder - Cannon Fodder Engine" "pushd $md_inst; $md_inst/OpenFodder; popd"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

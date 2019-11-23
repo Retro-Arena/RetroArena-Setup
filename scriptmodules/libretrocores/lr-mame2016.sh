@@ -49,4 +49,10 @@ function configure_lr-mame2016() {
     done
     
     setRetroArchCoreOption "${dir_name}mame2016_throttle" "enabled"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

@@ -177,4 +177,8 @@ function gui_fruitbox() {
                 ;;
         esac
     done
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
 }

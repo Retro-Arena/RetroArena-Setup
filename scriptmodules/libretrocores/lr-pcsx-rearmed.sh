@@ -64,4 +64,10 @@ function configure_lr-pcsx-rearmed() {
 
     addEmulator 1 "$md_id" "psx" "$md_inst/pcsx_rearmed_libretro.so"
     addSystem "psx"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

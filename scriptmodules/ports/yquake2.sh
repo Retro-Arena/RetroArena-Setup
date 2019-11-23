@@ -99,4 +99,10 @@ function configure_yquake2() {
 
     [[ "$md_mode" == "install" ]] && game_data_yquake2
     add_games_yquake2 "$md_inst/quake2 -datadir $romdir/ports/quake2 ${params[@]} +set game %ROM%"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

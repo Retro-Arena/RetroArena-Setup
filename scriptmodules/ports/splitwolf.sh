@@ -118,4 +118,10 @@ _EOF_
     add_games_splitwolf
 
     moveConfigDir "$home/.splitwolf" "$md_conf_root/splitwolf"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

@@ -71,4 +71,10 @@ function configure_eduke32() {
     rm -f "$romdir/ports/Duke3D Shareware.sh"
 
     [[ "$md_mode" == "install" ]] && game_data_eduke32
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

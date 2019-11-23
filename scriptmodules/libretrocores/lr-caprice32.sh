@@ -46,4 +46,10 @@ function configure_lr-caprice32() {
 
     addEmulator 1 "$md_id" "amstradcpc" "$md_inst/cap32_libretro.so"
     addSystem "amstradcpc"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

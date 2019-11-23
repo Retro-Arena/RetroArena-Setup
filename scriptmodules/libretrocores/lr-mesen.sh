@@ -60,5 +60,11 @@ function configure_lr-mesen() {
     addSystem "nes"
     addSystem "fds"
     addSystem "famicom"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }
 

@@ -44,4 +44,10 @@ function configure_lr-quicknes() {
 
     addEmulator "$def" "$md_id" "nes" "$md_inst/quicknes_libretro.so"
     addSystem "nes"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

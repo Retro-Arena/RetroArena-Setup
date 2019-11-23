@@ -70,4 +70,10 @@ function configure_oricutron() {
     addSystem "oric"
 
     [[ "$md_mode" == "install" ]] && game_data_oricutron
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

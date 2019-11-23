@@ -846,4 +846,10 @@ function _gui_generate_skyscraper() {
             break
         fi
     done
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

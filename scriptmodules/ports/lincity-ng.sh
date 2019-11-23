@@ -45,4 +45,10 @@ function configure_lincity-ng() {
         rm -rf /lincity-ng
         chown $user:$user "$md_conf_root/lincity-ng"
     fi
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

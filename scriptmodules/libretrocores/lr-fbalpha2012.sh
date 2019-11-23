@@ -56,4 +56,10 @@ function configure_lr-fbalpha2012() {
         addEmulator 0 "$md_id" "$system" "$md_inst/fbalpha2012_libretro.so"
         addSystem "$system"
     done
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

@@ -109,4 +109,10 @@ _EOF_
     addSystem "zx81"
     addSystem "jupiter-ace"
     addSystem "ql"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

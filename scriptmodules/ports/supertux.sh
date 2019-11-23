@@ -30,4 +30,10 @@ function remove_supertux() {
 
 function configure_supertux() {
     addPort "$md_id" "supertux" "SuperTux" "supertux2"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

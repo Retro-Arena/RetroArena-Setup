@@ -62,4 +62,10 @@ function configure_lr-ppsspp() {
             rm "$gles2/gl2ext.h.org"
         fi
     fi
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

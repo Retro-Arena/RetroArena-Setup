@@ -59,4 +59,9 @@ function configure_atari800() {
     addEmulator 1 "atari800" "atari5200" "$md_inst/bin/atari800 %ROM%"
     addSystem "atari800"
     addSystem "atari5200"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
 }

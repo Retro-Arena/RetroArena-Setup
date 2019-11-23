@@ -45,4 +45,10 @@ function configure_lr-prosystem() {
 
     addEmulator 1 "$md_id" "atari7800" "$md_inst/prosystem_libretro.so"
     addSystem "atari7800"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

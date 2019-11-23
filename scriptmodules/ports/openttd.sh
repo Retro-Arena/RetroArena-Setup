@@ -37,4 +37,10 @@ function configure_openttd() {
     moveConfigDir "$home/.local/openttd" "$md_conf_root/openttd"
 
     addPort "$md_id" "openttd" "OpenTTD" "xinit openttd"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

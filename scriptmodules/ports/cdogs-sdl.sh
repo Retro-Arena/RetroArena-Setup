@@ -50,4 +50,10 @@ function install_bin_cdogs-sdl() {
 function configure_cdogs-sdl() {
     moveConfigDir "$home/.config/cdogs-sdl" "$md_conf_root/cdogs-sdl"
     addPort "$md_id" "cdogs-sdl" "C-Dogs SDL" "pushd $md_inst; $md_inst/cdogs-sdl; popd"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

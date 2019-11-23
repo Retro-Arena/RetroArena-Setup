@@ -54,4 +54,10 @@ _EOF_
     chmod +x "$file"
 
     ensureSystemretroconfig "ports/cavestory"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

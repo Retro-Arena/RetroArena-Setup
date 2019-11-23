@@ -43,4 +43,10 @@ function configure_lr-freeintv() {
 
     addEmulator 1 "$md_id" "intellivision" "$md_inst/freeintv_libretro.so"
     addSystem "intellivision"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

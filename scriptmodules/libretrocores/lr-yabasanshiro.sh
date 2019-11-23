@@ -62,4 +62,10 @@ function configure_lr-yabasanshiro() {
     setRetroArchCoreOption "${dir_name}yabasanshiro_rbg_use_compute_shader" "disabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_sh2coretype" "dynarec"
     setRetroArchCoreOption "${dir_name}yabasanshiro_videoformattype" "NTSC"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

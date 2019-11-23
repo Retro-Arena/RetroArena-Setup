@@ -60,4 +60,10 @@ function hotkey_retroarch-176() {
 
 function gui_retroarch-176() {
     gui_retroarch
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

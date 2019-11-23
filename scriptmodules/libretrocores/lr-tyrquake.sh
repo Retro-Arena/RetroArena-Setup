@@ -84,4 +84,10 @@ function configure_lr-tyrquake() {
     add_games_lr-tyrquake
 
     ensureSystemretroconfig "ports/quake"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

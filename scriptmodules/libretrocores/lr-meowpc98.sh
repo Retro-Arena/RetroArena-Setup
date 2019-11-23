@@ -40,4 +40,10 @@ function configure_lr-meowpc98() {
 
     addEmulator 1 "$md_id" "pc98" "$md_inst/nekop2_libretro.so"
     addSystem "pc98"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

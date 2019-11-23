@@ -100,4 +100,9 @@ function configure_amiberry() {
     cp -R "$md_inst/whdboot-dist/"{game-data,save-data,boot-data.zip,WHDLoad} "$config_dir/whdboot/"
 
     chown -R $user:$user "$config_dir/whdboot"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
 }

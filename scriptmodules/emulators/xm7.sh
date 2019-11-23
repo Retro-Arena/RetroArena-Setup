@@ -67,4 +67,10 @@ function configure_xm7() {
 
     addEmulator 1 "$md_id" "fm7" "$md_inst/bin/xm7 %ROM%"
     addSystem "fm7"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

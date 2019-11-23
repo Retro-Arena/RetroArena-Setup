@@ -50,4 +50,10 @@ function configure_lr-snes9x2002() {
         addEmulator 1 "$md_id" "$system" "$md_inst/snes9x2002_libretro.so"
         addSystem "$system"
 done
+
+if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

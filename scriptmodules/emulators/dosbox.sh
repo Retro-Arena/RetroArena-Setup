@@ -141,4 +141,9 @@ _EOF_
     cp "$scriptdir/configs/pc/dosbox-SVN.conf" "$md_conf_root/pc/"
     addEmulator "$def" "$md_id" "pc" "bash $romdir/pc/${launcher_name// /\\ } %ROM%"
     addSystem "pc"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
 }

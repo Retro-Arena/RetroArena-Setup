@@ -42,4 +42,10 @@ function configure_lr-o2em() {
 
     addEmulator 1 "$md_id" "videopac" "$md_inst/o2em_libretro.so"
     addSystem "videopac"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

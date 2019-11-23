@@ -46,4 +46,10 @@ function configure_lr-vba-next() {
 
     addEmulator 0 "$md_id" "gba" "$md_inst/vba_next_libretro.so"
     addSystem "gba"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

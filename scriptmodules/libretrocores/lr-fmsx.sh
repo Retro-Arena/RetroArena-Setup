@@ -64,4 +64,10 @@ function configure_lr-fmsx() {
 
     addEmulator 0 "$md_id" "msx" "$md_inst/fmsx_libretro.so"
     addSystem "msx"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

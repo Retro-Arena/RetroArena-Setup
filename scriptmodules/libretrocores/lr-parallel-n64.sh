@@ -166,4 +166,10 @@ _EOF_
 
     addEmulator 0 "$md_id" "n64" "$md_inst/parallel_n64_libretro.so"
     addSystem "n64"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

@@ -52,4 +52,10 @@ function configure_lr-dinothawr() {
     cp -Rv "$md_inst/dinothawr" "$romdir/ports"
 
     chown $user:$user -R "$romdir/ports/dinothawr"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

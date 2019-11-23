@@ -92,4 +92,10 @@ function configure_lr-prboom() {
 
     cp prboom.wad "$romdir/ports/doom/"
     chown $user:$user "$romdir/ports/doom/prboom.wad"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

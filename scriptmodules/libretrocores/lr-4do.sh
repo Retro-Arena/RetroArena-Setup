@@ -45,4 +45,10 @@ function configure_lr-4do() {
 
     addEmulator 1 "$md_id" "3do" "$md_inst/4do_libretro.so"
     addSystem "3do"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

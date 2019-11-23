@@ -41,4 +41,10 @@ function install_bin_lr-mame2003-plus() {
 
 function configure_lr-mame2003-plus() {
     configure_lr-mame2003
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }

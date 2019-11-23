@@ -57,4 +57,10 @@ function configure_lr-fceumm() {
     addSystem "nes"
     addSystem "fds"
     addSystem "famicom"
+	
+	if  isPlatform "odroid-n2"; then
+   cd ~/mali
+   ./install.sh
+fi
+
 }
