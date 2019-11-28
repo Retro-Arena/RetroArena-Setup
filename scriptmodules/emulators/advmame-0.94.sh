@@ -55,8 +55,5 @@ function configure_advmame-0.94() {
     configure_advmame
     cp "$scriptdir/configs/mame-advmame/advmame-0.94.rc" "$md_conf_root/mame-advmame/"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 }

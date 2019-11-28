@@ -60,9 +60,6 @@ function configure_openmsx() {
     addSystem "coleco"
     ln -sfn "$biosdir/COLECO.ROM" "$md_inst/share/systemroms/COLECO.ROM"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

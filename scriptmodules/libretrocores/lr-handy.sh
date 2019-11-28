@@ -43,9 +43,6 @@ function configure_lr-handy() {
     addEmulator 0 "$md_id" "atarilynx" "$md_inst/handy_libretro.so"
     addSystem "atarilynx"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

@@ -119,9 +119,6 @@ _EOF_
 
     moveConfigDir "$home/.splitwolf" "$md_conf_root/splitwolf"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

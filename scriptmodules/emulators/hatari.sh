@@ -100,9 +100,6 @@ function configure_hatari() {
     addEmulator 0 "$md_id-compatible-borders" "atarist" "$md_inst/bin/hatari ${common_config[*]} --compatible 1 --timer-d 0 --borders 1 %ROM%"
     addSystem "atarist"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

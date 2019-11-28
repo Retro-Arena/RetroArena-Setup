@@ -52,9 +52,6 @@ function configure_lr-gpsp() {
     addEmulator $def "$md_id" "gba" "$md_inst/gpsp_libretro.so"
     addSystem "gba"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

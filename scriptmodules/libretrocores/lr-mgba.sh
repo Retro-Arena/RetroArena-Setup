@@ -50,9 +50,6 @@ function configure_lr-mgba() {
         addEmulator 1 "$md_id" "$system" "$md_inst/mgba_libretro.so"
         addSystem "$system"
     done
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

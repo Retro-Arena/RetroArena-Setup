@@ -59,9 +59,6 @@ function configure_tyrquake() {
 
     moveConfigDir "$home/.tyrquake" "$md_conf_root/quake/tyrquake"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

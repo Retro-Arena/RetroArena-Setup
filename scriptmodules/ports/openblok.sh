@@ -41,9 +41,6 @@ function configure_openblok() {
     moveConfigDir "$home/.local/share/openblok" "$md_conf_root/openblok"
     addPort "$md_id" "openblok" "OpenBlok" "$md_inst/openblok"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

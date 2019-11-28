@@ -53,9 +53,6 @@ function configure_lr-gambatte() {
         addSystem "$system"
     done
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

@@ -145,9 +145,6 @@ _EOF_
 
     setDispmanx "$md_id" 1
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

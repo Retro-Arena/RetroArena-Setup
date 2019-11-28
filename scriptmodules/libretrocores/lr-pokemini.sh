@@ -42,9 +42,6 @@ function configure_lr-pokemini() {
     addEmulator 1 "$md_id" "pokemini" "$md_inst/pokemini_libretro.so"
     addSystem "pokemini"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

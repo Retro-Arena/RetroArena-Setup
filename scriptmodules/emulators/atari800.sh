@@ -60,8 +60,5 @@ function configure_atari800() {
     addSystem "atari800"
     addSystem "atari5200"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 }

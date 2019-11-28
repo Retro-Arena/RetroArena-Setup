@@ -73,9 +73,6 @@ function configure_jumpnbump() {
         iniConfig " = " "" "$md_conf_root/jumpnbump/options.cfg"
         iniSet "nogore" "1"
     fi
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

@@ -53,8 +53,5 @@ function configure_creativision() {
     addEmulator 0 "${md_id}-laser2001" "crvision" "$md_inst/creatiVision -f -3 -b /home/pigaming/RetroArena/BIOS/crvision/laser2001.rom -r %ROM%"
     addSystem "crvision"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 }

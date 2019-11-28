@@ -59,9 +59,6 @@ function configure_xroar() {
     addSystem "dragon32"
     addSystem "coco"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

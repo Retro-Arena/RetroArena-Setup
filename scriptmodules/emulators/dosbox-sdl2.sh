@@ -50,8 +50,5 @@ function configure_dosbox-sdl2() {
             iniDel "usescancodes"
         fi
     fi
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 }

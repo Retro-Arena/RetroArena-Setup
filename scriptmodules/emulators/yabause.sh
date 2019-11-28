@@ -70,9 +70,6 @@ function configure_yabause() {
     addEmulator 0 "${md_id}-720p-hle-fs" "saturn" "$md_inst/yabasanshiro -a -r 4 -i %ROM%"    
     addSystem "saturn"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

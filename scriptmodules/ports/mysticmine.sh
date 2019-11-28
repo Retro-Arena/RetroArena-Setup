@@ -34,9 +34,6 @@ function install_mysticmine() {
 function configure_mysticmine() {
     addPort "$md_id" "mysticmine" "MysticMine" "pushd $md_inst; sudo xinit PYTHONPATH=$PYTHONPATH:${md_inst}/lib/python2.7/site-packages ./bin/MysticMine; popd"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

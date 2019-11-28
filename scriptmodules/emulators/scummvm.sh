@@ -93,9 +93,6 @@ _EOF_
     chown -R $user:$user "$md_conf_root/scummvm/scummvm.ini"
     chmod a+x "$md_conf_root/scummvm/scummvm.ini"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

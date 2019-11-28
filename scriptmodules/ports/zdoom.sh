@@ -62,9 +62,6 @@ function configure_zdoom() {
 
     add_games_zdoom
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

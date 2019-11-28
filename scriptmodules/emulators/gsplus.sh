@@ -51,9 +51,6 @@ function configure_gsplus() {
     addEmulator 1 "$md_id" "apple2gs" "$md_inst/GSplus -config %ROM%"
     addSystem "apple2gs"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

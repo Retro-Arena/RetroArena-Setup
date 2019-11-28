@@ -63,9 +63,6 @@ function configure_lr-ppsspp() {
         fi
     fi
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

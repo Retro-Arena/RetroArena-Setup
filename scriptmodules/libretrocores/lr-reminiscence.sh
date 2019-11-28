@@ -57,9 +57,6 @@ _EOF_
 
     ensureSystemretroconfig "ports/reminiscence"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

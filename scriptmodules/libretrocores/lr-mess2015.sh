@@ -48,9 +48,6 @@ function configure_lr-mess2015() {
         addSystem "$system"
     done
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

@@ -41,9 +41,6 @@ function configure_lr-np2kai() {
     addEmulator 1 "$md_id" "pc98" "$md_inst/np2kai_libretro.so"
     addSystem "pc98"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

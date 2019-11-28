@@ -51,9 +51,6 @@ function configure_lr-beetle-wswan() {
     addSystem "wonderswan"
     addSystem "wonderswancolor"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

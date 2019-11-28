@@ -49,9 +49,6 @@ function configure_lr-superflappybirds() {
 
     ensureSystemretroconfig "ports/superflappybirds"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

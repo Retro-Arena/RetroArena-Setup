@@ -101,8 +101,5 @@ function configure_amiberry() {
 
     chown -R $user:$user "$config_dir/whdboot"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 }

@@ -58,9 +58,6 @@ function configure_opentyrian() {
 
     [[ "$md_mode" == "install" ]] && game_data_opentyrian
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

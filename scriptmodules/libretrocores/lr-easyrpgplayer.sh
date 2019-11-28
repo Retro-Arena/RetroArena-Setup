@@ -52,9 +52,6 @@ function configure_lr-easyrpgplayer() {
     addSystem "easyrpgplayer"
     chown $user:$user -R "$romdir/easyrpgplayer"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

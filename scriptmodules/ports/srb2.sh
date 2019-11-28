@@ -49,9 +49,6 @@ function configure_srb2() {
 
     moveConfigDir "$home/.srb2"  "$md_conf_root/$md_id"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

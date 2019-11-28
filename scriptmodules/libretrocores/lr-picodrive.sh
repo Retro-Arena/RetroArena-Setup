@@ -50,9 +50,6 @@ function configure_lr-picodrive() {
         addSystem "$system"
     done
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

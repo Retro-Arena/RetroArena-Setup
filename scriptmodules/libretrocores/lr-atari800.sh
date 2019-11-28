@@ -48,9 +48,6 @@ function configure_lr-atari800() {
     mkUserDir "$md_conf_root/atari800"
     moveConfigFile "$home/.atari800.cfg" "$md_conf_root/atari800/atari800.cfg"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

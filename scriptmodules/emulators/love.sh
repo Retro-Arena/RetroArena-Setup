@@ -64,9 +64,6 @@ function configure_love() {
 
     [[ "$md_mode" == "install" ]] && game_data_love
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

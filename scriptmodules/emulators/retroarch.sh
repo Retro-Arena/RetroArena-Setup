@@ -450,9 +450,6 @@ function _set_config_option_retroarch() {
         iniSet "$option" "$value"
     fi
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

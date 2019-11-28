@@ -80,8 +80,5 @@ _EOF_
     addEmulator 1 "$md_id" "daphne" "$md_inst/daphne.sh %ROM%"
     addSystem "daphne"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 }

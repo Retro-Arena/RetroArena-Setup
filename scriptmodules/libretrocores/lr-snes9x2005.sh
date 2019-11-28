@@ -49,9 +49,6 @@ function configure_lr-snes9x2005() {
         addSystem "$system"
     done
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

@@ -64,8 +64,5 @@ function gui_emulationstation-dev() {
     gui_emulationstation
 }
 
-if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+
 

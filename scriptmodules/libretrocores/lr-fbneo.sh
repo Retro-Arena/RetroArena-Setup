@@ -101,9 +101,6 @@ function configure_lr-fbneo() {
     addSystem "msx"
     addSystem "zxspectrum"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

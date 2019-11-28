@@ -53,9 +53,6 @@ function configure_frotz() {
 
     [[ "$md_mode" == "install" ]] && game_data_frotz
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

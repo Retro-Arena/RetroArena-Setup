@@ -112,9 +112,6 @@ function configure_lr-mame2003() {
     addSystem "arcade"
     addSystem "mame-libretro"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

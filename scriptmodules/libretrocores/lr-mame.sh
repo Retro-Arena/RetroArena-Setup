@@ -60,9 +60,6 @@ function configure_lr-mame() {
         addSystem "$system"
     done
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

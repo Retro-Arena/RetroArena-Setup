@@ -109,9 +109,6 @@ function configure_dxx-rebirth() {
 
     [[ "$md_mode" == "install" ]] && game_data_dxx-rebirth
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

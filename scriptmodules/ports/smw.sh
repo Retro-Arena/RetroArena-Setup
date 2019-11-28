@@ -38,9 +38,6 @@ function configure_smw() {
 
     moveConfigFile "$home/.smw.options.bin" "$md_conf_root/smw/.smw.options.bin"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

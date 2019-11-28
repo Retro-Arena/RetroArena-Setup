@@ -47,9 +47,6 @@ function configure_lr-genesis-plus-gx() {
         addSystem "$system"
     done
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

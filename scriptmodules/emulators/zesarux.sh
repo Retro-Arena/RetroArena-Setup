@@ -110,9 +110,6 @@ _EOF_
     addSystem "jupiter-ace"
     addSystem "ql"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

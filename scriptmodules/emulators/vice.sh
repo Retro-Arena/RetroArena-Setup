@@ -126,9 +126,6 @@ _EOF_
         iniSet "SDLWindowHeight" "272"
     fi
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

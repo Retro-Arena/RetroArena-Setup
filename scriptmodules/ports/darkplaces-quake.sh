@@ -58,9 +58,6 @@ function configure_darkplaces-quake() {
 
     moveConfigDir "$home/.darkplaces" "$md_conf_root/quake/darkplaces"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

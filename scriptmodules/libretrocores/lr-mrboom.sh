@@ -52,9 +52,6 @@ function configure_lr-mrboom() {
     mkRomDir "ports/mrboom"
     ensureSystemretroconfig "ports/mrboom"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

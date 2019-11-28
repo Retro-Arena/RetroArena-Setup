@@ -44,9 +44,6 @@ function configure_lr-virtualjaguar() {
     addEmulator 1 "$md_id" "atarijaguar" "$md_inst/virtualjaguar_libretro.so"
     addSystem "atarijaguar"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

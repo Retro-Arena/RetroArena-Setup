@@ -50,9 +50,6 @@ function configure_lr-beetle-psx-hw() {
     addEmulator 0 "$md_id" "psx" "$md_inst/mednafen_psx_hw_libretro.so"
     addSystem "psx"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

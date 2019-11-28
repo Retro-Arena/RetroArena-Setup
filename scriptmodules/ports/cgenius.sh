@@ -53,9 +53,6 @@ function configure_cgenius() {
     moveConfigDir "$home/.CommanderGenius"  "$md_conf_root/$md_id"
     moveConfigDir "$md_conf_root/$md_id/games"  "$romdir/ports/$md_id"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

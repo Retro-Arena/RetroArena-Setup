@@ -43,9 +43,6 @@ matchbox-window-manager &
 _EOF_
     chmod +x "$md_inst/micropolis.sh"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

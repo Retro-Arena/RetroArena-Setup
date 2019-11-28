@@ -57,9 +57,6 @@ function configure_lr-fbalpha2012() {
         addSystem "$system"
     done
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

@@ -75,9 +75,6 @@ function configure_solarus() {
 
     chown -R $user:$user "$md_inst"/share/solarus/*/data.solarus
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

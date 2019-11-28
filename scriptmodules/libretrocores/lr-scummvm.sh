@@ -88,9 +88,6 @@ $emudir/retroarch/bin/retroarch \\
 _EOF_
     chmod +x "$md_inst/romdir-launcher.sh"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

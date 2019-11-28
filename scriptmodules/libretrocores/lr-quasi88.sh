@@ -42,9 +42,6 @@ function configure_lr-quasi88() {
     addEmulator 1 "$md_id" "pc88" "$md_inst/quasi88_libretro.so"
     addSystem "pc88"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

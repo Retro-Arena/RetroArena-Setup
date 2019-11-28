@@ -76,9 +76,6 @@ function configure_uqm() {
     moveConfigDir "$home/.uqm" "$md_conf_root/uqm"
     addPort "$md_id" "uqm" "Ur-quan Masters" "xinit uqm"
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }

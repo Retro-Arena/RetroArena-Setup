@@ -49,9 +49,6 @@ function configure_lr-beetle-ngp() {
         addSystem "$system"
     done
 	
-	if  isPlatform "odroid-n2"; then
-   cd ~/mali
-   ./install.sh
-fi
+	
 
 }
