@@ -17,6 +17,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_cgenius() {
     getDepends build-essential cmake libcurl4-openssl-dev libvorbis-dev libogg-dev libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libboost-dev python3-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_cgenius() {

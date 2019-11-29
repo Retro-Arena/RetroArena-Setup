@@ -18,6 +18,9 @@ rp_module_section="sa"
 function depends_ppsspp() {
     local depends=(cmake libsdl2-dev libzip-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_ppsspp() {

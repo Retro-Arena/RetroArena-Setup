@@ -18,6 +18,9 @@ rp_module_flags="!mali"
 # abuse-lib & abuse-sfx will pull in the older abuse package which only works under X
 function depends_abuse() {
     getDepends libsdl2-dev libsdl2-mixer-dev abuse-lib abuse-sfx
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_abuse() {

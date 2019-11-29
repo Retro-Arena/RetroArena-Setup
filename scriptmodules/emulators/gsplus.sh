@@ -17,6 +17,9 @@ rp_module_section="sa"
 
 function depends_gsplus() {
     getDepends libpcap0.8-dev libfreetype6-dev libsdl2-dev libsdl2-image-dev re2c libreadline-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_gsplus() {

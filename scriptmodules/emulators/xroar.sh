@@ -18,6 +18,9 @@ rp_module_flags=" !kms"
 
 function depends_xroar() {
     getDepends libsdl1.2-dev automake
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_xroar() {

@@ -18,6 +18,9 @@ rp_module_flags="!mali"
 
 function depends_lr-hatari() {
     getDepends zlib1g-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-hatari() {

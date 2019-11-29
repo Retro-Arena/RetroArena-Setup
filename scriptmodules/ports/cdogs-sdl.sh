@@ -17,6 +17,9 @@ rp_module_flags=" !kms !odroid-n2"
 
 function depends_cdogs-sdl() {
     getDepends cmake libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev build-essential
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_cdogs-sdl() {

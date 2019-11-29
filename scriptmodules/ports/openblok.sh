@@ -17,6 +17,9 @@ rp_module_flags=""
 
 function depends_openblok() {
     getDepends cmake libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_openblok() {

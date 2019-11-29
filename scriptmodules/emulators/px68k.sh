@@ -17,6 +17,9 @@ rp_module_flags="!mali"
 
 function depends_px68k() {
     getDepends libsdl1.2-dev libsdl-gfx1.2-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_px68k() {

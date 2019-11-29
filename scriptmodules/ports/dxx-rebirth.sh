@@ -19,6 +19,9 @@ function depends_dxx-rebirth() {
     local depends=(libphysfs1 libphysfs-dev libsdl1.2-dev libsdl-mixer1.2-dev scons)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_dxx-rebirth() {

@@ -36,6 +36,9 @@ function depends_lr-mupen64plus() {
     isPlatform "mesa" && depends+=(libgles2-mesa-dev)
     isPlatform "videocore" && depends+=(libraspberrypi-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-mupen64plus() {

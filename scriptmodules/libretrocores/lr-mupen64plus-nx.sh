@@ -23,6 +23,9 @@ function _update_hook_lr-mupen64plus-nx() {
 function depends_lr-mupen64plus-nx() {
     local depends=(flex bison libpng-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-mupen64plus-nx() {

@@ -16,6 +16,9 @@ rp_module_section="opt"
 
 function depends_skyscraper() {
     getDepends qt5-default p7zip-full
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_skyscraper() {

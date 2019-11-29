@@ -37,6 +37,9 @@ function _get_platform_bin_amiberry() {
 function depends_amiberry() {
     local depends=(libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev libxml2-dev libflac-dev libmpg123-dev libpng-dev libmpeg2-4-dev)
     depends_uae4arm "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_amiberry() {

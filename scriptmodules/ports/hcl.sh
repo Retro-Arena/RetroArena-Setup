@@ -18,6 +18,9 @@ rp_module_flags="!x86"
 
 function depends_hcl() {
     getDepends libsdl1.2-dev libsdl-mixer1.2-dev cmake
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_hcl() {

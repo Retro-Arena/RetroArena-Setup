@@ -20,6 +20,9 @@ function depends_basilisk() {
     local depends=(libsdl1.2-dev autoconf automake oss-compat)
     isPlatform "x11" && depends+=(libgtk2.0-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_basilisk() {

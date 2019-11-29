@@ -16,6 +16,9 @@ rp_module_section="prt"
 
 function depends_digger() {
     getDepends cmake libsdl2-dev zlib1g-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_digger() {

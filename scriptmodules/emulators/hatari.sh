@@ -18,6 +18,9 @@ rp_module_flags=""
 
 function depends_hatari() {
     getDepends libsdl2-dev zlib1g-dev libpng-dev cmake libreadline-dev portaudio19-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function _sources_libcapsimage_hatari() {

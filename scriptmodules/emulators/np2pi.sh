@@ -17,6 +17,9 @@ rp_module_flags="dispmanx !x86 !mali"
 
 function depends_np2pi() {
     getDepends libsdl1.2-dev libasound2-dev libsdl-ttf2.0-dev fonts-takao-gothic
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_np2pi() {

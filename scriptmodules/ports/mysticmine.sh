@@ -17,6 +17,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_mysticmine() {
     getDepends python-pyrex python-numpy python-pygame
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_mysticmine() {

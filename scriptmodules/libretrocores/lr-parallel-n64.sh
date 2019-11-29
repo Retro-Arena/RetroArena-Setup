@@ -20,6 +20,9 @@ function depends_lr-parallel-n64() {
     isPlatform "x11" && depends+=(libgl1-mesa-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-parallel-n64() {

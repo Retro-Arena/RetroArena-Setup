@@ -20,6 +20,9 @@ function depends_cannonball() {
     local depends=(cmake libsdl2-dev libboost-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_cannonball() {
