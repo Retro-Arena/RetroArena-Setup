@@ -50,4 +50,5 @@ function configure_dosbox-sdl2() {
             iniDel "usescancodes"
         fi
     fi
+	
 }

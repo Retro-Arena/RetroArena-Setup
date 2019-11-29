@@ -58,4 +58,8 @@ function configure_easyrpgplayer() {
     mkRomDir "ports/$md_id/games/"
 
     addPort "$md_id" "easyrpgplayer" "EasyRPG Player - RPG Maker 2000 and 2003 Interpreter" "cd $romdir/ports/$md_id/games/; RPG2K_RTP_PATH=$romdir/ports/$md_id/data/rtp2000/ RPG2K3_RTP_PATH=$romdir/ports/$md_id/data/rtp2003/ $md_inst/bin/easyrpg-player"
-}
+
+	
+	
+	}
+

@@ -73,4 +73,6 @@ function configure_jumpnbump() {
         iniConfig " = " "" "$md_conf_root/jumpnbump/options.cfg"
         iniSet "nogore" "1"
     fi
+	
+
 }

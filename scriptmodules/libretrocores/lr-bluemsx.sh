@@ -56,4 +56,7 @@ function configure_lr-bluemsx() {
 
     cp -rv "$md_inst/"{Databases,Machines} "$biosdir/"
     chown -R $user:$user "$biosdir/"{Databases,Machines}
+	
+	
+
 }

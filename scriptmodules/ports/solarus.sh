@@ -74,4 +74,7 @@ function configure_solarus() {
     moveConfigDir "$home/.solarus" "$md_conf_root/solarus"
 
     chown -R $user:$user "$md_inst"/share/solarus/*/data.solarus
+	
+	
+
 }

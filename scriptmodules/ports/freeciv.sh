@@ -30,4 +30,7 @@ function configure_freeciv() {
     moveConfigDir "$home/.freeciv" "$md_conf_root/freeciv"
     moveConfigFile "$home/.freeciv-client-rc-2.4" "$md_conf_root/freeciv"
     addPort "$md_id" "freeciv" "Freeciv" "xinit /usr/games/freeciv-sdl"
+	
+	
+
 }

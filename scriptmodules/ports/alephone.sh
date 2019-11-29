@@ -86,4 +86,7 @@ function configure_alephone() {
     fi
 
     [[ "$md_mode" == "install" ]] && game_data_alephone
+	
+	
+
 }

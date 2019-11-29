@@ -54,4 +54,7 @@ function configure_px68k() {
 
     addEmulator 1 "$md_id" "x68000" "xinit $md_inst/px68k %ROM%"
     addSystem "x68000"
+	
+	
+
 }

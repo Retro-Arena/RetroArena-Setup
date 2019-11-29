@@ -52,4 +52,7 @@ function configure_frotz() {
     addSystem "zmachine"
 
     [[ "$md_mode" == "install" ]] && game_data_frotz
+	
+	
+
 }

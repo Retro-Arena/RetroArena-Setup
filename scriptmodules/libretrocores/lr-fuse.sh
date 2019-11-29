@@ -46,4 +46,7 @@ function configure_lr-fuse() {
 
     addEmulator 1 "$md_id" "zxspectrum" "$md_inst/fuse_libretro.so"
     addSystem "zxspectrum"
+	
+	
+
 }

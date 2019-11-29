@@ -63,4 +63,7 @@ function configure_linapple() {
     cp "$scriptdir/configs/apple2/linapple.conf" "$md_conf_root/apple2/"
     addEmulator 1 "$md_id" "apple2" "pushd $romdir/apple2; $md_inst/linapple -1 %ROM%; popd"
     addSystem "apple2"
+	
+	
+
 }

@@ -58,4 +58,7 @@ function configure_tyrquake() {
     add_games_tyrquake
 
     moveConfigDir "$home/.tyrquake" "$md_conf_root/quake/tyrquake"
+	
+	
+
 }

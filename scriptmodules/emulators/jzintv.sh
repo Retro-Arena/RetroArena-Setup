@@ -56,4 +56,7 @@ function configure_jzintv() {
 
     addEmulator 1 "$md_id" "intellivision" "$md_inst/bin/jzintv -z4 -f1 -p $biosdir -q %ROM%"
     addSystem "intellivision"
+	
+	
+
 }

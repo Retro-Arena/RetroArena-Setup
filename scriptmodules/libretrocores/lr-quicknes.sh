@@ -44,4 +44,7 @@ function configure_lr-quicknes() {
 
     addEmulator "$def" "$md_id" "nes" "$md_inst/quicknes_libretro.so"
     addSystem "nes"
+	
+	
+
 }

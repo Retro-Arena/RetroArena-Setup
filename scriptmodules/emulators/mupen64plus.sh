@@ -280,4 +280,7 @@ function configure_mupen64plus() {
 
     chown -R $user:$user "$md_conf_root/n64"
     cp -R "$scriptdir/configs/n64/." "$md_conf_root/n64"
+	
+	
+
 }

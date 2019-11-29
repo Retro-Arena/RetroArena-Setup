@@ -70,4 +70,7 @@ function configure_oricutron() {
     addSystem "oric"
 
     [[ "$md_mode" == "install" ]] && game_data_oricutron
+	
+	
+
 }

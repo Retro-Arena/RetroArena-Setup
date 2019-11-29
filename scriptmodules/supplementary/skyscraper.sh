@@ -846,4 +846,7 @@ function _gui_generate_skyscraper() {
             break
         fi
     done
+	
+	
+
 }

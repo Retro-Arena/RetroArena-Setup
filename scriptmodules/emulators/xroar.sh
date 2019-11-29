@@ -58,4 +58,7 @@ function configure_xroar() {
     addEmulator 0 "$md_id-coco" "coco" "$md_inst/bin/xroar ${params[*]} -machine coco -run %ROM%"
     addSystem "dragon32"
     addSystem "coco"
+	
+	
+
 }

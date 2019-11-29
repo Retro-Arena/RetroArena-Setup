@@ -57,4 +57,7 @@ function install_srb2kart() {
 function configure_srb2kart() {
     addPort "$md_id" "srb2kart" "Sonic Robo Blast 2 Kart" "pushd $md_inst; ./srb2kart; popd"
     moveConfigDir "$home/.srb2kart"  "$md_conf_root/$md_id"
+	
+	
+
 }

@@ -46,4 +46,7 @@ function configure_minivmac() {
 
     addEmulator 1 "$md_id" "macintosh" "pushd $md_inst; $md_inst/minivmac $romdir/macintosh/System\ Tools.dsk %ROM%; popd"
     addSystem "macintosh"
+	
+	
+
 }

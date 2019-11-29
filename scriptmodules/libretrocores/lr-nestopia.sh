@@ -57,4 +57,7 @@ function configure_lr-nestopia() {
     addSystem "nes"
     addSystem "fds"
     addSystem "famicom"
+	
+	
+
 }

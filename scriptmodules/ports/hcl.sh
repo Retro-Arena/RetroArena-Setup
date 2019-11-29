@@ -47,4 +47,7 @@ function configure_hcl() {
     mkRomDir "ports/hcl"
     moveConfigDir "$home/.hydracastlelabyrinth" "$md_conf_root/hcl"
     addPort "$md_id" "hcl" "Hydra Castle Labrinth - Metroidvania Game" "pushd $md_inst; $md_inst/hcl -d; popd" 
+	
+	
+
 }

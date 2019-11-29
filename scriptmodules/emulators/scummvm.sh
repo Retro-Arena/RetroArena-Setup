@@ -92,4 +92,7 @@ _EOF_
     cp "$scriptdir/configs/scummvm/scummvm.ini" "$md_conf_root/scummvm/"
     chown -R $user:$user "$md_conf_root/scummvm/scummvm.ini"
     chmod a+x "$md_conf_root/scummvm/scummvm.ini"
+	
+	
+
 }

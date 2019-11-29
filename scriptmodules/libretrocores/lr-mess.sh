@@ -65,4 +65,7 @@ function configure_lr-mess() {
     chown -R $user:$user "$biosdir/mame"
     cp -R "$scriptdir/configs/cdimono1/." "$md_conf_root/cdimono1/"
     cp -R "$scriptdir/configs/scv/." "$md_conf_root/scv/"
+	
+	
+
 }

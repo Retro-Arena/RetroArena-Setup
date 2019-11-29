@@ -46,4 +46,7 @@ function configure_digger() {
     moveConfigFile "$home/.digger.rc" "$md_conf_root/digger/.digger.rc"
     moveConfigFile "$home/.digger.sco" "$md_conf_root/digger/.digger.sco"
     addPort "$md_id" "digger" "Digger Remastered" "$md_inst/digger /F"
+	
+	
+
 }

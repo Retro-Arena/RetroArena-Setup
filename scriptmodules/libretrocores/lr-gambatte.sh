@@ -52,4 +52,7 @@ function configure_lr-gambatte() {
         addEmulator 1 "$md_id" "$system" "$md_inst/gambatte_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

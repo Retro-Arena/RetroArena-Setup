@@ -57,4 +57,7 @@ function configure_opentyrian() {
     setDispmanx "$md_id" 1
 
     [[ "$md_mode" == "install" ]] && game_data_opentyrian
+	
+	
+
 }

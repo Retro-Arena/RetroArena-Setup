@@ -47,4 +47,7 @@ function configure_lr-mess2015() {
         addEmulator 0 "$md_id" "$system" "$md_inst/mess2015_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

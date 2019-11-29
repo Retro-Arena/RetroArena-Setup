@@ -43,4 +43,7 @@ function configure_lr-gw() {
 
     addEmulator 1 "$md_id" "gameandwatch" "$md_inst/gw_libretro.so"
     addSystem "gameandwatch"
+	
+	
+
 }

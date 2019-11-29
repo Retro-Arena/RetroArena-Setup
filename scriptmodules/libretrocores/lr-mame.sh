@@ -59,4 +59,7 @@ function configure_lr-mame() {
         addEmulator 0 "$md_id" "$system" "$md_inst/mamearcade_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

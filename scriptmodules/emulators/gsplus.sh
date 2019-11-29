@@ -50,4 +50,7 @@ function configure_gsplus() {
     mkUserDir "$md_conf_root/apple2gs"
     addEmulator 1 "$md_id" "apple2gs" "$md_inst/GSplus -config %ROM%"
     addSystem "apple2gs"
+	
+	
+
 }

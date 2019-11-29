@@ -118,4 +118,7 @@ _EOF_
     add_games_splitwolf
 
     moveConfigDir "$home/.splitwolf" "$md_conf_root/splitwolf"
+	
+	
+
 }

@@ -41,4 +41,7 @@ function configure_lr-pokemini() {
 
     addEmulator 1 "$md_id" "pokemini" "$md_inst/pokemini_libretro.so"
     addSystem "pokemini"
+	
+	
+
 }

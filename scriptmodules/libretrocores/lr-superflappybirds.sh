@@ -48,4 +48,7 @@ function configure_lr-superflappybirds() {
     addPort "$md_id" "superflappybirds" "Super Flappy Birds" "$md_inst/superflappybirds_libretro.so"
 
     ensureSystemretroconfig "ports/superflappybirds"
+	
+	
+
 }

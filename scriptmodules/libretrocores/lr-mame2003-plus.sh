@@ -41,4 +41,7 @@ function install_bin_lr-mame2003-plus() {
 
 function configure_lr-mame2003-plus() {
     configure_lr-mame2003
+	
+	
+
 }

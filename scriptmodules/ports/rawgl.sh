@@ -42,4 +42,7 @@ function configure_rawgl() {
     mkRomDir "ports/$md_id"
 
     addPort "$md_id" "rawgl" "rawgl - Another World Engine" "$md_inst/rawgl --datapath=$romdir/ports/$md_id --language=us --render=original --fullscreen-ar"
+	
+	
+
 }

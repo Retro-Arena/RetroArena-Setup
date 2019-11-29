@@ -108,4 +108,7 @@ function configure_dxx-rebirth() {
     done
 
     [[ "$md_mode" == "install" ]] && game_data_dxx-rebirth
+	
+	
+
 }

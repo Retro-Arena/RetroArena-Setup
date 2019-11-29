@@ -61,4 +61,7 @@ function configure_zdoom() {
     [[ "$md_mode" == "install" ]] && game_data_lr-prboom
 
     add_games_zdoom
+	
+	
+
 }

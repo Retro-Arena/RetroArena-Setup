@@ -76,4 +76,7 @@ function configure_cannonball() {
     chown -R $user:$user "$romdir/ports/$md_id" "$md_conf_root/$md_id"
 
     ln -snf "$romdir/ports/$md_id" "$md_inst/roms"
+	
+	
+
 }

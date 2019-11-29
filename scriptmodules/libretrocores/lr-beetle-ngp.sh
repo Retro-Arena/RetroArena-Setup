@@ -48,5 +48,7 @@ function configure_lr-beetle-ngp() {
         addEmulator 1 "$md_id" "$system" "$md_inst/mednafen_ngp_libretro.so"
         addSystem "$system"
     done
+	
+	
 
 }

@@ -60,4 +60,7 @@ function hotkey_retroarch-176() {
 
 function gui_retroarch-176() {
     gui_retroarch
+	
+	
+
 }

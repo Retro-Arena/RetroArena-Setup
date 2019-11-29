@@ -60,5 +60,8 @@ function configure_lr-mesen() {
     addSystem "nes"
     addSystem "fds"
     addSystem "famicom"
+	
+	
+
 }
 

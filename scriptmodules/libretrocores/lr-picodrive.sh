@@ -49,4 +49,7 @@ function configure_lr-picodrive() {
         addEmulator 1 "$md_id" "$system" "$md_inst/picodrive_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

@@ -177,4 +177,5 @@ function gui_fruitbox() {
                 ;;
         esac
     done
+	
 }

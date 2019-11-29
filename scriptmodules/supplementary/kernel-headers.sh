@@ -28,6 +28,7 @@ function build_kernel-headers() {
     rm -r /lib/modules/$(uname -r)/build
     rm -r /lib/modules/$(uname -r)/source
     make -j5 INSTALL_HDR_PATH=/usr/src/linux-headers-$(uname -r)/ headers_install
+    
 }
 
 function install_kernel-headers() {

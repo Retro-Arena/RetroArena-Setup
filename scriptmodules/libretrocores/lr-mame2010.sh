@@ -50,4 +50,7 @@ function configure_lr-mame2010() {
         addEmulator 0 "$md_id" "$system" "$md_inst/mame2010_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

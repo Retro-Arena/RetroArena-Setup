@@ -24,4 +24,7 @@ function configure_pingus() {
 
     moveConfigDir "$home/.pingus" "$md_conf_root/$md_id"
     addPort "$md_id" "pingus" "Pingus" "xinit pingus"
+	
+	
+
 }

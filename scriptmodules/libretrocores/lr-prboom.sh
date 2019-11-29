@@ -92,4 +92,7 @@ function configure_lr-prboom() {
 
     cp prboom.wad "$romdir/ports/doom/"
     chown $user:$user "$romdir/ports/doom/prboom.wad"
+	
+	
+
 }

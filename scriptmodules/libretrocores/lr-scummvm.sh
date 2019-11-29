@@ -87,4 +87,7 @@ $emudir/retroarch/bin/retroarch \\
     "\$ROM" "\$@"
 _EOF_
     chmod +x "$md_inst/romdir-launcher.sh"
+	
+	
+
 }

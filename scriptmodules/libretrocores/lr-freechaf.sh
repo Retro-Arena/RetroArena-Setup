@@ -44,4 +44,7 @@ function configure_lr-freechaf() {
 
     addEmulator 1 "$md_id" "channelf" "$md_inst/freechaf_libretro.so"
     addSystem "channelf"
+	
+	
+
 }

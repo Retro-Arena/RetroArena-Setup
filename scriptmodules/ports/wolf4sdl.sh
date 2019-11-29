@@ -144,4 +144,7 @@ _EOF_
     moveConfigDir "$home/.wolf4sdl" "$md_conf_root/wolf3d"
 
     setDispmanx "$md_id" 1
+	
+	
+
 }

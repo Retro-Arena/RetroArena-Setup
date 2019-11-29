@@ -42,4 +42,7 @@ function install_bombermaaan() {
 
 function configure_bombermaaan() {
     addPort "$md_id" "bombermaaan" "Bombermaaan" "pushd $md_inst; sudo xinit $md_inst/bombermaaan; popd"
+	
+	
+
 }

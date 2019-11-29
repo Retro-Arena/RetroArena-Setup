@@ -57,4 +57,7 @@ function configure_darkplaces-quake() {
     add_games_darkplaces-quake
 
     moveConfigDir "$home/.darkplaces" "$md_conf_root/quake/darkplaces"
+	
+	
+
 }

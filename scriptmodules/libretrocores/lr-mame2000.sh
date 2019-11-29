@@ -54,4 +54,7 @@ function configure_lr-mame2000() {
         addEmulator 0 "$md_id" "$system" "$md_inst/mame2000_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

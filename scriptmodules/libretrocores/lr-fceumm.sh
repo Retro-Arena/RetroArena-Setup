@@ -57,4 +57,7 @@ function configure_lr-fceumm() {
     addSystem "nes"
     addSystem "fds"
     addSystem "famicom"
+	
+	
+
 }

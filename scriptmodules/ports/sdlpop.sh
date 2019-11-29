@@ -53,4 +53,7 @@ function configure_sdlpop() {
     moveConfigFile "$md_inst/SDLPoP.cfg" "$md_conf_root/$md_id/SDLPoP.cfg"
 
     chown -R $user:$user "$md_conf_root/$md_id"
+	
+	
+
 }

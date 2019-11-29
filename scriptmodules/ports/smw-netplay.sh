@@ -50,4 +50,7 @@ function configure_smw-netplay() {
     setConfigRoot "ports"
 
     addPort "$md_id" "smw-netplay" "Super Mario War Netplay" "$md_inst/smw $md_inst/data"
+	
+	
+
 }
