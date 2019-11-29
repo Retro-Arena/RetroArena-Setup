@@ -17,6 +17,9 @@ rp_module_flags="dispmanx !mali"
 
 function depends_opentyrian() {
     getDepends libsdl1.2-dev libsdl-net1.2-dev mercurial
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_opentyrian() {

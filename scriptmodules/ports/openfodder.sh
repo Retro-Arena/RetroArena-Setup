@@ -16,7 +16,10 @@ rp_module_section="prt"
 rp_module_flags="!x86 !odroid-n2"
 
 function depends_openfodder() {
-    getDepends build-essential libsdl2-dev libsdl2-mixer-dev clang 
+    getDepends build-essential libsdl2-dev libsdl2-mixer-dev clang
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_openfodder() {

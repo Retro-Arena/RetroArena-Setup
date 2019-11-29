@@ -23,6 +23,9 @@ function depends_mupen64plus() {
     isPlatform "x86" && depends+=(nasm)
     isPlatform "rockpro64" && depends+=(libboost-all-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_mupen64plus() {

@@ -18,11 +18,15 @@ function depends_eduke32() {
     local depends=(
         subversion flac libflac-dev libvorbis-dev libpng-dev libvpx-dev freepats
         libsdl2-dev libsdl2-mixer-dev
+		
     )
 
     isPlatform "x86" && depends+=(nasm)
     isPlatform "x11" && depends+=(libgl1-mesa-dev libglu1-mesa-dev libgtk2.0-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_eduke32() {

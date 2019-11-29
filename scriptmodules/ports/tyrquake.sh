@@ -16,6 +16,9 @@ rp_module_section="prt"
 
 function depends_tyrquake() {
     getDepends libsdl2-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_tyrquake() {

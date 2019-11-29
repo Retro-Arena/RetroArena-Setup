@@ -19,6 +19,9 @@ rp_module_flags="!odroid-n2"
 function depends_advmame-1.4() {
     local depends=(libsdl1.2-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function _sources_patch_advmame-1.4() {

@@ -25,7 +25,10 @@ function depends_lr-mame() {
     if compareVersions $__gcc_version lt 5.0.0; then
         md_ret_errors+=("Sorry, you need an OS with gcc 5.0 or newer to compile lr-mame")
         return 1
-    fi
+		    fi
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-mame() {

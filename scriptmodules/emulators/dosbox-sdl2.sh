@@ -18,6 +18,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_dosbox-sdl2() {
     depends_dosbox libsdl2-dev libsdl2-net-dev libfluidsynth-dev fluid-soundfont-gm
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_dosbox-sdl2() {

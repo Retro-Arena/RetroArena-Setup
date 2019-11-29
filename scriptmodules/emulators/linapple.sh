@@ -18,6 +18,9 @@ rp_module_flags="dispmanx !odroid-n2"
 
 function depends_linapple() {
     getDepends libzip-dev libsdl1.2-dev libsdl-image1.2-dev libcurl4-openssl-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_linapple() {

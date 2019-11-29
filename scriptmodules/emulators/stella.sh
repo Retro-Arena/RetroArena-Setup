@@ -18,6 +18,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_stella() {
     getDepends libsdl2-dev libpng-dev zlib1g-dev xz-utils
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_stella() {

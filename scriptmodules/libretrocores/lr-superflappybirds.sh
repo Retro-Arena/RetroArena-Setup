@@ -17,6 +17,9 @@ rp_module_section="lr"
 
 function depends_lr-superflappybirds() {
     getDepends cmake
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-superflappybirds() {

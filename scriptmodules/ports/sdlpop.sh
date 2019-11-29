@@ -16,6 +16,9 @@ rp_module_section="prt"
 
 function depends_sdlpop() {
     getDepends libsdl2-dev libsdl2-mixer-dev libsdl2-image-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_sdlpop() {

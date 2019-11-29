@@ -19,6 +19,9 @@ function depends_lr-pcsx-rearmed() {
     local depends=(libpng-dev)
     isPlatform "x11" && depends+=(libx11-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-pcsx-rearmed() {

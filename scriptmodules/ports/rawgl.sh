@@ -17,6 +17,9 @@ rp_module_flags=" !x86"
 
 function depends_rawgl() {
     getDepends g++ libsdl2-dev libsdl2-mixer-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_rawgl() {

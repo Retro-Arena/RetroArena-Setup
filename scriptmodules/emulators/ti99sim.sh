@@ -18,6 +18,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_ti99sim() {
     getDepends libsdl1.2-dev libssl-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_ti99sim() {

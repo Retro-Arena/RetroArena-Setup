@@ -19,6 +19,9 @@ rp_module_flags=""
 function depends_lr-beetle-psx-hw() {
     local depends=(libgl1-mesa-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-beetle-psx-hw() {

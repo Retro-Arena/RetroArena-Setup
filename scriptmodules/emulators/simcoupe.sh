@@ -18,6 +18,9 @@ rp_module_flags=" !kms"
 
 function depends_simcoupe() {
     getDepends cmake libsdl1.2-dev zlib1g-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_simcoupe() {

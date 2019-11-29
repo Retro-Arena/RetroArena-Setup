@@ -17,6 +17,9 @@ rp_module_flags="dispmanx !odroid-n2"
 
 function depends_sdltrs() {
     getDepends libsdl1.2-dev libxt-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_sdltrs() {

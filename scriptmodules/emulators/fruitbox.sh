@@ -17,6 +17,9 @@ rp_module_flags="!rockpro64 !odroid-n2"
 
 function depends_fruitbox() {
     getDepends libsm-dev libxcursor-dev libxi-dev libxinerama-dev libxrandr-dev libxpm-dev libvorbis-dev libtheora-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_fruitbox() {

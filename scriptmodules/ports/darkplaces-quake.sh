@@ -19,6 +19,9 @@ function depends_darkplaces-quake() {
     local depends=(libsdl2-dev libjpeg-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_darkplaces-quake() {

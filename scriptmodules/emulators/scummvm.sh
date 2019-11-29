@@ -27,6 +27,9 @@ function depends_scummvm() {
         depends+=(libsdl2-dev)
     fi
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_scummvm() {

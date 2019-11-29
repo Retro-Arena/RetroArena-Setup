@@ -18,6 +18,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_daphne() {
     getDepends libsdl1.2-dev libvorbis-dev libglew-dev zlib1g-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_daphne() {

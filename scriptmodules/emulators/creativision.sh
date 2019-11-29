@@ -19,6 +19,9 @@ rp_module_flags="!odroid-n2"
 function depends_creativision() {
     local depends=(libsdl2-dev libsdl2-net-dev autoconf zlib1g-dev libpng-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_creativision() {

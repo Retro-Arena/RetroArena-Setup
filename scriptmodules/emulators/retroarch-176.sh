@@ -17,6 +17,9 @@ rp_module_section="core"
 function depends_retroarch-176() {
     printMsgs "dialog --cancel-label" "NOTE:\n\nIt is normal that retroarch-176 is not mark as installed because it overwrites retroarch.\n\nClick OK to continue."
     depends_retroarch
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function install_bin_retroarch-176() {

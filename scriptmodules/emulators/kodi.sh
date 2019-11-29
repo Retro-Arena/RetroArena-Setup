@@ -20,6 +20,9 @@ function depends_kodi() {
     local depends
     isPlatform "odroid-n2" && depends+=(liblzo2-dev libpng-dev libgif-dev libjpeg-dev libpcap-dev libcap-dev python2.7-dev libxml2-dev libxslt1-dev libass-dev libcdio-dev libiso9660-10 libiso9660-dev libcrossguid-dev uuid-dev libcurl4-openssl-dev libfstrcmp-dev libssl-dev libsqlite3-dev libtag1-dev libtinyxml-dev libcec-dev libbluetooth-dev libmicrohttpd-dev liblircclient-dev libsmbclient-dev libnfs-dev libinput-dev libxkbcommon-dev libavahi-client-dev libbluray-dev libmysqlclient-dev liblcms2-dev libsndio-dev libcwiid-dev libplist-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function install_bin_kodi() {
@@ -33,11 +36,7 @@ function install_bin_kodi() {
         sudo rm kodi-joystick.tar.gz
         cp "$scriptdir/scriptmodules/emulators/kodi/kodi-leia.bash" "/usr/bin/kodi"
         
-        # fix mali
-        cd ~/mali
-        ./install.sh
-        cd -        
-    else
+        else
         printMsgs "dialog" "IMPORTANT NOTE\n\nOnly Kodi Krypton 17.3 is supported for the Odroid-XU4.\n\nDo not set two controller profiles for the same controller as it will become unstable and may crash.\n\nLocal and Network LAN based streaming was successfully tested however plugins have not been tested. TheRA is not responsible for any support. The installation comes from the Hard Kernel source therefore it is suggested you seek assistance at the Hard Kernel forums.\n\nDue to issues with how EXT storage is accessed by Kodi all exit options have been removed from the default skin. Changing skins is at the user's discretion and TheRA will not be responsible to troubleshoot issues that may arise. Perform skin changes at your own risk."
         aptInstall kodi-fbdev
         cp "$scriptdir/scriptmodules/emulators/kodi/kodi-krypton.bash" "/usr/bin/kodi"

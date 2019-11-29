@@ -18,6 +18,9 @@ rp_module_flags="!odroid-xu !odroid-n2"
 
 function depends_lr-easyrpgplayer() {
     getDepends libsdl2-dev libsdl2-mixer-dev libpng12-dev libfreetype6-dev libboost-dev libpixman-1-dev libexpat1-dev zlib1g-dev autoconf automake libicu-dev libtool
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-easyrpgplayer() {

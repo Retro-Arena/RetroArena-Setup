@@ -16,6 +16,9 @@ rp_module_section="prt"
 
 function depends_srb2() {
     getDepends cmake libsdl2-dev libsdl2-mixer-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_srb2() {
