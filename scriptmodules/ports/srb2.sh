@@ -16,6 +16,9 @@ rp_module_section="prt"
 
 function depends_srb2() {
     getDepends cmake libsdl2-dev libsdl2-mixer-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_srb2() {
@@ -48,4 +51,7 @@ function configure_srb2() {
     addPort "$md_id" "srb2" "Sonic Robo Blast 2" "pushd $md_inst; ./srb2; popd"
 
     moveConfigDir "$home/.srb2"  "$md_conf_root/$md_id"
+	
+	
+
 }

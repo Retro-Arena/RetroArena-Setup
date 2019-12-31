@@ -43,4 +43,7 @@ function configure_lr-beetle-vb() {
 
     addEmulator 1 "$md_id" "virtualboy" "$md_inst/mednafen_vb_libretro.so"
     addSystem "virtualboy"
+	
+	
+
 }

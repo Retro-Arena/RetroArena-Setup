@@ -18,6 +18,9 @@ rp_module_flags="dispmanx !odroid-n2"
 
 function depends_linapple() {
     getDepends libzip-dev libsdl1.2-dev libsdl-image1.2-dev libcurl4-openssl-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_linapple() {
@@ -63,4 +66,7 @@ function configure_linapple() {
     cp "$scriptdir/configs/apple2/linapple.conf" "$md_conf_root/apple2/"
     addEmulator 1 "$md_id" "apple2" "pushd $romdir/apple2; $md_inst/linapple -1 %ROM%; popd"
     addSystem "apple2"
+	
+	
+
 }

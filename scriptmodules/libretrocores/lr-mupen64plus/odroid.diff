@@ -1,0 +1,30 @@
+diff -aur old/Makefile new/Makefile
+--- old/Makefile	2019-01-05 04:45:46.000000000 +0000
++++ new/Makefile	2019-01-07 22:28:04.654571900 +0000
+@@ -77,25 +77,9 @@
+ 	COREFLAGS += -DGIT_VERSION=\"$(GIT_VERSION)\"
+ endif
+ 
+-# Linux
+-ifneq (,$(findstring unix,$(platform)))
+-   TARGET := $(TARGET_NAME)_libretro.so
+-   LDFLAGS += -shared -Wl,--version-script=$(LIBRETRO_DIR)/link.T -Wl,--no-undefined
+-
+-   ifeq ($(FORCE_GLES),1)
+-      GLES = 1
+-      GL_LIB := -lGLESv2
+-   else ifeq ($(FORCE_GLES3),1)
+-      GLES3 = 1
+-      GL_LIB := -lGLESv2
+-   else
+-      GL_LIB := -lGL
+-   endif
+ 
+-   COREFLAGS += -DOS_LINUX
+-   ASFLAGS = -f elf -d ELF_TYPE
+ # Raspberry Pi
+-else ifneq (,$(findstring rpi,$(platform)))
++ ifneq (,$(findstring rpi,$(platform)))
+    TARGET := $(TARGET_NAME)_libretro.so
+    LDFLAGS += -shared -Wl,--version-script=$(LIBRETRO_DIR)/link.T -Wl,--no-undefined
+    GLES = 1

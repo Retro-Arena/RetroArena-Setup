@@ -20,6 +20,9 @@ function depends_basilisk() {
     local depends=(libsdl1.2-dev autoconf automake oss-compat)
     isPlatform "x11" && depends+=(libgtk2.0-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_basilisk() {
@@ -57,4 +60,6 @@ function configure_basilisk() {
 
     addEmulator 1 "$md_id" "macintosh" "$md_inst/bin/BasiliskII --rom $romdir/macintosh/mac.rom --disk $romdir/macintosh/disk.img --extfs $romdir/macintosh --config $md_conf_root/macintosh/basiliskii.cfg"
     addSystem "macintosh"
+	
+	
 }

@@ -19,6 +19,9 @@ rp_module_flags="!odroid-n2"
 function depends_lr-mesen() {
     local depends=(llvm-6.0-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-mesen() {
@@ -60,5 +63,8 @@ function configure_lr-mesen() {
     addSystem "nes"
     addSystem "fds"
     addSystem "famicom"
+	
+	
+
 }
 

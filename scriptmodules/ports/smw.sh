@@ -37,4 +37,7 @@ function configure_smw() {
     addPort "$md_id" "smw" "Super Mario War" "xinit $md_inst/smw"
 
     moveConfigFile "$home/.smw.options.bin" "$md_conf_root/smw/.smw.options.bin"
+	
+	
+
 }

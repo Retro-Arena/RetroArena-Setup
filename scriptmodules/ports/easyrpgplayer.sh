@@ -17,7 +17,11 @@ rp_module_section="prt"
 rp_module_flags="!x86"
 
 function depends_easyrpgplayer() {
-    getDepends libsdl2-dev libsdl2-mixer-dev libpng12-dev libfreetype6-dev libboost-dev libpixman-1-dev libexpat1-dev zlib1g-dev autoconf automake libicu-dev libtool
+    local depends=(libsdl2-dev libsdl2-mixer-dev libpng12-dev libfreetype6-dev libboost-dev libpixman-1-dev libexpat1-dev zlib1g-dev autoconf automake libicu-dev libtool)
+	getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_easyrpgplayer() {
@@ -58,4 +62,8 @@ function configure_easyrpgplayer() {
     mkRomDir "ports/$md_id/games/"
 
     addPort "$md_id" "easyrpgplayer" "EasyRPG Player - RPG Maker 2000 and 2003 Interpreter" "cd $romdir/ports/$md_id/games/; RPG2K_RTP_PATH=$romdir/ports/$md_id/data/rtp2000/ RPG2K3_RTP_PATH=$romdir/ports/$md_id/data/rtp2003/ $md_inst/bin/easyrpg-player"
-}
+
+	
+	
+	}
+

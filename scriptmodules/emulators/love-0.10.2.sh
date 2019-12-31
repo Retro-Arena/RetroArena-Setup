@@ -18,6 +18,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_love-0.10.2() {
     depends_love
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_love-0.10.2() {
@@ -38,4 +41,7 @@ function game_data_love-0.10.2() {
 
 function configure_love-0.10.2() {
     configure_love
+	
+	
+
 }

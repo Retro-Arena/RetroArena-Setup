@@ -17,6 +17,9 @@ rp_module_flags="dispmanx !mali"
 
 function depends_wolf4sdl() {
     getDepends libsdl1.2-dev libsdl-mixer1.2-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_wolf4sdl() {
@@ -144,4 +147,7 @@ _EOF_
     moveConfigDir "$home/.wolf4sdl" "$md_conf_root/wolf3d"
 
     setDispmanx "$md_id" 1
+	
+	
+
 }

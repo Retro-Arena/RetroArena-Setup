@@ -42,4 +42,7 @@ function configure_lr-81() {
 
     addEmulator 1 "$md_id" "zx81" "$md_inst/81_libretro.so"
     addSystem "zx81"
+	
+	
+
 }

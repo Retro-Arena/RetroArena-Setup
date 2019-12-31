@@ -20,6 +20,9 @@ function depends_oricutron() {
     local depends=(cmake libsdl2-dev)
     isPlatform "x11" && depends+=(libgtk-3-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_oricutron() {
@@ -70,4 +73,7 @@ function configure_oricutron() {
     addSystem "oric"
 
     [[ "$md_mode" == "install" ]] && game_data_oricutron
+	
+	
+
 }

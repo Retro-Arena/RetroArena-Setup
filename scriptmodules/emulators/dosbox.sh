@@ -20,6 +20,9 @@ function depends_dosbox() {
     local depends=(libsdl1.2-dev libsdl-net1.2-dev libsdl-sound1.2-dev libasound2-dev libpng-dev automake autoconf zlib1g-dev subversion "$@")
     isPlatform "rpi" && depends+=(timidity freepats)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_dosbox() {
@@ -141,4 +144,6 @@ _EOF_
     cp "$scriptdir/configs/pc/dosbox-SVN.conf" "$md_conf_root/pc/"
     addEmulator "$def" "$md_id" "pc" "bash $romdir/pc/${launcher_name// /\\ } %ROM%"
     addSystem "pc"
+	
+	
 }

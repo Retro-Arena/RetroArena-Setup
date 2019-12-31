@@ -10,7 +10,7 @@
 #
 
 rp_module_id="retroarch"
-rp_module_desc="RetroArch v1.7.8.4 - stable branch"
+rp_module_desc="RetroArch v1.8.0 - stable branch"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/master/COPYING"
 rp_module_section="core"
 
@@ -19,11 +19,14 @@ function depends_retroarch() {
     isPlatform "odroid-xu" && depends+=(libavcodec-dev libavformat-dev libavdevice-dev)
     isPlatform "jetson-nano" && depends+=(libavcodec-dev libavformat-dev libavdevice-dev libvulkan-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.7.8.4
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.8.0
         applyPatch "$md_data/01_hotkey_hack.diff"
         applyPatch "$md_data/02_disable_search.diff"
     else
@@ -450,4 +453,7 @@ function _set_config_option_retroarch() {
     if [[ -z "$ini_value" ]]; then
         iniSet "$option" "$value"
     fi
+	
+	
+
 }

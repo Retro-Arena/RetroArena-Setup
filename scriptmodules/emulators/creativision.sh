@@ -19,6 +19,9 @@ rp_module_flags="!odroid-n2"
 function depends_creativision() {
     local depends=(libsdl2-dev libsdl2-net-dev autoconf zlib1g-dev libpng-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_creativision() {
@@ -52,4 +55,6 @@ function configure_creativision() {
     addEmulator 0 "${md_id}-saloramanager" "crvision" "$md_inst/creatiVision -f -k -3 -b /home/pigaming/RetroArena/BIOS/crvision/saloram.rom -r %ROM%"
     addEmulator 0 "${md_id}-laser2001" "crvision" "$md_inst/creatiVision -f -3 -b /home/pigaming/RetroArena/BIOS/crvision/laser2001.rom -r %ROM%"
     addSystem "crvision"
+	
+	
 }

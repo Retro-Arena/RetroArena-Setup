@@ -17,6 +17,9 @@ rp_module_flags=" !kms !odroid-n2"
 
 function depends_cdogs-sdl() {
     getDepends cmake libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev build-essential
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_cdogs-sdl() {
@@ -50,4 +53,7 @@ function install_bin_cdogs-sdl() {
 function configure_cdogs-sdl() {
     moveConfigDir "$home/.config/cdogs-sdl" "$md_conf_root/cdogs-sdl"
     addPort "$md_id" "cdogs-sdl" "C-Dogs SDL" "pushd $md_inst; $md_inst/cdogs-sdl; popd"
+	
+	
+
 }

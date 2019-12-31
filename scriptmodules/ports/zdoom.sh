@@ -22,6 +22,9 @@ function depends_zdoom() {
     )
 
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_zdoom() {
@@ -61,4 +64,7 @@ function configure_zdoom() {
     [[ "$md_mode" == "install" ]] && game_data_lr-prboom
 
     add_games_zdoom
+	
+	
+
 }

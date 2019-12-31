@@ -117,6 +117,8 @@ function configure_lr-flycast() {
         sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "960x720"/g' "$md_conf_root/all/retroarch-core-options.cfg"
     elif grep -q "NVIDIA Jetson Nano Developer Kit" /sys/firmware/devicetree/base/model 2>/dev/null; then
         sed -i -e 's/reicast_internal_resolution = "640x480"/reicast_internal_resolution = "1920x1080"/g' "$md_conf_root/all/retroarch-core-options.cfg"
+   fi
+	
+	
 
-    fi
 }

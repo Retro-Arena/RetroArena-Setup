@@ -17,6 +17,9 @@ rp_module_flags=" !x86"
 
 function depends_rawgl() {
     getDepends g++ libsdl2-dev libsdl2-mixer-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_rawgl() {
@@ -42,4 +45,7 @@ function configure_rawgl() {
     mkRomDir "ports/$md_id"
 
     addPort "$md_id" "rawgl" "rawgl - Another World Engine" "$md_inst/rawgl --datapath=$romdir/ports/$md_id --language=us --render=original --fullscreen-ar"
+	
+	
+
 }

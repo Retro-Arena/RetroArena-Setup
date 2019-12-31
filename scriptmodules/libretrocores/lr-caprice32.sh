@@ -46,4 +46,7 @@ function configure_lr-caprice32() {
 
     addEmulator 1 "$md_id" "amstradcpc" "$md_inst/cap32_libretro.so"
     addSystem "amstradcpc"
+	
+	
+
 }

@@ -18,6 +18,9 @@ rp_module_flags=""
 
 function depends_openbor() {
     getDepends libsdl2-gfx-dev libvorbisidec-dev libvpx-dev libogg-dev libsdl2-gfx-1.0-0 libvorbisidec1
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_openbor() {
@@ -59,4 +62,7 @@ function configure_openbor() {
     ln -snf "$datadir/roms/openbor" "$md_inst/Paks"
     ln -snf "$configdir/openbor/ScreenShots" "$md_inst/ScreenShots"
     ln -snf "$configdir/openbor/Saves" "$md_inst/Saves"
+	
+	
+
 }

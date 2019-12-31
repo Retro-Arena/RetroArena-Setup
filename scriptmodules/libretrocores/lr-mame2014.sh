@@ -28,4 +28,7 @@ function configure_lr-mame2014() {
         addEmulator 0 "$md_id" "$system" "$md_inst/mame2014_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

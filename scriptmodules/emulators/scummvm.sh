@@ -27,6 +27,9 @@ function depends_scummvm() {
         depends+=(libsdl2-dev)
     fi
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_scummvm() {
@@ -92,4 +95,7 @@ _EOF_
     cp "$scriptdir/configs/scummvm/scummvm.ini" "$md_conf_root/scummvm/"
     chown -R $user:$user "$md_conf_root/scummvm/scummvm.ini"
     chmod a+x "$md_conf_root/scummvm/scummvm.ini"
+	
+	
+
 }

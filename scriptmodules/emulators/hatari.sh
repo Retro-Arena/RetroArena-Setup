@@ -18,6 +18,9 @@ rp_module_flags=""
 
 function depends_hatari() {
     getDepends libsdl2-dev zlib1g-dev libpng-dev cmake libreadline-dev portaudio19-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function _sources_libcapsimage_hatari() {
@@ -99,4 +102,7 @@ function configure_hatari() {
     addEmulator 0 "$md_id-compatible" "atarist" "$md_inst/bin/hatari ${common_config[*]} --compatible 1 --timer-d 0 --borders 0 %ROM%"
     addEmulator 0 "$md_id-compatible-borders" "atarist" "$md_inst/bin/hatari ${common_config[*]} --compatible 1 --timer-d 0 --borders 1 %ROM%"
     addSystem "atarist"
+	
+	
+
 }

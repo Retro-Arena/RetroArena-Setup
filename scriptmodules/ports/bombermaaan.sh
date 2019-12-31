@@ -17,6 +17,9 @@ rp_module_flags="!mali"
 
 function depends_bombermaaan() {
     getDepends cmake libsdl1.2-dev libsdl-mixer1.2-dev build-essential
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_bombermaaan() {
@@ -42,4 +45,7 @@ function install_bombermaaan() {
 
 function configure_bombermaaan() {
     addPort "$md_id" "bombermaaan" "Bombermaaan" "pushd $md_inst; sudo xinit $md_inst/bombermaaan; popd"
+	
+	
+
 }

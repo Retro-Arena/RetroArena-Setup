@@ -46,4 +46,7 @@ function configure_lr-vice() {
 
     addEmulator 1 "$md_id" "c64" "$md_inst/vice_x64_libretro.so"
     addSystem "c64"
+	
+	
+
 }

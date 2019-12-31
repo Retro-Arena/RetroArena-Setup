@@ -23,6 +23,9 @@ function _update_hook_lr-mupen64plus-nx() {
 function depends_lr-mupen64plus-nx() {
     local depends=(flex bison libpng-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-mupen64plus-nx() {
@@ -102,4 +105,7 @@ function configure_lr-mupen64plus-nx() {
     setRetroArchCoreOption "${dir_name}mupen64plus-txHiresFullAlphaChannel" "False"
     setRetroArchCoreOption "${dir_name}mupen64plus-u-cbutton" "C4"
     setRetroArchCoreOption "${dir_name}mupen64plus-virefresh" "Auto"
+	
+	
+
 }

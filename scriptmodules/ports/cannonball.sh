@@ -20,6 +20,9 @@ function depends_cannonball() {
     local depends=(cmake libsdl2-dev libboost-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_cannonball() {
@@ -76,4 +79,7 @@ function configure_cannonball() {
     chown -R $user:$user "$romdir/ports/$md_id" "$md_conf_root/$md_id"
 
     ln -snf "$romdir/ports/$md_id" "$md_inst/roms"
+	
+	
+
 }

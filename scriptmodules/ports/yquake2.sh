@@ -17,8 +17,10 @@ rp_module_flags=""
 
 function depends_yquake2() {
     local depends=(libgl1-mesa-dev libglu1-mesa-dev libogg-dev libopenal-dev libsdl2-dev libvorbis-dev zlib1g-dev)
-
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_yquake2() {
@@ -99,4 +101,7 @@ function configure_yquake2() {
 
     [[ "$md_mode" == "install" ]] && game_data_yquake2
     add_games_yquake2 "$md_inst/quake2 -datadir $romdir/ports/quake2 ${params[@]} +set game %ROM%"
+	
+	
+
 }

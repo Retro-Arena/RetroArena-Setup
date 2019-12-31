@@ -15,11 +15,15 @@ rp_module_section="prt"
 
 function depends_smw-netplay() {
     getDepends libsdl2-2.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev 
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_smw-netplay() {
     gitPullOrClone "$md_build" https://github.com/mmatyas/supermariowar.git
     git submodule update --init
+	
 }
 
 
@@ -50,4 +54,7 @@ function configure_smw-netplay() {
     setConfigRoot "ports"
 
     addPort "$md_id" "smw-netplay" "Super Mario War Netplay" "$md_inst/smw $md_inst/data"
+	
+	
+
 }

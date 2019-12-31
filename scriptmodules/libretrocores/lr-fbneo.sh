@@ -100,4 +100,7 @@ function configure_lr-fbneo() {
     addSystem "coleco"
     addSystem "msx"
     addSystem "zxspectrum"
+	
+	
+
 }

@@ -51,4 +51,7 @@ function configure_lr-gpsp() {
     isPlatform "armv6" && def=1
     addEmulator $def "$md_id" "gba" "$md_inst/gpsp_libretro.so"
     addSystem "gba"
+	
+	
+
 }

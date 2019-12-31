@@ -18,6 +18,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_stella() {
     getDepends libsdl2-dev libpng-dev zlib1g-dev xz-utils
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_stella() {
@@ -42,4 +45,7 @@ function configure_stella() {
 
     addEmulator 1 "$md_id" "atari2600" "$md_inst/bin/stella -maxres 320x240 -fullscreen 1 -tia.fsfill 1 %ROM%"
     addSystem "atari2600"
+	
+	
+
 }

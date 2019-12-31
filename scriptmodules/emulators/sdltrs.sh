@@ -17,6 +17,9 @@ rp_module_flags="dispmanx !odroid-n2"
 
 function depends_sdltrs() {
     getDepends libsdl1.2-dev libxt-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_sdltrs() {
@@ -51,4 +54,7 @@ function configure_sdltrs() {
     addEmulator 0 "$md_id-model4" "trs-80" "$md_inst/sdltrs -model 4 -romfile3 $biosdir/level4.rom -showled -diskdir $romdir/trs-80 -disk0 %ROM%"
     addEmulator 0 "$md_id-model4p" "trs-80" "$md_inst/sdltrs -model 4p -romfile4p $biosdir/level4p.rom -showled -diskdir $romdir/trs-80 -disk0 %ROM%"
     addSystem "trs-80"
+	
+	
+
 }

@@ -17,6 +17,9 @@ rp_module_section="lr"
 
 function depends_lr-mess() {
     depends_lr-mame
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-mess() {
@@ -65,4 +68,7 @@ function configure_lr-mess() {
     chown -R $user:$user "$biosdir/mame"
     cp -R "$scriptdir/configs/cdimono1/." "$md_conf_root/cdimono1/"
     cp -R "$scriptdir/configs/scv/." "$md_conf_root/scv/"
+	
+	
+
 }

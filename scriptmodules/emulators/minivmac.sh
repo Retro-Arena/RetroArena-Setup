@@ -18,6 +18,9 @@ rp_module_flags="!mali"
 
 function depends_minivmac() {
     getDepends libsdl2-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_minivmac() {
@@ -46,4 +49,7 @@ function configure_minivmac() {
 
     addEmulator 1 "$md_id" "macintosh" "pushd $md_inst; $md_inst/minivmac $romdir/macintosh/System\ Tools.dsk %ROM%; popd"
     addSystem "macintosh"
+	
+	
+
 }

@@ -43,4 +43,7 @@ function configure_lr-beetle-supergrafx() {
         addEmulator 1 "$md_id" "$system" "$md_inst/mednafen_supergrafx_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

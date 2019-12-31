@@ -18,6 +18,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_ti99sim() {
     getDepends libsdl1.2-dev libssl-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_ti99sim() {
@@ -51,4 +54,7 @@ function configure_ti99sim() {
     addEmulator 0 "$md_id-ea+disk" "ti99" "pushd $md_inst; $md_inst/ti99sim-sdl --no-cf7 -f=2 --dsk1=%ROM% "$romdir/ti99/ea.ctg"; popd"
     addEmulator 0 "$md_id-ea+cf7" "ti99" "pushd $md_inst; $md_inst/ti99sim-sdl -f=2 --cf7=%ROM% "$romdir/ti99/ea.ctg"; popd"
     addSystem "ti99"
+	
+	
+
 }

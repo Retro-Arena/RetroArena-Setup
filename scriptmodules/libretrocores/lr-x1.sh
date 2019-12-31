@@ -42,4 +42,7 @@ function configure_lr-x1() {
 
     addEmulator 1 "$md_id" "x1" "$md_inst/x1_libretro.so"
     addSystem "x1"
+	
+	
+
 }

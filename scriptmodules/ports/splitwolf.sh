@@ -17,6 +17,9 @@ rp_module_section="prt"
 
 function depends_splitwolf() {
     getDepends libsdl2-dev libsdl2-mixer-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_splitwolf() {
@@ -118,4 +121,7 @@ _EOF_
     add_games_splitwolf
 
     moveConfigDir "$home/.splitwolf" "$md_conf_root/splitwolf"
+	
+	
+
 }

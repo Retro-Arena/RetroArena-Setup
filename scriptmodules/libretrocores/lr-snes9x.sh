@@ -52,4 +52,7 @@ function configure_lr-snes9x() {
         addEmulator 1 "$md_id" "$system" "$md_inst/snes9x_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

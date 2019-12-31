@@ -19,6 +19,9 @@ rp_module_flags="!odroid-n2"
 function depends_atari800() {
     local depends=(libsdl1.2-dev autoconf automake zlib1g-dev libpng-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_atari800() {
@@ -59,4 +62,6 @@ function configure_atari800() {
     addEmulator 1 "atari800" "atari5200" "$md_inst/bin/atari800 %ROM%"
     addSystem "atari800"
     addSystem "atari5200"
+	
+	
 }

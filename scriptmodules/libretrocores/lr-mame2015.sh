@@ -47,4 +47,7 @@ function configure_lr-mame2015() {
         addEmulator 0 "$md_id" "$system" "$md_inst/mame2015_libretro.so"
         addSystem "$system"
     done
+	
+	
+
 }

@@ -16,6 +16,9 @@ rp_module_section="prt"
 
 function depends_digger() {
     getDepends cmake libsdl2-dev zlib1g-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_digger() {
@@ -46,4 +49,7 @@ function configure_digger() {
     moveConfigFile "$home/.digger.rc" "$md_conf_root/digger/.digger.rc"
     moveConfigFile "$home/.digger.sco" "$md_conf_root/digger/.digger.sco"
     addPort "$md_id" "digger" "Digger Remastered" "$md_inst/digger /F"
+	
+	
+
 }

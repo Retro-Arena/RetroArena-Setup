@@ -52,4 +52,7 @@ function configure_lr-vecx() {
 
     addEmulator 1 "$md_id" "vectrex" "$md_inst/vecx_libretro.so"
     addSystem "vectrex"
+	
+	
+
 }

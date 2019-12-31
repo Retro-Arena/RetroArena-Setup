@@ -17,6 +17,9 @@ rp_module_flags="!mali"
 
 function depends_ags() {
     getDepends xorg pkg-config libaldmb1-dev libfreetype6-dev libtheora-dev libvorbis-dev libogg-dev liballegro4-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_ags() {
@@ -45,4 +48,6 @@ function configure_ags() {
     fi
 
     addSystem "ags"
+	
+	
 }

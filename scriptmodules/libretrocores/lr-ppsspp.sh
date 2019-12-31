@@ -18,6 +18,9 @@ rp_module_flags="!odroid-xu !odroid-n2 !rockpro64"
 
 function depends_lr-ppsspp() {
     depends_ppsspp
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_lr-ppsspp() {
@@ -62,4 +65,7 @@ function configure_lr-ppsspp() {
             rm "$gles2/gl2ext.h.org"
         fi
     fi
+	
+	
+
 }

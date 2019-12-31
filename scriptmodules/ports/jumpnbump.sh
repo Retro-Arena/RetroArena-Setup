@@ -18,6 +18,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_jumpnbump() {
     getDepends libsdl2-dev libsdl2-net-dev libsdl2-mixer-dev libbz2-dev zlib1g-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_jumpnbump() {
@@ -73,4 +76,6 @@ function configure_jumpnbump() {
         iniConfig " = " "" "$md_conf_root/jumpnbump/options.cfg"
         iniSet "nogore" "1"
     fi
+	
+
 }

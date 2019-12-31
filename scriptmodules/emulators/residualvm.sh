@@ -25,6 +25,9 @@ function depends_residualvm() {
     isPlatform "rockpro64" && depends+=(libglew-dev)
     isPlatform "rpi" && depends+=(libraspberrypi-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_residualvm() {
@@ -84,4 +87,7 @@ _EOF_
     addEmulator 0 "$md_id" "residualvm" "bash $romdir/residualvm/+Start\ ResidualVM.sh opengl_shaders %BASENAME%"
     addEmulator 1 "$md_id-software" "residualvm" "bash $romdir/residualvm/+Start\ ResidualVM.sh software %BASENAME%"
     addSystem "residualvm" "ResidualVM" ".sh .rvm"
+	
+	
+
 }

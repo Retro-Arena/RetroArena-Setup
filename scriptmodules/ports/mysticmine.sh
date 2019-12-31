@@ -17,6 +17,9 @@ rp_module_flags="!odroid-n2"
 
 function depends_mysticmine() {
     getDepends python-pyrex python-numpy python-pygame
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_mysticmine() {
@@ -33,4 +36,7 @@ function install_mysticmine() {
 
 function configure_mysticmine() {
     addPort "$md_id" "mysticmine" "MysticMine" "pushd $md_inst; sudo xinit PYTHONPATH=$PYTHONPATH:${md_inst}/lib/python2.7/site-packages ./bin/MysticMine; popd"
+	
+	
+
 }

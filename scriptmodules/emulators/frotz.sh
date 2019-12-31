@@ -23,6 +23,9 @@ function _update_hook_frotz() {
 
 function install_bin_frotz() {
     aptInstall frotz
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function remove_frotz() {
@@ -52,4 +55,7 @@ function configure_frotz() {
     addSystem "zmachine"
 
     [[ "$md_mode" == "install" ]] && game_data_frotz
+	
+	
+
 }

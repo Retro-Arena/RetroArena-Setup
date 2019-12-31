@@ -19,6 +19,9 @@ rp_module_flags="!odroid-n2"
 function depends_openmsx() {
     local depends=(libsdl2-dev libsdl2-ttf-dev libao-dev libogg-dev libtheora-dev libxml2-dev libvorbis-dev tcl-dev libasound2-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_openmsx() {
@@ -59,4 +62,7 @@ function configure_openmsx() {
     addEmulator 0 "$md_id" "coleco" "$md_inst/bin/openmsx -machine ColecoVision_SGM %ROM%"
     addSystem "coleco"
     ln -sfn "$biosdir/COLECO.ROM" "$md_inst/share/systemroms/COLECO.ROM"
+	
+	
+
 }

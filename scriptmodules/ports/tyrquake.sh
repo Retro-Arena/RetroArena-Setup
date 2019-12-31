@@ -16,6 +16,9 @@ rp_module_section="prt"
 
 function depends_tyrquake() {
     getDepends libsdl2-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_tyrquake() {
@@ -58,4 +61,7 @@ function configure_tyrquake() {
     add_games_tyrquake
 
     moveConfigDir "$home/.tyrquake" "$md_conf_root/quake/tyrquake"
+	
+	
+
 }

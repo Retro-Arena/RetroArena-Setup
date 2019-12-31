@@ -41,5 +41,5 @@ function gui_systeminfo() {
     cat /sys/class/net/wlan0/operstate > wlan
     sed 's/^/Wireless Connection status : /' wlan > WLAN
     sed h line1 free temp-disk free free temph free tempC tempF free free net free IP WAN LOOP WIRED WLAN > display
-    whiptail --backtitle "SysInfo script by Luc Francoeur" --title "THERA System Information" --textbox display 27 72
+    whiptail --backtitle "SysInfo script by Luc Francoeur" --title "TheRA System Information" --textbox display 27 72
 }

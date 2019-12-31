@@ -30,4 +30,7 @@ function remove_supertux() {
 
 function configure_supertux() {
     addPort "$md_id" "supertux" "SuperTux" "supertux2"
+	
+	
+
 }

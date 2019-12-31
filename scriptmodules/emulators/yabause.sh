@@ -19,6 +19,9 @@ rp_module_flags=""
 function depends_yabause() {
     local depends=(cmake libgles2-mesa-dev libsdl2-dev libboost-filesystem-dev libboost-system-dev libboost-locale-dev libboost-date-time-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_yabause() { 
@@ -69,4 +72,7 @@ function configure_yabause() {
     addEmulator 0 "${md_id}-720p-hle" "saturn" "$md_inst/yabasanshiro -a -nf -r 4 -i %ROM%"
     addEmulator 0 "${md_id}-720p-hle-fs" "saturn" "$md_inst/yabasanshiro -a -r 4 -i %ROM%"    
     addSystem "saturn"
+	
+	
+
 }

@@ -18,6 +18,9 @@ rp_module_flags="!x86"
 
 function depends_hcl() {
     getDepends libsdl1.2-dev libsdl-mixer1.2-dev cmake
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_hcl() {
@@ -47,4 +50,7 @@ function configure_hcl() {
     mkRomDir "ports/hcl"
     moveConfigDir "$home/.hydracastlelabyrinth" "$md_conf_root/hcl"
     addPort "$md_id" "hcl" "Hydra Castle Labrinth - Metroidvania Game" "pushd $md_inst; $md_inst/hcl -d; popd" 
+	
+	
+
 }

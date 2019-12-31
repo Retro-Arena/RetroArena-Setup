@@ -40,4 +40,7 @@ function install_bin_lr-mess2016() {
 
 function configure_lr-mess2016() {
     configure_lr-mess "mess2016_libretro.so"
+	
+	
+
 }

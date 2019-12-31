@@ -17,6 +17,9 @@ rp_module_flags="dispmanx !odroid-n2"
 
 function depends_quasi88() {
     getDepends libsdl1.2-dev
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_quasi88() {
@@ -45,4 +48,7 @@ function configure_quasi88() {
 
     addEmulator 1 "$md_id" "pc88" "$md_inst/quasi88.sdl -f6 IMAGE-NEXT1 -f7 IMAGE-NEXT2 -f8 NOWAI -f9 ROMAJI -f10 NUMLOCK -fullscreen %ROM%"
     addSystem "pc88"
+	
+	
+
 }

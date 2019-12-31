@@ -18,6 +18,9 @@ rp_module_flags=" !kms"
 
 function depends_xroar() {
     getDepends libsdl1.2-dev automake
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_xroar() {
@@ -58,4 +61,7 @@ function configure_xroar() {
     addEmulator 0 "$md_id-coco" "coco" "$md_inst/bin/xroar ${params[*]} -machine coco -run %ROM%"
     addSystem "dragon32"
     addSystem "coco"
+	
+	
+
 }

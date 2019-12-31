@@ -132,6 +132,9 @@ function depends_emulationstation() {
     )
     isPlatform "rock64" && depends+=(libmali-rk-dev)
     getDepends "${depends[@]}"
+	if isPlatform "odroid-n2"; then
+	~/RetroArena-Setup/fixmali.sh
+	fi
 }
 
 function sources_emulationstation() {
@@ -400,4 +403,7 @@ function gui_emulationstation() {
                 ;;
         esac
     done
+	
+	
+
 }
