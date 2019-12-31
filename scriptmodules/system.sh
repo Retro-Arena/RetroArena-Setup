@@ -47,6 +47,8 @@ function setup_env() {
         __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/odroid-n2/"
     elif isPlatform "rockpro64"; then
         __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/rockpro64/"
+    elif isPlatform "jetson-nano"; then
+        __gitbins_url="https://github.com/Retro-Arena/binaries/raw/master/jetson-nano/"
     fi
 
     # -pipe is faster but will use more memory - so let's only add it if we have more thans 256M free ram.
@@ -251,6 +253,8 @@ function get_platform() {
             *)
                 if grep -q "RockPro64" /sys/firmware/devicetree/base/model 2>/dev/null; then
                     __platform="rockpro64"
+		elif grep -q "NVIDIA Jetson Nano Developer Kit" /sys/firmware/devicetree/base/model 2>/dev/null; then
+                    __platform="jetson-nano"
                 fi
                 ;;
         esac
@@ -311,4 +315,12 @@ function platform_rockpro64() {
     __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
     __default_asflags=""
     __default_makeflags="-j5"
+}
+
+function platform_jetson-nano() {
+    __default_cflags="-O2 -march=armv8-a+crc -mtune=cortex-a57 -mcpu=cortex-a57+crc+fp+simd"
+    __platform_flags="aarch64 x11 gl"
+    __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
+    __default_asflags=""
+    __default_makeflags="-j2"
 }

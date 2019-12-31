@@ -25,6 +25,8 @@ function sources_lr-yabasanshiro() {
 function build_lr-yabasanshiro() {
     if isPlatform "odroid-n2"; then
         make -j5 -C yabause/src/libretro/ platform=odroid-n2
+    elif isPlatform "jetson-nano"; then
+        make -j2 -C yabause/src/libretro/ platform=arm64
     elif isPlatform "odroid-xu"; then
         make -j5 -C yabause/src/libretro/ platform=odroid BOARD="ODROID-XU3"
     elif isPlatform "rockpro64"; then       
@@ -54,12 +56,12 @@ function configure_lr-yabasanshiro() {
     # set core options
     setRetroArchCoreOption "${dir_name}yabasanshiro_addon_cart" "4M_extended_ram"
     setRetroArchCoreOption "${dir_name}yabasanshiro_force_hle_bios" "disabled"
-    setRetroArchCoreOption "${dir_name}yabasanshiro_frameskip" "disabled"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_frameskip" "enabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_multitap_port1" "disabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_multitap_port2" "disabled"
-    setRetroArchCoreOption "${dir_name}yabasanshiro_polygon_mode" "perspective_correction"
-    setRetroArchCoreOption "${dir_name}yabasanshiro_resolution_mode" "original"
-    setRetroArchCoreOption "${dir_name}yabasanshiro_rbg_use_compute_shader" "disabled"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_polygon_mode" "gpu_tesselation"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_resolution_mode" "720p"
+    setRetroArchCoreOption "${dir_name}yabasanshiro_rbg_use_compute_shader" "enabled"
     setRetroArchCoreOption "${dir_name}yabasanshiro_sh2coretype" "dynarec"
     setRetroArchCoreOption "${dir_name}yabasanshiro_videoformattype" "NTSC"
 	
