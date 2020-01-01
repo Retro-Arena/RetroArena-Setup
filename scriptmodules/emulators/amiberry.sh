@@ -26,6 +26,9 @@ function _get_platform_bin_amiberry() {
     elif isPlatform "odroid-n2"; then
         amiberry_bin="n2"
         amiberry_platform="n2"
+    elif isPlatform "jetson-nano"; then
+        amiberry_bin="jetson-nano"
+        amiberry_platform="jetson-nano" 
     elif isPlatform "rockpro64"; then
         amiberry_bin="RK3399"
         amiberry_platform="RK3399"
