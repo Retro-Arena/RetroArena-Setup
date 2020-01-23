@@ -10,7 +10,7 @@
 #
 
 rp_module_id="retroarch"
-rp_module_desc="RetroArch v1.8.0 - stable branch"
+rp_module_desc="RetroArch v1.8.4 - stable branch"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/master/COPYING"
 rp_module_section="core"
 
@@ -25,9 +25,10 @@ function depends_retroarch() {
 
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.8.1
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.8.4
         applyPatch "$md_data/01_hotkey_hack.diff"
         applyPatch "$md_data/02_disable_search.diff"
+		applyPatch "$md_data/03_shader_path_config_enable.diff
     else
         gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git
         applyPatch "$md_data/01_hotkey_hack.diff"
@@ -39,6 +40,7 @@ function build_retroarch() {
     local params=(--enable-pulse --enable-sdl2  --disable-al --disable-cdrom --disable-discord --disable-easteregg --disable-jack --disable-kms --disable-materialui --disable-opengl1 --disable-oss --disable-sdl --disable-qt --disable-videocore --disable-vulkan --disable-vulkan_display --disable-wayland --disable-x11 --disable-xmb)
     isPlatform "gles" && params+=(--enable-opengles --enable-opengles3)
     isPlatform "mali" && params+=(--enable-mali_fbdev)
+    isPlatform "kms" && params+=(--enable-kms --enable-egl)
     isPlatform "arm" && params+=(--enable-floathard)
     isPlatform "neon" && params+=(--enable-neon)
        

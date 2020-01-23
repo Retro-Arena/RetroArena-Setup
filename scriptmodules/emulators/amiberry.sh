@@ -11,64 +11,64 @@
 
 rp_module_id="amiberry"
 rp_module_desc="Amiga emulator with JIT support (forked from uae4arm)"
-rp_module_help="ROM Extension: .adf\n\nCopy your Amiga games to $romdir/amiga\n\nCopy the required BIOS files\nkick13.rom\nkick20.rom\nkick31.rom\nto $biosdir"
+rp_module_help="ROM Extension: .adf .ipf .zip\n\nCopy your Amiga games to $romdir/amiga\n\nCopy the required BIOS files\nkick13.rom\nkick20.rom\nkick31.rom\nto $biosdir"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/midwan/amiberry/master/COPYING"
 rp_module_section="sa"
 rp_module_flags="!x86"
 
-function _get_platform_bin_amiberry() {
-    local choice="$1"
-    local amiberry_bin="$__platform-sdl2"
-    local amiberry_platform="$__platform-sdl2"
-    if isPlatform "odroid-xu"; then
-        amiberry_bin="xu4"
-        amiberry_platform="xu4"
-    elif isPlatform "odroid-n2"; then
-        amiberry_bin="n2"
-        amiberry_platform="n2"
-    elif isPlatform "jetson-nano"; then
-        amiberry_bin="jetson-nano"
-        amiberry_platform="jetson-nano" 
-    elif isPlatform "rockpro64"; then
-        amiberry_bin="RK3399"
-        amiberry_platform="RK3399"
+function _get_platform_amiberry() {
+    local platform="$__platform-sdl2"
+    if isPlatform "rpi" && ! isPlatform "kms"; then
+        platform="$__platform"
+    elif isPlatform "odroid-xu"; then
+        platform="xu4"
+    elif isPlatform "tinker"; then
+        platform="tinker"
+    elif isPlatform "vero4k"; then
+        platform="vero4k"
+	elif isPlatform "odroid-n2"; then
+	    platform="n2"
+	elif isPlatform "jetson-nano"; then
+	    platform="jetson-nano"
+	elif isPlatform "rockpro64"; then
+	    platform="RK3399"
     fi
-    [[ "$choice" == "bin" ]] && echo "$amiberry_bin"
-    [[ "$choice" == "platform" ]] && echo "$amiberry_platform"
+    echo "$platform"
 }
 
 function depends_amiberry() {
-    local depends=(libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev libxml2-dev libflac-dev libmpg123-dev libpng-dev libmpeg2-4-dev)
-    depends_uae4arm "${depends[@]}"
+    local depends=(autoconf libpng-dev libmpeg2-4-dev zlib1g-dev libguichan-dev libmpg123-dev libflac-dev libxml2-dev libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev)
+
+    isPlatform "vero4k" && depends+=(vero3-userland-dev-osmc)
+
+    getDepends "${depends[@]}"
 	if isPlatform "odroid-n2"; then
 	~/RetroArena-Setup/fixmali.sh
 	fi
 }
 
 function sources_amiberry() {
-    gitPullOrClone "$md_build" https://github.com/midwan/amiberry.git 
+    gitPullOrClone "$md_build" https://github.com/midwan/amiberry
+    # use our default optimisation level
+    sed -i "s/-Ofast//" "$md_build/Makefile"
 }
 
 function build_amiberry() {
-    local amiberry_bin=$(_get_platform_bin_amiberry bin)
-    local amiberry_platform=$(_get_platform_bin_amiberry platform)
-     cd external/capsimg
-    make clean
+    local platform=$(_get_platform_amiberry)
+    cd external/capsimg
     ./bootstrap.fs
     ./configure.fs
+    make -f Makefile.fs clean
     make -f Makefile.fs
     cd "$md_build"
     make clean
-    CXXFLAGS="" make PLATFORM="$amiberry_platform"
-    ln -sf "amiberry" "amiberry-$amiberry_bin"
-    md_ret_require="$md_build/amiberry-$amiberry_bin"
+    make PLATFORM="$platform"
+    md_ret_require="$md_build/amiberry"
 }
 
 function install_amiberry() {
-    local amiberry_bin=$(_get_platform_bin_amiberry bin)
     md_ret_files=(
         'amiberry'
-        "amiberry-$amiberry_bin"
         'data'
         'external/capsimg/capsimg.so'
     )
@@ -106,6 +106,4 @@ function configure_amiberry() {
     cp -R "$md_inst/whdboot-dist/"{game-data,save-data,boot-data.zip,WHDLoad} "$config_dir/whdboot/"
 
     chown -R $user:$user "$config_dir/whdboot"
-	
-	
 }
