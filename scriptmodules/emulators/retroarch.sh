@@ -37,7 +37,7 @@ function sources_retroarch() {
 }
 
 function build_retroarch() {
-    local params=(--enable-pulse --enable-sdl2  --disable-al --disable-cdrom --disable-discord --disable-easteregg --disable-jack --disable-kms --disable-materialui --disable-opengl1 --disable-oss --disable-sdl --disable-qt --disable-videocore --disable-vulkan --disable-vulkan_display --disable-wayland --disable-x11 --disable-xmb)
+    local params=(--enable-pulse --enable-sdl2  --disable-al --disable-cdrom --disable-discord --disable-jack --disable-kms --disable-materialui --disable-opengl1 --disable-oss --disable-sdl --disable-qt --disable-videocore --disable-vulkan --disable-vulkan_display --disable-wayland --disable-x11 --disable-xmb)
     isPlatform "gles" && params+=(--enable-opengles --enable-opengles3)
     isPlatform "mali" && params+=(--enable-mali_fbdev)
     isPlatform "kms" && params+=(--enable-kms --enable-egl)
