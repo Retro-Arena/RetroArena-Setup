@@ -300,7 +300,7 @@ function platform_odroid-n2() {
     __platform_flags="aarch64 mali gles"
     __default_cflags+=" -ftree-vectorize -funsafe-math-optimizations"
     __default_asflags=""
-    __default_makeflags="-j4"
+    __default_makeflags="-j2"
 }
 
 function platform_rockpro64() {
@@ -310,5 +310,5 @@ function platform_rockpro64() {
     # required for mali headers to define GL functions!
     __default_cflags+=" -DGL_GLEXT_PROTOTYPES"
     __default_asflags=""
-    __default_makeflags="-j5"
+    __default_makeflags="-j2"
 }
