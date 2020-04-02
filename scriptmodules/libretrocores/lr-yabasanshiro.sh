@@ -48,7 +48,7 @@ function install_bin_lr-yabasanshiro() {
 function configure_lr-yabasanshiro() {    
     mkRomDir "saturn"
     ensureSystemretroconfig "saturn"
-    addEmulator 1 "$md_id" "saturn" "$md_inst/yabasanshiro_libretro.so"
+    addEmulator 0 "$md_id" "saturn" "$md_inst/yabasanshiro_libretro.so"
     addSystem "saturn"
     
     # set core options
