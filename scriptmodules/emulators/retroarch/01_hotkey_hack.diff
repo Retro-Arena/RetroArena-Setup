@@ -1,35 +1,36 @@
 diff --git a/retroarch.c b/retroarch.c
-index b89de3520f..d6ae484ca2 100644
+index 47c831c728..b62d7b435e 100644
 --- a/retroarch.c
 +++ b/retroarch.c
-@@ -2556,6 +2556,10 @@ static bool menu_widgets_fast_forward        = false;
- static bool menu_widgets_rewinding           = false;
+@@ -1901,6 +1901,10 @@
+ #ifdef HAVE_HID
+ static const void *hid_data                       = NULL;
  #endif
- 
++
 +/* number of frames required to trigger the hotkey */
 +#define HOTKEY_DELAY 5
 +static unsigned hotkey_counter = 0;
-+
- bool menu_widgets_ready(void)
- {
- #ifdef HAVE_MENU_WIDGETS
-@@ -16042,9 +16046,16 @@ static void input_keys_pressed(input_bits_t *p_new_state)
+ 
+ #ifdef HAVE_THREADS
+ #define video_driver_get_ptr_internal(force) ((video_driver_is_threaded_internal() && !force) ? video_thread_get_ptr(NULL) : video_driver_data)
+@@ -13261,9 +13265,16 @@
                    current_input_data, joypad_info,
                    &binds, port,
                    RETRO_DEVICE_JOYPAD, 0, RARCH_ENABLE_HOTKEY))
 -            input_driver_block_libretro_input = true;
 -         else
 -            input_driver_block_hotkey         = true;
-+            {
-+               if (hotkey_counter < HOTKEY_DELAY)
-+                  hotkey_counter++;
-+               if (hotkey_counter == HOTKEY_DELAY)
-+                   input_driver_block_libretro_input = true;
-+            }
-+            else {
-+               hotkey_counter = 0;
-+               input_driver_block_hotkey = true;
-+            }
++         {
++            if (hotkey_counter < HOTKEY_DELAY)
++               hotkey_counter++;
++            if (hotkey_counter == HOTKEY_DELAY)
++                input_driver_block_libretro_input = true;
++         }
++         else {
++            hotkey_counter = 0;
++            input_driver_block_hotkey = true;
++         }
        }
  
        if (binds[RARCH_GAME_FOCUS_TOGGLE].valid)
+
