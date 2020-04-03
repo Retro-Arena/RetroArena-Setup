@@ -10,7 +10,7 @@
 #
 
 rp_module_id="retroarch"
-rp_module_desc="RetroArch v1.8.4 - stable branch"
+rp_module_desc="RetroArch v1.8.1 - stable branch"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/master/COPYING"
 rp_module_section="core"
 
@@ -25,11 +25,10 @@ function depends_retroarch() {
 
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.8.4
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.8.1
         applyPatch "$md_data/01_hotkey_hack.diff"
         applyPatch "$md_data/02_disable_search.diff"
-	applyPatch "$md_data/03_shader_path_config_enable.diff"
-	applyPatch "$md_data/04_fix_corrupted_widgets.diff"
+		
     else
         gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git
         applyPatch "$md_data/01_hotkey_hack.diff"
