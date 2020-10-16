@@ -331,6 +331,16 @@ function platform_x86() {
     fi
 }
 
+function platform_x86_x64() {
+    __default_cpu_flags="-march=native"
+    __platform_flags+=(gl)
+    if [[ "$__has_kms" -eq 1 ]]; then
+        __platform_flags+=(kms)
+    else
+        __platform_flags+=(x11)
+    fi
+}
+
 function platform_generic-x11() {
     __platform_flags="x11 gl"
 }
