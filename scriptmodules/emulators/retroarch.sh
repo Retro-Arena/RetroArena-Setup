@@ -24,12 +24,19 @@ function depends_retroarch() {
     isPlatform "x11" && depends+=(libx11-xcb-dev libpulse-dev libvulkan-dev)
     isPlatform "vero4k" && depends+=(vero3-userland-dev-osmc zlib1g-dev libfreetype6-dev)
     isPlatform "kms" && depends+=(libgbm-dev)
-    getDepends "${depends[@]}"
 	if isPlatform "odroid-n2"; then
 	~/RetroArena-Setup/fixmali.sh
 	isPlatform "rpi" && depends+=(libraspberrypi-dev)
 	fi
+	    # only install nvidia-cg-toolkit if it is available (as the non-free repo may not be enabled)
+    if isPlatform "x86"; then
+        if [[ -n "$(apt-cache search --names-only nvidia-cg-toolkit)" ]]; then
+            depends+=(nvidia-cg-toolkit)
+        fi
+    fi
+    getDepends "${depends[@]}"
 }
+
 
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
