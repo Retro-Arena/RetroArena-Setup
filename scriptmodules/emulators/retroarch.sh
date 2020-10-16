@@ -18,8 +18,16 @@ function depends_retroarch() {
     local depends=(libudev-dev libxkbcommon-dev libsdl2-dev libasound2-dev libusb-1.0-0-dev libpulse-dev)
     isPlatform "odroid-xu" && depends+=(libavcodec-dev libavformat-dev libavdevice-dev)
     getDepends "${depends[@]}"
+    isPlatform "rpi" && depends+=(libraspberrypi-dev)
+    isPlatform "gles" && ! isPlatform "vero4k" && depends+=(libgles2-mesa-dev)
+    isPlatform "mesa" && depends+=(libx11-xcb-dev)
+    isPlatform "mali" && depends+=(mali-fbdev)
+    isPlatform "x11" && depends+=(libx11-xcb-dev libpulse-dev libvulkan-dev)
+    isPlatform "vero4k" && depends+=(vero3-userland-dev-osmc zlib1g-dev libfreetype6-dev)
+    isPlatform "kms" && depends+=(libgbm-dev)
 	if isPlatform "odroid-n2"; then
 	~/RetroArena-Setup/fixmali.sh
+	isPlatform "rpi" && depends+=(libraspberrypi-dev)
 	fi
 }
 
