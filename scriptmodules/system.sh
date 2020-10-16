@@ -329,4 +329,4 @@ function platform_x86() {
     else
         __platform_flags+=(x11)
     fi
- }
+}
