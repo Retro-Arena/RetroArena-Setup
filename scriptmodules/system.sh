@@ -256,6 +256,12 @@ function get_platform() {
                 fi
                 ;;
         esac
+        else
+                    case $architecture in
+                        i686|x86_64|amd64)
+                            __platform="x86"
+                            ;;
+        esac
     fi
 
     if ! fnExists "platform_${__platform}"; then
